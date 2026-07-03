@@ -18,7 +18,8 @@
       "axi_smc": "",
       "clk_wiz_0": "",
       "proc_sys_reset_0": "",
-      "xlconcat_0": ""
+      "xlconcat_0": "",
+      "system_ila_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -624,7 +625,7 @@
             "value": "unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#data[0]#cmd#clk#data[1]#data[2]#data[3]#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#scl#sda#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#unassigned#clk#cmd#data[0]#data[1]#data[2]#data[3]#mosi#miso#sclk#ss[0]#rx#tx#unassigned#unassigned"
           },
           "PCW_PERIPHERAL_BOARD_PRESET": {
-            "value": "None"
+            "value": "part0"
           },
           "PCW_SD0_GRP_CD_ENABLE": {
             "value": "0"
@@ -1027,6 +1028,25 @@
         "xci_path": "ip/audio_pipe_hw_xlconcat_0_0/audio_pipe_hw_xlconcat_0_0.xci",
         "inst_hier_path": "xlconcat_0",
         "has_run_ip_tcl": "true"
+      },
+      "system_ila_0": {
+        "vlnv": "xilinx.com:ip:system_ila:1.1",
+        "ip_revision": "22",
+        "xci_name": "audio_pipe_hw_system_ila_0_0",
+        "xci_path": "ip/audio_pipe_hw_system_ila_0_0/audio_pipe_hw_system_ila_0_0.xci",
+        "inst_hier_path": "system_ila_0",
+        "has_run_ip_tcl": "true",
+        "parameters": {
+          "C_MON_TYPE": {
+            "value": "NATIVE"
+          },
+          "C_NUM_OF_PROBES": {
+            "value": "4"
+          },
+          "C_SLOT_0_INTF_TYPE": {
+            "value": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1074,7 +1094,8 @@
           "i2s_receiver_0/aud_mclk",
           "i2s_transmitter_0/aud_mclk",
           "proc_sys_reset_0/slowest_sync_clk",
-          "MCLK_OUT"
+          "MCLK_OUT",
+          "system_ila_0/clk"
         ]
       },
       "clk_wiz_0_locked": {
@@ -1094,14 +1115,16 @@
           "i2s_receiver_0/lrclk_out",
           "lrclk_out_pb_0",
           "i2s_transmitter_0/lrclk_in",
-          "lrclk_out_rec_0"
+          "lrclk_out_rec_0",
+          "system_ila_0/probe0"
         ]
       },
       "i2s_receiver_0_sclk_out": {
         "ports": [
           "i2s_receiver_0/sclk_out",
           "sclk_out_0",
-          "i2s_transmitter_0/sclk_in"
+          "i2s_transmitter_0/sclk_in",
+          "system_ila_0/probe1"
         ]
       },
       "i2s_transmitter_0_irq": {
@@ -1113,7 +1136,8 @@
       "i2s_transmitter_0_sdata_0_out": {
         "ports": [
           "i2s_transmitter_0/sdata_0_out",
-          "sdata_0_out_0"
+          "sdata_0_out_0",
+          "system_ila_0/probe3"
         ]
       },
       "proc_sys_reset_0_peripheral_reset": {
@@ -1155,7 +1179,8 @@
       "sdata_0_in_0_1": {
         "ports": [
           "sdata_0_in_0",
-          "i2s_receiver_0/sdata_0_in"
+          "i2s_receiver_0/sdata_0_in",
+          "system_ila_0/probe2"
         ]
       },
       "sys_clock_1": {

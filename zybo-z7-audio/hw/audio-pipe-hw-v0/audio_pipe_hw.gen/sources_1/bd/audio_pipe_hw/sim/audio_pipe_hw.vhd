@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
---Date        : Thu Jul  2 18:36:29 2026
+--Date        : Fri Jul  3 14:52:37 2026
 --Host        : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 --Command     : generate_target audio_pipe_hw.bd
 --Design      : audio_pipe_hw
@@ -44,7 +44,7 @@ entity audio_pipe_hw is
     sys_clock : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of audio_pipe_hw : entity is "audio_pipe_hw,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=audio_pipe_hw,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=8,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=1,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}";
+  attribute CORE_GENERATION_INFO of audio_pipe_hw : entity is "audio_pipe_hw,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=audio_pipe_hw,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_board_cnt=1,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=Hierarchical}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of audio_pipe_hw : entity is "audio_pipe_hw.hwdef";
 end audio_pipe_hw;
@@ -309,7 +309,15 @@ architecture STRUCTURE of audio_pipe_hw is
     dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   end component audio_pipe_hw_xlconcat_0_0;
-  signal \^mclk_out\ : STD_LOGIC;
+  component audio_pipe_hw_system_ila_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component audio_pipe_hw_system_ila_0_0;
   signal axi_smc_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi_smc_M00_AXI_ARREADY : STD_LOGIC;
   signal axi_smc_M00_AXI_ARVALID : STD_LOGIC;
@@ -342,14 +350,17 @@ architecture STRUCTURE of audio_pipe_hw is
   signal axi_smc_M01_AXI_WDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_smc_M01_AXI_WREADY : STD_LOGIC;
   signal axi_smc_M01_AXI_WVALID : STD_LOGIC;
+  signal clk_wiz_0_clk_out1 : STD_LOGIC;
   signal clk_wiz_0_locked : STD_LOGIC;
   signal i2s_receiver_0_irq : STD_LOGIC;
+  signal i2s_receiver_0_lrclk_out : STD_LOGIC;
   signal i2s_receiver_0_m_axis_aud_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal i2s_receiver_0_m_axis_aud_TID : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal i2s_receiver_0_m_axis_aud_TREADY : STD_LOGIC;
   signal i2s_receiver_0_m_axis_aud_TVALID : STD_LOGIC;
+  signal i2s_receiver_0_sclk_out : STD_LOGIC;
   signal i2s_transmitter_0_irq : STD_LOGIC;
-  signal \^lrclk_out_rec_0\ : STD_LOGIC;
+  signal i2s_transmitter_0_sdata_0_out : STD_LOGIC;
   signal proc_sys_reset_0_peripheral_reset : STD_LOGIC_VECTOR ( 0 to 0 );
   signal processing_system7_0_FCLK_CLK0 : STD_LOGIC;
   signal processing_system7_0_FCLK_RESET0_N : STD_LOGIC;
@@ -392,7 +403,7 @@ architecture STRUCTURE of audio_pipe_hw is
   signal processing_system7_0_M_AXI_GP0_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_M_AXI_GP0_WVALID : STD_LOGIC;
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \^sclk_out_0\ : STD_LOGIC;
+  signal sdata_0_in_0_1 : STD_LOGIC;
   signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_axi_smc_M00_AXI_arprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_axi_smc_M00_AXI_awprot_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -443,10 +454,12 @@ architecture STRUCTURE of audio_pipe_hw is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
-  MCLK_OUT <= \^mclk_out\;
-  lrclk_out_pb_0 <= \^lrclk_out_rec_0\;
-  lrclk_out_rec_0 <= \^lrclk_out_rec_0\;
-  sclk_out_0 <= \^sclk_out_0\;
+  MCLK_OUT <= clk_wiz_0_clk_out1;
+  lrclk_out_pb_0 <= i2s_receiver_0_lrclk_out;
+  lrclk_out_rec_0 <= i2s_receiver_0_lrclk_out;
+  sclk_out_0 <= i2s_receiver_0_sclk_out;
+  sdata_0_in_0_1 <= sdata_0_in_0;
+  sdata_0_out_0 <= i2s_transmitter_0_sdata_0_out;
 axi_smc: component audio_pipe_hw_axi_smc_0
      port map (
       M00_AXI_araddr(7 downto 0) => axi_smc_M00_AXI_ARADDR(7 downto 0),
@@ -531,15 +544,15 @@ axi_smc: component audio_pipe_hw_axi_smc_0
 clk_wiz_0: component audio_pipe_hw_clk_wiz_0_0
      port map (
       clk_in1 => sys_clock,
-      clk_out1 => \^mclk_out\,
+      clk_out1 => clk_wiz_0_clk_out1,
       locked => clk_wiz_0_locked
     );
 i2s_receiver_0: component audio_pipe_hw_i2s_receiver_0_0
      port map (
-      aud_mclk => \^mclk_out\,
+      aud_mclk => clk_wiz_0_clk_out1,
       aud_mrst => proc_sys_reset_0_peripheral_reset(0),
       irq => i2s_receiver_0_irq,
-      lrclk_out => \^lrclk_out_rec_0\,
+      lrclk_out => i2s_receiver_0_lrclk_out,
       m_axis_aud_aclk => processing_system7_0_FCLK_CLK0,
       m_axis_aud_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),
       m_axis_aud_tdata(31 downto 0) => i2s_receiver_0_m_axis_aud_TDATA(31 downto 0),
@@ -564,15 +577,15 @@ i2s_receiver_0: component audio_pipe_hw_i2s_receiver_0_0
       s_axi_ctrl_wdata(31 downto 0) => axi_smc_M00_AXI_WDATA(31 downto 0),
       s_axi_ctrl_wready => axi_smc_M00_AXI_WREADY,
       s_axi_ctrl_wvalid => axi_smc_M00_AXI_WVALID,
-      sclk_out => \^sclk_out_0\,
-      sdata_0_in => sdata_0_in_0
+      sclk_out => i2s_receiver_0_sclk_out,
+      sdata_0_in => sdata_0_in_0_1
     );
 i2s_transmitter_0: component audio_pipe_hw_i2s_transmitter_0_0
      port map (
-      aud_mclk => \^mclk_out\,
+      aud_mclk => clk_wiz_0_clk_out1,
       aud_mrst => proc_sys_reset_0_peripheral_reset(0),
       irq => i2s_transmitter_0_irq,
-      lrclk_in => \^lrclk_out_rec_0\,
+      lrclk_in => i2s_receiver_0_lrclk_out,
       s_axi_ctrl_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_ctrl_araddr(7 downto 0) => axi_smc_M01_AXI_ARADDR(7 downto 0),
       s_axi_ctrl_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),
@@ -597,8 +610,8 @@ i2s_transmitter_0: component audio_pipe_hw_i2s_transmitter_0_0
       s_axis_aud_tid(2 downto 0) => i2s_receiver_0_m_axis_aud_TID(2 downto 0),
       s_axis_aud_tready => i2s_receiver_0_m_axis_aud_TREADY,
       s_axis_aud_tvalid => i2s_receiver_0_m_axis_aud_TVALID,
-      sclk_in => \^sclk_out_0\,
-      sdata_0_out => sdata_0_out_0
+      sclk_in => i2s_receiver_0_sclk_out,
+      sdata_0_out => i2s_transmitter_0_sdata_0_out
     );
 proc_sys_reset_0: component audio_pipe_hw_proc_sys_reset_0_0
      port map (
@@ -611,7 +624,7 @@ proc_sys_reset_0: component audio_pipe_hw_proc_sys_reset_0_0
       mb_reset => NLW_proc_sys_reset_0_mb_reset_UNCONNECTED,
       peripheral_aresetn(0) => NLW_proc_sys_reset_0_peripheral_aresetn_UNCONNECTED(0),
       peripheral_reset(0) => proc_sys_reset_0_peripheral_reset(0),
-      slowest_sync_clk => \^mclk_out\
+      slowest_sync_clk => clk_wiz_0_clk_out1
     );
 processing_system7_0: component audio_pipe_hw_processing_system7_0_0
      port map (
@@ -691,6 +704,14 @@ rst_ps7_0_50M: component audio_pipe_hw_rst_ps7_0_50M_0
       peripheral_aresetn(0) => rst_ps7_0_50M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps7_0_50M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
+    );
+system_ila_0: component audio_pipe_hw_system_ila_0_0
+     port map (
+      clk => clk_wiz_0_clk_out1,
+      probe0(0) => i2s_receiver_0_lrclk_out,
+      probe1(0) => i2s_receiver_0_sclk_out,
+      probe2(0) => sdata_0_in_0_1,
+      probe3(0) => i2s_transmitter_0_sdata_0_out
     );
 xlconcat_0: component audio_pipe_hw_xlconcat_0_0
      port map (
