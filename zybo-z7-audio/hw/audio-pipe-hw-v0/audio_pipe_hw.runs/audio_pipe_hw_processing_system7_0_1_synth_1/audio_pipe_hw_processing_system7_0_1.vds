@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon Jul  6 16:58:57 2026
-# Process ID         : 328526
+# Start of session at: Tue Jul  7 00:14:49 2026
+# Process ID         : 36655
 # Current directory  : /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_processing_system7_0_1_synth_1
 # Command line       : vivado -log audio_pipe_hw_processing_system7_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source audio_pipe_hw_processing_system7_0_1.tcl
 # Log file           : /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_processing_system7_0_1_synth_1/audio_pipe_hw_processing_system7_0_1.vds
@@ -13,16 +13,15 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 22.04.5 LTS
 # Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics
-# CPU Frequency      : 1396.120 MHz
+# CPU Frequency      : 1796.567 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 7600 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 9747 MB
-# Available Virtual  : 2444 MB
+# Available Virtual  : 4929 MB
 #-----------------------------------------------------------
 source audio_pipe_hw_processing_system7_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:06 . Memory (MB): peak = 1584.465 ; gain = 104.055 ; free physical = 131 ; free virtual = 1851
 Command: synth_design -top audio_pipe_hw_processing_system7_0_1 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -30,9 +29,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 328751
+INFO: [Synth 8-7075] Helper process launched with PID 36798
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2243.910 ; gain = 483.156 ; free physical = 141 ; free virtual = 1040
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2243.688 ; gain = 484.875 ; free physical = 140 ; free virtual = 2319
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'audio_pipe_hw_processing_system7_0_1' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:53]
 INFO: [Synth 8-6157] synthesizing module 'processing_system7_v5_5_processing_system7' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
@@ -43,20 +42,20 @@ INFO: [Synth 8-6155] done synthesizing module 'BIBUF' (0#1) [/home/alen/AMD-Xili
 INFO: [Synth 8-6157] synthesizing module 'PS7' [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
 INFO: [Synth 8-6155] done synthesizing module 'PS7' (0#1) [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:140294]
 INFO: [Synth 8-6155] done synthesizing module 'processing_system7_v5_5_processing_system7' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/hdl/verilog/processing_system7_v5_5_processing_system7.v:152]
-INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
-INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:330]
+INFO: [Synth 8-7071] port 'M_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'M_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'S_AXI_GP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'S_AXI_GP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'S_AXI_ACP_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'S_AXI_HP0_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'S_AXI_HP1_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'S_AXI_HP2_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'S_AXI_HP3_ARESETN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'DMA0_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'DMA1_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'DMA2_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7071] port 'DMA3_RSTN' of module 'processing_system7_v5_5_processing_system7' is unconnected for instance 'inst' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
+INFO: [Synth 8-7023] instance 'inst' of module 'processing_system7_v5_5_processing_system7' has 685 connections declared, but only 672 given [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:354]
 INFO: [Synth 8-6155] done synthesizing module 'audio_pipe_hw_processing_system7_0_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/synth/audio_pipe_hw_processing_system7_0_1.v:53]
 INFO: [Synth 8-7129] Port ENET0_GMII_COL in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Synth 8-7129] Port ENET0_GMII_CRS in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
@@ -138,18 +137,18 @@ INFO: [Synth 8-7129] Port FTMD_TRACEIN_ATID[2] in module processing_system7_v5_5
 INFO: [Synth 8-7129] Port FTMD_TRACEIN_ATID[1] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Synth 8-7129] Port FTMD_TRACEIN_ATID[0] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2334.879 ; gain = 574.125 ; free physical = 118 ; free virtual = 921
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2340.656 ; gain = 581.844 ; free physical = 127 ; free virtual = 2119
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2340.816 ; gain = 580.062 ; free physical = 119 ; free virtual = 922
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2343.625 ; gain = 584.812 ; free physical = 123 ; free virtual = 2120
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2340.816 ; gain = 580.062 ; free physical = 119 ; free virtual = 922
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2343.625 ; gain = 584.812 ; free physical = 123 ; free virtual = 2120
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2343.785 ; gain = 0.000 ; free physical = 115 ; free virtual = 922
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2346.594 ; gain = 0.000 ; free physical = 131 ; free virtual = 2113
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -162,30 +161,30 @@ Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-h
 Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_processing_system7_0_1_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2383.805 ; gain = 0.000 ; free physical = 120 ; free virtual = 913
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2394.246 ; gain = 0.000 ; free physical = 127 ; free virtual = 1982
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2383.840 ; gain = 0.000 ; free physical = 116 ; free virtual = 913
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2394.281 ; gain = 0.000 ; free physical = 119 ; free virtual = 1979
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2383.840 ; gain = 623.086 ; free physical = 138 ; free virtual = 906
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2394.281 ; gain = 635.469 ; free physical = 125 ; free virtual = 1838
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2391.809 ; gain = 631.055 ; free physical = 138 ; free virtual = 906
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2402.250 ; gain = 643.438 ; free physical = 125 ; free virtual = 1838
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 2391.809 ; gain = 631.055 ; free physical = 138 ; free virtual = 906
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2402.250 ; gain = 643.438 ; free physical = 123 ; free virtual = 1837
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2391.809 ; gain = 631.055 ; free physical = 136 ; free virtual = 905
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2402.250 ; gain = 643.438 ; free physical = 126 ; free virtual = 1841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -229,25 +228,25 @@ INFO: [Synth 8-7129] Port ENET1_GMII_RXD[4] in module processing_system7_v5_5_pr
 INFO: [Synth 8-7129] Port ENET1_GMII_RXD[3] in module processing_system7_v5_5_processing_system7 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2391.809 ; gain = 631.055 ; free physical = 136 ; free virtual = 905
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2402.250 ; gain = 643.438 ; free physical = 124 ; free virtual = 1841
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2664.809 ; gain = 904.055 ; free physical = 180 ; free virtual = 661
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2676.250 ; gain = 917.438 ; free physical = 190 ; free virtual = 1551
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2685.816 ; gain = 925.062 ; free physical = 160 ; free virtual = 641
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2697.258 ; gain = 938.445 ; free physical = 169 ; free virtual = 1531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2693.824 ; gain = 933.070 ; free physical = 150 ; free virtual = 631
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2705.266 ; gain = 946.453 ; free physical = 160 ; free virtual = 1522
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -265,37 +264,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2873.637 ; gain = 1112.883 ; free physical = 123 ; free virtual = 471
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2885.078 ; gain = 1126.266 ; free physical = 139 ; free virtual = 1355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2873.637 ; gain = 1112.883 ; free physical = 123 ; free virtual = 471
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2885.078 ; gain = 1126.266 ; free physical = 139 ; free virtual = 1355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2873.637 ; gain = 1112.883 ; free physical = 122 ; free virtual = 471
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2885.078 ; gain = 1126.266 ; free physical = 139 ; free virtual = 1355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2873.637 ; gain = 1112.883 ; free physical = 122 ; free virtual = 471
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2885.078 ; gain = 1126.266 ; free physical = 139 ; free virtual = 1355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2873.637 ; gain = 1112.883 ; free physical = 122 ; free virtual = 471
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2885.078 ; gain = 1126.266 ; free physical = 139 ; free virtual = 1355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2873.637 ; gain = 1112.883 ; free physical = 122 ; free virtual = 471
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2885.078 ; gain = 1126.266 ; free physical = 139 ; free virtual = 1355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -313,31 +312,31 @@ Report Cell Usage:
 +------+------+------+
 |1     |BIBUF |   130|
 |2     |BUFG  |     1|
-|3     |LUT1  |    24|
+|3     |LUT1  |    26|
 |4     |PS7   |     1|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 2873.637 ; gain = 1112.883 ; free physical = 122 ; free virtual = 471
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2885.078 ; gain = 1126.266 ; free physical = 138 ; free virtual = 1355
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:00 . Memory (MB): peak = 2873.637 ; gain = 1069.859 ; free physical = 117 ; free virtual = 472
-Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 2873.645 ; gain = 1112.883 ; free physical = 115 ; free virtual = 473
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2885.078 ; gain = 1075.609 ; free physical = 138 ; free virtual = 1355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2885.086 ; gain = 1126.266 ; free physical = 138 ; free virtual = 1355
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2873.645 ; gain = 0.000 ; free physical = 122 ; free virtual = 477
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2885.086 ; gain = 0.000 ; free physical = 119 ; free virtual = 1355
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2873.645 ; gain = 0.000 ; free physical = 226 ; free virtual = 647
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2885.086 ; gain = 0.000 ; free physical = 292 ; free virtual = 1527
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 840dcb02
+Synth Design complete | Checksum: d90fe9f0
 INFO: [Common 17-83] Releasing license: Synthesis
 139 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:17 . Memory (MB): peak = 2873.672 ; gain = 1289.207 ; free physical = 209 ; free virtual = 646
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1857.176; main = 1762.426; forked = 268.284
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3760.805; main = 2873.641; forked = 993.977
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2897.648 ; gain = 0.000 ; free physical = 199 ; free virtual = 646
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:40 . Memory (MB): peak = 2885.113 ; gain = 1301.652 ; free physical = 289 ; free virtual = 1526
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1797.525; main = 1797.525; forked = 239.605
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3431.227; main = 2885.082; forked = 993.973
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2909.090 ; gain = 0.000 ; free physical = 286 ; free virtual = 1526
 INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_processing_system7_0_1_synth_1/audio_pipe_hw_processing_system7_0_1.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file audio_pipe_hw_processing_system7_0_1_utilization_synth.rpt -pb audio_pipe_hw_processing_system7_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jul  6 17:00:30 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  7 00:15:37 2026...

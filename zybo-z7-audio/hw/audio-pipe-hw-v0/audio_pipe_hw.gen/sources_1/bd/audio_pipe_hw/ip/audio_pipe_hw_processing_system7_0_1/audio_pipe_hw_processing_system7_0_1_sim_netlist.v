@@ -2,7 +2,7 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-// Date        : Mon Jul  6 17:00:29 2026
+// Date        : Tue Jul  7 00:15:36 2026
 // Host        : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/audio_pipe_hw_processing_system7_0_1_sim_netlist.v
@@ -16,7 +16,13 @@
 (* CHECK_LICENSE_TYPE = "audio_pipe_hw_processing_system7_0_1,processing_system7_v5_5_processing_system7,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "processing_system7_v5_5_processing_system7,Vivado 2025.2" *) 
 (* NotValidForBitStream *)
 module audio_pipe_hw_processing_system7_0_1
-   (USB0_PORT_INDCTL,
+   (I2C1_SDA_I,
+    I2C1_SDA_O,
+    I2C1_SDA_T,
+    I2C1_SCL_I,
+    I2C1_SCL_O,
+    I2C1_SCL_T,
+    USB0_PORT_INDCTL,
     USB0_VBUS_PWRSELECT,
     USB0_VBUS_PWRFAULT,
     M_AXI_GP0_ARVALID,
@@ -58,6 +64,7 @@ module audio_pipe_hw_processing_system7_0_1
     M_AXI_GP0_BRESP,
     M_AXI_GP0_RRESP,
     M_AXI_GP0_RDATA,
+    IRQ_F2P,
     FCLK_CLK0,
     FCLK_RESET0_N,
     MIO,
@@ -81,6 +88,12 @@ module audio_pipe_hw_processing_system7_0_1
     PS_SRSTB,
     PS_CLK,
     PS_PORB);
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_I" *) (* X_INTERFACE_MODE = "master" *) input I2C1_SDA_I;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_O" *) output I2C1_SDA_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SDA_T" *) output I2C1_SDA_T;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_I" *) input I2C1_SCL_I;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_O" *) output I2C1_SCL_O;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:iic:1.0 IIC_1 SCL_T" *) output I2C1_SCL_T;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 PORT_INDCTL" *) (* X_INTERFACE_MODE = "master" *) output [1:0]USB0_PORT_INDCTL;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRSELECT" *) output USB0_VBUS_PWRSELECT;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:usbctrl:1.0 USBIND_0 VBUS_PWRFAULT" *) input USB0_VBUS_PWRFAULT;
@@ -123,6 +136,7 @@ module audio_pipe_hw_processing_system7_0_1
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 BRESP" *) input [1:0]M_AXI_GP0_BRESP;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RRESP" *) input [1:0]M_AXI_GP0_RRESP;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_GP0 RDATA" *) input [31:0]M_AXI_GP0_RDATA;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:interrupt:1.0 IRQ_F2P INTERRUPT" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME IRQ_F2P, SENSITIVITY LEVEL_HIGH:LEVEL_HIGH, PortWidth 2" *) input [1:0]IRQ_F2P;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 FCLK_CLK0 CLK" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_CLK0, FREQ_HZ 50000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN audio_pipe_hw_processing_system7_0_1_FCLK_CLK0, INSERT_VIP 0" *) output FCLK_CLK0;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 FCLK_RESET0_N RST" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FCLK_RESET0_N, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) output FCLK_RESET0_N;
   (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO" *) (* X_INTERFACE_MODE = "master" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false" *) inout [53:0]MIO;
@@ -168,6 +182,13 @@ module audio_pipe_hw_processing_system7_0_1
   wire DDR_WEB;
   wire FCLK_CLK0;
   wire FCLK_RESET0_N;
+  wire I2C1_SCL_I;
+  wire I2C1_SCL_O;
+  wire I2C1_SCL_T;
+  wire I2C1_SDA_I;
+  wire I2C1_SDA_O;
+  wire I2C1_SDA_T;
+  wire [1:0]IRQ_F2P;
   wire [53:0]MIO;
   wire M_AXI_GP0_ACLK;
   wire [31:0]M_AXI_GP0_ARADDR;
@@ -277,10 +298,6 @@ module audio_pipe_hw_processing_system7_0_1
   wire NLW_inst_I2C0_SCL_T_UNCONNECTED;
   wire NLW_inst_I2C0_SDA_O_UNCONNECTED;
   wire NLW_inst_I2C0_SDA_T_UNCONNECTED;
-  wire NLW_inst_I2C1_SCL_O_UNCONNECTED;
-  wire NLW_inst_I2C1_SCL_T_UNCONNECTED;
-  wire NLW_inst_I2C1_SDA_O_UNCONNECTED;
-  wire NLW_inst_I2C1_SDA_T_UNCONNECTED;
   wire NLW_inst_IRQ_P2F_CAN0_UNCONNECTED;
   wire NLW_inst_IRQ_P2F_CAN1_UNCONNECTED;
   wire NLW_inst_IRQ_P2F_CTI_UNCONNECTED;
@@ -548,7 +565,7 @@ module audio_pipe_hw_processing_system7_0_1
   (* C_M_AXI_GP1_ENABLE_STATIC_REMAP = "0" *) 
   (* C_M_AXI_GP1_ID_WIDTH = "12" *) 
   (* C_M_AXI_GP1_THREAD_ID_WIDTH = "12" *) 
-  (* C_NUM_F2P_INTR_INPUTS = "1" *) 
+  (* C_NUM_F2P_INTR_INPUTS = "2" *) 
   (* C_PACKAGE_NAME = "clg400" *) 
   (* C_PS7_SI_REV = "PRODUCTION" *) 
   (* C_S_AXI_ACP_ARUSER_VAL = "31" *) 
@@ -580,7 +597,7 @@ module audio_pipe_hw_processing_system7_0_1
   (* C_USE_S_AXI_HP2 = "0" *) 
   (* C_USE_S_AXI_HP3 = "0" *) 
   (* HW_HANDOFF = "audio_pipe_hw_processing_system7_0_1.hwdef" *) 
-  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={32} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={9} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) 
+  (* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={32} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={9} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) 
   (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
   audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_system7 inst
        (.CAN0_PHY_RX(1'b0),
@@ -743,13 +760,13 @@ module audio_pipe_hw_processing_system7_0_1
         .I2C0_SDA_I(1'b0),
         .I2C0_SDA_O(NLW_inst_I2C0_SDA_O_UNCONNECTED),
         .I2C0_SDA_T(NLW_inst_I2C0_SDA_T_UNCONNECTED),
-        .I2C1_SCL_I(1'b0),
-        .I2C1_SCL_O(NLW_inst_I2C1_SCL_O_UNCONNECTED),
-        .I2C1_SCL_T(NLW_inst_I2C1_SCL_T_UNCONNECTED),
-        .I2C1_SDA_I(1'b0),
-        .I2C1_SDA_O(NLW_inst_I2C1_SDA_O_UNCONNECTED),
-        .I2C1_SDA_T(NLW_inst_I2C1_SDA_T_UNCONNECTED),
-        .IRQ_F2P(1'b0),
+        .I2C1_SCL_I(I2C1_SCL_I),
+        .I2C1_SCL_O(I2C1_SCL_O),
+        .I2C1_SCL_T(I2C1_SCL_T),
+        .I2C1_SDA_I(I2C1_SDA_I),
+        .I2C1_SDA_O(I2C1_SDA_O),
+        .I2C1_SDA_T(I2C1_SDA_T),
+        .IRQ_F2P(IRQ_F2P),
         .IRQ_P2F_CAN0(NLW_inst_IRQ_P2F_CAN0_UNCONNECTED),
         .IRQ_P2F_CAN1(NLW_inst_IRQ_P2F_CAN1_UNCONNECTED),
         .IRQ_P2F_CTI(NLW_inst_IRQ_P2F_CTI_UNCONNECTED),
@@ -1278,7 +1295,7 @@ endmodule
 (* C_INCLUDE_TRACE_BUFFER = "0" *) (* C_IRQ_F2P_MODE = "DIRECT" *) (* C_MIO_PRIMITIVE = "54" *) 
 (* C_M_AXI_GP0_ENABLE_STATIC_REMAP = "0" *) (* C_M_AXI_GP0_ID_WIDTH = "12" *) (* C_M_AXI_GP0_THREAD_ID_WIDTH = "12" *) 
 (* C_M_AXI_GP1_ENABLE_STATIC_REMAP = "0" *) (* C_M_AXI_GP1_ID_WIDTH = "12" *) (* C_M_AXI_GP1_THREAD_ID_WIDTH = "12" *) 
-(* C_NUM_F2P_INTR_INPUTS = "1" *) (* C_PACKAGE_NAME = "clg400" *) (* C_PS7_SI_REV = "PRODUCTION" *) 
+(* C_NUM_F2P_INTR_INPUTS = "2" *) (* C_PACKAGE_NAME = "clg400" *) (* C_PS7_SI_REV = "PRODUCTION" *) 
 (* C_S_AXI_ACP_ARUSER_VAL = "31" *) (* C_S_AXI_ACP_AWUSER_VAL = "31" *) (* C_S_AXI_ACP_ID_WIDTH = "3" *) 
 (* C_S_AXI_GP0_ID_WIDTH = "6" *) (* C_S_AXI_GP1_ID_WIDTH = "6" *) (* C_S_AXI_HP0_DATA_WIDTH = "64" *) 
 (* C_S_AXI_HP0_ID_WIDTH = "6" *) (* C_S_AXI_HP1_DATA_WIDTH = "64" *) (* C_S_AXI_HP1_ID_WIDTH = "6" *) 
@@ -1289,7 +1306,7 @@ endmodule
 (* C_USE_S_AXI_ACP = "0" *) (* C_USE_S_AXI_GP0 = "0" *) (* C_USE_S_AXI_GP1 = "0" *) 
 (* C_USE_S_AXI_HP0 = "0" *) (* C_USE_S_AXI_HP1 = "0" *) (* C_USE_S_AXI_HP2 = "0" *) 
 (* C_USE_S_AXI_HP3 = "0" *) (* HW_HANDOFF = "audio_pipe_hw_processing_system7_0_1.hwdef" *) (* ORIG_REF_NAME = "processing_system7_v5_5_processing_system7" *) 
-(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={32} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={9} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
+(* POWER = "<PROCESSOR name={system} numA9Cores={2} clockFreq={666.666666} load={0.5} /><MEMORY name={code} memType={DDR3(LowVoltage)} dataWidth={32} clockFreq={533.333333} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={9} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={0} ioBank={} clockFreq={111.111115} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS18} bidis={2} ioBank={Vcco_p1} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1333.333} /><PLL domain={Memory} vco={1066.667} /><PLL domain={IO} vco={1000.000} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={50} usageRate={0.5} />/>" *) (* USE_TRACE_DATA_EDGE_DETECTOR = "0" *) 
 module audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_system7
    (CAN0_PHY_TX,
     CAN0_PHY_RX,
@@ -2559,7 +2576,7 @@ module audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_s
   output IRQ_P2F_SPI1;
   output IRQ_P2F_UART1;
   output IRQ_P2F_CAN1;
-  input [0:0]IRQ_F2P;
+  input [1:0]IRQ_F2P;
   input Core0_nFIQ;
   input Core0_nIRQ;
   input Core1_nFIQ;
@@ -2687,8 +2704,15 @@ module audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_s
   wire FCLK_RESET0_N;
   wire I2C0_SCL_T_n;
   wire I2C0_SDA_T_n;
+  wire I2C1_SCL_I;
+  wire I2C1_SCL_O;
+  wire I2C1_SCL_T;
   wire I2C1_SCL_T_n;
+  wire I2C1_SDA_I;
+  wire I2C1_SDA_O;
+  wire I2C1_SDA_T;
   wire I2C1_SDA_T_n;
+  wire [1:0]IRQ_F2P;
   wire [53:0]MIO;
   wire M_AXI_GP0_ACLK;
   wire [31:0]M_AXI_GP0_ARADDR;
@@ -3393,9 +3417,7 @@ module audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_s
   wire PS7_i_n_432;
   wire PS7_i_n_44;
   wire PS7_i_n_46;
-  wire PS7_i_n_48;
   wire PS7_i_n_5;
-  wire PS7_i_n_50;
   wire PS7_i_n_529;
   wire PS7_i_n_530;
   wire PS7_i_n_531;
@@ -4118,10 +4140,6 @@ module audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_s
   assign I2C0_SCL_T = \<const0> ;
   assign I2C0_SDA_O = \<const0> ;
   assign I2C0_SDA_T = \<const0> ;
-  assign I2C1_SCL_O = \<const0> ;
-  assign I2C1_SCL_T = \<const0> ;
-  assign I2C1_SDA_O = \<const0> ;
-  assign I2C1_SDA_T = \<const0> ;
   assign IRQ_P2F_CAN0 = \<const0> ;
   assign IRQ_P2F_CAN1 = \<const0> ;
   assign IRQ_P2F_CTI = \<const0> ;
@@ -5106,6 +5124,16 @@ module audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_s
         .PAD(DDR_WEB));
   GND GND
        (.G(\<const0> ));
+  LUT1 #(
+    .INIT(2'h1)) 
+    I2C1_SCL_T_INST_0
+       (.I0(I2C1_SCL_T_n),
+        .O(I2C1_SCL_T));
+  LUT1 #(
+    .INIT(2'h1)) 
+    I2C1_SDA_T_INST_0
+       (.I0(I2C1_SDA_T_n),
+        .O(I2C1_SDA_T));
   (* BOX_TYPE = "PRIMITIVE" *) 
   PS7 PS7_i
        (.DDRA(buffered_DDR_Addr),
@@ -5225,11 +5253,11 @@ module audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_s
         .EMIOI2C0SDAI(1'b0),
         .EMIOI2C0SDAO(PS7_i_n_46),
         .EMIOI2C0SDATN(I2C0_SDA_T_n),
-        .EMIOI2C1SCLI(1'b0),
-        .EMIOI2C1SCLO(PS7_i_n_48),
+        .EMIOI2C1SCLI(I2C1_SCL_I),
+        .EMIOI2C1SCLO(I2C1_SCL_O),
         .EMIOI2C1SCLTN(I2C1_SCL_T_n),
-        .EMIOI2C1SDAI(1'b0),
-        .EMIOI2C1SDAO(PS7_i_n_50),
+        .EMIOI2C1SDAI(I2C1_SDA_I),
+        .EMIOI2C1SDAO(I2C1_SDA_O),
         .EMIOI2C1SDATN(I2C1_SDA_T_n),
         .EMIOPJTAGTCK(1'b0),
         .EMIOPJTAGTDI(1'b0),
@@ -5336,7 +5364,7 @@ module audio_pipe_hw_processing_system7_0_1_processing_system7_v5_5_processing_s
         .FTMTP2FDEBUG({PS7_i_n_401,PS7_i_n_402,PS7_i_n_403,PS7_i_n_404,PS7_i_n_405,PS7_i_n_406,PS7_i_n_407,PS7_i_n_408,PS7_i_n_409,PS7_i_n_410,PS7_i_n_411,PS7_i_n_412,PS7_i_n_413,PS7_i_n_414,PS7_i_n_415,PS7_i_n_416,PS7_i_n_417,PS7_i_n_418,PS7_i_n_419,PS7_i_n_420,PS7_i_n_421,PS7_i_n_422,PS7_i_n_423,PS7_i_n_424,PS7_i_n_425,PS7_i_n_426,PS7_i_n_427,PS7_i_n_428,PS7_i_n_429,PS7_i_n_430,PS7_i_n_431,PS7_i_n_432}),
         .FTMTP2FTRIG({PS7_i_n_717,PS7_i_n_718,PS7_i_n_719,PS7_i_n_720}),
         .FTMTP2FTRIGACK({1'b0,1'b0,1'b0,1'b0}),
-        .IRQF2P({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .IRQF2P({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,IRQ_F2P}),
         .IRQP2F({PS7_i_n_292,PS7_i_n_293,PS7_i_n_294,PS7_i_n_295,PS7_i_n_296,PS7_i_n_297,PS7_i_n_298,PS7_i_n_299,PS7_i_n_300,PS7_i_n_301,PS7_i_n_302,PS7_i_n_303,PS7_i_n_304,PS7_i_n_305,PS7_i_n_306,PS7_i_n_307,PS7_i_n_308,PS7_i_n_309,PS7_i_n_310,PS7_i_n_311,PS7_i_n_312,PS7_i_n_313,PS7_i_n_314,PS7_i_n_315,PS7_i_n_316,PS7_i_n_317,PS7_i_n_318,PS7_i_n_319,PS7_i_n_320}),
         .MAXIGP0ACLK(M_AXI_GP0_ACLK),
         .MAXIGP0ARADDR(M_AXI_GP0_ARADDR),

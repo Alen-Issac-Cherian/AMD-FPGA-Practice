@@ -86,7 +86,20 @@ audio_pipe_hw_sv your_instance_name (
   .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp), // inout wire FIXED_IO_ddr_vrp
   .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb), // inout wire FIXED_IO_ps_srstb
   .FIXED_IO_ps_clk(FIXED_IO_ps_clk), // inout wire FIXED_IO_ps_clk
-  .FIXED_IO_ps_porb(FIXED_IO_ps_porb) // inout wire FIXED_IO_ps_porb
+  .FIXED_IO_ps_porb(FIXED_IO_ps_porb), // inout wire FIXED_IO_ps_porb
+  .IIC_1_0_sda_i(IIC_1_0_sda_i), // input wire IIC_1_0_sda_i
+  .IIC_1_0_sda_o(IIC_1_0_sda_o), // output wire IIC_1_0_sda_o
+  .IIC_1_0_sda_t(IIC_1_0_sda_t), // output wire IIC_1_0_sda_t
+  .IIC_1_0_scl_i(IIC_1_0_scl_i), // input wire IIC_1_0_scl_i
+  .IIC_1_0_scl_o(IIC_1_0_scl_o), // output wire IIC_1_0_scl_o
+  .IIC_1_0_scl_t(IIC_1_0_scl_t), // output wire IIC_1_0_scl_t
+  .sdata_0_in_0(sdata_0_in_0), // input wire sdata_0_in_0
+  .sdata_0_out_0(sdata_0_out_0), // output wire sdata_0_out_0
+  .sys_clock(sys_clock), // input wire sys_clock
+  .sclk_out_0(sclk_out_0), // output wire sclk_out_0
+  .lrclk_out_rec_0(lrclk_out_rec_0), // output wire lrclk_out_rec_0
+  .lrclk_out_pb_0(lrclk_out_pb_0), // output wire lrclk_out_pb_0
+  .MCLK_OUT(MCLK_OUT) // output wire MCLK_OUT
 );
 // INST_TAG_END ------  End cut for WRAPPER INSTANTIATION Template  ------
 

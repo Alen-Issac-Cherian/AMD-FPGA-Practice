@@ -185,6 +185,14 @@
 		xlnx,has-cd = <1>;
 		xlnx,name = "ps7_sd_0";
 	};
+	&i2c1 {
+		xlnx,has-interrupt = <1>;
+		status = "okay";
+		xlnx,clock-freq = <111111115>;
+		xlnx,i2c-clk-freq-hz = <111111115>;
+		xlnx,ip-name = "ps7_i2c";
+		xlnx,name = "ps7_i2c_1";
+	};
 	&gpio0 {
 		xlnx,mio-gpio-mask = <0x5600>;
 		status = "okay";
@@ -255,6 +263,6 @@
 		xlnx,name = "ps7_slcr_0";
 	};
 	&clkc {
-		fclk-enable = <0x0>;
+		fclk-enable = <0x1>;
 		ps-clk-frequency = <33333333>;
 	};

@@ -118,6 +118,7 @@ OPTRACE "set parameters" START { }
   set_property parent.project_path /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.xpr [current_project]
   set_property ip_output_repo /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/audio_pipe_hw_wrapper.dcp
@@ -294,6 +295,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
   catch { write_mem_info -force -no_partial_mmi audio_pipe_hw_wrapper.mmi }
 OPTRACE "write_bitstream setup" END { }
 OPTRACE "write_bitstream" START { }

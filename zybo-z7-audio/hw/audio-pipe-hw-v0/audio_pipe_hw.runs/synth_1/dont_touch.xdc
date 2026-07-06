@@ -9,4 +9,28 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_
 # IP: bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/audio_pipe_hw_processing_system7_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_processing_system7_0_1 || ORIG_REF_NAME==audio_pipe_hw_processing_system7_0_1} -quiet] -quiet
 
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_i2s_receiver_0_0/audio_pipe_hw_i2s_receiver_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_i2s_receiver_0_0 || ORIG_REF_NAME==audio_pipe_hw_i2s_receiver_0_0} -quiet] -quiet
+
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_i2s_transmitter_0_0/audio_pipe_hw_i2s_transmitter_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_i2s_transmitter_0_0 || ORIG_REF_NAME==audio_pipe_hw_i2s_transmitter_0_0} -quiet] -quiet
+
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_rst_ps7_0_50M_0/audio_pipe_hw_rst_ps7_0_50M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_rst_ps7_0_50M_0 || ORIG_REF_NAME==audio_pipe_hw_rst_ps7_0_50M_0} -quiet] -quiet
+
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/audio_pipe_hw_axi_smc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_axi_smc_0 || ORIG_REF_NAME==audio_pipe_hw_axi_smc_0} -quiet] -quiet
+
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_clk_wiz_0_0/audio_pipe_hw_clk_wiz_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_clk_wiz_0_0 || ORIG_REF_NAME==audio_pipe_hw_clk_wiz_0_0} -quiet] -quiet
+
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_rst_clk_wiz_0_12M_0/audio_pipe_hw_rst_clk_wiz_0_12M_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_rst_clk_wiz_0_12M_0 || ORIG_REF_NAME==audio_pipe_hw_rst_clk_wiz_0_12M_0} -quiet] -quiet
+
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_xlconcat_0_0/audio_pipe_hw_xlconcat_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_xlconcat_0_0 || ORIG_REF_NAME==audio_pipe_hw_xlconcat_0_0} -quiet] -quiet
+
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/audio_pipe_hw_ila_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_ila_0_0 || ORIG_REF_NAME==audio_pipe_hw_ila_0_0} -quiet] -quiet
+
 # XDC: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/audio_pipe_hw_ooc.xdc

@@ -73,7 +73,20 @@ COMPONENT audio_pipe_hw
     FIXED_IO_ddr_vrp : INOUT STD_LOGIC;
     FIXED_IO_ps_srstb : INOUT STD_LOGIC;
     FIXED_IO_ps_clk : INOUT STD_LOGIC;
-    FIXED_IO_ps_porb : INOUT STD_LOGIC
+    FIXED_IO_ps_porb : INOUT STD_LOGIC;
+    IIC_1_0_sda_i : IN STD_LOGIC;
+    IIC_1_0_sda_o : OUT STD_LOGIC;
+    IIC_1_0_sda_t : OUT STD_LOGIC;
+    IIC_1_0_scl_i : IN STD_LOGIC;
+    IIC_1_0_scl_o : OUT STD_LOGIC;
+    IIC_1_0_scl_t : OUT STD_LOGIC;
+    sdata_0_in_0 : IN STD_LOGIC;
+    sdata_0_out_0 : OUT STD_LOGIC;
+    sys_clock : IN STD_LOGIC;
+    sclk_out_0 : OUT STD_LOGIC;
+    lrclk_out_rec_0 : OUT STD_LOGIC;
+    lrclk_out_pb_0 : OUT STD_LOGIC;
+    MCLK_OUT : OUT STD_LOGIC
   );
 END COMPONENT;
 -- COMP_TAG_END ------  End cut for COMPONENT Declaration  ------
@@ -104,7 +117,20 @@ your_instance_name : audio_pipe_hw
     FIXED_IO_ddr_vrp => FIXED_IO_ddr_vrp,
     FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
     FIXED_IO_ps_clk => FIXED_IO_ps_clk,
-    FIXED_IO_ps_porb => FIXED_IO_ps_porb
+    FIXED_IO_ps_porb => FIXED_IO_ps_porb,
+    IIC_1_0_sda_i => IIC_1_0_sda_i,
+    IIC_1_0_sda_o => IIC_1_0_sda_o,
+    IIC_1_0_sda_t => IIC_1_0_sda_t,
+    IIC_1_0_scl_i => IIC_1_0_scl_i,
+    IIC_1_0_scl_o => IIC_1_0_scl_o,
+    IIC_1_0_scl_t => IIC_1_0_scl_t,
+    sdata_0_in_0 => sdata_0_in_0,
+    sdata_0_out_0 => sdata_0_out_0,
+    sys_clock => sys_clock,
+    sclk_out_0 => sclk_out_0,
+    lrclk_out_rec_0 => lrclk_out_rec_0,
+    lrclk_out_pb_0 => lrclk_out_pb_0,
+    MCLK_OUT => MCLK_OUT
   );
 -- INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

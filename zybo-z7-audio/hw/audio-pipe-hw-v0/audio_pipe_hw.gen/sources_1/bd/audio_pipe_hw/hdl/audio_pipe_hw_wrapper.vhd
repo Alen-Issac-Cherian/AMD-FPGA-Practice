@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
---Date        : Mon Jul  6 16:54:30 2026
+--Date        : Tue Jul  7 00:25:21 2026
 --Host        : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 --Command     : generate_target audio_pipe_hw_wrapper.bd
 --Design      : audio_pipe_hw_wrapper
@@ -34,7 +34,16 @@ entity audio_pipe_hw_wrapper is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    IIC_1_0_scl_io : inout STD_LOGIC;
+    IIC_1_0_sda_io : inout STD_LOGIC;
+    MCLK_OUT : out STD_LOGIC;
+    lrclk_out_pb_0 : out STD_LOGIC;
+    lrclk_out_rec_0 : out STD_LOGIC;
+    sclk_out_0 : out STD_LOGIC;
+    sdata_0_in_0 : in STD_LOGIC;
+    sdata_0_out_0 : out STD_LOGIC;
+    sys_clock : in STD_LOGIC
   );
 end audio_pipe_hw_wrapper;
 
@@ -61,10 +70,51 @@ architecture STRUCTURE of audio_pipe_hw_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC
+    FIXED_IO_ps_porb : inout STD_LOGIC;
+    IIC_1_0_sda_i : in STD_LOGIC;
+    IIC_1_0_sda_o : out STD_LOGIC;
+    IIC_1_0_sda_t : out STD_LOGIC;
+    IIC_1_0_scl_i : in STD_LOGIC;
+    IIC_1_0_scl_o : out STD_LOGIC;
+    IIC_1_0_scl_t : out STD_LOGIC;
+    sdata_0_in_0 : in STD_LOGIC;
+    sdata_0_out_0 : out STD_LOGIC;
+    sys_clock : in STD_LOGIC;
+    sclk_out_0 : out STD_LOGIC;
+    lrclk_out_rec_0 : out STD_LOGIC;
+    lrclk_out_pb_0 : out STD_LOGIC;
+    MCLK_OUT : out STD_LOGIC
   );
   end component audio_pipe_hw;
+  component IOBUF is
+  port (
+    I : in STD_LOGIC;
+    O : out STD_LOGIC;
+    T : in STD_LOGIC;
+    IO : inout STD_LOGIC
+  );
+  end component IOBUF;
+  signal IIC_1_0_scl_i : STD_LOGIC;
+  signal IIC_1_0_scl_o : STD_LOGIC;
+  signal IIC_1_0_scl_t : STD_LOGIC;
+  signal IIC_1_0_sda_i : STD_LOGIC;
+  signal IIC_1_0_sda_o : STD_LOGIC;
+  signal IIC_1_0_sda_t : STD_LOGIC;
 begin
+IIC_1_0_scl_iobuf: component IOBUF
+     port map (
+      I => IIC_1_0_scl_o,
+      IO => IIC_1_0_scl_io,
+      O => IIC_1_0_scl_i,
+      T => IIC_1_0_scl_t
+    );
+IIC_1_0_sda_iobuf: component IOBUF
+     port map (
+      I => IIC_1_0_sda_o,
+      IO => IIC_1_0_sda_io,
+      O => IIC_1_0_sda_i,
+      T => IIC_1_0_sda_t
+    );
 audio_pipe_hw_i: component audio_pipe_hw
      port map (
       DDR_addr(14 downto 0) => DDR_addr(14 downto 0),
@@ -87,6 +137,19 @@ audio_pipe_hw_i: component audio_pipe_hw
       FIXED_IO_mio(53 downto 0) => FIXED_IO_mio(53 downto 0),
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
-      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb
+      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      IIC_1_0_scl_i => IIC_1_0_scl_i,
+      IIC_1_0_scl_o => IIC_1_0_scl_o,
+      IIC_1_0_scl_t => IIC_1_0_scl_t,
+      IIC_1_0_sda_i => IIC_1_0_sda_i,
+      IIC_1_0_sda_o => IIC_1_0_sda_o,
+      IIC_1_0_sda_t => IIC_1_0_sda_t,
+      MCLK_OUT => MCLK_OUT,
+      lrclk_out_pb_0 => lrclk_out_pb_0,
+      lrclk_out_rec_0 => lrclk_out_rec_0,
+      sclk_out_0 => sclk_out_0,
+      sdata_0_in_0 => sdata_0_in_0,
+      sdata_0_out_0 => sdata_0_out_0,
+      sys_clock => sys_clock
     );
 end STRUCTURE;

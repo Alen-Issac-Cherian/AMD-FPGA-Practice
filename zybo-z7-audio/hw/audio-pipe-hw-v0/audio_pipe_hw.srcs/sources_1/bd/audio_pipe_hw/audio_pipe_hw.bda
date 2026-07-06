@@ -193,6 +193,42 @@
                 "VH": "2",
                 "VT": "PM",
                 "TU": "active"
+            },
+            "V3": {
+                "VT": "AC",
+                "BA": "0x43C00000",
+                "HA": "0x43C0FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_i2s_receiver_0_Reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/i2s_receiver_0",
+                "SI": "s_axi_ctrl",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:i2s_receiver:1.0",
+                "TM": "both",
+                "TU": "register"
+            },
+            "V4": {
+                "VT": "AC",
+                "BA": "0x43C10000",
+                "HA": "0x43C1FFFF",
+                "BP": "C_BASEADDR",
+                "HP": "C_HIGHADDR",
+                "MA": "Data",
+                "MX": "/processing_system7_0",
+                "MI": "M_AXI_GP0",
+                "MS": "SEG_i2s_transmitter_0_Reg",
+                "MV": "xilinx.com:ip:processing_system7:5.5",
+                "SX": "/i2s_transmitter_0",
+                "SI": "s_axi_ctrl",
+                "SS": "Reg",
+                "SV": "xilinx.com:ip:i2s_transmitter:1.0",
+                "TM": "both",
+                "TU": "register"
             }
         },
         "edges": [
@@ -203,6 +239,16 @@
             {
                 "src": "V1",
                 "trg": "V2"
+            },
+            {
+                "src": "V3",
+                "trg": "V2",
+                "EH": "2"
+            },
+            {
+                "src": "V4",
+                "trg": "V2",
+                "EH": "2"
             }
         ]
     }

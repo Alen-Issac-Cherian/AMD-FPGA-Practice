@@ -1,3 +1,9 @@
+i2s_receiver_0:
+- i2s_receiver
+- i2srx
+i2s_transmitter_0:
+- i2s_transmitter
+- i2stx
 ps7_afi_0:
 - ps7_afi
 - None
@@ -37,6 +43,9 @@ ps7_gpio_0:
 ps7_gpv_0:
 - ps7_gpv
 - None
+ps7_i2c_1:
+- ps7_i2c
+- iicps
 ps7_intc_dist_0:
 - ps7_intc_dist
 - scugic

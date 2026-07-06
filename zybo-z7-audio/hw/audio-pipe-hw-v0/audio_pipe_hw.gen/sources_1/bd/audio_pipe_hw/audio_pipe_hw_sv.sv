@@ -94,7 +94,33 @@ module audio_pipe_hw_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   inout wire FIXED_IO_ps_clk,
   (* X_INTERFACE_IGNORE = "true" *)
-  inout wire FIXED_IO_ps_porb
+  inout wire FIXED_IO_ps_porb,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire IIC_1_0_sda_i,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire IIC_1_0_sda_o,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire IIC_1_0_sda_t,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire IIC_1_0_scl_i,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire IIC_1_0_scl_o,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire IIC_1_0_scl_t,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire sdata_0_in_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire sdata_0_out_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  input wire sys_clock,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire sclk_out_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire lrclk_out_rec_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire lrclk_out_pb_0,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire MCLK_OUT
 );
 
   audio_pipe_hw inst (
@@ -118,7 +144,20 @@ module audio_pipe_hw_sv (
     .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
     .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
     .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
-    .FIXED_IO_ps_porb(FIXED_IO_ps_porb)
+    .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
+    .IIC_1_0_sda_i(IIC_1_0_sda_i),
+    .IIC_1_0_sda_o(IIC_1_0_sda_o),
+    .IIC_1_0_sda_t(IIC_1_0_sda_t),
+    .IIC_1_0_scl_i(IIC_1_0_scl_i),
+    .IIC_1_0_scl_o(IIC_1_0_scl_o),
+    .IIC_1_0_scl_t(IIC_1_0_scl_t),
+    .sdata_0_in_0(sdata_0_in_0),
+    .sdata_0_out_0(sdata_0_out_0),
+    .sys_clock(sys_clock),
+    .sclk_out_0(sclk_out_0),
+    .lrclk_out_rec_0(lrclk_out_rec_0),
+    .lrclk_out_pb_0(lrclk_out_pb_0),
+    .MCLK_OUT(MCLK_OUT)
   );
 
 endmodule
