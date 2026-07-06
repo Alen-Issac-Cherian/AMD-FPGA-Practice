@@ -20,16 +20,14 @@
         };
 
         cpus_a9: cpus-a9@0 {
-                phandle = <0x30>;
+                phandle = <0x2f>;
                 #address-cells = <0x1>;
                 #size-cells = <0x0>;
                 compatible = "cpus,cluster";
                 address-map = <0xf0000000 &amba 0xf0000000 0x10000000>,
-                 <0x100000 &ps7_ddr_0_memory 0x100000 0x1ff00000>,
+                 <0x100000 &ps7_ddr_0_memory 0x100000 0x3ff00000>,
                  <0x0 &ps7_ram_0_memory 0x0 0x30000>,
                  <0xffff0000 &ps7_ram_1_memory 0xffff0000 0xfe00>,
-                 <0x43c00000 &i2s_receiver_0 0x43c00000 0x10000>,
-                 <0x43c10000 &i2s_transmitter_0 0x43c10000 0x10000>,
                  <0xf8008000 &ps7_afi_0 0xf8008000 0x1000>,
                  <0xf8009000 &ps7_afi_1 0xf8009000 0x1000>,
                  <0xf800a000 &ps7_afi_2 0xf800a000 0x1000>,
@@ -39,22 +37,24 @@
                  <0xf8007000 &devcfg 0xf8007000 0x100>,
                  <0xf8004000 &ps7_dma_ns 0xf8004000 0x1000>,
                  <0xf8003000 &dmac_s 0xf8003000 0x1000>,
+                 <0xe000b000 &gem0 0xe000b000 0x1000>,
                  <0xf8f00200 &global_timer 0xf8f00200 0x100>,
+                 <0xe000a000 &gpio0 0xe000a000 0x1000>,
                  <0xf8900000 &ps7_gpv_0 0xf8900000 0x100000>,
-                 <0xe0005000 &i2c1 0xe0005000 0x1000>,
                  <0xf8f01000 &intc 0xf8f01000 0x1000>,
                  <0xe0200000 &ps7_iop_bus_config_0 0xe0200000 0x1000>,
                  <0xf8f02000 &L2 0xf8f02000 0x1000>,
                  <0xf800c000 &ps7_ocmc_0 0xf800c000 0x1000>,
                  <0xf8891000 &ps7_pmu_0 0xf8891000 0x1000>,
+                 <0xe000d000 &qspi 0xe000d000 0x1000>,
+                 <0xfc000000 &ps7_qspi_linear_0_memory 0xfc000000 0x1000000>,
                  <0xf8f00000 &ps7_scuc_0 0xf8f00000 0xfd>,
                  <0xf8f00600 &scutimer 0xf8f00600 0x20>,
                  <0xf8f00620 &scuwdt 0xf8f00620 0xe0>,
                  <0xe0100000 &sdhci0 0xe0100000 0x1000>,
-                 <0xe0101000 &sdhci1 0xe0101000 0x1000>,
                  <0xf8000000 &slcr 0xf8000000 0x1000>,
-                 <0xe0007000 &spi1 0xe0007000 0x1000>,
-                 <0xe0000000 &uart0 0xe0000000 0x1000>,
+                 <0xe0001000 &uart1 0xe0001000 0x1000>,
+                 <0xe0002000 &usb0 0xe0002000 0x1000>,
                  <0xf8007100 &adc 0xf8007100 0x21>;
                 #ranges-address-cells = <0x1>;
                 #ranges-size-cells = <0x1>;
@@ -97,7 +97,7 @@
         };
 
         fpga_full: fpga-region {
-                phandle = <0x31>;
+                phandle = <0x30>;
                 compatible = "fpga-region";
                 fpga-mgr = <&devcfg>;
                 #address-cells = <0x1>;
@@ -186,7 +186,7 @@
                 };
 
                 gpio0: gpio@e000a000 {
-                        phandle = <0x34>;
+                        phandle = <0x10>;
                         compatible = "xlnx,zynq-gpio-1.0";
                         #gpio-cells = <0x2>;
                         clocks = <&clkc 0x2a>;
@@ -196,28 +196,18 @@
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0x14 0x4>;
                         reg = <0xe000a000 0x1000>;
-                };
-
-                i2c1: i2c@e0005000 {
-                        phandle = <0x12>;
-                        compatible = "cdns,i2c-r1p10";
+                        xlnx,mio-gpio-mask = <0x5600>;
                         status = "okay";
-                        clocks = <&clkc 0x27>;
-                        interrupt-parent = <&intc>;
-                        interrupts = <0x0 0x30 0x4>;
-                        clock-frequency = <0x61a80>;
-                        reg = <0xe0005000 0x1000>;
-                        #address-cells = <0x1>;
-                        #size-cells = <0x0>;
-                        xlnx,has-interrupt = <0x0>;
-                        xlnx,clock-freq = <0x69f6bcb>;
-                        xlnx,i2c-clk-freq-hz = <0x69f6bcb>;
-                        xlnx,ip-name = "ps7_i2c";
-                        xlnx,name = "ps7_i2c_1";
+                        gpio-mask-high = <0x0>;
+                        xlnx,emio-gpio-width = <0x40>;
+                        xlnx,ip-name = "ps7_gpio";
+                        gpio-mask-low = <0x5600>;
+                        emio-gpio-width = <0x40>;
+                        xlnx,name = "ps7_gpio_0";
                 };
 
                 intc: interrupt-controller@f8f01000 {
-                        phandle = <0x13>;
+                        phandle = <0x12>;
                         compatible = "arm,cortex-a9-gic";
                         #interrupt-cells = <0x3>;
                         interrupt-controller;
@@ -229,7 +219,7 @@
                 };
 
                 L2: cache-controller@f8f02000 {
-                        phandle = <0x15>;
+                        phandle = <0x14>;
                         compatible = "arm,pl310-cache";
                         reg = <0xf8f02000 0x1000>;
                         interrupts = <0x0 0x2 0x4>;
@@ -243,7 +233,7 @@
                 };
 
                 mc: memory-controller@f8006000 {
-                        phandle = <0xc>;
+                        phandle = <0xa>;
                         compatible = "xlnx,zynq-ddrc-a05";
                         reg = <0xf8006000 0x1000>;
                         status = "okay";
@@ -254,7 +244,7 @@
                 };
 
                 ocm: sram@fffc0000 {
-                        phandle = <0x36>;
+                        phandle = <0x35>;
                         compatible = "mmio-sram";
                         reg = <0xfffc0000 0x10000>;
                         #address-cells = <0x1>;
@@ -266,15 +256,15 @@
                         };
                 };
 
-                uart0: serial@e0000000 {
-                        phandle = <0x1f>;
+                uart1: serial@e0001000 {
+                        phandle = <0x1e>;
                         compatible = "xlnx,xuartps", "cdns,uart-r1p8";
                         status = "okay";
-                        clocks = <&clkc 0x17>,
-                         <&clkc 0x28>;
+                        clocks = <&clkc 0x18>,
+                         <&clkc 0x29>;
                         clock-names = "uart_clk", "pclk";
-                        reg = <0xe0000000 0x1000>;
-                        interrupts = <0x0 0x1b 0x4>;
+                        reg = <0xe0001000 0x1000>;
+                        interrupts = <0x0 0x32 0x4>;
                         interrupt-parent = <&intc>;
                         xlnx,clock-freq = <0x5f5e100>;
                         xlnx,has-modem = <0x0>;
@@ -282,32 +272,67 @@
                         cts-override;
                         port-number = <0x0>;
                         xlnx,uart-clk-freq-hz = <0x5f5e100>;
-                        xlnx,name = "ps7_uart_0";
+                        xlnx,name = "ps7_uart_1";
                 };
 
-                spi1: spi@e0007000 {
-                        phandle = <0x1e>;
-                        compatible = "xlnx,zynq-spi-r1p6";
-                        reg = <0xe0007000 0x1000>;
-                        status = "okay";
+                qspi: spi@e000d000 {
+                        phandle = <0x17>;
+                        compatible = "xlnx,zynq-qspi-1.0";
+                        reg = <0xe000d000 0x1000>;
                         interrupt-parent = <&intc>;
-                        interrupts = <0x0 0x31 0x4>;
-                        clocks = <&clkc 0x1a>,
-                         <&clkc 0x23>;
+                        interrupts = <0x0 0x13 0x4>;
+                        clocks = <&clkc 0xa>,
+                         <&clkc 0x2b>;
                         clock-names = "ref_clk", "pclk";
+                        status = "okay";
                         #address-cells = <0x1>;
                         #size-cells = <0x0>;
-                        xlnx,has-ss0 = <0x1>;
-                        xlnx,ip-name = "ps7_spi";
-                        xlnx,has-ss1 = <0x0>;
+                        xlnx,qspi-fbclk = <0x0>;
                         num-cs = <0x1>;
-                        xlnx,spi-clk-freq-hz = <0x9ef21b0>;
-                        xlnx,has-ss2 = <0x0>;
-                        xlnx,name = "ps7_spi_1";
+                        xlnx,qspi-clk-freq-hz = <0xbebc200>;
+                        xlnx,bus-width = <0x2>;
+                        xlnx,ip-name = "ps7_qspi";
+                        spi-rx-bus-width = <0x4>;
+                        xlnx,connection-mode = <0x0>;
+                        spi-tx-bus-width = <0x4>;
+                        xlnx,clock-freq = <0xbebc200>;
+                        xlnx,fb-clk = <0x1>;
+                        xlnx,qspi-mode = <0x0>;
+                        xlnx,name = "ps7_qspi_0";
+                        xlnx,qspi-bus-width = <0x2>;
+                        is-dual = <0x0>;
+                };
+
+                gem0: ethernet@e000b000 {
+                        phandle = <0xe>;
+                        compatible = "xlnx,zynq-gem", "cdns,gem";
+                        reg = <0xe000b000 0x1000>;
+                        status = "okay";
+                        interrupts = <0x0 0x16 0x4>;
+                        interrupt-parent = <&intc>;
+                        clocks = <&clkc 0x1e>,
+                         <&clkc 0x1e>,
+                         <&clkc 0xd>;
+                        clock-names = "pclk", "hclk", "tx_clk";
+                        #address-cells = <0x1>;
+                        #size-cells = <0x0>;
+                        xlnx,has-mdio = <0x1>;
+                        phy-mode = "rgmii-id";
+                        xlnx,enet-slcr-1000mbps-div0 = <0x8>;
+                        xlnx,enet-slcr-10mbps-div0 = <0x8>;
+                        xlnx,enet-slcr-1000mbps-div1 = <0x1>;
+                        xlnx,enet-slcr-10mbps-div1 = <0x32>;
+                        xlnx,ip-name = "ps7_ethernet";
+                        xlnx,eth-mode = <0x1>;
+                        xlnx,enet-clk-freq-hz = <0x7735940>;
+                        xlnx,enet-slcr-100mbps-div0 = <0x8>;
+                        xlnx,ptp-enet-clock = <0x69f6bcb>;
+                        xlnx,enet-slcr-100mbps-div1 = <0x5>;
+                        xlnx,name = "ps7_ethernet_0";
                 };
 
                 sdhci0: mmc@e0100000 {
-                        phandle = <0x1b>;
+                        phandle = <0x1c>;
                         compatible = "arasan,sdhci-8.9a";
                         status = "okay";
                         clock-names = "clk_xin", "clk_ahb";
@@ -318,28 +343,10 @@
                         reg = <0xe0100000 0x1000>;
                         xlnx,has-power = <0x0>;
                         xlnx,ip-name = "ps7_sdio";
-                        xlnx,sdio-clk-freq-hz = <0x5f5e100>;
+                        xlnx,sdio-clk-freq-hz = <0x2faf080>;
                         xlnx,has-wp = <0x0>;
-                        xlnx,has-cd = <0x0>;
+                        xlnx,has-cd = <0x1>;
                         xlnx,name = "ps7_sd_0";
-                };
-
-                sdhci1: mmc@e0101000 {
-                        phandle = <0x1c>;
-                        compatible = "arasan,sdhci-8.9a";
-                        status = "okay";
-                        clock-names = "clk_xin", "clk_ahb";
-                        clocks = <&clkc 0x16>,
-                         <&clkc 0x21>;
-                        interrupt-parent = <&intc>;
-                        interrupts = <0x0 0x2f 0x4>;
-                        reg = <0xe0101000 0x1000>;
-                        xlnx,has-power = <0x0>;
-                        xlnx,ip-name = "ps7_sdio";
-                        xlnx,sdio-clk-freq-hz = <0x5f5e100>;
-                        xlnx,has-wp = <0x0>;
-                        xlnx,has-cd = <0x0>;
-                        xlnx,name = "ps7_sd_1";
                 };
 
                 slcr: slcr@f8000000 {
@@ -359,14 +366,14 @@
                                 bootph-all;
                                 #clock-cells = <0x1>;
                                 compatible = "xlnx,ps7-clkc";
-                                fclk-enable = <0x1>;
+                                fclk-enable = <0x0>;
                                 clock-output-names = "armpll", "ddrpll", "iopll", "cpu_6or4x", "cpu_3or2x", "cpu_2x", "cpu_1x", "ddr2x", "ddr3x", "dci", "lqspi", "smc", "pcap", "gem0", "gem1", "fclk0", "fclk1", "fclk2", "fclk3", "can0", "can1", "sdio0", "sdio1", "uart0", "uart1", "spi0", "spi1", "dma", "usb0_aper", "usb1_aper", "gem0_aper", "gem1_aper", "sdio0_aper", "sdio1_aper", "spi0_aper", "spi1_aper", "can0_aper", "can1_aper", "i2c0_aper", "i2c1_aper", "uart0_aper", "uart1_aper", "gpio_aper", "lqspi_aper", "smc_aper", "swdt", "dbg_trc", "dbg_apb";
                                 reg = <0x100 0x100>;
                                 ps-clk-frequency = <0x1fca055>;
                         };
 
                         rstc: rstc@200 {
-                                phandle = <0x3f>;
+                                phandle = <0x3e>;
                                 compatible = "xlnx,zynq-reset";
                                 reg = <0x200 0x48>;
                                 #reset-cells = <0x1>;
@@ -374,7 +381,7 @@
                         };
 
                         pinctrl0: pinctrl@700 {
-                                phandle = <0x40>;
+                                phandle = <0x3f>;
                                 compatible = "xlnx,pinctrl-zynq";
                                 reg = <0x700 0x200>;
                                 syscon = <&slcr>;
@@ -382,7 +389,7 @@
                 };
 
                 dmac_s: dma-controller@f8003000 {
-                        phandle = <0xf>;
+                        phandle = <0xd>;
                         compatible = "arm,pl330", "arm,primecell";
                         reg = <0xf8003000 0x1000>;
                         interrupt-parent = <&intc>;
@@ -397,7 +404,7 @@
                 };
 
                 devcfg: devcfg@f8007000 {
-                        phandle = <0xd>;
+                        phandle = <0xb>;
                         compatible = "xlnx,zynq-devcfg-1.0";
                         reg = <0xf8007000 0x100>;
                         interrupt-parent = <&intc>;
@@ -415,13 +422,13 @@
                 };
 
                 efuse: efuse@f800d000 {
-                        phandle = <0x41>;
+                        phandle = <0x40>;
                         compatible = "xlnx,zynq-efuse";
                         reg = <0xf800d000 0x20>;
                 };
 
                 global_timer: timer@f8f00200 {
-                        phandle = <0x10>;
+                        phandle = <0xf>;
                         compatible = "arm,cortex-a9-global-timer";
                         reg = <0xf8f00200 0x20>;
                         interrupts = <0x1 0xb 0x301>;
@@ -433,7 +440,7 @@
                 };
 
                 ttc0: timer@f8001000 {
-                        phandle = <0x42>;
+                        phandle = <0x41>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0xa 0x4 0x0 0xb 0x4 0x0 0xc 0x4>;
                         compatible = "cdns,ttc";
@@ -442,7 +449,7 @@
                 };
 
                 ttc1: timer@f8001004 {
-                        phandle = <0x4d>;
+                        phandle = <0x4a>;
                         reg = <0xf8001004 0xffc>;
                         clocks = <&clkc 0x6>;
                         compatible = "cdns,ttc";
@@ -452,7 +459,7 @@
                 };
 
                 ttc2: timer@f8001008 {
-                        phandle = <0x4e>;
+                        phandle = <0x4b>;
                         reg = <0xf8001008 0xff8>;
                         clocks = <&clkc 0x6>;
                         compatible = "cdns,ttc";
@@ -462,7 +469,7 @@
                 };
 
                 ttc3: timer@f8002000 {
-                        phandle = <0x43>;
+                        phandle = <0x42>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x0 0x25 0x4 0x0 0x26 0x4 0x0 0x27 0x4>;
                         compatible = "cdns,ttc";
@@ -471,7 +478,7 @@
                 };
 
                 ttc4: timer@f8002004 {
-                        phandle = <0x4f>;
+                        phandle = <0x4c>;
                         reg = <0xf8002004 0xffc>;
                         clocks = <&clkc 0x6>;
                         compatible = "cdns,ttc";
@@ -481,7 +488,7 @@
                 };
 
                 ttc5: timer@f8002008 {
-                        phandle = <0x50>;
+                        phandle = <0x4d>;
                         reg = <0xf8002008 0xff8>;
                         clocks = <&clkc 0x6>;
                         compatible = "cdns,ttc";
@@ -491,7 +498,7 @@
                 };
 
                 scutimer: timer@f8f00600 {
-                        phandle = <0x19>;
+                        phandle = <0x1a>;
                         bootph-all;
                         interrupt-parent = <&intc>;
                         interrupts = <0x1 0xd 0x301>;
@@ -504,7 +511,7 @@
                 };
 
                 scuwdt: scuwatchdog@f8f00620 {
-                        phandle = <0x1a>;
+                        phandle = <0x1b>;
                         interrupt-parent = <&intc>;
                         interrupts = <0x1 0xe 0x4>;
                         compatible = "xlnx,ps7-scuwdt-1.00.a";
@@ -514,8 +521,24 @@
                         xlnx,name = "ps7_scuwdt_0";
                 };
 
+                usb0: usb@e0002000 {
+                        phandle = <0x1f>;
+                        compatible = "xlnx,zynq-usb-2.20a", "chipidea,usb2";
+                        status = "okay";
+                        clocks = <&clkc 0x1c>;
+                        interrupt-parent = <&intc>;
+                        interrupts = <0x0 0x15 0x4>;
+                        reg = <0xe0002000 0x1000>;
+                        phy_type = "ulpi";
+                        xlnx,usb-reset = "MIO , 46";
+                        xlnx,ip-name = "ps7_usb";
+                        xlnx,enable-superspeed = <0x0>;
+                        usb-reset = <0x10 0x2e 0x0>;
+                        xlnx,name = "ps7_usb_0";
+                };
+
                 watchdog0: watchdog@f8005000 {
-                        phandle = <0x46>;
+                        phandle = <0x44>;
                         clocks = <&clkc 0x2d>;
                         compatible = "cdns,wdt-r1p2";
                         interrupt-parent = <&intc>;
@@ -525,7 +548,7 @@
                 };
 
                 coresight: coresight@f8800000 {
-                        phandle = <0xb>;
+                        phandle = <0x9>;
                         compatible = "xlnx,ps7-coresight-comp-1.00.a";
                         status = "okay";
                         reg = <0xf8800000 0x100000>;
@@ -663,7 +686,7 @@
                 };
 
                 ps7_pmu_0: ps7_pmu@f8891000 {
-                        phandle = <0x17>;
+                        phandle = <0x16>;
                         compatible = "xlnx,ps7-pmu-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_pmu";
@@ -672,7 +695,7 @@
                 };
 
                 ps7_ocmc_0: ps7_ocmc@f800c000 {
-                        phandle = <0x16>;
+                        phandle = <0x15>;
                         compatible = "xlnx,ps7-ocmc-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_ocmc";
@@ -690,7 +713,7 @@
                 };
 
                 ps7_scuc_0: ps7_scuc@f8f00000 {
-                        phandle = <0x18>;
+                        phandle = <0x19>;
                         compatible = "xlnx,ps7-scuc-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_scuc";
@@ -699,7 +722,7 @@
                 };
 
                 ps7_iop_bus_config_0: ps7_iop_bus_config@e0200000 {
-                        phandle = <0x14>;
+                        phandle = <0x13>;
                         compatible = "xlnx,ps7-iop-bus-config-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_iop_bus_config";
@@ -708,7 +731,7 @@
                 };
 
                 ps7_dma_ns: ps7_dma@f8004000 {
-                        phandle = <0xe>;
+                        phandle = <0xc>;
                         compatible = "xlnx,ps7-dma-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_dma";
@@ -718,7 +741,7 @@
                 };
 
                 ps7_afi_0: ps7_afi@f8008000 {
-                        phandle = <0x7>;
+                        phandle = <0x5>;
                         compatible = "xlnx,ps7-afi-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_afi";
@@ -727,7 +750,7 @@
                 };
 
                 ps7_afi_1: ps7_afi@f8009000 {
-                        phandle = <0x8>;
+                        phandle = <0x6>;
                         compatible = "xlnx,ps7-afi-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_afi";
@@ -736,7 +759,7 @@
                 };
 
                 ps7_afi_2: ps7_afi@f800a000 {
-                        phandle = <0x9>;
+                        phandle = <0x7>;
                         compatible = "xlnx,ps7-afi-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_afi";
@@ -745,87 +768,27 @@
                 };
 
                 ps7_afi_3: ps7_afi@f800b000 {
-                        phandle = <0xa>;
+                        phandle = <0x8>;
                         compatible = "xlnx,ps7-afi-1.00.a";
                         status = "okay";
                         xlnx,ip-name = "ps7_afi";
                         reg = <0xf800b000 0x1000>;
                         xlnx,name = "ps7_afi_3";
                 };
+
+                ps7_qspi_linear_0: ps7_qspi_linear@fc000000 {
+                        phandle = <0x49>;
+                        reg = <0xfc000000 0x1000000>;
+                };
         };
 
-        amba_pl: amba_pl {
-                phandle = <0x4b>;
-                ranges;
-                compatible = "simple-bus";
-                #address-cells = <0x1>;
-                #size-cells = <0x1>;
-                firmware-name = "audio_pipe_hw_wrapper.bit.bin";
-
-                clocking0: clocking0 {
-                        phandle = <0x4c>;
-                        compatible = "xlnx,fclk";
-                        assigned-clocks = <&clkc 0xf>;
-                        assigned-clock-rates = <0x2faf080>;
-                        #clock-cells = <0x0>;
-                        clock-output-names = "fabric_clk";
-                        clocks = <&clkc 0xf>;
-                };
-
-                misc_clk_0: misc_clk_0 {
-                        phandle = <0x2f>;
-                        compatible = "fixed-clock";
-                        clock-frequency = <0xbb800d>;
-                        #clock-cells = <0x0>;
-                };
-
-                i2s_receiver_0: i2s_receiver@43c00000 {
-                        phandle = <0x5>;
-                        aud_mclk = <0xbb800d>;
-                        interrupts = <0x0 0x1d 0x4>;
-                        compatible = "xlnx,i2s-receiver-1.0", "xlnx,i2s-receiver-1.0";
-                        xlnx,dwidth = <0x18>;
-                        xlnx,depth = <0x80>;
-                        interrupt-parent = <&intc>;
-                        xlnx,ip-name = "i2s_receiver";
-                        reg = <0x43c00000 0x10000>;
-                        clocks = <&misc_clk_0>,
-                         <&clkc 0xf>,
-                         <&clkc 0xf>;
-                        xlnx,num-channels = <0x1>;
-                        xlnx,i2srx-board-interface = "Custom";
-                        xlnx,edk-iptype = "PERIPHERAL";
-                        xlnx,is-master = <0x1>;
-                        status = "okay";
-                        clock-names = "aud_mclk", "m_axis_aud_aclk", "s_axi_ctrl_aclk";
-                        xlnx,32bit-lr = <0x0>;
-                        interrupt-names = "irq";
-                        xlnx,name = "i2s_receiver_0";
-                };
-
-                i2s_transmitter_0: i2s_transmitter@43c10000 {
-                        phandle = <0x6>;
-                        aud_mclk = <0xbb800d>;
-                        interrupts = <0x0 0x1e 0x4>;
-                        compatible = "xlnx,i2s-transmitter-1.0", "xlnx,i2s-transmitter-1.0";
-                        xlnx,dwidth = <0x18>;
-                        xlnx,depth = <0x80>;
-                        interrupt-parent = <&intc>;
-                        xlnx,ip-name = "i2s_transmitter";
-                        reg = <0x43c10000 0x10000>;
-                        clocks = <&misc_clk_0>,
-                         <&clkc 0xf>,
-                         <&clkc 0xf>;
-                        xlnx,num-channels = <0x1>;
-                        xlnx,edk-iptype = "PERIPHERAL";
-                        xlnx,is-master = <0x0>;
-                        xlnx,i2stx-board-interface = "Custom";
-                        status = "okay";
-                        clock-names = "aud_mclk", "s_axi_ctrl_aclk", "s_axis_aud_aclk";
-                        xlnx,32bit-lr = <0x0>;
-                        interrupt-names = "irq";
-                        xlnx,name = "i2s_transmitter_0";
-                };
+        ps7_qspi_linear_0_memory: memory@fc000000 {
+                phandle = <0x18>;
+                compatible = "xlnx,ps7-qspi-linear-1.00.a-memory";
+                xlnx,ip-name = "ps7_qspi_linear";
+                device_type = "memory";
+                memory_type = "linear_flash";
+                reg = <0xfc000000 0x1000000>;
         };
 
         ps7_ddr_0_memory: memory@00100000 {
@@ -834,7 +797,7 @@
                 xlnx,ip-name = "ps7_ddr";
                 device_type = "memory";
                 memory_type = "memory";
-                reg = <0x100000 0x1ff00000>;
+                reg = <0x100000 0x3ff00000>;
         };
 
         ps7_ram_0_memory: memory@0 {
@@ -860,9 +823,10 @@
         };
 
         aliases {
-                serial0 = "/axi/serial@e0000000";
+                serial0 = "/axi/serial@e0001000";
+                spi0 = "/axi/spi@e000d000";
                 serial1 = "/axi/coresight@f8800000";
-                i2c0 = "/axi/i2c@e0005000";
+                ethernet0 = "/axi/ethernet@e000b000";
         };
 
         __symbols__ {
@@ -877,15 +841,14 @@
                 amba = "/axi";
                 adc = "/axi/adc@f8007100";
                 gpio0 = "/axi/gpio@e000a000";
-                i2c1 = "/axi/i2c@e0005000";
                 intc = "/axi/interrupt-controller@f8f01000";
                 L2 = "/axi/cache-controller@f8f02000";
                 mc = "/axi/memory-controller@f8006000";
                 ocm = "/axi/sram@fffc0000";
-                uart0 = "/axi/serial@e0000000";
-                spi1 = "/axi/spi@e0007000";
+                uart1 = "/axi/serial@e0001000";
+                qspi = "/axi/spi@e000d000";
+                gem0 = "/axi/ethernet@e000b000";
                 sdhci0 = "/axi/mmc@e0100000";
-                sdhci1 = "/axi/mmc@e0101000";
                 slcr = "/axi/slcr@f8000000";
                 clkc = "/axi/slcr@f8000000/clkc@100";
                 rstc = "/axi/slcr@f8000000/rstc@200";
@@ -896,6 +859,7 @@
                 global_timer = "/axi/timer@f8f00200";
                 scutimer = "/axi/timer@f8f00600";
                 scuwdt = "/axi/scuwatchdog@f8f00620";
+                usb0 = "/axi/usb@e0002000";
                 watchdog0 = "/axi/watchdog@f8005000";
                 coresight = "/axi/coresight@f8800000";
                 etb_in_port = "/axi/etb@f8801000/in-ports/port/endpoint";
@@ -915,11 +879,8 @@
                 ps7_afi_1 = "/axi/ps7_afi@f8009000";
                 ps7_afi_2 = "/axi/ps7_afi@f800a000";
                 ps7_afi_3 = "/axi/ps7_afi@f800b000";
-                amba_pl = "/amba_pl";
-                clocking0 = "/amba_pl/clocking0";
-                misc_clk_0 = "/amba_pl/misc_clk_0";
-                i2s_receiver_0 = "/amba_pl/i2s_receiver@43c00000";
-                i2s_transmitter_0 = "/amba_pl/i2s_transmitter@43c10000";
+                ps7_qspi_linear_0 = "/axi/ps7_qspi_linear@fc000000";
+                ps7_qspi_linear_0_memory = "/memory@fc000000";
                 ps7_ddr_0_memory = "/memory@00100000";
                 ps7_ram_0_memory = "/memory@0";
                 ps7_ram_1_memory = "/memory@ffff0000";

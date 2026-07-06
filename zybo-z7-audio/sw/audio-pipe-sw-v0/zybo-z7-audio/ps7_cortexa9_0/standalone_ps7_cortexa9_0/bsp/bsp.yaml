@@ -59,22 +59,22 @@ os_config:
       name: standalone_stdin
       permission: read_write
       type: string
-      value: ps7_uart_0
-      default: ps7_uart_0
+      value: ps7_uart_1
+      default: ps7_uart_1
       options:
       - None
-      - ps7_uart_0
+      - ps7_uart_1
       - ps7_coresight_comp_0
       description: stdin peripheral
     standalone_stdout:
       name: standalone_stdout
       permission: read_write
       type: string
-      value: ps7_uart_0
-      default: ps7_uart_0
+      value: ps7_uart_1
+      default: ps7_uart_1
       options:
       - None
-      - ps7_uart_0
+      - ps7_uart_1
       - ps7_coresight_comp_0
       description: stdout peripheral
     standalone_ttc_select_cntr:
@@ -152,14 +152,6 @@ include_folder: include
 lib_folder: lib
 libsrc_folder: libsrc
 drv_info:
-  i2s_receiver_0:
-    driver: i2srx
-    ip_name: i2s_receiver
-    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/i2srx_v2_4
-  i2s_transmitter_0:
-    driver: i2stx
-    ip_name: i2s_transmitter
-    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/i2stx_v2_4
   ps7_afi_0: None
   ps7_afi_1: None
   ps7_afi_2: None
@@ -178,12 +170,16 @@ drv_info:
     driver: dmaps
     ip_name: ps7_dma
     path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_11
+  ps7_ethernet_0:
+    driver: emacps
+    ip_name: ps7_ethernet
+    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/emacps_v3_23
   ps7_globaltimer_0: None
+  ps7_gpio_0:
+    driver: gpiops
+    ip_name: ps7_gpio
+    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_14
   ps7_gpv_0: None
-  ps7_i2c_1:
-    driver: iicps
-    ip_name: ps7_i2c
-    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/iicps_v3_22
   ps7_intc_dist_0:
     driver: scugic
     ip_name: ps7_intc_dist
@@ -192,6 +188,10 @@ drv_info:
   ps7_ocmc_0: None
   ps7_pl310_0: None
   ps7_pmu_0: None
+  ps7_qspi_0:
+    driver: qspips
+    ip_name: ps7_qspi
+    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/qspips_v3_14
   ps7_scuc_0: None
   ps7_scutimer_0:
     driver: scutimer
@@ -205,19 +205,15 @@ drv_info:
     driver: sdps
     ip_name: ps7_sdio
     path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/sdps_v4_5
-  ps7_sd_1:
-    driver: sdps
-    ip_name: ps7_sdio
-    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/sdps_v4_5
   ps7_slcr_0: None
-  ps7_spi_1:
-    driver: spips
-    ip_name: ps7_spi
-    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/spips_v3_13
-  ps7_uart_0:
+  ps7_uart_1:
     driver: uartps
     ip_name: ps7_uart
     path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_17
+  ps7_usb_0:
+    driver: usbps
+    ip_name: ps7_usb
+    path: /home/alen/AMD-Xilinx/2025.2/Vitis/data/embeddedsw/XilinxProcessorIPLib/drivers/usbps_v2_10
   ps7_xadc_0:
     driver: xadcps
     ip_name: ps7_xadc

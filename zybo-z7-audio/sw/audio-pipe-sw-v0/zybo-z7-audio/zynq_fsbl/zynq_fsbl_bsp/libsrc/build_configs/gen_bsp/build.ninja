@@ -124,7 +124,7 @@ build CMakeFiles/print_compiler | ${cmake_ninja_workdir}CMakeFiles/print_compile
 #############################################
 # Utility command for combined
 
-build libsrc/combined: phony libsrc/CMakeFiles/combined libsrc/coresightps_dcc/src/libcoresightps_dcc.a libsrc/devcfg/src/libdevcfg.a libsrc/dmaps/src/libdmaps.a libsrc/i2srx/src/libi2srx.a libsrc/i2stx/src/libi2stx.a libsrc/iicps/src/libiicps.a libsrc/scugic/src/libscugic.a libsrc/scutimer/src/libscutimer.a libsrc/scuwdt/src/libscuwdt.a libsrc/sdps/src/libsdps.a libsrc/spips/src/libspips.a libsrc/uartps/src/libuartps.a libsrc/xadcps/src/libxadcps.a
+build libsrc/combined: phony libsrc/CMakeFiles/combined libsrc/coresightps_dcc/src/libcoresightps_dcc.a libsrc/devcfg/src/libdevcfg.a libsrc/dmaps/src/libdmaps.a libsrc/emacps/src/libemacps.a libsrc/gpiops/src/libgpiops.a libsrc/qspips/src/libqspips.a libsrc/scugic/src/libscugic.a libsrc/scutimer/src/libscutimer.a libsrc/scuwdt/src/libscuwdt.a libsrc/sdps/src/libsdps.a libsrc/uartps/src/libuartps.a libsrc/usbps/src/libusbps.a libsrc/xadcps/src/libxadcps.a
 
 
 #############################################
@@ -196,7 +196,7 @@ build libsrc/install/strip: phony libsrc/CMakeFiles/install/strip.util
 #############################################
 # Custom command for libsrc/CMakeFiles/combined
 
-build libsrc/CMakeFiles/combined | ${cmake_ninja_workdir}libsrc/CMakeFiles/combined: CUSTOM_COMMAND libsrc/coresightps_dcc/src/libcoresightps_dcc.a libsrc/devcfg/src/libdevcfg.a libsrc/dmaps/src/libdmaps.a libsrc/i2srx/src/libi2srx.a libsrc/i2stx/src/libi2stx.a libsrc/iicps/src/libiicps.a libsrc/scugic/src/libscugic.a libsrc/scutimer/src/libscutimer.a libsrc/scuwdt/src/libscuwdt.a libsrc/sdps/src/libsdps.a libsrc/spips/src/libspips.a libsrc/uartps/src/libuartps.a libsrc/xadcps/src/libxadcps.a || libsrc/coresightps_dcc/src/libcoresightps_dcc.a libsrc/devcfg/src/libdevcfg.a libsrc/dmaps/src/libdmaps.a libsrc/i2srx/src/libi2srx.a libsrc/i2stx/src/libi2stx.a libsrc/iicps/src/libiicps.a libsrc/scugic/src/libscugic.a libsrc/scutimer/src/libscutimer.a libsrc/scuwdt/src/libscuwdt.a libsrc/sdps/src/libsdps.a libsrc/spips/src/libspips.a libsrc/uartps/src/libuartps.a libsrc/xadcps/src/libxadcps.a
+build libsrc/CMakeFiles/combined | ${cmake_ninja_workdir}libsrc/CMakeFiles/combined: CUSTOM_COMMAND libsrc/coresightps_dcc/src/libcoresightps_dcc.a libsrc/devcfg/src/libdevcfg.a libsrc/dmaps/src/libdmaps.a libsrc/emacps/src/libemacps.a libsrc/gpiops/src/libgpiops.a libsrc/qspips/src/libqspips.a libsrc/scugic/src/libscugic.a libsrc/scutimer/src/libscutimer.a libsrc/scuwdt/src/libscuwdt.a libsrc/sdps/src/libsdps.a libsrc/uartps/src/libuartps.a libsrc/usbps/src/libusbps.a libsrc/xadcps/src/libxadcps.a || libsrc/coresightps_dcc/src/libcoresightps_dcc.a libsrc/devcfg/src/libdevcfg.a libsrc/dmaps/src/libdmaps.a libsrc/emacps/src/libemacps.a libsrc/gpiops/src/libgpiops.a libsrc/qspips/src/libqspips.a libsrc/scugic/src/libscugic.a libsrc/scutimer/src/libscutimer.a libsrc/scuwdt/src/libscuwdt.a libsrc/sdps/src/libsdps.a libsrc/uartps/src/libuartps.a libsrc/usbps/src/libusbps.a libsrc/xadcps/src/libxadcps.a
   COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp && arm-none-eabi-ar -M</home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libxil.mri && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -E copy /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libxil.a /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/lib
   DESC = Archiving C static library libsrc/build_configs/gen_bsp/libxil.a
 
@@ -649,144 +649,151 @@ build libsrc/dmaps/src/install/strip: phony libsrc/dmaps/src/CMakeFiles/install/
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target i2srx
+# Object build statements for STATIC_LIBRARY target emacps
 
 
 #############################################
-# Order-only phony target for i2srx
+# Order-only phony target for emacps
 
-build cmake_object_order_depends_target_i2srx: phony || libsrc/i2srx/src/CMakeFiles/i2srx.dir
+build cmake_object_order_depends_target_emacps: phony || libsrc/emacps/src/CMakeFiles/emacps.dir
 
-build libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_chsts.c.obj: C_COMPILER__i2srx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/xi2srx_chsts.c || cmake_object_order_depends_target_i2srx
-  DEP_FILE = libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_chsts.c.obj.d
+build libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_g.c.obj: C_COMPILER__emacps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_g.c || cmake_object_order_depends_target_emacps
+  DEP_FILE = libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_g.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
-  OBJECT_FILE_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+  OBJECT_FILE_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
 
-build libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_debug.c.obj: C_COMPILER__i2srx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/xi2srx_debug.c || cmake_object_order_depends_target_i2srx
-  DEP_FILE = libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_debug.c.obj.d
+build libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_hw.c.obj: C_COMPILER__emacps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_hw.c || cmake_object_order_depends_target_emacps
+  DEP_FILE = libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_hw.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
-  OBJECT_FILE_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+  OBJECT_FILE_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
 
-build libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_g.c.obj: C_COMPILER__i2srx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/xi2srx_g.c || cmake_object_order_depends_target_i2srx
-  DEP_FILE = libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_g.c.obj.d
+build libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_control.c.obj: C_COMPILER__emacps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_control.c || cmake_object_order_depends_target_emacps
+  DEP_FILE = libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_control.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
-  OBJECT_FILE_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+  OBJECT_FILE_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
 
-build libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_intr.c.obj: C_COMPILER__i2srx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/xi2srx_intr.c || cmake_object_order_depends_target_i2srx
-  DEP_FILE = libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_intr.c.obj.d
+build libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps.c.obj: C_COMPILER__emacps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps.c || cmake_object_order_depends_target_emacps
+  DEP_FILE = libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
-  OBJECT_FILE_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+  OBJECT_FILE_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
 
-build libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_selftest.c.obj: C_COMPILER__i2srx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/xi2srx_selftest.c || cmake_object_order_depends_target_i2srx
-  DEP_FILE = libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_selftest.c.obj.d
+build libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_bdring.c.obj: C_COMPILER__emacps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_bdring.c || cmake_object_order_depends_target_emacps
+  DEP_FILE = libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_bdring.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
-  OBJECT_FILE_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+  OBJECT_FILE_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
 
-build libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_sinit.c.obj: C_COMPILER__i2srx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/xi2srx_sinit.c || cmake_object_order_depends_target_i2srx
-  DEP_FILE = libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_sinit.c.obj.d
+build libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_sinit.c.obj: C_COMPILER__emacps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_sinit.c || cmake_object_order_depends_target_emacps
+  DEP_FILE = libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_sinit.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
-  OBJECT_FILE_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+  OBJECT_FILE_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
 
-build libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx.c.obj: C_COMPILER__i2srx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/xi2srx.c || cmake_object_order_depends_target_i2srx
-  DEP_FILE = libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx.c.obj.d
+build libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_intr.c.obj: C_COMPILER__emacps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_intr.c || cmake_object_order_depends_target_emacps
+  DEP_FILE = libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_intr.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
-  OBJECT_FILE_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+  OBJECT_FILE_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+
+build libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_pcs.c.obj: C_COMPILER__emacps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/xemacps_pcs.c || cmake_object_order_depends_target_emacps
+  DEP_FILE = libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_pcs.c.obj.d
+  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
+  OBJECT_FILE_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target i2srx
+# Link build statements for STATIC_LIBRARY target emacps
 
 
 #############################################
-# Link the static library libsrc/i2srx/src/libi2srx.a
+# Link the static library libsrc/emacps/src/libemacps.a
 
-build libsrc/i2srx/src/libi2srx.a: C_STATIC_LIBRARY_LINKER__i2srx_ libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_chsts.c.obj libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_debug.c.obj libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_g.c.obj libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_intr.c.obj libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_selftest.c.obj libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx_sinit.c.obj libsrc/i2srx/src/CMakeFiles/i2srx.dir/xi2srx.c.obj
+build libsrc/emacps/src/libemacps.a: C_STATIC_LIBRARY_LINKER__emacps_ libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_g.c.obj libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_hw.c.obj libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_control.c.obj libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps.c.obj libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_bdring.c.obj libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_sinit.c.obj libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_intr.c.obj libsrc/emacps/src/CMakeFiles/emacps.dir/xemacps_pcs.c.obj
   LANGUAGE_COMPILE_FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include
-  OBJECT_DIR = libsrc/i2srx/src/CMakeFiles/i2srx.dir
+  OBJECT_DIR = libsrc/emacps/src/CMakeFiles/emacps.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libsrc/i2srx/src/libi2srx.a
-  TARGET_PDB = i2srx.a.dbg
+  TARGET_FILE = libsrc/emacps/src/libemacps.a
+  TARGET_PDB = emacps.a.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build libsrc/i2srx/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2srx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+build libsrc/emacps/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build libsrc/i2srx/src/edit_cache: phony libsrc/i2srx/src/CMakeFiles/edit_cache.util
+build libsrc/emacps/src/edit_cache: phony libsrc/emacps/src/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build libsrc/i2srx/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2srx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+build libsrc/emacps/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build libsrc/i2srx/src/rebuild_cache: phony libsrc/i2srx/src/CMakeFiles/rebuild_cache.util
+build libsrc/emacps/src/rebuild_cache: phony libsrc/emacps/src/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build libsrc/i2srx/src/list_install_components: phony
+build libsrc/emacps/src/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build libsrc/i2srx/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/i2srx/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2srx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+build libsrc/emacps/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/emacps/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
 
-build libsrc/i2srx/src/install: phony libsrc/i2srx/src/CMakeFiles/install.util
+build libsrc/emacps/src/install: phony libsrc/emacps/src/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build libsrc/i2srx/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/i2srx/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2srx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+build libsrc/emacps/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/emacps/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build libsrc/i2srx/src/install/local: phony libsrc/i2srx/src/CMakeFiles/install/local.util
+build libsrc/emacps/src/install/local: phony libsrc/emacps/src/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build libsrc/i2srx/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/i2srx/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2srx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+build libsrc/emacps/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/emacps/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build libsrc/i2srx/src/install/strip: phony libsrc/i2srx/src/CMakeFiles/install/strip.util
+build libsrc/emacps/src/install/strip: phony libsrc/emacps/src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -794,144 +801,137 @@ build libsrc/i2srx/src/install/strip: phony libsrc/i2srx/src/CMakeFiles/install/
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target i2stx
+# Object build statements for STATIC_LIBRARY target gpiops
 
 
 #############################################
-# Order-only phony target for i2stx
+# Order-only phony target for gpiops
 
-build cmake_object_order_depends_target_i2stx: phony || libsrc/i2stx/src/CMakeFiles/i2stx.dir
+build cmake_object_order_depends_target_gpiops: phony || libsrc/gpiops/src/CMakeFiles/gpiops.dir
 
-build libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_chsts.c.obj: C_COMPILER__i2stx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/xi2stx_chsts.c || cmake_object_order_depends_target_i2stx
-  DEP_FILE = libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_chsts.c.obj.d
+build libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_g.c.obj: C_COMPILER__gpiops_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src/xgpiops_g.c || cmake_object_order_depends_target_gpiops
+  DEP_FILE = libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_g.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
-  OBJECT_FILE_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
+  OBJECT_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
+  OBJECT_FILE_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
 
-build libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_debug.c.obj: C_COMPILER__i2stx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/xi2stx_debug.c || cmake_object_order_depends_target_i2stx
-  DEP_FILE = libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_debug.c.obj.d
+build libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_selftest.c.obj: C_COMPILER__gpiops_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src/xgpiops_selftest.c || cmake_object_order_depends_target_gpiops
+  DEP_FILE = libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_selftest.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
-  OBJECT_FILE_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
+  OBJECT_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
+  OBJECT_FILE_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
 
-build libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_g.c.obj: C_COMPILER__i2stx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/xi2stx_g.c || cmake_object_order_depends_target_i2stx
-  DEP_FILE = libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_g.c.obj.d
+build libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops.c.obj: C_COMPILER__gpiops_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src/xgpiops.c || cmake_object_order_depends_target_gpiops
+  DEP_FILE = libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
-  OBJECT_FILE_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
+  OBJECT_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
+  OBJECT_FILE_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
 
-build libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_intr.c.obj: C_COMPILER__i2stx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/xi2stx_intr.c || cmake_object_order_depends_target_i2stx
-  DEP_FILE = libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_intr.c.obj.d
+build libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_hw.c.obj: C_COMPILER__gpiops_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src/xgpiops_hw.c || cmake_object_order_depends_target_gpiops
+  DEP_FILE = libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_hw.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
-  OBJECT_FILE_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
+  OBJECT_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
+  OBJECT_FILE_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
 
-build libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_selftest.c.obj: C_COMPILER__i2stx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/xi2stx_selftest.c || cmake_object_order_depends_target_i2stx
-  DEP_FILE = libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_selftest.c.obj.d
+build libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_sinit.c.obj: C_COMPILER__gpiops_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src/xgpiops_sinit.c || cmake_object_order_depends_target_gpiops
+  DEP_FILE = libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_sinit.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
-  OBJECT_FILE_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
+  OBJECT_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
+  OBJECT_FILE_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
 
-build libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_sinit.c.obj: C_COMPILER__i2stx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/xi2stx_sinit.c || cmake_object_order_depends_target_i2stx
-  DEP_FILE = libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_sinit.c.obj.d
+build libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_intr.c.obj: C_COMPILER__gpiops_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src/xgpiops_intr.c || cmake_object_order_depends_target_gpiops
+  DEP_FILE = libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_intr.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
-  OBJECT_FILE_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
-
-build libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx.c.obj: C_COMPILER__i2stx_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/xi2stx.c || cmake_object_order_depends_target_i2stx
-  DEP_FILE = libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
-  OBJECT_FILE_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
+  OBJECT_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
+  OBJECT_FILE_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target i2stx
+# Link build statements for STATIC_LIBRARY target gpiops
 
 
 #############################################
-# Link the static library libsrc/i2stx/src/libi2stx.a
+# Link the static library libsrc/gpiops/src/libgpiops.a
 
-build libsrc/i2stx/src/libi2stx.a: C_STATIC_LIBRARY_LINKER__i2stx_ libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_chsts.c.obj libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_debug.c.obj libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_g.c.obj libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_intr.c.obj libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_selftest.c.obj libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx_sinit.c.obj libsrc/i2stx/src/CMakeFiles/i2stx.dir/xi2stx.c.obj
+build libsrc/gpiops/src/libgpiops.a: C_STATIC_LIBRARY_LINKER__gpiops_ libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_g.c.obj libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_selftest.c.obj libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops.c.obj libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_hw.c.obj libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_sinit.c.obj libsrc/gpiops/src/CMakeFiles/gpiops.dir/xgpiops_intr.c.obj
   LANGUAGE_COMPILE_FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include
-  OBJECT_DIR = libsrc/i2stx/src/CMakeFiles/i2stx.dir
+  OBJECT_DIR = libsrc/gpiops/src/CMakeFiles/gpiops.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libsrc/i2stx/src/libi2stx.a
-  TARGET_PDB = i2stx.a.dbg
+  TARGET_FILE = libsrc/gpiops/src/libgpiops.a
+  TARGET_PDB = gpiops.a.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build libsrc/i2stx/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2stx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+build libsrc/gpiops/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build libsrc/i2stx/src/edit_cache: phony libsrc/i2stx/src/CMakeFiles/edit_cache.util
+build libsrc/gpiops/src/edit_cache: phony libsrc/gpiops/src/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build libsrc/i2stx/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2stx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+build libsrc/gpiops/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build libsrc/i2stx/src/rebuild_cache: phony libsrc/i2stx/src/CMakeFiles/rebuild_cache.util
+build libsrc/gpiops/src/rebuild_cache: phony libsrc/gpiops/src/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build libsrc/i2stx/src/list_install_components: phony
+build libsrc/gpiops/src/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build libsrc/i2stx/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/i2stx/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2stx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+build libsrc/gpiops/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/gpiops/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
 
-build libsrc/i2stx/src/install: phony libsrc/i2stx/src/CMakeFiles/install.util
+build libsrc/gpiops/src/install: phony libsrc/gpiops/src/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build libsrc/i2stx/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/i2stx/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2stx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+build libsrc/gpiops/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/gpiops/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build libsrc/i2stx/src/install/local: phony libsrc/i2stx/src/CMakeFiles/install/local.util
+build libsrc/gpiops/src/install/local: phony libsrc/gpiops/src/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build libsrc/i2stx/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/i2stx/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2stx/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+build libsrc/gpiops/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/gpiops/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build libsrc/i2stx/src/install/strip: phony libsrc/i2stx/src/CMakeFiles/install/strip.util
+build libsrc/gpiops/src/install/strip: phony libsrc/gpiops/src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -939,165 +939,137 @@ build libsrc/i2stx/src/install/strip: phony libsrc/i2stx/src/CMakeFiles/install/
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target iicps
+# Object build statements for STATIC_LIBRARY target qspips
 
 
 #############################################
-# Order-only phony target for iicps
+# Order-only phony target for qspips
 
-build cmake_object_order_depends_target_iicps: phony || libsrc/iicps/src/CMakeFiles/iicps.dir
+build cmake_object_order_depends_target_qspips: phony || libsrc/qspips/src/CMakeFiles/qspips.dir
 
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_g.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_g.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_g.c.obj.d
+build libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips.c.obj: C_COMPILER__qspips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/qspips/src/xqspips.c || cmake_object_order_depends_target_qspips
+  DEP_FILE = libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
+  OBJECT_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
+  OBJECT_FILE_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
 
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_selftest.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_selftest.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_selftest.c.obj.d
+build libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_g.c.obj: C_COMPILER__qspips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/qspips/src/xqspips_g.c || cmake_object_order_depends_target_qspips
+  DEP_FILE = libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_g.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
+  OBJECT_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
+  OBJECT_FILE_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
 
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps.c.obj.d
+build libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_hw.c.obj: C_COMPILER__qspips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/qspips/src/xqspips_hw.c || cmake_object_order_depends_target_qspips
+  DEP_FILE = libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_hw.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
+  OBJECT_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
+  OBJECT_FILE_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
 
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_slave.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_slave.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_slave.c.obj.d
+build libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_options.c.obj: C_COMPILER__qspips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/qspips/src/xqspips_options.c || cmake_object_order_depends_target_qspips
+  DEP_FILE = libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_options.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
+  OBJECT_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
+  OBJECT_FILE_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
 
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_hw.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_hw.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_hw.c.obj.d
+build libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_selftest.c.obj: C_COMPILER__qspips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/qspips/src/xqspips_selftest.c || cmake_object_order_depends_target_qspips
+  DEP_FILE = libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_selftest.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
+  OBJECT_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
+  OBJECT_FILE_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
 
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_intr.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_intr.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_intr.c.obj.d
+build libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_sinit.c.obj: C_COMPILER__qspips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/qspips/src/xqspips_sinit.c || cmake_object_order_depends_target_qspips
+  DEP_FILE = libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_sinit.c.obj.d
   FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
   INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_master.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_master.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_master.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_options.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_options.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_options.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_xfer.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_xfer.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_xfer.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-
-build libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_sinit.c.obj: C_COMPILER__iicps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/xiicps_sinit.c || cmake_object_order_depends_target_iicps
-  DEP_FILE = libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_sinit.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
-  OBJECT_FILE_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
+  OBJECT_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
+  OBJECT_FILE_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target iicps
+# Link build statements for STATIC_LIBRARY target qspips
 
 
 #############################################
-# Link the static library libsrc/iicps/src/libiicps.a
+# Link the static library libsrc/qspips/src/libqspips.a
 
-build libsrc/iicps/src/libiicps.a: C_STATIC_LIBRARY_LINKER__iicps_ libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_g.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_selftest.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_slave.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_hw.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_intr.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_master.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_options.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_xfer.c.obj libsrc/iicps/src/CMakeFiles/iicps.dir/xiicps_sinit.c.obj
+build libsrc/qspips/src/libqspips.a: C_STATIC_LIBRARY_LINKER__qspips_ libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips.c.obj libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_g.c.obj libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_hw.c.obj libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_options.c.obj libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_selftest.c.obj libsrc/qspips/src/CMakeFiles/qspips.dir/xqspips_sinit.c.obj
   LANGUAGE_COMPILE_FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include
-  OBJECT_DIR = libsrc/iicps/src/CMakeFiles/iicps.dir
+  OBJECT_DIR = libsrc/qspips/src/CMakeFiles/qspips.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libsrc/iicps/src/libiicps.a
-  TARGET_PDB = iicps.a.dbg
+  TARGET_FILE = libsrc/qspips/src/libqspips.a
+  TARGET_PDB = qspips.a.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
-build libsrc/iicps/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+build libsrc/qspips/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build libsrc/iicps/src/edit_cache: phony libsrc/iicps/src/CMakeFiles/edit_cache.util
+build libsrc/qspips/src/edit_cache: phony libsrc/qspips/src/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build libsrc/iicps/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+build libsrc/qspips/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build libsrc/iicps/src/rebuild_cache: phony libsrc/iicps/src/CMakeFiles/rebuild_cache.util
+build libsrc/qspips/src/rebuild_cache: phony libsrc/qspips/src/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build libsrc/iicps/src/list_install_components: phony
+build libsrc/qspips/src/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build libsrc/iicps/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/iicps/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+build libsrc/qspips/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/qspips/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
 
-build libsrc/iicps/src/install: phony libsrc/iicps/src/CMakeFiles/install.util
+build libsrc/qspips/src/install: phony libsrc/qspips/src/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build libsrc/iicps/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/iicps/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+build libsrc/qspips/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/qspips/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build libsrc/iicps/src/install/local: phony libsrc/iicps/src/CMakeFiles/install/local.util
+build libsrc/qspips/src/install/local: phony libsrc/qspips/src/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build libsrc/iicps/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/iicps/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+build libsrc/qspips/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/qspips/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build libsrc/iicps/src/install/strip: phony libsrc/iicps/src/CMakeFiles/install/strip.util
+build libsrc/qspips/src/install/strip: phony libsrc/qspips/src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1629,144 +1601,6 @@ build libsrc/sdps/src/install/strip: phony libsrc/sdps/src/CMakeFiles/install/st
 # =============================================================================
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target spips
-
-
-#############################################
-# Order-only phony target for spips
-
-build cmake_object_order_depends_target_spips: phony || libsrc/spips/src/CMakeFiles/spips.dir
-
-build libsrc/spips/src/CMakeFiles/spips.dir/xspips.c.obj: C_COMPILER__spips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/spips/src/xspips.c || cmake_object_order_depends_target_spips
-  DEP_FILE = libsrc/spips/src/CMakeFiles/spips.dir/xspips.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-  OBJECT_FILE_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-
-build libsrc/spips/src/CMakeFiles/spips.dir/xspips_g.c.obj: C_COMPILER__spips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/spips/src/xspips_g.c || cmake_object_order_depends_target_spips
-  DEP_FILE = libsrc/spips/src/CMakeFiles/spips.dir/xspips_g.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-  OBJECT_FILE_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-
-build libsrc/spips/src/CMakeFiles/spips.dir/xspips_hw.c.obj: C_COMPILER__spips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/spips/src/xspips_hw.c || cmake_object_order_depends_target_spips
-  DEP_FILE = libsrc/spips/src/CMakeFiles/spips.dir/xspips_hw.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-  OBJECT_FILE_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-
-build libsrc/spips/src/CMakeFiles/spips.dir/xspips_options.c.obj: C_COMPILER__spips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/spips/src/xspips_options.c || cmake_object_order_depends_target_spips
-  DEP_FILE = libsrc/spips/src/CMakeFiles/spips.dir/xspips_options.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-  OBJECT_FILE_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-
-build libsrc/spips/src/CMakeFiles/spips.dir/xspips_selftest.c.obj: C_COMPILER__spips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/spips/src/xspips_selftest.c || cmake_object_order_depends_target_spips
-  DEP_FILE = libsrc/spips/src/CMakeFiles/spips.dir/xspips_selftest.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-  OBJECT_FILE_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-
-build libsrc/spips/src/CMakeFiles/spips.dir/xspips_sinit.c.obj: C_COMPILER__spips_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/spips/src/xspips_sinit.c || cmake_object_order_depends_target_spips
-  DEP_FILE = libsrc/spips/src/CMakeFiles/spips.dir/xspips_sinit.c.obj.d
-  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
-  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
-  OBJECT_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-  OBJECT_FILE_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-
-
-# =============================================================================
-# Link build statements for STATIC_LIBRARY target spips
-
-
-#############################################
-# Link the static library libsrc/spips/src/libspips.a
-
-build libsrc/spips/src/libspips.a: C_STATIC_LIBRARY_LINKER__spips_ libsrc/spips/src/CMakeFiles/spips.dir/xspips.c.obj libsrc/spips/src/CMakeFiles/spips.dir/xspips_g.c.obj libsrc/spips/src/CMakeFiles/spips.dir/xspips_hw.c.obj libsrc/spips/src/CMakeFiles/spips.dir/xspips_options.c.obj libsrc/spips/src/CMakeFiles/spips.dir/xspips_selftest.c.obj libsrc/spips/src/CMakeFiles/spips.dir/xspips_sinit.c.obj
-  LANGUAGE_COMPILE_FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include
-  OBJECT_DIR = libsrc/spips/src/CMakeFiles/spips.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = libsrc/spips/src/libspips.a
-  TARGET_PDB = spips.a.dbg
-
-
-#############################################
-# Utility command for edit_cache
-
-build libsrc/spips/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/spips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
-  DESC = Running CMake cache editor...
-  pool = console
-  restat = 1
-
-build libsrc/spips/src/edit_cache: phony libsrc/spips/src/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build libsrc/spips/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/spips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build libsrc/spips/src/rebuild_cache: phony libsrc/spips/src/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build libsrc/spips/src/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build libsrc/spips/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/spips/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/spips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build libsrc/spips/src/install: phony libsrc/spips/src/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build libsrc/spips/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/spips/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/spips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build libsrc/spips/src/install/local: phony libsrc/spips/src/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build libsrc/spips/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/spips/src/all
-  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/spips/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build libsrc/spips/src/install/strip: phony libsrc/spips/src/CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/CMakeLists.txt
-# =============================================================================
-
-# =============================================================================
 # Object build statements for STATIC_LIBRARY target uartps
 
 
@@ -1905,6 +1739,144 @@ build libsrc/uartps/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/uar
   restat = 1
 
 build libsrc/uartps/src/install/strip: phony libsrc/uartps/src/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target usbps
+
+
+#############################################
+# Order-only phony target for usbps
+
+build cmake_object_order_depends_target_usbps: phony || libsrc/usbps/src/CMakeFiles/usbps.dir
+
+build libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps.c.obj: C_COMPILER__usbps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/usbps/src/xusbps.c || cmake_object_order_depends_target_usbps
+  DEP_FILE = libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps.c.obj.d
+  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
+  OBJECT_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+  OBJECT_FILE_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+
+build libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_endpoint.c.obj: C_COMPILER__usbps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/usbps/src/xusbps_endpoint.c || cmake_object_order_depends_target_usbps
+  DEP_FILE = libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_endpoint.c.obj.d
+  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
+  OBJECT_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+  OBJECT_FILE_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+
+build libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_g.c.obj: C_COMPILER__usbps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/usbps/src/xusbps_g.c || cmake_object_order_depends_target_usbps
+  DEP_FILE = libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_g.c.obj.d
+  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
+  OBJECT_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+  OBJECT_FILE_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+
+build libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_hw.c.obj: C_COMPILER__usbps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/usbps/src/xusbps_hw.c || cmake_object_order_depends_target_usbps
+  DEP_FILE = libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_hw.c.obj.d
+  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
+  OBJECT_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+  OBJECT_FILE_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+
+build libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_intr.c.obj: C_COMPILER__usbps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/usbps/src/xusbps_intr.c || cmake_object_order_depends_target_usbps
+  DEP_FILE = libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_intr.c.obj.d
+  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
+  OBJECT_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+  OBJECT_FILE_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+
+build libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_sinit.c.obj: C_COMPILER__usbps_ /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/usbps/src/xusbps_sinit.c || cmake_object_order_depends_target_usbps
+  DEP_FILE = libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_sinit.c.obj.d
+  FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include   -c  -O2 -g -Wall -Wextra -fno-tree-loop-distribute-patterns
+  INCLUDES = -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/include -isystem /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include -isystem /home/alen/AMD-Xilinx/2025.2/gnu/aarch32/lin/gcc-arm-none-eabi/x86_64-oesdk-linux/usr/lib/arm-xilinx-eabi/gcc/arm-xilinx-eabi/13.3.0/include-fixed -isystem /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/aarch32-xilinx-eabi/usr/include
+  OBJECT_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+  OBJECT_FILE_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target usbps
+
+
+#############################################
+# Link the static library libsrc/usbps/src/libusbps.a
+
+build libsrc/usbps/src/libusbps.a: C_STATIC_LIBRARY_LINKER__usbps_ libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps.c.obj libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_endpoint.c.obj libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_g.c.obj libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_hw.c.obj libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_intr.c.obj libsrc/usbps/src/CMakeFiles/usbps.dir/xusbps_sinit.c.obj
+  LANGUAGE_COMPILE_FLAGS = -DSDT -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard  -MMD -MP -specs=/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Xilinx.spec -I/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/include
+  OBJECT_DIR = libsrc/usbps/src/CMakeFiles/usbps.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libsrc/usbps/src/libusbps.a
+  TARGET_PDB = usbps.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build libsrc/usbps/src/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/ccmake -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build libsrc/usbps/src/edit_cache: phony libsrc/usbps/src/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build libsrc/usbps/src/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake --regenerate-during-build -S/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp -B/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build libsrc/usbps/src/rebuild_cache: phony libsrc/usbps/src/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build libsrc/usbps/src/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build libsrc/usbps/src/CMakeFiles/install.util: CUSTOM_COMMAND libsrc/usbps/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build libsrc/usbps/src/install: phony libsrc/usbps/src/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build libsrc/usbps/src/CMakeFiles/install/local.util: CUSTOM_COMMAND libsrc/usbps/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build libsrc/usbps/src/install/local: phony libsrc/usbps/src/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build libsrc/usbps/src/CMakeFiles/install/strip.util: CUSTOM_COMMAND libsrc/usbps/src/all
+  COMMAND = cd /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build libsrc/usbps/src/install/strip: phony libsrc/usbps/src/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -3534,11 +3506,9 @@ build devcfg: phony libsrc/devcfg/src/libdevcfg.a
 
 build dmaps: phony libsrc/dmaps/src/libdmaps.a
 
-build i2srx: phony libsrc/i2srx/src/libi2srx.a
+build emacps: phony libsrc/emacps/src/libemacps.a
 
-build i2stx: phony libsrc/i2stx/src/libi2stx.a
-
-build iicps: phony libsrc/iicps/src/libiicps.a
+build gpiops: phony libsrc/gpiops/src/libgpiops.a
 
 build libcoresightps_dcc.a: phony libsrc/coresightps_dcc/src/libcoresightps_dcc.a
 
@@ -3546,11 +3516,11 @@ build libdevcfg.a: phony libsrc/devcfg/src/libdevcfg.a
 
 build libdmaps.a: phony libsrc/dmaps/src/libdmaps.a
 
-build libi2srx.a: phony libsrc/i2srx/src/libi2srx.a
+build libemacps.a: phony libsrc/emacps/src/libemacps.a
 
-build libi2stx.a: phony libsrc/i2stx/src/libi2stx.a
+build libgpiops.a: phony libsrc/gpiops/src/libgpiops.a
 
-build libiicps.a: phony libsrc/iicps/src/libiicps.a
+build libqspips.a: phony libsrc/qspips/src/libqspips.a
 
 build libscugic.a: phony libsrc/scugic/src/libscugic.a
 
@@ -3560,9 +3530,9 @@ build libscuwdt.a: phony libsrc/scuwdt/src/libscuwdt.a
 
 build libsdps.a: phony libsrc/sdps/src/libsdps.a
 
-build libspips.a: phony libsrc/spips/src/libspips.a
-
 build libuartps.a: phony libsrc/uartps/src/libuartps.a
+
+build libusbps.a: phony libsrc/usbps/src/libusbps.a
 
 build libxadcps.a: phony libsrc/xadcps/src/libxadcps.a
 
@@ -3574,6 +3544,8 @@ build libxilstandalone.a: phony libsrc/standalone/src/libxilstandalone.a
 
 build libxiltimer.a: phony libsrc/xiltimer/src/libxiltimer.a
 
+build qspips: phony libsrc/qspips/src/libqspips.a
+
 build scugic: phony libsrc/scugic/src/libscugic.a
 
 build scutimer: phony libsrc/scutimer/src/libscutimer.a
@@ -3582,9 +3554,9 @@ build scuwdt: phony libsrc/scuwdt/src/libscuwdt.a
 
 build sdps: phony libsrc/sdps/src/libsdps.a
 
-build spips: phony libsrc/spips/src/libspips.a
-
 build uartps: phony libsrc/uartps/src/libuartps.a
+
+build usbps: phony libsrc/usbps/src/libusbps.a
 
 build xadcps: phony libsrc/xadcps/src/libxadcps.a
 
@@ -3611,7 +3583,7 @@ build all: phony print_compiler libsrc/all libsrc/standalone/src/all libsrc/xilt
 #############################################
 # Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc
 
-build libsrc/all: phony libsrc/combined libsrc/common/src/all libsrc/coresightps_dcc/src/all libsrc/devcfg/src/all libsrc/dmaps/src/all libsrc/i2srx/src/all libsrc/i2stx/src/all libsrc/iicps/src/all libsrc/scugic/src/all libsrc/scutimer/src/all libsrc/scuwdt/src/all libsrc/sdps/src/all libsrc/spips/src/all libsrc/uartps/src/all libsrc/xadcps/src/all
+build libsrc/all: phony libsrc/combined libsrc/common/src/all libsrc/coresightps_dcc/src/all libsrc/devcfg/src/all libsrc/dmaps/src/all libsrc/emacps/src/all libsrc/gpiops/src/all libsrc/qspips/src/all libsrc/scugic/src/all libsrc/scutimer/src/all libsrc/scuwdt/src/all libsrc/sdps/src/all libsrc/uartps/src/all libsrc/usbps/src/all libsrc/xadcps/src/all
 
 # =============================================================================
 
@@ -3644,23 +3616,23 @@ build libsrc/dmaps/src/all: phony libsrc/dmaps/src/libdmaps.a
 # =============================================================================
 
 #############################################
-# Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2srx/src
+# Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src
 
-build libsrc/i2srx/src/all: phony libsrc/i2srx/src/libi2srx.a
-
-# =============================================================================
-
-#############################################
-# Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/i2stx/src
-
-build libsrc/i2stx/src/all: phony libsrc/i2stx/src/libi2stx.a
+build libsrc/emacps/src/all: phony libsrc/emacps/src/libemacps.a
 
 # =============================================================================
 
 #############################################
-# Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src
+# Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src
 
-build libsrc/iicps/src/all: phony libsrc/iicps/src/libiicps.a
+build libsrc/gpiops/src/all: phony libsrc/gpiops/src/libgpiops.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src
+
+build libsrc/qspips/src/all: phony libsrc/qspips/src/libqspips.a
 
 # =============================================================================
 
@@ -3689,13 +3661,6 @@ build libsrc/scuwdt/src/all: phony libsrc/scuwdt/src/libscuwdt.a
 # Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/sdps/src
 
 build libsrc/sdps/src/all: phony libsrc/sdps/src/libsdps.a
-
-# =============================================================================
-
-#############################################
-# Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/spips/src
-
-build libsrc/spips/src/all: phony libsrc/spips/src/libspips.a
 
 # =============================================================================
 
@@ -3763,6 +3728,13 @@ build libsrc/uartps/src/all: phony libsrc/uartps/src/libuartps.a
 # =============================================================================
 
 #############################################
+# Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src
+
+build libsrc/usbps/src/all: phony libsrc/usbps/src/libusbps.a
+
+# =============================================================================
+
+#############################################
 # Folder: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/build_configs/gen_bsp/libsrc/xadcps/src
 
 build libsrc/xadcps/src/all: phony libsrc/xadcps/src/libxadcps.a
@@ -3816,14 +3788,14 @@ build libsrc/xiltimer/src/core/default_timer/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Findcommon.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Findcommonmeta.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/cortexa9_toolchain.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/DRVLISTConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/common/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/coresightps_dcc/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/devcfg/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/dmaps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src/SCUGICConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scutimer/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scuwdt/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/sdps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/spips/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/MemConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common/gcc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9/gcc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/bspconfig.h.in /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/StandaloneExample.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/intr/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/xilstandalone.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/uartps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xadcps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/include/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/xilffs.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/xilffs_config.h.in /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilrsa/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/XiltimerExample.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/core/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/xiltimer.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/xtimer_config.h.in CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Findcommon.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Findcommonmeta.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/cortexa9_toolchain.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/DRVLISTConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/common/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/coresightps_dcc/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/devcfg/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/dmaps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/qspips/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src/SCUGICConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scutimer/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scuwdt/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/sdps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/MemConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common/gcc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9/gcc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/bspconfig.h.in /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/StandaloneExample.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/intr/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/xilstandalone.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/uartps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/usbps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xadcps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/include/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/xilffs.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/xilffs_config.h.in /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilrsa/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/XiltimerExample.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/core/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/xiltimer.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/xtimer_config.h.in CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Findcommon.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Findcommonmeta.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/cortexa9_toolchain.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/DRVLISTConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/common/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/coresightps_dcc/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/devcfg/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/dmaps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2srx/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/i2stx/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/iicps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src/SCUGICConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scutimer/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scuwdt/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/sdps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/spips/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/MemConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common/gcc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9/gcc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/bspconfig.h.in /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/StandaloneExample.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/intr/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/xilstandalone.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/uartps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xadcps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/include/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/xilffs.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/xilffs_config.h.in /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilrsa/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/XiltimerExample.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/core/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/xiltimer.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/xtimer_config.h.in CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+build /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeASMInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Compiler/GNU.cmake /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/share/cmake-3.24/Modules/Platform/Generic.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Findcommon.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/Findcommonmeta.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/cortexa9_toolchain.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/DRVLISTConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/common/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/coresightps_dcc/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/devcfg/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/dmaps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/emacps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/gpiops/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/qspips/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scugic/src/SCUGICConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scutimer/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/scuwdt/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/sdps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/MemConfig.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/common/gcc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/arm/cortexa9/gcc/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/bspconfig.h.in /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/StandaloneExample.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/common/intr/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/standalone/src/xilstandalone.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/uartps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/usbps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xadcps/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/include/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/xilffs.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilffs/src/xilffs_config.h.in /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xilrsa/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/XiltimerExample.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/core/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/core/default_timer/CMakeLists.txt /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/xiltimer.cmake /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/zynq_fsbl/zynq_fsbl_bsp/libsrc/xiltimer/src/xtimer_config.h.in CMakeCache.txt CMakeFiles/3.24.2/CMakeASMCompiler.cmake CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
 
 
 #############################################

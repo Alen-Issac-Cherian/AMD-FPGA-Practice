@@ -56,7 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 2
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
@@ -67,7 +66,6 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.cache/wt [current_project]
 set_property parent.project_path /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
@@ -77,60 +75,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd
 add_files /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.srcs/sources_1/bd/audio_pipe_hw/audio_pipe_hw.bd
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_0/audio_pipe_hw_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_i2s_receiver_0_0/audio_pipe_hw_i2s_receiver_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_i2s_receiver_0_0/audio_pipe_hw_i2s_receiver_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_i2s_transmitter_0_0/audio_pipe_hw_i2s_transmitter_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_i2s_transmitter_0_0/audio_pipe_hw_i2s_transmitter_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_rst_ps7_0_50M_0/audio_pipe_hw_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_rst_ps7_0_50M_0/audio_pipe_hw_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_1/bd_a77d_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_2/bd_a77d_arinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_3/bd_a77d_rinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_4/bd_a77d_awinsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_5/bd_a77d_winsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_6/bd_a77d_binsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_7/bd_a77d_aroutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_8/bd_a77d_routsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_9/bd_a77d_awoutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_10/bd_a77d_woutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_11/bd_a77d_boutsw_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_12/bd_a77d_arni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_13/bd_a77d_rni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_14/bd_a77d_awni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_15/bd_a77d_wni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_16/bd_a77d_bni_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_20/bd_a77d_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_21/bd_a77d_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_22/bd_a77d_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_23/bd_a77d_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_24/bd_a77d_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_25/bd_a77d_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_26/bd_a77d_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_27/bd_a77d_m00arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_28/bd_a77d_m00rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_29/bd_a77d_m00awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_30/bd_a77d_m00wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_31/bd_a77d_m00bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_33/bd_a77d_m01s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_34/bd_a77d_m01arn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_35/bd_a77d_m01rn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_36/bd_a77d_m01awn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_37/bd_a77d_m01wn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/bd_0/ip/ip_38/bd_a77d_m01bn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_axi_smc_0/smartconnect.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_clk_wiz_0_0/audio_pipe_hw_clk_wiz_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_clk_wiz_0_0/audio_pipe_hw_clk_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_clk_wiz_0_0/audio_pipe_hw_clk_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_proc_sys_reset_0_0/audio_pipe_hw_proc_sys_reset_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_proc_sys_reset_0_0/audio_pipe_hw_proc_sys_reset_0_0_ooc.xdc]
-set_property used_in_synthesis false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/bd_8d26_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_system_ila_0_0/bd_0/bd_8d26_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_system_ila_0_0/audio_pipe_hw_system_ila_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_processing_system7_0_1/audio_pipe_hw_processing_system7_0_1.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/audio_pipe_hw_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -142,9 +87,6 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.srcs/constrs_1/imports/XDC/pinmap.xdc
-set_property used_in_implementation false [get_files /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.srcs/constrs_1/imports/XDC/pinmap.xdc]
-
 read_xdc /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/XDC/pinmap.xdc
 set_property used_in_implementation false [get_files /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/XDC/pinmap.xdc]
 

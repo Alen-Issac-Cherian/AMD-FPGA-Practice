@@ -59,17 +59,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/i2srx/src/cmake_install.cmake")
+  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/emacps/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/i2stx/src/cmake_install.cmake")
+  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/gpiops/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/iicps/src/cmake_install.cmake")
+  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/qspips/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
@@ -94,12 +94,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/spips/src/cmake_install.cmake")
+  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/uartps/src/cmake_install.cmake")
+  include("/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/sw/audio-pipe-sw-v0/zybo-z7-audio/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/libsrc/build_configs/gen_bsp/libsrc/usbps/src/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

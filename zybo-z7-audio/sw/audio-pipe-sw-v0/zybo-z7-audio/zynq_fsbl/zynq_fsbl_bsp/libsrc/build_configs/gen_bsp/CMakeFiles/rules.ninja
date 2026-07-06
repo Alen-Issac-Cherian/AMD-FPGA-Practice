@@ -79,7 +79,7 @@ rule C_STATIC_LIBRARY_LINKER__dmaps_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__i2srx_
+rule C_COMPILER__emacps_
   depfile = $DEP_FILE
   deps = gcc
   command = /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -89,7 +89,7 @@ rule C_COMPILER__i2srx_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER__i2srx_
+rule C_STATIC_LIBRARY_LINKER__emacps_
   command = $PRE_LINK && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f $TARGET_FILE && arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
@@ -98,7 +98,7 @@ rule C_STATIC_LIBRARY_LINKER__i2srx_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__i2stx_
+rule C_COMPILER__gpiops_
   depfile = $DEP_FILE
   deps = gcc
   command = /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -108,7 +108,7 @@ rule C_COMPILER__i2stx_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER__i2stx_
+rule C_STATIC_LIBRARY_LINKER__gpiops_
   command = $PRE_LINK && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f $TARGET_FILE && arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
@@ -117,7 +117,7 @@ rule C_STATIC_LIBRARY_LINKER__i2stx_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__iicps_
+rule C_COMPILER__qspips_
   depfile = $DEP_FILE
   deps = gcc
   command = /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -127,7 +127,7 @@ rule C_COMPILER__iicps_
 #############################################
 # Rule for linking C static library.
 
-rule C_STATIC_LIBRARY_LINKER__iicps_
+rule C_STATIC_LIBRARY_LINKER__qspips_
   command = $PRE_LINK && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f $TARGET_FILE && arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
@@ -212,25 +212,6 @@ rule C_STATIC_LIBRARY_LINKER__sdps_
 #############################################
 # Rule for compiling C files.
 
-rule C_COMPILER__spips_
-  depfile = $DEP_FILE
-  deps = gcc
-  command = /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
-  description = Building C object $out
-
-
-#############################################
-# Rule for linking C static library.
-
-rule C_STATIC_LIBRARY_LINKER__spips_
-  command = $PRE_LINK && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f $TARGET_FILE && arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib $TARGET_FILE && $POST_BUILD
-  description = Linking C static library $TARGET_FILE
-  restat = $RESTAT
-
-
-#############################################
-# Rule for compiling C files.
-
 rule C_COMPILER__uartps_
   depfile = $DEP_FILE
   deps = gcc
@@ -242,6 +223,25 @@ rule C_COMPILER__uartps_
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__uartps_
+  command = $PRE_LINK && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f $TARGET_FILE && arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__usbps_
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-gcc $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER__usbps_
   command = $PRE_LINK && /home/alen/AMD-Xilinx/2025.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f $TARGET_FILE && arm-none-eabi-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/alen/AMD-Xilinx/2025.2/Vitis/gnu/aarch32/lin/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib $TARGET_FILE && $POST_BUILD
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT

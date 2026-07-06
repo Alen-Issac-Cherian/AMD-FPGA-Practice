@@ -94,21 +94,7 @@ module audio_pipe_hw_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   inout wire FIXED_IO_ps_clk,
   (* X_INTERFACE_IGNORE = "true" *)
-  inout wire FIXED_IO_ps_porb,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire sdata_0_out_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  input wire sdata_0_in_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire sclk_out_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  input wire sys_clock,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire MCLK_OUT,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire lrclk_out_pb_0,
-  (* X_INTERFACE_IGNORE = "true" *)
-  output wire lrclk_out_rec_0
+  inout wire FIXED_IO_ps_porb
 );
 
   audio_pipe_hw inst (
@@ -132,14 +118,7 @@ module audio_pipe_hw_sv (
     .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp),
     .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
     .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
-    .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
-    .sdata_0_out_0(sdata_0_out_0),
-    .sdata_0_in_0(sdata_0_in_0),
-    .sclk_out_0(sclk_out_0),
-    .sys_clock(sys_clock),
-    .MCLK_OUT(MCLK_OUT),
-    .lrclk_out_pb_0(lrclk_out_pb_0),
-    .lrclk_out_rec_0(lrclk_out_rec_0)
+    .FIXED_IO_ps_porb(FIXED_IO_ps_porb)
   );
 
 endmodule

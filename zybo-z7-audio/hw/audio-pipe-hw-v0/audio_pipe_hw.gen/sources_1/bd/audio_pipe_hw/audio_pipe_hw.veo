@@ -74,14 +74,7 @@ audio_pipe_hw your_instance_name (
   .FIXED_IO_ddr_vrp(FIXED_IO_ddr_vrp), // inout wire FIXED_IO_ddr_vrp
   .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb), // inout wire FIXED_IO_ps_srstb
   .FIXED_IO_ps_clk(FIXED_IO_ps_clk), // inout wire FIXED_IO_ps_clk
-  .FIXED_IO_ps_porb(FIXED_IO_ps_porb), // inout wire FIXED_IO_ps_porb
-  .sdata_0_out_0(sdata_0_out_0), // output wire sdata_0_out_0
-  .sdata_0_in_0(sdata_0_in_0), // input wire sdata_0_in_0
-  .sclk_out_0(sclk_out_0), // output wire sclk_out_0
-  .sys_clock(sys_clock), // input wire sys_clock
-  .MCLK_OUT(MCLK_OUT), // output wire MCLK_OUT
-  .lrclk_out_pb_0(lrclk_out_pb_0), // output wire lrclk_out_pb_0
-  .lrclk_out_rec_0(lrclk_out_rec_0) // output wire lrclk_out_rec_0
+  .FIXED_IO_ps_porb(FIXED_IO_ps_porb) // inout wire FIXED_IO_ps_porb
 );
 // INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 
