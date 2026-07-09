@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
---Date        : Tue Jul  7 00:25:21 2026
+--Date        : Wed Jul  8 23:08:14 2026
 --Host        : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 --Command     : generate_target audio_pipe_hw_wrapper.bd
 --Design      : audio_pipe_hw_wrapper

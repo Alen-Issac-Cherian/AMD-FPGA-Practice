@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Tue Jul  7 00:29:12 2026
+| Date             : Wed Jul  8 23:17:14 2026
 | Host             : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 | Command          : report_power -file audio_pipe_hw_wrapper_power_routed.rpt -pb audio_pipe_hw_wrapper_power_summary_routed.pb -rpx audio_pipe_hw_wrapper_power_routed.rpx
 | Design           : audio_pipe_hw_wrapper
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.644        |
+| Total On-Chip Power (W)  | 1.643        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.521        |
@@ -52,22 +52,22 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.010 |        7 |       --- |             --- |
-| Slice Logic              |     0.002 |    10738 |       --- |             --- |
-|   LUT as Logic           |     0.002 |     2844 |     17600 |           16.16 |
-|   Register               |    <0.001 |     6229 |     35200 |           17.70 |
-|   CARRY4                 |    <0.001 |       96 |      4400 |            2.18 |
-|   F7/F8 Muxes            |    <0.001 |       44 |     17600 |            0.25 |
+| Clocks                   |     0.009 |        7 |       --- |             --- |
+| Slice Logic              |     0.002 |    10866 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     2881 |     17600 |           16.37 |
+|   Register               |    <0.001 |     6283 |     35200 |           17.85 |
+|   CARRY4                 |    <0.001 |       98 |      4400 |            2.23 |
+|   F7/F8 Muxes            |    <0.001 |       43 |     17600 |            0.24 |
 |   LUT as Distributed RAM |    <0.001 |       24 |      6000 |            0.40 |
-|   LUT as Shift Register  |    <0.001 |       82 |      6000 |            1.37 |
-|   Others                 |     0.000 |      722 |       --- |             --- |
-| Signals                  |     0.002 |     8151 |       --- |             --- |
+|   LUT as Shift Register  |    <0.001 |       87 |      6000 |            1.45 |
+|   Others                 |     0.000 |      732 |       --- |             --- |
+| Signals                  |     0.002 |     8227 |       --- |             --- |
 | Block RAM                |    <0.001 |      1.5 |        60 |            2.50 |
 | MMCM                     |     0.105 |        1 |         2 |           50.00 |
 | I/O                      |     0.003 |        9 |       100 |            9.00 |
 | PS7                      |     1.399 |        1 |       --- |             --- |
 | Static Power             |     0.123 |          |           |                 |
-| Total                    |     1.644 |          |           |                 |
+| Total                    |     1.643 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 

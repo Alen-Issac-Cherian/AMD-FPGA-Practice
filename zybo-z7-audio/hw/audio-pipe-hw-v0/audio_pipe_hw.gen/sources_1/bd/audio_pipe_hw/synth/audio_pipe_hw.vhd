@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
---Date        : Tue Jul  7 00:25:21 2026
+--Date        : Wed Jul  8 23:08:14 2026
 --Host        : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 --Command     : generate_target audio_pipe_hw.bd
 --Design      : audio_pipe_hw
@@ -330,7 +330,8 @@ architecture STRUCTURE of audio_pipe_hw is
     probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component audio_pipe_hw_ila_0_0;
   signal \^mclk_out\ : STD_LOGIC;
@@ -645,7 +646,8 @@ ila_0: component audio_pipe_hw_ila_0_0
       probe0(0) => \^lrclk_out_pb_0\,
       probe1(0) => \^sclk_out_0\,
       probe2(0) => sdata_0_in_0,
-      probe3(0) => \^sdata_0_out_0\
+      probe3(0) => \^sdata_0_out_0\,
+      probe4(0) => clk_wiz_0_locked
     );
 processing_system7_0: component audio_pipe_hw_processing_system7_0_1
      port map (

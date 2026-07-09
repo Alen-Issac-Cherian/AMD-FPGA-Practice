@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Tue Jul  7 00:25:36 2026
-# Process ID         : 102594
+# Start of session at: Wed Jul  8 23:08:55 2026
+# Process ID         : 13775
 # Current directory  : /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_ila_0_0_synth_1
 # Command line       : vivado -log audio_pipe_hw_ila_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source audio_pipe_hw_ila_0_0.tcl
 # Log file           : /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_ila_0_0_synth_1/audio_pipe_hw_ila_0_0.vds
@@ -13,15 +13,16 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 22.04.5 LTS
 # Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics
-# CPU Frequency      : 3641.498 MHz
+# CPU Frequency      : 1393.588 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 7600 MB
 # Swap memory        : 2147 MB
 # Total Virtual      : 9747 MB
-# Available Virtual  : 4674 MB
+# Available Virtual  : 5462 MB
 #-----------------------------------------------------------
 source audio_pipe_hw_ila_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:43 ; elapsed = 00:00:09 . Memory (MB): peak = 1610.516 ; gain = 64.055 ; free physical = 182 ; free virtual = 3975
 Command: synth_design -top audio_pipe_hw_ila_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
@@ -29,9 +30,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 102698
+INFO: [Synth 8-7075] Helper process launched with PID 14373
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 2261.352 ; gain = 487.094 ; free physical = 561 ; free virtual = 3290
+Starting RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2258.648 ; gain = 484.125 ; free physical = 135 ; free virtual = 2413
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:30]
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_ext.vh:32]
@@ -134,7 +135,7 @@ INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 
 INFO: [Synth 8-11241] undeclared symbol 'tms_int', assumed default net type 'wire' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:275]
 INFO: [Synth 8-11241] undeclared symbol 'runtest_int', assumed default net type 'wire' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/0568/hdl/verilog/xsdbm_v3_0_5_bs_core_vec.vh:277]
 INFO: [Common 17-14] Message 'Synth 8-11241' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_ila_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/synth/audio_pipe_hw_ila_0_0.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_ila_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/synth/audio_pipe_hw_ila_0_0.vhd:66]
 	Parameter C_XLNX_HW_PROBE_INFO bound to: DEFAULT - type: string 
 	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
 	Parameter C_CORE_TYPE bound to: 1 - type: integer 
@@ -143,7 +144,7 @@ INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_ila_0_0' [/home/alen/git/
 	Parameter C_CAPTURE_TYPE bound to: 0 - type: integer 
 	Parameter C_MU_TYPE bound to: 0 - type: integer 
 	Parameter C_TC_TYPE bound to: 0 - type: integer 
-	Parameter C_NUM_OF_PROBES bound to: 4 - type: integer 
+	Parameter C_NUM_OF_PROBES bound to: 5 - type: integer 
 	Parameter C_DATA_DEPTH bound to: 1024 - type: integer 
 	Parameter C_MAJOR_VERSION bound to: 2025 - type: integer 
 	Parameter C_MINOR_VERSION bound to: 2 - type: integer 
@@ -2217,7 +2218,7 @@ INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_ila_0_0' [/home/alen/git/
 	Parameter C_PROBE1_TYPE bound to: 0 - type: integer 
 	Parameter C_PROBE2_TYPE bound to: 0 - type: integer 
 	Parameter C_PROBE3_TYPE bound to: 0 - type: integer 
-	Parameter C_PROBE4_TYPE bound to: 1 - type: integer 
+	Parameter C_PROBE4_TYPE bound to: 0 - type: integer 
 	Parameter C_PROBE5_TYPE bound to: 1 - type: integer 
 	Parameter C_PROBE6_TYPE bound to: 1 - type: integer 
 	Parameter C_PROBE7_TYPE bound to: 1 - type: integer 
@@ -3237,7 +3238,7 @@ INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_ila_0_0' [/home/alen/git/
 	Parameter C_PROBE1021_TYPE bound to: 1 - type: integer 
 	Parameter C_PROBE1022_TYPE bound to: 1 - type: integer 
 	Parameter C_PROBE1023_TYPE bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'ila_v6_2_19_ila' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/3556/hdl/ila_v6_2_syn_rfs.v:6191' bound to instance 'U0' of component 'ila_v6_2_19_ila' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/synth/audio_pipe_hw_ila_0_0.vhd:4250]
+INFO: [Synth 8-3491] module 'ila_v6_2_19_ila' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/3556/hdl/ila_v6_2_syn_rfs.v:6191' bound to instance 'U0' of component 'ila_v6_2_19_ila' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/synth/audio_pipe_hw_ila_0_0.vhd:4251]
 INFO: [Synth 8-6157] synthesizing module 'CFGLUT5' [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3131]
 INFO: [Synth 8-6155] done synthesizing module 'CFGLUT5' (0#1) [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3131]
 INFO: [Synth 8-6157] synthesizing module 'CARRY4' [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:3094]
@@ -3250,10 +3251,11 @@ INFO: [Synth 8-6157] synthesizing module 'SRLC16E' [/home/alen/AMD-Xilinx/2025.2
 INFO: [Synth 8-6155] done synthesizing module 'SRLC16E' (0#1) [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:165423]
 INFO: [Synth 8-6157] synthesizing module 'FDRE' [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
 INFO: [Synth 8-6155] done synthesizing module 'FDRE' (0#1) [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:49396]
-INFO: [Synth 8-256] done synthesizing module 'audio_pipe_hw_ila_0_0' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/synth/audio_pipe_hw_ila_0_0.vhd:65]
-INFO: [Synth 8-3848] Net sl_iport0 in module/entity audio_pipe_hw_ila_0_0 does not have driver. [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/synth/audio_pipe_hw_ila_0_0.vhd:4247]
+INFO: [Synth 8-256] done synthesizing module 'audio_pipe_hw_ila_0_0' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/synth/audio_pipe_hw_ila_0_0.vhd:66]
+INFO: [Synth 8-3848] Net sl_iport0 in module/entity audio_pipe_hw_ila_0_0 does not have driver. [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/synth/audio_pipe_hw_ila_0_0.vhd:4248]
 INFO: [Synth 8-7129] Port SEL_I[0] in module ltlib_v1_0_3_generic_mux is either unconnected or has no load
 INFO: [Synth 8-7129] Port CLKB in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DOUTA_I[5] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
 INFO: [Synth 8-7129] Port DOUTA_I[4] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
 INFO: [Synth 8-7129] Port DOUTA_I[3] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
 INFO: [Synth 8-7129] Port DOUTA_I[2] in module blk_mem_gen_v8_4_12_blk_mem_output_block is either unconnected or has no load
@@ -3327,6 +3329,7 @@ INFO: [Synth 8-7129] Port REGCEA in module blk_mem_gen_v8_4_12_blk_mem_input_blo
 INFO: [Synth 8-7129] Port RSTB in module blk_mem_gen_v8_4_12_blk_mem_input_block is either unconnected or has no load
 INFO: [Synth 8-7129] Port REGCEB in module blk_mem_gen_v8_4_12_blk_mem_input_block is either unconnected or has no load
 INFO: [Synth 8-7129] Port WEB[0] in module blk_mem_gen_v8_4_12_blk_mem_input_block is either unconnected or has no load
+INFO: [Synth 8-7129] Port DINB[5] in module blk_mem_gen_v8_4_12_blk_mem_input_block is either unconnected or has no load
 INFO: [Synth 8-7129] Port DINB[4] in module blk_mem_gen_v8_4_12_blk_mem_input_block is either unconnected or has no load
 INFO: [Synth 8-7129] Port DINB[3] in module blk_mem_gen_v8_4_12_blk_mem_input_block is either unconnected or has no load
 INFO: [Synth 8-7129] Port DINB[2] in module blk_mem_gen_v8_4_12_blk_mem_input_block is either unconnected or has no load
@@ -3350,23 +3353,21 @@ INFO: [Synth 8-7129] Port S_AXI_AWADDR[25] in module blk_mem_gen_v8_4_12_synth i
 INFO: [Synth 8-7129] Port S_AXI_AWADDR[24] in module blk_mem_gen_v8_4_12_synth is either unconnected or has no load
 INFO: [Synth 8-7129] Port S_AXI_AWADDR[23] in module blk_mem_gen_v8_4_12_synth is either unconnected or has no load
 INFO: [Synth 8-7129] Port S_AXI_AWADDR[22] in module blk_mem_gen_v8_4_12_synth is either unconnected or has no load
-INFO: [Synth 8-7129] Port S_AXI_AWADDR[21] in module blk_mem_gen_v8_4_12_synth is either unconnected or has no load
-INFO: [Synth 8-7129] Port S_AXI_AWADDR[20] in module blk_mem_gen_v8_4_12_synth is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2716.398 ; gain = 942.141 ; free physical = 153 ; free virtual = 2856
+Finished RTL Elaboration : Time (s): cpu = 00:00:55 ; elapsed = 00:01:00 . Memory (MB): peak = 2716.664 ; gain = 942.141 ; free physical = 194 ; free virtual = 2188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2716.398 ; gain = 942.141 ; free physical = 153 ; free virtual = 2856
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 2716.664 ; gain = 942.141 ; free physical = 194 ; free virtual = 2188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 2716.398 ; gain = 942.141 ; free physical = 153 ; free virtual = 2856
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 2716.664 ; gain = 942.141 ; free physical = 194 ; free virtual = 2188
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2716.398 ; gain = 0.000 ; free physical = 153 ; free virtual = 2856
-INFO: [Netlist 29-17] Analyzing 72 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2716.664 ; gain = 0.000 ; free physical = 179 ; free virtual = 2191
+INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -3382,29 +3383,29 @@ Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-h
 Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_ila_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2756.418 ; gain = 0.000 ; free physical = 152 ; free virtual = 2855
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2756.684 ; gain = 0.000 ; free physical = 128 ; free virtual = 2187
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 52 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 44 instances
-  CFGLUT5 => SRLC32E: 8 instances
+  A total of 57 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 48 instances
+  CFGLUT5 => SRLC32E: 9 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2756.453 ; gain = 0.000 ; free physical = 152 ; free virtual = 2855
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.15 . Memory (MB): peak = 2756.719 ; gain = 0.000 ; free physical = 121 ; free virtual = 2185
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2756.453 ; gain = 982.195 ; free physical = 145 ; free virtual = 2799
+Finished Constraint Validation : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 2756.719 ; gain = 982.195 ; free physical = 183 ; free virtual = 2229
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2764.422 ; gain = 990.164 ; free physical = 146 ; free virtual = 2799
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 2764.688 ; gain = 990.164 ; free physical = 183 ; free virtual = 2229
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2764.422 ; gain = 990.164 ; free physical = 177 ; free virtual = 2831
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:23 . Memory (MB): peak = 2764.688 ; gain = 990.164 ; free physical = 141 ; free virtual = 2196
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized0'
@@ -3412,6 +3413,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in modul
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized2'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized3'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'xsdbs_v1_0_5_reg_p2s__parameterized5'
 INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'ltlib_v1_0_3_generic_memrd'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -3470,6 +3472,15 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
+                    IDLE |                             0001 |                             0001
+                     REG |                             0010 |                             0010
+                     P2S |                             0100 |                             0100
+                     S2P |                             1000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'xsdbs_v1_0_5_reg_p2s__parameterized5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
               RESET_ADDR |                          0000001 |                          0000001
             REQUEST_READ |                          0000010 |                          0000010
            WAIT_READ_ACK |                          0000100 |                          0000100
@@ -3479,7 +3490,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using e
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'ltlib_v1_0_3_generic_memrd'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2764.422 ; gain = 990.164 ; free physical = 140 ; free virtual = 2830
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:21 ; elapsed = 00:01:26 . Memory (MB): peak = 2764.688 ; gain = 990.164 ; free physical = 134 ; free virtual = 2168
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -3501,25 +3512,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-3332] Sequential element (FSM_onehot_current_state_reg[5]) is unused and will be removed from module ltlib_v1_0_3_generic_memrd.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 2764.422 ; gain = 990.164 ; free physical = 152 ; free virtual = 2842
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:39 ; elapsed = 00:01:45 . Memory (MB): peak = 2764.688 ; gain = 990.164 ; free physical = 193 ; free virtual = 2108
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 2764.422 ; gain = 990.164 ; free physical = 148 ; free virtual = 2842
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:55 ; elapsed = 00:02:01 . Memory (MB): peak = 2764.688 ; gain = 990.164 ; free physical = 187 ; free virtual = 2116
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 2764.422 ; gain = 990.164 ; free physical = 148 ; free virtual = 2842
+Finished Timing Optimization : Time (s): cpu = 00:01:56 ; elapsed = 00:02:02 . Memory (MB): peak = 2764.688 ; gain = 990.164 ; free physical = 187 ; free virtual = 2116
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 2764.422 ; gain = 990.164 ; free physical = 149 ; free virtual = 2842
+Finished Technology Mapping : Time (s): cpu = 00:01:58 ; elapsed = 00:02:04 . Memory (MB): peak = 2764.688 ; gain = 990.164 ; free physical = 185 ; free virtual = 2114
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3537,37 +3548,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 2783.234 ; gain = 1008.977 ; free physical = 147 ; free virtual = 2841
+Finished IO Insertion : Time (s): cpu = 00:02:07 ; elapsed = 00:02:13 . Memory (MB): peak = 2782.500 ; gain = 1007.977 ; free physical = 180 ; free virtual = 2110
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2783.234 ; gain = 1008.977 ; free physical = 147 ; free virtual = 2841
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:07 ; elapsed = 00:02:13 . Memory (MB): peak = 2782.500 ; gain = 1007.977 ; free physical = 180 ; free virtual = 2110
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2783.234 ; gain = 1008.977 ; free physical = 147 ; free virtual = 2841
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:07 ; elapsed = 00:02:13 . Memory (MB): peak = 2782.500 ; gain = 1007.977 ; free physical = 180 ; free virtual = 2110
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2783.234 ; gain = 1008.977 ; free physical = 147 ; free virtual = 2841
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:07 ; elapsed = 00:02:13 . Memory (MB): peak = 2782.500 ; gain = 1007.977 ; free physical = 180 ; free virtual = 2110
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2783.234 ; gain = 1008.977 ; free physical = 147 ; free virtual = 2841
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:07 ; elapsed = 00:02:13 . Memory (MB): peak = 2782.500 ; gain = 1007.977 ; free physical = 179 ; free virtual = 2109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2783.234 ; gain = 1008.977 ; free physical = 147 ; free virtual = 2841
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:07 ; elapsed = 00:02:13 . Memory (MB): peak = 2782.500 ; gain = 1007.977 ; free physical = 179 ; free virtual = 2109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -3583,52 +3594,52 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY4   |    19|
-|2     |CFGLUT5  |    52|
-|3     |LUT1     |    30|
-|4     |LUT2     |    60|
-|5     |LUT3     |    86|
-|6     |LUT4     |   155|
-|7     |LUT5     |    80|
-|8     |LUT6     |   316|
-|9     |MUXF7    |     5|
+|1     |CARRY4   |    21|
+|2     |CFGLUT5  |    57|
+|3     |LUT1     |    31|
+|4     |LUT2     |    65|
+|5     |LUT3     |   107|
+|6     |LUT4     |   172|
+|7     |LUT5     |    84|
+|8     |LUT6     |   322|
+|9     |MUXF7    |     4|
 |10    |RAMB18E1 |     1|
-|11    |SRL16E   |     8|
+|11    |SRL16E   |     9|
 |12    |SRLC16E  |     2|
 |13    |SRLC32E  |    17|
-|14    |FDRE     |  1205|
+|14    |FDRE     |  1257|
 |15    |FDSE     |    10|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2783.234 ; gain = 1008.977 ; free physical = 147 ; free virtual = 2841
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:07 ; elapsed = 00:02:13 . Memory (MB): peak = 2782.500 ; gain = 1007.977 ; free physical = 179 ; free virtual = 2109
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 2783.234 ; gain = 968.922 ; free physical = 147 ; free virtual = 2841
-Synthesis Optimization Complete : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 2783.242 ; gain = 1008.977 ; free physical = 147 ; free virtual = 2841
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:59 ; elapsed = 00:02:05 . Memory (MB): peak = 2782.500 ; gain = 967.922 ; free physical = 179 ; free virtual = 2109
+Synthesis Optimization Complete : Time (s): cpu = 00:02:07 ; elapsed = 00:02:13 . Memory (MB): peak = 2782.508 ; gain = 1007.977 ; free physical = 177 ; free virtual = 2110
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2783.242 ; gain = 0.000 ; free physical = 319 ; free virtual = 3012
-INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2782.508 ; gain = 0.000 ; free physical = 302 ; free virtual = 2284
+INFO: [Netlist 29-17] Analyzing 83 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2845.199 ; gain = 0.000 ; free physical = 307 ; free virtual = 3001
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2841.496 ; gain = 0.000 ; free physical = 279 ; free virtual = 2272
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 52 instances were transformed.
-  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 44 instances
-  CFGLUT5 => SRLC32E: 8 instances
+  A total of 57 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 48 instances
+  CFGLUT5 => SRLC32E: 9 instances
 
-Synth Design complete | Checksum: 5135e95d
+Synth Design complete | Checksum: b2b44fbd
 INFO: [Common 17-83] Releasing license: Synthesis
-250 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+252 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 2845.234 ; gain = 1249.594 ; free physical = 308 ; free virtual = 3002
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2266.934; main = 2080.662; forked = 305.471
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3758.398; main = 2845.203; forked = 993.973
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2869.211 ; gain = 0.000 ; free physical = 308 ; free virtual = 3002
+synth_design: Time (s): cpu = 00:02:27 ; elapsed = 00:02:26 . Memory (MB): peak = 2841.531 ; gain = 1231.016 ; free physical = 266 ; free virtual = 2261
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1995.081; main = 1770.665; forked = 371.337
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3758.668; main = 2841.500; forked = 993.977
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2865.508 ; gain = 0.000 ; free physical = 262 ; free virtual = 2261
 INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_ila_0_0_synth_1/audio_pipe_hw_ila_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP audio_pipe_hw_ila_0_0, cache-ID = 31f3621427f3f3ef
-INFO: [Coretcl 2-1174] Renamed 118 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2869.211 ; gain = 0.000 ; free physical = 310 ; free virtual = 3011
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP audio_pipe_hw_ila_0_0, cache-ID = 5fe078870e7e5042
+INFO: [Coretcl 2-1174] Renamed 123 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2865.508 ; gain = 0.000 ; free physical = 246 ; free virtual = 2265
 INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/audio_pipe_hw_ila_0_0_synth_1/audio_pipe_hw_ila_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file audio_pipe_hw_ila_0_0_utilization_synth.rpt -pb audio_pipe_hw_ila_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Jul  7 00:26:48 2026...
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  8 23:11:48 2026...

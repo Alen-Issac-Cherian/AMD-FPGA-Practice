@@ -1,23 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1783380333">
-  <File Type="NOC_SOLUTION_FILE" Name="audio_pipe_hw_wrapper.ncr"/>
-  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="audio_pipe_hw_wrapper.nts"/>
-  <File Type="PL_UNMASK_RCDO_FILE" Name="audio_pipe_hw_wrapper_pld_unmask.rcdo"/>
-  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="audio_pipe_hw_wrapper_pld_unmask_markers.rcdo"/>
-  <File Type="PL_MASK_RCDO_FILE" Name="audio_pipe_hw_wrapper_pld_mask.rcdo"/>
-  <File Type="PL_MARKER_RCDO_FILE" Name="audio_pipe_hw_wrapper_pld_markers.rcdo"/>
-  <File Type="PL-CLEAR-RCDO-FILE" Name="audio_pipe_hw_wrapper_pld_clear.rcdo"/>
-  <File Type="PL_UNMASK_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld_unmask.rnpi"/>
-  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld_shutdown.rnpi"/>
-  <File Type="PL_MASK_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld_mask.rnpi"/>
-  <File Type="PL_MARKER_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld_markers.rnpi"/>
-  <File Type="BOOT_MARKER_RNPI_FILE" Name="audio_pipe_hw_wrapper_boot_markers.rnpi"/>
-  <File Type="PL_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld.rnpi"/>
-  <File Type="BOOT_RNPI_FILE" Name="audio_pipe_hw_wrapper_boot.rnpi"/>
-  <File Type="MARKER-RNPI-FILE" Name="audio_pipe_hw_wrapper_markers.rnpi"/>
-  <File Type="PL-RCDO-FILE" Name="audio_pipe_hw_wrapper_pld.rcdo"/>
-  <File Type="MARKER-RCDO-FILE" Name="audio_pipe_hw_wrapper_markers.rcdo"/>
-  <File Type="RCDO-FILE" Name="audio_pipe_hw_wrapper.rcdo"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1783548527">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="audio_pipe_hw_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="audio_pipe_hw_wrapper_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="audio_pipe_hw_wrapper.vdi"/>
+  <File Type="BG-DRC" Name="audio_pipe_hw_wrapper.drc"/>
+  <File Type="BG-BGN" Name="audio_pipe_hw_wrapper.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="audio_pipe_hw_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="audio_pipe_hw_wrapper.ltx"/>
   <File Type="PL-LTX-FILE" Name="audio_pipe_hw_wrapper_pld.ltx"/>
   <File Type="BOOT-LTX-FILE" Name="audio_pipe_hw_wrapper_boot.ltx"/>
   <File Type="LTX-FILE" Name="audio_pipe_hw_wrapper.ltx"/>
@@ -25,76 +18,101 @@
   <File Type="BOOT-BIF-FILE" Name="audio_pipe_hw_wrapper_boot.bif"/>
   <File Type="BIF-FILE" Name="audio_pipe_hw_wrapper.bif"/>
   <File Type="MMI-FILE" Name="audio_pipe_hw_wrapper.mmi"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
-  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-RQS" Name="audio_pipe_hw_wrapper_postroute_physopted.rqs"/>
-  <File Type="ROUTE-RQS" Name="audio_pipe_hw_wrapper_routed.rqs"/>
   <File Type="RBD_FILE" Name="audio_pipe_hw_wrapper.rbd"/>
   <File Type="NPI_FILE" Name="audio_pipe_hw_wrapper.npi"/>
+  <File Type="PL_UNMASK_RCDO_FILE" Name="audio_pipe_hw_wrapper_pld_unmask.rcdo"/>
+  <File Type="PL_UNMASK_MARKER_RCDO_FILE" Name="audio_pipe_hw_wrapper_pld_unmask_markers.rcdo"/>
+  <File Type="PL_MASK_RCDO_FILE" Name="audio_pipe_hw_wrapper_pld_mask.rcdo"/>
+  <File Type="PL_MARKER_RCDO_FILE" Name="audio_pipe_hw_wrapper_pld_markers.rcdo"/>
+  <File Type="PL-CLEAR-RCDO-FILE" Name="audio_pipe_hw_wrapper_pld_clear.rcdo"/>
+  <File Type="PL-RCDO-FILE" Name="audio_pipe_hw_wrapper_pld.rcdo"/>
+  <File Type="PL_UNMASK_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld_unmask.rnpi"/>
+  <File Type="PL_SHUTDOWN_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld_shutdown.rnpi"/>
+  <File Type="PL_MASK_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld_mask.rnpi"/>
+  <File Type="PL_MARKER_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld_markers.rnpi"/>
+  <File Type="PL_RNPI_FILE" Name="audio_pipe_hw_wrapper_pld.rnpi"/>
+  <File Type="BOOT_MARKER_RNPI_FILE" Name="audio_pipe_hw_wrapper_boot_markers.rnpi"/>
+  <File Type="BOOT_RNPI_FILE" Name="audio_pipe_hw_wrapper_boot.rnpi"/>
+  <File Type="MARKER-RCDO-FILE" Name="audio_pipe_hw_wrapper_markers.rcdo"/>
+  <File Type="MARKER-RNPI-FILE" Name="audio_pipe_hw_wrapper_markers.rnpi"/>
+  <File Type="RCDO-FILE" Name="audio_pipe_hw_wrapper.rcdo"/>
   <File Type="RNPI_FILE" Name="audio_pipe_hw_wrapper.rnpi"/>
   <File Type="CFI_FILE" Name="audio_pipe_hw_wrapper.cfi"/>
   <File Type="RCFI_FILE" Name="audio_pipe_hw_wrapper.rcfi"/>
   <File Type="PL-PDI-FILE" Name="audio_pipe_hw_wrapper_pld.pdi"/>
   <File Type="BOOT-PDI-FILE" Name="audio_pipe_hw_wrapper_boot.pdi"/>
+  <File Type="PDI-FILE" Name="audio_pipe_hw_wrapper.pdi"/>
+  <File Type="BITSTR-MMI" Name="audio_pipe_hw_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="audio_pipe_hw_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="audio_pipe_hw_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="audio_pipe_hw_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="audio_pipe_hw_wrapper.msk"/>
+  <File Type="BG-BIN" Name="audio_pipe_hw_wrapper.bin"/>
+  <File Type="BG-BIT" Name="audio_pipe_hw_wrapper.bit"/>
+  <File Type="NOC_SOLUTION_FILE" Name="audio_pipe_hw_wrapper.ncr"/>
+  <File Type="NOC_TRAFFIC_SPEC_FILE" Name="audio_pipe_hw_wrapper.nts"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="audio_pipe_hw_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="audio_pipe_hw_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="audio_pipe_hw_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="audio_pipe_hw_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="audio_pipe_hw_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="audio_pipe_hw_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="audio_pipe_hw_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="audio_pipe_hw_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="audio_pipe_hw_wrapper_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="audio_pipe_hw_wrapper_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="audio_pipe_hw_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="audio_pipe_hw_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="audio_pipe_hw_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="audio_pipe_hw_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="audio_pipe_hw_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="audio_pipe_hw_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="audio_pipe_hw_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="audio_pipe_hw_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="audio_pipe_hw_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="audio_pipe_hw_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="audio_pipe_hw_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="audio_pipe_hw_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="audio_pipe_hw_wrapper_methodology_drc_routed.pb"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="audio_pipe_hw_wrapper_methodology_drc_routed.rpx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="audio_pipe_hw_wrapper_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-RPX" Name="audio_pipe_hw_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-PWR-RPX" Name="audio_pipe_hw_wrapper_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="audio_pipe_hw_wrapper_route_status.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="audio_pipe_hw_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="audio_pipe_hw_wrapper_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-PWR-SUM" Name="audio_pipe_hw_wrapper_power_summary_routed.pb"/>
-  <File Type="ROUTE-STATUS-PB" Name="audio_pipe_hw_wrapper_route_status.pb"/>
-  <File Type="ROUTE-PWR" Name="audio_pipe_hw_wrapper_power_routed.rpt"/>
-  <File Type="PLACE-CTRL" Name="audio_pipe_hw_wrapper_control_sets_placed.rpt"/>
-  <File Type="OPT-DRC" Name="audio_pipe_hw_wrapper_drc_opted.rpt"/>
-  <File Type="ROUTE-DRC" Name="audio_pipe_hw_wrapper_drc_routed.rpt"/>
-  <File Type="PLACE-UTIL" Name="audio_pipe_hw_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="audio_pipe_hw_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-IO" Name="audio_pipe_hw_wrapper_io_placed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="audio_pipe_hw_wrapper_drc_routed.pb"/>
-  <File Type="OPT-HWDEF" Name="audio_pipe_hw_wrapper.hwdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="audio_pipe_hw_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-SIMILARITY" Name="audio_pipe_hw_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="audio_pipe_hw_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="audio_pipe_hw_wrapper_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="audio_pipe_hw_wrapper_bus_skew_routed.rpx"/>
-  <File Type="REPORTS-TCL" Name="audio_pipe_hw_wrapper_reports.tcl"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="audio_pipe_hw_wrapper_bus_skew_routed.pb"/>
-  <File Type="PA-TCL" Name="audio_pipe_hw_wrapper.tcl"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="audio_pipe_hw_wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="audio_pipe_hw_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="audio_pipe_hw_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="RDI-RDI" Name="audio_pipe_hw_wrapper.vdi"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="audio_pipe_hw_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="audio_pipe_hw_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="audio_pipe_hw_wrapper_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="audio_pipe_hw_wrapper.bit"/>
-  <File Type="PDI-FILE" Name="audio_pipe_hw_wrapper.pdi"/>
-  <File Type="BG-DRC" Name="audio_pipe_hw_wrapper.drc"/>
-  <File Type="BG-BGN" Name="audio_pipe_hw_wrapper.bgn"/>
-  <File Type="BG-BIN" Name="audio_pipe_hw_wrapper.bin"/>
-  <File Type="BITSTR-MSK" Name="audio_pipe_hw_wrapper.msk"/>
-  <File Type="BITSTR-RBT" Name="audio_pipe_hw_wrapper.rbt"/>
-  <File Type="BITSTR-NKY" Name="audio_pipe_hw_wrapper.nky"/>
-  <File Type="BITSTR-BMM" Name="audio_pipe_hw_wrapper_bd.bmm"/>
-  <File Type="BITSTR-MMI" Name="audio_pipe_hw_wrapper.mmi"/>
-  <File Type="BITSTR-SYSDEF" Name="audio_pipe_hw_wrapper.sysdef"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="audio_pipe_hw_wrapper.ltx"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="audio_pipe_hw_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="audio_pipe_hw_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-UTIL-PB" Name="audio_pipe_hw_wrapper_utilization_routed.pb"/>
+  <File Type="ROUTE-UTIL" Name="audio_pipe_hw_wrapper_utilization_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="audio_pipe_hw_wrapper_routed_bb.dcp"/>
   <File Type="ROUTE-DCP" Name="audio_pipe_hw_wrapper_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="audio_pipe_hw_wrapper_routed_error.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="audio_pipe_hw_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMING-PB" Name="audio_pipe_hw_wrapper_timing_summary_routed.pb"/>
-  <File Type="OPT-DCP" Name="audio_pipe_hw_wrapper_opt.dcp"/>
-  <File Type="PLACE-DCP" Name="audio_pipe_hw_wrapper_placed.dcp"/>
-  <File Type="PWROPT-DCP" Name="audio_pipe_hw_wrapper_pwropt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="audio_pipe_hw_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="audio_pipe_hw_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="audio_pipe_hw_wrapper_drc_physopted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="audio_pipe_hw_wrapper_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="audio_pipe_hw_wrapper_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="audio_pipe_hw_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="audio_pipe_hw_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="audio_pipe_hw_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="audio_pipe_hw_wrapper_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="audio_pipe_hw_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="audio_pipe_hw_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="audio_pipe_hw_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="audio_pipe_hw_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="audio_pipe_hw_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="audio_pipe_hw_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="audio_pipe_hw_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="audio_pipe_hw_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="audio_pipe_hw_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="audio_pipe_hw_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="audio_pipe_hw_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="audio_pipe_hw_wrapper_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="audio_pipe_hw_wrapper_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="audio_pipe_hw_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="audio_pipe_hw_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="audio_pipe_hw_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-UTIL-PB" Name="audio_pipe_hw_wrapper_utilization_opted.pb"/>
+  <File Type="OPT-UTIL" Name="audio_pipe_hw_wrapper_utilization_opted.rpt"/>
+  <File Type="OPT-DRC" Name="audio_pipe_hw_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="audio_pipe_hw_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="audio_pipe_hw_wrapper_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="audio_pipe_hw_wrapper_reports.tcl"/>
+  <File Type="PA-TCL" Name="audio_pipe_hw_wrapper.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/audio_pipe_hw/audio_pipe_hw.bd">
@@ -153,8 +171,7 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
-    <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="audio_pipe_hw_processing_system7_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="audio_pipe_hw_ila_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="audio_pipe_hw_processing_system7_0_1"/>
 </GenRun>
