@@ -15,3 +15,7 @@ set_property src_info {type:XDC file:1 line:25 export:INPUT save:INPUT read:READ
 set_property PACKAGE_PIN N17 [get_ports IIC_1_0_sda_io]
 set_property src_info {type:XDC file:1 line:29 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN R17 [get_ports MCLK_OUT]
+set_property src_info {type:XDC file:1 line:33 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN K17 IOSTANDARD LVCMOS33 } [get_ports { sys_clock }]
+set_property src_info {type:XDC file:1 line:36 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict { PACKAGE_PIN E17   IOSTANDARD LVCMOS33 } [get_ports { eth_phy_rst_b }];

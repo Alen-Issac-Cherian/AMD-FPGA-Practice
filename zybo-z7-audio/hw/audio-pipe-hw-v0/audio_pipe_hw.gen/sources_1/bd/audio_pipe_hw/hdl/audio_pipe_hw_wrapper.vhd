@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
---Date        : Wed Jul  8 23:08:14 2026
+--Date        : Thu Jul  9 20:31:44 2026
 --Host        : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 --Command     : generate_target audio_pipe_hw_wrapper.bd
 --Design      : audio_pipe_hw_wrapper
@@ -38,6 +38,7 @@ entity audio_pipe_hw_wrapper is
     IIC_1_0_scl_io : inout STD_LOGIC;
     IIC_1_0_sda_io : inout STD_LOGIC;
     MCLK_OUT : out STD_LOGIC;
+    eth_phy_rst_b : out STD_LOGIC_VECTOR ( 0 to 0 );
     lrclk_out_pb_0 : out STD_LOGIC;
     lrclk_out_rec_0 : out STD_LOGIC;
     sclk_out_0 : out STD_LOGIC;
@@ -83,7 +84,8 @@ architecture STRUCTURE of audio_pipe_hw_wrapper is
     sclk_out_0 : out STD_LOGIC;
     lrclk_out_rec_0 : out STD_LOGIC;
     lrclk_out_pb_0 : out STD_LOGIC;
-    MCLK_OUT : out STD_LOGIC
+    MCLK_OUT : out STD_LOGIC;
+    eth_phy_rst_b : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component audio_pipe_hw;
   component IOBUF is
@@ -145,6 +147,7 @@ audio_pipe_hw_i: component audio_pipe_hw
       IIC_1_0_sda_o => IIC_1_0_sda_o,
       IIC_1_0_sda_t => IIC_1_0_sda_t,
       MCLK_OUT => MCLK_OUT,
+      eth_phy_rst_b(0) => eth_phy_rst_b(0),
       lrclk_out_pb_0 => lrclk_out_pb_0,
       lrclk_out_rec_0 => lrclk_out_rec_0,
       sclk_out_0 => sclk_out_0,

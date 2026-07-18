@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xC485C44FDE7CFA0A",
+      "boundary_crc": "0xFEAF6119CC70BA0B",
       "device": "xc7z010clg400-1",
       "gen_directory": "../../../../audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw",
       "name": "audio_pipe_hw",
@@ -19,7 +19,8 @@
       "clk_wiz_0": "",
       "rst_clk_wiz_0_12M": "",
       "xlconcat_0": "",
-      "ila_0": ""
+      "ila_0": "",
+      "xlconstant_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -348,6 +349,18 @@
           "PHASE": {
             "value": "0.0",
             "value_src": "ip_prop"
+          }
+        }
+      },
+      "eth_phy_rst_b": {
+        "type": "data",
+        "direction": "O",
+        "left": "0",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
           }
         }
       }
@@ -1744,9 +1757,17 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "5"
+            "value": "6"
           }
         }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "10",
+        "xci_name": "audio_pipe_hw_xlconstant_0_0",
+        "xci_path": "ip/audio_pipe_hw_xlconstant_0_0/audio_pipe_hw_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "has_run_ip_tcl": "true"
       }
     },
     "interface_nets": {
@@ -1893,13 +1914,20 @@
       "sys_clock_1": {
         "ports": [
           "sys_clock",
-          "clk_wiz_0/clk_in1"
+          "clk_wiz_0/clk_in1",
+          "ila_0/probe5"
         ]
       },
       "xlconcat_0_dout": {
         "ports": [
           "xlconcat_0/dout",
           "processing_system7_0/IRQ_F2P"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "eth_phy_rst_b"
         ]
       }
     },

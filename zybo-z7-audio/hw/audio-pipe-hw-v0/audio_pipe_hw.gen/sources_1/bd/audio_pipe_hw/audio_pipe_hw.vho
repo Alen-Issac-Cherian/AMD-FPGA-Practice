@@ -86,7 +86,8 @@ COMPONENT audio_pipe_hw
     sclk_out_0 : OUT STD_LOGIC;
     lrclk_out_rec_0 : OUT STD_LOGIC;
     lrclk_out_pb_0 : OUT STD_LOGIC;
-    MCLK_OUT : OUT STD_LOGIC
+    MCLK_OUT : OUT STD_LOGIC;
+    eth_phy_rst_b : OUT STD_LOGIC_VECTOR(0 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------  End cut for COMPONENT Declaration  ------
@@ -130,7 +131,8 @@ your_instance_name : audio_pipe_hw
     sclk_out_0 => sclk_out_0,
     lrclk_out_rec_0 => lrclk_out_rec_0,
     lrclk_out_pb_0 => lrclk_out_pb_0,
-    MCLK_OUT => MCLK_OUT
+    MCLK_OUT => MCLK_OUT,
+    eth_phy_rst_b => eth_phy_rst_b
   );
 -- INST_TAG_END ------  End cut for INSTANTIATION Template  ------
 

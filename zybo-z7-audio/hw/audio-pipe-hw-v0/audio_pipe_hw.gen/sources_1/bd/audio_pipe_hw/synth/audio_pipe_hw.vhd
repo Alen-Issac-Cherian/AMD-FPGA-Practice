@@ -2,7 +2,7 @@
 --Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
---Date        : Wed Jul  8 23:08:14 2026
+--Date        : Thu Jul  9 20:31:43 2026
 --Host        : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 --Command     : generate_target audio_pipe_hw.bd
 --Design      : audio_pipe_hw
@@ -42,6 +42,7 @@ entity audio_pipe_hw is
     IIC_1_0_sda_o : out STD_LOGIC;
     IIC_1_0_sda_t : out STD_LOGIC;
     MCLK_OUT : out STD_LOGIC;
+    eth_phy_rst_b : out STD_LOGIC_VECTOR ( 0 to 0 );
     lrclk_out_pb_0 : out STD_LOGIC;
     lrclk_out_rec_0 : out STD_LOGIC;
     sclk_out_0 : out STD_LOGIC;
@@ -50,7 +51,7 @@ entity audio_pipe_hw is
     sys_clock : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of audio_pipe_hw : entity is "audio_pipe_hw,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=audio_pipe_hw,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=9,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=2,da_clkrst_cnt=6,da_ps7_cnt=2,synth_mode=Hierarchical}";
+  attribute CORE_GENERATION_INFO of audio_pipe_hw : entity is "audio_pipe_hw,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=audio_pipe_hw,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=10,numReposBlks=10,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,da_board_cnt=2,da_clkrst_cnt=6,da_ps7_cnt=2,synth_mode=Hierarchical}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of audio_pipe_hw : entity is "audio_pipe_hw.hwdef";
 end audio_pipe_hw;
@@ -331,9 +332,15 @@ architecture STRUCTURE of audio_pipe_hw is
     probe1 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe2 : in STD_LOGIC_VECTOR ( 0 to 0 );
     probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 )
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe5 : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component audio_pipe_hw_ila_0_0;
+  component audio_pipe_hw_xlconstant_0_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component audio_pipe_hw_xlconstant_0_0;
   signal \^mclk_out\ : STD_LOGIC;
   signal axi_smc_M00_AXI_ARADDR : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal axi_smc_M00_AXI_ARREADY : STD_LOGIC;
@@ -481,6 +488,8 @@ architecture STRUCTURE of audio_pipe_hw is
   attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
+  attribute X_INTERFACE_INFO of eth_phy_rst_b : signal is "xilinx.com:signal:data:1.0 DATA.ETH_PHY_RST_B DATA";
+  attribute X_INTERFACE_PARAMETER of eth_phy_rst_b : signal is "XIL_INTERFACENAME DATA.ETH_PHY_RST_B, LAYERED_METADATA undef";
 begin
   MCLK_OUT <= \^mclk_out\;
   lrclk_out_pb_0 <= \^lrclk_out_pb_0\;
@@ -647,7 +656,8 @@ ila_0: component audio_pipe_hw_ila_0_0
       probe1(0) => \^sclk_out_0\,
       probe2(0) => sdata_0_in_0,
       probe3(0) => \^sdata_0_out_0\,
-      probe4(0) => clk_wiz_0_locked
+      probe4(0) => clk_wiz_0_locked,
+      probe5(0) => sys_clock
     );
 processing_system7_0: component audio_pipe_hw_processing_system7_0_1
      port map (
@@ -755,5 +765,9 @@ xlconcat_0: component audio_pipe_hw_xlconcat_0_0
       In0(0) => i2s_receiver_0_irq,
       In1(0) => i2s_transmitter_0_irq,
       dout(1 downto 0) => xlconcat_0_dout(1 downto 0)
+    );
+xlconstant_0: component audio_pipe_hw_xlconstant_0_0
+     port map (
+      dout(0) => eth_phy_rst_b(0)
     );
 end STRUCTURE;

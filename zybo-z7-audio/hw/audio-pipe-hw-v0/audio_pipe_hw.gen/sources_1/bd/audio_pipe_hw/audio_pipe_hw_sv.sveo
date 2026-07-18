@@ -99,7 +99,8 @@ audio_pipe_hw_sv your_instance_name (
   .sclk_out_0(sclk_out_0), // output wire sclk_out_0
   .lrclk_out_rec_0(lrclk_out_rec_0), // output wire lrclk_out_rec_0
   .lrclk_out_pb_0(lrclk_out_pb_0), // output wire lrclk_out_pb_0
-  .MCLK_OUT(MCLK_OUT) // output wire MCLK_OUT
+  .MCLK_OUT(MCLK_OUT), // output wire MCLK_OUT
+  .eth_phy_rst_b(eth_phy_rst_b) // output wire [0:0] eth_phy_rst_b
 );
 // INST_TAG_END ------  End cut for WRAPPER INSTANTIATION Template  ------
 

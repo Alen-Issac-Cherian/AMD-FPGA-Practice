@@ -7,12 +7,12 @@
   **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
   **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
   **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-  **** Start of session at: Wed Jul  8 23:11:53 2026
+  **** Start of session at: Thu Jul  9 20:52:54 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 
 source audio_pipe_hw_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:06 . Memory (MB): peak = 1607.508 ; gain = 64.055 ; free physical = 746 ; free virtual = 3363
+create_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:06 . Memory (MB): peak = 1584.488 ; gain = 110.055 ; free physical = 2517 ; free virtual = 4999
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alen/AMD-Xilinx/2025.2/data/ip'.
@@ -21,7 +21,8 @@ It is recommended to migrate these utility IPs to inline hdl  using the command 
 More information on inline hdl is available in UG994.
 Utility IP Component Instances:
  audio_pipe_hw_xlconcat_0_0
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1625.078 ; gain = 17.570 ; free physical = 672 ; free virtual = 3318
+audio_pipe_hw_xlconstant_0_0
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1624.777 ; gain = 40.289 ; free physical = 2356 ; free virtual = 4916
 Command: read_checkpoint -auto_incremental -incremental /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.srcs/utils_1/imports/synth_1/audio_pipe_hw_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.srcs/utils_1/imports/synth_1/audio_pipe_hw_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -34,41 +35,46 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 16750
+INFO: [Synth 8-7075] Helper process launched with PID 154647
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2287.820 ; gain = 484.156 ; free physical = 153 ; free virtual = 2447
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2287.723 ; gain = 484.328 ; free physical = 1477 ; free virtual = 4112
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_wrapper' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:50]
-INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566' bound to instance 'IIC_1_0_scl_iobuf' of component 'IOBUF' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:104]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_wrapper' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:51]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566' bound to instance 'IIC_1_0_scl_iobuf' of component 'IOBUF' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:106]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (0#1) [/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566]
-INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566' bound to instance 'IIC_1_0_sda_iobuf' of component 'IOBUF' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:111]
-INFO: [Synth 8-3491] module 'audio_pipe_hw' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:15' bound to instance 'audio_pipe_hw_i' of component 'audio_pipe_hw' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:118]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:58]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_axi_smc_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'audio_pipe_hw_axi_smc_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:490]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_axi_smc_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_axi_smc_0_stub.vhdl:96]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_clk_wiz_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'audio_pipe_hw_clk_wiz_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:571]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_clk_wiz_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_clk_wiz_0_0_stub.vhdl:17]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_i2s_receiver_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_i2s_receiver_0_0_stub.vhdl:6' bound to instance 'i2s_receiver_0' of component 'audio_pipe_hw_i2s_receiver_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:577]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_i2s_receiver_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_i2s_receiver_0_0_stub.vhdl:48]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_i2s_transmitter_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_i2s_transmitter_0_0_stub.vhdl:6' bound to instance 'i2s_transmitter_0' of component 'audio_pipe_hw_i2s_transmitter_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:610]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_i2s_transmitter_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_i2s_transmitter_0_0_stub.vhdl:48]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_ila_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'audio_pipe_hw_ila_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:643]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_ila_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_ila_0_0_stub.vhdl:24]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_processing_system7_0_1' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_processing_system7_0_1_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'audio_pipe_hw_processing_system7_0_1' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:652]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_processing_system7_0_1' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_processing_system7_0_1_stub.vhdl:90]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_rst_clk_wiz_0_12M_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_rst_clk_wiz_0_12M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_0_12M' of component 'audio_pipe_hw_rst_clk_wiz_0_12M_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:727]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_rst_clk_wiz_0_12M_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_rst_clk_wiz_0_12M_0_stub.vhdl:28]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_rst_ps7_0_50M_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_rst_ps7_0_50M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_50M' of component 'audio_pipe_hw_rst_ps7_0_50M_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:740]
-INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_rst_ps7_0_50M_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-16227-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_rst_ps7_0_50M_0_stub.vhdl:28]
-INFO: [Synth 8-3491] module 'audio_pipe_hw_xlconcat_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_xlconcat_0_0/synth/audio_pipe_hw_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'audio_pipe_hw_xlconcat_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:753]
+INFO: [Synth 8-3491] module 'IOBUF' declared at '/home/alen/AMD-Xilinx/2025.2/Vivado/scripts/rt/data/unisim_comp.v:87566' bound to instance 'IIC_1_0_sda_iobuf' of component 'IOBUF' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:113]
+INFO: [Synth 8-3491] module 'audio_pipe_hw' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:15' bound to instance 'audio_pipe_hw_i' of component 'audio_pipe_hw' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:59]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_axi_smc_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_axi_smc_0_stub.vhdl:6' bound to instance 'axi_smc' of component 'audio_pipe_hw_axi_smc_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:499]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_axi_smc_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_axi_smc_0_stub.vhdl:96]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_clk_wiz_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_clk_wiz_0_0_stub.vhdl:6' bound to instance 'clk_wiz_0' of component 'audio_pipe_hw_clk_wiz_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:580]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_clk_wiz_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_clk_wiz_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_i2s_receiver_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_i2s_receiver_0_0_stub.vhdl:6' bound to instance 'i2s_receiver_0' of component 'audio_pipe_hw_i2s_receiver_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:586]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_i2s_receiver_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_i2s_receiver_0_0_stub.vhdl:48]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_i2s_transmitter_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_i2s_transmitter_0_0_stub.vhdl:6' bound to instance 'i2s_transmitter_0' of component 'audio_pipe_hw_i2s_transmitter_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:619]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_i2s_transmitter_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_i2s_transmitter_0_0_stub.vhdl:48]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_ila_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_ila_0_0_stub.vhdl:6' bound to instance 'ila_0' of component 'audio_pipe_hw_ila_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:652]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_ila_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_ila_0_0_stub.vhdl:25]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_processing_system7_0_1' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_processing_system7_0_1_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'audio_pipe_hw_processing_system7_0_1' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:662]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_processing_system7_0_1' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_processing_system7_0_1_stub.vhdl:90]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_rst_clk_wiz_0_12M_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_rst_clk_wiz_0_12M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_0_12M' of component 'audio_pipe_hw_rst_clk_wiz_0_12M_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:737]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_rst_clk_wiz_0_12M_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_rst_clk_wiz_0_12M_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_rst_ps7_0_50M_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_rst_ps7_0_50M_0_stub.vhdl:6' bound to instance 'rst_ps7_0_50M' of component 'audio_pipe_hw_rst_ps7_0_50M_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:750]
+INFO: [Synth 8-638] synthesizing module 'audio_pipe_hw_rst_ps7_0_50M_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/.Xil/Vivado-153803-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/audio_pipe_hw_rst_ps7_0_50M_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_xlconcat_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_xlconcat_0_0/synth/audio_pipe_hw_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'audio_pipe_hw_xlconcat_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:763]
 INFO: [Synth 8-6157] synthesizing module 'audio_pipe_hw_xlconcat_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_xlconcat_0_0/synth/audio_pipe_hw_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_7_xlconcat' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_7_xlconcat' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/9c1a/hdl/xlconcat_v2_1_vl_rfs.v:59]
 INFO: [Synth 8-6155] done synthesizing module 'audio_pipe_hw_xlconcat_0_0' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_xlconcat_0_0/synth/audio_pipe_hw_xlconcat_0_0.v:53]
-INFO: [Synth 8-256] done synthesizing module 'audio_pipe_hw' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:58]
-INFO: [Synth 8-256] done synthesizing module 'audio_pipe_hw_wrapper' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:50]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'audio_pipe_hw_i'. This will prevent further optimization [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:118]
+INFO: [Synth 8-3491] module 'audio_pipe_hw_xlconstant_0_0' declared at '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_xlconstant_0_0/synth/audio_pipe_hw_xlconstant_0_0.v:53' bound to instance 'xlconstant_0' of component 'audio_pipe_hw_xlconstant_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:769]
+INFO: [Synth 8-6157] synthesizing module 'audio_pipe_hw_xlconstant_0_0' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_xlconstant_0_0/synth/audio_pipe_hw_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_10_xlconstant' [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_10_xlconstant' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ipshared/a165/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'audio_pipe_hw_xlconstant_0_0' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/ip/audio_pipe_hw_xlconstant_0_0/synth/audio_pipe_hw_xlconstant_0_0.v:53]
+INFO: [Synth 8-256] done synthesizing module 'audio_pipe_hw' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/synth/audio_pipe_hw.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'audio_pipe_hw_wrapper' (0#1) [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:51]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'audio_pipe_hw_i'. This will prevent further optimization [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/hdl/audio_pipe_hw_wrapper.vhd:120]
 WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
@@ -171,18 +177,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_7_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_7_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2383.758 ; gain = 580.094 ; free physical = 132 ; free virtual = 2295
+Finished RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2383.660 ; gain = 580.266 ; free physical = 1355 ; free virtual = 3991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2383.758 ; gain = 580.094 ; free physical = 132 ; free virtual = 2295
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2383.660 ; gain = 580.266 ; free physical = 1355 ; free virtual = 3991
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2383.758 ; gain = 580.094 ; free physical = 132 ; free virtual = 2295
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2383.660 ; gain = 580.266 ; free physical = 1355 ; free virtual = 3991
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2383.758 ; gain = 0.000 ; free physical = 131 ; free virtual = 2296
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2383.660 ; gain = 0.000 ; free physical = 1356 ; free virtual = 3993
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -213,32 +219,32 @@ Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-h
 Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2423.777 ; gain = 0.000 ; free physical = 145 ; free virtual = 2290
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2429.617 ; gain = 0.000 ; free physical = 1353 ; free virtual = 3991
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2423.812 ; gain = 0.000 ; free physical = 143 ; free virtual = 2289
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2429.652 ; gain = 0.000 ; free physical = 1352 ; free virtual = 3991
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2423.812 ; gain = 620.148 ; free physical = 203 ; free virtual = 2360
+Finished Constraint Validation : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2429.652 ; gain = 626.258 ; free physical = 1345 ; free virtual = 3984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2431.781 ; gain = 628.117 ; free physical = 203 ; free virtual = 2360
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 2437.621 ; gain = 634.227 ; free physical = 1345 ; free virtual = 3984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2431.781 ; gain = 628.117 ; free physical = 202 ; free virtual = 2359
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2437.621 ; gain = 634.227 ; free physical = 1345 ; free virtual = 3984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 2431.781 ; gain = 628.117 ; free physical = 201 ; free virtual = 2359
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2437.621 ; gain = 634.227 ; free physical = 1344 ; free virtual = 3984
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -260,25 +266,25 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 2431.781 ; gain = 628.117 ; free physical = 197 ; free virtual = 2360
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 2437.621 ; gain = 634.227 ; free physical = 1338 ; free virtual = 3983
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2544.781 ; gain = 741.117 ; free physical = 138 ; free virtual = 2263
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 2546.621 ; gain = 743.227 ; free physical = 1236 ; free virtual = 3881
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2544.781 ; gain = 741.117 ; free physical = 138 ; free virtual = 2263
+Finished Timing Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 2546.621 ; gain = 743.227 ; free physical = 1236 ; free virtual = 3881
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2554.797 ; gain = 751.133 ; free physical = 139 ; free virtual = 2248
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 2556.637 ; gain = 753.242 ; free physical = 1226 ; free virtual = 3872
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -296,37 +302,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2741.609 ; gain = 937.945 ; free physical = 123 ; free virtual = 2078
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2743.449 ; gain = 940.055 ; free physical = 1060 ; free virtual = 3705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2741.609 ; gain = 937.945 ; free physical = 123 ; free virtual = 2078
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2743.449 ; gain = 940.055 ; free physical = 1060 ; free virtual = 3705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2741.609 ; gain = 937.945 ; free physical = 123 ; free virtual = 2078
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2743.449 ; gain = 940.055 ; free physical = 1060 ; free virtual = 3705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2741.609 ; gain = 937.945 ; free physical = 123 ; free virtual = 2078
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2743.449 ; gain = 940.055 ; free physical = 1060 ; free virtual = 3705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2741.609 ; gain = 937.945 ; free physical = 123 ; free virtual = 2078
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2743.449 ; gain = 940.055 ; free physical = 1060 ; free virtual = 3705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2741.609 ; gain = 937.945 ; free physical = 123 ; free virtual = 2078
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2743.449 ; gain = 940.055 ; free physical = 1060 ; free virtual = 3705
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -360,33 +366,33 @@ Report Cell Usage:
 |8     |audio_pipe_hw_rst_ps7_0_50M_0_bbox        |     1|
 |9     |IBUF                                      |     1|
 |10    |IOBUF                                     |     2|
-|11    |OBUF                                      |     5|
+|11    |OBUF                                      |     6|
 +------+------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2741.609 ; gain = 937.945 ; free physical = 123 ; free virtual = 2078
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2743.449 ; gain = 940.055 ; free physical = 1060 ; free virtual = 3705
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2741.609 ; gain = 897.891 ; free physical = 123 ; free virtual = 2079
-Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 2741.617 ; gain = 937.945 ; free physical = 123 ; free virtual = 2079
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 2743.449 ; gain = 894.062 ; free physical = 1060 ; free virtual = 3705
+Synthesis Optimization Complete : Time (s): cpu = 00:01:02 ; elapsed = 00:01:03 . Memory (MB): peak = 2743.457 ; gain = 940.055 ; free physical = 1060 ; free virtual = 3705
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2741.617 ; gain = 0.000 ; free physical = 135 ; free virtual = 2084
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2743.457 ; gain = 0.000 ; free physical = 1060 ; free virtual = 3705
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2741.617 ; gain = 0.000 ; free physical = 298 ; free virtual = 2255
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2743.457 ; gain = 0.000 ; free physical = 1235 ; free virtual = 3880
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 2 instances
 
-Synth Design complete | Checksum: b7e4ab6d
+Synth Design complete | Checksum: 633bee57
 INFO: [Common 17-83] Releasing license: Synthesis
-59 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+64 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:25 . Memory (MB): peak = 2741.645 ; gain = 1116.566 ; free physical = 296 ; free virtual = 2254
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2166.518; main = 2022.116; forked = 328.497
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3667.777; main = 2741.613; forked = 993.977
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2765.621 ; gain = 0.000 ; free physical = 296 ; free virtual = 2254
+synth_design: Time (s): cpu = 00:01:30 ; elapsed = 00:01:25 . Memory (MB): peak = 2743.484 ; gain = 1118.707 ; free physical = 1235 ; free virtual = 3880
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 2204.617; main = 2041.547; forked = 314.038
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3679.621; main = 2743.453; forked = 993.980
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2767.461 ; gain = 0.000 ; free physical = 1234 ; free virtual = 3880
 INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.runs/synth_1/audio_pipe_hw_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file audio_pipe_hw_wrapper_utilization_synth.rpt -pb audio_pipe_hw_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jul  8 23:13:38 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  9 20:54:38 2026...

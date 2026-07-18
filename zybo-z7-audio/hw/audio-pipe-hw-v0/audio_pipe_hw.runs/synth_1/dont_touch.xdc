@@ -33,4 +33,7 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_
 # IP: bd/audio_pipe_hw/ip/audio_pipe_hw_ila_0_0/audio_pipe_hw_ila_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_ila_0_0 || ORIG_REF_NAME==audio_pipe_hw_ila_0_0} -quiet] -quiet
 
+# IP: bd/audio_pipe_hw/ip/audio_pipe_hw_xlconstant_0_0/audio_pipe_hw_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==audio_pipe_hw_xlconstant_0_0 || ORIG_REF_NAME==audio_pipe_hw_xlconstant_0_0} -quiet] -quiet
+
 # XDC: /home/alen/git/AMD-FPGA-Practice/zybo-z7-audio/hw/audio-pipe-hw-v0/audio_pipe_hw.gen/sources_1/bd/audio_pipe_hw/audio_pipe_hw_ooc.xdc

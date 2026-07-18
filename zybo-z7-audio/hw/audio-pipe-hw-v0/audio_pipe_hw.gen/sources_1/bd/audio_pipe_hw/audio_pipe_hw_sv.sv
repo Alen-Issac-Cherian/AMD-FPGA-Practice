@@ -120,7 +120,9 @@ module audio_pipe_hw_sv (
   (* X_INTERFACE_IGNORE = "true" *)
   output wire lrclk_out_pb_0,
   (* X_INTERFACE_IGNORE = "true" *)
-  output wire MCLK_OUT
+  output wire MCLK_OUT,
+  (* X_INTERFACE_IGNORE = "true" *)
+  output wire [0:0] eth_phy_rst_b
 );
 
   audio_pipe_hw inst (
@@ -157,7 +159,8 @@ module audio_pipe_hw_sv (
     .sclk_out_0(sclk_out_0),
     .lrclk_out_rec_0(lrclk_out_rec_0),
     .lrclk_out_pb_0(lrclk_out_pb_0),
-    .MCLK_OUT(MCLK_OUT)
+    .MCLK_OUT(MCLK_OUT),
+    .eth_phy_rst_b(eth_phy_rst_b)
   );
 
 endmodule

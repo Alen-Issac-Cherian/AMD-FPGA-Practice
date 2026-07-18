@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date                      : Wed Jul  8 23:16:10 2026
+| Date                      : Thu Jul  9 20:57:15 2026
 | Host                      : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
 | Command                   : report_io -file audio_pipe_hw_wrapper_io_placed.rpt
 | Design                    : audio_pipe_hw_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           139 |
+|           140 |
 +---------------+
 
 
@@ -131,7 +131,7 @@ Table of Contents
 | E14        | FIXED_IO_mio[17]  |            | PS_MIO17_501            | OUT           | LVCMOS18           |         |          8 | FAST |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
 | E15        |                   |            | VCCO_MIO1_501           | VCCO          |                    |         |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
 | E16        | FIXED_IO_mio[31]  |            | PS_MIO31_501            | IN            | LVCMOS18           |         |          8 | FAST |                     |                 NONE |         | FIXED      | PULLUP    |          |      | NONE             |              |                   |              |
-| E17        |                   | High Range | IO_L3P_T0_DQS_AD1P_35   | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| E17        | eth_phy_rst_b[0]  | High Range | IO_L3P_T0_DQS_AD1P_35   | OUTPUT        | LVCMOS33           |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | E18        |                   | High Range | IO_L5P_T0_AD9P_35       | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | E19        |                   | High Range | IO_L5N_T0_AD9N_35       | User IO       |                    |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | E20        |                   |            | GND                     | GND           |                    |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |

@@ -10,14 +10,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="7"></ZoomEndTime>
+      <ZoomEndTime time="8"></ZoomEndTime>
       <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="418"></NameColumnWidth>
-      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+      <ValueColumnWidth column_width="68"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="4" />
+   <WVObjectSize size="6" />
    <wvobject type="logic" fp_name="audio_pipe_hw_i/^lrclk_out_pb_0">
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">audio_pipe_hw_i/^lrclk_out_pb_0</obj_property>
@@ -43,6 +43,20 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">audio_pipe_hw_i/sdata_0_in_0</obj_property>
       <obj_property name="ObjectShortName">sdata_0_in_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="audio_pipe_hw_i/clk_wiz_0_locked">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">audio_pipe_hw_i/clk_wiz_0_locked</obj_property>
+      <obj_property name="ObjectShortName">clk_wiz_0_locked</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="audio_pipe_hw_i/sys_clock">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">audio_pipe_hw_i/sys_clock</obj_property>
+      <obj_property name="ObjectShortName">sys_clock</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
