@@ -1,0 +1,518 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Dec 15 18:35:21 2023
+# Process ID: 13544
+# Current directory: G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.runs/broncho_video_v_enhance_0_0_synth_1
+# Command line: vivado.exe -log broncho_video_v_enhance_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source broncho_video_v_enhance_0_0.tcl
+# Log file: G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.runs/broncho_video_v_enhance_0_0_synth_1/broncho_video_v_enhance_0_0.vds
+# Journal file: G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.runs/broncho_video_v_enhance_0_0_synth_1\vivado.jou
+# Running On: DESKTOP-1T2E61L, OS: Windows, CPU Frequency: 2208 MHz, CPU Physical cores: 6, Host memory: 17027 MB
+#-----------------------------------------------------------
+source broncho_video_v_enhance_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:50 . Memory (MB): peak = 526.348 ; gain = 181.277
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'g:/Project-Workspace/zynq-7020-video-pipe-3/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: broncho_video_v_enhance_0_0
+Command: synth_design -top broncho_video_v_enhance_0_0 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14376
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1400.078 ; gain = 437.949
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'broncho_video_v_enhance_0_0' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_enhance_0_0/synth/broncho_video_v_enhance_0_0.vhd:77]
+	Parameter C_S_AXIS_VIDEO_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_M_AXIS_VIDEO_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AXIS_VIDEO_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_AXIS_VIDEO_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_AXIS_VIDEO_FORMAT bound to: 0 - type: integer 
+	Parameter C_M_AXIS_VIDEO_FORMAT bound to: 0 - type: integer 
+	Parameter C_S_AXI_CLK_FREQ_HZ bound to: 100000000 - type: integer 
+	Parameter C_HAS_AXI4_LITE bound to: 0 - type: integer 
+	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
+	Parameter C_HAS_DEBUG bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_MAX_COLS bound to: 800 - type: integer 
+	Parameter C_ACTIVE_COLS bound to: 800 - type: integer 
+	Parameter C_ACTIVE_ROWS bound to: 800 - type: integer 
+	Parameter C_HAS_NOISE bound to: 1 - type: integer 
+	Parameter C_HAS_ENHANCE bound to: 1 - type: integer 
+	Parameter C_HAS_HALO bound to: 1 - type: integer 
+	Parameter C_HAS_ALIAS bound to: 0 - type: integer 
+	Parameter C_OPT_SIZE bound to: 0 - type: integer 
+	Parameter C_NOISE_THRESHOLD bound to: 192 - type: integer 
+	Parameter C_ENHANCE_STRENGTH bound to: 4096 - type: integer 
+	Parameter C_HALO_SUPPRESS bound to: 24576 - type: integer 
+INFO: [Synth 8-3491] module 'v_enhance' declared at 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:27790' bound to instance 'U0' of component 'v_enhance' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_enhance_0_0/synth/broncho_video_v_enhance_0_0.vhd:177]
+INFO: [Synth 8-256] done synthesizing module 'broncho_video_v_enhance_0_0' (0#1) [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_enhance_0_0/synth/broncho_video_v_enhance_0_0.vhd:77]
+WARNING: [Synth 8-7129] Port q1 in module DELAY__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d1 in module DELAY__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[199] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[198] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[197] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[196] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[195] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[194] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[193] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[192] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[191] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[190] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[189] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[188] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[187] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[186] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[185] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[184] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[183] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[182] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[181] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[180] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[179] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[178] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[177] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[176] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[175] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[174] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[173] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[172] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[171] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[170] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[169] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[168] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[167] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[166] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[165] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[164] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[163] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[162] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[161] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[160] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[159] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[158] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[157] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[156] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[155] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[154] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[153] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[152] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[127] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[126] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[125] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[124] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[123] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[122] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[121] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[120] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[119] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[118] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[117] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[116] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[115] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[114] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[113] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[112] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[87] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[86] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[85] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[84] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[83] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[82] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[81] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[80] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[79] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[78] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[77] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[76] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[75] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[74] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[73] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[72] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[47] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[46] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[45] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[44] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[43] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[42] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[41] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[40] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[39] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[38] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[37] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[36] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[35] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[34] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[33] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[32] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[31] in module anti_halo is either unconnected or has no load
+WARNING: [Synth 8-7129] Port d[30] in module anti_halo is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 1595.746 ; gain = 633.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1595.746 ; gain = 633.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:37 . Memory (MB): peak = 1595.746 ; gain = 633.617
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.384 . Memory (MB): peak = 1595.746 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_enhance_0_0/broncho_video_v_enhance_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_enhance_0_0/broncho_video_v_enhance_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.runs/broncho_video_v_enhance_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.runs/broncho_video_v_enhance_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_enhance_0_0/broncho_video_v_enhance_0_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_enhance_0_0/broncho_video_v_enhance_0_0_clocks.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.346 . Memory (MB): peak = 1627.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.347 . Memory (MB): peak = 1640.934 ; gain = 13.891
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:51 ; elapsed = 00:01:08 . Memory (MB): peak = 1640.934 ; gain = 678.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:51 ; elapsed = 00:01:08 . Memory (MB): peak = 1640.934 ; gain = 678.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.runs/broncho_video_v_enhance_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:08 . Memory (MB): peak = 1640.934 ; gain = 678.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:56 ; elapsed = 00:01:14 . Memory (MB): peak = 1640.934 ; gain = 678.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'has_noise.noise_reduction/blur_blend_L_reg[8:0]' into 'has_noise.noise_reduction/blur_blend_L_reg[8:0]' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:24812]
+INFO: [Synth 8-4471] merging register 'has_noise.noise_reduction/blur_blend_R_reg[8:0]' into 'has_noise.noise_reduction/blur_blend_R_reg[8:0]' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:24813]
+INFO: [Synth 8-4471] merging register 'has_noise.noise_reduction/blur_blend_H_reg[8:0]' into 'has_noise.noise_reduction/blur_blend_H_reg[8:0]' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:24810]
+INFO: [Synth 8-4471] merging register 'has_noise.noise_reduction/blur_blend_V_reg[8:0]' into 'has_noise.noise_reduction/blur_blend_V_reg[8:0]' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:24811]
+INFO: [Synth 8-4471] merging register 'has_noise.noise_reduction/gain_LR_reg[9:0]' into 'has_noise.noise_reduction/gain_LR_reg[9:0]' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:24802]
+INFO: [Synth 8-4471] merging register 'has_noise.noise_reduction/gain_HV_reg[9:0]' into 'has_noise.noise_reduction/gain_HV_reg[9:0]' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:24801]
+INFO: [Synth 8-4471] merging register 'has_noise.noise_reduction/gain_image_reg[10:0]' into 'has_noise.noise_reduction/gain_image_reg[10:0]' [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:24803]
+DSP Report: Generating DSP has_noise.noise_reduction/y_blur_blend_L_reg, operation Mode is: (A''*B2)'.
+DSP Report: register has_noise.noise_reduction/blur_blend_L_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_L_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_L_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_L_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_L_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_L_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_L_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_L_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/y_blur_blend_L_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/y_blur_blend_LR_reg, operation Mode is: (PCIN+(A''*B2)')'.
+DSP Report: register has_noise.noise_reduction/blur_blend_R_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_LR_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_delay_match/needs_delay.clk_process.shift_register_reg[9] is absorbed into DSP has_noise.noise_reduction/y_blur_blend_LR_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_delay_match/needs_delay.clk_process.shift_register_reg[10] is absorbed into DSP has_noise.noise_reduction/y_blur_blend_LR_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_LR_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_LR_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_R_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_LR_reg.
+DSP Report: operator has_noise.noise_reduction/plusOp is absorbed into DSP has_noise.noise_reduction/y_blur_blend_LR_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/y_blur_blend_LR_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/y_blur_blend_H_reg, operation Mode is: (A''*B2)'.
+DSP Report: register has_noise.noise_reduction/blur_blend_H_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_H_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_H_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_H_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_H_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_H_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_H_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_H_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/y_blur_blend_H_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/y_blur_blend_HV_reg, operation Mode is: (PCIN+(A''*B2)')'.
+DSP Report: register has_noise.noise_reduction/blur_blend_V_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_HV_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_HV_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_HV_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_HV_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_HV_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_HV_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_HV_reg.
+DSP Report: register has_noise.noise_reduction/y_blur_blend_V_reg is absorbed into DSP has_noise.noise_reduction/y_blur_blend_HV_reg.
+DSP Report: operator has_noise.noise_reduction/plusOp is absorbed into DSP has_noise.noise_reduction/y_blur_blend_HV_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/y_blur_blend_HV_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/y_im_blend_delay_reg, operation Mode is: ((D'+A2)*B'')'.
+DSP Report: register has_noise.noise_reduction/gain_LR_reg is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/y_delay_match/needs_delay.clk_process.shift_register_reg[13] is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/y_delay_match/needs_delay.clk_process.shift_register_reg[14] is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/gain_HV_reg is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/y_im_blend_delay_reg is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/y_im_blend_reg is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/gain_image_reg is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: operator has_noise.noise_reduction/plusOp is absorbed into DSP has_noise.noise_reduction/y_im_blend_delay_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/cb_blur_blend_L_reg, operation Mode is: (A''*B2)'.
+DSP Report: register has_noise.noise_reduction/blur_blend_L_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_L_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_L_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_L_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_L_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_L_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_L_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_L_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_L_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/cb_blur_blend_LR_reg, operation Mode is: (PCIN+(A''*B2)')'.
+DSP Report: register has_noise.noise_reduction/blur_blend_R_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_LR_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[9] is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_LR_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[10] is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_LR_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_LR_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_LR_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_R_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_LR_reg.
+DSP Report: operator has_noise.noise_reduction/plusOp is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_LR_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_LR_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/cb_blur_blend_H_reg, operation Mode is: (A''*B2)'.
+DSP Report: register has_noise.noise_reduction/blur_blend_H_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_H_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_H_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_H_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_H_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_H_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_H_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_H_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_H_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/cb_blur_blend_HV_reg, operation Mode is: (PCIN+(A''*B2)')'.
+DSP Report: register has_noise.noise_reduction/blur_blend_V_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_HV_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_HV_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_HV_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_HV_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_HV_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_HV_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_HV_reg.
+DSP Report: register has_noise.noise_reduction/cb_blur_blend_V_reg is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_HV_reg.
+DSP Report: operator has_noise.noise_reduction/plusOp is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_HV_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/cb_blur_blend_HV_reg.
+DSP Report: Generating DSP has_noise.noise_reduction/cb_im_blend_delay_reg, operation Mode is: ((D'+A2)*B'')'.
+DSP Report: register has_noise.noise_reduction/cb_delay_match/needs_delay.clk_process.shift_register_reg[13] is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/cb_delay_match/needs_delay.clk_process.shift_register_reg[14] is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/gain_LR_reg is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/gain_HV_reg is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/cb_im_blend_delay_reg is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/cb_im_blend_reg is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+DSP Report: register has_noise.noise_reduction/gain_image_reg is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+DSP Report: operator has_noise.noise_reduction/multOp is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+DSP Report: operator has_noise.noise_reduction/plusOp is absorbed into DSP has_noise.noise_reduction/cb_im_blend_delay_reg.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/Cb_blur_filt/horizontal_422_filter.h_c0_2_reg[0] )
+INFO: [Synth 8-3886] merging instance 'has_noise.noise_reduction/Cb_blur_filt/horizontal_422_filter.blur_H_reg[0]' (FDRE) to 'has_noise.noise_reduction/Cb_blur_filt/horizontal_422_filter.h_c0_2_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/Cb_blur_filt/horizontal_422_filter.h_c0_2_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33] )
+INFO: [Synth 8-3886] merging instance 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[2][33]' (FDE) to 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33] )
+INFO: [Synth 8-3886] merging instance 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[3][33]' (FDE) to 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33] )
+INFO: [Synth 8-3886] merging instance 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[4][33]' (FDE) to 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33] )
+INFO: [Synth 8-3886] merging instance 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[5][33]' (FDE) to 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33] )
+INFO: [Synth 8-3886] merging instance 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[6][33]' (FDE) to 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33] )
+INFO: [Synth 8-3886] merging instance 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[7][33]' (FDE) to 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33] )
+INFO: [Synth 8-3886] merging instance 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[8][33]' (FDE) to 'has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_noise.noise_reduction/cb_blur_delay_match/needs_delay.clk_process.shift_register_reg[1][33] )
+WARNING: [Synth 8-6014] Unused sequential element has_halo.halo/min_gain_reg was removed.  [g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.gen/sources_1/bd/broncho_video/ipshared/8935/hdl/v_enhance_v8_0_vh_rfs.vhd:25406]
+DSP Report: Generating DSP has_enhance.edge_enhancement/enhance_out_reg, operation Mode is: ((D'+A2)*B)'.
+DSP Report: register has_enhance.edge_enhancement/enhance_LR_reg is absorbed into DSP has_enhance.edge_enhancement/enhance_out_reg.
+DSP Report: register has_enhance.edge_enhancement/enhance_HV_reg is absorbed into DSP has_enhance.edge_enhancement/enhance_out_reg.
+DSP Report: register has_enhance.edge_enhancement/enhance_out_reg is absorbed into DSP has_enhance.edge_enhancement/enhance_out_reg.
+DSP Report: register has_enhance.edge_enhancement/enhance_HVLR_reg is absorbed into DSP has_enhance.edge_enhancement/enhance_out_reg.
+DSP Report: operator has_enhance.edge_enhancement/multOp is absorbed into DSP has_enhance.edge_enhancement/enhance_out_reg.
+DSP Report: operator has_enhance.edge_enhancement/plusOp is absorbed into DSP has_enhance.edge_enhancement/enhance_out_reg.
+DSP Report: Generating DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1], operation Mode is: (C:0x1ffff)+((D'+A2)*B)'+CarryIn.
+DSP Report: register has_enhance.edge_enhancement/enhance_LR_reg is absorbed into DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1].
+DSP Report: register has_enhance.edge_enhancement/enhance_HV_reg is absorbed into DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1].
+DSP Report: register has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1] is absorbed into DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1].
+DSP Report: register has_enhance.edge_enhancement/enhance_out_reg is absorbed into DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1].
+DSP Report: register has_enhance.edge_enhancement/enhance_HVLR_reg is absorbed into DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1].
+DSP Report: operator has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/plusOp is absorbed into DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1].
+DSP Report: operator has_enhance.edge_enhancement/multOp is absorbed into DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1].
+DSP Report: operator has_enhance.edge_enhancement/plusOp is absorbed into DSP has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1].
+DSP Report: Generating DSP has_halo.halo/max_halo_reg, operation Mode is: (C:0x7f8000)-(A*B2)'.
+DSP Report: register has_halo.halo/max_halo_reg is absorbed into DSP has_halo.halo/max_halo_reg.
+DSP Report: register has_halo.halo/max_halo_reg is absorbed into DSP has_halo.halo/max_halo_reg.
+DSP Report: register has_halo.halo/max_gain_reg is absorbed into DSP has_halo.halo/max_halo_reg.
+DSP Report: operator has_halo.halo/minusOp is absorbed into DSP has_halo.halo/max_halo_reg.
+DSP Report: operator has_halo.halo/multOp is absorbed into DSP has_halo.halo/max_halo_reg.
+DSP Report: Generating DSP has_halo.halo/min_gain_reg, operation Mode is: (A*B2)'.
+DSP Report: register has_halo.halo/min_gain_reg is absorbed into DSP has_halo.halo/min_gain_reg.
+DSP Report: register has_halo.halo/min_gain_reg is absorbed into DSP has_halo.halo/min_gain_reg.
+DSP Report: operator has_halo.halo/multOp is absorbed into DSP has_halo.halo/min_gain_reg.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\has_halo.halo/min_gain_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:03:37 . Memory (MB): peak = 1640.934 ; gain = 678.805
+---------------------------------------------------------------------------------
+ Sort Area is enhance_core__GCB2 has_enhance.edge_enhancement/rnd_enhance/adder/use_fabric.adder/reg/needs_delay.clk_process.shift_register_reg[1]_2 : 0 0 : 3006 3006 : Used 1 time 0
+ Sort Area is enhance_core__GCB2 has_enhance.edge_enhancement/enhance_out_reg_0 : 0 0 : 2830 2830 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/cb_blur_blend_H_reg_7 : 0 0 : 702 1487 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/cb_blur_blend_H_reg_7 : 0 1 : 785 1487 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/cb_blur_blend_L_reg_8 : 0 0 : 702 1487 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/cb_blur_blend_L_reg_8 : 0 1 : 785 1487 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/y_blur_blend_H_reg_2 : 0 0 : 702 1487 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/y_blur_blend_H_reg_2 : 0 1 : 785 1487 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/y_blur_blend_L_reg_5 : 0 0 : 702 1487 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/y_blur_blend_L_reg_5 : 0 1 : 785 1487 : Used 1 time 0
+ Sort Area is enhance_core__GCB2 has_halo.halo/max_halo_reg_6 : 0 0 : 1248 1248 : Used 1 time 0
+ Sort Area is enhance_core__GCB2 has_halo.halo/min_gain_reg_4 : 0 0 : 1039 1039 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/cb_im_blend_delay_reg_6 : 0 0 : 730 730 : Used 1 time 0
+ Sort Area is enhance_core__GCB0 has_noise.noise_reduction/y_im_blend_delay_reg_0 : 0 0 : 730 730 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:02 ; elapsed = 00:04:02 . Memory (MB): peak = 1640.934 ; gain = 678.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:04:05 . Memory (MB): peak = 1640.934 ; gain = 678.805
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:13 ; elapsed = 00:04:13 . Memory (MB): peak = 1672.219 ; gain = 710.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:26 ; elapsed = 00:04:27 . Memory (MB): peak = 1685.762 ; gain = 723.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:26 ; elapsed = 00:04:27 . Memory (MB): peak = 1685.762 ; gain = 723.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:29 ; elapsed = 00:04:29 . Memory (MB): peak = 1685.762 ; gain = 723.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:29 ; elapsed = 00:04:29 . Memory (MB): peak = 1685.762 ; gain = 723.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:29 ; elapsed = 00:04:30 . Memory (MB): peak = 1685.777 ; gain = 723.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:29 ; elapsed = 00:04:30 . Memory (MB): peak = 1685.777 ; gain = 723.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name        | DSP Mapping                | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|edge_enhance       | ((D'+A')'*B)'              | 30     | 16     | -      | 25     | 38     | 1    | 0    | -    | 0    | 1     | 0    | 1    | 
+|edge_enhance       | (C+((D'+A')'*B)'+CARRYIN)' | 30     | 16     | 17     | 25     | 39     | 1    | 0    | 0    | 0    | 1     | 1    | 1    | 
+|enhance_core__GCB2 | (C-((A*B')'))'             | 16     | 8      | 23     | -      | 26     | 0    | 1    | 1    | -    | -     | 1    | 1    | 
+|enhance_core__GCB2 | ((A*B')')'                 | 16     | 8      | -      | -      | 23     | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|noise_reduce       | (A''*B')'                  | 11     | 9      | -      | -      | 0      | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|noise_reduce       | (PCIN+(A''*B')')'          | 11     | 9      | -      | -      | 21     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|noise_reduce       | (A''*B')'                  | 11     | 9      | -      | -      | 0      | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|noise_reduce       | (PCIN+(A''*B')')'          | 11     | 9      | -      | -      | 21     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|noise_reduce       | (((D'+A')'*B'')')'         | 10     | 8      | -      | 10     | 19     | 1    | 2    | -    | 2    | 1     | 1    | 1    | 
+|noise_reduce       | (A''*B')'                  | 11     | 9      | -      | -      | 0      | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|noise_reduce       | (PCIN+(A''*B')')'          | 11     | 9      | -      | -      | 21     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|noise_reduce       | (A''*B')'                  | 11     | 9      | -      | -      | 0      | 2    | 1    | -    | -    | -     | 0    | 1    | 
+|noise_reduce       | (PCIN+(A''*B')')'          | 11     | 9      | -      | -      | 21     | 2    | 1    | -    | -    | -     | 1    | 1    | 
+|enhance_core__GCB0 | (((D'+A')'*B'')')'         | 10     | 8      | -      | 10     | 19     | 1    | 2    | -    | 2    | 1     | 1    | 1    | 
++-------------------+----------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   708|
+|2     |DSP48E1  |    14|
+|9     |LUT1     |   189|
+|10    |LUT2     |  1537|
+|11    |LUT3     |   358|
+|12    |LUT4     |   499|
+|13    |LUT5     |   192|
+|14    |LUT6     |   588|
+|15    |RAM32M   |     6|
+|16    |RAMB36E1 |     6|
+|17    |SRL16E   |   195|
+|18    |SRLC32E  |    10|
+|19    |FDRE     |  3671|
+|20    |FDSE     |    17|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:29 ; elapsed = 00:04:30 . Memory (MB): peak = 1685.777 ; gain = 723.648
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 523 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:53 ; elapsed = 00:04:19 . Memory (MB): peak = 1685.777 ; gain = 678.461
+Synthesis Optimization Complete : Time (s): cpu = 00:02:29 ; elapsed = 00:04:35 . Memory (MB): peak = 1685.777 ; gain = 723.648
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.351 . Memory (MB): peak = 1697.824 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 734 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.333 . Memory (MB): peak = 1704.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+Synth Design complete | Checksum: c17b60c7
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:47 ; elapsed = 00:05:02 . Memory (MB): peak = 1704.500 ; gain = 1164.230
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1704.500 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.runs/broncho_video_v_enhance_0_0_synth_1/broncho_video_v_enhance_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP broncho_video_v_enhance_0_0, cache-ID = 2103aa207aefe5df
+INFO: [Coretcl 2-1174] Renamed 80 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1704.500 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v0/hw_011223.runs/broncho_video_v_enhance_0_0_synth_1/broncho_video_v_enhance_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file broncho_video_v_enhance_0_0_utilization_synth.rpt -pb broncho_video_v_enhance_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 15 18:41:49 2023...

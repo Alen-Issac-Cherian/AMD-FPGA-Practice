@@ -1,0 +1,243 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Dec 15 18:51:31 2023
+| Host         : DESKTOP-1T2E61L running 64-bit major release  (build 9200)
+| Command      : report_drc -file broncho_video_wrapper_drc_opted.rpt -pb broncho_video_wrapper_drc_opted.pb -rpx broncho_video_wrapper_drc_opted.rpx
+| Design       : broncho_video_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 41
++----------+----------+------------------------+------------+
+| Rule     | Severity | Description            | Violations |
++----------+----------+------------------------+------------+
+| DPIP-1   | Warning  | Input pipelining       | 36         |
+| DPOP-2   | Warning  | MREG Output pipelining | 3          |
+| REQP-181 | Advisory | writefirst             | 2          |
++----------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsfbabmf4bbya01/obsabbya035a0ip/obsahupzceda input broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsfbabmf4bbya01/obsabbya035a0ip/obsahupzceda/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsfbabmf4bbya01/obsfbbya025a0ip/obsahupzceda input broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsfbabmf4bbya01/obsfbbya025a0ip/obsahupzceda/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsibabmf4bbya02/obsabbya035a0ip/obsahupzceda input broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsibabmf4bbya02/obsabbya035a0ip/obsahupzceda/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsibabmf4bbya02/obsfbbya025a0ip/obsahupzceda input broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsibabmf4bbya02/obsfbbya025a0ip/obsahupzceda/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsnbabmf4bbya03/obsabbya035a0ip/obsahupzceda input broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsnbabmf4bbya03/obsabbya035a0ip/obsahupzceda/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsnbabmf4bbya03/obsfbbya025a0ip/obsahupzceda input broncho_video_i/v_ccm_0/U0/obsnbart2thd5yqnjed/obsiedkmeoira/obsnbabmf4bbya03/obsfbbya025a0ip/obsahupzceda/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP broncho_video_i/v_cfa_0/U0/obsibbid2thd5yqnjed/obsiedkmeoira/obsfkqch2medpyefapra0sjqbuee/obsadbcp3k/obsfitqfisj5qiorhdba0agqqt4egrqrh4kqch2medp0k/obsagaajm/obsngaal2rcbc input broncho_video_i/v_cfa_0/U0/obsibbid2thd5yqnjed/obsiedkmeoira/obsfkqch2medpyefapra0sjqbuee/obsadbcp3k/obsfitqfisj5qiorhdba0agqqt4egrqrh4kqch2medp0k/obsagaajm/obsngaal2rcbc/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP broncho_video_i/v_cfa_0/U0/obsibbid2thd5yqnjed/obsiedkmeoira/obsfkqch2medpyefapra0sjqbuee/obsadbcp3k/obsfitqfisj5qiorhdba0agqqt4egrqrh4kqch2medp0k/obsfgaajn/obsngaal2rcbc input broncho_video_i/v_cfa_0/U0/obsibbid2thd5yqnjed/obsiedkmeoira/obsfkqch2medpyefapra0sjqbuee/obsadbcp3k/obsfitqfisj5qiorhdba0agqqt4egrqrh4kqch2medp0k/obsfgaajn/obsngaal2rcbc/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP broncho_video_i/v_cfa_0/U0/obsibbid2thd5yqnjed/obsiedkmeoira/obsfkqch2medpyefapra0sjqbuee/obsadbcp3k/obsfitqfisj5qiorhdba0agqqt4egrqrh4kqch2medp0k/obsngaajo/obsngaal2rcbc input broncho_video_i/v_cfa_0/U0/obsibbid2thd5yqnjed/obsiedkmeoira/obsfkqch2medpyefapra0sjqbuee/obsadbcp3k/obsfitqfisj5qiorhdba0agqqt4egrqrh4kqch2medp0k/obsngaajo/obsngaal2rcbc/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_24s_25_4_1_U141/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_24s_25_4_1_U141/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_24s_25_4_1_U142/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_24s_25_4_1_U142/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_24s_25_4_1_U143/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_24s_25_4_1_U143/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_25s_26_4_1_U144/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_25s_26_4_1_U144/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_25s_26_4_1_U145/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_25s_26_4_1_U145/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_25s_26_4_1_U146/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_25s_26_4_1_U146/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_26s_27_4_1_U150/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_26s_27_4_1_U150/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_26s_27_4_1_U151/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_26s_27_4_1_U151/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_26s_27_4_1_U152/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_26s_27_4_1_U152/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_27s_28_4_1_U162/bd_8126_hsc_0_mac_muladd_8ns_16s_27s_28_4_1_DSP48_6_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_27s_28_4_1_U162/bd_8126_hsc_0_mac_muladd_8ns_16s_27s_28_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_27s_28_4_1_U163/bd_8126_hsc_0_mac_muladd_8ns_16s_27s_28_4_1_DSP48_6_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_27s_28_4_1_U163/bd_8126_hsc_0_mac_muladd_8ns_16s_27s_28_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_27s_28_4_1_U164/bd_8126_hsc_0_mac_muladd_8ns_16s_27s_28_4_1_DSP48_6_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_360/grp_hscale_polyphase_fu_266/mac_muladd_8ns_16s_27s_28_4_1_U164/bd_8126_hsc_0_mac_muladd_8ns_16s_27s_28_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mac_muladd_8ns_10ns_17ns_18_4_1_U311/bd_8126_hsc_0_mac_muladd_8ns_10ns_17ns_18_4_1_DSP48_9_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mac_muladd_8ns_10ns_17ns_18_4_1_U311/bd_8126_hsc_0_mac_muladd_8ns_10ns_17ns_18_4_1_DSP48_9_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_8s_12ns_20_2_1_U306/buff0_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_8s_12ns_20_2_1_U306/buff0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_ln2097_1_reg_684_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_ln2097_1_reg_684_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_24s_25_4_1_U119/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_24s_25_4_1_U119/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_24s_25_4_1_U120/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_24s_25_4_1_U120/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_24s_25_4_1_U121/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_24s_25_4_1_U121/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_25s_26_4_1_U122/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_25s_26_4_1_U122/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_25s_26_4_1_U123/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_25s_26_4_1_U123/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_25s_26_4_1_U124/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_25s_26_4_1_U124/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_26s_27_4_1_U128/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_26s_27_4_1_U128/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_26s_27_4_1_U129/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_26s_27_4_1_U129/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_26s_27_4_1_U130/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_26s_27_4_1_U130/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_27s_28_4_1_U140/bd_8126_vsc_0_mac_muladd_16s_8ns_27s_28_4_1_DSP48_6_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_27s_28_4_1_U140/bd_8126_vsc_0_mac_muladd_16s_8ns_27s_28_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_27s_28_4_1_U141/bd_8126_vsc_0_mac_muladd_16s_8ns_27s_28_4_1_DSP48_6_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_27s_28_4_1_U141/bd_8126_vsc_0_mac_muladd_16s_8ns_27s_28_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_27s_28_4_1_U142/bd_8126_vsc_0_mac_muladd_16s_8ns_27s_28_4_1_DSP48_6_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_305/mac_muladd_16s_8ns_27s_28_4_1_U142/bd_8126_vsc_0_mac_muladd_16s_8ns_27s_28_4_1_DSP48_6_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP broncho_video_i/v_enhance_0/U0/obsfcdi2anbbhzgoh5ra0sjb/obsiedkmeoira/obsadqcl2egrya0ccpyq0ebrqt2egrya0ccdaq0t/obsncdi2anbbhy2uj5seig multiplier stage broncho_video_i/v_enhance_0/U0/obsfcdi2anbbhzgoh5ra0sjb/obsiedkmeoira/obsadqcl2egrya0ccpyq0ebrqt2egrya0ccdaq0t/obsncdi2anbbhy2uj5seig/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_8s_13ns_21_2_1_U308/buff0_reg multiplier stage broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_8s_13ns_21_2_1_U308/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_9s_11ns_20_2_1_U309/buff0_reg multiplier stage broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_9s_11ns_20_2_1_U309/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (broncho_video_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (broncho_video_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

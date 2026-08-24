@@ -1,0 +1,69 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 9,981        | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 2,965        | user unroll pragmas are applied                                                        |
+|               | (2) simplification          | 1,975        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  | 1,964        | user inline pragmas are applied                                                        |
+|               | (4) simplification          | 1,936        | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         | 1,696        | user array partition pragmas are applied                                               |
+|               | (2) simplification          | 1,464        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  | 1,485        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           | 1,770        | apply array reshape pragmas                                                            |
+|               | (5) access patterns         | 1,863        | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     | 1,804        | loop and instruction simplification                                                    |
+|               | (2) parallelization         | 1,773        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         | 1,699        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          | 1,699        | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                | 1,598        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 1,537        | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++--------------------------------------+----------------------+-----------------+----------------+----------------+----------------+----------------+
+| Function                             | Location             | Compile/Link    | Unroll/Inline  | Array/Struct   | Performance    | HW Transforms  |
++--------------------------------------+----------------------+-----------------+----------------+----------------+----------------+----------------+
+| + v_hscaler                          | v_hscaler.cpp:111    | 9,981           | 1,936          | 1,863          | 1,699          | 1,537          |
+|  + AXIvideo2MultiPixStream           | v_hscaler.cpp:1421   | 1,439           |  229           |  222           |  159           |  137           |
+|     Scalar                           | hls_video_core.h:196 |    5            |                |                |                |                |
+|   + AXIGetBitFields<24, ap_uint<...  | hls_axi_io.h:83      |  222 (3 calls)  |                |                |                |                |
+|      AXIGetBitFields<24, ap_uint<... | hls_axi_io.h:60      |  204 (3 calls)  |                |                |                |                |
+|  + v_hcresampler_core                | v_hscaler.cpp:1632   | 4,352 (2 calls) |  594 (2 calls) |  472 (2 calls) |  436 (2 calls) |  369 (2 calls) |
+|     Scalar                           | hls_video_core.h:196 |   80 (16 calls) |                |                |                |                |
+|  + hscale_core_polyphase             | v_hscaler.cpp:622    |  786            |  522           |  571           |  535           |  518           |
+|     Scalar                           | hls_video_core.h:196 |   25 (5 calls)  |                |                |                |                |
+|     reg<ap_uint<9> >                 | x_hls_utils.h:222    |    3            |    3           |    3           |    2           |    5           |
+|     hscale_polyphase                 | v_hscaler.cpp:983    |  237            |  254           |  248           |  221           |  225           |
+|  + v_csc_core                        | v_hscaler.cpp:2068   |  652            |  125           |  136           |  134           |  127           |
+|     Scalar                           | hls_video_core.h:196 |   10 (2 calls)  |                |                |                |                |
+|  + v_vcresampler_core                | v_hscaler.cpp:1855   | 1,881           |  208           |  192           |  187           |  155           |
+|     LineBuffer                       | hls_video_mem.h:637  |   16 (2 calls)  |                |                |                |                |
+|     Scalar                           | hls_video_core.h:196 |   40 (8 calls)  |                |                |                |                |
+|     getval                           | hls_video_mem.h:847  |   48 (3 calls)  |                |                |                |                |
+|   + insert_bottom                    | hls_video_mem.h:886  |   36 (2 calls)  |                |                |                |                |
+|      insert_top_row                  | hls_video_mem.h:802  |   26 (2 calls)  |                |                |                |                |
+|  + MultiPixStream2AXIvideo           | v_hscaler.cpp:1521   |  650            |  104           |  150           |  128           |  102           |
+|     Scalar                           | hls_video_core.h:196 |    5            |                |                |                |                |
++--------------------------------------+----------------------+-----------------+----------------+----------------+----------------+----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

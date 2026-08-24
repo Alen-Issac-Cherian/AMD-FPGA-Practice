@@ -1,0 +1,83 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "3 5 4 2",
+    "file": "v_vscaler.cpp",
+    "fileloc": 104,
+    "instructions": 64,
+    "loads": {
+      "T": 5
+    },
+    "name": "v_vscaler",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 1177
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "2": {
+    "basicblocks": 19,
+    "calls": "1 1",
+    "file": "v_vscaler.cpp",
+    "fileloc": 883,
+    "instructions": 89,
+    "loads": {
+      "L": 3
+    },
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 110
+  },
+  "3": {
+    "basicblocks": 27,
+    "calls": "1 1",
+    "file": "v_vscaler.cpp",
+    "fileloc": 788,
+    "instructions": 208,
+    "loads": {
+      "L": 10
+    },
+    "name": "AXIvideo2MultiPixStream",
+    "total_instructions": 231
+  },
+  "4": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "v_vscaler.cpp",
+    "fileloc": 196,
+    "instructions": 478,
+    "loads": {
+      "L": 17
+    },
+    "name": "vscale_core_polyphase",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 518
+  },
+  "5": {
+    "basicblocks": 24,
+    "calls": "",
+    "file": "v_vscaler.cpp",
+    "fileloc": 1012,
+    "instructions": 193,
+    "loads": {
+      "L": 9
+    },
+    "name": "v_vcresampler_core",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 254
+  }
+}

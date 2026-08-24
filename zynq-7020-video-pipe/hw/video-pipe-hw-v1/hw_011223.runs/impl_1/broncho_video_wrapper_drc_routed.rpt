@@ -1,0 +1,651 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Fri Dec 15 11:45:35 2023
+| Host         : DESKTOP-1T2E61L running 64-bit major release  (build 9200)
+| Command      : report_drc -file broncho_video_wrapper_drc_routed.rpt -pb broncho_video_wrapper_drc_routed.pb -rpx broncho_video_wrapper_drc_routed.rpx
+| Design       : broncho_video_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 118
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| CHECK-3   | Warning  | Report rule limit reached                                         | 2          |
+| DPIP-1    | Warning  | Input pipelining                                                  | 43         |
+| DPOP-1    | Warning  | PREG Output pipelining                                            | 5          |
+| DPOP-2    | Warning  | MREG Output pipelining                                            | 16         |
+| PDCN-1569 | Warning  | LUT equation term check                                           | 5          |
+| REQP-1839 | Warning  | RAMB36 async control check                                        | 20         |
+| REQP-1840 | Warning  | RAMB18 async control check                                        | 20         |
+| RTSTAT-10 | Warning  | No routable loads                                                 | 1          |
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 3          |
+| AVAL-5    | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 1          |
+| REQP-181  | Advisory | writefirst                                                        | 2          |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+CHECK-3#1 Warning
+Report rule limit reached  
+REQP-1839 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+CHECK-3#2 Warning
+Report rule limit reached  
+REQP-1840 rule limit reached: 20 violations have been found.
+Related violations: <none>
+
+DPIP-1#1 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/blackLevelCorrection_12_1080_1920_1_16_15_1_2_2_U0/LoopCount_reg_77_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/blackLevelCorrection_12_1080_1920_1_16_15_1_2_2_U0/LoopCount_reg_77_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/blackLevelCorrection_12_1080_1920_1_16_15_1_2_2_U0/LoopCount_reg_77_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/blackLevelCorrection_12_1080_1920_1_16_15_1_2_2_U0/LoopCount_reg_77_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/blackLevelCorrection_12_1080_1920_1_16_15_1_2_2_U0/grp_blackLevelCorrection_Pipeline_VITIS_LOOP_100_1_fu_46/mul_10ns_17ns_26_2_1_U59/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/blackLevelCorrection_12_1080_1920_1_16_15_1_2_2_U0/grp_blackLevelCorrection_Pipeline_VITIS_LOOP_100_1_fu_46/mul_10ns_17ns_26_2_1_U59/buff0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U275/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U275/buff0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U275/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U275/buff0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U276/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U276/buff0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U276/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U276/buff0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U277/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U277/buff0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U277/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/grp_AWBNormalizationkernel_Pipeline_Col_Loop1_fu_293/mul_28s_18s_46_2_1_U277/buff0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/buff0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/tmp_product input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/tmp_product/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/buff0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/buff0_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/buff0_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/tmp_product input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/tmp_product/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/tmp_product input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/tmp_product/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/total_reg_1082_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/total_reg_1082_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/total_reg_1082_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/total_reg_1082_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/gaincontrol_3_12_1080_1920_1_2_2_U0/grp_gaincontrol_3_12_1080_1920_1_2_2_Pipeline_ColLoop_fu_82/mul_ln122_reg_283_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/gaincontrol_3_12_1080_1920_1_2_2_U0/grp_gaincontrol_3_12_1080_1920_1_2_2_Pipeline_ColLoop_fu_82/mul_ln122_reg_283_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/gaincontrol_3_12_1080_1920_1_2_2_U0/grp_gaincontrol_3_12_1080_1920_1_2_2_Pipeline_ColLoop_fu_82/mul_ln122_reg_283_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/gaincontrol_3_12_1080_1920_1_2_2_U0/grp_gaincontrol_3_12_1080_1920_1_2_2_Pipeline_ColLoop_fu_82/mul_ln122_reg_283_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/gaincontrol_3_12_1080_1920_1_2_2_U0/grp_gaincontrol_3_12_1080_1920_1_2_2_Pipeline_ColLoop_fu_82/mul_ln126_reg_293_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/gaincontrol_3_12_1080_1920_1_2_2_U0/grp_gaincontrol_3_12_1080_1920_1_2_2_Pipeline_ColLoop_fu_82/mul_ln126_reg_293_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/gaincontrol_3_12_1080_1920_1_2_2_U0/grp_gaincontrol_3_12_1080_1920_1_2_2_Pipeline_ColLoop_fu_82/mul_ln126_reg_293_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/gaincontrol_3_12_1080_1920_1_2_2_U0/grp_gaincontrol_3_12_1080_1920_1_2_2_Pipeline_ColLoop_fu_82/mul_ln126_reg_293_reg/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/xf_QuatizationDithering_20_16_1080_1920_256_1024_1_0_2_2_U0/bound_reg_157_reg input broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/xf_QuatizationDithering_20_16_1080_1920_256_1024_1_0_2_2_U0/bound_reg_157_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_24s_25_4_1_U120/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_24s_25_4_1_U120/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_24s_25_4_1_U121/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_24s_25_4_1_U121/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_24s_25_4_1_U122/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_24s_25_4_1_U122/bd_8126_hsc_0_mac_muladd_8ns_16s_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_25s_26_4_1_U123/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_25s_26_4_1_U123/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_25s_26_4_1_U124/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_25s_26_4_1_U124/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_25s_26_4_1_U125/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_25s_26_4_1_U125/bd_8126_hsc_0_mac_muladd_8ns_16s_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_26s_27_4_1_U129/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_26s_27_4_1_U129/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_26s_27_4_1_U130/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_26s_27_4_1_U130/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_26s_27_4_1_U131/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/hscale_core_polyphase_U0/grp_hscale_core_polyphase_Pipeline_loop_width_fu_264/grp_hscale_polyphase_fu_228/mac_muladd_8ns_16s_26s_27_4_1_U131/bd_8126_hsc_0_mac_muladd_8ns_16s_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mac_muladd_8ns_10ns_17ns_18_4_1_U228/bd_8126_hsc_0_mac_muladd_8ns_10ns_17ns_18_4_1_DSP48_7_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mac_muladd_8ns_10ns_17ns_18_4_1_U228/bd_8126_hsc_0_mac_muladd_8ns_10ns_17ns_18_4_1_DSP48_7_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_8s_12ns_20_2_1_U223/buff0_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_8s_12ns_20_2_1_U223/buff0_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_ln2097_1_reg_684_reg input broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_ln2097_1_reg_684_reg/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_24s_25_4_1_U113/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_24s_25_4_1_U113/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_24s_25_4_1_U114/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_24s_25_4_1_U114/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_24s_25_4_1_U115/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_24s_25_4_1_U115/bd_8126_vsc_0_mac_muladd_16s_8ns_24s_25_4_1_DSP48_1_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_25s_26_4_1_U116/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_25s_26_4_1_U116/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_25s_26_4_1_U117/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_25s_26_4_1_U117/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#40 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_25s_26_4_1_U118/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_25s_26_4_1_U118/bd_8126_vsc_0_mac_muladd_16s_8ns_25s_26_4_1_DSP48_2_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#41 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_26s_27_4_1_U122/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_26s_27_4_1_U122/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#42 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_26s_27_4_1_U123/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_26s_27_4_1_U123/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#43 Warning
+Input pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_26s_27_4_1_U124/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg input broncho_video_i/v_proc_ss_0/inst/vsc/inst/vscale_core_polyphase_U0/grp_vscale_core_polyphase_Pipeline_loop_width_for_procpix_fu_247/mac_muladd_16s_8ns_26s_27_4_1_U124/bd_8126_vsc_0_mac_muladd_16s_8ns_26s_27_4_1_DSP48_4_U/p_reg_reg/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_29s_39_2_1_U354/tmp_product output broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_29s_39_2_1_U354/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/tmp_product output broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/tmp_product output broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_50s_52ns_101_5_1_U291/tmp_product output broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_50s_52ns_101_5_1_U291/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_53ns_55ns_106_5_1_U292/tmp_product output broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_53ns_55ns_106_5_1_U292/tmp_product/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_26s_36_2_1_U357/tmp_product multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_26s_36_2_1_U357/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_26s_36_2_1_U358/tmp_product multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_26s_36_2_1_U358/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_26s_36_2_1_U359/tmp_product multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_26s_36_2_1_U359/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_29s_39_2_1_U354/tmp_product multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_29s_39_2_1_U354/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_30ns_39_2_1_U351/buff0_reg multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_30ns_39_2_1_U351/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_30ns_39_2_1_U352/buff0_reg multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_30ns_39_2_1_U352/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_30ns_39_2_1_U353/buff0_reg multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/colorcorrectionmatrix_0_20_20_1080_1920_1_2_2_U0/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_s_fu_44/grp_xfccmkernel_20_1080_1920_22_1_2_2_13_13_1920_Pipeline_colLoop_fu_54/mul_10ns_30ns_39_2_1_U353/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/buff0_reg multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/tmp_product multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_18s_50_2_1_U289/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/buff0_reg multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/tmp_product multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_32ns_21ns_53_2_1_U290/tmp_product/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_50s_52ns_101_5_1_U291/buff0_reg__1 multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/mul_50s_52ns_101_5_1_U291/buff0_reg__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/total_reg_1082_reg multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/function_awb_20_20_1080_1920_1_2_2_U0/grp_fifo_awb_20_20_1080_1920_1_2_2_s_fu_150/AWBNormalization_20_20_1080_1920_1_1_1024_2_2_U0/grp_AWBNormalizationkernel_20_20_1080_1920_1_2_2_22_1_1024_s_fu_50/total_reg_1082_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/xf_QuatizationDithering_20_16_1080_1920_256_1024_1_0_2_2_U0/bound_reg_157_reg multiplier stage broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/xf_QuatizationDithering_20_16_1080_1920_256_1024_1_0_2_2_U0/bound_reg_157_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_8s_13ns_21_2_1_U225/buff0_reg multiplier stage broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_8s_13ns_21_2_1_U225/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_9s_11ns_20_2_1_U226/buff0_reg multiplier stage broncho_video_i/v_proc_ss_0/inst/hsc/inst/v_csc_core_U0/grp_v_csc_core_Pipeline_VITIS_LOOP_2080_2_fu_114/mul_9s_11ns_20_2_1_U226/buff0_reg/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PDCN-1569#1 Warning
+LUT equation term check  
+Used physical LUT pin 'A1' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I1) is not included in the LUT equation: 'O5=(A4*A5)+(A4*(~A5)*(~A2))+((~A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#2 Warning
+LUT equation term check  
+Used physical LUT pin 'A2' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.id_state[0]_i_1/I0) is not included in the LUT equation: 'O6=(A6+~A6)*((A5))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#3 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell broncho_video_i/ps7_0_axi_periph/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin broncho_video_i/ps7_0_axi_periph/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I1) is not included in the LUT equation: 'O6=(A1)+((~A1)*A4*A5*A2)+((~A1)*(~A4)*A2)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#4 Warning
+LUT equation term check  
+Used physical LUT pin 'A3' of cell dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1 (pin dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/temp_curid[31]_i_1/I0) is not included in the LUT equation: 'O5=(A4*A5)+(A4*(~A5)*(~A2))+((~A4))'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+PDCN-1569#5 Warning
+LUT equation term check  
+Used physical LUT pin 'A6' of cell broncho_video_i/ps7_0_axi_periph/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin broncho_video_i/ps7_0_axi_periph/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A3)+((~A3)*A1*A4*A5)+((~A3)*(~A1)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+Related violations: <none>
+
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg has an input control pin broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg/ENARDEN (net: broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/int_gamma_lut_ce1) which is driven by a register (broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#2 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg has an input control pin broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg/WEA[0] (net: broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/int_gamma_lut_be1[0]) which is driven by a register (broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#3 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg has an input control pin broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg/WEA[1] (net: broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/int_gamma_lut_be1[1]) which is driven by a register (broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#4 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg has an input control pin broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg/WEA[2] (net: broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/int_gamma_lut_be1[2]) which is driven by a register (broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#5 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg has an input control pin broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/mem_reg/WEA[3] (net: broncho_video_i/ISPPipeline_accel_0/inst/CTRL_s_axi_U/int_gamma_lut/int_gamma_lut_be1[3]) which is driven by a register (broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#6 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#7 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#8 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[11] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#9 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#10 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#11 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#12 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[12] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (broncho_video_i/vfpne_0/inst/zero_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#13 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#14 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#15 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#16 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[13] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (broncho_video_i/vfpne_0/inst/zero_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#17 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[11]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#18 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[11]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#19 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[11]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1839#20 Warning
+RAMB36 async control check  
+The RAMB36E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram/ADDRARDADDR[14] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/addra[11]) which is driven by a register (broncho_video_i/vfpne_0/inst/zero_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#1 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[10] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#2 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[10] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#3 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[10] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#4 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[10] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[7]) which is driven by a register (broncho_video_i/vfpne_0/inst/zero_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#5 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[11] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#6 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[11] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#7 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[11] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#8 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[11] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[8]) which is driven by a register (broncho_video_i/vfpne_0/inst/zero_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#9 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[12] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#10 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[12] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#11 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[12] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#12 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[12] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[9]) which is driven by a register (broncho_video_i/vfpne_0/inst/zero_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#13 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#14 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#15 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#16 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[13] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[10]) which is driven by a register (broncho_video_i/vfpne_0/inst/zero_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#17 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[9] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[6]) which is driven by a register (broncho_video_i/vfpne_0/inst/input_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#18 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[9] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[6]) which is driven by a register (broncho_video_i/vfpne_0/inst/pattern_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#19 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[9] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[6]) which is driven by a register (broncho_video_i/vfpne_0/inst/pix_cnt_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+REQP-1840#20 Warning
+RAMB18 async control check  
+The RAMB18E1 broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram has an input control pin broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM18.ram/ADDRARDADDR[9] (net: broncho_video_i/vfpne_0/inst/LRAM_INST1/U0/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[19].ram.r/prim_noinit.ram/addra[6]) which is driven by a register (broncho_video_i/vfpne_0/inst/zero_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+180 net(s) have no routable loads. The problem bus(es) and/or net(s) are broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m00_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwach2.axi_wach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/m02_couplers/auto_cc/inst/gen_clock_conv.gen_async_conv.asyncfifo_axi/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwrch2.axi_wrch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+broncho_video_i/ps7_0_axi_periph/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gwrite_ch.gwdch2.axi_wdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i,
+dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0],
+dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/TMS
+ (the first 15 of 129 listed).
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/ISPpipeline_Block_entry2_proc_U0/fmul_32ns_32ns_32_8_max_dsp_1_U5/ISPPipeline_accel_fmul_32ns_32ns_32_8_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/ISPpipeline_Block_entry2_proc_U0/fmul_32ns_32ns_32_8_max_dsp_1_U5/ISPPipeline_accel_fmul_32ns_32ns_32_8_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/ISPpipeline_Block_entry2_proc_U0/fmul_32ns_32ns_32_8_max_dsp_1_U5/ISPPipeline_accel_fmul_32ns_32ns_32_8_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+broncho_video_i/ISPPipeline_accel_0/inst/grp_ISPpipeline_fu_177/ISPpipeline_Block_entry2_proc_U0/fmul_32ns_32ns_32_8_max_dsp_1_U5/ISPPipeline_accel_fmul_32ns_32ns_32_8_max_dsp_1_ip_u/inst/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/i_no_versal_es1_workaround.DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (broncho_video_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+REQP-181#2 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (broncho_video_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

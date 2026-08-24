@@ -1,0 +1,283 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_vscaler'
+================================================================
+* Date:           Wed Dec 20 16:41:03 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  6.091 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+----------+-----------+-----+------------+----------+
+    |   Latency (cycles)   |  Latency (absolute)  |     Interval     | Pipeline |
+    |   min   |     max    |    min   |    max    | min |     max    |   Type   |
+    +---------+------------+----------+-----------+-----+------------+----------+
+    |      397|  1073905666|  2.779 us|  7.517 sec|  392|  1073905661|  dataflow|
+    +---------+------------+----------+-----------+-----+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 11
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 11, States = { 1 2 3 4 5 6 7 8 9 10 11 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.55>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%ColorMode_vcr_c21 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 12 'alloca' 'ColorMode_vcr_c21' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%ColorMode_vcr_c = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 13 'alloca' 'ColorMode_vcr_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 3> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%HwReg_ColorMode_c20 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 14 'alloca' 'HwReg_ColorMode_c20' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%HwReg_ColorMode_c = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 15 'alloca' 'HwReg_ColorMode_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%HwReg_HeightOut_c19 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 16 'alloca' 'HwReg_HeightOut_c19' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%HwReg_HeightOut_c = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 17 'alloca' 'HwReg_HeightOut_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%HwReg_Width_c18 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 18 'alloca' 'HwReg_Width_c18' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%HwReg_Width_c17 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 19 'alloca' 'HwReg_Width_c17' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%HwReg_Width_c16 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 20 'alloca' 'HwReg_Width_c16' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%HwReg_Width_c = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 21 'alloca' 'HwReg_Width_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%HwReg_HeightIn_c15 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 22 'alloca' 'HwReg_HeightIn_c15' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%HwReg_HeightIn_c14 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 23 'alloca' 'HwReg_HeightIn_c14' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%HwReg_HeightIn_c = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 24 'alloca' 'HwReg_HeightIn_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 11> <Depth = 2> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%SrcYUV = alloca i64 1"   --->   Operation 25 'alloca' 'SrcYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.80> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 30> <Depth = 16> <FIFO>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%SrcYUV422 = alloca i64 1"   --->   Operation 26 'alloca' 'SrcYUV422' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.80> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 30> <Depth = 16> <FIFO>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%OutYUV = alloca i64 1"   --->   Operation 27 'alloca' 'OutYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.80> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 30> <Depth = 16> <FIFO>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%HwReg_LineRate = alloca i64 1"   --->   Operation 28 'alloca' 'HwReg_LineRate' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 29 [2/2] (2.55ns)   --->   "%call_ln151 = call void @Block_entry4_proc, i8 %ColorMode, i16 %HeightIn, i16 %HeightOut, i32 %LineRate, i32 %HwReg_LineRate, i16 %Width, i11 %HwReg_HeightIn_c15, i11 %HwReg_Width_c18, i11 %HwReg_HeightOut_c19, i8 %HwReg_ColorMode_c20, i8 %ColorMode_vcr_c21" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 29 'call' 'call_ln151' <Predicate = true> <Delay = 2.55> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln151 = call void @Block_entry4_proc, i8 %ColorMode, i16 %HeightIn, i16 %HeightOut, i32 %LineRate, i32 %HwReg_LineRate, i16 %Width, i11 %HwReg_HeightIn_c15, i11 %HwReg_Width_c18, i11 %HwReg_HeightOut_c19, i8 %HwReg_ColorMode_c20, i8 %ColorMode_vcr_c21" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 30 'call' 'call_ln151' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 31 [2/2] (0.00ns)   --->   "%call_ln157 = call void @AXIvideo2MultiPixStream, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %SrcYUV, i11 %HwReg_HeightIn_c15, i11 %HwReg_Width_c18, i8 %HwReg_ColorMode_c20, i11 %HwReg_HeightIn_c14, i11 %HwReg_Width_c17, i8 %HwReg_ColorMode_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:157]   --->   Operation 31 'call' 'call_ln157' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 32 [1/2] (0.00ns)   --->   "%call_ln157 = call void @AXIvideo2MultiPixStream, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %SrcYUV, i11 %HwReg_HeightIn_c15, i11 %HwReg_Width_c18, i8 %HwReg_ColorMode_c20, i11 %HwReg_HeightIn_c14, i11 %HwReg_Width_c17, i8 %HwReg_ColorMode_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:157]   --->   Operation 32 'call' 'call_ln157' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 33 [2/2] (0.00ns)   --->   "%call_ln160 = call void @v_vcresampler_core, i30 %SrcYUV, i11 %HwReg_HeightIn_c14, i11 %HwReg_Width_c17, i8 %HwReg_ColorMode_c, i8 %ColorMode_vcr_c21, i30 %SrcYUV422, i11 %HwReg_HeightIn_c, i11 %HwReg_Width_c16, i8 %ColorMode_vcr_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:160]   --->   Operation 33 'call' 'call_ln160' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 34 [1/2] (0.00ns)   --->   "%call_ln160 = call void @v_vcresampler_core, i30 %SrcYUV, i11 %HwReg_HeightIn_c14, i11 %HwReg_Width_c17, i8 %HwReg_ColorMode_c, i8 %ColorMode_vcr_c21, i30 %SrcYUV422, i11 %HwReg_HeightIn_c, i11 %HwReg_Width_c16, i8 %ColorMode_vcr_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:160]   --->   Operation 34 'call' 'call_ln160' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 35 [2/2] (0.00ns)   --->   "%call_ln176 = call void @vscale_core_polyphase, i30 %SrcYUV422, i11 %HwReg_HeightIn_c, i11 %HwReg_Width_c16, i11 %HwReg_HeightOut_c19, i32 %HwReg_LineRate, i16 %vfltCoeff, i30 %OutYUV, i11 %HwReg_Width_c, i11 %HwReg_HeightOut_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:176]   --->   Operation 35 'call' 'call_ln176' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 36 [1/2] (0.00ns)   --->   "%call_ln176 = call void @vscale_core_polyphase, i30 %SrcYUV422, i11 %HwReg_HeightIn_c, i11 %HwReg_Width_c16, i11 %HwReg_HeightOut_c19, i32 %HwReg_LineRate, i16 %vfltCoeff, i30 %OutYUV, i11 %HwReg_Width_c, i11 %HwReg_HeightOut_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:176]   --->   Operation 36 'call' 'call_ln176' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 9 <SV = 8> <Delay = 0.00>
+ST_9 : Operation 37 [2/2] (0.00ns)   --->   "%call_ln180 = call void @MultiPixStream2AXIvideo, i30 %OutYUV, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i11 %HwReg_HeightOut_c, i11 %HwReg_Width_c, i8 %ColorMode_vcr_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:180]   --->   Operation 37 'call' 'call_ln180' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 38 [1/2] (0.00ns)   --->   "%call_ln180 = call void @MultiPixStream2AXIvideo, i30 %OutYUV, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i11 %HwReg_HeightOut_c, i11 %HwReg_Width_c, i8 %ColorMode_vcr_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:180]   --->   Operation 38 'call' 'call_ln180' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 39 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @ColorMode_vcr_c21_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i8 %ColorMode_vcr_c21, i8 %ColorMode_vcr_c21" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 39 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 40 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i8 %ColorMode_vcr_c21, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 40 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 41 [1/1] (0.00ns)   --->   "%empty_67 = specchannel i32 @_ssdm_op_SpecChannel, void @ColorMode_vcr_c_str, i32 1, void @p_str, void @p_str, i32 3, i32 0, i8 %ColorMode_vcr_c, i8 %ColorMode_vcr_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 41 'specchannel' 'empty_67' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 42 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i8 %ColorMode_vcr_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 42 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 43 [1/1] (0.00ns)   --->   "%empty_68 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_ColorMode_c20_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i8 %HwReg_ColorMode_c20, i8 %HwReg_ColorMode_c20" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 43 'specchannel' 'empty_68' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i8 %HwReg_ColorMode_c20, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 44 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 45 [1/1] (0.00ns)   --->   "%empty_69 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_ColorMode_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i8 %HwReg_ColorMode_c, i8 %HwReg_ColorMode_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 45 'specchannel' 'empty_69' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i8 %HwReg_ColorMode_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 46 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 47 [1/1] (0.00ns)   --->   "%empty_70 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_HeightOut_c19_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_HeightOut_c19, i11 %HwReg_HeightOut_c19" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 47 'specchannel' 'empty_70' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 48 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_HeightOut_c19, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 48 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 49 [1/1] (0.00ns)   --->   "%empty_71 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_HeightOut_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_HeightOut_c, i11 %HwReg_HeightOut_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 49 'specchannel' 'empty_71' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 50 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_HeightOut_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 50 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 51 [1/1] (0.00ns)   --->   "%empty_72 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_Width_c18_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_Width_c18, i11 %HwReg_Width_c18" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 51 'specchannel' 'empty_72' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 52 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_Width_c18, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 52 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 53 [1/1] (0.00ns)   --->   "%empty_73 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_Width_c17_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_Width_c17, i11 %HwReg_Width_c17" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 53 'specchannel' 'empty_73' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_Width_c17, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 54 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%empty_74 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_Width_c16_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_Width_c16, i11 %HwReg_Width_c16" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 55 'specchannel' 'empty_74' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_Width_c16, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 56 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 57 [1/1] (0.00ns)   --->   "%empty_75 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_Width_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_Width_c, i11 %HwReg_Width_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 57 'specchannel' 'empty_75' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_Width_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 58 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 59 [1/1] (0.00ns)   --->   "%empty_76 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_HeightIn_c15_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_HeightIn_c15, i11 %HwReg_HeightIn_c15" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 59 'specchannel' 'empty_76' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_HeightIn_c15, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 60 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 61 [1/1] (0.00ns)   --->   "%empty_77 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_HeightIn_c14_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_HeightIn_c14, i11 %HwReg_HeightIn_c14" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 61 'specchannel' 'empty_77' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_HeightIn_c14, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 62 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 63 [1/1] (0.00ns)   --->   "%empty_78 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_HeightIn_c_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i11 %HwReg_HeightIn_c, i11 %HwReg_HeightIn_c" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 63 'specchannel' 'empty_78' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln151 = specinterface void @_ssdm_op_SpecInterface, i11 %HwReg_HeightIn_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 64 'specinterface' 'specinterface_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 65 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln151 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_3" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151]   --->   Operation 65 'specdataflowpipeline' 'specdataflowpipeline_ln151' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 66 [1/1] (0.00ns)   --->   "%spectopmodule_ln104 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_5" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:104]   --->   Operation 66 'spectopmodule' 'spectopmodule_ln104' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 67 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_4, i32 1, i32 1, void @empty_7, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 67 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 68 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %s_axis_video_V_data_V"   --->   Operation 68 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 69 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %s_axis_video_V_keep_V"   --->   Operation 69 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 70 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %s_axis_video_V_strb_V"   --->   Operation 70 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 71 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_user_V"   --->   Operation 71 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 72 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_last_V"   --->   Operation 72 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 73 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_id_V"   --->   Operation 73 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 74 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_dest_V"   --->   Operation 74 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 75 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %HeightIn"   --->   Operation 75 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 76 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %HeightIn, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_8, void @empty_9, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 76 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 77 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %HeightIn, void @empty_0, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 77 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 78 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %Width"   --->   Operation 78 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 79 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %Width, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_8, void @empty_10, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 79 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 80 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %Width, void @empty_0, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 80 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 81 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %HeightOut"   --->   Operation 81 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 82 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %HeightOut, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_8, void @empty_11, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 82 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 83 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %HeightOut, void @empty_0, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 83 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 84 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %LineRate"   --->   Operation 84 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 85 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %LineRate, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_8, void @empty_12, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 85 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 86 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %LineRate, void @empty_0, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 86 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 87 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i8 %ColorMode"   --->   Operation 87 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 88 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %ColorMode, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_8, void @empty_13, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 88 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 89 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %ColorMode, void @empty_0, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 89 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 90 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vfltCoeff, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_8, void @empty_14, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 90 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 91 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %vfltCoeff, void @empty_15, i32 0, i32 0, void @empty_3, i32 1, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 91 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 92 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i16 %vfltCoeff, i64 666, i64 207, i64 1"   --->   Operation 92 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 93 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i16 %vfltCoeff"   --->   Operation 93 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 94 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_4, i32 1, i32 1, void @empty_7, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 94 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 95 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %m_axis_video_V_data_V"   --->   Operation 95 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 96 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %m_axis_video_V_keep_V"   --->   Operation 96 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 97 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %m_axis_video_V_strb_V"   --->   Operation 97 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 98 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %m_axis_video_V_user_V"   --->   Operation 98 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 99 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %m_axis_video_V_last_V"   --->   Operation 99 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 100 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %m_axis_video_V_id_V"   --->   Operation 100 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 101 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %m_axis_video_V_dest_V"   --->   Operation 101 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 102 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_6, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_8, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 102 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 103 [1/1] (0.00ns)   --->   "%empty_79 = specchannel i32 @_ssdm_op_SpecChannel, void @SrcYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i30 %SrcYUV, i30 %SrcYUV"   --->   Operation 103 'specchannel' 'empty_79' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 104 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %SrcYUV, void @empty_16, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 104 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 105 [1/1] (0.00ns)   --->   "%empty_80 = specchannel i32 @_ssdm_op_SpecChannel, void @SrcYUV422_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i30 %SrcYUV422, i30 %SrcYUV422"   --->   Operation 105 'specchannel' 'empty_80' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 106 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %SrcYUV422, void @empty_16, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 106 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 107 [1/1] (0.00ns)   --->   "%empty_81 = specchannel i32 @_ssdm_op_SpecChannel, void @OutYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i30 %OutYUV, i30 %OutYUV"   --->   Operation 107 'specchannel' 'empty_81' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 108 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %OutYUV, void @empty_16, i32 0, i32 0, void @empty_3, i32 0, i32 0, void @empty_3, void @empty_3, void @empty_3, i32 0, i32 0, i32 0, i32 0, void @empty_3, void @empty_3, i32 4294967295, i32 0"   --->   Operation 108 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 109 [1/1] (0.00ns)   --->   "%empty_82 = specchannel i32 @_ssdm_op_SpecChannel, void @HwReg_OC_LineRate_str, i32 1, void @p_str, void @p_str, i32 2, i32 0, i32 %HwReg_LineRate, i32 %HwReg_LineRate"   --->   Operation 109 'specchannel' 'empty_82' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 110 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %HwReg_LineRate, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0"   --->   Operation 110 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 111 [1/1] (0.00ns)   --->   "%specstablecontent_ln124 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %HeightIn, void " [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:124]   --->   Operation 111 'specstablecontent' 'specstablecontent_ln124' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 112 [1/1] (0.00ns)   --->   "%specstablecontent_ln125 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %Width, void " [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:125]   --->   Operation 112 'specstablecontent' 'specstablecontent_ln125' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 113 [1/1] (0.00ns)   --->   "%specstablecontent_ln126 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %HeightOut, void " [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:126]   --->   Operation 113 'specstablecontent' 'specstablecontent_ln126' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 114 [1/1] (0.00ns)   --->   "%specstablecontent_ln127 = specstablecontent void @_ssdm_op_SpecStableContent, i32 %LineRate, void " [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:127]   --->   Operation 114 'specstablecontent' 'specstablecontent_ln127' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 115 [1/1] (0.00ns)   --->   "%specstablecontent_ln128 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %ColorMode, void " [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:128]   --->   Operation 115 'specstablecontent' 'specstablecontent_ln128' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 116 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln182 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_17" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:182]   --->   Operation 116 'specaxissidechannel' 'specaxissidechannel_ln182' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 117 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln182 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:182]   --->   Operation 117 'specaxissidechannel' 'specaxissidechannel_ln182' <Predicate = true> <Delay = 0.00>
+ST_11 : Operation 118 [1/1] (0.00ns)   --->   "%ret_ln182 = ret" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:182]   --->   Operation 118 'ret' 'ret_ln182' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 7.000ns, clock uncertainty: 1.890ns.
+
+ <State 1>: 2.555ns
+The critical path consists of the following:
+	'alloca' operation 8 bit ('ColorMode_vcr_c21', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151) [21]  (0.000 ns)
+	'call' operation 0 bit ('call_ln151', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v2/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:151) to 'Block_entry4_proc' [117]  (2.555 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 0.000ns
+The critical path consists of the following:
+
+ <State 8>: 0.000ns
+The critical path consists of the following:
+
+ <State 9>: 0.000ns
+The critical path consists of the following:
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

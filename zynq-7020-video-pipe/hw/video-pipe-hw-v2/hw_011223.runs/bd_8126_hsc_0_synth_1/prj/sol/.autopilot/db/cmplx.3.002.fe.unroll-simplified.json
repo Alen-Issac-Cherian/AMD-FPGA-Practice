@@ -1,0 +1,150 @@
+{
+  "0": {
+    "basicblocks": 3,
+    "calls": "1 7 9 6 7 2 4",
+    "file": "v_hscaler.cpp",
+    "fileloc": 111,
+    "instructions": 154,
+    "loads": {
+      "T": 5
+    },
+    "name": "v_hscaler",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 1982
+  },
+  "1": {
+    "basicblocks": 27,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1421,
+    "instructions": 227,
+    "loads": {
+      "L": 13
+    },
+    "name": "AXIvideo2MultiPixStream",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 227
+  },
+  "2": {
+    "basicblocks": 26,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1855,
+    "instructions": 200,
+    "loads": {
+      "L": 16
+    },
+    "name": "v_vcresampler_core",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 200
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 983,
+    "instructions": 266,
+    "loads": {
+      "L": 26
+    },
+    "name": "hscale_polyphase",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 266
+  },
+  "4": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1521,
+    "instructions": 105,
+    "loads": {
+      "G": 1,
+      "L": 9
+    },
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 105
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 3,
+    "loads": {
+      "L": 1
+    },
+    "name": "reg<ap_uint<9> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "6": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 2068,
+    "instructions": 111,
+    "loads": {
+      "L": 4
+    },
+    "name": "v_csc_core",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 111
+  },
+  "7": {
+    "basicblocks": 37,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1632,
+    "instructions": 301,
+    "loads": {
+      "L": 37
+    },
+    "name": "v_hcresampler_core",
+    "stores": {
+      "L": 39
+    },
+    "total_instructions": 301
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 219,
+    "instructions": 5,
+    "loads": {
+      "L": 2
+    },
+    "name": "max<unsigned short>",
+    "total_instructions": 5
+  },
+  "9": {
+    "basicblocks": 36,
+    "calls": "8 5 3",
+    "file": "v_hscaler.cpp",
+    "fileloc": 622,
+    "instructions": 309,
+    "loads": {
+      "L": 48
+    },
+    "name": "hscale_core_polyphase",
+    "stores": {
+      "L": 52
+    },
+    "total_instructions": 583
+  }
+}

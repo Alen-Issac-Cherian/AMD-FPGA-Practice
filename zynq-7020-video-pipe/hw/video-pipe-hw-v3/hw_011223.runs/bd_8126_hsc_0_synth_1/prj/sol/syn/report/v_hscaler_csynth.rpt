@@ -1,0 +1,235 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_hscaler'
+================================================================
+* Date:           Wed Dec 20 19:01:42 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  6.481 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+----------+-----------+------+------------+----------+
+    |   Latency (cycles)   |  Latency (absolute)  |      Interval     | Pipeline |
+    |   min   |     max    |    min   |    max    |  min |     max    |   Type   |
+    +---------+------------+----------+-----------+------+------------+----------+
+    |     1003|  1073971212|  7.021 us|  7.518 sec|  1000|  1073971195|  dataflow|
+    +---------+------------+----------+-----------+------+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------+-------------------------+---------+------------+-----------+-----------+-----+------------+---------+
+        |                            |                         |   Latency (cycles)   |   Latency (absolute)  |     Interval     | Pipeline|
+        |          Instance          |          Module         |   min   |     max    |    min    |    max    | min |     max    |   Type  |
+        +----------------------------+-------------------------+---------+------------+-----------+-----------+-----+------------+---------+
+        |AXIvideo2MultiPixStream_U0  |AXIvideo2MultiPixStream  |      422|     2084406|   2.954 us|  14.591 ms|  422|     2084406|       no|
+        |Block_entry1_proc_U0        |Block_entry1_proc        |        0|           0|       0 ns|       0 ns|    0|           0|       no|
+        |v_hcresampler_core_1_U0     |v_hcresampler_core_1     |        2|  1073938427|  14.000 ns|  7.518 sec|    2|  1073938427|       no|
+        |hscale_core_polyphase_U0    |hscale_core_polyphase    |      999|     2097751|   6.993 us|  14.684 ms|  999|     2097751|       no|
+        |v_csc_core_U0               |v_csc_core               |        1|     2086561|   7.000 ns|  14.606 ms|    1|     2086561|       no|
+        |v_hcresampler_core_U0       |v_hcresampler_core       |        2|  1073971194|  14.000 ns|  7.518 sec|    2|  1073971194|       no|
+        |v_vcresampler_core_U0       |v_vcresampler_core       |        2|  1073938427|  14.000 ns|  7.518 sec|    2|  1073938427|       no|
+        |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |      363|     2080091|   2.541 us|  14.561 ms|  363|     2080091|       no|
+        +----------------------------+-------------------------+---------+------------+-----------+-----------+-----+------------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     34|    -|
+|FIFO             |        -|    -|    2178|   1493|    -|
+|Instance         |        5|   25|    4757|   6684|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|     63|    -|
+|Register         |        -|    -|       7|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        5|   25|    6942|   8274|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        1|   11|       6|     15|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |          Instance          |          Module         | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |AXIvideo2MultiPixStream_U0  |AXIvideo2MultiPixStream  |        0|   0|   123|   473|    0|
+    |Block_entry1_proc_U0        |Block_entry1_proc        |        0|   0|     7|   193|    0|
+    |CTRL_s_axi_U                |CTRL_s_axi               |        2|   0|   328|   372|    0|
+    |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |        0|   0|   128|   372|    0|
+    |hscale_core_polyphase_U0    |hscale_core_polyphase    |        0|  18|  1983|  2382|    0|
+    |v_csc_core_U0               |v_csc_core               |        0|   7|   672|   708|    0|
+    |v_hcresampler_core_U0       |v_hcresampler_core       |        0|   0|   700|   894|    0|
+    |v_hcresampler_core_1_U0     |v_hcresampler_core_1     |        0|   0|   473|   772|    0|
+    |v_vcresampler_core_U0       |v_vcresampler_core       |        3|   0|   343|   518|    0|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+    |Total                       |                         |        5|  25|  4757|  6684|    0|
+    +----------------------------+-------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------------------+---------+----+----+-----+------+-----+---------+
+    |           Name          | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------------------+---------+----+----+-----+------+-----+---------+
+    |ColorModeOut_c_U         |        0|  99|   0|    -|     7|    8|       56|
+    |ColorMode_c_U            |        0|  99|   0|    -|     4|    8|       32|
+    |Height_c17_U             |        0|  99|   0|    -|     2|   16|       32|
+    |Height_c18_U             |        0|  99|   0|    -|     2|   16|       32|
+    |Height_c19_U             |        0|  99|   0|    -|     2|   16|       32|
+    |Height_c20_U             |        0|  99|   0|    -|     2|   16|       32|
+    |Height_c_U               |        0|  99|   0|    -|     2|   16|       32|
+    |WidthIn_c_U              |        0|  99|   0|    -|     2|   16|       32|
+    |WidthOut_c21_U           |        0|  99|   0|    -|     2|   16|       32|
+    |WidthOut_c22_U           |        0|  99|   0|    -|     2|   16|       32|
+    |WidthOut_c23_U           |        0|  99|   0|    -|     2|   16|       32|
+    |WidthOut_c_U             |        0|  99|   0|    -|     2|   16|       32|
+    |bPassThruCsc_channel_U   |        0|  99|   0|    -|     4|    1|        4|
+    |bPassThruHcr1_channel_U  |        0|  99|   0|    -|     2|    1|        2|
+    |bPassThruHcr2_channel_U  |        0|  99|   0|    -|     5|    1|        5|
+    |bPassThruVcr_channel_U   |        0|  99|   0|    -|     6|    1|        6|
+    |stream_in_U              |        0|  99|   0|    -|    16|   24|      384|
+    |stream_out_420_U         |        0|  99|   0|    -|    16|   24|      384|
+    |stream_out_422_U         |        0|  99|   0|    -|    16|   24|      384|
+    |stream_scaled_U          |        0|  99|   0|    -|    16|   24|      384|
+    |stream_scaled_csc_U      |        0|  99|   0|    -|    16|   24|      384|
+    |stream_upsampled_U       |        0|  99|   0|    -|    16|   24|      384|
+    +-------------------------+---------+----+----+-----+------+-----+---------+
+    |Total                    |        0|2178|   0|    0|   144|  324|     2729|
+    +-------------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |                Variable Name                | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |AXIvideo2MultiPixStream_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |Block_entry1_proc_U0_ap_continue             |       and|   0|  0|   2|           1|           1|
+    |Block_entry1_proc_U0_ap_start                |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bPassThruCsc_channel         |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bPassThruHcr1_channel        |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bPassThruHcr2_channel        |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bPassThruVcr_channel         |       and|   0|  0|   2|           1|           1|
+    |ap_idle                                      |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                                |       and|   0|  0|   2|           1|           1|
+    |hscale_core_polyphase_U0_ap_start            |       and|   0|  0|   2|           1|           1|
+    |ap_sync_AXIvideo2MultiPixStream_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_Block_entry1_proc_U0_ap_ready        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bPassThruCsc_channel   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bPassThruHcr1_channel  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bPassThruHcr2_channel  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bPassThruVcr_channel   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_hscale_core_polyphase_U0_ap_ready    |        or|   0|  0|   2|           1|           1|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                        |          |   0|  0|  34|          17|          17|
+    +---------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |                       Name                      | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_Block_entry1_proc_U0_ap_ready        |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bPassThruCsc_channel   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bPassThruHcr1_channel  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bPassThruHcr2_channel  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bPassThruVcr_channel   |   9|          2|    1|          2|
+    |ap_sync_reg_hscale_core_polyphase_U0_ap_ready    |   9|          2|    1|          2|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                            |  63|         14|    7|         14|
+    +-------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------------+---+----+-----+-----------+
+    |                       Name                      | FF| LUT| Bits| Const Bits|
+    +-------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_AXIvideo2MultiPixStream_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_Block_entry1_proc_U0_ap_ready        |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bPassThruCsc_channel   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bPassThruHcr1_channel  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bPassThruHcr2_channel  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bPassThruVcr_channel   |  1|   0|    1|          0|
+    |ap_sync_reg_hscale_core_polyphase_U0_ap_ready    |  1|   0|    1|          0|
+    +-------------------------------------------------+---+----+-----+-----------+
+    |Total                                            |  7|   0|    7|          0|
+    +-------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+-----------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++---------------------+-----+-----+------------+-----------------------+--------------+
+|s_axi_CTRL_AWVALID   |   in|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_AWREADY   |  out|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_AWADDR    |   in|   15|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_WVALID    |   in|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_WREADY    |  out|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_WDATA     |   in|   32|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_WSTRB     |   in|    4|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_ARVALID   |   in|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_ARREADY   |  out|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_ARADDR    |   in|   15|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_RVALID    |  out|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_RREADY    |   in|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_RDATA     |  out|   32|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_RRESP     |  out|    2|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_BVALID    |  out|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_BREADY    |   in|    1|       s_axi|                   CTRL|         array|
+|s_axi_CTRL_BRESP     |  out|    2|       s_axi|                   CTRL|         array|
+|ap_clk               |   in|    1|  ap_ctrl_hs|              v_hscaler|  return value|
+|ap_rst_n             |   in|    1|  ap_ctrl_hs|              v_hscaler|  return value|
+|interrupt            |  out|    1|  ap_ctrl_hs|              v_hscaler|  return value|
+|s_axis_video_TDATA   |   in|   24|        axis|  s_axis_video_V_data_V|       pointer|
+|s_axis_video_TKEEP   |   in|    3|        axis|  s_axis_video_V_keep_V|       pointer|
+|s_axis_video_TSTRB   |   in|    3|        axis|  s_axis_video_V_strb_V|       pointer|
+|s_axis_video_TUSER   |   in|    1|        axis|  s_axis_video_V_user_V|       pointer|
+|s_axis_video_TLAST   |   in|    1|        axis|  s_axis_video_V_last_V|       pointer|
+|s_axis_video_TID     |   in|    1|        axis|    s_axis_video_V_id_V|       pointer|
+|s_axis_video_TDEST   |   in|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TVALID  |   in|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TREADY  |  out|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|m_axis_video_TDATA   |  out|   24|        axis|  m_axis_video_V_data_V|       pointer|
+|m_axis_video_TKEEP   |  out|    3|        axis|  m_axis_video_V_keep_V|       pointer|
+|m_axis_video_TSTRB   |  out|    3|        axis|  m_axis_video_V_strb_V|       pointer|
+|m_axis_video_TUSER   |  out|    1|        axis|  m_axis_video_V_user_V|       pointer|
+|m_axis_video_TLAST   |  out|    1|        axis|  m_axis_video_V_last_V|       pointer|
+|m_axis_video_TID     |  out|    1|        axis|    m_axis_video_V_id_V|       pointer|
+|m_axis_video_TDEST   |  out|    1|        axis|  m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TVALID  |  out|    1|        axis|  m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TREADY  |   in|    1|        axis|  m_axis_video_V_dest_V|       pointer|
++---------------------+-----+-----+------------+-----------------------+--------------+
+
