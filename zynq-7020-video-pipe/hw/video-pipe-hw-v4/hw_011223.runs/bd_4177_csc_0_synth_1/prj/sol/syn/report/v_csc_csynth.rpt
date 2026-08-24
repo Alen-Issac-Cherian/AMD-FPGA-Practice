@@ -1,0 +1,314 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_csc'
+================================================================
+* Date:           Fri Dec 22 10:23:24 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  5.999 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+-----------+-----------+------+------------+----------+
+    |   Latency (cycles)   |   Latency (absolute)  |      Interval     | Pipeline |
+    |   min   |     max    |    min    |    max    |  min |     max    |   Type   |
+    +---------+------------+-----------+-----------+------+------------+----------+
+    |     4743|  1073971207|  33.201 us|  7.518 sec|  4743|  1073971194|  dataflow|
+    +---------+------------+-----------+-----------+------+------------+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------+-------------------------+---------+------------+-----------+-----------+------+------------+---------+
+        |                            |                         |   Latency (cycles)   |   Latency (absolute)  |      Interval     | Pipeline|
+        |          Instance          |          Module         |   min   |     max    |    min    |    max    |  min |     max    |   Type  |
+        +----------------------------+-------------------------+---------+------------+-----------+-----------+------+------------+---------+
+        |Block_entry3_proc_U0        |Block_entry3_proc        |        0|           0|       0 ns|       0 ns|     0|           0|       no|
+        |AXIvideo2MultiPixStream_U0  |AXIvideo2MultiPixStream  |     4742|      164006|  33.194 us|   1.148 ms|  4742|      164006|       no|
+        |v_vcresampler_core_1_U0     |v_vcresampler_core_1     |        1|  1073938426|   7.000 ns|  7.518 sec|     1|  1073938426|       no|
+        |v_hcresampler_core_2_U0     |v_hcresampler_core_2     |        1|  1073938426|   7.000 ns|  7.518 sec|     1|  1073938426|       no|
+        |v_csc_core_U0               |v_csc_core               |        1|      265721|   7.000 ns|   1.860 ms|     1|      265721|       no|
+        |v_hcresampler_core_U0       |v_hcresampler_core       |        1|  1073971193|   7.000 ns|  7.518 sec|     1|  1073971193|       no|
+        |v_vcresampler_core_U0       |v_vcresampler_core       |        2|  1073938427|  14.000 ns|  7.518 sec|     2|  1073938427|       no|
+        |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |     4547|      162803|  31.829 us|   1.140 ms|  4547|      162803|       no|
+        +----------------------------+-------------------------+---------+------------+-----------+-----------+------+------------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     96|    -|
+|FIFO             |        -|    -|    3960|   2703|    -|
+|Instance         |        7|    9|    3850|   4955|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    198|    -|
+|Register         |        -|    -|      22|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        7|    9|    7832|   7952|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        2|    4|       7|     14|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-------------------------+---------+----+------+-----+-----+
+    |          Instance          |          Module         | BRAM_18K| DSP|  FF  | LUT | URAM|
+    +----------------------------+-------------------------+---------+----+------+-----+-----+
+    |AXIvideo2MultiPixStream_U0  |AXIvideo2MultiPixStream  |        0|   0|   152|  470|    0|
+    |Block_entry3_proc_U0        |Block_entry3_proc        |        0|   0|   230|  281|    0|
+    |CTRL_s_axi_U                |CTRL_s_axi               |        0|   0|   382|  516|    0|
+    |MultiPixStream2AXIvideo_U0  |MultiPixStream2AXIvideo  |        0|   0|   145|  335|    0|
+    |v_csc_core_U0               |v_csc_core               |        0|   9|  1068|  827|    0|
+    |v_hcresampler_core_U0       |v_hcresampler_core       |        0|   0|   668|  811|    0|
+    |v_hcresampler_core_2_U0     |v_hcresampler_core_2     |        0|   0|   441|  708|    0|
+    |v_vcresampler_core_U0       |v_vcresampler_core       |        3|   0|   337|  474|    0|
+    |v_vcresampler_core_1_U0     |v_vcresampler_core_1     |        4|   0|   427|  533|    0|
+    +----------------------------+-------------------------+---------+----+------+-----+-----+
+    |Total                       |                         |        7|   9|  3850| 4955|    0|
+    +----------------------------+-------------------------+---------+----+------+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +----------------------------------------+---------+----+----+-----+------+-----+---------+
+    |                  Name                  | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +----------------------------------------+---------+----+----+-----+------+-----+---------+
+    |HwReg_BOffset_channel_U                 |        0|  99|   0|    -|     5|   10|       50|
+    |HwReg_ClampMin_channel_U                |        0|  99|   0|    -|     5|    8|       40|
+    |HwReg_ClipMax_channel_U                 |        0|  99|   0|    -|     5|    8|       40|
+    |HwReg_GOffset_channel_U                 |        0|  99|   0|    -|     5|   10|       50|
+    |HwReg_InVideoFormat_channel_U           |        0|  99|   0|    -|     2|    8|       16|
+    |HwReg_K11_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_K12_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_K13_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_K21_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_K22_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_K23_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_K31_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_K32_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_K33_channel_U                     |        0|  99|   0|    -|     5|   16|       80|
+    |HwReg_OutVideoFormat_channel_U          |        0|  99|   0|    -|     8|    8|       64|
+    |HwReg_ROffset_channel_U                 |        0|  99|   0|    -|     5|   10|       50|
+    |HwReg_height_c25_U                      |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_height_c26_U                      |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_height_c27_U                      |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_height_c28_U                      |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_height_c29_U                      |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_height_c30_channel_U              |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_height_c_U                        |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_width_c19_U                       |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_width_c20_U                       |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_width_c21_U                       |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_width_c22_U                       |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_width_c23_U                       |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_width_c24_channel_U               |        0|  99|   0|    -|     2|    9|       18|
+    |HwReg_width_c_U                         |        0|  99|   0|    -|     2|    9|       18|
+    |bPassThru_420_In_loc_channel_U          |        0|  99|   0|    -|     3|    1|        3|
+    |bPassThru_420_Out_loc_channel_U         |        0|  99|   0|    -|     7|    1|        7|
+    |bPassThru_422_or_420_In_loc_channel_U   |        0|  99|   0|    -|     4|    1|        4|
+    |bPassThru_422_or_420_Out_loc_channel_U  |        0|  99|   0|    -|     6|    1|        6|
+    |stream_csc_U                            |        0|  99|   0|    -|    16|   24|      384|
+    |stream_in_U                             |        0|  99|   0|    -|    16|   24|      384|
+    |stream_in_hresampled_U                  |        0|  99|   0|    -|    16|   24|      384|
+    |stream_in_vresampled_U                  |        0|  99|   0|    -|    16|   24|      384|
+    |stream_out_hresampled_U                 |        0|  99|   0|    -|    16|   24|      384|
+    |stream_out_vresampled_U                 |        0|  99|   0|    -|    16|   24|      384|
+    +----------------------------------------+---------+----+----+-----+------+-----+---------+
+    |Total                                   |        0|3960|   0|    0|   224|  480|     3606|
+    +----------------------------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                        Variable Name                       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |AXIvideo2MultiPixStream_U0_ap_start                         |       and|   0|  0|   2|           1|           1|
+    |Block_entry3_proc_U0_ap_continue                            |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_BOffset_channel                       |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_ClampMin_channel                      |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_ClipMax_channel                       |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_GOffset_channel                       |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_InVideoFormat_channel                 |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K11_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K12_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K13_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K21_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K22_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K23_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K31_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K32_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_K33_channel                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_OutVideoFormat_channel                |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_ROffset_channel                       |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_height_c30_channel                    |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_HwReg_width_c24_channel                     |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bPassThru_420_In_loc_channel                |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bPassThru_420_Out_loc_channel               |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bPassThru_422_or_420_In_loc_channel         |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_bPassThru_422_or_420_Out_loc_channel        |       and|   0|  0|   2|           1|           1|
+    |ap_idle                                                     |       and|   0|  0|   2|           1|           1|
+    |v_csc_core_U0_ap_start                                      |       and|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_BOffset_channel                 |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_ClampMin_channel                |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_ClipMax_channel                 |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_GOffset_channel                 |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_InVideoFormat_channel           |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K11_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K12_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K13_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K21_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K22_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K23_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K31_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K32_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_K33_channel                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_OutVideoFormat_channel          |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_ROffset_channel                 |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_height_c30_channel              |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_HwReg_width_c24_channel               |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bPassThru_420_In_loc_channel          |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bPassThru_420_Out_loc_channel         |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bPassThru_422_or_420_In_loc_channel   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_bPassThru_422_or_420_Out_loc_channel  |        or|   0|  0|   2|           1|           1|
+    +------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                       |          |   0|  0|  96|          48|          48|
+    +------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------------------------+----+-----------+-----+-----------+
+    |                              Name                              | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_HwReg_BOffset_channel                 |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_ClampMin_channel                |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_ClipMax_channel                 |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_GOffset_channel                 |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_InVideoFormat_channel           |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K11_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K12_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K13_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K21_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K22_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K23_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K31_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K32_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_K33_channel                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_OutVideoFormat_channel          |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_ROffset_channel                 |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_height_c30_channel              |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_HwReg_width_c24_channel               |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bPassThru_420_In_loc_channel          |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bPassThru_420_Out_loc_channel         |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bPassThru_422_or_420_In_loc_channel   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_bPassThru_422_or_420_Out_loc_channel  |   9|          2|    1|          2|
+    +----------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                           | 198|         44|   22|         44|
+    +----------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------+---+----+-----+-----------+
+    |                              Name                              | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_HwReg_BOffset_channel                 |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_ClampMin_channel                |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_ClipMax_channel                 |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_GOffset_channel                 |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_InVideoFormat_channel           |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K11_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K12_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K13_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K21_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K22_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K23_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K31_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K32_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_K33_channel                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_OutVideoFormat_channel          |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_ROffset_channel                 |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_height_c30_channel              |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_HwReg_width_c24_channel               |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bPassThru_420_In_loc_channel          |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bPassThru_420_Out_loc_channel         |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bPassThru_422_or_420_In_loc_channel   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_bPassThru_422_or_420_Out_loc_channel  |  1|   0|    1|          0|
+    +----------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                           | 22|   0|   22|          0|
+    +----------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+-----------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++---------------------+-----+-----+------------+-----------------------+--------------+
+|s_axi_CTRL_AWVALID   |   in|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_AWREADY   |  out|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_AWADDR    |   in|    8|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_WVALID    |   in|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_WREADY    |  out|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_WDATA     |   in|   32|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_WSTRB     |   in|    4|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_ARVALID   |   in|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_ARREADY   |  out|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_ARADDR    |   in|    8|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_RVALID    |  out|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_RREADY    |   in|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_RDATA     |  out|   32|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_RRESP     |  out|    2|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_BVALID    |  out|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_BREADY    |   in|    1|       s_axi|                   CTRL|       pointer|
+|s_axi_CTRL_BRESP     |  out|    2|       s_axi|                   CTRL|       pointer|
+|ap_clk               |   in|    1|  ap_ctrl_hs|                  v_csc|  return value|
+|ap_rst_n             |   in|    1|  ap_ctrl_hs|                  v_csc|  return value|
+|interrupt            |  out|    1|  ap_ctrl_hs|                  v_csc|  return value|
+|s_axis_video_TDATA   |   in|   24|        axis|  s_axis_video_V_data_V|       pointer|
+|s_axis_video_TKEEP   |   in|    3|        axis|  s_axis_video_V_keep_V|       pointer|
+|s_axis_video_TSTRB   |   in|    3|        axis|  s_axis_video_V_strb_V|       pointer|
+|s_axis_video_TUSER   |   in|    1|        axis|  s_axis_video_V_user_V|       pointer|
+|s_axis_video_TLAST   |   in|    1|        axis|  s_axis_video_V_last_V|       pointer|
+|s_axis_video_TID     |   in|    1|        axis|    s_axis_video_V_id_V|       pointer|
+|s_axis_video_TDEST   |   in|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TVALID  |   in|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TREADY  |  out|    1|        axis|  s_axis_video_V_dest_V|       pointer|
+|m_axis_video_TDATA   |  out|   24|        axis|  m_axis_video_V_data_V|       pointer|
+|m_axis_video_TKEEP   |  out|    3|        axis|  m_axis_video_V_keep_V|       pointer|
+|m_axis_video_TSTRB   |  out|    3|        axis|  m_axis_video_V_strb_V|       pointer|
+|m_axis_video_TUSER   |  out|    1|        axis|  m_axis_video_V_user_V|       pointer|
+|m_axis_video_TLAST   |  out|    1|        axis|  m_axis_video_V_last_V|       pointer|
+|m_axis_video_TID     |  out|    1|        axis|    m_axis_video_V_id_V|       pointer|
+|m_axis_video_TDEST   |  out|    1|        axis|  m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TVALID  |  out|    1|        axis|  m_axis_video_V_dest_V|       pointer|
+|m_axis_video_TREADY  |   in|    1|        axis|  m_axis_video_V_dest_V|       pointer|
++---------------------+-----+-----+------------+-----------------------+--------------+
+

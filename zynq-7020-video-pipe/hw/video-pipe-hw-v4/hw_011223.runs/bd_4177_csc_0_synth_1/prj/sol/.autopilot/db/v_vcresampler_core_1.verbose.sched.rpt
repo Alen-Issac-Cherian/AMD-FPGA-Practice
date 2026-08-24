@@ -1,0 +1,181 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_vcresampler_core_1'
+================================================================
+* Date:           Fri Dec 22 10:23:03 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  5.110 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+------------+----------+-----------+-----+------------+---------+
+    |   Latency (cycles)   |  Latency (absolute)  |     Interval     | Pipeline|
+    |   min   |     max    |    min   |    max    | min |     max    |   Type  |
+    +---------+------------+----------+-----------+-----+------------+---------+
+    |        1|  1073938426|  7.000 ns|  7.518 sec|    1|  1073938426|       no|
+    +---------+------------+----------+-----------+-----+------------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+------------+-----------+-----------+-----------+-----------+----------+
+        |                    |   Latency (cycles)   | Iteration |  Initiation Interval  |    Trip   |          |
+        |      Loop Name     |   min   |     max    |  Latency  |  achieved |   target  |   Count   | Pipelined|
+        +--------------------+---------+------------+-----------+-----------+-----------+-----------+----------+
+        |- VITIS_LOOP_998_1  |        0|  1073938425|  5 ~ 32775|          -|          -|  0 ~ 32767|        no|
+        +--------------------+---------+------------+-----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.11>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%pix_0_0_0_0_0_load551_lcssa574_i = alloca i32 1"   --->   Operation 5 'alloca' 'pix_0_0_0_0_0_load551_lcssa574_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%pix_0_1_0_0_0_load553_lcssa577_i = alloca i32 1"   --->   Operation 6 'alloca' 'pix_0_1_0_0_0_load553_lcssa577_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%pix_0_2_0_0_0_load555_lcssa580_i = alloca i32 1"   --->   Operation 7 'alloca' 'pix_0_2_0_0_0_load555_lcssa580_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_0_0374557_lcssa583_i = alloca i32 1"   --->   Operation 8 'alloca' 'p_0_0374557_lcssa583_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%p_0_0352559_lcssa586_i = alloca i32 1"   --->   Operation 9 'alloca' 'p_0_0352559_lcssa586_i' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%y = alloca i32 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:951->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 10 'alloca' 'y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (2.55ns)   --->   "%p_read_3 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read"   --->   Operation 11 'read' 'p_read_3' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %HwReg_height, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 12 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (2.55ns)   --->   "%HwReg_height_read = read i9 @_ssdm_op_Read.ap_fifo.i9P0A, i9 %HwReg_height"   --->   Operation 13 'read' 'HwReg_height_read' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %HwReg_height_c28, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (2.55ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i9P0A, i9 %HwReg_height_c28, i9 %HwReg_height_read"   --->   Operation 15 'write' 'write_ln0' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %HwReg_width, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 16 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (2.55ns)   --->   "%loopWidth = read i9 @_ssdm_op_Read.ap_fifo.i9P0A, i9 %HwReg_width"   --->   Operation 17 'read' 'loopWidth' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 2> <FIFO>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %HwReg_width_c22, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (2.55ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i9P0A, i9 %HwReg_width_c22, i9 %loopWidth"   --->   Operation 19 'write' 'write_ln0' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 2> <FIFO>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%linebuf_y = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:959->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 20 'alloca' 'linebuf_y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%linebuf_y_1 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:959->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 21 'alloca' 'linebuf_y_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%linebuf_c = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:960->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 22 'alloca' 'linebuf_c' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%linebuf_c_1 = alloca i64 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:960->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 23 'alloca' 'linebuf_c_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %stream_in_vresampled, void @empty_0, i32 0, i32 0, void @empty_18, i32 0, i32 0, void @empty_18, void @empty_18, void @empty_18, i32 0, i32 0, i32 0, i32 0, void @empty_18, void @empty_18, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %stream_in, void @empty_0, i32 0, i32 0, void @empty_18, i32 0, i32 0, void @empty_18, void @empty_18, void @empty_18, i32 0, i32 0, i32 0, i32 0, void @empty_18, void @empty_18, i32 4294967295, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.98ns)   --->   "%select_ln996 = select i1 %p_read_3, i11 0, i11 2" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 26 'select' 'select_ln996' <Predicate = true> <Delay = 0.98> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln996 = zext i9 %HwReg_height_read" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 27 'zext' 'zext_ln996' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns) (grouped into LUT with out node add_ln998)   --->   "%select_ln998 = select i1 %p_read_3, i10 0, i10 2" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 28 'select' 'select_ln998' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (1.82ns) (out node of the LUT)   --->   "%add_ln998 = add i10 %select_ln998, i10 %zext_ln996" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 29 'add' 'add_ln998' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 30 [1/1] (1.58ns)   --->   "%store_ln951 = store i10 0, i10 %y" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:951->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 30 'store' 'store_ln951' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln998 = br void %VITIS_LOOP_1000_2.i" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 31 'br' 'br_ln998' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 3.31>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%y_1 = load i10 %y"   --->   Operation 32 'load' 'y_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 32767, i64 32767"   --->   Operation 33 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (1.73ns)   --->   "%icmp_ln998 = icmp_eq  i10 %y_1, i10 %add_ln998" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 34 'icmp' 'icmp_ln998' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (1.73ns)   --->   "%add_ln998_1 = add i10 %y_1, i10 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 35 'add' 'add_ln998_1' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln998 = br i1 %icmp_ln998, void %VITIS_LOOP_1000_2.split.i, void %v_vcresampler_core.1.exit" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 36 'br' 'br_ln998' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%y_cast11_i = zext i10 %y_1"   --->   Operation 37 'zext' 'y_cast11_i' <Predicate = (!icmp_ln998)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%empty = trunc i10 %y_1"   --->   Operation 38 'trunc' 'empty' <Predicate = (!icmp_ln998)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (1.73ns)   --->   "%out_y = sub i11 %y_cast11_i, i11 %select_ln996" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 39 'sub' 'out_y' <Predicate = (!icmp_ln998)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%empty_63 = trunc i11 %out_y" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 40 'trunc' 'empty_63' <Predicate = (!icmp_ln998)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (1.73ns)   --->   "%cmp33_i = icmp_ult  i10 %y_1, i10 %zext_ln996" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 41 'icmp' 'cmp33_i' <Predicate = (!icmp_ln998)> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (1.73ns)   --->   "%cmp105_i = icmp_ne  i10 %y_1, i10 0"   --->   Operation 42 'icmp' 'cmp105_i' <Predicate = (!icmp_ln998)> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i11.i32, i11 %out_y, i32 10" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 43 'bitselect' 'tmp' <Predicate = (!icmp_ln998)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%empty_64 = wait i32 @_ssdm_op_Wait"   --->   Operation 44 'wait' 'empty_64' <Predicate = (!icmp_ln998)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (1.58ns)   --->   "%store_ln951 = store i10 %add_ln998_1, i10 %y" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:951->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 45 'store' 'store_ln951' <Predicate = (!icmp_ln998)> <Delay = 1.58>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%ret_ln451 = ret" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 46 'ret' 'ret_ln451' <Predicate = (icmp_ln998)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 3.41>
+ST_3 : Operation 47 [2/2] (3.41ns)   --->   "%call_ln996 = call void @v_vcresampler_core.1_Pipeline_VITIS_LOOP_1000_2, i9 %loopWidth, i24 %stream_in_vresampled, i1 %p_read_3, i1 %empty_63, i1 %tmp, i8 %linebuf_y, i8 %linebuf_y_1, i1 %cmp105_i, i8 %linebuf_c, i8 %linebuf_c_1, i1 %empty, i1 %cmp33_i, i24 %stream_in, i8 %p_0_0352559_lcssa586_i, i8 %p_0_0374557_lcssa583_i, i8 %pix_0_2_0_0_0_load555_lcssa580_i, i8 %pix_0_1_0_0_0_load553_lcssa577_i, i8 %pix_0_0_0_0_0_load551_lcssa574_i" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 47 'call' 'call_ln996' <Predicate = true> <Delay = 3.41> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%specloopname_ln998 = specloopname void @_ssdm_op_SpecLoopName, void @empty_9" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 48 'specloopname' 'specloopname_ln998' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/2] (0.00ns)   --->   "%call_ln996 = call void @v_vcresampler_core.1_Pipeline_VITIS_LOOP_1000_2, i9 %loopWidth, i24 %stream_in_vresampled, i1 %p_read_3, i1 %empty_63, i1 %tmp, i8 %linebuf_y, i8 %linebuf_y_1, i1 %cmp105_i, i8 %linebuf_c, i8 %linebuf_c_1, i1 %empty, i1 %cmp33_i, i24 %stream_in, i8 %p_0_0352559_lcssa586_i, i8 %p_0_0374557_lcssa583_i, i8 %pix_0_2_0_0_0_load555_lcssa580_i, i8 %pix_0_1_0_0_0_load553_lcssa577_i, i8 %pix_0_0_0_0_0_load551_lcssa574_i" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 49 'call' 'call_ln996' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln998 = br void %VITIS_LOOP_1000_2.i" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451]   --->   Operation 50 'br' 'br_ln998' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 7.000ns, clock uncertainty: 1.890ns.
+
+ <State 1>: 5.110ns
+The critical path consists of the following:
+	fifo read operation ('HwReg_height_read') on port 'HwReg_height' [16]  (2.555 ns)
+	fifo write operation ('write_ln0') on port 'HwReg_height_c28' [18]  (2.555 ns)
+
+ <State 2>: 3.319ns
+The critical path consists of the following:
+	'load' operation 10 bit ('y') on local variable 'y', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:951->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451 [36]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln998', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451) [38]  (1.731 ns)
+	'store' operation 0 bit ('store_ln951', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:951->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451) of variable 'add_ln998_1', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:998->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451 on local variable 'y', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:951->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451 [52]  (1.588 ns)
+
+ <State 3>: 3.411ns
+The critical path consists of the following:
+	'call' operation 0 bit ('call_ln996', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:996->G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:451) to 'v_vcresampler_core.1_Pipeline_VITIS_LOOP_1000_2' [51]  (3.411 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,196 @@
+
+
+================================================================
+== Vitis HLS Report for 'AXIvideo2MultiPixStream'
+================================================================
+* Date:           Fri Dec 22 10:23:14 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  5.999 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+------+--------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |    Interval   | Pipeline|
+    |   min   |   max   |    min    |    max   |  min |   max  |   Type  |
+    +---------+---------+-----------+----------+------+--------+---------+
+    |     4742|   164006|  33.194 us|  1.148 ms|  4742|  164006|       no|
+    +---------+---------+-----------+----------+------+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        +-----------------------------------------------------------------+------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                                                                 |                                                      |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |                             Instance                            |                        Module                        |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +-----------------------------------------------------------------+------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_176  |AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start  |        2|        2|  14.000 ns|  14.000 ns|    2|    2|       no|
+        |grp_AXIvideo2MultiPixStream_Pipeline_loop_width_fu_196           |AXIvideo2MultiPixStream_Pipeline_loop_width           |       66|      402|   0.462 us|   2.814 us|   66|  402|       no|
+        |grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_225    |AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol    |        2|        2|  14.000 ns|  14.000 ns|    2|    2|       no|
+        |grp_reg_unsigned_short_s_fu_257                                  |reg_unsigned_short_s                                  |        1|        1|   7.000 ns|   7.000 ns|    1|    1|      yes|
+        |grp_reg_unsigned_short_s_fu_262                                  |reg_unsigned_short_s                                  |        1|        1|   7.000 ns|   7.000 ns|    1|    1|      yes|
+        +-----------------------------------------------------------------+------------------------------------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        +---------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |               |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |   Loop Name   |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +---------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- loop_height  |     4736|   164000|  74 ~ 410|          -|          -|  64 ~ 400|        no|
+        +---------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     45|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|      84|    283|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|    142|    -|
+|Register         |        -|    -|      68|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     152|    470|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------------------------------------+------------------------------------------------------+---------+----+----+-----+-----+
+    |                             Instance                            |                        Module                        | BRAM_18K| DSP| FF | LUT | URAM|
+    +-----------------------------------------------------------------+------------------------------------------------------+---------+----+----+-----+-----+
+    |grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_225    |AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol    |        0|   0|   3|   43|    0|
+    |grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_176  |AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start  |        0|   0|   4|   38|    0|
+    |grp_AXIvideo2MultiPixStream_Pipeline_loop_width_fu_196           |AXIvideo2MultiPixStream_Pipeline_loop_width           |        0|   0|  39|  174|    0|
+    |grp_reg_unsigned_short_s_fu_257                                  |reg_unsigned_short_s                                  |        0|   0|  19|   14|    0|
+    |grp_reg_unsigned_short_s_fu_262                                  |reg_unsigned_short_s                                  |        0|   0|  19|   14|    0|
+    +-----------------------------------------------------------------+------------------------------------------------------+---------+----+----+-----+-----+
+    |Total                                                            |                                                      |        0|   0|  84|  283|    0|
+    +-----------------------------------------------------------------+------------------------------------------------------+---------+----+----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |i_4_fu_278_p2         |         +|   0|  0|  14|           9|           1|
+    |cond_fu_246_p2        |      icmp|   0|  0|  15|           8|           1|
+    |icmp_ln541_fu_273_p2  |      icmp|   0|  0|  14|           9|           9|
+    |ap_block_state1       |        or|   0|  0|   2|           1|           1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  45|          27|          12|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------+----+-----------+-----+-----------+
+    |               Name               | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------+----+-----------+-----+-----------+
+    |HwReg_height_c29_blk_n            |   9|          2|    1|          2|
+    |HwReg_width_c23_blk_n             |   9|          2|    1|          2|
+    |ap_NS_fsm                         |  59|         11|    1|         11|
+    |ap_done                           |   9|          2|    1|          2|
+    |axi_data_13_fu_96                 |   9|          2|   24|         48|
+    |axi_last_2_reg_164                |   9|          2|    1|          2|
+    |i_fu_100                          |   9|          2|    9|         18|
+    |s_axis_video_TREADY_int_regslice  |  20|          4|    1|          4|
+    |stream_in_write                   |   9|          2|    1|          2|
+    +----------------------------------+----+-----------+-----+-----------+
+    |Total                             | 142|         29|   40|         91|
+    +----------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |                                     Name                                     | FF | LUT| Bits| Const Bits|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                                     |  10|   0|   10|          0|
+    |ap_done_reg                                                                   |   1|   0|    1|          0|
+    |axi_data_13_fu_96                                                             |  24|   0|   24|          0|
+    |axi_last_2_reg_164                                                            |   1|   0|    1|          0|
+    |cols_reg_353                                                                  |   9|   0|    9|          0|
+    |cond_reg_343                                                                  |   1|   0|    1|          0|
+    |grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol_fu_225_ap_start_reg    |   1|   0|    1|          0|
+    |grp_AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start_fu_176_ap_start_reg  |   1|   0|    1|          0|
+    |grp_AXIvideo2MultiPixStream_Pipeline_loop_width_fu_196_ap_start_reg           |   1|   0|    1|          0|
+    |i_fu_100                                                                      |   9|   0|    9|          0|
+    |rows_reg_348                                                                  |   9|   0|    9|          0|
+    |sof_reg_150                                                                   |   1|   0|    1|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                                         |  68|   0|   68|          0|
+    +------------------------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------------+-----+-----+------------+-------------------------+--------------+
+|            RTL Ports            | Dir | Bits|  Protocol  |      Source Object      |    C Type    |
++---------------------------------+-----+-----+------------+-------------------------+--------------+
+|ap_clk                           |   in|    1|  ap_ctrl_hs|  AXIvideo2MultiPixStream|  return value|
+|ap_rst                           |   in|    1|  ap_ctrl_hs|  AXIvideo2MultiPixStream|  return value|
+|ap_start                         |   in|    1|  ap_ctrl_hs|  AXIvideo2MultiPixStream|  return value|
+|ap_done                          |  out|    1|  ap_ctrl_hs|  AXIvideo2MultiPixStream|  return value|
+|ap_continue                      |   in|    1|  ap_ctrl_hs|  AXIvideo2MultiPixStream|  return value|
+|ap_idle                          |  out|    1|  ap_ctrl_hs|  AXIvideo2MultiPixStream|  return value|
+|ap_ready                         |  out|    1|  ap_ctrl_hs|  AXIvideo2MultiPixStream|  return value|
+|s_axis_video_TDATA               |   in|   24|        axis|    s_axis_video_V_data_V|       pointer|
+|s_axis_video_TVALID              |   in|    1|        axis|    s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TREADY              |  out|    1|        axis|    s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TDEST               |   in|    1|        axis|    s_axis_video_V_dest_V|       pointer|
+|s_axis_video_TKEEP               |   in|    3|        axis|    s_axis_video_V_keep_V|       pointer|
+|s_axis_video_TSTRB               |   in|    3|        axis|    s_axis_video_V_strb_V|       pointer|
+|s_axis_video_TUSER               |   in|    1|        axis|    s_axis_video_V_user_V|       pointer|
+|s_axis_video_TLAST               |   in|    1|        axis|    s_axis_video_V_last_V|       pointer|
+|s_axis_video_TID                 |   in|    1|        axis|      s_axis_video_V_id_V|       pointer|
+|stream_in_din                    |  out|   24|     ap_fifo|                stream_in|       pointer|
+|stream_in_num_data_valid         |   in|    5|     ap_fifo|                stream_in|       pointer|
+|stream_in_fifo_cap               |   in|    5|     ap_fifo|                stream_in|       pointer|
+|stream_in_full_n                 |   in|    1|     ap_fifo|                stream_in|       pointer|
+|stream_in_write                  |  out|    1|     ap_fifo|                stream_in|       pointer|
+|p_read                           |   in|    9|     ap_none|                   p_read|        scalar|
+|p_read1                          |   in|    9|     ap_none|                  p_read1|        scalar|
+|p_read2                          |   in|    8|     ap_none|                  p_read2|        scalar|
+|HwReg_width_c23_din              |  out|    9|     ap_fifo|          HwReg_width_c23|       pointer|
+|HwReg_width_c23_num_data_valid   |   in|    3|     ap_fifo|          HwReg_width_c23|       pointer|
+|HwReg_width_c23_fifo_cap         |   in|    3|     ap_fifo|          HwReg_width_c23|       pointer|
+|HwReg_width_c23_full_n           |   in|    1|     ap_fifo|          HwReg_width_c23|       pointer|
+|HwReg_width_c23_write            |  out|    1|     ap_fifo|          HwReg_width_c23|       pointer|
+|HwReg_height_c29_din             |  out|    9|     ap_fifo|         HwReg_height_c29|       pointer|
+|HwReg_height_c29_num_data_valid  |   in|    3|     ap_fifo|         HwReg_height_c29|       pointer|
+|HwReg_height_c29_fifo_cap        |   in|    3|     ap_fifo|         HwReg_height_c29|       pointer|
+|HwReg_height_c29_full_n          |   in|    1|     ap_fifo|         HwReg_height_c29|       pointer|
+|HwReg_height_c29_write           |  out|    1|     ap_fifo|         HwReg_height_c29|       pointer|
++---------------------------------+-----+-----+------------+-------------------------+--------------+
+

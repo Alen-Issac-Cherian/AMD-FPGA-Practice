@@ -1,0 +1,123 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "4 2 5 6 8 7 1",
+    "file": "v_csc.cpp",
+    "fileloc": 220,
+    "instructions": 170,
+    "loads": {
+      "T": 18
+    },
+    "name": "v_csc",
+    "stores": {
+      "L": 18
+    },
+    "total_instructions": 1532
+  },
+  "1": {
+    "basicblocks": 17,
+    "calls": "3 3",
+    "file": "v_csc.cpp",
+    "fileloc": 611,
+    "instructions": 105,
+    "loads": {
+      "G": 1,
+      "L": 6
+    },
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 149
+  },
+  "2": {
+    "basicblocks": 22,
+    "calls": "",
+    "file": "v_csc.cpp",
+    "fileloc": 948,
+    "instructions": 152,
+    "loads": {
+      "L": 6
+    },
+    "name": "v_vcresampler_core",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 212
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "4": {
+    "basicblocks": 15,
+    "calls": "3 3",
+    "file": "v_csc.cpp",
+    "fileloc": 512,
+    "instructions": 160,
+    "loads": {
+      "L": 17
+    },
+    "name": "AXIvideo2MultiPixStream",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 218
+  },
+  "5": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "v_csc.cpp",
+    "fileloc": 722,
+    "instructions": 157,
+    "loads": {
+      "L": 2
+    },
+    "name": "v_hcresampler_core",
+    "total_instructions": 217
+  },
+  "6": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "v_csc.cpp",
+    "fileloc": 91,
+    "instructions": 112,
+    "loads": {
+      "L": 16
+    },
+    "name": "v_csc_core",
+    "total_instructions": 151
+  },
+  "7": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "v_csc.cpp",
+    "fileloc": 948,
+    "instructions": 131,
+    "loads": {
+      "L": 5
+    },
+    "name": "v_vcresampler_core",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 191
+  },
+  "8": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "v_csc.cpp",
+    "fileloc": 722,
+    "instructions": 164,
+    "loads": {
+      "L": 2
+    },
+    "name": "v_hcresampler_core",
+    "total_instructions": 224
+  }
+}

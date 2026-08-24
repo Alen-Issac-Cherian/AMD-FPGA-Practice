@@ -1,0 +1,269 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_hcresampler_core_1_Pipeline_VITIS_LOOP_1681_2'
+================================================================
+* Date:           Thu Dec 28 17:23:02 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  5.253 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline|
+    |   min   |   max   |    min    |    max   | min |  max  |   Type  |
+    +---------+---------+-----------+----------+-----+-------+---------+
+    |        4|    32771|  28.000 ns|  0.229 ms|    4|  32771|       no|
+    +---------+---------+-----------+----------+-----+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  |    Trip   |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  |   Count   | Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+        |- VITIS_LOOP_1681_2  |        2|    32769|         4|          1|          1|  0 ~ 32767|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+-----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.25>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%x = alloca i32 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1635]   --->   Operation 7 'alloca' 'x' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0495686 = alloca i32 1"   --->   Operation 8 'alloca' 'p_0_0_0_0_0495686' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%pixbuf_y_6 = alloca i32 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 9 'alloca' 'pixbuf_y_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%pixbuf_y_7 = alloca i32 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 10 'alloca' 'pixbuf_y_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%pixbuf_y = alloca i32 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 11 'alloca' 'pixbuf_y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%pixbuf_y_8 = alloca i32 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 12 'alloca' 'pixbuf_y_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%WidthIn_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %WidthIn_load"   --->   Operation 13 'read' 'WidthIn_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%select_ln1677_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %select_ln1677"   --->   Operation 14 'read' 'select_ln1677_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_read_4 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read"   --->   Operation 15 'read' 'p_read_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%loopWidth_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %loopWidth"   --->   Operation 16 'read' 'loopWidth_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0495685_lcssa734_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %p_0_0_0_0_0495685_lcssa734"   --->   Operation 17 'read' 'p_0_0_0_0_0495685_lcssa734_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%pixbuf_y_1_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %pixbuf_y_1"   --->   Operation 18 'read' 'pixbuf_y_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%pixbuf_y_2_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %pixbuf_y_2"   --->   Operation 19 'read' 'pixbuf_y_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%pixbuf_y_3_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %pixbuf_y_3"   --->   Operation 20 'read' 'pixbuf_y_3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%pixbuf_y_4_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %pixbuf_y_4"   --->   Operation 21 'read' 'pixbuf_y_4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%select_ln1677_cast = zext i3 %select_ln1677_read"   --->   Operation 22 'zext' 'select_ln1677_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %stream_in, void @empty_29, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %stream_upsampled, void @empty_29, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0"   --->   Operation 24 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (1.58ns)   --->   "%store_ln1655 = store i10 %pixbuf_y_4_read, i10 %pixbuf_y_8" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 25 'store' 'store_ln1655' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 26 [1/1] (1.58ns)   --->   "%store_ln1655 = store i10 %pixbuf_y_3_read, i10 %pixbuf_y" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 26 'store' 'store_ln1655' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 27 [1/1] (1.58ns)   --->   "%store_ln1655 = store i10 %pixbuf_y_2_read, i10 %pixbuf_y_7" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 27 'store' 'store_ln1655' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 28 [1/1] (1.58ns)   --->   "%store_ln1655 = store i10 %pixbuf_y_1_read, i10 %pixbuf_y_6" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 28 'store' 'store_ln1655' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 29 [1/1] (1.58ns)   --->   "%store_ln0 = store i10 %p_0_0_0_0_0495685_lcssa734_read, i10 %p_0_0_0_0_0495686"   --->   Operation 29 'store' 'store_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 30 [1/1] (1.58ns)   --->   "%store_ln1635 = store i15 0, i15 %x" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1635]   --->   Operation 30 'store' 'store_ln1635' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body37"   --->   Operation 31 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%x_2 = load i15 %x" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 32 'load' 'x_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln1681 = zext i15 %x_2" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 33 'zext' 'zext_ln1681' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 34 [1/1] (2.07ns)   --->   "%icmp_ln1681 = icmp_slt  i16 %zext_ln1681, i16 %loopWidth_read" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 34 'icmp' 'icmp_ln1681' <Predicate = true> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 35 [1/1] (1.94ns)   --->   "%add_ln1681 = add i15 %x_2, i15 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 35 'add' 'add_ln1681' <Predicate = true> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (0.00ns)   --->   "%br_ln1681 = br i1 %icmp_ln1681, void %for.inc453.loopexit.exitStub, void %for.body37.split" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 36 'br' 'br_ln1681' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%CRpix = trunc i15 %x_2" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 37 'trunc' 'CRpix' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_1 : Operation 38 [1/1] (0.00ns)   --->   "%specpipeline_ln1684 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_25" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1684]   --->   Operation 38 'specpipeline' 'specpipeline_ln1684' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%specloopname_ln1681 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 39 'specloopname' 'specloopname_ln1681' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_1 : Operation 40 [1/1] (1.94ns)   --->   "%out_x = sub i16 %zext_ln1681, i16 %select_ln1677_cast" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1686]   --->   Operation 40 'sub' 'out_x' <Predicate = (icmp_ln1681)> <Delay = 1.94> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%odd_col = trunc i16 %out_x" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1643]   --->   Operation 41 'trunc' 'odd_col' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_1 : Operation 42 [1/1] (2.07ns)   --->   "%icmp_ln1688 = icmp_ult  i16 %zext_ln1681, i16 %WidthIn_load_read" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1688]   --->   Operation 42 'icmp' 'icmp_ln1688' <Predicate = (icmp_ln1681)> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln1688 = br i1 %icmp_ln1688, void %for.inc120_ifconv, void %VITIS_LOOP_1693_3" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1688]   --->   Operation 43 'br' 'br_ln1688' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (1.94ns)   --->   "%cmp150 = icmp_eq  i15 %x_2, i15 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 44 'icmp' 'cmp150' <Predicate = (icmp_ln1681)> <Delay = 1.94> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.94> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 45 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i16.i32, i16 %out_x, i32 15" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1828]   --->   Operation 45 'bitselect' 'tmp' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_1 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln1828 = br i1 %tmp, void %if.then445, void %for.inc450" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1828]   --->   Operation 46 'br' 'br_ln1828' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_1 : Operation 47 [1/1] (0.00ns)   --->   "%br_ln1830 = br i1 %p_read_4, void %if.else447, void %if.then446" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1830]   --->   Operation 47 'br' 'br_ln1830' <Predicate = (icmp_ln1681 & !tmp)> <Delay = 0.00>
+ST_1 : Operation 48 [1/1] (0.00ns)   --->   "%br_ln1834 = br void %for.inc450" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1834]   --->   Operation 48 'br' 'br_ln1834' <Predicate = (icmp_ln1681 & !tmp)> <Delay = 0.00>
+ST_1 : Operation 49 [1/1] (1.58ns)   --->   "%store_ln1635 = store i15 %add_ln1681, i15 %x" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1635]   --->   Operation 49 'store' 'store_ln1635' <Predicate = (icmp_ln1681)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 4.14>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%p_0_1_0_0_0690_out_load = load i10 %p_0_1_0_0_0690_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1703]   --->   Operation 50 'load' 'p_0_1_0_0_0690_out_load' <Predicate = (icmp_ln1681 & icmp_ln1688 & CRpix)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%p_0_2_0_0_0694_out_load = load i10 %p_0_2_0_0_0694_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1703]   --->   Operation 51 'load' 'p_0_2_0_0_0694_out_load' <Predicate = (icmp_ln1681 & icmp_ln1688 & !CRpix)> <Delay = 0.00>
+ST_2 : Operation 52 [1/1] (2.55ns)   --->   "%stream_in_read = read i30 @_ssdm_op_Read.ap_fifo.volatile.i30P0A, i30 %stream_in" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690]   --->   Operation 52 'read' 'stream_in_read' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.80> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 30> <Depth = 16> <FIFO>
+ST_2 : Operation 53 [1/1] (0.00ns)   --->   "%trunc_ln1690 = trunc i30 %stream_in_read" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690]   --->   Operation 53 'trunc' 'trunc_ln1690' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+ST_2 : Operation 54 [1/1] (0.00ns)   --->   "%trunc_ln1690_1 = partselect i10 @_ssdm_op_PartSelect.i10.i30.i32.i32, i30 %stream_in_read, i32 10, i32 19" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690]   --->   Operation 54 'partselect' 'trunc_ln1690_1' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%trunc_ln1690_2 = partselect i10 @_ssdm_op_PartSelect.i10.i30.i32.i32, i30 %stream_in_read, i32 20, i32 29" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690]   --->   Operation 55 'partselect' 'trunc_ln1690_2' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.68ns)   --->   "%select_ln1703 = select i1 %CRpix, i10 %trunc_ln1690_1, i10 %p_0_2_0_0_0694_out_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1703]   --->   Operation 56 'select' 'select_ln1703' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 57 [1/1] (0.68ns)   --->   "%select_ln1703_1 = select i1 %CRpix, i10 %p_0_1_0_0_0690_out_load, i10 %trunc_ln1690_1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1703]   --->   Operation 57 'select' 'select_ln1703_1' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%store_ln1703 = store i10 %select_ln1703, i10 %p_0_2_0_0_0694_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1703]   --->   Operation 58 'store' 'store_ln1703' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%store_ln1703 = store i10 %select_ln1703_1, i10 %p_0_1_0_0_0690_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1703]   --->   Operation 59 'store' 'store_ln1703' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+ST_2 : Operation 60 [1/1] (1.58ns)   --->   "%store_ln1690 = store i10 %trunc_ln1690, i10 %p_0_0_0_0_0495686" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690]   --->   Operation 60 'store' 'store_ln1690' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 1.58>
+ST_2 : Operation 61 [1/1] (0.00ns)   --->   "%store_ln1690 = store i10 %trunc_ln1690_2, i10 %inpix_0_2_0_0_0_load684_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690]   --->   Operation 61 'store' 'store_ln1690' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%store_ln1690 = store i10 %trunc_ln1690_1, i10 %inpix_0_1_0_0_0_load682_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690]   --->   Operation 62 'store' 'store_ln1690' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%store_ln1690 = store i10 %trunc_ln1690, i10 %inpix_0_0_0_0_0_load680_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690]   --->   Operation 63 'store' 'store_ln1690' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc120_ifconv"   --->   Operation 64 'br' 'br_ln0' <Predicate = (icmp_ln1681 & icmp_ln1688)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 4.44>
+ST_3 : Operation 65 [1/1] (0.00ns)   --->   "%pixbuf_y_9 = load i10 %pixbuf_y_6"   --->   Operation 65 'load' 'pixbuf_y_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 66 [1/1] (0.00ns)   --->   "%pixbuf_y_10 = load i10 %pixbuf_y_7"   --->   Operation 66 'load' 'pixbuf_y_10' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 67 [1/1] (0.00ns)   --->   "%pixbuf_y_11 = load i10 %pixbuf_y"   --->   Operation 67 'load' 'pixbuf_y_11' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 68 [1/1] (0.00ns)   --->   "%pixbuf_y_12 = load i10 %pixbuf_y_8"   --->   Operation 68 'load' 'pixbuf_y_12' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 32767, i64 32767"   --->   Operation 69 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0487_1697_out_load = load i10 %p_0_0_0_0_0487_1697_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 70 'load' 'p_0_0_0_0_0487_1697_out_load' <Predicate = (icmp_ln1681 & !CRpix & !cmp150)> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0_1703_out_load = load i10 %p_0_0_0_0_0_1703_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 71 'load' 'p_0_0_0_0_0_1703_out_load' <Predicate = (icmp_ln1681 & !CRpix & !cmp150)> <Delay = 0.00>
+ST_3 : Operation 72 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0487_2709_out_load = load i10 %p_0_0_0_0_0487_2709_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 72 'load' 'p_0_0_0_0_0487_2709_out_load' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0_2712_out_load = load i10 %p_0_0_0_0_0_2712_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 73 'load' 'p_0_0_0_0_0_2712_out_load' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (0.00ns)   --->   "%p_0_1_0_0_0687715_out_load = load i10 %p_0_1_0_0_0687715_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 74 'load' 'p_0_1_0_0_0687715_out_load' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%p_0_2_0_0_0691719_out_load = load i10 %p_0_2_0_0_0691719_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 75 'load' 'p_0_2_0_0_0691719_out_load' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.00ns)   --->   "%p_0_1_0_0_0690_out_load_1 = load i10 %p_0_1_0_0_0690_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 76 'load' 'p_0_1_0_0_0690_out_load_1' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%p_0_2_0_0_0694_out_load_1 = load i10 %p_0_2_0_0_0694_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 77 'load' 'p_0_2_0_0_0694_out_load_1' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 78 [1/1] (0.00ns) (grouped into LUT with out node select_ln1767)   --->   "%select_ln1745 = select i1 %CRpix, i10 %p_0_2_0_0_0694_out_load_1, i10 %p_0_2_0_0_0691719_out_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 78 'select' 'select_ln1745' <Predicate = (icmp_ln1681 & !cmp150)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 79 [1/1] (0.00ns) (grouped into LUT with out node select_ln1767_1)   --->   "%select_ln1745_1 = select i1 %CRpix, i10 %p_0_1_0_0_0690_out_load_1, i10 %p_0_1_0_0_0687715_out_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 79 'select' 'select_ln1745_1' <Predicate = (icmp_ln1681 & !cmp150)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 80 [1/1] (0.00ns) (grouped into LUT with out node select_ln1767_2)   --->   "%select_ln1745_2 = select i1 %CRpix, i10 %p_0_2_0_0_0691719_out_load, i10 %p_0_0_0_0_0_2712_out_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 80 'select' 'select_ln1745_2' <Predicate = (icmp_ln1681 & !cmp150)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node select_ln1767_3)   --->   "%select_ln1745_3 = select i1 %CRpix, i10 %p_0_1_0_0_0687715_out_load, i10 %p_0_0_0_0_0487_2709_out_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 81 'select' 'select_ln1745_3' <Predicate = (icmp_ln1681 & !cmp150)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node select_ln1767_4)   --->   "%select_ln1745_4 = select i1 %CRpix, i10 %p_0_0_0_0_0_2712_out_load, i10 %p_0_0_0_0_0_1703_out_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 82 'select' 'select_ln1745_4' <Predicate = (icmp_ln1681 & !cmp150)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 83 [1/1] (0.00ns) (grouped into LUT with out node select_ln1767_5)   --->   "%select_ln1745_5 = select i1 %CRpix, i10 %p_0_0_0_0_0487_2709_out_load, i10 %p_0_0_0_0_0487_1697_out_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745]   --->   Operation 83 'select' 'select_ln1745_5' <Predicate = (icmp_ln1681 & !cmp150)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 84 [1/1] (0.68ns) (out node of the LUT)   --->   "%select_ln1767 = select i1 %cmp150, i10 %p_0_2_0_0_0694_out_load_1, i10 %select_ln1745" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 84 'select' 'select_ln1767' <Predicate = (icmp_ln1681)> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 85 [1/1] (0.68ns) (out node of the LUT)   --->   "%select_ln1767_1 = select i1 %cmp150, i10 %p_0_1_0_0_0690_out_load_1, i10 %select_ln1745_1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 85 'select' 'select_ln1767_1' <Predicate = (icmp_ln1681)> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 86 [1/1] (0.68ns) (out node of the LUT)   --->   "%select_ln1767_2 = select i1 %cmp150, i10 %p_0_2_0_0_0694_out_load_1, i10 %select_ln1745_2" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 86 'select' 'select_ln1767_2' <Predicate = (icmp_ln1681)> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 87 [1/1] (0.68ns) (out node of the LUT)   --->   "%select_ln1767_3 = select i1 %cmp150, i10 %p_0_1_0_0_0690_out_load_1, i10 %select_ln1745_3" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 87 'select' 'select_ln1767_3' <Predicate = (icmp_ln1681)> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 88 [1/1] (0.68ns) (out node of the LUT)   --->   "%select_ln1767_4 = select i1 %cmp150, i10 %p_0_2_0_0_0694_out_load_1, i10 %select_ln1745_4" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 88 'select' 'select_ln1767_4' <Predicate = (icmp_ln1681)> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 89 [1/1] (0.68ns) (out node of the LUT)   --->   "%select_ln1767_5 = select i1 %cmp150, i10 %p_0_1_0_0_0690_out_load_1, i10 %select_ln1745_5" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 89 'select' 'select_ln1767_5' <Predicate = (icmp_ln1681)> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 90 [1/1] (0.00ns)   --->   "%zext_ln1814 = zext i10 %select_ln1767_3" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1814]   --->   Operation 90 'zext' 'zext_ln1814' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 0.00>
+ST_3 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln1814_1 = zext i10 %select_ln1767_5" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1814]   --->   Operation 91 'zext' 'zext_ln1814_1' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 0.00>
+ST_3 : Operation 92 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln1814 = add i11 %zext_ln1814_1, i11 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1814]   --->   Operation 92 'add' 'add_ln1814' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.87> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 93 [1/1] (3.75ns) (root node of TernaryAdder)   --->   "%add_ln1814_1 = add i11 %add_ln1814, i11 %zext_ln1814" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1814]   --->   Operation 93 'add' 'add_ln1814_1' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 3.75> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.87> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 94 [1/1] (0.00ns)   --->   "%trunc_ln2 = partselect i10 @_ssdm_op_PartSelect.i10.i11.i32.i32, i11 %add_ln1814_1, i32 1, i32 10" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1813]   --->   Operation 94 'partselect' 'trunc_ln2' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 0.00>
+ST_3 : Operation 95 [1/1] (0.00ns)   --->   "%zext_ln1816 = zext i10 %select_ln1767_2" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1816]   --->   Operation 95 'zext' 'zext_ln1816' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 0.00>
+ST_3 : Operation 96 [1/1] (0.00ns)   --->   "%zext_ln1816_1 = zext i10 %select_ln1767_4" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1816]   --->   Operation 96 'zext' 'zext_ln1816_1' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 0.00>
+ST_3 : Operation 97 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln1816 = add i11 %zext_ln1816_1, i11 1" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1816]   --->   Operation 97 'add' 'add_ln1816' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.87> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 98 [1/1] (3.75ns) (root node of TernaryAdder)   --->   "%add_ln1816_1 = add i11 %add_ln1816, i11 %zext_ln1816" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1816]   --->   Operation 98 'add' 'add_ln1816_1' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 3.75> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.87> <IPBlock> <Opcode : '' 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 99 [1/1] (0.00ns)   --->   "%trunc_ln3 = partselect i10 @_ssdm_op_PartSelect.i10.i11.i32.i32, i11 %add_ln1816_1, i32 1, i32 10" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1815]   --->   Operation 99 'partselect' 'trunc_ln3' <Predicate = (icmp_ln1681 & odd_col)> <Delay = 0.00>
+ST_3 : Operation 100 [1/1] (0.00ns)   --->   "%inpix_0_0_0_0_0_load = load i10 %inpix_0_0_0_0_0_load680_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1831]   --->   Operation 100 'load' 'inpix_0_0_0_0_0_load' <Predicate = (icmp_ln1681 & !tmp & p_read_4)> <Delay = 0.00>
+ST_3 : Operation 101 [1/1] (0.00ns)   --->   "%inpix_0_1_0_0_0_load = load i10 %inpix_0_1_0_0_0_load682_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1831]   --->   Operation 101 'load' 'inpix_0_1_0_0_0_load' <Predicate = (icmp_ln1681 & !tmp & p_read_4)> <Delay = 0.00>
+ST_3 : Operation 102 [1/1] (0.00ns)   --->   "%inpix_0_2_0_0_0_load = load i10 %inpix_0_2_0_0_0_load684_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1831]   --->   Operation 102 'load' 'inpix_0_2_0_0_0_load' <Predicate = (icmp_ln1681 & !tmp & p_read_4)> <Delay = 0.00>
+ST_3 : Operation 103 [1/1] (0.00ns)   --->   "%p_0 = bitconcatenate i30 @_ssdm_op_BitConcatenate.i30.i10.i10.i10, i10 %inpix_0_2_0_0_0_load, i10 %inpix_0_1_0_0_0_load, i10 %inpix_0_0_0_0_0_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1831]   --->   Operation 103 'bitconcatenate' 'p_0' <Predicate = (icmp_ln1681 & !tmp & p_read_4)> <Delay = 0.00>
+ST_3 : Operation 104 [1/1] (2.55ns)   --->   "%write_ln1831 = write void @_ssdm_op_Write.ap_fifo.volatile.i30P0A, i30 %stream_upsampled, i30 %p_0" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1831]   --->   Operation 104 'write' 'write_ln1831' <Predicate = (icmp_ln1681 & !tmp & p_read_4)> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.80> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 30> <Depth = 16> <FIFO>
+ST_3 : Operation 105 [1/1] (0.00ns)   --->   "%br_ln1831 = br void %if.end448" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1831]   --->   Operation 105 'br' 'br_ln1831' <Predicate = (icmp_ln1681 & !tmp & p_read_4)> <Delay = 0.00>
+ST_3 : Operation 106 [1/1] (0.00ns)   --->   "%p_0_0_0_0_0495686_load = load i10 %p_0_0_0_0_0495686" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 106 'load' 'p_0_0_0_0_0495686_load' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 107 [1/1] (1.58ns)   --->   "%store_ln1655 = store i10 %p_0_0_0_0_0495686_load, i10 %pixbuf_y_8" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 107 'store' 'store_ln1655' <Predicate = (icmp_ln1681)> <Delay = 1.58>
+ST_3 : Operation 108 [1/1] (1.58ns)   --->   "%store_ln1655 = store i10 %pixbuf_y_12, i10 %pixbuf_y" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 108 'store' 'store_ln1655' <Predicate = (icmp_ln1681)> <Delay = 1.58>
+ST_3 : Operation 109 [1/1] (1.58ns)   --->   "%store_ln1655 = store i10 %pixbuf_y_11, i10 %pixbuf_y_7" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 109 'store' 'store_ln1655' <Predicate = (icmp_ln1681)> <Delay = 1.58>
+ST_3 : Operation 110 [1/1] (1.58ns)   --->   "%store_ln1655 = store i10 %pixbuf_y_10, i10 %pixbuf_y_6" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 110 'store' 'store_ln1655' <Predicate = (icmp_ln1681)> <Delay = 1.58>
+ST_3 : Operation 111 [1/1] (0.00ns)   --->   "%store_ln1767 = store i10 %select_ln1767, i10 %p_0_2_0_0_0691719_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 111 'store' 'store_ln1767' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 112 [1/1] (0.00ns)   --->   "%store_ln1767 = store i10 %select_ln1767_1, i10 %p_0_1_0_0_0687715_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 112 'store' 'store_ln1767' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 113 [1/1] (0.00ns)   --->   "%store_ln1767 = store i10 %select_ln1767_2, i10 %p_0_0_0_0_0_2712_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 113 'store' 'store_ln1767' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 114 [1/1] (0.00ns)   --->   "%store_ln1767 = store i10 %select_ln1767_3, i10 %p_0_0_0_0_0487_2709_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 114 'store' 'store_ln1767' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 115 [1/1] (0.00ns)   --->   "%store_ln1767 = store i10 %select_ln1767_4, i10 %p_0_0_0_0_0_1703_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 115 'store' 'store_ln1767' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 116 [1/1] (0.00ns)   --->   "%store_ln1767 = store i10 %select_ln1767_5, i10 %p_0_0_0_0_0487_1697_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767]   --->   Operation 116 'store' 'store_ln1767' <Predicate = (icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 125 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i10P0A, i10 %pixbuf_y_9_out, i10 %pixbuf_y_12"   --->   Operation 125 'write' 'write_ln0' <Predicate = (!icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 126 [1/1] (0.00ns)   --->   "%store_ln0 = store i10 %pixbuf_y_11, i10 %pixbuf_y_8_out"   --->   Operation 126 'store' 'store_ln0' <Predicate = (!icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 127 [1/1] (0.00ns)   --->   "%store_ln0 = store i10 %pixbuf_y_10, i10 %pixbuf_y_7_out"   --->   Operation 127 'store' 'store_ln0' <Predicate = (!icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 128 [1/1] (0.00ns)   --->   "%store_ln0 = store i10 %pixbuf_y_9, i10 %pixbuf_y_6_out"   --->   Operation 128 'store' 'store_ln0' <Predicate = (!icmp_ln1681)> <Delay = 0.00>
+ST_3 : Operation 129 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 129 'ret' 'ret_ln0' <Predicate = (!icmp_ln1681)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.24>
+ST_4 : Operation 117 [1/1] (0.68ns)   --->   "%select_ln1643 = select i1 %odd_col, i10 %trunc_ln3, i10 %select_ln1767_4" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1643]   --->   Operation 117 'select' 'select_ln1643' <Predicate = true> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 118 [1/1] (0.68ns)   --->   "%select_ln1643_1 = select i1 %odd_col, i10 %trunc_ln2, i10 %select_ln1767_5" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1643]   --->   Operation 118 'select' 'select_ln1643_1' <Predicate = true> <Delay = 0.68> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.68> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 119 [1/1] (0.00ns)   --->   "%pixbuf_y_5_out_load = load i10 %pixbuf_y_5_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1833]   --->   Operation 119 'load' 'pixbuf_y_5_out_load' <Predicate = (!tmp & !p_read_4)> <Delay = 0.00>
+ST_4 : Operation 120 [1/1] (0.00ns)   --->   "%p_s = bitconcatenate i30 @_ssdm_op_BitConcatenate.i30.i10.i10.i10, i10 %select_ln1643, i10 %select_ln1643_1, i10 %pixbuf_y_5_out_load" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1833]   --->   Operation 120 'bitconcatenate' 'p_s' <Predicate = (!tmp & !p_read_4)> <Delay = 0.00>
+ST_4 : Operation 121 [1/1] (2.55ns)   --->   "%write_ln1833 = write void @_ssdm_op_Write.ap_fifo.volatile.i30P0A, i30 %stream_upsampled, i30 %p_s" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1833]   --->   Operation 121 'write' 'write_ln1833' <Predicate = (!tmp & !p_read_4)> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.80> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 30> <Depth = 16> <FIFO>
+ST_4 : Operation 122 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end448"   --->   Operation 122 'br' 'br_ln0' <Predicate = (!tmp & !p_read_4)> <Delay = 0.00>
+ST_4 : Operation 123 [1/1] (0.00ns)   --->   "%store_ln1655 = store i10 %pixbuf_y_9, i10 %pixbuf_y_5_out" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1655]   --->   Operation 123 'store' 'store_ln1655' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 124 [1/1] (0.00ns)   --->   "%br_ln1681 = br void %for.body37" [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681]   --->   Operation 124 'br' 'br_ln1681' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 7.000ns, clock uncertainty: 1.890ns.
+
+ <State 1>: 5.253ns
+The critical path consists of the following:
+	'store' operation 0 bit ('store_ln1635', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1635) of constant 0 on local variable 'x', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1635 [51]  (1.588 ns)
+	'load' operation 15 bit ('x', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681) on local variable 'x', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1635 [54]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln1681', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681) [60]  (2.077 ns)
+	'store' operation 0 bit ('store_ln1635', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1635) of variable 'add_ln1681', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1681 on local variable 'x', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1635 [147]  (1.588 ns)
+
+ <State 2>: 4.143ns
+The critical path consists of the following:
+	fifo read operation ('stream_in_read', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690) on port 'stream_in' (/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690) [75]  (2.555 ns)
+	'store' operation 0 bit ('store_ln1690', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690) of variable 'trunc_ln1690', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1690 on local variable 'p_0_0_0_0_0495686' [83]  (1.588 ns)
+
+ <State 3>: 4.444ns
+The critical path consists of the following:
+	'load' operation 10 bit ('p_0_0_0_0_0487_1697_out_load', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745) on local variable 'p_0_0_0_0_0487_1697_out' [89]  (0.000 ns)
+	'select' operation 10 bit ('select_ln1745_5', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1745) [103]  (0.000 ns)
+	'select' operation 10 bit ('select_ln1767_5', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1767) [109]  (0.687 ns)
+	'add' operation 11 bit ('add_ln1814', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1814) [112]  (0.000 ns)
+	'add' operation 11 bit ('add_ln1814_1', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1814) [113]  (3.757 ns)
+
+ <State 4>: 3.242ns
+The critical path consists of the following:
+	'select' operation 10 bit ('select_ln1643', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1643) [120]  (0.687 ns)
+	fifo write operation ('write_ln1833', /home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1833) on port 'stream_upsampled' (/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_41e7_hsc_0_synth_1/prj/sol/.autopilot/db/v_hscaler.cpp:1833) [129]  (2.555 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,173 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_csc_core'
+================================================================
+* Date:           Fri Dec 22 10:23:05 2023
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  7.00 ns|  5.110 ns|     1.89 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+--------+---------+
+    |  Latency (cycles) |  Latency (absolute) |   Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   | min |   max  |   Type  |
+    +---------+---------+----------+----------+-----+--------+---------+
+    |        1|   265721|  7.000 ns|  1.860 ms|    1|  265721|       no|
+    +---------+---------+----------+----------+-----+--------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- VITIS_LOOP_134_1  |        0|   265720|   4 ~ 520|          -|          -|  0 ~ 511|        no|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 5.11>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%y = alloca i32 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:105]   --->   Operation 4 'alloca' 'y' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %height, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (2.55ns)   --->   "%ClipMax_read_2 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %ClipMax_read"   --->   Operation 6 'read' 'ClipMax_read_2' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 7 [1/1] (2.55ns)   --->   "%ClampMin_read_2 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %ClampMin_read"   --->   Operation 7 'read' 'ClampMin_read_2' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 8 [1/1] (2.55ns)   --->   "%BOffset_read_1 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %BOffset_read"   --->   Operation 8 'read' 'BOffset_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 9 [1/1] (2.55ns)   --->   "%GOffset_read_1 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %GOffset_read"   --->   Operation 9 'read' 'GOffset_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 10 [1/1] (2.55ns)   --->   "%ROffset_read_1 = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %ROffset_read"   --->   Operation 10 'read' 'ROffset_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 11 [1/1] (2.55ns)   --->   "%K33_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K33_read"   --->   Operation 11 'read' 'K33_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 12 [1/1] (2.55ns)   --->   "%K32_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K32_read"   --->   Operation 12 'read' 'K32_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 13 [1/1] (2.55ns)   --->   "%K31_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K31_read"   --->   Operation 13 'read' 'K31_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 14 [1/1] (2.55ns)   --->   "%K23_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K23_read"   --->   Operation 14 'read' 'K23_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 15 [1/1] (2.55ns)   --->   "%K22_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K22_read"   --->   Operation 15 'read' 'K22_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 16 [1/1] (2.55ns)   --->   "%K21_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K21_read"   --->   Operation 16 'read' 'K21_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 17 [1/1] (2.55ns)   --->   "%K13_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K13_read"   --->   Operation 17 'read' 'K13_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 18 [1/1] (2.55ns)   --->   "%K12_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K12_read"   --->   Operation 18 'read' 'K12_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 19 [1/1] (2.55ns)   --->   "%K11_read_1 = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %K11_read"   --->   Operation 19 'read' 'K11_read_1' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = -1> <Depth = -1> <FIFO>
+ST_1 : Operation 20 [1/1] (2.55ns)   --->   "%height_read = read i9 @_ssdm_op_Read.ap_fifo.i9P0A, i9 %height"   --->   Operation 20 'read' 'height_read' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 2> <FIFO>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %HwReg_height_c26, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (2.55ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i9P0A, i9 %HwReg_height_c26, i9 %height_read"   --->   Operation 22 'write' 'write_ln0' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 2> <FIFO>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %width, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 23 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (2.55ns)   --->   "%loopWidth = read i9 @_ssdm_op_Read.ap_fifo.i9P0A, i9 %width"   --->   Operation 24 'read' 'loopWidth' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 2> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i9 %HwReg_width_c20, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @ScalarProp_str, i32 4294967295, i32 0"   --->   Operation 25 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (2.55ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_fifo.i9P0A, i9 %HwReg_width_c20, i9 %loopWidth"   --->   Operation 26 'write' 'write_ln0' <Predicate = true> <Delay = 2.55> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 3.63> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 9> <Depth = 2> <FIFO>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %stream_csc, void @empty_0, i32 0, i32 0, void @empty_18, i32 0, i32 0, void @empty_18, void @empty_18, void @empty_18, i32 0, i32 0, i32 0, i32 0, void @empty_18, void @empty_18, i32 4294967295, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %stream_in_hresampled, void @empty_0, i32 0, i32 0, void @empty_18, i32 0, i32 0, void @empty_18, void @empty_18, void @empty_18, i32 0, i32 0, i32 0, i32 0, void @empty_18, void @empty_18, i32 4294967295, i32 0"   --->   Operation 28 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%offsetR = bitconcatenate i22 @_ssdm_op_BitConcatenate.i22.i10.i12, i10 %ROffset_read_1, i12 0"   --->   Operation 29 'bitconcatenate' 'offsetR' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%offsetG = bitconcatenate i22 @_ssdm_op_BitConcatenate.i22.i10.i12, i10 %GOffset_read_1, i12 0"   --->   Operation 30 'bitconcatenate' 'offsetG' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%offsetB = bitconcatenate i22 @_ssdm_op_BitConcatenate.i22.i10.i12, i10 %BOffset_read_1, i12 0"   --->   Operation 31 'bitconcatenate' 'offsetB' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%loopWidth_cast = zext i9 %loopWidth"   --->   Operation 32 'zext' 'loopWidth_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 33 [1/1] (1.82ns)   --->   "%add_ln134 = add i10 %loopWidth_cast, i10 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 33 'add' 'add_ln134' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%height_load_cast = zext i9 %height_read"   --->   Operation 34 'zext' 'height_load_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 35 [1/1] (1.82ns)   --->   "%add_ln134_1 = add i10 %height_load_cast, i10 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 35 'add' 'add_ln134_1' <Predicate = true> <Delay = 1.82> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 36 [1/1] (1.58ns)   --->   "%store_ln105 = store i10 1, i10 %y" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:105]   --->   Operation 36 'store' 'store_ln105' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln134 = br void %VITIS_LOOP_136_2" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 37 'br' 'br_ln134' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 5.05>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%y_7 = load i10 %y" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 38 'load' 'y_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 0, i64 511, i64 0"   --->   Operation 39 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (1.73ns)   --->   "%icmp_ln134 = icmp_eq  i10 %y_7, i10 %add_ln134_1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 40 'icmp' 'icmp_ln134' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%br_ln134 = br i1 %icmp_ln134, void %VITIS_LOOP_136_2.split, void %for.end128.loopexit" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 41 'br' 'br_ln134' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%empty = wait i32 @_ssdm_op_Wait"   --->   Operation 42 'wait' 'empty' <Predicate = (!icmp_ln134)> <Delay = 0.00>
+ST_2 : Operation 43 [2/2] (3.31ns)   --->   "%call_ln134 = call void @v_csc_core_Pipeline_VITIS_LOOP_136_2, i10 %add_ln134, i24 %stream_in_hresampled, i22 %offsetR, i16 %K11_read_1, i16 %K12_read_1, i16 %K13_read_1, i22 %offsetG, i16 %K21_read_1, i16 %K22_read_1, i16 %K23_read_1, i22 %offsetB, i16 %K31_read_1, i16 %K32_read_1, i16 %K33_read_1, i8 %ClampMin_read_2, i8 %ClipMax_read_2, i8 %ClipMax_read_2, i8 %ClampMin_read_2, i24 %stream_csc" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 43 'call' 'call_ln134' <Predicate = (!icmp_ln134)> <Delay = 3.31> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_2 : Operation 44 [1/1] (1.73ns)   --->   "%y_8 = add i10 %y_7, i10 1" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 44 'add' 'y_8' <Predicate = (!icmp_ln134)> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 45 [1/1] (1.58ns)   --->   "%store_ln105 = store i10 %y_8, i10 %y" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:105]   --->   Operation 45 'store' 'store_ln105' <Predicate = (!icmp_ln134)> <Delay = 1.58>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%ret_ln208 = ret" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:208]   --->   Operation 46 'ret' 'ret_ln208' <Predicate = (icmp_ln134)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%specloopname_ln134 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 47 'specloopname' 'specloopname_ln134' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln134 = call void @v_csc_core_Pipeline_VITIS_LOOP_136_2, i10 %add_ln134, i24 %stream_in_hresampled, i22 %offsetR, i16 %K11_read_1, i16 %K12_read_1, i16 %K13_read_1, i22 %offsetG, i16 %K21_read_1, i16 %K22_read_1, i16 %K23_read_1, i22 %offsetB, i16 %K31_read_1, i16 %K32_read_1, i16 %K33_read_1, i8 %ClampMin_read_2, i8 %ClipMax_read_2, i8 %ClipMax_read_2, i8 %ClampMin_read_2, i24 %stream_csc" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 48 'call' 'call_ln134' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%br_ln134 = br void %VITIS_LOOP_136_2" [G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134]   --->   Operation 49 'br' 'br_ln134' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 7.000ns, clock uncertainty: 1.890ns.
+
+ <State 1>: 5.110ns
+The critical path consists of the following:
+	fifo read operation ('height_read') on port 'height' [37]  (2.555 ns)
+	fifo write operation ('write_ln0') on port 'HwReg_height_c26' [39]  (2.555 ns)
+
+ <State 2>: 5.050ns
+The critical path consists of the following:
+	'load' operation 10 bit ('y', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134) on local variable 'y', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:105 [56]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln134', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134) [58]  (1.731 ns)
+	'call' operation 0 bit ('call_ln134', G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.runs/bd_4177_csc_0_synth_1/prj/sol/.autopilot/db/v_csc.cpp:134) to 'v_csc_core_Pipeline_VITIS_LOOP_136_2' [63]  (3.319 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,100 @@
+-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+-- Date        : Fri Dec 22 10:47:56 2023
+-- Host        : DESKTOP-1T2E61L running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub
+--               g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v4/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_clahe_ip_0_0/broncho_video_clahe_ip_0_0_stub.vhdl
+-- Design      : broncho_video_clahe_ip_0_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7z020clg484-1
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity broncho_video_clahe_ip_0_0 is
+  Port ( 
+    IPCORE_CLK : in STD_LOGIC;
+    IPCORE_RESETN : in STD_LOGIC;
+    AXI4_Stream_Video_0_Master_TREADY : in STD_LOGIC;
+    AXI4_Stream_Video_0_Slave_TDATA : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    AXI4_Stream_Video_0_Slave_TVALID : in STD_LOGIC;
+    AXI4_Stream_Video_0_Slave_TLAST : in STD_LOGIC;
+    AXI4_Stream_Video_0_Slave_TUSER : in STD_LOGIC;
+    AXI4_Master_0_Rd_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI4_Master_0_Rd_RLAST : in STD_LOGIC;
+    AXI4_Master_0_Rd_RVALID : in STD_LOGIC;
+    AXI4_Master_0_Rd_RID : in STD_LOGIC;
+    AXI4_Master_0_Rd_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI4_Master_0_Rd_ARREADY : in STD_LOGIC;
+    AXI4_Master_0_Wr_AWREADY : in STD_LOGIC;
+    AXI4_Master_0_Wr_WREADY : in STD_LOGIC;
+    AXI4_Master_0_Wr_BID : in STD_LOGIC;
+    AXI4_Master_0_Wr_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI4_Master_0_Wr_BVALID : in STD_LOGIC;
+    AXI4_Lite_ACLK : in STD_LOGIC;
+    AXI4_Lite_ARESETN : in STD_LOGIC;
+    AXI4_Lite_AWADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    AXI4_Lite_AWVALID : in STD_LOGIC;
+    AXI4_Lite_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI4_Lite_WSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    AXI4_Lite_WVALID : in STD_LOGIC;
+    AXI4_Lite_BREADY : in STD_LOGIC;
+    AXI4_Lite_ARADDR : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    AXI4_Lite_ARVALID : in STD_LOGIC;
+    AXI4_Lite_RREADY : in STD_LOGIC;
+    AXI4_Stream_Video_0_Master_TDATA : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    AXI4_Stream_Video_0_Master_TVALID : out STD_LOGIC;
+    AXI4_Stream_Video_0_Master_TLAST : out STD_LOGIC;
+    AXI4_Stream_Video_0_Master_TUSER : out STD_LOGIC;
+    AXI4_Stream_Video_0_Slave_TREADY : out STD_LOGIC;
+    AXI4_Master_0_Rd_ARID : out STD_LOGIC;
+    AXI4_Master_0_Rd_ARADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI4_Master_0_Rd_ARLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    AXI4_Master_0_Rd_ARSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    AXI4_Master_0_Rd_ARBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI4_Master_0_Rd_ARLOCK : out STD_LOGIC;
+    AXI4_Master_0_Rd_ARCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    AXI4_Master_0_Rd_ARPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    AXI4_Master_0_Rd_ARVALID : out STD_LOGIC;
+    AXI4_Master_0_Rd_RREADY : out STD_LOGIC;
+    AXI4_Master_0_Wr_AWID : out STD_LOGIC;
+    AXI4_Master_0_Wr_AWADDR : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI4_Master_0_Wr_AWLEN : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    AXI4_Master_0_Wr_AWSIZE : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    AXI4_Master_0_Wr_AWBURST : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI4_Master_0_Wr_AWLOCK : out STD_LOGIC;
+    AXI4_Master_0_Wr_AWCACHE : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    AXI4_Master_0_Wr_AWPROT : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    AXI4_Master_0_Wr_AWVALID : out STD_LOGIC;
+    AXI4_Master_0_Wr_WDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI4_Master_0_Wr_WSTRB : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    AXI4_Master_0_Wr_WLAST : out STD_LOGIC;
+    AXI4_Master_0_Wr_WVALID : out STD_LOGIC;
+    AXI4_Master_0_Wr_BREADY : out STD_LOGIC;
+    wr_valid_debug : out STD_LOGIC;
+    rd_valid_debug : out STD_LOGIC;
+    wfifo_ready : out STD_LOGIC;
+    rfifo_ready : out STD_LOGIC;
+    AXI4_Lite_AWREADY : out STD_LOGIC;
+    AXI4_Lite_WREADY : out STD_LOGIC;
+    AXI4_Lite_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI4_Lite_BVALID : out STD_LOGIC;
+    AXI4_Lite_ARREADY : out STD_LOGIC;
+    AXI4_Lite_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    AXI4_Lite_RRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    AXI4_Lite_RVALID : out STD_LOGIC
+  );
+
+end broncho_video_clahe_ip_0_0;
+
+architecture stub of broncho_video_clahe_ip_0_0 is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "IPCORE_CLK,IPCORE_RESETN,AXI4_Stream_Video_0_Master_TREADY,AXI4_Stream_Video_0_Slave_TDATA[15:0],AXI4_Stream_Video_0_Slave_TVALID,AXI4_Stream_Video_0_Slave_TLAST,AXI4_Stream_Video_0_Slave_TUSER,AXI4_Master_0_Rd_RDATA[31:0],AXI4_Master_0_Rd_RLAST,AXI4_Master_0_Rd_RVALID,AXI4_Master_0_Rd_RID,AXI4_Master_0_Rd_RRESP[1:0],AXI4_Master_0_Rd_ARREADY,AXI4_Master_0_Wr_AWREADY,AXI4_Master_0_Wr_WREADY,AXI4_Master_0_Wr_BID,AXI4_Master_0_Wr_BRESP[1:0],AXI4_Master_0_Wr_BVALID,AXI4_Lite_ACLK,AXI4_Lite_ARESETN,AXI4_Lite_AWADDR[15:0],AXI4_Lite_AWVALID,AXI4_Lite_WDATA[31:0],AXI4_Lite_WSTRB[3:0],AXI4_Lite_WVALID,AXI4_Lite_BREADY,AXI4_Lite_ARADDR[15:0],AXI4_Lite_ARVALID,AXI4_Lite_RREADY,AXI4_Stream_Video_0_Master_TDATA[15:0],AXI4_Stream_Video_0_Master_TVALID,AXI4_Stream_Video_0_Master_TLAST,AXI4_Stream_Video_0_Master_TUSER,AXI4_Stream_Video_0_Slave_TREADY,AXI4_Master_0_Rd_ARID,AXI4_Master_0_Rd_ARADDR[31:0],AXI4_Master_0_Rd_ARLEN[7:0],AXI4_Master_0_Rd_ARSIZE[2:0],AXI4_Master_0_Rd_ARBURST[1:0],AXI4_Master_0_Rd_ARLOCK,AXI4_Master_0_Rd_ARCACHE[3:0],AXI4_Master_0_Rd_ARPROT[2:0],AXI4_Master_0_Rd_ARVALID,AXI4_Master_0_Rd_RREADY,AXI4_Master_0_Wr_AWID,AXI4_Master_0_Wr_AWADDR[31:0],AXI4_Master_0_Wr_AWLEN[7:0],AXI4_Master_0_Wr_AWSIZE[2:0],AXI4_Master_0_Wr_AWBURST[1:0],AXI4_Master_0_Wr_AWLOCK,AXI4_Master_0_Wr_AWCACHE[3:0],AXI4_Master_0_Wr_AWPROT[2:0],AXI4_Master_0_Wr_AWVALID,AXI4_Master_0_Wr_WDATA[31:0],AXI4_Master_0_Wr_WSTRB[3:0],AXI4_Master_0_Wr_WLAST,AXI4_Master_0_Wr_WVALID,AXI4_Master_0_Wr_BREADY,wr_valid_debug,rd_valid_debug,wfifo_ready,rfifo_ready,AXI4_Lite_AWREADY,AXI4_Lite_WREADY,AXI4_Lite_BRESP[1:0],AXI4_Lite_BVALID,AXI4_Lite_ARREADY,AXI4_Lite_RDATA[31:0],AXI4_Lite_RRESP[1:0],AXI4_Lite_RVALID";
+attribute X_CORE_INFO : string;
+attribute X_CORE_INFO of stub : architecture is "clahe_ip,Vivado 2023.2";
+begin
+end;
