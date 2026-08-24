@@ -30,7 +30,10 @@ set_property PACKAGE_PIN R17 [get_ports MCLK_OUT]
 set_property IOSTANDARD LVCMOS33 [get_ports MCLK_OUT]
 
 ## System Clock (125 MHz, from Ethernet PHY reference output)
-set_property -dict { PACKAGE_PIN K17 IOSTANDARD LVCMOS33 } [get_ports { sys_clock }]
-create_clock -add -name sys_clk_pin -period 8.000 -waveform {0 4} [get_ports { sys_clock }]
+#set_property -dict { PACKAGE_PIN K17 IOSTANDARD LVCMOS33 } [get_ports { sys_clock }]
+#create_clock -add -name sys_clk_pin -period 8.000 -waveform {0 4} [get_ports { sys_clock }]
 
-set_property -dict { PACKAGE_PIN E17   IOSTANDARD LVCMOS33 } [get_ports { eth_phy_rst_b }];
+#set_property -dict { PACKAGE_PIN E17   IOSTANDARD LVCMOS33 } [get_ports { eth_phy_rst_b }];
+
+##LEDs
+set_property -dict { PACKAGE_PIN M14   IOSTANDARD LVCMOS33 } [get_ports { locked }];
