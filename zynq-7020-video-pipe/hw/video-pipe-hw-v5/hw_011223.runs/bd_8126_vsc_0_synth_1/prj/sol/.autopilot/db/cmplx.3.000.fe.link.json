@@ -1,0 +1,295 @@
+{
+  "0": {
+    "basicblocks": 6,
+    "calls": "4 7 11 17",
+    "file": "v_vscaler.cpp",
+    "fileloc": 104,
+    "instructions": 152,
+    "loads": {
+      "L": 5,
+      "T": 5
+    },
+    "name": "v_vscaler",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 5110
+  },
+  "1": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 847,
+    "instructions": 16,
+    "name": "getval",
+    "total_instructions": 16
+  },
+  "10": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 847,
+    "instructions": 16,
+    "name": "getval",
+    "total_instructions": 16
+  },
+  "11": {
+    "basicblocks": 102,
+    "calls": "20 20 20 13 1 15 20 18",
+    "file": "v_vscaler.cpp",
+    "fileloc": 196,
+    "instructions": 387,
+    "loads": {
+      "L": 13
+    },
+    "name": "vscale_core_polyphase",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 806
+  },
+  "12": {
+    "basicblocks": 1,
+    "calls": "19",
+    "file": "hls_video_mem.h",
+    "fileloc": 886,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "insert_bottom",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 18
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 637,
+    "instructions": 8,
+    "name": "LineBuffer",
+    "total_instructions": 8
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "2",
+    "file": "hls_video_mem.h",
+    "fileloc": 886,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "insert_bottom",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 18
+  },
+  "15": {
+    "basicblocks": 1,
+    "calls": "5",
+    "file": "hls_video_mem.h",
+    "fileloc": 886,
+    "instructions": 5,
+    "loads": {
+      "L": 1
+    },
+    "name": "insert_bottom",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 18
+  },
+  "16": {
+    "basicblocks": 5,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 847,
+    "instructions": 16,
+    "name": "getval",
+    "total_instructions": 16
+  },
+  "17": {
+    "basicblocks": 35,
+    "calls": "20 9 9",
+    "file": "v_vscaler.cpp",
+    "fileloc": 883,
+    "instructions": 241,
+    "loads": {
+      "L": 12
+    },
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 794
+  },
+  "18": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "v_vscaler.cpp",
+    "fileloc": 378,
+    "instructions": 75,
+    "loads": {
+      "L": 2
+    },
+    "name": "vscale_polyphase",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 196
+  },
+  "19": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 802,
+    "instructions": 13,
+    "loads": {
+      "L": 1
+    },
+    "name": "insert_top_row",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 802,
+    "instructions": 13,
+    "loads": {
+      "L": 1
+    },
+    "name": "insert_top_row",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_video_core.h",
+    "fileloc": 196,
+    "instructions": 5,
+    "name": "Scalar",
+    "total_instructions": 5
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 637,
+    "instructions": 8,
+    "name": "LineBuffer",
+    "total_instructions": 8
+  },
+  "22": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_video_core.h",
+    "fileloc": 196,
+    "instructions": 5,
+    "name": "Scalar",
+    "total_instructions": 5
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "8",
+    "file": "hls_axi_io.h",
+    "fileloc": 83,
+    "instructions": 6,
+    "loads": {
+      "L": 1
+    },
+    "name": "AXIGetBitFields<30, ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 74
+  },
+  "4": {
+    "basicblocks": 44,
+    "calls": "20 9 9 3 3 3",
+    "file": "v_vscaler.cpp",
+    "fileloc": 788,
+    "instructions": 221,
+    "loads": {
+      "G": 1,
+      "L": 9
+    },
+    "name": "AXIvideo2MultiPixStream",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 1439
+  },
+  "5": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 802,
+    "instructions": 13,
+    "loads": {
+      "L": 1
+    },
+    "name": "insert_top_row",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 13
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "hls_video_mem.h",
+    "fileloc": 637,
+    "instructions": 8,
+    "name": "LineBuffer",
+    "total_instructions": 8
+  },
+  "7": {
+    "basicblocks": 130,
+    "calls": "20 20 22 22 22 22 6 21 16 12 22 22 10 14 22 10",
+    "file": "v_vscaler.cpp",
+    "fileloc": 1012,
+    "instructions": 750,
+    "loads": {
+      "L": 39
+    },
+    "name": "v_vcresampler_core",
+    "stores": {
+      "L": 28
+    },
+    "total_instructions": 1915
+  },
+  "8": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "hls_axi_io.h",
+    "fileloc": 60,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "AXIGetBitFields<30, ap_uint<10> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 68
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  }
+}

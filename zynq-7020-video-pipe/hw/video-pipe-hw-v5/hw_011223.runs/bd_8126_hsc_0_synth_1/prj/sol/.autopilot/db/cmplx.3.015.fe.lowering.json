@@ -1,0 +1,138 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "8 3 2 6 7 5 9",
+    "file": "v_hscaler.cpp",
+    "fileloc": 111,
+    "instructions": 144,
+    "loads": {
+      "T": 5
+    },
+    "name": "v_hscaler",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 1625
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 2,
+    "name": "reg<ap_uint<9> >",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2
+  },
+  "2": {
+    "basicblocks": 23,
+    "calls": "1 4",
+    "file": "v_hscaler.cpp",
+    "fileloc": 622,
+    "instructions": 272,
+    "loads": {
+      "L": 9
+    },
+    "name": "hscale_core_polyphase",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 531
+  },
+  "3": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1632,
+    "instructions": 158,
+    "loads": {
+      "L": 3
+    },
+    "name": "v_hcresampler_core",
+    "total_instructions": 205
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 983,
+    "instructions": 224,
+    "loads": {
+      "L": 6
+    },
+    "name": "hscale_polyphase",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 224
+  },
+  "5": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1855,
+    "instructions": 121,
+    "loads": {
+      "L": 6
+    },
+    "name": "v_vcresampler_core",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 168
+  },
+  "6": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 2068,
+    "instructions": 96,
+    "loads": {
+      "L": 4
+    },
+    "name": "v_csc_core",
+    "total_instructions": 129
+  },
+  "7": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1632,
+    "instructions": 162,
+    "loads": {
+      "L": 3
+    },
+    "name": "v_hcresampler_core",
+    "total_instructions": 209
+  },
+  "8": {
+    "basicblocks": 25,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1421,
+    "instructions": 111,
+    "loads": {
+      "L": 10
+    },
+    "name": "AXIvideo2MultiPixStream",
+    "total_instructions": 125
+  },
+  "9": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "v_hscaler.cpp",
+    "fileloc": 1521,
+    "instructions": 89,
+    "loads": {
+      "G": 1,
+      "L": 3
+    },
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 114
+  }
+}

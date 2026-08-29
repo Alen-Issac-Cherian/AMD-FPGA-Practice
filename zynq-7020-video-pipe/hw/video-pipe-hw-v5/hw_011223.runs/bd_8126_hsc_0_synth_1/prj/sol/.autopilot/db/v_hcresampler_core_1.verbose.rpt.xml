@@ -1,0 +1,175 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'v_hcresampler_core_1'" level="0">
+<item name = "Date">Fri Dec 22 12:33:20 2023
+</item>
+<item name = "Version">2023.2 (Build 4023990 on Oct 11 2023)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">7.00 ns, 5.253 ns, 1.89 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2, 1073938427, 14.000 ns, 7.518 sec, 2, 1073938427, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_v_hcresampler_core_1_Pipeline_VITIS_LOOP_1681_2_fu_162">v_hcresampler_core_1_Pipeline_VITIS_LOOP_1681_2, 4, 32771, 28.000 ns, 0.229 ms, 4, 32771, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_1679_1">0, 1073938425, 8 ~ 32775, -, -, 0 ~ 32767, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 107, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 259, 616, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 91, -</column>
+<column name="Register">-, -, 274, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_v_hcresampler_core_1_Pipeline_VITIS_LOOP_1681_2_fu_162">v_hcresampler_core_1_Pipeline_VITIS_LOOP_1681_2, 0, 0, 259, 616, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln1679_fu_237_p2">+, 0, 0, 20, 15, 1</column>
+<column name="loopWidth_fu_214_p2">+, 0, 0, 23, 16, 16</column>
+<column name="cmp36670_fu_219_p2">icmp, 0, 0, 23, 16, 1</column>
+<column name="icmp_ln1679_fu_232_p2">icmp, 0, 0, 23, 16, 16</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln1655_fu_268_p3">select, 0, 0, 10, 1, 10</column>
+<column name="select_ln1677_1_fu_207_p3">select, 0, 0, 3, 1, 1</column>
+<column name="select_ln1677_fu_200_p3">select, 0, 0, 3, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="Height_blk_n">9, 2, 1, 2</column>
+<column name="WidthIn_blk_n">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">37, 7, 1, 7</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="stream_in_read">9, 2, 1, 2</column>
+<column name="stream_upsampled_write">9, 2, 1, 2</column>
+<column name="y_fu_68">9, 2, 15, 30</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="WidthIn_read_reg_394">16, 0, 16, 0</column>
+<column name="ap_CS_fsm">6, 0, 6, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="cmp36670_reg_415">1, 0, 1, 0</column>
+<column name="grp_v_hcresampler_core_1_Pipeline_VITIS_LOOP_1681_2_fu_162_ap_start_reg">1, 0, 1, 0</column>
+<column name="inpix_0_0_0_0_0_load679_lcssa725_fu_72">10, 0, 10, 0</column>
+<column name="inpix_0_1_0_0_0_load681_lcssa728_fu_76">10, 0, 10, 0</column>
+<column name="inpix_0_2_0_0_0_load683_lcssa731_fu_80">10, 0, 10, 0</column>
+<column name="loopHeight_reg_400">16, 0, 16, 0</column>
+<column name="loopWidth_reg_410">16, 0, 16, 0</column>
+<column name="p_0_0_0_0_0487_1695_lcssa743_fu_96">10, 0, 10, 0</column>
+<column name="p_0_0_0_0_0487_2707_lcssa755_fu_104">10, 0, 10, 0</column>
+<column name="p_0_0_0_0_0495685_lcssa734_fu_84">10, 0, 10, 0</column>
+<column name="p_0_0_0_0_0_1701_lcssa749_fu_100">10, 0, 10, 0</column>
+<column name="p_0_0_0_0_0_2710_lcssa758_fu_108">10, 0, 10, 0</column>
+<column name="p_0_1_0_0_0687713_lcssa761_fu_112">10, 0, 10, 0</column>
+<column name="p_0_1_0_0_0687_lcssa737_fu_88">10, 0, 10, 0</column>
+<column name="p_0_2_0_0_0691717_lcssa764_fu_116">10, 0, 10, 0</column>
+<column name="p_0_2_0_0_0691_lcssa740_fu_92">10, 0, 10, 0</column>
+<column name="pixbuf_y_1_fu_124">10, 0, 10, 0</column>
+<column name="pixbuf_y_1_load_reg_423">10, 0, 10, 0</column>
+<column name="pixbuf_y_2_fu_128">10, 0, 10, 0</column>
+<column name="pixbuf_y_2_load_reg_428">10, 0, 10, 0</column>
+<column name="pixbuf_y_3_fu_132">10, 0, 10, 0</column>
+<column name="pixbuf_y_3_load_reg_433">10, 0, 10, 0</column>
+<column name="pixbuf_y_4_fu_136">10, 0, 10, 0</column>
+<column name="pixbuf_y_fu_120">10, 0, 10, 0</column>
+<column name="select_ln1677_reg_405">2, 0, 3, 1</column>
+<column name="y_fu_68">15, 0, 15, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, v_hcresampler_core.1, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, v_hcresampler_core.1, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, v_hcresampler_core.1, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, v_hcresampler_core.1, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, v_hcresampler_core.1, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, v_hcresampler_core.1, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, v_hcresampler_core.1, return value</column>
+<column name="stream_in_dout">in, 30, ap_fifo, stream_in, pointer</column>
+<column name="stream_in_num_data_valid">in, 5, ap_fifo, stream_in, pointer</column>
+<column name="stream_in_fifo_cap">in, 5, ap_fifo, stream_in, pointer</column>
+<column name="stream_in_empty_n">in, 1, ap_fifo, stream_in, pointer</column>
+<column name="stream_in_read">out, 1, ap_fifo, stream_in, pointer</column>
+<column name="Height_dout">in, 16, ap_fifo, Height, pointer</column>
+<column name="Height_num_data_valid">in, 3, ap_fifo, Height, pointer</column>
+<column name="Height_fifo_cap">in, 3, ap_fifo, Height, pointer</column>
+<column name="Height_empty_n">in, 1, ap_fifo, Height, pointer</column>
+<column name="Height_read">out, 1, ap_fifo, Height, pointer</column>
+<column name="WidthIn_dout">in, 16, ap_fifo, WidthIn, pointer</column>
+<column name="WidthIn_num_data_valid">in, 3, ap_fifo, WidthIn, pointer</column>
+<column name="WidthIn_fifo_cap">in, 3, ap_fifo, WidthIn, pointer</column>
+<column name="WidthIn_empty_n">in, 1, ap_fifo, WidthIn, pointer</column>
+<column name="WidthIn_read">out, 1, ap_fifo, WidthIn, pointer</column>
+<column name="p_read">in, 1, ap_none, p_read, scalar</column>
+<column name="stream_upsampled_din">out, 30, ap_fifo, stream_upsampled, pointer</column>
+<column name="stream_upsampled_num_data_valid">in, 5, ap_fifo, stream_upsampled, pointer</column>
+<column name="stream_upsampled_fifo_cap">in, 5, ap_fifo, stream_upsampled, pointer</column>
+<column name="stream_upsampled_full_n">in, 1, ap_fifo, stream_upsampled, pointer</column>
+<column name="stream_upsampled_write">out, 1, ap_fifo, stream_upsampled, pointer</column>
+</table>
+</item>
+</section>
+</profile>

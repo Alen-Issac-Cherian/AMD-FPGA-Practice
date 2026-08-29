@@ -1,0 +1,301 @@
+
+*** Running vivado
+    with args -log broncho_video_v_proc_ss_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source broncho_video_v_proc_ss_0_1.tcl
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source broncho_video_v_proc_ss_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1321.898 ; gain = 0.023 ; free physical = 2421 ; free virtual = 5312
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alen/repo/zynq-7020-video-pipe-3/IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alen/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: broncho_video_v_proc_ss_0_1
+Command: synth_design -top broncho_video_v_proc_ss_0_1 -part xc7z020clg484-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 64313
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2074.176 ; gain = 403.715 ; free physical = 302 ; free virtual = 3247
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'broncho_video_v_proc_ss_0_1' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/synth/broncho_video_v_proc_ss_0_1.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:10]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_axis_fifo_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_axis_fifo_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_axis_fifo_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_axis_fifo_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_axis_register_slice_0_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_axis_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_axis_register_slice_0_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_axis_register_slice_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_hsc_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_hsc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_hsc_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_hsc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'bd_41e7_hsc_0' is unconnected for instance 'hsc' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:310]
+WARNING: [Synth 8-7023] instance 'hsc' of module 'bd_41e7_hsc_0' has 38 connections declared, but only 37 given [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:310]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_input_size_set_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_input_size_set_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_input_size_set_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_input_size_set_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_reset_sel_axis_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_reset_sel_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_reset_sel_axis_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_reset_sel_axis_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'gpio_io_t' of module 'bd_41e7_reset_sel_axis_0' is unconnected for instance 'reset_sel_axis' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:369]
+WARNING: [Synth 8-7023] instance 'reset_sel_axis' of module 'bd_41e7_reset_sel_axis_0' has 22 connections declared, but only 21 given [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:369]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_rst_axis_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_rst_axis_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_rst_axis_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_rst_axis_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_41e7_rst_axis_0' is unconnected for instance 'rst_axis' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:391]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_41e7_rst_axis_0' is unconnected for instance 'rst_axis' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:391]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_41e7_rst_axis_0' is unconnected for instance 'rst_axis' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:391]
+WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'bd_41e7_rst_axis_0' is unconnected for instance 'rst_axis' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:391]
+WARNING: [Synth 8-7023] instance 'rst_axis' of module 'bd_41e7_rst_axis_0' has 10 connections declared, but only 6 given [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:391]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_smartconnect_0_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_smartconnect_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_smartconnect_0_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_smartconnect_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'bd_41e7_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:398]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'bd_41e7_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:398]
+WARNING: [Synth 8-7071] port 'M01_AXI_awprot' of module 'bd_41e7_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:398]
+WARNING: [Synth 8-7071] port 'M01_AXI_arprot' of module 'bd_41e7_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:398]
+WARNING: [Synth 8-7071] port 'M02_AXI_awprot' of module 'bd_41e7_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:398]
+WARNING: [Synth 8-7071] port 'M02_AXI_arprot' of module 'bd_41e7_smartconnect_0_0' is unconnected for instance 'smartconnect_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:398]
+WARNING: [Synth 8-7023] instance 'smartconnect_0' of module 'bd_41e7_smartconnect_0_0' has 79 connections declared, but only 73 given [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:398]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_vsc_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_vsc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_vsc_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/.Xil/Vivado-63316-hp-HP-Pavilion-Laptop-14-ec0xxx/realtime/bd_41e7_vsc_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'interrupt' of module 'bd_41e7_vsc_0' is unconnected for instance 'vsc' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:472]
+WARNING: [Synth 8-7023] instance 'vsc' of module 'bd_41e7_vsc_0' has 38 connections declared, but only 37 given [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:472]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_xlslice_0_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_8/synth/bd_41e7_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_3_xlslice' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_3_xlslice' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_xlslice_0_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_8/synth/bd_41e7_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_41e7_xlslice_1_0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_9/synth/bd_41e7_xlslice_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_3_xlslice__parameterized0' [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_3_xlslice__parameterized0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7_xlslice_1_0' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_9/synth/bd_41e7_xlslice_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_41e7' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/synth/bd_41e7.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'broncho_video_v_proc_ss_0_1' (0#1) [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/synth/broncho_video_v_proc_ss_0_1.v:53]
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_3_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2155.113 ; gain = 484.652 ; free physical = 118 ; free virtual = 3047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2169.957 ; gain = 499.496 ; free physical = 115 ; free virtual = 3044
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2169.957 ; gain = 499.496 ; free physical = 115 ; free virtual = 3044
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2169.957 ; gain = 0.000 ; free physical = 114 ; free virtual = 3043
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_0/bd_41e7_smartconnect_0_0/bd_41e7_smartconnect_0_0_in_context.xdc] for cell 'inst/smartconnect_0'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_0/bd_41e7_smartconnect_0_0/bd_41e7_smartconnect_0_0_in_context.xdc] for cell 'inst/smartconnect_0'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_1/bd_41e7_vsc_0/bd_41e7_vsc_0_in_context.xdc] for cell 'inst/vsc'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_1/bd_41e7_vsc_0/bd_41e7_vsc_0_in_context.xdc] for cell 'inst/vsc'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_2/bd_41e7_hsc_0/bd_41e7_hsc_0_in_context.xdc] for cell 'inst/hsc'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_2/bd_41e7_hsc_0/bd_41e7_hsc_0_in_context.xdc] for cell 'inst/hsc'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_3/bd_41e7_input_size_set_0/bd_41e7_input_size_set_0_in_context.xdc] for cell 'inst/input_size_set'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_3/bd_41e7_input_size_set_0/bd_41e7_input_size_set_0_in_context.xdc] for cell 'inst/input_size_set'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_4/bd_41e7_rst_axis_0/broncho_video_rst_ps7_0_50M_0_in_context.xdc] for cell 'inst/rst_axis'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_4/bd_41e7_rst_axis_0/broncho_video_rst_ps7_0_50M_0_in_context.xdc] for cell 'inst/rst_axis'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_5/bd_41e7_reset_sel_axis_0/bd_41e7_reset_sel_axis_0_in_context.xdc] for cell 'inst/reset_sel_axis'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_5/bd_41e7_reset_sel_axis_0/bd_41e7_reset_sel_axis_0_in_context.xdc] for cell 'inst/reset_sel_axis'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_6/bd_41e7_axis_register_slice_0_0/bd_41e7_axis_register_slice_0_0_in_context.xdc] for cell 'inst/axis_register_slice_0'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_6/bd_41e7_axis_register_slice_0_0/bd_41e7_axis_register_slice_0_0_in_context.xdc] for cell 'inst/axis_register_slice_0'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_7/bd_41e7_axis_fifo_0/bd_41e7_axis_fifo_0_in_context.xdc] for cell 'inst/axis_fifo'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/bd_0/ip/ip_7/bd_41e7_axis_fifo_0/bd_41e7_axis_fifo_0_in_context.xdc] for cell 'inst/axis_fifo'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/broncho_video_v_proc_ss_0_1_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_1/broncho_video_v_proc_ss_0_1_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2242.895 ; gain = 0.000 ; free physical = 118 ; free virtual = 2975
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2242.930 ; gain = 0.000 ; free physical = 116 ; free virtual = 2973
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 118 ; free virtual = 2926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 118 ; free virtual = 2926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/smartconnect_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/vsc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/hsc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/input_size_set. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/rst_axis. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/reset_sel_axis. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_register_slice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/axis_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/xlslice_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 118 ; free virtual = 2926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 117 ; free virtual = 2925
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[0] in module bd_41e7_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module bd_41e7_xlslice_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 114 ; free virtual = 2922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------------------------+----------+
+|      |BlackBox name                   |Instances |
++------+--------------------------------+----------+
+|1     |bd_41e7_axis_fifo_0             |         1|
+|2     |bd_41e7_axis_register_slice_0_0 |         1|
+|3     |bd_41e7_hsc_0                   |         1|
+|4     |bd_41e7_input_size_set_0        |         1|
+|5     |bd_41e7_reset_sel_axis_0        |         1|
+|6     |bd_41e7_rst_axis_0              |         1|
+|7     |bd_41e7_smartconnect_0_0        |         1|
+|8     |bd_41e7_vsc_0                   |         1|
++------+--------------------------------+----------+
+
+Report Cell Usage: 
++------+------------------------------+------+
+|      |Cell                          |Count |
++------+------------------------------+------+
+|1     |bd_41e7_axis_fifo             |     1|
+|2     |bd_41e7_axis_register_slice_0 |     1|
+|3     |bd_41e7_hsc                   |     1|
+|4     |bd_41e7_input_size_set        |     1|
+|5     |bd_41e7_reset_sel_axis        |     1|
+|6     |bd_41e7_rst_axis              |     1|
+|7     |bd_41e7_smartconnect_0        |     1|
+|8     |bd_41e7_vsc                   |     1|
++------+------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2242.930 ; gain = 499.496 ; free physical = 111 ; free virtual = 2920
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 2242.930 ; gain = 572.469 ; free physical = 111 ; free virtual = 2920
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2242.930 ; gain = 0.000 ; free physical = 111 ; free virtual = 2920
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2242.930 ; gain = 0.000 ; free physical = 467 ; free virtual = 3254
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: b9039535
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2242.930 ; gain = 921.031 ; free physical = 467 ; free virtual = 3254
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1798.389; main = 1425.050; forked = 392.439
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3232.188; main = 2210.883; forked = 1021.305
+INFO: [Common 17-1381] The checkpoint '/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/broncho_video_v_proc_ss_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP broncho_video_v_proc_ss_0_1, cache-ID = ea176e1f933234ce
+INFO: [Coretcl 2-1174] Renamed 11 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/alen/repo/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/broncho_video_v_proc_ss_0_1_synth_1/broncho_video_v_proc_ss_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file broncho_video_v_proc_ss_0_1_utilization_synth.rpt -pb broncho_video_v_proc_ss_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 28 17:25:03 2023...

@@ -1,0 +1,123 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "7 3 5 1",
+    "file": "v_demosaic.cpp",
+    "fileloc": 89,
+    "instructions": 39,
+    "name": "v_demosaic",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 2390
+  },
+  "1": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "v_demosaic.cpp",
+    "fileloc": 208,
+    "instructions": 83,
+    "loads": {
+      "L": 2
+    },
+    "name": "MultiPixStream2AXIvideo",
+    "stores": {
+      "L": 6
+    },
+    "total_instructions": 83
+  },
+  "2": {
+    "basicblocks": 34,
+    "calls": "",
+    "file": "v_demosaic.cpp",
+    "fileloc": 593,
+    "instructions": 551,
+    "loads": {
+      "L": 51
+    },
+    "name": "DebayerRatBorBatR",
+    "stores": {
+      "L": 62
+    },
+    "total_instructions": 551
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "8 2 4",
+    "file": "v_demosaic.cpp",
+    "fileloc": 1060,
+    "instructions": 16,
+    "name": "Debayer",
+    "total_instructions": 1857
+  },
+  "4": {
+    "basicblocks": 31,
+    "calls": "",
+    "file": "v_demosaic.cpp",
+    "fileloc": 841,
+    "instructions": 487,
+    "loads": {
+      "L": 41
+    },
+    "name": "DebayerRandBatG",
+    "stores": {
+      "L": 45
+    },
+    "total_instructions": 487
+  },
+  "5": {
+    "basicblocks": 22,
+    "calls": "",
+    "file": "v_demosaic.cpp",
+    "fileloc": 1077,
+    "instructions": 220,
+    "loads": {
+      "L": 6
+    },
+    "name": "ZipperRemoval",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 220
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "x_hls_utils.h",
+    "fileloc": 222,
+    "instructions": 1,
+    "name": "reg<unsigned short>",
+    "total_instructions": 1
+  },
+  "7": {
+    "basicblocks": 17,
+    "calls": "6 6",
+    "file": "v_demosaic.cpp",
+    "fileloc": 133,
+    "instructions": 189,
+    "loads": {
+      "L": 9
+    },
+    "name": "AXIvideo2MultiBayer",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 191
+  },
+  "8": {
+    "basicblocks": 34,
+    "calls": "",
+    "file": "v_demosaic.cpp",
+    "fileloc": 264,
+    "instructions": 803,
+    "loads": {
+      "G": 5,
+      "L": 21
+    },
+    "name": "DebayerG",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 803
+  }
+}

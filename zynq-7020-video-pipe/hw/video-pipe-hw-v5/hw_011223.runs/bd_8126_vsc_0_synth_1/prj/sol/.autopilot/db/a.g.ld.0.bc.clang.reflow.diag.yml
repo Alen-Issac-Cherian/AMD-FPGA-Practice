@@ -1,0 +1,2646 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_axi_io.h', 
+                   Line: 85, Column: 2 }
+Function:        _ZN3hls15AXIGetBitFieldsILi30E7ap_uintILi10EEEEvNS_4axisIS1_IXT_EELm1ELm1ELm1ELh56ELb0EEEiiRT0_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<30, ap_uint<10> >(ap_uint<30>, int, int, ap_uint<10>&)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_axi_io.h', 
+                       Line: 60, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void hls::AXIGetBitFields<30, ap_uint<10> >(hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<10>&)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_axi_io.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 793, Column: 18 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 790, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 853, Column: 7 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<30, ap_uint<10> >(hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<10>&)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_axi_io.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 790, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 849, Column: 7 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<30, ap_uint<10> >(hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<10>&)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_axi_io.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 790, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 845, Column: 7 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void hls::AXIGetBitFields<30, ap_uint<10> >(hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<10>&)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_axi_io.h', 
+                       Line: 83, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 790, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 888, Column: 2 }
+Function:        _ZN3hls10LineBufferILi2ELi1920E7ap_uintILi10EELi0EE13insert_bottomES2_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<2, 1920, ap_uint<10>, 0>::insert_top_row(ap_uint<10>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 802, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::LineBuffer<2, 1920, ap_uint<10>, 0>::insert_bottom(ap_uint<10>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 886, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 888, Column: 2 }
+Function:        _ZN3hls10LineBufferILi3ELi1920E7ap_uintILi10EELi0EE13insert_bottomES2_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<3, 1920, ap_uint<10>, 0>::insert_top_row(ap_uint<10>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 802, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::LineBuffer<3, 1920, ap_uint<10>, 0>::insert_bottom(ap_uint<10>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 886, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1023, Column: 18 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1171, Column: 46 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<3, 1920, ap_uint<10>, 0>::getval(int, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 847, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1156, Column: 20 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<1, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1145, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<3, 1920, ap_uint<10>, 0>::insert_bottom(ap_uint<10>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 886, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1119, Column: 45 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<3, 1920, ap_uint<10>, 0>::getval(int, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 847, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1118, Column: 19 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<1, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1099, Column: 19 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<1, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1092, Column: 14 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<2, 1920, ap_uint<10>, 0>::insert_bottom(ap_uint<10>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 886, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1081, Column: 45 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<2, 1920, ap_uint<10>, 0>::getval(int, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 847, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1033, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<3, 1920, ap_uint<10>, 0>::LineBuffer()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 637, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1032, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<2, 1920, ap_uint<10>, 0>::LineBuffer()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 637, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1029, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<1, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1028, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<1, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1026, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<1, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1025, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<1, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1024, Column: 18 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'v_vcresampler_core(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&, unsigned char&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 1014, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 888, Column: 2 }
+Function:        _ZN3hls10LineBufferILi6ELi1920E7ap_uintILi30EELi0EE13insert_bottomES2_i
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<6, 1920, ap_uint<30>, 0>::insert_top_row(ap_uint<30>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 802, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'hls::LineBuffer<6, 1920, ap_uint<30>, 0>::insert_bottom(ap_uint<30>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 886, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 211, Column: 18 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 200, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 371, Column: 5 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'vscale_polyphase(short (*) [6], hls::Scalar<3, ap_uint<10> >*, unsigned char, hls::Scalar<3, ap_uint<10> >*)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 380, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 200, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 346, Column: 22 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 200, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 339, Column: 14 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<6, 1920, ap_uint<30>, 0>::insert_bottom(ap_uint<30>, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 886, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 200, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 309, Column: 41 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<6, 1920, ap_uint<30>, 0>::getval(int, int)'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 847, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 200, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 214, Column: 18 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::LineBuffer<6, 1920, ap_uint<30>, 0>::LineBuffer()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                       Line: 637, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 200, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 212, Column: 18 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 200, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 211, Column: 26 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'vscale_core_polyphase(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&, unsigned int&, short (*) [6], hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 200, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 887, Column: 18 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERNS0_INS_4axisIS2_ILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::Scalar<3, ap_uint<10> >::Scalar()'
+    DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                       Line: 196, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 885, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERNS0_INS_4axisIS2_ILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            OutPix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            PixArray
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 639, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            LineBuf
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            PixArrayVal
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            SrcPix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            outpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            mpix_y
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            mpix_c
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            pixbuf_y
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            pixbuf_c
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 639, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            linebuf_y
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 639, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            linebuf_c
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            PixBufVal
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            CBufVal
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            PixBufVal223
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-reg2mem-ssa
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-pragma-preprocess
+Name:            PragmaResourceTopArg
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 130, Column: 9 }
+Function:        _Z9v_vscalerRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtS7_S7_RjRhPA6_sS6_
+Args:            
+  - String:          'The resource pragma (bind_storage) on top-level function argument, in '''
+  - Pragma:          call
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 130, Column: 9 }
+  - String:          ''' is unsupported, please use INTERFACE pragma instead'
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERNS0_INS_4axisIS2_ILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            OutPix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            PixArray
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 639, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            LineBuf
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            PixArrayVal
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Adding '''
+  - Name:            SrcPix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            outpix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            mpix_y
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            mpix_c
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            pixbuf_y
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            pixbuf_c
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 639, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            linebuf_y
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_mem.h', 
+                   Line: 639, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            linebuf_c
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            PixBufVal
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            CBufVal
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            PixBufVal223
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrReason
+DebugLoc:        { File: 'g:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.gen/sources_1/bd/broncho_video/ip/broncho_video_v_proc_ss_0_0/bd_0/ip/ip_1/src/hls/hls_video_core.h', 
+                   Line: 198, Column: 9 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Adding '''
+  - Name:            pix
+  - String:          ''' into disaggregation list because there''s '
+  - String:          array-partition pragma applied on the struct field
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 793, Column: 18 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1156, Column: 20 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            PixBufVal223
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1118, Column: 19 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            CBufVal
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1099, Column: 19 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            PixBufVal
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1033, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            linebuf_c
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1032, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            linebuf_y
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1029, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pixbuf_c
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1028, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pixbuf_y
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1026, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            mpix_c
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1025, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            mpix_y
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1024, Column: 18 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            outpix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1023, Column: 18 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 346, Column: 22 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            PixArrayVal
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 214, Column: 18 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            LineBuf
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 212, Column: 18 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            PixArray
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 211, Column: 26 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            OutPix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 211, Column: 18 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            SrcPix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-disaggr
+Name:            DisaggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 887, Column: 18 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERNS0_INS_4axisIS2_ILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Disaggregating variable '''
+  - Name:            pix
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 964, Column: 22 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERNS0_INS_4axisIS2_ILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_964_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 966, Column: 23 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERNS0_INS_4axisIS2_ILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_966_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 307, Column: 20 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_307_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 310, Column: 23 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_310_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 312, Column: 24 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_312_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 323, Column: 23 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_323_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 330, Column: 24 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_330_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 332, Column: 25 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_332_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 343, Column: 23 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_343_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 351, Column: 24 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_351_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 353, Column: 25 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_353_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 383, Column: 20 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_383_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 385, Column: 21 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_385_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 392, Column: 22 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_392_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1069, Column: 24 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1069_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1079, Column: 21 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1079_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1082, Column: 24 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1082_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1095, Column: 23 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1095_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1104, Column: 24 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1104_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1116, Column: 23 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1116_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1120, Column: 24 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1120_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1172, Column: 25 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1172_13
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1140, Column: 26 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1140_10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1152, Column: 25 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1152_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1161, Column: 26 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1161_12
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1179, Column: 24 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_1179_14
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 834, Column: 22 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_834_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 836, Column: 23 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_836_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 885, Column: 0 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERNS0_INS_4axisIS2_ILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_964_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:964:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2AXIvideo
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 885, Column: 0 }
+Function:        _ZL23MultiPixStream2AXIvideoRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERNS0_INS_4axisIS2_ILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_966_4
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:966:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          MultiPixStream2AXIvideo
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_307_1
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:307:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_310_2
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:310:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_312_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:312:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_310_2
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:310:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_312_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:312:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_310_2
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:310:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_312_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:312:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_310_2
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:310:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_312_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:312:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_310_2
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:310:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_312_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:312:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_310_2
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:310:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_312_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:312:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_323_4
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:323:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_330_5
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:330:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_332_6
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:332:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_343_7
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:343:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '5'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_351_8
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:351:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_353_9
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:353:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_351_8
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:351:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_353_9
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:353:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_351_8
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:351:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_353_9
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:353:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_351_8
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:351:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_353_9
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:353:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_351_8
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:351:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_353_9
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:353:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_383_1
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:383:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_385_2
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:385:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_392_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:392:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_392_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:392:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 200, Column: 0 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_392_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:392:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          vscale_core_polyphase
+  - String:          ''' completely with a factor of '
+  - Factor:          '6'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1069_3
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1069:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1079_4
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1079:21'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1082_5
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1082:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1082_5
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1082:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1095_6
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1095:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1104_7
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1104:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1116_8
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1116:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '2'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1120_9
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1120:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1120_9
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1120:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1172_13
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1172:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1140_10
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1140:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1152_11
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1152:25'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1161_12
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1161:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1014, Column: 0 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_1179_14
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:1179:24'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          v_vcresampler_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 790, Column: 0 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_834_1
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:834:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AXIvideo2MultiPixStream
+  - String:          ''' completely with a factor of '
+  - Factor:          '1'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 790, Column: 0 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_836_2
+  - String:          ''' ('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:836:23'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          AXIvideo2MultiPixStream
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1032, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          linebuf_y
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1033, Column: 16 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          linebuf_c
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1099, Column: 19 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          PixBufVal
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 1156, Column: 20 }
+Function:        _Z18v_vcresampler_coreRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_RhS8_S6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          PixBufVal223
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 213, Column: 6 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          FiltCoeff
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 214, Column: 18 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          LineBuf
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          PixArrayVal
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 146, Column: 18 }
+Function:        _Z9v_vscalerRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtS7_S7_RjRhPA6_sS6_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            SrcYUV
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '30'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 147, Column: 18 }
+Function:        _Z9v_vscalerRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtS7_S7_RjRhPA6_sS6_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            SrcYUV422
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '30'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 148, Column: 18 }
+Function:        _Z9v_vscalerRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERtS7_S7_RjRhPA6_sS6_
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            OutYUV
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '30'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 804, Column: 2 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        loop_wait_for_start
+  - String:          ' '
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:804:2'
+  - String:          ' '
+  - Function:        'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 790, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 862, Column: 3 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        loop_wait_for_eol
+  - String:          ' '
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:862:3'
+  - String:          ' '
+  - Function:        'AXIvideo2MultiPixStream(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned char&)'
+    DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                       Line: 790, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 862, Column: 3 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        loop_wait_for_eol
+  - String:          '''('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:862:3'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 804, Column: 2 }
+Function:        _ZL23AXIvideo2MultiPixStreamRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_INS_6ScalarILi3ES2_ILi10EEEELi0EEERtSC_Rh
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        loop_wait_for_start
+  - String:          '''('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:804:2'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 329, Column: 13 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          VITIS_LOOP_330_5
+  - String:          ''' living in '''
+  - LoopName:        loop_width_for_procpix
+  - String:          '''('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:297:3'
+  - String:          ') .'
+...
+--- !Failure
+Pass:            reflow-occurrence-analysis
+Name:            CouldNotAnalyzeBBInfo
+DebugLoc:        { File: 'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp', 
+                   Line: 378, Column: 27 }
+Function:        _ZL21vscale_core_polyphaseRN3hls6streamINS_6ScalarILi3E7ap_uintILi10EEEELi0EEERtS7_S7_RjPA6_sS6_
+Args:            
+  - String:          'Could not analyze occurrence information for '''
+  - BBName:          for.body4.i
+  - String:          ''' living in '''
+  - LoopName:        loop_width_for_procpix
+  - String:          '''('
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:297:3'
+  - String:          ') .'
+...
+--- !HLSReportInfo
+Pass:            auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'automatically set the pipeline for Loop< '
+  - LoopName:        loop_init_coeff_tap
+  - String:          '> at '
+  - LoopLoc:         'G:/Project-Workspace/zynq-7020-video-pipe-3/hw/video-pipe-hw-v5/hw_011223.runs/bd_8126_vsc_0_synth_1/prj/sol/.autopilot/db/v_vscaler.cpp:252:3'
+  - String:          ' '
+...
