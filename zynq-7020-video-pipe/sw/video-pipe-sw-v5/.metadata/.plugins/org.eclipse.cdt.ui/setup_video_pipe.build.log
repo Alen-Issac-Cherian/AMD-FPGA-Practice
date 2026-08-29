@@ -1,0 +1,61 @@
+17:02:31 **** Build of configuration Debug for project setup_video_pipe ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/iic_utils.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/iic_utils.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/alen/repo/zynq-7020-video-pipe-3/sw/video-pipe-sw-v5/broncho_video/export/broncho_video/sw/broncho_video/standalone_domain/bspinclude/include -MMD -MP -MF"src/iic_utils.d" -MT"src/iic_utils.o" -o "src/iic_utils.o" "../src/iic_utils.c"
+../src/iic_utils.c:4: warning: "XPAR_XIICPS_0_DEVICE_ID" redefined
+    4 | #define XPAR_XIICPS_0_DEVICE_ID 0
+      | 
+In file included from /home/alen/repo/zynq-7020-video-pipe-3/sw/video-pipe-sw-v5/broncho_video/export/broncho_video/sw/broncho_video/standalone_domain/bspinclude/include/xil_types.h:51,
+                 from /home/alen/repo/zynq-7020-video-pipe-3/sw/video-pipe-sw-v5/broncho_video/export/broncho_video/sw/broncho_video/standalone_domain/bspinclude/include/xiicps.h:194,
+                 from ../src/iic_utils.h:8,
+                 from ../src/iic_utils.c:3:
+/home/alen/repo/zynq-7020-video-pipe-3/sw/video-pipe-sw-v5/broncho_video/export/broncho_video/sw/broncho_video/standalone_domain/bspinclude/include/xparameters.h:480: note: this is the location of the previous definition
+  480 | #define XPAR_XIICPS_0_DEVICE_ID XPAR_PS7_I2C_0_DEVICE_ID
+      | 
+../src/iic_utils.c:5: warning: "XPAR_XIICPS_1_DEVICE_ID" redefined
+    5 | #define XPAR_XIICPS_1_DEVICE_ID 1
+      | 
+/home/alen/repo/zynq-7020-video-pipe-3/sw/video-pipe-sw-v5/broncho_video/export/broncho_video/sw/broncho_video/standalone_domain/bspinclude/include/xparameters.h:486: note: this is the location of the previous definition
+  486 | #define XPAR_XIICPS_1_DEVICE_ID XPAR_PS7_I2C_1_DEVICE_ID
+      | 
+Finished building: ../src/iic_utils.c
+ 
+Building file: ../src/platform.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/alen/repo/zynq-7020-video-pipe-3/sw/video-pipe-sw-v5/broncho_video/export/broncho_video/sw/broncho_video/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+Finished building: ../src/platform.c
+ 
+Building file: ../src/setup_video_pipe.c
+Invoking: ARM v7 gcc compiler
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/setup_video_pipe.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/alen/repo/zynq-7020-video-pipe-3/sw/video-pipe-sw-v5/broncho_video/export/broncho_video/sw/broncho_video/standalone_domain/bspinclude/include -MMD -MP -MF"src/setup_video_pipe.d" -MT"src/setup_video_pipe.o" -o "src/setup_video_pipe.o" "../src/setup_video_pipe.c"
+../src/setup_video_pipe.c:80:40: warning: initialization of 'const XVidC_VideoTimingMode *' from incompatible pointer type 'const Input_VideoTimingMode *' [-Wincompatible-pointer-types]
+   80 | const XVidC_VideoTimingMode *InVmPtr = &Input_VideoTimingModes[0];
+      |                                        ^
+../src/setup_video_pipe.c:83:41: warning: initialization of 'const XVidC_VideoTimingMode *' from incompatible pointer type 'const Output_VideoTimingMode *' [-Wincompatible-pointer-types]
+   83 | const XVidC_VideoTimingMode *OutVmPtr = &Output_VideoTimingModes[0];
+      |                                         ^
+../src/setup_video_pipe.c: In function 'main':
+../src/setup_video_pipe.c:163:9: warning: unused variable 'buff_5' [-Wunused-variable]
+  163 |     int buff_5 = buff_4 + 0x00600000;
+      |         ^~~~~~
+Finished building: ../src/setup_video_pipe.c
+ 
+Building target: setup_video_pipe.elf
+Invoking: ARM v7 gcc linker
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/alen/repo/zynq-7020-video-pipe-3/sw/video-pipe-sw-v5/broncho_video/export/broncho_video/sw/broncho_video/standalone_domain/bsplib/lib -o "setup_video_pipe.elf" ./src/iic_utils.o ./src/platform.o ./src/setup_video_pipe.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: setup_video_pipe.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size setup_video_pipe.elf  |tee "setup_video_pipe.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 189755	   1536	 161456	 352747	  561eb	setup_video_pipe.elf
+Finished building: setup_video_pipe.elf.size
+ 
+
+17:02:31 Build Finished (took 569ms)
+
