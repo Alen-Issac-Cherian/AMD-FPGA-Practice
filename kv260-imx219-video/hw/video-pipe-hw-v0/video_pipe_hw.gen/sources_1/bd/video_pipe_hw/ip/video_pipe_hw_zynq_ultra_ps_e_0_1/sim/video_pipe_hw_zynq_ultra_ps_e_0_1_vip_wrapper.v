@@ -199,6 +199,7 @@ dp_external_custom_event1,
 dp_external_custom_event2, 
 dp_external_vsync_event, 
 dp_live_video_de_out, 
+pl_ps_irq0, 
 pl_resetn0, 
 pl_clk0 
 );
@@ -343,6 +344,7 @@ input dp_external_custom_event1;
 input dp_external_custom_event2;
 input dp_external_vsync_event;
 output dp_live_video_de_out;
+input [0 : 0] pl_ps_irq0;
 output pl_resetn0;
 output pl_clk0;
 wire pl_clk_t[3:0] ;
@@ -953,6 +955,7 @@ assign pl_clk0 = pl_clk_t[0] ;
 .SACEFPDBID(),
 .SACEFPDRID(),
 
+.PLPSIRQ0(pl_ps_irq0),
 
 .PL_RESETN0(pl_resetn0),
 .PLCLK({pl_clk_t[3],pl_clk_t[2],pl_clk_t[1],pl_clk_t[0]})

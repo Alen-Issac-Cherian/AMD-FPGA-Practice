@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Mon Sep  7 15:09:47 2026
-| Host         : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
+| Date         : Tue Sep 15 23:08:46 2026
+| Host         : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
 | Command      : report_methodology -file video_pipe_hw_wrapper_methodology_drc_routed.rpt -pb video_pipe_hw_wrapper_methodology_drc_routed.pb -rpx video_pipe_hw_wrapper_methodology_drc_routed.rpx
 | Design       : video_pipe_hw_wrapper
 | Device       : xck26-sfvc784-2LV-c
@@ -141,7 +141,7 @@ Related violations: <none>
 
 TIMING-16#1 Warning
 Large setup violation  
-There is a large setup violation of -1.828 ns between video_pipe_hw_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gof.overflow_i_reg/C (clocked by clk_pl_0) and video_pipe_hw_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[1]/D (clocked by clk_out1_video_pipe_hw_clk_wiz_1_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+There is a large setup violation of -1.579 ns between video_pipe_hw_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gof.overflow_i_reg/C (clocked by clk_pl_0) and video_pipe_hw_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[1]/D (clocked by clk_out1_video_pipe_hw_clk_wiz_1_0_1). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-24#1 Warning

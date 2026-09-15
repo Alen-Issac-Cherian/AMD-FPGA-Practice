@@ -2,8 +2,8 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Sat Aug 29 15:35:35 2026
-//Host        : hp-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 22.04.5 LTS
+//Date        : Tue Sep 15 22:58:44 2026
+//Host        : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
 //Command     : generate_target video_pipe_hw.bd
 //Design      : video_pipe_hw
 //Purpose     : IP block netlist
@@ -746,7 +746,9 @@ module video_pipe_hw
        (.clk(clk_wiz_1_clk_out1),
         .probe_in0(v_axi4s_vid_out_0_locked),
         .probe_in1(v_axi4s_vid_out_0_overflow),
-        .probe_in2(v_axi4s_vid_out_0_underflow));
+        .probe_in2(v_axi4s_vid_out_0_underflow),
+        .probe_in3(v_axi4s_vid_out_0_vid_active_video),
+        .probe_in4(v_axi4s_vid_out_0_vid_data));
   video_pipe_hw_xlconstant_0_0 xlconstant_0
        (.dout(rpi_enable));
   video_pipe_hw_xlconstant_1_0 xlconstant_1
@@ -849,6 +851,7 @@ module video_pipe_hw
         .maxihpm0_fpd_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .maxihpm1_fpd_aclk(zynq_ultra_ps_e_0_pl_clk0),
         .pl_clk0(zynq_ultra_ps_e_0_pl_clk0),
+        .pl_ps_irq0(1'b0),
         .pl_resetn0(zynq_ultra_ps_e_0_pl_resetn0),
         .saxigp0_araddr(axi_smc_M00_AXI_ARADDR),
         .saxigp0_arburst(axi_smc_M00_AXI_ARBURST),

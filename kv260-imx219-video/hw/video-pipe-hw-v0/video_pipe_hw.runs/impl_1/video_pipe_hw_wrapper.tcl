@@ -104,10 +104,10 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param bd.open.in_stealth_mode 7
+  set_param bd.open.in_stealth_mode 12
   set_param chipscope.maxJobs 3
   set_param general.usePosixSpawnForFork 1
-  set_param runs.launchOptions { -jobs 4  }
+  set_param runs.launchOptions { -jobs 6  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xck26-sfvc784-2LV-c
   set_property board_part_repo_paths {/home/alen/AMD-Xilinx/2025.2/data/boards/board_files} [current_project]
@@ -118,6 +118,8 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v0/video_pipe_hw.cache/wt [current_project]
   set_property parent.project_path /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v0/video_pipe_hw.xpr [current_project]
+  set_property ip_repo_paths /home/alen/git/vivado-library/ip [current_project]
+  update_ip_catalog
   set_property ip_output_repo /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v0/video_pipe_hw.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]

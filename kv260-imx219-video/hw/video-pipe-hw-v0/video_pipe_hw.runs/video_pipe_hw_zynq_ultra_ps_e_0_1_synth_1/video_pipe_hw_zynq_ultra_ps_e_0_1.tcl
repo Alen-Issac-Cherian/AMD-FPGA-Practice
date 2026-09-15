@@ -56,7 +56,7 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "video_pipe_hw_zynq_ultra_ps_e_0_1_synth_1" START { ROLLUP_AUTO }
-set_param bd.open.in_stealth_mode 4
+set_param bd.open.in_stealth_mode 12
 set_param general.usePosixSpawnForFork 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
@@ -74,6 +74,8 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {/home/alen/AMD-Xilinx/2025.2/data/boards/board_files} [current_project]
 set_property board_part xilinx.com:kv260_som:part0:1.4 [current_project]
+set_property ip_repo_paths /home/alen/git/vivado-library/ip [current_project]
+update_ip_catalog
 set_property ip_output_repo /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v0/video_pipe_hw.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }

@@ -221,6 +221,7 @@ public:
   sc_core::sc_in< bool > dp_external_custom_event2;
   sc_core::sc_in< bool > dp_external_vsync_event;
   sc_core::sc_out< bool > dp_live_video_de_out;
+  sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
 
@@ -401,6 +402,7 @@ public:
   sc_core::sc_in< bool > dp_external_custom_event2;
   sc_core::sc_in< bool > dp_external_vsync_event;
   sc_core::sc_out< bool > dp_live_video_de_out;
+  sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
 
@@ -581,6 +583,7 @@ public:
   sc_core::sc_in< bool > dp_external_custom_event2;
   sc_core::sc_in< bool > dp_external_vsync_event;
   sc_core::sc_out< bool > dp_live_video_de_out;
+  sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
 
@@ -765,6 +768,7 @@ public:
   sc_core::sc_in< bool > dp_external_custom_event2;
   sc_core::sc_in< bool > dp_external_vsync_event;
   sc_core::sc_out< bool > dp_live_video_de_out;
+  sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
 
@@ -959,6 +963,7 @@ public:
   sc_core::sc_in< bool > dp_external_custom_event2;
   sc_core::sc_in< bool > dp_external_vsync_event;
   sc_core::sc_out< bool > dp_live_video_de_out;
+  sc_core::sc_in< sc_dt::sc_bv<1> > pl_ps_irq0;
   sc_core::sc_out< bool > pl_resetn0;
   sc_core::sc_out< bool > pl_clk0;
 

@@ -163,6 +163,7 @@ void add_extensions_to_tlm(const xtlm::aximm_payload* xtlm_pay, tlm::tlm_generic
         ,dp_external_custom_event2("dp_external_custom_event2")
         ,dp_external_vsync_event("dp_external_vsync_event")
         ,dp_live_video_de_out("dp_live_video_de_out")
+        ,pl_ps_irq0("pl_ps_irq0")
         ,pl_resetn0("pl_resetn0")
         ,pl_clk0("pl_clk0")
     ,S_AXI_HPC0_FPD_xtlm_brdg("S_AXI_HPC0_FPD_xtlm_brdg")
@@ -222,6 +223,11 @@ void add_extensions_to_tlm(const xtlm::aximm_payload* xtlm_pay, tlm::tlm_generic
 
         m_zynqmp_tlm_model->tie_off();
 
+ 
+        SC_METHOD(pl_ps_irq0_method);
+        sensitive << pl_ps_irq0 ;
+        dont_initialize();
+
         SC_METHOD(trigger_pl_clk0_pin);
         sensitive << pl_clk0_clk;
         dont_initialize();
@@ -251,6 +257,17 @@ void add_extensions_to_tlm(const xtlm::aximm_payload* xtlm_pay, tlm::tlm_generic
         pl_clk0.write(pl_clk0_clk.read());
     }
 
+    void zynq_ultra_ps_e_tlm ::pl_ps_irq0_method()    {
+        int irq = ((pl_ps_irq0.read().to_uint()) & 0xFF);
+        for(int i = 0; i <8; i++)   {
+            if(irq & (0x1<<i))  {
+                m_zynqmp_tlm_model->pl2ps_irq[i].write(true);
+            }
+            else{
+                m_zynqmp_tlm_model->pl2ps_irq[i].write(false);
+            }
+        }
+    }
     //pl_resetn0 output reset pin get toggle when emio bank 2's 31th signal gets toggled
     //EMIO[2] bank 31th(GPIO[95] signal)acts as reset signal to the PL(refer Zynq UltraScale+ TRM, page no:761)
     void zynq_ultra_ps_e_tlm ::pl_resetn0_trigger()   {
