@@ -1,0 +1,826 @@
+  **** HLS Build v2025.2 6295257
+Sourcing Tcl script '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/runhls.tcl'
+INFO: [HLS 200-1510] Running: open_project -reset prj 
+WARNING: [HLS 200-2182] The 'prj' project will not automatically appear within Vitis IDE workspaces and is meant only for TCL batch use.  Please use open_component instead of open_project/open_solution to generate Vitis IDE compatible component files and directory structure.
+Resolution: For help on HLS 200-2182 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-2182.html
+INFO: [HLS 200-10] Creating and opening solution '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj'.
+INFO: [HLS 200-1510] Running: set_top v_demosaic 
+INFO: [HLS 200-1510] Running: open_solution sol 
+INFO: [HLS 200-10] Creating and opening solution '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xck26-sfvc784-2lv-c 
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/v_demosaic_config.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/v_demosaic_config.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/v_demosaic.cpp 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/v_demosaic.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/v_demosaic.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/v_demosaic.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls_video.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls_video.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls_opencv.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls_opencv.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_axi_io.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_axi_io.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_arithm.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_arithm.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_fast.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_fast.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_haar.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_haar.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_harris.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_harris.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_histogram.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_histogram.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_hough.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_hough.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_imgbase.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_imgbase.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_imgproc.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_imgproc.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_io.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_io.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_mem.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_mem.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_stereobm.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_stereobm.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_types.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_types.h' to the project
+INFO: [HLS 200-1510] Running: add_files -cflags  -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls -I /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src  /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_undistort.h 
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_undistort.h' to the project
+INFO: [HLS 200-1510] Running: create_clock -period 20.408 -name ap_clk 
+INFO: [SYN 201-201] Setting up clock 'ap_clk' with a period of 20.408ns.
+INFO: [HLS 200-1510] Running: config_rtl -module_prefix video_pipe_hw_v_demosaic_0_0_ 
+INFO: [HLS 200-1510] Running: config_export -vendor xilinx.com -library ip -version 1.1 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0.06 seconds. CPU system time: 0.13 seconds. Elapsed time: 0.23 seconds; current allocated memory: 243.758 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/v_demosaic.cpp' ... 
+WARNING: [HLS 207-6998] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:102:23)
+WARNING: [HLS 207-6998] 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:104:23)
+WARNING: [HLS 207-6996] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:286:13)
+WARNING: [HLS 207-6998] 'xpm_memory' in '#pragma HLS Resource' is deprecated, use 'Bind_Storage Pragma' instead (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:286:64)
+WARNING: [HLS 207-7002] extra token before variable expression is ignored (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:286:31)
+WARNING: [HLS 207-6996] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:617:13)
+WARNING: [HLS 207-6998] 'xpm_memory' in '#pragma HLS Resource' is deprecated, use 'Bind_Storage Pragma' instead (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:617:62)
+WARNING: [HLS 207-6996] 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:865:13)
+WARNING: [HLS 207-6998] 'xpm_memory' in '#pragma HLS Resource' is deprecated, use 'Bind_Storage Pragma' instead (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:865:63)
+WARNING: [HLS 207-7002] extra token before variable expression is ignored (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:865:31)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 45.9 seconds. CPU system time: 2.64 seconds. Elapsed time: 49.24 seconds; current allocated memory: 272.844 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 25,182 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 4,719 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,735 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,324 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,174 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,066 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,874 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,884 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,046 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,210 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,181 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 2,074 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,996 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,984 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,903 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,856 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 214-131] Inlining function 'void hls::AXIGetBitFields<10, ap_uint<10> >(ap_uint<10>, int, int, ap_uint<10>&)' into 'void hls::AXIGetBitFields<10, ap_uint<10> >(hls::axis<ap_uint<10>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<10>&)' (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_axi_io.h:85:5)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<1, ap_uint<10> >::Scalar()' into 'AXIvideo2MultiBayer(hls::stream<hls::axis<ap_uint<10>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<1, ap_uint<10> >, 0>&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:142:23)
+INFO: [HLS 214-131] Inlining function 'void hls::AXIGetBitFields<10, ap_uint<10> >(hls::axis<ap_uint<10>, 1ul, 1ul, 1ul, (unsigned char)56, false>, int, int, ap_uint<10>&)' into 'AXIvideo2MultiBayer(hls::stream<hls::axis<ap_uint<10>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::Scalar<1, ap_uint<10> >, 0>&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:182:17)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<10> >::Scalar()' into 'DebayerG(hls::stream<hls::Scalar<1, ap_uint<10> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:278:21)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<1, ap_uint<10> >::Scalar()' into 'DebayerG(hls::stream<hls::Scalar<1, ap_uint<10> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:280:23)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<10> >::Scalar()' into 'hls::Window<3, 3, hls::Scalar<3, ap_uint<10> > >::Window()' (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_mem.h:65:5)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<10> >::Scalar()' into 'DebayerRatBorBatR(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:610:21)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<10> >::Scalar()' into 'DebayerRandBatG(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:858:21)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<10> >::Scalar()' into 'ZipperRemoval(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:1087:21)
+INFO: [HLS 214-131] Inlining function 'hls::Scalar<3, ap_uint<10> >::Scalar()' into 'MultiPixStream2AXIvideo(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:215:21)
+INFO: [HLS 214-377] Adding 'pixWindow' into disaggregation list because there's array-partition pragma applied on the struct field (prj/sol/.autopilot/db/v_demosaic.cpp:857:66)
+INFO: [HLS 214-377] Adding 'pixWindow' into disaggregation list because there's array-partition pragma applied on the struct field (prj/sol/.autopilot/db/v_demosaic.cpp:609:66)
+INFO: [HLS 214-377] Adding 'bayerWindow' into disaggregation list because there's array-partition pragma applied on the struct field (prj/sol/.autopilot/db/v_demosaic.cpp:277:18)
+INFO: [HLS 214-377] Adding 'pix' into disaggregation list because there's array-partition pragma applied on the struct field (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h:198:1)
+INFO: [HLS 214-377] Adding 'outpix' into disaggregation list because there's array-partition pragma applied on the struct field (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h:198:1)
+INFO: [HLS 214-377] Adding 'inpix' into disaggregation list because there's array-partition pragma applied on the struct field (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h:198:1)
+INFO: [HLS 214-377] Adding 'p' into disaggregation list because there's array-partition pragma applied on the struct field (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h:198:1)
+INFO: [HLS 214-377] Adding 'p164' into disaggregation list because there's array-partition pragma applied on the struct field (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h:198:1)
+INFO: [HLS 214-377] Adding 'PixBufVal' into disaggregation list because there's array-partition pragma applied on the struct field (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h:198:1)
+INFO: [HLS 214-377] Adding 'p253' into disaggregation list because there's array-partition pragma applied on the struct field (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h:198:1)
+INFO: [HLS 214-377] Adding 'lineBuffer' into disaggregation list because there's array-partition pragma applied on the struct field (prj/sol/.autopilot/db/v_demosaic.cpp:862:67)
+INFO: [HLS 214-377] Adding 'pixBuf' into disaggregation list because there's array-partition pragma applied on the struct field (video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/src/hls/hls_video_core.h:198:1)
+INFO: [HLS 214-377] Adding 'lineBuffer' into disaggregation list because there's array-partition pragma applied on the struct field (prj/sol/.autopilot/db/v_demosaic.cpp:614:67)
+INFO: [HLS 214-377] Adding 'linebuf_yuv' into disaggregation list because there's array-partition pragma applied on the struct field (prj/sol/.autopilot/db/v_demosaic.cpp:283:61)
+INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_demosaic.cpp:142:23)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'PixBufVal' (prj/sol/.autopilot/db/v_demosaic.cpp:402:39)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'linebuf_yuv' (prj/sol/.autopilot/db/v_demosaic.cpp:283:61)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pixBuf' (prj/sol/.autopilot/db/v_demosaic.cpp:281:23)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_demosaic.cpp:280:23)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'outpix' (prj/sol/.autopilot/db/v_demosaic.cpp:278:21)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'bayerWindow' (prj/sol/.autopilot/db/v_demosaic.cpp:277:18)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'p253' (prj/sol/.autopilot/db/v_demosaic.cpp:748:31)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'PixBufVal' (prj/sol/.autopilot/db/v_demosaic.cpp:727:37)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'p164' (prj/sol/.autopilot/db/v_demosaic.cpp:712:35)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'p' (prj/sol/.autopilot/db/v_demosaic.cpp:702:35)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'lineBuffer' (prj/sol/.autopilot/db/v_demosaic.cpp:614:67)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pixBuf' (prj/sol/.autopilot/db/v_demosaic.cpp:612:21)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'outpix' (prj/sol/.autopilot/db/v_demosaic.cpp:610:26)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_demosaic.cpp:610:21)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pixWindow' (prj/sol/.autopilot/db/v_demosaic.cpp:609:66)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'p253' (prj/sol/.autopilot/db/v_demosaic.cpp:995:31)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'PixBufVal' (prj/sol/.autopilot/db/v_demosaic.cpp:974:37)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'p164' (prj/sol/.autopilot/db/v_demosaic.cpp:959:35)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'p' (prj/sol/.autopilot/db/v_demosaic.cpp:949:35)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'lineBuffer' (prj/sol/.autopilot/db/v_demosaic.cpp:862:67)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pixBuf' (prj/sol/.autopilot/db/v_demosaic.cpp:860:21)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'outpix' (prj/sol/.autopilot/db/v_demosaic.cpp:858:26)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_demosaic.cpp:858:21)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pixWindow' (prj/sol/.autopilot/db/v_demosaic.cpp:857:66)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'outpix' (prj/sol/.autopilot/db/v_demosaic.cpp:1087:28)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'inpix' (prj/sol/.autopilot/db/v_demosaic.cpp:1087:21)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'pix' (prj/sol/.autopilot/db/v_demosaic.cpp:215:21)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_248_3' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:248:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_250_4' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:250:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1112_3' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:1112:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1115_4' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:1115:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1135_5' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:1135:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_894_3' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:894:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_897_4' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:897:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_899_5' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:899:43)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_907_6' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:907:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_914_7' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:914:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_916_8' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:916:43)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_929_9' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:929:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_931_10' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:931:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_993_17' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:993:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_999_18' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:999:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_940_11' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:940:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_943_12' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:943:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_963_13' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:963:44)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_971_14' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:971:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_979_15' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:979:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_981_16' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:981:44)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_1006_19' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:1006:33)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_646_3' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:646:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_649_4' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:649:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_651_5' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:651:43)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_660_6' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:660:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_667_7' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:667:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_669_8' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:669:43)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_682_9' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:682:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_684_10' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:684:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_746_17' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:746:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_752_18' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:752:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_693_11' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:693:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_696_12' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:696:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_716_13' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:716:44)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_724_14' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:724:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_732_15' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:732:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_734_16' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:734:44)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_760_19' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:760:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_331_5' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:331:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_334_6' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:334:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_342_7' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:342:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_349_8' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:349:39)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_361_9' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:361:31)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_363_10' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:363:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_418_16' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:418:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_422_17' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:422:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_372_11' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:372:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_375_12' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:375:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_391_13' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:391:44)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_399_14' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:399:36)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_407_15' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:407:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_429_18' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:429:32)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_472_19' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:472:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_490_20' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:490:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_499_21' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:499:40)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_180_1' is marked as complete unroll implied by the pipeline pragma (prj/sol/.autopilot/db/v_demosaic.cpp:180:31)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_248_3' (prj/sol/.autopilot/db/v_demosaic.cpp:248:31) in function 'MultiPixStream2AXIvideo' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:213:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_250_4' (prj/sol/.autopilot/db/v_demosaic.cpp:250:35) in function 'MultiPixStream2AXIvideo' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:213:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1112_3' (prj/sol/.autopilot/db/v_demosaic.cpp:1112:32) in function 'ZipperRemoval' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:1082:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1115_4' (prj/sol/.autopilot/db/v_demosaic.cpp:1115:36) in function 'ZipperRemoval' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:1082:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1135_5' (prj/sol/.autopilot/db/v_demosaic.cpp:1135:32) in function 'ZipperRemoval' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:1082:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_894_3' (prj/sol/.autopilot/db/v_demosaic.cpp:894:35) in function 'DebayerRandBatG' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_897_4' (prj/sol/.autopilot/db/v_demosaic.cpp:897:39) in function 'DebayerRandBatG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_899_5' (prj/sol/.autopilot/db/v_demosaic.cpp:899:43) in function 'DebayerRandBatG' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_907_6' (prj/sol/.autopilot/db/v_demosaic.cpp:907:35) in function 'DebayerRandBatG' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_914_7' (prj/sol/.autopilot/db/v_demosaic.cpp:914:39) in function 'DebayerRandBatG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_916_8' (prj/sol/.autopilot/db/v_demosaic.cpp:916:43) in function 'DebayerRandBatG' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_929_9' (prj/sol/.autopilot/db/v_demosaic.cpp:929:31) in function 'DebayerRandBatG' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_931_10' (prj/sol/.autopilot/db/v_demosaic.cpp:931:36) in function 'DebayerRandBatG' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_993_17' (prj/sol/.autopilot/db/v_demosaic.cpp:993:36) in function 'DebayerRandBatG' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_999_18' (prj/sol/.autopilot/db/v_demosaic.cpp:999:40) in function 'DebayerRandBatG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_940_11' (prj/sol/.autopilot/db/v_demosaic.cpp:940:36) in function 'DebayerRandBatG' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_963_13' (prj/sol/.autopilot/db/v_demosaic.cpp:963:44) in function 'DebayerRandBatG' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_943_12' (prj/sol/.autopilot/db/v_demosaic.cpp:943:40) in function 'DebayerRandBatG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_971_14' (prj/sol/.autopilot/db/v_demosaic.cpp:971:36) in function 'DebayerRandBatG' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_979_15' (prj/sol/.autopilot/db/v_demosaic.cpp:979:40) in function 'DebayerRandBatG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_981_16' (prj/sol/.autopilot/db/v_demosaic.cpp:981:44) in function 'DebayerRandBatG' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_1006_19' (prj/sol/.autopilot/db/v_demosaic.cpp:1006:33) in function 'DebayerRandBatG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_646_3' (prj/sol/.autopilot/db/v_demosaic.cpp:646:35) in function 'DebayerRatBorBatR' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_649_4' (prj/sol/.autopilot/db/v_demosaic.cpp:649:39) in function 'DebayerRatBorBatR' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_651_5' (prj/sol/.autopilot/db/v_demosaic.cpp:651:43) in function 'DebayerRatBorBatR' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_660_6' (prj/sol/.autopilot/db/v_demosaic.cpp:660:35) in function 'DebayerRatBorBatR' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_667_7' (prj/sol/.autopilot/db/v_demosaic.cpp:667:39) in function 'DebayerRatBorBatR' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_669_8' (prj/sol/.autopilot/db/v_demosaic.cpp:669:43) in function 'DebayerRatBorBatR' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_682_9' (prj/sol/.autopilot/db/v_demosaic.cpp:682:31) in function 'DebayerRatBorBatR' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_684_10' (prj/sol/.autopilot/db/v_demosaic.cpp:684:36) in function 'DebayerRatBorBatR' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_746_17' (prj/sol/.autopilot/db/v_demosaic.cpp:746:36) in function 'DebayerRatBorBatR' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_752_18' (prj/sol/.autopilot/db/v_demosaic.cpp:752:40) in function 'DebayerRatBorBatR' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_693_11' (prj/sol/.autopilot/db/v_demosaic.cpp:693:36) in function 'DebayerRatBorBatR' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_716_13' (prj/sol/.autopilot/db/v_demosaic.cpp:716:44) in function 'DebayerRatBorBatR' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_696_12' (prj/sol/.autopilot/db/v_demosaic.cpp:696:40) in function 'DebayerRatBorBatR' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_724_14' (prj/sol/.autopilot/db/v_demosaic.cpp:724:36) in function 'DebayerRatBorBatR' completely with a factor of 2 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_732_15' (prj/sol/.autopilot/db/v_demosaic.cpp:732:40) in function 'DebayerRatBorBatR' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_734_16' (prj/sol/.autopilot/db/v_demosaic.cpp:734:44) in function 'DebayerRatBorBatR' completely with a factor of 3 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_760_19' (prj/sol/.autopilot/db/v_demosaic.cpp:760:32) in function 'DebayerRatBorBatR' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_331_5' (prj/sol/.autopilot/db/v_demosaic.cpp:331:35) in function 'DebayerG' completely with a factor of 5 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_334_6' (prj/sol/.autopilot/db/v_demosaic.cpp:334:39) in function 'DebayerG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_342_7' (prj/sol/.autopilot/db/v_demosaic.cpp:342:35) in function 'DebayerG' completely with a factor of 4 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_349_8' (prj/sol/.autopilot/db/v_demosaic.cpp:349:39) in function 'DebayerG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_361_9' (prj/sol/.autopilot/db/v_demosaic.cpp:361:31) in function 'DebayerG' completely with a factor of 5 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_363_10' (prj/sol/.autopilot/db/v_demosaic.cpp:363:36) in function 'DebayerG' completely with a factor of 4 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_418_16' (prj/sol/.autopilot/db/v_demosaic.cpp:418:36) in function 'DebayerG' completely with a factor of 5 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_422_17' (prj/sol/.autopilot/db/v_demosaic.cpp:422:40) in function 'DebayerG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_372_11' (prj/sol/.autopilot/db/v_demosaic.cpp:372:36) in function 'DebayerG' completely with a factor of 5 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_391_13' (prj/sol/.autopilot/db/v_demosaic.cpp:391:44) in function 'DebayerG' completely with a factor of 4 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_375_12' (prj/sol/.autopilot/db/v_demosaic.cpp:375:40) in function 'DebayerG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_399_14' (prj/sol/.autopilot/db/v_demosaic.cpp:399:36) in function 'DebayerG' completely with a factor of 4 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_407_15' (prj/sol/.autopilot/db/v_demosaic.cpp:407:40) in function 'DebayerG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_429_18' (prj/sol/.autopilot/db/v_demosaic.cpp:429:32) in function 'DebayerG' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_499_21' (prj/sol/.autopilot/db/v_demosaic.cpp:499:40) in function 'DebayerG' completely with a factor of 4 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_490_20' (prj/sol/.autopilot/db/v_demosaic.cpp:490:40) in function 'DebayerG' completely with a factor of 4 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_472_19' (prj/sol/.autopilot/db/v_demosaic.cpp:472:40) in function 'DebayerG' completely with a factor of 4 (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_180_1' (prj/sol/.autopilot/db/v_demosaic.cpp:180:31) in function 'AXIvideo2MultiBayer' completely with a factor of 1 (prj/sol/.autopilot/db/v_demosaic.cpp:139:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'DebayerG(hls::stream<hls::Scalar<1, ap_uint<10> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:270:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'DebayerRatBorBatR(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:599:0)
+INFO: [HLS 214-178] Inlining function 'std::abs(long long)' into 'DebayerRandBatG(hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, hls::stream<hls::Scalar<3, ap_uint<10> >, 0>&, unsigned short&, unsigned short&, unsigned short&)' (prj/sol/.autopilot/db/v_demosaic.cpp:847:0)
+INFO: [HLS 214-248] Applying array_partition to 'linebuf_yuv': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:283:61)
+INFO: [HLS 214-248] Applying array_partition to 'lineBuffer': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:614:67)
+INFO: [HLS 214-248] Applying array_partition to 'upleft': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:775:31)
+INFO: [HLS 214-248] Applying array_partition to 'upright': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:776:31)
+INFO: [HLS 214-248] Applying array_partition to 'downleft': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:777:31)
+INFO: [HLS 214-248] Applying array_partition to 'downright': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:778:31)
+INFO: [HLS 214-248] Applying array_partition to 'center': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:779:31)
+INFO: [HLS 214-248] Applying array_partition to 'lineBuffer': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:862:67)
+INFO: [HLS 214-248] Applying array_partition to 'luma': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:1089:16)
+INFO: [HLS 214-248] Applying array_partition to 'r': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:1090:16)
+INFO: [HLS 214-248] Applying array_partition to 'g': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:1091:16)
+INFO: [HLS 214-248] Applying array_partition to 'b': Complete partitioning on dimension 1. (prj/sol/.autopilot/db/v_demosaic.cpp:1092:16)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'imgUnzip' with compact=bit mode in 30-bits (prj/sol/.autopilot/db/v_demosaic.cpp:110:21)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'imgRgb' with compact=bit mode in 30-bits (prj/sol/.autopilot/db/v_demosaic.cpp:109:21)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'imgRB' with compact=bit mode in 30-bits (prj/sol/.autopilot/db/v_demosaic.cpp:1067:27)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'imgG' with compact=bit mode in 30-bits (prj/sol/.autopilot/db/v_demosaic.cpp:1067:21)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'imgBayer' with compact=bit mode in 10-bits (prj/sol/.autopilot/db/v_demosaic.cpp:108:23)
+INFO: [HLS 214-376] Pipelining loop< unknown> at prj/sol/.autopilot/db/v_demosaic.cpp:1089:33 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< unknown> at prj/sol/.autopilot/db/v_demosaic.cpp:1090:30 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< unknown> at prj/sol/.autopilot/db/v_demosaic.cpp:1091:30 due to pipeline_loops threshold
+INFO: [HLS 214-376] Pipelining loop< unknown> at prj/sol/.autopilot/db/v_demosaic.cpp:1092:30 due to pipeline_loops threshold
+WARNING: [HLS 214-371] Impl=uram in bind_storage is deprecated. Consider using a different memory implementation. (prj/sol/.autopilot/db/v_demosaic.cpp:286:1)
+WARNING: [HLS 214-371] Impl=uram in bind_storage is deprecated. Consider using a different memory implementation. (prj/sol/.autopilot/db/v_demosaic.cpp:617:1)
+WARNING: [HLS 214-371] Impl=uram in bind_storage is deprecated. Consider using a different memory implementation. (prj/sol/.autopilot/db/v_demosaic.cpp:865:1)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 8.44 seconds. CPU system time: 1.26 seconds. Elapsed time: 11.84 seconds; current allocated memory: 280.844 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 280.844 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.23 seconds; current allocated memory: 280.844 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.18 seconds. CPU system time: 0 seconds. Elapsed time: 0.24 seconds; current allocated memory: 280.844 MB.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1920 for loop 'VITIS_LOOP_230_2' (prj/sol/.autopilot/db/v_demosaic.cpp:230:43) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1920) < AVE (= 32767)) for loop 'VITIS_LOOP_230_2' (prj/sol/.autopilot/db/v_demosaic.cpp:230:43) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1080 for loop 'VITIS_LOOP_228_1' (prj/sol/.autopilot/db/v_demosaic.cpp:228:39) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AVE (= 32767)) for loop 'VITIS_LOOP_228_1' (prj/sol/.autopilot/db/v_demosaic.cpp:228:39) in function 'MultiPixStream2AXIvideo'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65536 to 1921 for loop 'VITIS_LOOP_633_2' (prj/sol/.autopilot/db/v_demosaic.cpp:632:13) in function 'DebayerRatBorBatR'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1921) < AVE (= 32768)) for loop 'VITIS_LOOP_633_2' (prj/sol/.autopilot/db/v_demosaic.cpp:632:13) in function 'DebayerRatBorBatR'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65536 to 1081 for loop 'VITIS_LOOP_630_1' (prj/sol/.autopilot/db/v_demosaic.cpp:603:9) in function 'DebayerRatBorBatR'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1081) < AVE (= 32768)) for loop 'VITIS_LOOP_630_1' (prj/sol/.autopilot/db/v_demosaic.cpp:603:9) in function 'DebayerRatBorBatR'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65536 to 1921 for loop 'VITIS_LOOP_881_2' (prj/sol/.autopilot/db/v_demosaic.cpp:880:13) in function 'DebayerRandBatG'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1921) < AVE (= 32768)) for loop 'VITIS_LOOP_881_2' (prj/sol/.autopilot/db/v_demosaic.cpp:880:13) in function 'DebayerRandBatG'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65536 to 1081 for loop 'VITIS_LOOP_878_1' (prj/sol/.autopilot/db/v_demosaic.cpp:851:9) in function 'DebayerRandBatG'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1081) < AVE (= 32768)) for loop 'VITIS_LOOP_878_1' (prj/sol/.autopilot/db/v_demosaic.cpp:851:9) in function 'DebayerRandBatG'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1920 for loop 'loop_width' (prj/sol/.autopilot/db/v_demosaic.cpp:153:10) in function 'AXIvideo2MultiBayer'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1920) < AVE (= 32767)) for loop 'loop_width' (prj/sol/.autopilot/db/v_demosaic.cpp:153:10) in function 'AXIvideo2MultiBayer'.
+WARNING: [XFORM 203-561] Updating loop upper bound from 65535 to 1080 for loop 'loop_height' (prj/sol/.autopilot/db/v_demosaic.cpp:153:10) in function 'AXIvideo2MultiBayer'.
+WARNING: [XFORM 203-561] Ignored invalid trip count directive (MAX (= 1080) < AVE (= 32767)) for loop 'loop_height' (prj/sol/.autopilot/db/v_demosaic.cpp:153:10) in function 'AXIvideo2MultiBayer'.
+WARNING: [HLS 200-805] An internal stream 'imgBayer' (prj/sol/.autopilot/db/v_demosaic.cpp:108) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'imgRgb' (prj/sol/.autopilot/db/v_demosaic.cpp:109) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'imgUnzip' (prj/sol/.autopilot/db/v_demosaic.cpp:110) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'imgG' (prj/sol/.autopilot/db/v_demosaic.cpp:1067) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'imgRB' (prj/sol/.autopilot/db/v_demosaic.cpp:1067) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-712] Applying dataflow to function 'Debayer' (prj/sol/.autopilot/db/v_demosaic.cpp:1067:1), detected/extracted 3 process function(s): 
+	 'DebayerG'
+	 'DebayerRatBorBatR'
+	 'DebayerRandBatG'.
+INFO: [XFORM 203-712] Applying dataflow to function 'v_demosaic' (prj/sol/.autopilot/db/v_demosaic.cpp:89), detected/extracted 5 process function(s): 
+	 'entry_proc'
+	 'AXIvideo2MultiBayer'
+	 'Debayer'
+	 'ZipperRemoval'
+	 'MultiPixStream2AXIvideo'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.autopilot/db/v_demosaic.cpp:1089:33) to (prj/sol/.autopilot/db/v_demosaic.cpp:1089:33) in function 'ZipperRemoval'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.autopilot/db/v_demosaic.cpp:1090:30) to (prj/sol/.autopilot/db/v_demosaic.cpp:1090:30) in function 'ZipperRemoval'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.autopilot/db/v_demosaic.cpp:1091:30) to (prj/sol/.autopilot/db/v_demosaic.cpp:1091:30) in function 'ZipperRemoval'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.autopilot/db/v_demosaic.cpp:1092:30) to (prj/sol/.autopilot/db/v_demosaic.cpp:1092:30) in function 'ZipperRemoval'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.autopilot/db/v_demosaic.cpp:1129:51) to (prj/sol/.autopilot/db/v_demosaic.cpp:1159:17) in function 'ZipperRemoval'... converting 4 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.autopilot/db/v_demosaic.cpp:1009:27) to (prj/sol/.autopilot/db/v_demosaic.cpp:1052:27) in function 'DebayerRandBatG'... converting 6 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (prj/sol/.autopilot/db/v_demosaic.cpp:439:65) to (prj/sol/.autopilot/db/v_demosaic.cpp:585:27) in function 'DebayerG'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.62 seconds. CPU system time: 0.07 seconds. Elapsed time: 0.87 seconds; current allocated memory: 303.449 MB.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'lineBuffer.1' (prj/sol/.autopilot/db/v_demosaic.cpp:614).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'lineBuffer' (prj/sol/.autopilot/db/v_demosaic.cpp:614).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'lineBuffer.1' (prj/sol/.autopilot/db/v_demosaic.cpp:614).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'lineBuffer' (prj/sol/.autopilot/db/v_demosaic.cpp:614).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'lineBuffer.2' (prj/sol/.autopilot/db/v_demosaic.cpp:862).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'lineBuffer' (prj/sol/.autopilot/db/v_demosaic.cpp:862).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'lineBuffer.2' (prj/sol/.autopilot/db/v_demosaic.cpp:862).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'lineBuffer' (prj/sol/.autopilot/db/v_demosaic.cpp:862).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_yuv.3' (prj/sol/.autopilot/db/v_demosaic.cpp:283).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_yuv.2' (prj/sol/.autopilot/db/v_demosaic.cpp:283).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_yuv.1' (prj/sol/.autopilot/db/v_demosaic.cpp:283).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'linebuf_yuv' (prj/sol/.autopilot/db/v_demosaic.cpp:283).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_yuv.3' (prj/sol/.autopilot/db/v_demosaic.cpp:283).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_yuv.2' (prj/sol/.autopilot/db/v_demosaic.cpp:283).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_yuv.1' (prj/sol/.autopilot/db/v_demosaic.cpp:283).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'linebuf_yuv' (prj/sol/.autopilot/db/v_demosaic.cpp:283).
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.67 seconds. CPU system time: 0.09 seconds. Elapsed time: 0.78 seconds; current allocated memory: 462.500 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'v_demosaic' ...
+WARNING: [SYN 201-103] Legalizing function name 'reg<unsigned short>' to 'reg_unsigned_short_s'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.07 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.14 seconds; current allocated memory: 463.016 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 463.016 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'reg<unsigned short>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, function 'reg<unsigned short>'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 464.301 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 464.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiBayer_Pipeline_loop_wait_for_start' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_start'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop_wait_for_start'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 464.383 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 464.383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiBayer_Pipeline_loop_width' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_width'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'loop_width'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 464.875 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 464.875 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiBayer_Pipeline_loop_wait_for_eol' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_wait_for_eol'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop_wait_for_eol'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 465.164 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 465.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2MultiBayer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 465.590 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 465.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerG_Pipeline_VITIS_LOOP_318_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln504_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln504) to 3 in order to utilize available DSP registers.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_318_4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 8, loop 'VITIS_LOOP_318_4'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.68 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.85 seconds; current allocated memory: 473.012 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'linebuf_yuv_3' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'linebuf_yuv_2' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'linebuf_yuv_1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'linebuf_yuv' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.17 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.21 seconds; current allocated memory: 473.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.16 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.25 seconds; current allocated memory: 473.012 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 473.012 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerRatBorBatR_Pipeline_VITIS_LOOP_633_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_633_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_633_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.34 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.34 seconds; current allocated memory: 475.152 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'lineBuffer_1' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'lineBuffer' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.09 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 475.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerRatBorBatR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 475.152 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 475.152 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerRandBatG_Pipeline_VITIS_LOOP_881_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+WARNING: [HLS 200-2042] Usage of URAM can potentially cause worse II as Vitis HLS does not exploit read-first mode for URAMs. Consider using BRAMs instead.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_881_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_881_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.25 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.31 seconds; current allocated memory: 477.141 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+WARNING: [BIND 205-102] The specified resource core for memory 'lineBuffer_2' will be ignored if a simpler one can be used.
+WARNING: [BIND 205-102] The specified resource core for memory 'lineBuffer' will be ignored if a simpler one can be used.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.09 seconds; current allocated memory: 477.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DebayerRandBatG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 477.141 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 477.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Debayer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 477.141 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 477.141 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ZipperRemoval_Pipeline_VITIS_LOOP_1101_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1101_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'VITIS_LOOP_1101_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.08 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 478.195 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 478.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'ZipperRemoval' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 478.195 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 478.195 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_230_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_230_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_230_2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 478.395 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 478.395 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MultiPixStream2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 478.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 478.730 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'v_demosaic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 479.113 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 479.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.07 seconds; current allocated memory: 479.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'reg_unsigned_short_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'reg_unsigned_short_s' pipeline 'reg<unsigned short>' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'reg_unsigned_short_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 479.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiBayer_Pipeline_loop_wait_for_start' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiBayer_Pipeline_loop_wait_for_start'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 479.113 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiBayer_Pipeline_loop_width' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AXIvideo2MultiBayer_Pipeline_loop_width' pipeline 'loop_width' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiBayer_Pipeline_loop_width'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 479.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiBayer_Pipeline_loop_wait_for_eol' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiBayer_Pipeline_loop_wait_for_eol'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 480.988 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2MultiBayer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2MultiBayer'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.09 seconds; current allocated memory: 481.930 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerG_Pipeline_VITIS_LOOP_318_4' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'DebayerG_Pipeline_VITIS_LOOP_318_4' pipeline 'VITIS_LOOP_318_4' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_14s_10ns_24s_25_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_14s_10ns_24_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_18s_8ns_18_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_18s_9ns_18_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerG_Pipeline_VITIS_LOOP_318_4'.
+INFO: [HLS 200-2168] Implementing memory 'video_pipe_hw_v_demosaic_0_0_DebayerG_Pipeline_VITIS_LOOP_318_4_DIV1_TABLE_ROM_AUTO_1R' using auto ROMs with 4 copies to ensure enough ports to satisfy II or latency constraints.
+INFO: [RTMG 210-279] Implementing memory 'video_pipe_hw_v_demosaic_0_0_DebayerG_Pipeline_VITIS_LOOP_318_4_DIV2_TABLE_ROM_AUTO_1R' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'video_pipe_hw_v_demosaic_0_0_DebayerG_Pipeline_VITIS_LOOP_318_4_linebuf_yuv_3_XPM_MEMORY_URAM_1R1W' using ultra RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.23 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.26 seconds; current allocated memory: 488.812 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerG'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.34 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.38 seconds; current allocated memory: 504.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerRatBorBatR_Pipeline_VITIS_LOOP_633_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'DebayerRatBorBatR_Pipeline_VITIS_LOOP_633_2' pipeline 'VITIS_LOOP_633_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerRatBorBatR_Pipeline_VITIS_LOOP_633_2'.
+INFO: [RTMG 210-278] Implementing memory 'video_pipe_hw_v_demosaic_0_0_DebayerRatBorBatR_Pipeline_VITIS_LOOP_633_2_lineBuffer_1_XPM_MEMORY_URAM_1R1W' using ultra RAMs.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.15 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.16 seconds; current allocated memory: 504.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerRatBorBatR' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerRatBorBatR'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.03 seconds. Elapsed time: 0.2 seconds; current allocated memory: 510.199 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerRandBatG_Pipeline_VITIS_LOOP_881_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'DebayerRandBatG_Pipeline_VITIS_LOOP_881_2' pipeline 'VITIS_LOOP_881_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerRandBatG_Pipeline_VITIS_LOOP_881_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.13 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.14 seconds; current allocated memory: 510.418 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DebayerRandBatG' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DebayerRandBatG'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.17 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.19 seconds; current allocated memory: 518.676 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Debayer' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Setting dangling out port 'Debayer/imgRgb_read' to 0.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Debayer'.
+INFO: [RTMG 210-285] Implementing FIFO 'imgG_U(video_pipe_hw_v_demosaic_0_0_fifo_w30_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_val4_c3_U(video_pipe_hw_v_demosaic_0_0_fifo_w11_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_val8_c4_U(video_pipe_hw_v_demosaic_0_0_fifo_w11_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bayerPhase_val11_c5_U(video_pipe_hw_v_demosaic_0_0_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRB_U(video_pipe_hw_v_demosaic_0_0_fifo_w30_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'height_val4_c_U(video_pipe_hw_v_demosaic_0_0_fifo_w11_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'width_val8_c_U(video_pipe_hw_v_demosaic_0_0_fifo_w11_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'bayerPhase_val11_c_U(video_pipe_hw_v_demosaic_0_0_fifo_w16_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_DebayerRatBorBatR_U0_U(video_pipe_hw_v_demosaic_0_0_start_for_DebayerRatBorBatR_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_DebayerRandBatG_U0_U(video_pipe_hw_v_demosaic_0_0_start_for_DebayerRandBatG_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 519.305 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ZipperRemoval_Pipeline_VITIS_LOOP_1101_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'ZipperRemoval_Pipeline_VITIS_LOOP_1101_2' pipeline 'VITIS_LOOP_1101_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ZipperRemoval_Pipeline_VITIS_LOOP_1101_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.08 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.09 seconds; current allocated memory: 520.738 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'ZipperRemoval' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'ZipperRemoval'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.09 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.1 seconds; current allocated memory: 523.402 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_230_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_230_2' pipeline 'VITIS_LOOP_230_2' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_230_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 524.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MultiPixStream2AXIvideo' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MultiPixStream2AXIvideo'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.07 seconds; current allocated memory: 525.434 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'v_demosaic' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/width' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/height' to 's_axilite & ap_stable'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/bayer_phase' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'v_demosaic/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'v_demosaic' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'width', 'height', 'bayer_phase' and 'return' to AXI-Lite port CTRL.
+WARNING: [RTGEN 206-101] RTL name 'fifo_w30_d2_S' is changed to 'fifo_w30_d2_S_x' due to conflict.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'v_demosaic'.
+INFO: [RTMG 210-285] Implementing FIFO 'bayer_phase_c_U(video_pipe_hw_v_demosaic_0_0_fifo_w16_d3_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgBayer_U(video_pipe_hw_v_demosaic_0_0_fifo_w10_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgRgb_U(video_pipe_hw_v_demosaic_0_0_fifo_w30_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'imgUnzip_U(video_pipe_hw_v_demosaic_0_0_fifo_w30_d2_S_x)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_Debayer_U0_U(video_pipe_hw_v_demosaic_0_0_start_for_Debayer_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_ZipperRemoval_U0_U(video_pipe_hw_v_demosaic_0_0_start_for_ZipperRemoval_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_MultiPixStream2AXIvideo_U0_U(video_pipe_hw_v_demosaic_0_0_start_for_MultiPixStream2AXIvideo_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.08 seconds; current allocated memory: 526.477 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.41 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.47 seconds; current allocated memory: 528.012 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 1.12 seconds. CPU system time: 0.19 seconds. Elapsed time: 1.32 seconds; current allocated memory: 542.000 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for v_demosaic with prefix video_pipe_hw_v_demosaic_0_0_.
+INFO: [VLOG 209-307] Generating Verilog RTL for v_demosaic with prefix video_pipe_hw_v_demosaic_0_0_.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 78.39 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:01:10; Allocated memory: 298.363 MB.
+INFO: [HLS 200-1510] Running: export_design -format ip_catalog 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Fri Sep 18 14:28:48 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/sol_data.json outdir=/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/impl/ip srcdir=/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol ippack_options_dict=subcore_use_xci_files false ippack_options_dict=subcore_use_xci_files false
+INFO: Copied 1 ipmisc file(s) to /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/impl/ip/misc
+INFO: Copied 48 verilog file(s) to /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/impl/ip/hdl/verilog
+INFO: Copied 40 vhdl file(s) to /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/impl/ip/hdl/vhdl
+INFO: Copied 10 swdriver file(s) to /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/impl/ip/drivers
+ipx::create_core: Time (s): cpu = 00:00:48 ; elapsed = 00:00:09 . Memory (MB): peak = 1920.539 ; gain = 402.059 ; free physical = 3394 ; free virtual = 16516
+INFO: Import ports from HDL: /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/impl/ip/hdl/vhdl/video_pipe_hw_v_demosaic_0_0_v_demosaic.vhd (video_pipe_hw_v_demosaic_0_0_v_demosaic)
+INFO: Add axi4lite interface s_axi_CTRL
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add interrupt interface interrupt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alen/AMD-Xilinx/2025.2/data/ip'.
+INFO: Add axi4stream interface s_axis_video
+INFO: Add axi4stream interface m_axis_video
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/impl/ip/component.xml
+INFO: Created IP archive /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/impl/ip/xilinx_com_ip_v_demosaic_1_1.zip
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 18 14:29:01 2026...
+INFO: [HLS 200-802] Generated output file prj/sol/impl/export.zip
+INFO: [HLS 200-2161] Finished Command export_design Elapsed time: 00:00:15; Allocated memory: 4.371 MB.
+INFO: [HLS 200-112] Total CPU user time: 118.88 seconds. Total CPU system time: 10.48 seconds. Total elapsed time: 88.28 seconds; peak allocated memory: 546.371 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 30s
+INFO: [vitis-run 60-1662] Stopping dispatch session having empty uuid.

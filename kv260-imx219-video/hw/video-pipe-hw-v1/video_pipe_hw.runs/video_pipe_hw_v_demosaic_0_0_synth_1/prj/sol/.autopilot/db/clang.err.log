@@ -1,0 +1,31 @@
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:102:23: warning: 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE ap_stable port=width
+                      ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:104:23: warning: 'Ap_stable' in '#pragma HLS INTERFACE' is deprecated, use 'Stable Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS INTERFACE ap_stable port=height
+                      ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:286:13: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=&linebuf_yuv core=XPM_MEMORY uram
+            ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:286:64: warning: 'xpm_memory' in '#pragma HLS Resource' is deprecated, use 'Bind_Storage Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=&linebuf_yuv core=XPM_MEMORY uram
+                                                               ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:286:31: warning: extra token before variable expression is ignored [-Wextra-tokens]
+#pragma HLS RESOURCE variable=&linebuf_yuv core=XPM_MEMORY uram
+                              ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:617:13: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=lineBuffer core=XPM_MEMORY uram
+            ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:617:62: warning: 'xpm_memory' in '#pragma HLS Resource' is deprecated, use 'Bind_Storage Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=lineBuffer core=XPM_MEMORY uram
+                                                             ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:865:13: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=&lineBuffer core=XPM_MEMORY uram
+            ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:865:63: warning: 'xpm_memory' in '#pragma HLS Resource' is deprecated, use 'Bind_Storage Pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=&lineBuffer core=XPM_MEMORY uram
+                                                              ^
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v1/video_pipe_hw.runs/video_pipe_hw_v_demosaic_0_0_synth_1/prj/sol/.autopilot/db/v_demosaic.cpp:865:31: warning: extra token before variable expression is ignored [-Wextra-tokens]
+#pragma HLS RESOURCE variable=&lineBuffer core=XPM_MEMORY uram
+                              ^
+10 warnings generated.
