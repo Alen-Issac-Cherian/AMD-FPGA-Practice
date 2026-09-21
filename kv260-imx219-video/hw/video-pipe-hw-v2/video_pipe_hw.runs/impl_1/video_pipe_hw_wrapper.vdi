@@ -1,0 +1,1505 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Sep 21 10:33:12 2026
+# Process ID         : 288568
+# Current directory  : /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1
+# Command line       : vivado -log video_pipe_hw_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source video_pipe_hw_wrapper.tcl -notrace
+# Log file           : /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/video_pipe_hw_wrapper.vdi
+# Journal file       : /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/vivado.jou
+# Running On         : alen-HP-Pavilion-Laptop-14-ec0xxx
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics
+# CPU Frequency      : 2383.987 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 32934 MB
+# Swap memory        : 8000 MB
+# Total Virtual      : 40934 MB
+# Available Virtual  : 29608 MB
+#-----------------------------------------------------------
+source video_pipe_hw_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:06 . Memory (MB): peak = 1880.566 ; gain = 392.059 ; free physical = 11181 ; free virtual = 27518
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alen/git/vivado-library/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alen/AMD-Xilinx/2025.2/data/ip'.
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2597.246 ; gain = 181.102 ; free physical = 10430 ; free virtual = 26767
+Command: link_design -top video_pipe_hw_wrapper -part xck26-sfvc784-2LV-c
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
+INFO: [Project 1-5699] Read binary netlist with skipMacroContent - 1
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_0/video_pipe_hw_axi_smc_0.dcp' for cell 'video_pipe_hw_i/axi_smc'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_1_0/video_pipe_hw_axi_smc_1_0.dcp' for cell 'video_pipe_hw_i/axi_smc_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_2_0/video_pipe_hw_axi_smc_2_0.dcp' for cell 'video_pipe_hw_i/axi_smc_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_0/video_pipe_hw_axi_vdma_0_0.dcp' for cell 'video_pipe_hw_i/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_0_0/video_pipe_hw_clk_wiz_0_0.dcp' for cell 'video_pipe_hw_i/clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_1_0/video_pipe_hw_clk_wiz_1_0.dcp' for cell 'video_pipe_hw_i/clk_wiz_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/video_pipe_hw_mipi_csi2_rx_subsyst_0_0.dcp' for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_proc_sys_reset_0_0/video_pipe_hw_proc_sys_reset_0_0.dcp' for cell 'video_pipe_hw_i/proc_sys_reset_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_proc_sys_reset_1_0/video_pipe_hw_proc_sys_reset_1_0.dcp' for cell 'video_pipe_hw_i/proc_sys_reset_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/video_pipe_hw_system_ila_0_0.dcp' for cell 'video_pipe_hw_i/system_ila_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/video_pipe_hw_system_ila_0_1.dcp' for cell 'video_pipe_hw_i/system_ila_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_axi4s_vid_out_0_0/video_pipe_hw_v_axi4s_vid_out_0_0.dcp' for cell 'video_pipe_hw_i/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/video_pipe_hw_v_demosaic_0_0.dcp' for cell 'video_pipe_hw_i/v_demosaic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_tc_0_0/video_pipe_hw_v_tc_0_0.dcp' for cell 'video_pipe_hw_i/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_vio_0_0/video_pipe_hw_vio_0_0.dcp' for cell 'video_pipe_hw_i/vio_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_zynq_ultra_ps_e_0_1/video_pipe_hw_zynq_ultra_ps_e_0_1.dcp' for cell 'video_pipe_hw_i/zynq_ultra_ps_e_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_0c52_phy_0.dcp' for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_3/bd_0c52_r_sync_0.dcp' for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/r_sync'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_1/bd_0c52_rx_0.dcp' for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx'
+INFO: [Project 1-454] Reading design checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_2/bd_0c52_vfb_0_0.dcp' for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/vfb_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00.61 ; elapsed = 00:00:00.61 . Memory (MB): peak = 3624.723 ; gain = 0.000 ; free physical = 9415 ; free virtual = 25752
+INFO: [Netlist 29-17] Analyzing 947 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2025.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. video_pipe_hw_i/clk_wiz_0/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. video_pipe_hw_i/clk_wiz_1/inst/clkin1_ibuf 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'video_pipe_hw_i/clk_wiz_0/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'video_pipe_hw_i/clk_wiz_1/clk_in1' is not directly connected to top level port. 'IBUF_LOW_PWR' is ignored for synthesis but preserved for implementation.
+INFO: [Chipscope 16-324] Core: video_pipe_hw_i/system_ila_0/inst/ila_lib UUID: db8023fe-d432-530e-9fe3-7f0f034f7a51 
+INFO: [Chipscope 16-324] Core: video_pipe_hw_i/system_ila_1/inst/ila_lib UUID: fbe04fd3-f0ff-597d-ac5e-a51ca111085e 
+INFO: [Chipscope 16-324] Core: video_pipe_hw_i/vio_0 UUID: 7ea80fbc-b2f6-5144-8144-bc19047e8560 
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_zynq_ultra_ps_e_0_1/video_pipe_hw_zynq_ultra_ps_e_0_1.xdc] for cell 'video_pipe_hw_i/zynq_ultra_ps_e_0/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_zynq_ultra_ps_e_0_1/video_pipe_hw_zynq_ultra_ps_e_0_1.xdc] for cell 'video_pipe_hw_i/zynq_ultra_ps_e_0/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/ip_0/bd_0c52_phy_0_hssio_rx.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_0c52_phy_0_rx_support_i/slave_rx.bd_0c52_phy_0_rx_hssio_i/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/ip_0/bd_0c52_phy_0_hssio_rx.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_0c52_phy_0_rx_support_i/slave_rx.bd_0c52_phy_0_rx_hssio_i/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_0c52_phy_0.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_0c52_phy_0.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_3/bd_0c52_r_sync_0_board.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/r_sync/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_3/bd_0c52_r_sync_0_board.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/r_sync/U0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/video_pipe_hw_mipi_csi2_rx_subsyst_0_0_board.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/video_pipe_hw_mipi_csi2_rx_subsyst_0_0_board.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_0/video_pipe_hw_axi_vdma_0_0.xdc] for cell 'video_pipe_hw_i/axi_vdma_0/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_0/video_pipe_hw_axi_vdma_0_0.xdc] for cell 'video_pipe_hw_i/axi_vdma_0/U0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_0_0/video_pipe_hw_clk_wiz_0_0_board.xdc] for cell 'video_pipe_hw_i/clk_wiz_0/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_0_0/video_pipe_hw_clk_wiz_0_0_board.xdc] for cell 'video_pipe_hw_i/clk_wiz_0/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_0_0/video_pipe_hw_clk_wiz_0_0.xdc] for cell 'video_pipe_hw_i/clk_wiz_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_0_0/video_pipe_hw_clk_wiz_0_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_0_0/video_pipe_hw_clk_wiz_0_0.xdc:54]
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_0_0/video_pipe_hw_clk_wiz_0_0.xdc] for cell 'video_pipe_hw_i/clk_wiz_0/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_1_0/video_pipe_hw_clk_wiz_1_0_board.xdc] for cell 'video_pipe_hw_i/clk_wiz_1/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_1_0/video_pipe_hw_clk_wiz_1_0_board.xdc] for cell 'video_pipe_hw_i/clk_wiz_1/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_1_0/video_pipe_hw_clk_wiz_1_0.xdc] for cell 'video_pipe_hw_i/clk_wiz_1/inst'
+INFO: [Timing 38-2] Deriving generated clocks [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_1_0/video_pipe_hw_clk_wiz_1_0.xdc:54]
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_clk_wiz_1_0/video_pipe_hw_clk_wiz_1_0.xdc] for cell 'video_pipe_hw_i/clk_wiz_1/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_proc_sys_reset_0_0/video_pipe_hw_proc_sys_reset_0_0_board.xdc] for cell 'video_pipe_hw_i/proc_sys_reset_0/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_proc_sys_reset_0_0/video_pipe_hw_proc_sys_reset_0_0_board.xdc] for cell 'video_pipe_hw_i/proc_sys_reset_0/U0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_proc_sys_reset_1_0/video_pipe_hw_proc_sys_reset_1_0_board.xdc] for cell 'video_pipe_hw_i/proc_sys_reset_1/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_proc_sys_reset_1_0/video_pipe_hw_proc_sys_reset_1_0_board.xdc] for cell 'video_pipe_hw_i/proc_sys_reset_1/U0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_0/bd_0/ip/ip_1/bd_281b_psr_aclk_0_board.xdc] for cell 'video_pipe_hw_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_0/bd_0/ip/ip_1/bd_281b_psr_aclk_0_board.xdc] for cell 'video_pipe_hw_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_0/smartconnect.xdc] for cell 'video_pipe_hw_i/axi_smc/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_0/smartconnect.xdc] for cell 'video_pipe_hw_i/axi_smc/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_1_0/bd_0/ip/ip_1/bd_ca62_psr_aclk_0_board.xdc] for cell 'video_pipe_hw_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_1_0/bd_0/ip/ip_1/bd_ca62_psr_aclk_0_board.xdc] for cell 'video_pipe_hw_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_1_0/smartconnect.xdc] for cell 'video_pipe_hw_i/axi_smc_1/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_1_0/smartconnect.xdc] for cell 'video_pipe_hw_i/axi_smc_1/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_2_0/bd_0/ip/ip_1/bd_ca92_psr_aclk_0_board.xdc] for cell 'video_pipe_hw_i/axi_smc_2/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_2_0/bd_0/ip/ip_1/bd_ca92_psr_aclk_0_board.xdc] for cell 'video_pipe_hw_i/axi_smc_2/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_2_0/smartconnect.xdc] for cell 'video_pipe_hw_i/axi_smc_2/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_2_0/smartconnect.xdc] for cell 'video_pipe_hw_i/axi_smc_2/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_vio_0_0/video_pipe_hw_vio_0_0.xdc] for cell 'video_pipe_hw_i/vio_0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_vio_0_0/video_pipe_hw_vio_0_0.xdc] for cell 'video_pipe_hw_i/vio_0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'video_pipe_hw_i/system_ila_0/inst/ila_lib/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc:31]
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'video_pipe_hw_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'video_pipe_hw_i/system_ila_0/inst/ila_lib/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc:108]
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'video_pipe_hw_i/system_ila_0/inst/ila_lib/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'video_pipe_hw_i/system_ila_1/inst/ila_lib/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc:31]
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'video_pipe_hw_i/system_ila_1/inst/ila_lib/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'video_pipe_hw_i/system_ila_1/inst/ila_lib/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc:108]
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc] for cell 'video_pipe_hw_i/system_ila_1/inst/ila_lib/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/XDC/pinmap.xdc]
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/XDC/pinmap.xdc]
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_0c52_phy_0_clocks.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/bd_0/ip/ip_0/bd_0c52_phy_0_clocks.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/video_pipe_hw_mipi_csi2_rx_subsyst_0_0_fixed_impl.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_mipi_csi2_rx_subsyst_0_0/video_pipe_hw_mipi_csi2_rx_subsyst_0_0_fixed_impl.xdc] for cell 'video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/video_pipe_hw_v_demosaic_0_0.xdc] for cell 'video_pipe_hw_i/v_demosaic_0/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_demosaic_0_0/video_pipe_hw_v_demosaic_0_0.xdc] for cell 'video_pipe_hw_i/v_demosaic_0/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_0/video_pipe_hw_axi_vdma_0_0_clocks.xdc] for cell 'video_pipe_hw_i/axi_vdma_0/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_0/video_pipe_hw_axi_vdma_0_0_clocks.xdc] for cell 'video_pipe_hw_i/axi_vdma_0/U0'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_axi4s_vid_out_0_0/video_pipe_hw_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'video_pipe_hw_i/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_axi4s_vid_out_0_0/video_pipe_hw_v_axi4s_vid_out_0_0_clocks.xdc] for cell 'video_pipe_hw_i/v_axi4s_vid_out_0/inst'
+Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_tc_0_0/video_pipe_hw_v_tc_0_0_clocks.xdc] for cell 'video_pipe_hw_i/v_tc_0/U0'
+Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_v_tc_0_0/video_pipe_hw_v_tc_0_0_clocks.xdc] for cell 'video_pipe_hw_i/v_tc_0/U0'
+WARNING: [XPM_CDC_ARRAY_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/xpm_array_single_01 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl:5]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.wr_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_GRAY: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_cdc_pntr.rd_pntr_cdc_dc_inst 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl:16]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[44].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[0].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[9].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[10].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[11].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[12].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[13].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[14].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[15].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[16].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[17].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[18].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[1].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[19].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[20].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[21].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[22].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[23].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[24].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[25].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[26].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[27].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[28].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[2].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[29].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[30].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[31].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[32].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[33].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[34].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[35].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[36].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[37].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[38].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[3].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[39].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[40].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[41].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[42].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[43].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[4].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[5].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[6].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[7].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/HSC2R_CDC[8].hsc2r_bus_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.isr_cdc/ecc_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_HANDSHAKE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/img_info_cdc 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl:19]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/xpm_single_05 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/xpm_single_02 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/xpm_single_vfb_01 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_RESET_FOR_ASYNC.AXIS_RESET_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_RESET_FOR_ASYNC.AXIS_RESET_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.AXIS_MIN_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_IDLE_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.LITE_MIN_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.AXIS_IDLE_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_MIN_FOR_ASYNC.AXIS_MIN_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_S2MM.RESET_I/GEN_RESET_FOR_ASYNC.HARD_RESET_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_IDLE_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.LITE_MIN_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/I_RST_MODULE/GEN_RESET_FOR_MM2S.RESET_I/GEN_MIN_FOR_ASYNC.AXIS_IDLE_CDC_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/AXI_LITE_REG_INTERFACE_I/GEN_S2MM_LITE_CROSSINGS.GEN_S2MM_CROSSINGS_ASYNC.S2MM_INTRPT_CROSSING_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+WARNING: [XPM_CDC_SINGLE: TCL-1000] The source and destination clocks are the same. 
+     Instance: video_pipe_hw_i/axi_vdma_0/U0/AXI_LITE_REG_INTERFACE_I/GEN_MM2S_LITE_CROSSINGS.GEN_MM2S_CROSSINGS_ASYNC.MM2S_INTRPT_CROSSING_I 
+  This will add unnecessary latency to the design. Please check the design for the following: 
+ 1) Manually instantiated XPM_CDC modules: AMD recommends that you remove these modules. 
+ 2) AMD IP that contains XPM_CDC modules: Verify the connections to the IP to determine whether you can safely ignore this message.
+ [/home/alen/AMD-Xilinx/2025.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl:5]
+INFO: [Project 1-1714] 397 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 4 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4558.094 ; gain = 0.000 ; free physical = 8693 ; free virtual = 25030
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 217 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 124 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+  IBUFDS_DPHY => IBUFDS_DPHY (DPHY_DIFFINBUF, IBUFCTRL): 3 instances
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 2 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 73 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+39 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:36 . Memory (MB): peak = 4558.129 ; gain = 1960.883 ; free physical = 8693 ; free virtual = 25030
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:00.8 . Memory (MB): peak = 4561.062 ; gain = 2.934 ; free physical = 8656 ; free virtual = 24993
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 31ba0d267
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 4561.062 ; gain = 0.000 ; free physical = 8636 ; free virtual = 24973
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4929.625 ; gain = 0.000 ; free physical = 7960 ; free virtual = 24336
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 4929.625 ; gain = 0.000 ; free physical = 7976 ; free virtual = 24353
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 2bf150ef4
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:15 . Memory (MB): peak = 4929.625 ; gain = 19.844 ; free physical = 7976 ; free virtual = 24353
+Phase 1.1 Core Generation And Design Setup | Checksum: 2bf150ef4
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:15 . Memory (MB): peak = 4929.625 ; gain = 19.844 ; free physical = 7976 ; free virtual = 24353
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 2bf150ef4
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:15 . Memory (MB): peak = 4929.625 ; gain = 19.844 ; free physical = 7976 ; free virtual = 24353
+Phase 1 Initialization | Checksum: 2bf150ef4
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:15 . Memory (MB): peak = 4929.625 ; gain = 19.844 ; free physical = 7976 ; free virtual = 24353
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 2bf150ef4
+
+Time (s): cpu = 00:03:21 ; elapsed = 00:02:15 . Memory (MB): peak = 4945.625 ; gain = 35.844 ; free physical = 7961 ; free virtual = 24338
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 2bf150ef4
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:02:16 . Memory (MB): peak = 4945.625 ; gain = 35.844 ; free physical = 7972 ; free virtual = 24349
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 2bf150ef4
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:02:16 . Memory (MB): peak = 4945.625 ; gain = 35.844 ; free physical = 7972 ; free virtual = 24349
+Phase 2 Timer Update And Timing Data Collection | Checksum: 2bf150ef4
+
+Time (s): cpu = 00:03:25 ; elapsed = 00:02:16 . Memory (MB): peak = 4945.625 ; gain = 35.844 ; free physical = 7972 ; free virtual = 24349
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 7 inverters resulting in an inversion of 73 pins
+INFO: [Opt 31-138] Pushed 191 inverter(s) to 5602 load pin(s).
+INFO: [Opt 31-925] Fixed cascade connection for DSP: video_pipe_hw_i/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_200/mac_muladd_14s_10ns_24s_25_4_1_U62/video_pipe_hw_v_demosaic_0_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_0_U/p_reg_reg
+INFO: [Opt 31-925] Fixed cascade connection for DSP: video_pipe_hw_i/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_200/mac_muladd_14s_10ns_24s_25_4_1_U63/video_pipe_hw_v_demosaic_0_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_0_U/p_reg_reg
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 29036a885
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:02:17 . Memory (MB): peak = 4945.625 ; gain = 35.844 ; free physical = 7981 ; free virtual = 24358
+Retarget | Checksum: 29036a885
+INFO: [Opt 31-389] Phase Retarget created 286 cells and removed 1349 cells
+INFO: [Opt 31-1021] In phase Retarget, 426 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 3189b88ef
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:02:18 . Memory (MB): peak = 4945.625 ; gain = 35.844 ; free physical = 7981 ; free virtual = 24358
+Constant propagation | Checksum: 3189b88ef
+INFO: [Opt 31-389] Phase Constant propagation created 38 cells and removed 765 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 819 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4945.625 ; gain = 0.000 ; free physical = 7976 ; free virtual = 24360
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4945.625 ; gain = 0.000 ; free physical = 7983 ; free virtual = 24367
+Phase 5 Sweep | Checksum: 2ef1177f8
+
+Time (s): cpu = 00:03:30 ; elapsed = 00:02:20 . Memory (MB): peak = 4945.625 ; gain = 35.844 ; free physical = 7984 ; free virtual = 24366
+Sweep | Checksum: 2ef1177f8
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 2933 cells
+INFO: [Opt 31-1021] In phase Sweep, 2405 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: 2ef1177f8
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:21 . Memory (MB): peak = 4977.641 ; gain = 67.859 ; free physical = 7984 ; free virtual = 24365
+BUFG optimization | Checksum: 2ef1177f8
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 2ef1177f8
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:21 . Memory (MB): peak = 4977.641 ; gain = 67.859 ; free physical = 7984 ; free virtual = 24365
+Shift Register Optimization | Checksum: 2ef1177f8
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 319b6ff91
+
+Time (s): cpu = 00:03:31 ; elapsed = 00:02:21 . Memory (MB): peak = 4977.641 ; gain = 67.859 ; free physical = 7993 ; free virtual = 24372
+Post Processing Netlist | Checksum: 319b6ff91
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 401 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 36c70a71e
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:02:22 . Memory (MB): peak = 4977.641 ; gain = 67.859 ; free physical = 7985 ; free virtual = 24364
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4977.641 ; gain = 0.000 ; free physical = 7985 ; free virtual = 24364
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 36c70a71e
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:02:22 . Memory (MB): peak = 4977.641 ; gain = 67.859 ; free physical = 7985 ; free virtual = 24364
+Phase 9 Finalization | Checksum: 36c70a71e
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:02:22 . Memory (MB): peak = 4977.641 ; gain = 67.859 ; free physical = 7985 ; free virtual = 24364
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             286  |            1349  |                                            426  |
+|  Constant propagation         |              38  |             765  |                                            819  |
+|  Sweep                        |               0  |            2933  |                                           2405  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            401  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 36c70a71e
+
+Time (s): cpu = 00:03:32 ; elapsed = 00:02:22 . Memory (MB): peak = 4977.641 ; gain = 67.859 ; free physical = 7985 ; free virtual = 24364
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 5 BRAM(s) out of a total of 26 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 3 WE to EN ports
+Number of BRAM Ports augmented: 19 newly gated: 3 Total Ports: 52
+Ending PowerOpt Patch Enables Task | Checksum: 2ac7d62b5
+
+Time (s): cpu = 00:00:00.39 ; elapsed = 00:00:00.33 . Memory (MB): peak = 5145.691 ; gain = 0.000 ; free physical = 7940 ; free virtual = 24309
+Ending Power Optimization Task | Checksum: 2ac7d62b5
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 5145.691 ; gain = 168.051 ; free physical = 7940 ; free virtual = 24309
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 2eb805c5c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:03 . Memory (MB): peak = 5145.691 ; gain = 0.000 ; free physical = 7939 ; free virtual = 24309
+Ending Final Cleanup Task | Checksum: 2eb805c5c
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 5145.691 ; gain = 0.000 ; free physical = 7939 ; free virtual = 24309
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5145.691 ; gain = 0.000 ; free physical = 7939 ; free virtual = 24309
+INFO: [Common 17-83] Releasing license: Implementation
+80 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:04:14 ; elapsed = 00:02:41 . Memory (MB): peak = 5145.691 ; gain = 587.562 ; free physical = 7939 ; free virtual = 24309
+INFO: [Vivado 12-24828] Executing command : report_drc -file video_pipe_hw_wrapper_drc_opted.rpt -pb video_pipe_hw_wrapper_drc_opted.pb -rpx video_pipe_hw_wrapper_drc_opted.rpx
+Command: report_drc -file video_pipe_hw_wrapper_drc_opted.rpt -pb video_pipe_hw_wrapper_drc_opted.pb -rpx video_pipe_hw_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/video_pipe_hw_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:33 ; elapsed = 00:00:16 . Memory (MB): peak = 5471.777 ; gain = 326.086 ; free physical = 7531 ; free virtual = 23902
+generate_parallel_reports: Time (s): cpu = 00:00:33 ; elapsed = 00:00:16 . Memory (MB): peak = 5471.777 ; gain = 326.086 ; free physical = 7531 ; free virtual = 23902
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 5471.777 ; gain = 0.000 ; free physical = 7531 ; free virtual = 23902
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5471.777 ; gain = 0.000 ; free physical = 7531 ; free virtual = 23902
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.3 ; elapsed = 00:00:00.07 . Memory (MB): peak = 5471.777 ; gain = 0.000 ; free physical = 7527 ; free virtual = 23902
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.52 ; elapsed = 00:00:00.13 . Memory (MB): peak = 5471.777 ; gain = 0.000 ; free physical = 7526 ; free virtual = 23901
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5471.777 ; gain = 0.000 ; free physical = 7526 ; free virtual = 23901
+Wrote Device Cache: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5471.777 ; gain = 0.000 ; free physical = 7525 ; free virtual = 23902
+Write Physdb Complete: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.17 . Memory (MB): peak = 5471.777 ; gain = 0.000 ; free physical = 7525 ; free virtual = 23902
+INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/video_pipe_hw_wrapper_opt.dcp' has been generated.
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7508 ; free virtual = 23891
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 2aa7f37a6
+
+Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7508 ; free virtual = 23891
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7512 ; free virtual = 23895
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1352847ac
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7526 ; free virtual = 23914
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 21a1105b6
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7424 ; free virtual = 23857
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 21a1105b6
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7419 ; free virtual = 23853
+Phase 1 Placer Initialization | Checksum: 21a1105b6
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7418 ; free virtual = 23852
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 19580fa31
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:20 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7395 ; free virtual = 23827
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 20a38e10f
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:21 . Memory (MB): peak = 5671.875 ; gain = 0.000 ; free physical = 7382 ; free virtual = 23815
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 20a38e10f
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:25 . Memory (MB): peak = 5807.777 ; gain = 135.902 ; free physical = 7030 ; free virtual = 23419
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 250f5e394
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:26 . Memory (MB): peak = 5839.793 ; gain = 167.918 ; free physical = 7025 ; free virtual = 23416
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 250f5e394
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:26 . Memory (MB): peak = 5839.793 ; gain = 167.918 ; free physical = 7025 ; free virtual = 23416
+Phase 2.1.1 Partition Driven Placement | Checksum: 250f5e394
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:26 . Memory (MB): peak = 5839.793 ; gain = 167.918 ; free physical = 7026 ; free virtual = 23416
+Phase 2.1 Floorplanning | Checksum: 250f5e394
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:26 . Memory (MB): peak = 5839.793 ; gain = 167.918 ; free physical = 7026 ; free virtual = 23416
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 250f5e394
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:26 . Memory (MB): peak = 5839.793 ; gain = 167.918 ; free physical = 7026 ; free virtual = 23417
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1ad50de30
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:00:26 . Memory (MB): peak = 5839.793 ; gain = 167.918 ; free physical = 7026 ; free virtual = 23417
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 224f9ab88
+
+Time (s): cpu = 00:02:21 ; elapsed = 00:00:53 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 6997 ; free virtual = 23384
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 2c7f48c11
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:00:54 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7011 ; free virtual = 23397
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 1204 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 463 nets or LUTs. Breaked 0 LUT, combined 463 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-670] No setup violation found.  Equivalent Driver Rewiring was not performed.
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5912.793 ; gain = 0.000 ; free physical = 7018 ; free virtual = 23404
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            463  |                   463  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            463  |                   463  |           0  |           4  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 3420a5ce3
+
+Time (s): cpu = 00:02:32 ; elapsed = 00:00:57 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7030 ; free virtual = 23416
+Phase 2.5 Global Place Phase2 | Checksum: 1fd8b9039
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:02 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7046 ; free virtual = 23432
+Phase 2 Global Placement | Checksum: 1fd8b9039
+
+Time (s): cpu = 00:02:47 ; elapsed = 00:01:02 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7046 ; free virtual = 23432
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 2e7f4c1cd
+
+Time (s): cpu = 00:03:04 ; elapsed = 00:01:07 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7057 ; free virtual = 23443
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 314bba572
+
+Time (s): cpu = 00:03:10 ; elapsed = 00:01:09 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7056 ; free virtual = 23442
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 2b7952735
+
+Time (s): cpu = 00:03:24 ; elapsed = 00:01:13 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7061 ; free virtual = 23448
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 24363dc58
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:15 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7059 ; free virtual = 23446
+Phase 3.3.2 Slice Area Swap | Checksum: 24363dc58
+
+Time (s): cpu = 00:03:27 ; elapsed = 00:01:16 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7059 ; free virtual = 23446
+Phase 3.3 Small Shape DP | Checksum: 20e71a420
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:19 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7056 ; free virtual = 23442
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 18e9ad94d
+
+Time (s): cpu = 00:03:40 ; elapsed = 00:01:21 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7050 ; free virtual = 23440
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 180721021
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:01:21 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7050 ; free virtual = 23440
+Phase 3 Detail Placement | Checksum: 180721021
+
+Time (s): cpu = 00:03:41 ; elapsed = 00:01:21 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7050 ; free virtual = 23440
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 16a8189d7
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.548 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: e325eb5c
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:00.9 . Memory (MB): peak = 5912.793 ; gain = 0.000 ; free physical = 7051 ; free virtual = 23440
+INFO: [Place 46-34] Processed net video_pipe_hw_i/v_demosaic_0/inst/Debayer_U0/DebayerG_U0/grp_DebayerG_Pipeline_VITIS_LOOP_318_4_fu_200/mac_muladd_14s_10ns_24s_25_4_1_U62/video_pipe_hw_v_demosaic_0_0_mac_muladd_14s_10ns_24s_25_4_1_DSP48_0_U/CEP, BUFG insertion was skipped due to possible timing degradation.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 1, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 197fe16b3
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:01 . Memory (MB): peak = 5912.793 ; gain = 0.000 ; free physical = 7052 ; free virtual = 23439
+Phase 4.1.1.1 BUFG Insertion | Checksum: 16a8189d7
+
+Time (s): cpu = 00:04:30 ; elapsed = 00:01:34 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7053 ; free virtual = 23439
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.548. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 139015b79
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:01:34 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7053 ; free virtual = 23439
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:01:34 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7053 ; free virtual = 23439
+Phase 4.1 Post Commit Optimization | Checksum: 139015b79
+
+Time (s): cpu = 00:04:32 ; elapsed = 00:01:34 . Memory (MB): peak = 5912.793 ; gain = 240.918 ; free physical = 7053 ; free virtual = 23439
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6986 ; free virtual = 23376
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 121152038
+
+Time (s): cpu = 00:04:49 ; elapsed = 00:01:42 . Memory (MB): peak = 5940.777 ; gain = 268.902 ; free physical = 6986 ; free virtual = 23375
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                4x4|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 121152038
+
+Time (s): cpu = 00:04:50 ; elapsed = 00:01:42 . Memory (MB): peak = 5940.777 ; gain = 268.902 ; free physical = 6985 ; free virtual = 23374
+Phase 4.3 Placer Reporting | Checksum: 121152038
+
+Time (s): cpu = 00:04:50 ; elapsed = 00:01:42 . Memory (MB): peak = 5940.777 ; gain = 268.902 ; free physical = 6985 ; free virtual = 23374
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6985 ; free virtual = 23374
+
+Time (s): cpu = 00:04:50 ; elapsed = 00:01:42 . Memory (MB): peak = 5940.777 ; gain = 268.902 ; free physical = 6985 ; free virtual = 23374
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 18be81a23
+
+Time (s): cpu = 00:04:50 ; elapsed = 00:01:42 . Memory (MB): peak = 5940.777 ; gain = 268.902 ; free physical = 6985 ; free virtual = 23374
+Ending Placer Task | Checksum: 156e2a135
+
+Time (s): cpu = 00:04:51 ; elapsed = 00:01:42 . Memory (MB): peak = 5940.777 ; gain = 268.902 ; free physical = 6985 ; free virtual = 23374
+119 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:05:01 ; elapsed = 00:01:46 . Memory (MB): peak = 5940.777 ; gain = 469.000 ; free physical = 6985 ; free virtual = 23374
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file video_pipe_hw_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.57 ; elapsed = 00:00:00.49 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6957 ; free virtual = 23346
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file video_pipe_hw_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.72 ; elapsed = 00:00:00.61 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6983 ; free virtual = 23374
+INFO: [Vivado 12-24828] Executing command : report_utilization -file video_pipe_hw_wrapper_utilization_placed.rpt -pb video_pipe_hw_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.63 ; elapsed = 00:00:00.14 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6973 ; free virtual = 23369
+Wrote PlaceDB: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6920 ; free virtual = 23351
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6920 ; free virtual = 23351
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.33 ; elapsed = 00:00:00.12 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6919 ; free virtual = 23351
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6919 ; free virtual = 23355
+Wrote Device Cache: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6911 ; free virtual = 23351
+Write Physdb Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6911 ; free virtual = 23351
+INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/video_pipe_hw_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6961 ; free virtual = 23367
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.560 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+130 Infos, 77 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:06 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6961 ; free virtual = 23367
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.12 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6952 ; free virtual = 23366
+Wrote PlaceDB: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6926 ; free virtual = 23376
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6926 ; free virtual = 23376
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00.31 ; elapsed = 00:00:00.11 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6925 ; free virtual = 23376
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.05 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6917 ; free virtual = 23372
+Wrote Device Cache: Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6909 ; free virtual = 23368
+Write Physdb Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6909 ; free virtual = 23368
+INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/video_pipe_hw_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 2453ce5 ConstDB: 0 ShapeSum: a6721945 RouteDB: ae2b4b0b
+Nodegraph reading from file.  Time (s): cpu = 00:00:00.51 ; elapsed = 00:00:00.54 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6955 ; free virtual = 23377
+Post Restoration Checksum: NetGraph: 1b37d994 | NumContArr: 90247c09 | Constraints: 5e9c8937 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 1cca1d971
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:06 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6972 ; free virtual = 23393
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 1cca1d971
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:06 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6972 ; free virtual = 23393
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 1cca1d971
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:06 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6972 ; free virtual = 23393
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 1b8703097
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:08 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6976 ; free virtual = 23395
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2244deb77
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:12 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6975 ; free virtual = 23396
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.731  | TNS=0.000  | WHS=-1.411 | THS=-166.317|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1c6ea9e2e
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:20 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6979 ; free virtual = 23398
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.731  | TNS=0.000  | WHS=-2.187 | THS=-12.909|
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 17b1ba169
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:20 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6979 ; free virtual = 23398
+
+Phase 2.6 Soft Constraint Pins - Fast Budgeting
+Phase 2.6 Soft Constraint Pins - Fast Budgeting | Checksum: 17b1ba169
+
+Time (s): cpu = 00:01:33 ; elapsed = 00:00:20 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6979 ; free virtual = 23398
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0030182 %
+  Global Horizontal Routing Utilization  = 0.00084957 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 37216
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 32823
+  Number of Partially Routed Nets     = 4393
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 16e20233d
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:20 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6974 ; free virtual = 23393
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 16e20233d
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:00:20 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6974 ; free virtual = 23393
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 1ec02b396
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:00:39 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6969 ; free virtual = 23388
+Phase 4 Initial Routing | Checksum: 27998c1aa
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:00:40 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6969 ; free virtual = 23388
+INFO: [Route 35-580] Design has 1 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                            |
++====================+===================+================================================================+
+| clk_pl_0           | clk_pl_0          | video_pipe_hw_i/vio_0/inst/PROBE_IN_INST/probe_in_reg_reg[1]/D |
++--------------------+-------------------+----------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 5962
+ Number of Nodes with overlaps = 483
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-2.141 | TNS=-2.141 | WHS=-0.064 | THS=-1.467 |
+
+Phase 5.1 Global Iteration 0 | Checksum: 2ffbccd04
+
+Time (s): cpu = 00:04:00 ; elapsed = 00:01:24 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6933 ; free virtual = 23355
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.704 | TNS=-1.704 | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 1472e9ce4
+
+Time (s): cpu = 00:04:44 ; elapsed = 00:01:56 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6970 ; free virtual = 23401
+
+Phase 5.3 Global Iteration 2
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.855 | TNS=-1.855 | WHS=N/A    | THS=N/A    |
+
+Phase 5.3 Global Iteration 2 | Checksum: 16a1c83d7
+
+Time (s): cpu = 00:04:48 ; elapsed = 00:01:58 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6970 ; free virtual = 23401
+Phase 5 Rip-up And Reroute | Checksum: 16a1c83d7
+
+Time (s): cpu = 00:04:48 ; elapsed = 00:01:58 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6970 ; free virtual = 23401
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.704 | TNS=-1.704 | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.704 | TNS=-1.704 | WHS=0.010  | THS=0.000  |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 1d1e7216c
+
+Time (s): cpu = 00:05:07 ; elapsed = 00:02:02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6970 ; free virtual = 23401
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1d1e7216c
+
+Time (s): cpu = 00:05:07 ; elapsed = 00:02:02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6970 ; free virtual = 23401
+Phase 6 Delay and Skew Optimization | Checksum: 1d1e7216c
+
+Time (s): cpu = 00:05:07 ; elapsed = 00:02:02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6970 ; free virtual = 23401
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.704 | TNS=-1.704 | WHS=0.010  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 217974240
+
+Time (s): cpu = 00:05:20 ; elapsed = 00:02:05 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6963 ; free virtual = 23395
+Phase 7 Post Hold Fix | Checksum: 217974240
+
+Time (s): cpu = 00:05:20 ; elapsed = 00:02:05 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6963 ; free virtual = 23395
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 2.76504 %
+  Global Horizontal Routing Utilization  = 3.48465 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 66.6667%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 56.3981%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 71.1538%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 66.3462%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 217974240
+
+Time (s): cpu = 00:05:21 ; elapsed = 00:02:05 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6963 ; free virtual = 23395
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 217974240
+
+Time (s): cpu = 00:05:21 ; elapsed = 00:02:05 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6963 ; free virtual = 23395
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 217974240
+
+Time (s): cpu = 00:05:25 ; elapsed = 00:02:07 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6963 ; free virtual = 23394
+
+Phase 11 Resolve XTalk
+Phase 11 Resolve XTalk | Checksum: 217974240
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:02:07 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6963 ; free virtual = 23394
+
+Phase 12 Post Process Routing
+Phase 12 Post Process Routing | Checksum: 217974240
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:02:08 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6963 ; free virtual = 23394
+
+Phase 13 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-1.704 | TNS=-1.704 | WHS=0.010  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 13 Post Router Timing | Checksum: 217974240
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:02:08 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6963 ; free virtual = 23394
+Time taken to check if laguna hold fix is required (in secs): 0
+
+Phase 14 Physical Synthesis in Router
+
+Phase 14.1 Physical Synthesis Initialization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-1.703 | TNS=-1.703 | WHS=0.010 | THS=0.000 |
+Phase 14.1 Physical Synthesis Initialization | Checksum: 217974240
+
+Time (s): cpu = 00:06:08 ; elapsed = 00:02:18 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23396
+WARNING: [Physopt 32-745] Physical Optimization has determined that the magnitude of the negative slack is too large and it is highly unlikely that slack will be improved. Post-Route Physical Optimization is most effective when WNS is above -0.5ns
+
+Phase 14.2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-1.703 | TNS=-1.703 | WHS=0.010 | THS=0.000 |
+INFO: [Physopt 32-952] Improved path group WNS = -1.627. Path group: clk_out1_video_pipe_hw_clk_wiz_1_0_1. Processed net: video_pipe_hw_i/vio_0/inst/PROBE_IN_INST/probe_in_reg[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_video_pipe_hw_clk_wiz_1_0_1. Processed net: video_pipe_hw_i/vio_0/inst/PROBE_IN_INST/probe_in_reg[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_video_pipe_hw_clk_wiz_1_0_1. Processed net: video_pipe_hw_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/overflow.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-1.627 | TNS=-1.627 | WHS=0.010 | THS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23396
+Phase 14.2 Critical Path Optimization | Checksum: 23fb8b18d
+
+Time (s): cpu = 00:06:15 ; elapsed = 00:02:19 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23396
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23396
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=-1.627 | TNS=-1.627 | WHS=0.010 | THS=0.000 |
+Phase 14 Physical Synthesis in Router | Checksum: 21251307b
+
+Time (s): cpu = 00:06:16 ; elapsed = 00:02:19 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23396
+Total Elapsed time in route_design: 139.34 secs
+
+Phase 15 Post-Route Event Processing
+Phase 15 Post-Route Event Processing | Checksum: 1388a4416
+
+Time (s): cpu = 00:06:16 ; elapsed = 00:02:20 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23396
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 1388a4416
+
+Time (s): cpu = 00:06:17 ; elapsed = 00:02:20 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23396
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+153 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:06:18 ; elapsed = 00:02:20 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23396
+INFO: [Vivado 12-24828] Executing command : report_drc -file video_pipe_hw_wrapper_drc_routed.rpt -pb video_pipe_hw_wrapper_drc_routed.pb -rpx video_pipe_hw_wrapper_drc_routed.rpx
+Command: report_drc -file video_pipe_hw_wrapper_drc_routed.rpt -pb video_pipe_hw_wrapper_drc_routed.pb -rpx video_pipe_hw_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/video_pipe_hw_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file video_pipe_hw_wrapper_methodology_drc_routed.rpt -pb video_pipe_hw_wrapper_methodology_drc_routed.pb -rpx video_pipe_hw_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file video_pipe_hw_wrapper_methodology_drc_routed.rpt -pb video_pipe_hw_wrapper_methodology_drc_routed.pb -rpx video_pipe_hw_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/video_pipe_hw_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:40 ; elapsed = 00:00:09 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6966 ; free virtual = 23399
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -routable_nets -report_unconstrained -file video_pipe_hw_wrapper_timing_summary_routed.rpt -pb video_pipe_hw_wrapper_timing_summary_routed.pb -rpx video_pipe_hw_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 5940.777 ; gain = 0.000 ; free physical = 6944 ; free virtual = 23383
+INFO: [Vivado 12-24838] Running report commands "report_bus_skew, report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 3 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file video_pipe_hw_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file video_pipe_hw_wrapper_bus_skew_routed.rpt -pb video_pipe_hw_wrapper_bus_skew_routed.pb -rpx video_pipe_hw_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2LV, Temperature grade: C, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Vivado 12-24828] Executing command : report_route_status -file video_pipe_hw_wrapper_route_status.rpt -pb video_pipe_hw_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file video_pipe_hw_wrapper_power_routed.rpt -pb video_pipe_hw_wrapper_power_summary_routed.pb -rpx video_pipe_hw_wrapper_power_routed.rpx
+Command: report_power -file video_pipe_hw_wrapper_power_routed.rpt -pb video_pipe_hw_wrapper_power_summary_routed.pb -rpx video_pipe_hw_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+173 Infos, 81 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 5980.797 ; gain = 40.020 ; free physical = 6980 ; free virtual = 23426
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file video_pipe_hw_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6974 ; free virtual = 23419
+generate_parallel_reports: Time (s): cpu = 00:01:49 ; elapsed = 00:00:40 . Memory (MB): peak = 5980.797 ; gain = 40.020 ; free physical = 6974 ; free virtual = 23419
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.13 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6962 ; free virtual = 23418
+Wrote PlaceDB: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6919 ; free virtual = 23408
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6919 ; free virtual = 23409
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.45 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6909 ; free virtual = 23406
+Wrote Netlist Cache: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.04 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6909 ; free virtual = 23410
+Wrote Device Cache: Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6902 ; free virtual = 23405
+Write Physdb Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6901 ; free virtual = 23405
+INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v2/video_pipe_hw.runs/impl_1/video_pipe_hw_wrapper_routed.dcp' has been generated.
+INFO: [Memdata 28-208] The XPM instance: <video_pipe_hw_i/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <video_pipe_hw_i/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/gen_pkt_fifo/pkt_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/gen_pkt_fifo/pkt_fifo/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/RX_1500M.line_buffer/line_buf/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/RX_1500M.line_buffer/line_buf/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/LANE_2.ppi_fifo1/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/LANE_2.ppi_fifo1/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/LANE_1.ppi_fifo0/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/LANE_1.ppi_fifo0/CSI_OPT3_OFF.ppi_fifo/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/rx/mipi_csi2_rx_ctrl_v1_0_14_top_dut/AXI_LITE.reg_inf/gen_spkt_fifo/generic_pkt/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <video_pipe_hw_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <video_pipe_hw_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <video_pipe_hw_i/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <video_pipe_hw_i/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_vdma_0/U0/GEN_SPRT_FOR_S2MM.S2MM_LINEBUFFER_I/GEN_S2MM_FLUSH_SOF_LOGIC.GEN_LINEBUFFER_FLUSH_SOF.GEN_SYNC_FIFO_FLUSH_SOF.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/s00_nodes/s00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the video_pipe_hw_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+Command: write_bitstream -force video_pipe_hw_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xck26'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xck26'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./video_pipe_hw_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Implementation
+209 Infos, 81 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:42 ; elapsed = 00:00:33 . Memory (MB): peak = 5980.797 ; gain = 0.000 ; free physical = 6948 ; free virtual = 23422
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 21 10:43:13 2026...

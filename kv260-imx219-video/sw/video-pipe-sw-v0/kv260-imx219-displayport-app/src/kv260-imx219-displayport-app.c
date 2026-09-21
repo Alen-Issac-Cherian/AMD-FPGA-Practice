@@ -26,10 +26,13 @@
 #include "mipi.h"
 #include "demosaic.h"
 #include "vdma.h"
+#include "xil_io.h"
+
 
 
 int main()
 {
+	
     init_platform();
 
     xil_printf("\r\n Setting up IMX219 1920x1080p@60Hz video pipeline on Kria KV260\r\n");
@@ -38,7 +41,9 @@ int main()
 	displayport_hpd_event_isr();
 	displayport_hpd_pulse_isr();
     vtc_init();
+	
 	vdma_init();
+	
 	demosaic_init();
 	mipi_init();
 	imx219_init();
