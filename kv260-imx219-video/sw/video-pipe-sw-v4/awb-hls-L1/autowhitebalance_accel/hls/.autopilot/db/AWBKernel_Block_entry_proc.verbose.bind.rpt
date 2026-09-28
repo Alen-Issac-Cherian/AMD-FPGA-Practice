@@ -1,0 +1,286 @@
+
+
+================================================================
+== Vitis HLS Report for 'AWBKernel_Block_entry_proc'
+================================================================
+* Date:           Mon Sep 28 23:10:25 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        autowhitebalance_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.016 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        2|        2|  20.000 ns|  20.000 ns|    2|    2|       no|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 3
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.01>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%thresh_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %thresh" [xf_autowhitebalance_accel.cpp:49]   --->   Operation 4 'read' 'thresh_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [3/3] (7.01ns)   --->   "%mul_out = fmul i32 %thresh_read, i32 256" [xf_autowhitebalance_accel.cpp:49]   --->   Operation 5 'fmul' 'mul_out' <Predicate = true> <Delay = 7.01> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 7.01>
+ST_2 : Operation 6 [2/3] (7.01ns)   --->   "%mul_out = fmul i32 %thresh_read, i32 256" [xf_autowhitebalance_accel.cpp:49]   --->   Operation 6 'fmul' 'mul_out' <Predicate = true> <Delay = 7.01> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 7.01>
+ST_3 : Operation 7 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i32 %thresh, i1 1, void @p_str"   --->   Operation 7 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 8 [1/3] (7.01ns)   --->   "%mul_out = fmul i32 %thresh_read, i32 256" [xf_autowhitebalance_accel.cpp:49]   --->   Operation 8 'fmul' 'mul_out' <Predicate = true> <Delay = 7.01> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln49 = ret i32 %mul_out" [xf_autowhitebalance_accel.cpp:49]   --->   Operation 9 'ret' 'ret_ln49' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ thresh]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_stable:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+thresh_read           (read             ) [ 0011]
+specstablecontent_ln0 (specstablecontent) [ 0000]
+mul_out               (fmul             ) [ 0000]
+ret_ln49              (ret              ) [ 0000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="thresh">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="thresh"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1001" name="const_2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.float"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecStableContent"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1004" name="thresh_read_read_fu_12">
+<pin_list>
+<pin id="13" dir="0" index="0" bw="32" slack="0"/>
+<pin id="14" dir="0" index="1" bw="32" slack="0"/>
+<pin id="15" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="thresh_read/1 "/>
+</bind>
+</comp>
+
+<comp id="18" class="1004" name="grp_fu_18">
+<pin_list>
+<pin id="19" dir="0" index="0" bw="32" slack="0"/>
+<pin id="20" dir="0" index="1" bw="32" slack="0"/>
+<pin id="21" dir="1" index="2" bw="32" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="fmul(13) " fcode="fmul"/>
+<opset="mul_out/1 "/>
+</bind>
+</comp>
+
+<comp id="24" class="1005" name="thresh_read_reg_24">
+<pin_list>
+<pin id="25" dir="0" index="0" bw="32" slack="1"/>
+<pin id="26" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="thresh_read "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="16"><net_src comp="2" pin="0"/><net_sink comp="12" pin=0"/></net>
+
+<net id="17"><net_src comp="0" pin="0"/><net_sink comp="12" pin=1"/></net>
+
+<net id="22"><net_src comp="12" pin="2"/><net_sink comp="18" pin=0"/></net>
+
+<net id="23"><net_src comp="4" pin="0"/><net_sink comp="18" pin=1"/></net>
+
+<net id="27"><net_src comp="12" pin="2"/><net_sink comp="24" pin=0"/></net>
+
+<net id="28"><net_src comp="24" pin="1"/><net_sink comp="18" pin=0"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: AWBKernel_Block_entry_proc : thresh | {1 }
+  - Chain level:
+	State 1
+	State 2
+	State 3
+		ret_ln49 : 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|------------------------|---------|---------|---------|
+| Operation|     Functional Unit    |   DSP   |    FF   |   LUT   |
+|----------|------------------------|---------|---------|---------|
+|   fmul   |        grp_fu_18       |    3    |   128   |   135   |
+|----------|------------------------|---------|---------|---------|
+|   read   | thresh_read_read_fu_12 |    0    |    0    |    0    |
+|----------|------------------------|---------|---------|---------|
+|   Total  |                        |    3    |   128   |   135   |
+|----------|------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++------------------+--------+
+|                  |   FF   |
++------------------+--------+
+|thresh_read_reg_24|   32   |
++------------------+--------+
+|       Total      |   32   |
++------------------+--------+
+
+* Multiplexer (MUX) list: 
+|-----------|------|------|------|--------||---------||---------||---------|
+|    Comp   |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|-----------|------|------|------|--------||---------||---------||---------|
+| grp_fu_18 |  p0  |   2  |  32  |   64   ||    0    ||    9    |
+|-----------|------|------|------|--------||---------||---------||---------|
+|   Total   |      |      |      |   64   ||  0.427  ||    0    ||    9    |
+|-----------|------|------|------|--------||---------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+
+|           |   DSP  |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+--------+
+|  Function |    3   |    -   |   128  |   135  |
+|   Memory  |    -   |    -   |    -   |    -   |
+|Multiplexer|    -   |    0   |    0   |    9   |
+|  Register |    -   |    -   |   32   |    -   |
++-----------+--------+--------+--------+--------+
+|   Total   |    3   |    0   |   160  |   144  |
++-----------+--------+--------+--------+--------+

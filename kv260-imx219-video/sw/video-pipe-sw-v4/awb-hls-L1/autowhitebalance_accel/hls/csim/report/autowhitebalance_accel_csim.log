@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+   Compiling ../../../../xf_autowhitebalance_tb.cpp in debug mode
+In file included from ../../../../xf_autowhitebalance_tb.cpp:18:
+../../../../xf_headers.hpp:24:10: fatal error: 'opencv2/opencv.hpp' file not found
+#include "opencv2/opencv.hpp"
+         ^~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [csim.mk:89: obj/xf_autowhitebalance_tb.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 3] *************** CSIM finish ***************

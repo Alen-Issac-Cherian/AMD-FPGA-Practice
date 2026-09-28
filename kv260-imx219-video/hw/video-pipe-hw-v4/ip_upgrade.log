@@ -1,0 +1,112 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
+| Date         : Mon Sep 28 23:22:45 2026
+| Host         : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xck26-sfvc784-2LV-c
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'video_pipe_hw_autowhitebalance_acc_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of video_pipe_hw_autowhitebalance_acc_0_0 (xilinx.com:video:autowhitebalance_accel:1.0) from (Rev. 2114806112) to (Rev. 2114806333)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'video_pipe_hw_autowhitebalance_acc_0_0'.
+
+
+-Upgrade has removed interface 'img_inp'
+
+-Upgrade has removed interface 'img_out'
+
+-Upgrade has added interface 'm_axis_video' (xilinx.com:interface:axis:1.0)
+
+-Upgrade has added interface 's_axis_video' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'video_pipe_hw_autowhitebalance_acc_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'img_inp_TDATA'
+
+-Upgrade has removed port 'img_inp_TDEST'
+
+-Upgrade has removed port 'img_inp_TID'
+
+-Upgrade has removed port 'img_inp_TKEEP'
+
+-Upgrade has removed port 'img_inp_TLAST'
+
+-Upgrade has removed port 'img_inp_TREADY'
+
+-Upgrade has removed port 'img_inp_TSTRB'
+
+-Upgrade has removed port 'img_inp_TUSER'
+
+-Upgrade has removed port 'img_inp_TVALID'
+
+-Upgrade has removed port 'img_out_TDATA'
+
+-Upgrade has removed port 'img_out_TDEST'
+
+-Upgrade has removed port 'img_out_TID'
+
+-Upgrade has removed port 'img_out_TKEEP'
+
+-Upgrade has removed port 'img_out_TLAST'
+
+-Upgrade has removed port 'img_out_TREADY'
+
+-Upgrade has removed port 'img_out_TSTRB'
+
+-Upgrade has removed port 'img_out_TUSER'
+
+-Upgrade has removed port 'img_out_TVALID'
+
+-Upgrade has added port 'm_axis_video_TDATA'
+
+-Upgrade has added port 'm_axis_video_TDEST'
+
+-Upgrade has added port 'm_axis_video_TID'
+
+-Upgrade has added port 'm_axis_video_TKEEP'
+
+-Upgrade has added port 'm_axis_video_TLAST'
+
+-Upgrade has added port 'm_axis_video_TREADY'
+
+-Upgrade has added port 'm_axis_video_TSTRB'
+
+-Upgrade has added port 'm_axis_video_TUSER'
+
+-Upgrade has added port 'm_axis_video_TVALID'
+
+-Upgrade has added port 's_axis_video_TDATA'
+
+-Upgrade has added port 's_axis_video_TDEST'
+
+-Upgrade has added port 's_axis_video_TID'
+
+-Upgrade has added port 's_axis_video_TKEEP'
+
+-Upgrade has added port 's_axis_video_TLAST'
+
+-Upgrade has added port 's_axis_video_TREADY'
+
+-Upgrade has added port 's_axis_video_TSTRB'
+
+-Upgrade has added port 's_axis_video_TUSER'
+
+-Upgrade has added port 's_axis_video_TVALID'
+
+

@@ -1,0 +1,710 @@
+
+
+================================================================
+== Synthesis Summary Report of 'autowhitebalance_accel'
+================================================================
++ General Information: 
+    * Date:           Mon Sep 28 23:10:28 2026
+    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Project:        autowhitebalance_accel
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xck26-sfvc784-2LV-c
+    
+
+* Performance & Resource Estimates: 
++----------------------------------------------------------------------+------+---------------+----------+----------+------+----------+----------+-----------+------+------+----------+-----------+-----------+-----+
+|                                Modules                               | Issue|               | Iteration|          | Trip |          |        Latency       |      |      |          |           |           |     |
+|                                & Loops                               | Type | Violation Type|  Latency | Interval | Count| Pipelined| (cycles) |    (ns)   | Slack| BRAM |    DSP   |     FF    |    LUT    | URAM|
++----------------------------------------------------------------------+------+---------------+----------+----------+------+----------+----------+-----------+------+------+----------+-----------+-----------+-----+
+|+ autowhitebalance_accel                                              |     -|              -|         -|  16606571|     -|        no|  16606570|  1.661e+08|  0.14|     -|  11 (~0%)|  7814 (3%)|  9554 (8%)|    -|
+| + AWBKernel*                                                         |     -|              -|         -|   8316007|     -|  dataflow|  16606567|  1.661e+08|  0.14|     -|  11 (~0%)|  6923 (2%)|  8834 (7%)|    -|
+|  + AWBKernel_Block_entry_proc                                        |     -|              -|         -|         2|     -|        no|         2|     20.000|  0.28|     -|   3 (~0%)|  132 (~0%)|  166 (~0%)|    -|
+|  + AXIvideo2xfMat_30_20_2160_3840_1_2_s                              |     -|              -|         -|   8316006|     -|        no|   8316006|  8.316e+07|  5.25|     -|         -|  139 (~0%)|  389 (~0%)|    -|
+|   + AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt      |     -|              -|         -|         -|     -|       yes|         3|     30.000|  6.45|     -|         -|    4 (~0%)|   47 (~0%)|    -|
+|    o loop_start_hunt                                                 |     -|              -|         1|         1|     1|       yes|         1|     10.000|  7.30|     -|         -|          -|          -|    -|
+|   o loop_row_axi2mat                                                 |     -|              -|      3850|         -|  2160|        no|   8316000|  8.316e+07|  7.30|     -|         -|          -|          -|    -|
+|    + AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat    |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  5.46|     -|         -|   52 (~0%)|  160 (~0%)|    -|
+|     o loop_col_zxi2mat                                               |     -|              -|         3|         1|  3840|       yes|      3841|  3.841e+04|  7.30|     -|         -|          -|          -|    -|
+|    + AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt      |     -|              -|         -|         -|     -|       yes|         3|     30.000|  6.45|     -|         -|    3 (~0%)|   43 (~0%)|    -|
+|     o loop_last_hunt                                                 |     -|              -|         1|         1|     1|       yes|         1|     10.000|  7.30|     -|         -|          -|          -|    -|
+|  + p_hls_fptosi_float_i32_2                                          |     -|              -|         -|         1|     -|        no|         1|     10.000|  1.00|     -|         -|   67 (~0%)|  657 (~0%)|    -|
+|  + AWBChannelGain_20_20_2160_3840_1_0_2_2_s                          |     -|              -|         -|   8305497|     -|        no|   8305497|  8.305e+07|  0.14|     -|   2 (~0%)|  5660 (2%)|  6599 (5%)|    -|
+|   + AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s  |     -|              -|         -|   8305496|     -|        no|   8305496|  8.305e+07|  0.14|     -|   2 (~0%)|  5503 (2%)|  6538 (5%)|    -|
+|    + AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3                  |     -|              -|         -|         -|     -|       yes|         5|     50.000|  5.41|     -|         -|  125 (~0%)|  145 (~0%)|    -|
+|     o VITIS_LOOP_216_3                                               |     -|              -|         1|         1|     3|       yes|         3|     30.000|  7.30|     -|         -|          -|          -|    -|
+|    o Row_Loop                                                        |     -|              -|      3845|         -|  2160|        no|   8305200|  8.305e+07|  7.30|     -|         -|          -|          -|    -|
+|     + AWBChannelGainKernel_Pipeline_Col_Loop                         |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  0.14|     -|   2 (~0%)|   80 (~0%)|  599 (~0%)|    -|
+|      o Col_Loop                                                      |     -|              -|         3|         1|  3840|       yes|      3841|  3.841e+04|  7.30|     -|         -|          -|          -|    -|
+|  + AWBGainUpdate_20_20_2160_3840_1_0_2_2_s                           |     -|              -|         -|   8305201|     -|        no|   8305201|  8.305e+07|  0.72|     -|   6 (~0%)|  311 (~0%)|  360 (~0%)|    -|
+|   o VITIS_LOOP_85_1                                                  |     -|              -|      3845|         -|  2160|        no|   8305200|  8.305e+07|  7.30|     -|         -|          -|          -|    -|
+|    + AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1         |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  0.72|     -|   6 (~0%)|  173 (~0%)|  273 (~0%)|    -|
+|     o ColLoop1                                                       |     -|              -|         3|         1|  3840|       yes|      3841|  3.841e+04|  7.30|     -|         -|          -|          -|    -|
+|  + xfMat2AXIvideo_30_20_2160_3840_1_2_0_s                            |     -|              -|         -|   8305201|     -|        no|   8305201|  8.305e+07|  4.97|     -|         -|  115 (~0%)|  294 (~0%)|    -|
+|   o loop_row_mat2axi                                                 |     -|              -|      3845|         -|  2160|        no|   8305200|  8.305e+07|  7.30|     -|         -|          -|          -|    -|
+|    + xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi  |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  4.97|     -|         -|   19 (~0%)|  132 (~0%)|    -|
+|     o loop_col_mat2axi                                               |     -|              -|         2|         1|  3840|       yes|      3841|  3.841e+04|  7.30|     -|         -|          -|          -|    -|
++----------------------------------------------------------------------+------+---------------+----------+----------+------+----------+----------+-----------+------+------+----------+-----------+-----------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 7             | 16     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register  | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL      | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER      | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER    | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR    | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | thresh    | 0x10   | 32    | W      | Data signal of thresh            |                                                                      |
+| s_axi_control | rows      | 0x18   | 32    | W      | Data signal of rows              |                                                                      |
+| s_axi_control | cols      | 0x20   | 32    | W      | Data signal of cols              |                                                                      |
+| s_axi_control | inputMin  | 0x28   | 32    | W      | Data signal of inputMin          |                                                                      |
+| s_axi_control | inputMax  | 0x30   | 32    | W      | Data signal of inputMax          |                                                                      |
+| s_axi_control | outputMin | 0x38   | 32    | W      | Data signal of outputMin         |                                                                      |
+| s_axi_control | outputMax | 0x40   | 32    | W      | Data signal of outputMax         |                                                                      |
++---------------+-----------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++--------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface    | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++--------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| m_axis_video | out       | both          | 30    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
+| s_axis_video | in        | both          | 30    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
++--------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------+-----------+------------------------------------------------------------------------------+
+| Argument     | Direction | Datatype                                                                     |
++--------------+-----------+------------------------------------------------------------------------------+
+| s_axis_video | in        | stream<hls::axis<ap_uint<30>, 1UL, 1UL, 1UL, (unsigned char)'8', false>, 0>& |
+| m_axis_video | out       | stream<hls::axis<ap_uint<30>, 1UL, 1UL, 1UL, (unsigned char)'8', false>, 0>& |
+| thresh       | in        | float                                                                        |
+| rows         | in        | int                                                                          |
+| cols         | in        | int                                                                          |
+| inputMin     | in        | float                                                                        |
+| inputMax     | in        | float                                                                        |
+| outputMin    | in        | float                                                                        |
+| outputMax    | in        | float                                                                        |
++--------------+-----------+------------------------------------------------------------------------------+
+
+* SW-to-HW Mapping
++--------------+---------------+-----------+-------------------------------------+
+| Argument     | HW Interface  | HW Type   | HW Info                             |
++--------------+---------------+-----------+-------------------------------------+
+| s_axis_video | s_axis_video  | interface |                                     |
+| m_axis_video | m_axis_video  | interface |                                     |
+| thresh       | s_axi_control | register  | name=thresh offset=0x10 range=32    |
+| rows         | s_axi_control | register  | name=rows offset=0x18 range=32      |
+| cols         | s_axi_control | register  | name=cols offset=0x20 range=32      |
+| inputMin     | s_axi_control | register  | name=inputMin offset=0x28 range=32  |
+| inputMax     | s_axi_control | register  | name=inputMax offset=0x30 range=32  |
+| outputMin    | s_axi_control | register  | name=outputMin offset=0x38 range=32 |
+| outputMax    | s_axi_control | register  | name=outputMax offset=0x40 range=32 |
++--------------+---------------+-----------+-------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+
+================================================================
+== Bind Op Report
+================================================================
++----------------------------------------------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+| Name                                                                 | DSP | Pragma | Variable       | Op        | Impl                   | Latency |
++----------------------------------------------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+| + autowhitebalance_accel                                             | 11  |        |                |           |                        |         |
+|  + AWBKernel                                                         | 11  |        |                |           |                        |         |
+|   + AWBKernel_Block_entry_proc                                       | 3   |        |                |           |                        |         |
+|     fmul_32ns_32ns_32_3_max_dsp_1_U1                                 | 3   |        | mul_out        | fmul      | maxdsp                 | 2       |
+|   + AXIvideo2xfMat_30_20_2160_3840_1_2_s                             | 0   |        |                |           |                        |         |
+|     icmp_ln130_fu_250_p2                                             |     |        | icmp_ln130     | seteq     | auto                   | 0       |
+|     i_4_fu_255_p2                                                    |     |        | i_4            | add       | fabric                 | 0       |
+|    + AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat    | 0   |        |                |           |                        |         |
+|      icmp_ln134_fu_203_p2                                            |     |        | icmp_ln134     | seteq     | auto                   | 0       |
+|      j_4_fu_209_p2                                                   |     |        | j_4            | add       | fabric                 | 0       |
+|      or_ln140_fu_220_p2                                              |     |        | or_ln140       | or        | auto                   | 0       |
+|   + p_hls_fptosi_float_i32_2                                         | 0   |        |                |           |                        |         |
+|     add_ln317_fu_92_p2                                               |     |        | add_ln317      | add       | fabric                 | 0       |
+|     sub_ln18_fu_106_p2                                               |     |        | sub_ln18       | sub       | fabric                 | 0       |
+|     select_ln18_fu_116_p3                                            |     |        | select_ln18    | select    | auto_sel               | 0       |
+|     lshr_ln18_fu_132_p2                                              |     |        | lshr_ln18      | lshr      | auto_pipe              | 0       |
+|     shl_ln18_fu_138_p2                                               |     |        | shl_ln18       | shl       | auto_pipe              | 0       |
+|     val_fu_164_p3                                                    |     |        | val            | select    | auto_sel               | 0       |
+|     result_1_fu_172_p2                                               |     |        | result_1       | sub       | fabric                 | 0       |
+|     result_2_fu_178_p3                                               |     |        | result_2       | select    | auto_sel               | 0       |
+|   + AWBChannelGain_20_20_2160_3840_1_0_2_2_s                         | 2   |        |                |           |                        |         |
+|    + AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s | 2   |        |                |           |                        |         |
+|      sitofp_32ns_32_4_no_dsp_1_U67                                   |     |        | conv           | sitofp    | auto                   | 3       |
+|      fpext_32ns_64_2_no_dsp_1_U68                                    |     |        | pf             | fpext     | auto                   | 1       |
+|      sub_ln145_fu_352_p2                                             |     |        | sub_ln145      | sub       | fabric                 | 0       |
+|      select_ln145_fu_358_p3                                          |     |        | select_ln145   | select    | auto_sel               | 0       |
+|      icmp_ln145_fu_366_p2                                            |     |        | icmp_ln145     | seteq     | auto                   | 0       |
+|      sub_ln145_1_fu_372_p2                                           |     |        | sub_ln145_1    | sub       | fabric                 | 0       |
+|      icmp_ln145_1_fu_382_p2                                          |     |        | icmp_ln145_1   | setgt     | auto                   | 0       |
+|      add_ln145_fu_388_p2                                             |     |        | add_ln145      | add       | fabric                 | 0       |
+|      sub_ln145_2_fu_394_p2                                           |     |        | sub_ln145_2    | sub       | fabric                 | 0       |
+|      select_ln145_1_fu_400_p3                                        |     |        | select_ln145_1 | select    | auto_sel               | 0       |
+|      icmp_ln145_2_fu_412_p2                                          |     |        | icmp_ln145_2   | seteq     | auto                   | 0       |
+|      icmp_ln145_3_fu_422_p2                                          |     |        | icmp_ln145_3   | setlt     | auto                   | 0       |
+|      select_ln145_4_fu_428_p3                                        |     |        | select_ln145_4 | select    | auto_sel               | 0       |
+|      ashr_ln145_fu_440_p2                                            |     |        | ashr_ln145     | ashr      | auto_pipe              | 0       |
+|      thresh_float_fu_528_p6                                          |     |        | select_ln145_2 | select    | auto_sel               | 0       |
+|      icmp_ln145_4_fu_468_p2                                          |     |        | icmp_ln145_4   | seteq     | auto                   | 0       |
+|      shl_ln145_fu_474_p2                                             |     |        | shl_ln145      | shl       | auto_pipe              | 0       |
+|      thresh_float_fu_528_p8                                          |     |        | select_ln145_3 | select    | auto_sel               | 0       |
+|      xor_ln145_fu_488_p2                                             |     |        | xor_ln145      | xor       | auto                   | 0       |
+|      and_ln145_fu_494_p2                                             |     |        | and_ln145      | and       | auto                   | 0       |
+|      or_ln145_fu_500_p2                                              |     |        | or_ln145       | or        | auto                   | 0       |
+|      xor_ln145_1_fu_506_p2                                           |     |        | xor_ln145_1    | xor       | auto                   | 0       |
+|      and_ln145_1_fu_512_p2                                           |     |        | and_ln145_1    | and       | auto                   | 0       |
+|      sparsemux_9_3_32_1_1_U69                                        |     |        | thresh_float   | sparsemux | onehotencoding_realdef | 0       |
+|      sub_ln148_fu_576_p2                                             |     |        | sub_ln148      | sub       | fabric                 | 0       |
+|      icmp_ln176_fu_595_p2                                            |     |        | icmp_ln176     | seteq     | auto                   | 0       |
+|      i_8_fu_600_p2                                                   |     |        | i_8            | add       | fabric                 | 0       |
+|      icmp_ln225_fu_644_p2                                            |     |        | icmp_ln225     | setgt     | auto                   | 0       |
+|      select_ln225_fu_650_p3                                          |     |        | select_ln225   | select    | auto_sel               | 0       |
+|      icmp_ln225_1_fu_658_p2                                          |     |        | icmp_ln225_1   | setgt     | auto                   | 0       |
+|      xor_ln225_fu_664_p2                                             |     |        | xor_ln225      | xor       | auto                   | 0       |
+|      or_ln225_fu_674_p2                                              |     |        | or_ln225       | or        | auto                   | 0       |
+|      max_sum_fixed_fu_688_p8                                         |     |        | select_ln225_1 | select    | auto_sel               | 0       |
+|      sparsemux_7_2_10_1_1_U70                                        |     |        | max_sum_fixed  | sparsemux | onehotencoding_realdef | 0       |
+|      icmp_ln236_fu_716_p2                                            |     |        | icmp_ln236     | setlt     | auto                   | 0       |
+|      udiv_56ns_40ns_56_60_seq_1_U71                                  |     |        | udiv_ln239     | udiv      | auto_seq               | 59      |
+|      icmp_ln242_fu_748_p2                                            |     |        | icmp_ln242     | setlt     | auto                   | 0       |
+|      udiv_56ns_40ns_56_60_seq_1_U72                                  |     |        | udiv_ln245     | udiv      | auto_seq               | 59      |
+|      icmp_ln247_fu_778_p2                                            |     |        | icmp_ln247     | setlt     | auto                   | 0       |
+|      udiv_56ns_40ns_56_60_seq_1_U73                                  |     |        | udiv_ln250     | udiv      | auto_seq               | 59      |
+|      icmp_ln253_fu_801_p2                                            |     |        | icmp_ln253     | setgt     | auto                   | 0       |
+|      select_ln253_fu_807_p3                                          |     |        | select_ln253   | select    | auto_sel               | 0       |
+|      icmp_ln253_1_fu_815_p2                                          |     |        | icmp_ln253_1   | setgt     | auto                   | 0       |
+|      gain_max1_fu_821_p3                                             |     |        | gain_max1      | select    | auto_sel               | 0       |
+|      icmp_ln255_fu_829_p2                                            |     |        | icmp_ln255     | seteq     | auto                   | 0       |
+|      udiv_102ns_56ns_56_106_seq_1_U74                                |     |        | udiv_ln256     | udiv      | auto_seq               | 105     |
+|      udiv_102ns_56ns_56_106_seq_1_U75                                |     |        | udiv_ln257     | udiv      | auto_seq               | 105     |
+|      udiv_102ns_56ns_56_106_seq_1_U76                                |     |        | udiv_ln258     | udiv      | auto_seq               | 105     |
+|     + AWBChannelGainKernel_Pipeline_Col_Loop                         | 2   |        |                |           |                        |         |
+|       icmp_ln181_fu_114_p2                                           |     |        | icmp_ln181     | seteq     | auto                   | 0       |
+|       j_8_fu_120_p2                                                  |     |        | j_8            | add       | fabric                 | 0       |
+|       icmp_ln204_fu_163_p2                                           |     |        | icmp_ln204     | setlt     | auto                   | 0       |
+|       select_ln204_fu_167_p3                                         |     |        | select_ln204   | select    | auto_sel               | 0       |
+|       icmp_ln204_1_fu_173_p2                                         |     |        | icmp_ln204_1   | setlt     | auto                   | 0       |
+|       minRGB_fu_178_p3                                               |     |        | minRGB         | select    | auto_sel               | 0       |
+|       icmp_ln205_fu_189_p2                                           |     |        | icmp_ln205     | setgt     | auto                   | 0       |
+|       select_ln205_fu_193_p3                                         |     |        | select_ln205   | select    | auto_sel               | 0       |
+|       icmp_ln205_1_fu_199_p2                                         |     |        | icmp_ln205_1   | setgt     | auto                   | 0       |
+|       maxRGB_fu_204_p3                                               |     |        | maxRGB         | select    | auto_sel               | 0       |
+|       sub_ln207_fu_215_p2                                            |     |        | sub_ln207      | sub       | fabric                 | 0       |
+|       sub_ln207_1_fu_237_p2                                          |     |        | sub_ln207_1    | sub       | fabric                 | 0       |
+|       mul_32ns_10ns_42_1_1_U49                                       | 2   |        | mul_ln207      | mul       | auto                   | 0       |
+|       icmp_ln207_fu_256_p2                                           |     |        | icmp_ln207     | setlt     | auto                   | 0       |
+|       add_ln209_fu_265_p2                                            |     |        | add_ln209      | add       | fabric                 | 0       |
+|       add_ln210_fu_274_p2                                            |     |        | add_ln210      | add       | fabric                 | 0       |
+|       add_ln211_fu_283_p2                                            |     |        | add_ln211      | add       | fabric                 | 0       |
+|       add_i_i76836_fu_289_p3                                         |     |        | add_i_i76836   | select    | auto_sel               | 0       |
+|       add_i_i85734_fu_297_p3                                         |     |        | add_i_i85734   | select    | auto_sel               | 0       |
+|       add_i_i94832_fu_305_p3                                         |     |        | add_i_i94832   | select    | auto_sel               | 0       |
+|     + AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3                 | 0   |        |                |           |                        |         |
+|       icmp_ln216_fu_126_p2                                           |     |        | icmp_ln216     | seteq     | auto                   | 0       |
+|       add_ln216_fu_132_p2                                            |     |        | add_ln216      | add       | fabric                 | 0       |
+|       sparsemux_7_2_40_1_1_U58                                       |     |        | tmp_9          | sparsemux | onehotencoding_realdef | 0       |
+|       sparsemux_7_2_40_1_1_U59                                       |     |        | tmp_s          | sparsemux | onehotencoding_realdef | 0       |
+|       add_ln221_fu_184_p2                                            |     |        | add_ln221      | add       | fabric                 | 0       |
+|   + AWBGainUpdate_20_20_2160_3840_1_0_2_2_s                          | 6   |        |                |           |                        |         |
+|     icmp_ln85_fu_104_p2                                              |     |        | icmp_ln85      | seteq     | auto                   | 0       |
+|     i_6_fu_109_p2                                                    |     |        | i_6            | add       | fabric                 | 0       |
+|    + AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1         | 6   |        |                |           |                        |         |
+|      icmp_ln91_fu_145_p2                                             |     |        | icmp_ln91      | seteq     | auto                   | 0       |
+|      j_6_fu_151_p2                                                   |     |        | j_6            | add       | fabric                 | 0       |
+|      mul_32s_10ns_42_1_1_U96                                         | 2   |        | mul_ln104      | mul       | auto                   | 0       |
+|      icmp_ln45_fu_181_p2                                             |     |        | icmp_ln45      | setgt     | auto                   | 0       |
+|      select_ln45_fu_197_p3                                           |     |        | select_ln45    | select    | auto_sel               | 0       |
+|      mul_32s_10ns_42_1_1_U97                                         | 2   |        | mul_ln104_1    | mul       | auto                   | 0       |
+|      icmp_ln45_1_fu_228_p2                                           |     |        | icmp_ln45_1    | setgt     | auto                   | 0       |
+|      select_ln45_1_fu_244_p3                                         |     |        | select_ln45_1  | select    | auto_sel               | 0       |
+|      mul_32s_10ns_42_1_1_U98                                         | 2   |        | mul_ln104_2    | mul       | auto                   | 0       |
+|      icmp_ln45_2_fu_275_p2                                           |     |        | icmp_ln45_2    | setgt     | auto                   | 0       |
+|      select_ln45_2_fu_291_p3                                         |     |        | select_ln45_2  | select    | auto_sel               | 0       |
+|   + xfMat2AXIvideo_30_20_2160_3840_1_2_0_s                           | 0   |        |                |           |                        |         |
+|     add_ln216_fu_124_p2                                              |     |        | add_ln216      | add       | fabric                 | 0       |
+|     icmp_ln202_fu_138_p2                                             |     |        | icmp_ln202     | seteq     | auto                   | 0       |
+|     i_2_fu_143_p2                                                    |     |        | i_2            | add       | fabric                 | 0       |
+|    + xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi  | 0   |        |                |           |                        |         |
+|      icmp_ln204_fu_156_p2                                            |     |        | icmp_ln204     | seteq     | auto                   | 0       |
+|      j_2_fu_162_p2                                                   |     |        | j_2            | add       | fabric                 | 0       |
+|      icmp_ln216_fu_168_p2                                            |     |        | icmp_ln216     | seteq     | auto                   | 0       |
++----------------------------------------------------------------------+-----+--------+----------------+-----------+------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++--------------------------+--------------+------------+------+------+--------+-----------------+------+---------+------------------+
+| Name                     | Usage        | Type       | BRAM | URAM | Pragma | Variable        | Impl | Latency | Bitwidth, Depth, |
+|                          |              |            |      |      |        |                 |      |         | Banks            |
++--------------------------+--------------+------------+------+------+--------+-----------------+------+---------+------------------+
+| + autowhitebalance_accel |              |            | 0    | 0    |        |                 |      |         |                  |
+|   control_s_axi_U        | interface    | s_axilite  |      |      |        |                 |      |         |                  |
+|  + AWBKernel             |              |            | 0    | 0    |        |                 |      |         |                  |
+|    mul_loc_channel_U     | fifo channel | task level |      |      |        | mul_loc_channel | srl  | 0       | 32, 2, 1         |
+|    tmp_channel_U         | fifo channel | task level |      |      |        | tmp_channel     | srl  | 0       | 32, 2, 1         |
+|    in_mat_data_U         | fifo channel | stream     |      |      |        | in_mat_data     | srl  | 0       | 30, 2, 1         |
+|    impop_data_U          | fifo channel | stream     |      |      |        | impop_data      | srl  | 0       | 30, 2, 1         |
+|    out_mat_data_U        | fifo channel | stream     |      |      |        | out_mat_data    | srl  | 0       | 30, 2, 1         |
++--------------------------+--------------+------------+------+------+--------+-----------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++---------------+------------------------------------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type          | Options                                  | Location                                                                      | Messages                                                                                                                                                                                                                |
++---------------+------------------------------------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| DATAFLOW      |                                          | in awbkernel (xf_autowhitebalance_accel.cpp:47)                               | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region                                      |
+|               |                                          |                                                                               | Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (xf_autowhitebalance_accel.cpp:47:9) |
+| ARRAY_RESHAPE | variable=val factor=RESHAPE_FACTOR dim=1 | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:760) | 'factor' in '#pragma HLS array_reshape' is ignored                                                                                                                                                                      |
++---------------+------------------------------------------+-------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Inferred Pragmas
++----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Type     | Options | Location                                                                                                                                                                     | Inferred From                 |
++----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| PIPELINE |         | loop VITIS_LOOP_216_3 (./xf_autowhitebalance.hpp:216:23) in xf::cv::awbchannelgainkernel<20, 20, 2160, 3840, 1, 2, 2, 3, 23, 23, 13, 13, 3840> (xf_autowhitebalance.hpp:216) | syn.compile.pipeline_loops=64 |
++----------+---------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+
+* Valid Pragma Syntax
++-----------------+--------------------------------------------------+-------------------------------------------------------------------------------+
+| Type            | Options                                          | Location                                                                      |
++-----------------+--------------------------------------------------+-------------------------------------------------------------------------------+
+| LOOP_TRIPCOUNT  | min=ROWS max=ROWS                                | in awbgainupdatekernel (xf_autowhitebalance.hpp:87)                           |
+| LOOP_FLATTEN    | OFF                                              | in awbgainupdatekernel (xf_autowhitebalance.hpp:88)                           |
+| LOOP_TRIPCOUNT  | min=TC max=TC                                    | in awbgainupdatekernel (xf_autowhitebalance.hpp:93)                           |
+| PIPELINE        |                                                  | in awbgainupdatekernel (xf_autowhitebalance.hpp:94)                           |
+| UNROLL          |                                                  | in awbgainupdatekernel (xf_autowhitebalance.hpp:100)                          |
+| ARRAY_PARTITION | variable=tmpsum_vals complete dim=0              | in awbchannelgainkernel (xf_autowhitebalance.hpp:156)                         |
+| ARRAY_PARTITION | variable=sum complete dim=0                      | in awbchannelgainkernel (xf_autowhitebalance.hpp:157)                         |
+| UNROLL          |                                                  | in awbchannelgainkernel (xf_autowhitebalance.hpp:162)                         |
+| UNROLL          |                                                  | in awbchannelgainkernel (xf_autowhitebalance.hpp:168)                         |
+| LOOP_TRIPCOUNT  | min=ROWS max=ROWS                                | in awbchannelgainkernel (xf_autowhitebalance.hpp:178)                         |
+| LOOP_TRIPCOUNT  | min=COLS/NPC max=COLS/NPC                        | in awbchannelgainkernel (xf_autowhitebalance.hpp:183)                         |
+| PIPELINE        | ii=1                                             | in awbchannelgainkernel (xf_autowhitebalance.hpp:184)                         |
+| LOOP_FLATTEN    | OFF                                              | in awbchannelgainkernel (xf_autowhitebalance.hpp:185)                         |
+| UNROLL          |                                                  | in awbchannelgainkernel (xf_autowhitebalance.hpp:195)                         |
+| UNROLL          |                                                  | in awbchannelgainkernel (xf_autowhitebalance.hpp:219)                         |
+| INLINE          | OFF                                              | in awbnormalizationkernel (xf_autowhitebalance.hpp:292)                       |
+| ARRAY_PARTITION | variable = minValue complete dim = 0             | in awbnormalizationkernel (xf_autowhitebalance.hpp:320)                       |
+| ARRAY_PARTITION | variable = maxValue complete dim = 0             | in awbnormalizationkernel (xf_autowhitebalance.hpp:321)                       |
+| PIPELINE        |                                                  | in awbnormalizationkernel (xf_autowhitebalance.hpp:341)                       |
+| LOOP_TRIPCOUNT  | min = 255 max = 255                              | in awbnormalizationkernel (xf_autowhitebalance.hpp:342)                       |
+| DEPENDENCE      | variable = hist array intra false                | in awbnormalizationkernel (xf_autowhitebalance.hpp:343)                       |
+| DEPENDENCE      | variable = minValue intra false                  | in awbnormalizationkernel (xf_autowhitebalance.hpp:344)                       |
+| PIPELINE        |                                                  | in awbnormalizationkernel (xf_autowhitebalance.hpp:350)                       |
+| LOOP_TRIPCOUNT  | min = 255 max = 255                              | in awbnormalizationkernel (xf_autowhitebalance.hpp:351)                       |
+| DEPENDENCE      | variable = hist array intra false                | in awbnormalizationkernel (xf_autowhitebalance.hpp:352)                       |
+| DEPENDENCE      | variable = maxValue intra false                  | in awbnormalizationkernel (xf_autowhitebalance.hpp:353)                       |
+| ARRAY_PARTITION | variable = maxmin_diff complete dim = 0          | in awbnormalizationkernel (xf_autowhitebalance.hpp:362)                       |
+| LOOP_TRIPCOUNT  | min=ROWS max=ROWS                                | in awbnormalizationkernel (xf_autowhitebalance.hpp:387)                       |
+| LOOP_TRIPCOUNT  | min=COLS/NPC max=COLS/NPC                        | in awbnormalizationkernel (xf_autowhitebalance.hpp:393)                       |
+| PIPELINE        | ii=1                                             | in awbnormalizationkernel (xf_autowhitebalance.hpp:394)                       |
+| LOOP_FLATTEN    | OFF                                              | in awbnormalizationkernel (xf_autowhitebalance.hpp:395)                       |
+| UNROLL          |                                                  | in awbnormalizationkernel (xf_autowhitebalance.hpp:406)                       |
+| INLINE          | OFF                                              | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:445)                 |
+| ARRAY_PARTITION | variable = minValue complete dim = 0             | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:471)                 |
+| ARRAY_PARTITION | variable = maxValue complete dim = 0             | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:472)                 |
+| PIPELINE        |                                                  | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:492)                 |
+| LOOP_TRIPCOUNT  | min = 255 max = 255                              | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:493)                 |
+| DEPENDENCE      | variable = hist array intra false                | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:494)                 |
+| DEPENDENCE      | variable = minValue intra false                  | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:495)                 |
+| PIPELINE        |                                                  | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:501)                 |
+| LOOP_TRIPCOUNT  | min = 255 max = 255                              | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:502)                 |
+| DEPENDENCE      | variable = hist array intra false                | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:503)                 |
+| DEPENDENCE      | variable = maxValue intra false                  | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:504)                 |
+| ARRAY_PARTITION | variable = maxmin_diff complete dim = 0          | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:513)                 |
+| LOOP_TRIPCOUNT  | min=ROWS max=ROWS                                | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:542)                 |
+| LOOP_TRIPCOUNT  | min=COLS/NPC max=COLS/NPC                        | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:548)                 |
+| PIPELINE        | ii=1                                             | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:549)                 |
+| LOOP_FLATTEN    | OFF                                              | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:550)                 |
+| UNROLL          |                                                  | in awbnormalizationkernel_multi (xf_autowhitebalance.hpp:561)                 |
+| INLINE          | OFF                                              | in awbhistogramkernel (xf_autowhitebalance.hpp:601)                           |
+| PIPELINE        |                                                  | in awbhistogramkernel (xf_autowhitebalance.hpp:627)                           |
+| LOOP_TRIPCOUNT  | min=HISTSIZE max=HISTSIZE                        | in awbhistogramkernel (xf_autowhitebalance.hpp:628)                           |
+| UNROLL          |                                                  | in awbhistogramkernel (xf_autowhitebalance.hpp:633)                           |
+| BIND_STORAGE    | variable=tmp_hist type=RAM_T2P impl=BRAM         | in awbhistogramkernel (xf_autowhitebalance.hpp:643)                           |
+| BIND_STORAGE    | variable=tmp_hist1 type=RAM_T2P impl=BRAM        | in awbhistogramkernel (xf_autowhitebalance.hpp:644)                           |
+| ARRAY_PARTITION | variable=tmp_hist complete dim=1                 | in awbhistogramkernel (xf_autowhitebalance.hpp:645)                           |
+| ARRAY_PARTITION | variable=tmp_hist1 complete dim=1                | in awbhistogramkernel (xf_autowhitebalance.hpp:646)                           |
+| PIPELINE        |                                                  | in awbhistogramkernel (xf_autowhitebalance.hpp:656)                           |
+| LOOP_TRIPCOUNT  | min=HISTSIZE max=HISTSIZE                        | in awbhistogramkernel (xf_autowhitebalance.hpp:660)                           |
+| ARRAY_PARTITION | variable = old complete                          | in awbhistogramkernel (xf_autowhitebalance.hpp:671)                           |
+| ARRAY_PARTITION | variable = old1 complete                         | in awbhistogramkernel (xf_autowhitebalance.hpp:672)                           |
+| ARRAY_PARTITION | variable = acc complete                          | in awbhistogramkernel (xf_autowhitebalance.hpp:673)                           |
+| ARRAY_PARTITION | variable = acc1 complete                         | in awbhistogramkernel (xf_autowhitebalance.hpp:674)                           |
+| LOOP_TRIPCOUNT  | min=1 max=ROWS                                   | in awbhistogramkernel (xf_autowhitebalance.hpp:692)                           |
+| PIPELINE        | ii=2                                             | in awbhistogramkernel (xf_autowhitebalance.hpp:698)                           |
+| LOOP_FLATTEN    | OFF                                              | in awbhistogramkernel (xf_autowhitebalance.hpp:699)                           |
+| LOOP_TRIPCOUNT  | min=1 max=COLS/4                                 | in awbhistogramkernel (xf_autowhitebalance.hpp:700)                           |
+| DEPENDENCE      | variable=tmp_hist array intra false              | in awbhistogramkernel (xf_autowhitebalance.hpp:712)                           |
+| DEPENDENCE      | variable=tmp_hist1 array intra false             | in awbhistogramkernel (xf_autowhitebalance.hpp:713)                           |
+| UNROLL          |                                                  | in awbhistogramkernel (xf_autowhitebalance.hpp:714)                           |
+| LOOP_TRIPCOUNT  | min=1 max=6                                      | in awbhistogramkernel (xf_autowhitebalance.hpp:750)                           |
+| UNROLL          |                                                  | in awbhistogramkernel (xf_autowhitebalance.hpp:751)                           |
+| PIPELINE        |                                                  | in awbhistogramkernel (xf_autowhitebalance.hpp:765)                           |
+| UNROLL          |                                                  | in awbhistogramkernel (xf_autowhitebalance.hpp:771)                           |
+| UNROLL          |                                                  | in awbhistogramkernel (xf_autowhitebalance.hpp:779)                           |
+| INLINE          | OFF                                              | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:809)                     |
+| PIPELINE        |                                                  | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:834)                     |
+| LOOP_TRIPCOUNT  | min=HISTSIZE max=HISTSIZE                        | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:835)                     |
+| UNROLL          |                                                  | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:840)                     |
+| BIND_STORAGE    | variable=tmp_hist type=RAM_T2P impl=BRAM         | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:850)                     |
+| BIND_STORAGE    | variable=tmp_hist1 type=RAM_T2P impl=BRAM        | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:851)                     |
+| ARRAY_PARTITION | variable=tmp_hist complete dim=1                 | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:852)                     |
+| ARRAY_PARTITION | variable=tmp_hist1 complete dim=1                | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:853)                     |
+| PIPELINE        |                                                  | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:863)                     |
+| LOOP_TRIPCOUNT  | min=HISTSIZE max=HISTSIZE                        | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:867)                     |
+| ARRAY_PARTITION | variable = old complete                          | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:878)                     |
+| ARRAY_PARTITION | variable = old1 complete                         | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:879)                     |
+| ARRAY_PARTITION | variable = acc complete                          | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:880)                     |
+| ARRAY_PARTITION | variable = acc1 complete                         | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:881)                     |
+| LOOP_TRIPCOUNT  | min=1 max=ROWS                                   | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:899)                     |
+| PIPELINE        | ii=2                                             | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:905)                     |
+| LOOP_FLATTEN    | OFF                                              | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:906)                     |
+| LOOP_TRIPCOUNT  | min=1 max=COLS/4                                 | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:907)                     |
+| DEPENDENCE      | variable=tmp_hist array intra false              | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:919)                     |
+| DEPENDENCE      | variable=tmp_hist1 array intra false             | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:920)                     |
+| UNROLL          |                                                  | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:921)                     |
+| LOOP_TRIPCOUNT  | min=1 max=6                                      | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:957)                     |
+| UNROLL          |                                                  | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:958)                     |
+| PIPELINE        |                                                  | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:972)                     |
+| UNROLL          |                                                  | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:978)                     |
+| UNROLL          |                                                  | in awbhistogramkernel_multi (xf_autowhitebalance.hpp:986)                     |
+| INLINE          | OFF                                              | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1015)                      |
+| PIPELINE        |                                                  | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1041)                      |
+| LOOP_TRIPCOUNT  | min=HISTSIZE max=HISTSIZE                        | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1042)                      |
+| UNROLL          |                                                  | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1047)                      |
+| BIND_STORAGE    | variable=tmp_hist type=RAM_T2P impl=URAM         | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1058)                      |
+| ARRAY_PARTITION | variable=tmp_hist complete dim=1                 | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1059)                      |
+| BIND_STORAGE    | variable=tmp_hist type=RAM_T2P impl=BRAM         | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1061)                      |
+| ARRAY_PARTITION | variable=tmp_hist complete dim=1                 | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1062)                      |
+| PIPELINE        |                                                  | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1073)                      |
+| LOOP_TRIPCOUNT  | min=HISTSIZE max=HISTSIZE                        | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1077)                      |
+| ARRAY_PARTITION | variable = old complete                          | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1086)                      |
+| ARRAY_PARTITION | variable = acc_rd complete                       | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1087)                      |
+| ARRAY_PARTITION | variable = acc_wr complete                       | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1088)                      |
+| LOOP_TRIPCOUNT  | min=1 max=ROWS                                   | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1108)                      |
+| PIPELINE        | ii=1                                             | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1114)                      |
+| LOOP_FLATTEN    | OFF                                              | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1115)                      |
+| LOOP_TRIPCOUNT  | min=1 max=COLS                                   | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1116)                      |
+| DEPENDENCE      | variable=tmp_hist array intra false              | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1126)                      |
+| UNROLL          |                                                  | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1127)                      |
+| LOOP_TRIPCOUNT  | min=1 max=6                                      | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1151)                      |
+| UNROLL          |                                                  | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1152)                      |
+| PIPELINE        |                                                  | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1164)                      |
+| UNROLL          |                                                  | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1169)                      |
+| UNROLL          |                                                  | in awbhistogramkernel_imp (xf_autowhitebalance.hpp:1177)                      |
+| INLINE          | OFF                                              | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1207)                |
+| PIPELINE        |                                                  | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1233)                |
+| LOOP_TRIPCOUNT  | min=HISTSIZE max=HISTSIZE                        | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1234)                |
+| UNROLL          |                                                  | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1239)                |
+| BIND_STORAGE    | variable=tmp_hist type=RAM_T2P impl=BRAM         | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1248)                |
+| ARRAY_PARTITION | variable=tmp_hist complete dim=1                 | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1249)                |
+| PIPELINE        |                                                  | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1259)                |
+| LOOP_TRIPCOUNT  | min=HISTSIZE max=HISTSIZE                        | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1263)                |
+| ARRAY_PARTITION | variable = old complete                          | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1272)                |
+| ARRAY_PARTITION | variable = acc_rd complete                       | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1273)                |
+| ARRAY_PARTITION | variable = acc_wr complete                       | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1274)                |
+| LOOP_TRIPCOUNT  | min=1 max=ROWS                                   | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1294)                |
+| PIPELINE        | ii=1                                             | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1300)                |
+| LOOP_FLATTEN    | OFF                                              | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1301)                |
+| LOOP_TRIPCOUNT  | min=1 max=COLS                                   | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1302)                |
+| DEPENDENCE      | variable=tmp_hist array intra false              | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1312)                |
+| UNROLL          |                                                  | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1313)                |
+| LOOP_TRIPCOUNT  | min=1 max=6                                      | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1337)                |
+| UNROLL          |                                                  | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1338)                |
+| PIPELINE        |                                                  | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1350)                |
+| UNROLL          |                                                  | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1355)                |
+| UNROLL          |                                                  | in awbhistogramkernel_imp_multi (xf_autowhitebalance.hpp:1363)                |
+| INLINE          | OFF                                              | in awbhistogram (xf_autowhitebalance.hpp:1391)                                |
+| INLINE          | OFF                                              | in awbhistogram_multi (xf_autowhitebalance.hpp:1418)                          |
+| INLINE          | OFF                                              | in awbnormalization (xf_autowhitebalance.hpp:1444)                            |
+| INLINE          | OFF                                              | in awbnormalization_multi (xf_autowhitebalance.hpp:1470)                      |
+| INLINE          | OFF                                              | in hist_nor_awb (xf_autowhitebalance.hpp:1536)                                |
+| DATAFLOW        |                                                  | in hist_nor_awb (xf_autowhitebalance.hpp:1540)                                |
+| INLINE          | OFF                                              | in hist_nor_awb_wrap (xf_autowhitebalance.hpp:1574)                           |
+| ARRAY_PARTITION | variable=hist0 complete dim=1                    | in hist_nor_awb_multi (xf_autowhitebalance.hpp:1621)                          |
+| ARRAY_PARTITION | variable=hist0 complete dim=2                    | in hist_nor_awb_multi (xf_autowhitebalance.hpp:1622)                          |
+| ARRAY_PARTITION | variable=hist1 complete dim=1                    | in hist_nor_awb_multi (xf_autowhitebalance.hpp:1624)                          |
+| ARRAY_PARTITION | variable=hist1 complete dim=2                    | in hist_nor_awb_multi (xf_autowhitebalance.hpp:1625)                          |
+| ARRAY_PARTITION | variable=flag complete dim=1                     | in hist_nor_awb_multi (xf_autowhitebalance.hpp:1627)                          |
+| ARRAY_PARTITION | variable=eof complete dim=1                      | in hist_nor_awb_multi (xf_autowhitebalance.hpp:1628)                          |
+| ARRAY_PARTITION | variable=pawb complete dim=1                     | in hist_nor_awb_multi (xf_autowhitebalance.hpp:1629)                          |
+| INLINE          | OFF                                              | in chgain_update_awb (xf_autowhitebalance.hpp:1655)                           |
+| DATAFLOW        |                                                  | in chgain_update_awb (xf_autowhitebalance.hpp:1660)                           |
+| INLINE          | OFF                                              | in chgain_update_awb_wrap (xf_autowhitebalance.hpp:1684)                      |
+| ARRAY_PARTITION | variable= pawb dim=1 complete                    | in chgain_update_awb_multi (xf_autowhitebalance.hpp:1722)                     |
+| ARRAY_PARTITION | variable=i_gain0 complete dim=1                  | in chgain_update_awb_multi (xf_autowhitebalance.hpp:1723)                     |
+| ARRAY_PARTITION | variable=i_gain0 complete dim=2                  | in chgain_update_awb_multi (xf_autowhitebalance.hpp:1724)                     |
+| ARRAY_PARTITION | variable=i_gain1 complete dim=1                  | in chgain_update_awb_multi (xf_autowhitebalance.hpp:1727)                     |
+| ARRAY_PARTITION | variable=i_gain1 complete dim=2                  | in chgain_update_awb_multi (xf_autowhitebalance.hpp:1728)                     |
+| ARRAY_PARTITION | variable=flag complete dim=1                     | in chgain_update_awb_multi (xf_autowhitebalance.hpp:1731)                     |
+| ARRAY_PARTITION | variable=eof complete dim=1                      | in chgain_update_awb_multi (xf_autowhitebalance.hpp:1732)                     |
+| INLINE          | OFF                                              | in awbkernel (xf_autowhitebalance_accel.cpp:40)                               |
+| INTERFACE       | axis port=s_axis_video                           | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:78)                  |
+| INTERFACE       | axis port=m_axis_video                           | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:79)                  |
+| INTERFACE       | s_axilite port=thresh                            | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:81)                  |
+| INTERFACE       | s_axilite port=inputMin                          | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:82)                  |
+| INTERFACE       | s_axilite port=inputMax                          | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:83)                  |
+| INTERFACE       | s_axilite port=outputMin                         | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:84)                  |
+| INTERFACE       | s_axilite port=outputMax                         | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:85)                  |
+| INTERFACE       | s_axilite port=rows                              | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:86)                  |
+| INTERFACE       | s_axilite port=cols                              | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:87)                  |
+| INTERFACE       | s_axilite port=return                            | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:88)                  |
+| ARRAY_PARTITION | variable=hist0 complete dim=1                    | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:89)                  |
+| ARRAY_PARTITION | variable=hist1 complete dim=1                    | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:90)                  |
+| ARRAY_PARTITION | variable=igain_0 complete                        | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:91)                  |
+| ARRAY_PARTITION | variable=igain_1 complete                        | in autowhitebalance_accel (xf_autowhitebalance_accel.cpp:92)                  |
+| INLINE          |                                                  | in axigetbitfields (xf_axi_io.hpp:29)                                         |
+| INLINE          |                                                  | in axigetbitfields (xf_axi_io.hpp:38)                                         |
+| INLINE          |                                                  | in axigetbitfields (xf_axi_io.hpp:48)                                         |
+| INLINE          |                                                  | in axigetbitfields (xf_axi_io.hpp:58)                                         |
+| INLINE          |                                                  | in axisetbitfields (xf_axi_io.hpp:66)                                         |
+| INLINE          |                                                  | in axisetbitfields (xf_axi_io.hpp:75)                                         |
+| INLINE          |                                                  | in axisetbitfields (xf_axi_io.hpp:85)                                         |
+| INLINE          |                                                  | in axisetbitfields (xf_axi_io.hpp:95)                                         |
+| LOOP_TRIPCOUNT  | min=ROWS max=ROWS                                | in xfduplicate (xf_duplicateimage.hpp:53)                                     |
+| LOOP_FLATTEN    | off                                              | in xfduplicate (xf_duplicateimage.hpp:54)                                     |
+| LOOP_TRIPCOUNT  | min = TRIP_COLS max = TRIP_COLS                  | in xfduplicate (xf_duplicateimage.hpp:59)                                     |
+| PIPELINE        |                                                  | in xfduplicate (xf_duplicateimage.hpp:60)                                     |
+| LOOP_TRIPCOUNT  | min=ROWS max=ROWS                                | in xfduplicates (xf_duplicateimage.hpp:94)                                    |
+| LOOP_FLATTEN    | off                                              | in xfduplicates (xf_duplicateimage.hpp:95)                                    |
+| LOOP_TRIPCOUNT  | min = TRIP_COLS max = TRIP_COLS                  | in xfduplicates (xf_duplicateimage.hpp:100)                                   |
+| PIPELINE        |                                                  | in xfduplicates (xf_duplicateimage.hpp:101)                                   |
+| INLINE          | off                                              | in duplicatemat (xf_duplicateimage.hpp:123)                                   |
+| INLINE          | off                                              | in duplicateimages (xf_duplicateimage.hpp:143)                                |
+| INLINE          |                                                  | in write (xf_infra.hpp:40)                                                    |
+| INLINE          |                                                  | in fetchingmatdata (xf_infra.hpp:51)                                          |
+| INLINE          |                                                  | in read (xf_infra.hpp:60)                                                     |
+| INLINE          |                                                  | in fillingdata (xf_infra.hpp:74)                                              |
+| PIPELINE        | ii=1                                             | in axivideo2xfmat (xf_infra.hpp:121)                                          |
+| LOOP_TRIPCOUNT  | avg=1 max=1                                      | in axivideo2xfmat (xf_infra.hpp:122)                                          |
+| LOOP_FLATTEN    | off                                              | in axivideo2xfmat (xf_infra.hpp:136)                                          |
+| PIPELINE        | ii=1                                             | in axivideo2xfmat (xf_infra.hpp:137)                                          |
+| PIPELINE        | ii=1                                             | in axivideo2xfmat (xf_infra.hpp:162)                                          |
+| LOOP_TRIPCOUNT  | avg=1 max=1                                      | in axivideo2xfmat (xf_infra.hpp:163)                                          |
+| LOOP_FLATTEN    | off                                              | in xfmat2axivideo (xf_infra.hpp:206)                                          |
+| PIPELINE        | II = 1                                           | in xfmat2axivideo (xf_infra.hpp:207)                                          |
+| INLINE          |                                                  | in scalar<n, t> (xf_structs.hpp:246)                                          |
+| ARRAY_PARTITION | variable=val dim=1 complete                      | in scalar<n, t> (xf_structs.hpp:247)                                          |
+| INLINE          |                                                  | in scalar<n, t> (xf_structs.hpp:253)                                          |
+| ARRAY_PARTITION | variable=val dim=1 complete                      | in scalar<n, t> (xf_structs.hpp:254)                                          |
+| ARRAY_PARTITION | variable=val dim=1 complete                      | in scalar<n, t> (xf_structs.hpp:261)                                          |
+| INLINE          |                                                  | in scalar<n, t> (xf_structs.hpp:262)                                          |
+| ARRAY_PARTITION | variable=val dim=1 complete                      | in scalar<n, t> (xf_structs.hpp:270)                                          |
+| INLINE          |                                                  | in scalar<n, t> (xf_structs.hpp:271)                                          |
+| ARRAY_PARTITION | variable=val dim=1 complete                      | in scalar<n, t> (xf_structs.hpp:280)                                          |
+| INLINE          |                                                  | in scalar<n, t> (xf_structs.hpp:281)                                          |
+| INLINE          |                                                  | in operator= (xf_structs.hpp:306)                                             |
+| UNROLL          |                                                  | in operator= (xf_structs.hpp:310)                                             |
+| INLINE          |                                                  | in operator+ (xf_structs.hpp:319)                                             |
+| UNROLL          |                                                  | in operator+ (xf_structs.hpp:324)                                             |
+| INLINE          |                                                  | in operator+ (xf_structs.hpp:334)                                             |
+| UNROLL          |                                                  | in operator+ (xf_structs.hpp:339)                                             |
+| INLINE          |                                                  | in operator- (xf_structs.hpp:349)                                             |
+| UNROLL          |                                                  | in operator- (xf_structs.hpp:354)                                             |
+| INLINE          |                                                  | in operator- (xf_structs.hpp:364)                                             |
+| UNROLL          |                                                  | in operator- (xf_structs.hpp:369)                                             |
+| INLINE          |                                                  | in operator* (xf_structs.hpp:379)                                             |
+| UNROLL          |                                                  | in operator* (xf_structs.hpp:384)                                             |
+| INLINE          |                                                  | in operator* (xf_structs.hpp:394)                                             |
+| UNROLL          |                                                  | in operator* (xf_structs.hpp:399)                                             |
+| INLINE          |                                                  | in operator/ (xf_structs.hpp:409)                                             |
+| UNROLL          |                                                  | in operator/ (xf_structs.hpp:414)                                             |
+| INLINE          |                                                  | in operator/ (xf_structs.hpp:424)                                             |
+| UNROLL          |                                                  | in operator/ (xf_structs.hpp:429)                                             |
+| INLINE          |                                                  | in type (xf_structs.hpp:585)                                                  |
+| INLINE          |                                                  | in depth (xf_structs.hpp:593)                                                 |
+| INLINE          |                                                  | in channels (xf_structs.hpp:600)                                              |
+| INLINE          |                                                  | in init (xf_structs.hpp:608)                                                  |
+| INLINE          |                                                  | in mat<t, rows, cols, npc, xfcvdepth> (xf_structs.hpp:655)                    |
+| INLINE          |                                                  | in mat<t, rows, cols, npc, xfcvdepth> (xf_structs.hpp:664)                    |
+| INLINE          |                                                  | in mat<t, rows, cols, npc, xfcvdepth> (xf_structs.hpp:673)                    |
+| INLINE          |                                                  | in mat<t, rows, cols, npc, xfcvdepth> (xf_structs.hpp:682)                    |
+| INLINE          |                                                  | in copyto (xf_structs.hpp:709)                                                |
+| INLINE          |                                                  | in copyfrom (xf_structs.hpp:743)                                              |
+| BIND_OP         | variable=mul_rows_cols op=mul impl=dsp latency=2 | in addrbound (xf_structs.hpp:950)                                             |
+| LOOP_TRIPCOUNT  | min=1 max=ADDRBOUND                              | in axi2axistream (xf_structs.hpp:985)                                         |
+| PIPELINE        |                                                  | in axi2axistream (xf_structs.hpp:986)                                         |
+| LOOP_TRIPCOUNT  | min=1 max=ADDRBOUND                              | in axi2axistream (xf_structs.hpp:999)                                         |
+| PIPELINE        |                                                  | in axi2axistream (xf_structs.hpp:1000)                                        |
+| LOOP_TRIPCOUNT  | min=1 max=ROWS                                   | in axi2axistream (xf_structs.hpp:1020)                                        |
+| LOOP_TRIPCOUNT  | min=1 max=COLS_ADDRBOUND                         | in axi2axistream (xf_structs.hpp:1024)                                        |
+| PIPELINE        | ii=1                                             | in axi2axistream (xf_structs.hpp:1025)                                        |
+| LOOP_TRIPCOUNT  | min=1 max=LOOPBOUND                              | in axistream2matstream (xf_structs.hpp:1057)                                  |
+| PIPELINE        |                                                  | in axistream2matstream (xf_structs.hpp:1058)                                  |
+| LOOP_TRIPCOUNT  | min=1 max=LOOPBOUND                              | in matstream2mat (xf_structs.hpp:1101)                                        |
+| PIPELINE        |                                                  | in matstream2mat (xf_structs.hpp:1102)                                        |
+| DATAFLOW        |                                                  | in axistream2mat (xf_structs.hpp:1114)                                        |
+| DATAFLOW        |                                                  | in axistream2mat (xf_structs.hpp:1127)                                        |
+| DATAFLOW        |                                                  | in axi2mat (xf_structs.hpp:1142)                                              |
+| DATAFLOW        |                                                  | in axi2mat (xf_structs.hpp:1165)                                              |
+| DATAFLOW        |                                                  | in axi2mat (xf_structs.hpp:1177)                                              |
+| DATAFLOW        |                                                  | in axi2mat (xf_structs.hpp:1200)                                              |
+| LOOP_TRIPCOUNT  | min=1 max=LOOPBOUND                              | in mat2matstream (xf_structs.hpp:1274)                                        |
+| PIPELINE        |                                                  | in mat2matstream (xf_structs.hpp:1275)                                        |
+| LOOP_TRIPCOUNT  | min=1 max=ROWS                                   | in matstream2axistream (xf_structs.hpp:1304)                                  |
+| LOOP_TRIPCOUNT  | min=1 max=COLS_BOUND_PER_NPC                     | in matstream2axistream (xf_structs.hpp:1309)                                  |
+| PIPELINE        |                                                  | in matstream2axistream (xf_structs.hpp:1310)                                  |
+| DATAFLOW        |                                                  | in mat2axistream (xf_structs.hpp:1352)                                        |
+| DATAFLOW        |                                                  | in mat2axistream (xf_structs.hpp:1365)                                        |
+| LOOP_TRIPCOUNT  | min=1 max=ADDRBOUND                              | in axistream2axi (xf_structs.hpp:1382)                                        |
+| PIPELINE        |                                                  | in axistream2axi (xf_structs.hpp:1383)                                        |
+| LOOP_TRIPCOUNT  | min=1 max=ADDRBOUND                              | in axistream2axi (xf_structs.hpp:1397)                                        |
+| PIPELINE        |                                                  | in axistream2axi (xf_structs.hpp:1398)                                        |
+| DATAFLOW        |                                                  | in mat2axi (xf_structs.hpp:1412)                                              |
+| DATAFLOW        |                                                  | in mat2axi (xf_structs.hpp:1439)                                              |
+| DATAFLOW        |                                                  | in mat2axi (xf_structs.hpp:1470)                                              |
+| DATAFLOW        |                                                  | in mat2axi (xf_structs.hpp:1500)                                              |
+| INLINE          | OFF                                              | in ptr2xfmat (xf_utility.hpp:35)                                              |
+| PIPELINE        | II = 1                                           | in ptr2xfmat (xf_utility.hpp:40)                                              |
+| LOOP_TRIPCOUNT  | min = c_TRIP_COUNT max = c_TRIP_COUNT            | in ptr2xfmat (xf_utility.hpp:41)                                              |
+| INLINE          | OFF                                              | in xfmat2ptr (xf_utility.hpp:53)                                              |
+| PIPELINE        | II = 1                                           | in xfmat2ptr (xf_utility.hpp:59)                                              |
+| LOOP_TRIPCOUNT  | min = c_TRIP_COUNT max = c_TRIP_COUNT            | in xfmat2ptr (xf_utility.hpp:60)                                              |
+| INLINE          | OFF                                              | in xfduplicatemat_ptrmat (xf_utility.hpp:81)                                  |
+| PIPELINE        | II = 1                                           | in xfduplicatemat_ptrmat (xf_utility.hpp:87)                                  |
+| LOOP_TRIPCOUNT  | min = c_TRIP_COUNT max = c_TRIP_COUNT            | in xfduplicatemat_ptrmat (xf_utility.hpp:88)                                  |
+| INLINE          | OFF                                              | in xfduplicatemat_ptrmat2 (xf_utility.hpp:114)                                |
+| PIPELINE        | II = 1                                           | in xfduplicatemat_ptrmat2 (xf_utility.hpp:120)                                |
+| LOOP_TRIPCOUNT  | min = c_TRIP_COUNT max = c_TRIP_COUNT            | in xfduplicatemat_ptrmat2 (xf_utility.hpp:121)                                |
+| INLINE          | OFF                                              | in xfduplicatemat_ptr_mat_axi (xf_utility.hpp:148)                            |
+| PIPELINE        | II = 1                                           | in xfduplicatemat_ptr_mat_axi (xf_utility.hpp:154)                            |
+| LOOP_TRIPCOUNT  | min = c_TRIP_COUNT max = c_TRIP_COUNT            | in xfduplicatemat_ptr_mat_axi (xf_utility.hpp:155)                            |
+| INLINE          | OFF                                              | in xfmat2axi_strm (xf_utility.hpp:176)                                        |
+| PIPELINE        | II = 1                                           | in xfmat2axi_strm (xf_utility.hpp:182)                                        |
+| LOOP_TRIPCOUNT  | min = c_TRIP_COUNT max = c_TRIP_COUNT            | in xfmat2axi_strm (xf_utility.hpp:183)                                        |
+| INLINE          | OFF                                              | in axi_strm2xfmat (xf_utility.hpp:200)                                        |
+| PIPELINE        | II = 1                                           | in axi_strm2xfmat (xf_utility.hpp:206)                                        |
+| LOOP_TRIPCOUNT  | min = c_TRIP_COUNT max = c_TRIP_COUNT            | in axi_strm2xfmat (xf_utility.hpp:207)                                        |
+| INLINE          | OFF                                              | in xfduplicatemat_ptr_axi (xf_utility.hpp:223)                                |
+| PIPELINE        | II = 1                                           | in xfduplicatemat_ptr_axi (xf_utility.hpp:229)                                |
+| LOOP_TRIPCOUNT  | min = c_TRIP_COUNT max = c_TRIP_COUNT            | in xfduplicatemat_ptr_axi (xf_utility.hpp:230)                                |
+| INLINE          | OFF                                              | in xfsetborder (xf_utility.hpp:252)                                           |
+| UNROLL          |                                                  | in xfsetborder (xf_utility.hpp:264)                                           |
+| UNROLL          |                                                  | in xfsetborder (xf_utility.hpp:266)                                           |
+| INLINE          |                                                  | in xfpackpixels (xf_utility.hpp:321)                                          |
+| UNROLL          |                                                  | in xfpackpixels (xf_utility.hpp:327)                                          |
+| INLINE          | off                                              | in xfextractpixels (xf_utility.hpp:339)                                       |
+| UNROLL          |                                                  | in xfextractpixels (xf_utility.hpp:348)                                       |
+| INLINE          |                                                  | in xfextractdata (xf_utility.hpp:371)                                         |
+| INLINE          |                                                  | in xfcopydata (xf_utility.hpp:391)                                            |
+| LOOP_TRIPCOUNT  | min=6 max=6                                      | in xfcopydata (xf_utility.hpp:399)                                            |
+| UNROLL          |                                                  | in xfcopydata (xf_utility.hpp:400)                                            |
+| LOOP_TRIPCOUNT  | min=IN_BH max=IN_BH                              | in xfduplicatestream (xf_utility.hpp:470)                                     |
+| LOOP_FLATTEN    | off                                              | in xfduplicatestream (xf_utility.hpp:471)                                     |
+| PIPELINE        |                                                  | in xfduplicatestream (xf_utility.hpp:475)                                     |
+| LOOP_TRIPCOUNT  | min=IN_BW max=IN_BW                              | in xfduplicatestream (xf_utility.hpp:476)                                     |
+| LOOP_TRIPCOUNT  | min=1 max=TRIPCOUNT                              | in array2hlsstrm (xf_utility.hpp:501)                                         |
+| PIPELINE        |                                                  | in array2hlsstrm (xf_utility.hpp:502)                                         |
+| LOOP_TRIPCOUNT  | min=1 max=TRIPCOUNT                              | in hlsstrm2xfmat (xf_utility.hpp:543)                                         |
+| PIPELINE        |                                                  | in hlsstrm2xfmat (xf_utility.hpp:544)                                         |
+| LOOP_TRIPCOUNT  | min=1 max=TRIPCOUNT                              | in axistrm2hlsstrm (xf_utility.hpp:625)                                       |
+| PIPELINE        |                                                  | in axistrm2hlsstrm (xf_utility.hpp:626)                                       |
+| DATAFLOW        |                                                  | in axistrm2xfmat (xf_utility.hpp:637)                                         |
+| LOOP_TRIPCOUNT  | min=1 max=TRIPCOUNT                              | in xfmat2hlsstrm (xf_utility.hpp:693)                                         |
+| PIPELINE        |                                                  | in xfmat2hlsstrm (xf_utility.hpp:694)                                         |
+| LOOP_TRIPCOUNT  | min=1 max=TRIPCOUNT                              | in hlsstrm2array (xf_utility.hpp:739)                                         |
+| PIPELINE        |                                                  | in hlsstrm2array (xf_utility.hpp:740)                                         |
+| LOOP_TRIPCOUNT  | min=1 max=TRIPCOUNT                              | in hlsstrm2axistrm (xf_utility.hpp:790)                                       |
+| PIPELINE        |                                                  | in hlsstrm2axistrm (xf_utility.hpp:791)                                       |
+| DATAFLOW        |                                                  | in xfmat2axistrm (xf_utility.hpp:803)                                         |
+| INLINE          |                                                  | in window<rows, cols, t> (xf_video_mem.hpp:47)                                |
+| ARRAY_PARTITION | variable=val dim=1 complete                      | in window<rows, cols, t> (xf_video_mem.hpp:48)                                |
+| ARRAY_PARTITION | variable=val dim=2 complete                      | in window<rows, cols, t> (xf_video_mem.hpp:49)                                |
+| INLINE          |                                                  | in shift_pixels_left (xf_video_mem.hpp:113)                                   |
+| UNROLL          |                                                  | in shift_pixels_left (xf_video_mem.hpp:125)                                   |
+| UNROLL          |                                                  | in shift_pixels_left (xf_video_mem.hpp:129)                                   |
+| INLINE          |                                                  | in shift_pixels_right (xf_video_mem.hpp:157)                                  |
+| UNROLL          |                                                  | in shift_pixels_right (xf_video_mem.hpp:169)                                  |
+| UNROLL          |                                                  | in shift_pixels_right (xf_video_mem.hpp:173)                                  |
+| INLINE          |                                                  | in shift_pixels_up (xf_video_mem.hpp:201)                                     |
+| UNROLL          |                                                  | in shift_pixels_up (xf_video_mem.hpp:213)                                     |
+| UNROLL          |                                                  | in shift_pixels_up (xf_video_mem.hpp:217)                                     |
+| INLINE          |                                                  | in shift_pixels_down (xf_video_mem.hpp:245)                                   |
+| UNROLL          |                                                  | in shift_pixels_down (xf_video_mem.hpp:257)                                   |
+| UNROLL          |                                                  | in shift_pixels_down (xf_video_mem.hpp:261)                                   |
+| INLINE          |                                                  | in insert_pixel (xf_video_mem.hpp:288)                                        |
+| INLINE          |                                                  | in insert_row (xf_video_mem.hpp:321)                                          |
+| UNROLL          |                                                  | in insert_row (xf_video_mem.hpp:333)                                          |
+| INLINE          |                                                  | in insert_top_row (xf_video_mem.hpp:360)                                      |
+| INLINE          |                                                  | in insert_bottom_row (xf_video_mem.hpp:393)                                   |
+| INLINE          |                                                  | in insert_col (xf_video_mem.hpp:426)                                          |
+| UNROLL          |                                                  | in insert_col (xf_video_mem.hpp:438)                                          |
+| INLINE          |                                                  | in insert_left_col (xf_video_mem.hpp:465)                                     |
+| INLINE          |                                                  | in insert_right_col (xf_video_mem.hpp:498)                                    |
+| INLINE          |                                                  | in getval (xf_video_mem.hpp:531)                                              |
+| INLINE          |                                                  | in operator() (xf_video_mem.hpp:543)                                          |
+| INLINE          |                                                  | in shift_left (xf_video_mem.hpp:580)                                          |
+| INLINE          |                                                  | in shift_right (xf_video_mem.hpp:593)                                         |
+| INLINE          |                                                  | in shift_up (xf_video_mem.hpp:606)                                            |
+| INLINE          |                                                  | in shift_down (xf_video_mem.hpp:619)                                          |
+| INLINE          |                                                  | in insert (xf_video_mem.hpp:632)                                              |
+| INLINE          |                                                  | in insert_top (xf_video_mem.hpp:645)                                          |
+| INLINE          |                                                  | in insert_bottom (xf_video_mem.hpp:658)                                       |
+| INLINE          |                                                  | in insert_left (xf_video_mem.hpp:671)                                         |
+| INLINE          |                                                  | in insert_right (xf_video_mem.hpp:684)                                        |
+| INLINE          |                                                  | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:701) |
+| DEPENDENCE      | variable=val inter false                         | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:702) |
+| DEPENDENCE      | variable=val intra false                         | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:703) |
+| BIND_STORAGE    | variable=val type=RAM_1P impl=BRAM               | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:712) |
+| BIND_STORAGE    | variable=val type=RAM_1P impl=URAM               | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:717) |
+| BIND_STORAGE    | variable=val type=RAM_2P impl=BRAM               | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:722) |
+| BIND_STORAGE    | variable=val type=RAM_2P impl=URAM               | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:727) |
+| BIND_STORAGE    | variable=val type=RAM_S2P impl=BRAM              | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:732) |
+| BIND_STORAGE    | variable=val type=RAM_S2P impl=URAM              | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:737) |
+| BIND_STORAGE    | variable=val type=RAM_T2P impl=BRAM              | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:742) |
+| BIND_STORAGE    | variable=val type=RAM_T2P impl=URAM              | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:747) |
+| ARRAY_PARTITION | variable=val complete dim=1                      | in linebuffer<rows, cols, t, mem_type, reshape_factor> (xf_video_mem.hpp:756) |
+| INLINE          |                                                  | in shift_pixels_down (xf_video_mem.hpp:814)                                   |
+| UNROLL          |                                                  | in shift_pixels_down (xf_video_mem.hpp:827)                                   |
+| INLINE          |                                                  | in shift_pixels_up (xf_video_mem.hpp:857)                                     |
+| UNROLL          |                                                  | in shift_pixels_up (xf_video_mem.hpp:870)                                     |
+| INLINE          |                                                  | in insert_bottom_row (xf_video_mem.hpp:899)                                   |
+| INLINE          |                                                  | in insert_top_row (xf_video_mem.hpp:932)                                      |
+| INLINE          |                                                  | in get_col (xf_video_mem.hpp:965)                                             |
+| UNROLL          |                                                  | in get_col (xf_video_mem.hpp:971)                                             |
+| INLINE          |                                                  | in getval (xf_video_mem.hpp:982)                                              |
+| INLINE          |                                                  | in operator() (xf_video_mem.hpp:993)                                          |
+| INLINE          |                                                  | in shift_down (xf_video_mem.hpp:1005)                                         |
+| INLINE          |                                                  | in shift_up (xf_video_mem.hpp:1017)                                           |
+| INLINE          |                                                  | in insert_bottom (xf_video_mem.hpp:1029)                                      |
+| INLINE          |                                                  | in insert_top (xf_video_mem.hpp:1041)                                         |
++-----------------+--------------------------------------------------+-------------------------------------------------------------------------------+
+
+

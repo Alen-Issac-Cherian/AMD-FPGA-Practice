@@ -1,0 +1,308 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "17 17",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "xf_autowhitebalance_accel.cpp",
+    "fileloc": 68,
+    "instructions": 25,
+    "loads": {
+      "G": 1
+    },
+    "memory_accesses": 0,
+    "name": "autowhitebalance_accel",
+    "stores": {
+      "G": 2
+    },
+    "total_instructions": 23137
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 349,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "__signbit",
+    "total_instructions": 9
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "xf_structs.hpp",
+    "fileloc": 866,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "~Mat",
+    "total_instructions": 1
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "xf_autowhitebalance.hpp",
+    "fileloc": 1486,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>",
+    "total_instructions": 441
+  },
+  "12": {
+    "basicblocks": 8,
+    "calls": "13",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "xf_structs.hpp",
+    "fileloc": 606,
+    "instructions": 27,
+    "memory_accesses": 0,
+    "name": "init",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 28
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "xf_structs.hpp",
+    "fileloc": 494,
+    "instructions": 1,
+    "memory_accesses": 0,
+    "name": "alloc_data<2, nullptr>",
+    "total_instructions": 1
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "xf_structs.hpp",
+    "fileloc": 553,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "write<2, nullptr>",
+    "total_instructions": 8
+  },
+  "15": {
+    "basicblocks": 34,
+    "calls": "3 3",
+    "control_depth": 1,
+    "def_use_depth": 5,
+    "file": "xf_infra.hpp",
+    "fileloc": 181,
+    "instructions": 200,
+    "loads": {
+      "L": 12
+    },
+    "memory_accesses": 4,
+    "name": "xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>",
+    "stores": {
+      "L": 10
+    },
+    "total_instructions": 670
+  },
+  "16": {
+    "basicblocks": 30,
+    "calls": "14",
+    "control_depth": 4,
+    "def_use_depth": 5,
+    "file": "xf_infra.hpp",
+    "fileloc": 101,
+    "instructions": 106,
+    "loads": {
+      "L": 5
+    },
+    "memory_accesses": 11,
+    "name": "AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>",
+    "total_instructions": 1017
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "21 21 21 9 16 20 11 15 10 10 10",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "xf_autowhitebalance_accel.cpp",
+    "fileloc": 27,
+    "instructions": 28,
+    "memory_accesses": 0,
+    "name": "AWBKernel",
+    "total_instructions": 11556
+  },
+  "18": {
+    "basicblocks": 4,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "xf_autowhitebalance.hpp",
+    "fileloc": 44,
+    "instructions": 7,
+    "memory_accesses": 0,
+    "name": "xf_satcast_awb<ap_uint<10> >",
+    "total_instructions": 24
+  },
+  "19": {
+    "basicblocks": 90,
+    "calls": "3 14",
+    "control_depth": 5,
+    "def_use_depth": 6,
+    "file": "xf_autowhitebalance.hpp",
+    "fileloc": 127,
+    "instructions": 768,
+    "loads": {
+      "L": 24
+    },
+    "memory_accesses": 49,
+    "name": "AWBChannelGainKernel<20, 20, 2160, 3840, 1, 2, 2, 3, 23, 23, 13, 13, 3840>",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 7154
+  },
+  "2": {
+    "basicblocks": 19,
+    "calls": "3 18 14",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "xf_autowhitebalance.hpp",
+    "fileloc": 72,
+    "instructions": 129,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 10,
+    "name": "AWBGainUpdateKernel<20, 20, 2160, 3840, 1, 2, 2, 3, 23, 23, 13, 13, 3840>",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 439
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "19",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "xf_autowhitebalance.hpp",
+    "fileloc": 1503,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "AWBChannelGain<20, 20, 2160, 3840, 1, 0, 2, 2>",
+    "total_instructions": 7156
+  },
+  "21": {
+    "basicblocks": 1,
+    "calls": "12",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "xf_structs.hpp",
+    "fileloc": 671,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "Mat",
+    "total_instructions": 37
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "xf_structs.hpp",
+    "fileloc": 542,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "read<2, nullptr>",
+    "total_instructions": 10
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 316,
+    "instructions": 8,
+    "memory_accesses": 0,
+    "name": "expv",
+    "total_instructions": 109
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "x_hls_utils.h",
+    "fileloc": 340,
+    "instructions": 24,
+    "memory_accesses": 0,
+    "name": "mantissa",
+    "total_instructions": 178
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "x_hls_utils.h",
+    "fileloc": 283,
+    "instructions": 55,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "fp_struct",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 318
+  },
+  "7": {
+    "basicblocks": 16,
+    "calls": "6 5 4 4 1 1",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 12,
+    "instructions": 133,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 0,
+    "name": "generic_cast_IEEE754<int, AP_TRN_ZERO, float>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 2126
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "7",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "hls_case_IEEE754.h",
+    "fileloc": 116,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "generic_cast_IEEE754<int, float>",
+    "total_instructions": 2128
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "8",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "__hls_fptosi_float_i32",
+    "total_instructions": 2130
+  }
+}

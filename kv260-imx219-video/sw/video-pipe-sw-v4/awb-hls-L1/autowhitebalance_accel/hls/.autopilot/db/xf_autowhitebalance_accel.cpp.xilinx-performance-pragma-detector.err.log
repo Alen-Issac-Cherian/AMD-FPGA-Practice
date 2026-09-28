@@ -1,0 +1,8 @@
+In file included from /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel.cpp:18:
+In file included from /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel_config.h:18:
+In file included from /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_config_params.h:26:
+In file included from /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_duplicateimage.hpp:26:
+In file included from /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_utility.hpp:23:
+/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_video_mem.hpp:760:59: warning: 'factor' in '#pragma HLS array_reshape' is ignored [-Wextra-tokens]
+            #pragma HLS ARRAY_RESHAPE variable=val factor=RESHAPE_FACTOR  dim=1
+                                                          ^

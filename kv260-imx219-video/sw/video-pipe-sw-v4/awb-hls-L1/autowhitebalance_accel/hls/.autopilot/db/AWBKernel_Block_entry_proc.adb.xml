@@ -1,0 +1,161 @@
+<stg><name>AWBKernel_Block_entry_proc</name>
+
+
+<trans_list>
+
+<trans id="10" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="11" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+newFuncRoot:1 %thresh_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %thresh
+
+]]></Node>
+<StgValue><ssdm name="thresh_read"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="3" lat="3">
+<core>FMul_maxdsp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+newFuncRoot:2 %mul_out = fmul i32 %thresh_read, i32 256
+
+]]></Node>
+<StgValue><ssdm name="mul_out"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="6" st_id="2" stage="2" lat="3">
+<core>FMul_maxdsp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+newFuncRoot:2 %mul_out = fmul i32 %thresh_read, i32 256
+
+]]></Node>
+<StgValue><ssdm name="mul_out"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="7" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="2" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="1" op_3_bw="0">
+<![CDATA[
+newFuncRoot:0 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i32 %thresh, i1 1, void @p_str
+
+]]></Node>
+<StgValue><ssdm name="specstablecontent_ln0"/></StgValue>
+</operation>
+
+<operation id="8" st_id="3" stage="1" lat="3">
+<core>FMul_maxdsp</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="32" op_0_bw="32" op_1_bw="32">
+<![CDATA[
+newFuncRoot:2 %mul_out = fmul i32 %thresh_read, i32 256
+
+]]></Node>
+<StgValue><ssdm name="mul_out"/></StgValue>
+</operation>
+
+<operation id="9" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="32">
+<![CDATA[
+newFuncRoot:3 %ret_ln49 = ret i32 %mul_out
+
+]]></Node>
+<StgValue><ssdm name="ret_ln49"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="12" name="thresh" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="thresh"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="14" from="_ssdm_op_Read.ap_auto.float" to="thresh_read" fromId="13" toId="4">
+</dataflow>
+<dataflow id="15" from="thresh" to="thresh_read" fromId="12" toId="4">
+</dataflow>
+<dataflow id="16" from="thresh_read" to="mul_out" fromId="4" toId="5">
+</dataflow>
+<dataflow id="18" from="StgValue_17" to="mul_out" fromId="17" toId="5">
+</dataflow>
+<dataflow id="19" from="thresh_read" to="mul_out" fromId="4" toId="6">
+</dataflow>
+<dataflow id="20" from="StgValue_17" to="mul_out" fromId="17" toId="6">
+</dataflow>
+<dataflow id="22" from="_ssdm_op_SpecStableContent" to="specstablecontent_ln0" fromId="21" toId="7">
+</dataflow>
+<dataflow id="23" from="thresh" to="specstablecontent_ln0" fromId="12" toId="7">
+</dataflow>
+<dataflow id="25" from="StgValue_24" to="specstablecontent_ln0" fromId="24" toId="7">
+</dataflow>
+<dataflow id="27" from="p_str" to="specstablecontent_ln0" fromId="26" toId="7">
+</dataflow>
+<dataflow id="28" from="thresh_read" to="mul_out" fromId="4" toId="8">
+</dataflow>
+<dataflow id="29" from="StgValue_17" to="mul_out" fromId="17" toId="8">
+</dataflow>
+<dataflow id="30" from="mul_out" to="ret_ln49" fromId="8" toId="9">
+</dataflow>
+</dataflows>
+
+
+</stg>

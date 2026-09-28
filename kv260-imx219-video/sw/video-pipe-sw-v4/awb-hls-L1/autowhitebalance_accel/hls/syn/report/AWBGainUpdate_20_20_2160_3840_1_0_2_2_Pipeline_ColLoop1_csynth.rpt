@@ -1,0 +1,174 @@
+
+
+================================================================
+== Vitis HLS Report for 'AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1'
+================================================================
+* Date:           Mon Sep 28 23:10:27 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        autowhitebalance_accel
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.575 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min    |    max    | min | max |        Type       |
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+    |     3843|     3843|  38.430 us|  38.430 us|    0|    0|  loop pipeline stp|
+    +---------+---------+-----------+-----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |            |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- ColLoop1  |     3841|     3841|         3|          1|          1|  3840|       yes|
+        +------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     159|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     6|       0|      60|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      54|    -|
+|Register         |        -|     -|     173|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     6|     173|     273|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|    ~0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+---------------------+---------+----+---+----+-----+
+    |         Instance        |        Module       | BRAM_18K| DSP| FF| LUT| URAM|
+    +-------------------------+---------------------+---------+----+---+----+-----+
+    |mul_32s_10ns_42_1_1_U96  |mul_32s_10ns_42_1_1  |        0|   2|  0|  20|    0|
+    |mul_32s_10ns_42_1_1_U97  |mul_32s_10ns_42_1_1  |        0|   2|  0|  20|    0|
+    |mul_32s_10ns_42_1_1_U98  |mul_32s_10ns_42_1_1  |        0|   2|  0|  20|    0|
+    +-------------------------+---------------------+---------+----+---+----+-----+
+    |Total                    |                     |        0|   6|  0|  60|    0|
+    +-------------------------+---------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |j_6_fu_151_p2                   |         +|   0|  0|  19|          12|           1|
+    |icmp_ln45_1_fu_228_p2           |      icmp|   0|  0|  29|          22|           1|
+    |icmp_ln45_2_fu_275_p2           |      icmp|   0|  0|  29|          22|           1|
+    |icmp_ln45_fu_181_p2             |      icmp|   0|  0|  29|          22|           1|
+    |icmp_ln91_fu_145_p2             |      icmp|   0|  0|  19|          12|          12|
+    |ap_block_pp0_stage0_01001_grp1  |        or|   0|  0|   2|           1|           1|
+    |select_ln45_1_fu_244_p3         |    select|   0|  0|  10|           1|           2|
+    |select_ln45_2_fu_291_p3         |    select|   0|  0|  10|           1|           2|
+    |select_ln45_fu_197_p3           |    select|   0|  0|  10|           1|           2|
+    |ap_enable_pp0                   |       xor|   0|  0|   2|           1|           2|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |Total                           |          |   0|  0| 159|          95|          25|
+    +--------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_j_5     |   9|          2|   12|         24|
+    |impop_data_blk_n         |   9|          2|    1|          2|
+    |j_fu_72                  |   9|          2|   12|         24|
+    |out_mat_data_blk_n       |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  54|         12|   28|         56|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |j_fu_72                           |  12|   0|   12|          0|
+    |select_ln45_1_reg_338             |  10|   0|   10|          0|
+    |select_ln45_2_reg_343             |  10|   0|   10|          0|
+    |select_ln45_reg_333               |  10|   0|   10|          0|
+    |sext_ln104_1_cast_reg_319         |  42|   0|   42|          0|
+    |sext_ln104_2_cast_reg_314         |  42|   0|   42|          0|
+    |sext_ln104_cast_reg_324           |  42|   0|   42|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             | 173|   0|  173|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+|          RTL Ports          | Dir | Bits|  Protocol  |                          Source Object                          |    C Type    |
++-----------------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+|ap_clk                       |   in|    1|  ap_ctrl_hs|  AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>_Pipeline_ColLoop1|  return value|
+|ap_rst                       |   in|    1|  ap_ctrl_hs|  AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>_Pipeline_ColLoop1|  return value|
+|ap_start                     |   in|    1|  ap_ctrl_hs|  AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>_Pipeline_ColLoop1|  return value|
+|ap_done                      |  out|    1|  ap_ctrl_hs|  AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>_Pipeline_ColLoop1|  return value|
+|ap_idle                      |  out|    1|  ap_ctrl_hs|  AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>_Pipeline_ColLoop1|  return value|
+|ap_ready                     |  out|    1|  ap_ctrl_hs|  AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>_Pipeline_ColLoop1|  return value|
+|impop_data_dout              |   in|   30|     ap_fifo|                                                       impop_data|       pointer|
+|impop_data_empty_n           |   in|    1|     ap_fifo|                                                       impop_data|       pointer|
+|impop_data_read              |  out|    1|     ap_fifo|                                                       impop_data|       pointer|
+|impop_data_num_data_valid    |   in|    3|     ap_fifo|                                                       impop_data|       pointer|
+|impop_data_fifo_cap          |   in|    3|     ap_fifo|                                                       impop_data|       pointer|
+|out_mat_data_din             |  out|   30|     ap_fifo|                                                     out_mat_data|       pointer|
+|out_mat_data_full_n          |   in|    1|     ap_fifo|                                                     out_mat_data|       pointer|
+|out_mat_data_write           |  out|    1|     ap_fifo|                                                     out_mat_data|       pointer|
+|out_mat_data_num_data_valid  |   in|   32|     ap_fifo|                                                     out_mat_data|       pointer|
+|out_mat_data_fifo_cap        |   in|   32|     ap_fifo|                                                     out_mat_data|       pointer|
+|src1_cols_val                |   in|   12|   ap_stable|                                                    src1_cols_val|        scalar|
+|sext_ln104                   |   in|   32|   ap_stable|                                                       sext_ln104|        scalar|
+|sext_ln104_1                 |   in|   32|   ap_stable|                                                     sext_ln104_1|        scalar|
+|sext_ln104_2                 |   in|   32|   ap_stable|                                                     sext_ln104_2|        scalar|
++-----------------------------+-----+-----+------------+-----------------------------------------------------------------+--------------+
+
