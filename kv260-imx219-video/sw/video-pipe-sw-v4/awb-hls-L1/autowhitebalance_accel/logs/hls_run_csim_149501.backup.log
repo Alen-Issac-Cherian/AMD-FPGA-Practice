@@ -1,0 +1,412 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+WARNING: [HLS 200-2001] file not found '../xf_headers.hpp' see [hls] from hls_config.cfg(8)
+WARNING: [HLS 200-2001] file not found '../xf_autowhitebalance_tb.cpp' see [hls] from hls_config.cfg(9)
+WARNING: [HLS 200-2001] file not found '../xf_autowhitebalance_tb_config.h' see [hls] from hls_config.cfg(10)
+WARNING: [HLS 200-2001] file not found '../xf_autowhitebalance_accel.cpp' see [hls] from hls_config.cfg(22)
+WARNING: [HLS 200-2001] file not found '../xf_autowhitebalance_accel_config.h' see [hls] from hls_config.cfg(23)
+WARNING: [HLS 200-2001] file not found '../xf_config_params.h' see [hls] from hls_config.cfg(24)
+WARNING: [HLS 200-2001] file not found '../xf_common.hpp' see [hls] from hls_config.cfg(25)
+WARNING: [HLS 200-2001] file not found '../xf_params.hpp' see [hls] from hls_config.cfg(26)
+WARNING: [HLS 200-2001] file not found '../xf_structs.hpp' see [hls] from hls_config.cfg(27)
+WARNING: [HLS 200-2001] file not found '../xf_types.hpp' see [hls] from hls_config.cfg(28)
+WARNING: [HLS 200-2001] file not found '../xf_autowhitebalance.hpp' see [hls] from hls_config.cfg(29)
+WARNING: [HLS 200-2001] file not found '../xf_duplicateimage.hpp' see [hls] from hls_config.cfg(30)
+WARNING: [HLS 200-2001] file not found '../xf_utility.hpp' see [hls] from hls_config.cfg(31)
+WARNING: [HLS 200-2001] file not found '../xf_video_mem.hpp' see [hls] from hls_config.cfg(32)
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_autowhitebalance_accel.cpp' from hls_config.cfg(22)
+WARNING: [HLS 200-40] Cannot find design file '../xf_autowhitebalance_accel.cpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_autowhitebalance_accel_config.h' from hls_config.cfg(23)
+WARNING: [HLS 200-40] Cannot find design file '../xf_autowhitebalance_accel_config.h'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_config_params.h' from hls_config.cfg(24)
+WARNING: [HLS 200-40] Cannot find design file '../xf_config_params.h'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_common.hpp' from hls_config.cfg(25)
+WARNING: [HLS 200-40] Cannot find design file '../xf_common.hpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_params.hpp' from hls_config.cfg(26)
+WARNING: [HLS 200-40] Cannot find design file '../xf_params.hpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_structs.hpp' from hls_config.cfg(27)
+WARNING: [HLS 200-40] Cannot find design file '../xf_structs.hpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_types.hpp' from hls_config.cfg(28)
+WARNING: [HLS 200-40] Cannot find design file '../xf_types.hpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_autowhitebalance.hpp' from hls_config.cfg(29)
+WARNING: [HLS 200-40] Cannot find design file '../xf_autowhitebalance.hpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_duplicateimage.hpp' from hls_config.cfg(30)
+WARNING: [HLS 200-40] Cannot find design file '../xf_duplicateimage.hpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_utility.hpp' from hls_config.cfg(31)
+WARNING: [HLS 200-40] Cannot find design file '../xf_utility.hpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../xf_video_mem.hpp' from hls_config.cfg(32)
+WARNING: [HLS 200-40] Cannot find design file '../xf_video_mem.hpp'
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_common.hpp' from hls_config.cfg(33)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_common.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_config_params.h' from hls_config.cfg(34)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_config_params.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_duplicateimage.hpp' from hls_config.cfg(35)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_duplicateimage.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_headers.hpp' from hls_config.cfg(36)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_headers.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_params.hpp' from hls_config.cfg(37)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_params.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_structs.hpp' from hls_config.cfg(38)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_structs.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_types.hpp' from hls_config.cfg(39)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_types.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_utility.hpp' from hls_config.cfg(40)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_utility.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_video_mem.hpp' from hls_config.cfg(41)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_video_mem.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_autowhitebalance.hpp' from hls_config.cfg(42)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_autowhitebalance_accel.cpp' from hls_config.cfg(43)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_autowhitebalance_accel_config.h' from hls_config.cfg(44)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel_config.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_infra.hpp' from hls_config.cfg(45)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_infra.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_axi_io.hpp' from hls_config.cfg(46)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_axi_io.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_sw_utils.hpp' from hls_config.cfg(47)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_sw_utils.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.csimflags=-I/usr/include/opencv4 -std=c++14' from hls_config.cfg(21)
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../xf_headers.hpp' from hls_config.cfg(8)
+WARNING: [HLS 200-40] Cannot find test bench file '../xf_headers.hpp'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../xf_autowhitebalance_tb.cpp' from hls_config.cfg(9)
+WARNING: [HLS 200-40] Cannot find test bench file '../xf_autowhitebalance_tb.cpp'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../xf_autowhitebalance_tb_config.h' from hls_config.cfg(10)
+WARNING: [HLS 200-40] Cannot find test bench file '../xf_autowhitebalance_tb_config.h'
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./xf_autowhitebalance_tb.cpp' from hls_config.cfg(11)
+INFO: [HLS 200-10] Adding test bench file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./xf_autowhitebalance_tb_config.h' from hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_tb_config.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.cflags=-I/usr/include/opencv4 -std=c++14' from hls_config.cfg(20)
+INFO: [HLS 200-1465] Applying config ini 'syn.top=autowhitebalance_accel' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xck26-sfvc784-2LV-c' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from hls_config.cfg(17)
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from hls_config.cfg(19)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.display_name=Auto White Balance' from hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.library=video' from hls_config.cfg(16)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.taxonomy=/Video_&_Image_Processing' from hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.version=1.0' from hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'sim.O=1' from hls_config.cfg(18)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [HLS 200-2191] C-Simulation will use clang-16 as the compiler
+INFO: [HLS 200-2036] Building optimized C Simulation binaries
+   Compiling ../../../../xf_autowhitebalance_tb.cpp in release mode
+   Compiling ../../../../xf_autowhitebalance_accel.cpp in release mode
+   Generating csim.exe
+In file included from ../../../../xf_autowhitebalance_tb.cpp:18:
+In file included from ../../../../xf_headers.hpp:30:
+In file included from ../../../../xf_sw_utils.hpp:21:
+In file included from ../../../../xf_common.hpp:21:
+In file included from ../../../../xf_structs.hpp:28:
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+In file included from ../../../../xf_autowhitebalance_tb.cpp:19:
+In file included from ../../../../xf_autowhitebalance_tb_config.h:18:
+In file included from ../../../../xf_config_params.h:25:
+../../../../xf_autowhitebalance.hpp:31:9: warning: 'MAX' macro redefined [-Wmacro-redefined]
+#define MAX(x, y) (((x) > (y)) ? (x) : (y))
+        ^
+/usr/include/opencv4/opencv2/core/cvdef.h:493:11: note: previous definition is here
+#  define MAX(a,b)  ((a) < (b) ? (b) : (a))
+          ^
+In file included from ../../../../xf_autowhitebalance_tb.cpp:19:
+In file included from ../../../../xf_autowhitebalance_tb_config.h:18:
+In file included from ../../../../xf_config_params.h:25:
+../../../../xf_autowhitebalance.hpp:32:9: warning: 'MIN' macro redefined [-Wmacro-redefined]
+#define MIN(x, y) (((x) < (y)) ? (x) : (y))
+        ^
+/usr/include/opencv4/opencv2/core/cvdef.h:489:11: note: previous definition is here
+#  define MIN(a,b)  ((a) > (b) ? (b) : (a))
+          ^
+15 warnings generated.
+In file included from ../../../../xf_autowhitebalance_accel.cpp:18:
+In file included from ../../../../xf_autowhitebalance_accel_config.h:18:
+In file included from ../../../../xf_config_params.h:21:
+In file included from ../../../../xf_common.hpp:21:
+In file included from ../../../../xf_structs.hpp:28:
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:219:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, -1)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:220:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, -1)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:221:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, 0)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:222:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, 0)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:223:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   0)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:224:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, 0)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:238:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(data, data_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:239:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(keep, keep_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:240:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(strb, strb_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:241:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(user, user_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:242:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(last, last_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:243:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(id,   id_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:244:5: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    _AXIS_CHANNEL_INIT(dest, dest_init)
+    ^
+/home/alen/AMD-Xilinx/2025.2/Vitis/include/ap_axi_sdata.h:215:8: note: expanded from macro '_AXIS_CHANNEL_INIT'
+    if constexpr (has_##CHAN_NAME) CHAN_NAME = INIT_VALUE;
+       ^
+13 warnings generated.
+ld.lld: error: undefined symbol: cv::Mat::Mat()
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced 3 more times
+
+ld.lld: error: undefined symbol: cv::imread(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, int)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+
+ld.lld: error: undefined symbol: cv::Mat::convertTo(cv::_OutputArray const&, int, double, double) const
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced 2 more times
+
+ld.lld: error: undefined symbol: cv::Mat::~Mat()
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced 14 more times
+
+ld.lld: error: undefined symbol: cv::resize(cv::_InputArray const&, cv::_OutputArray const&, cv::Size_<int>, double, double, int)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+
+ld.lld: error: undefined symbol: cv::Mat::create(int, int, int)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced 1 more times
+
+ld.lld: error: undefined symbol: cv::split(cv::_InputArray const&, cv::_OutputArray const&)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+
+ld.lld: error: undefined symbol: cv::imwrite(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, cv::_InputArray const&, std::vector<int, std::allocator<int>> const&)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+>>> referenced 1 more times
+
+ld.lld: error: undefined symbol: cv::absdiff(cv::_InputArray const&, cv::_InputArray const&, cv::_OutputArray const&)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(main)
+
+ld.lld: error: undefined symbol: cv::Mat::total() const
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(void balanceWhiteSimple<unsigned short>(std::vector<cv::Mat_<unsigned short>, std::allocator<cv::Mat_<unsigned short>>>&, cv::Mat&, float, float, float, float, float))
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(cv::MatConstIterator::MatConstIterator(cv::Mat const*))
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(cv::MatIterator_<unsigned short> cv::Mat::end<unsigned short>())
+
+ld.lld: error: undefined symbol: cv::operator-(cv::Mat const&, cv::Scalar_<double> const&)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(void balanceWhiteSimple<unsigned short>(std::vector<cv::Mat_<unsigned short>, std::allocator<cv::Mat_<unsigned short>>>&, cv::Mat&, float, float, float, float, float))
+
+ld.lld: error: undefined symbol: cv::operator*(double, cv::MatExpr const&)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(void balanceWhiteSimple<unsigned short>(std::vector<cv::Mat_<unsigned short>, std::allocator<cv::Mat_<unsigned short>>>&, cv::Mat&, float, float, float, float, float))
+
+ld.lld: error: undefined symbol: cv::operator/(cv::MatExpr const&, double)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(void balanceWhiteSimple<unsigned short>(std::vector<cv::Mat_<unsigned short>, std::allocator<cv::Mat_<unsigned short>>>&, cv::Mat&, float, float, float, float, float))
+
+ld.lld: error: undefined symbol: cv::operator+(cv::MatExpr const&, cv::Scalar_<double> const&)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(void balanceWhiteSimple<unsigned short>(std::vector<cv::Mat_<unsigned short>, std::allocator<cv::Mat_<unsigned short>>>&, cv::Mat&, float, float, float, float, float))
+
+ld.lld: error: undefined symbol: cv::Mat::create(cv::Size_<int>, int)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(void balanceWhiteSimple<unsigned short>(std::vector<cv::Mat_<unsigned short>, std::allocator<cv::Mat_<unsigned short>>>&, cv::Mat&, float, float, float, float, float))
+
+ld.lld: error: undefined symbol: cv::merge(cv::_InputArray const&, cv::_OutputArray const&)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(void balanceWhiteSimple<unsigned short>(std::vector<cv::Mat_<unsigned short>, std::allocator<cv::Mat_<unsigned short>>>&, cv::Mat&, float, float, float, float, float))
+
+ld.lld: error: undefined symbol: cv::Mat::~Mat()
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(cv::Mat_<unsigned short>::~Mat_())
+
+ld.lld: error: undefined symbol: cv::Mat::empty() const
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(cv::MatIterator_<unsigned short> cv::Mat::begin<unsigned short>())
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(cv::MatConstIterator::MatConstIterator(cv::Mat const*))
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(cv::MatIterator_<unsigned short> cv::Mat::end<unsigned short>())
+
+ld.lld: error: undefined symbol: cv::error(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>> const&, char const*, char const*, int)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(cv::MatConstIterator::MatConstIterator(cv::Mat const*))
+
+ld.lld: error: undefined symbol: cv::MatConstIterator::seek(int const*, bool)
+>>> referenced by xf_autowhitebalance_tb.cpp
+>>>               obj/xf_autowhitebalance_tb.o:(cv::MatConstIterator::MatConstIterator(cv::Mat const*))
+
+ld.lld: error: too many errors emitted, stopping now (use --error-limit=0 to see all errors)
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile.rules:333: csim.exe] Error 1
+ERROR: [SIM 211-100] CSim file generation failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: CSIM Failed
+INFO: [HLS 200-112] Total CPU user time: 10.16 seconds. Total CPU system time: 1.23 seconds. Total elapsed time: 11.37 seconds; peak allocated memory: 262.891 MB.

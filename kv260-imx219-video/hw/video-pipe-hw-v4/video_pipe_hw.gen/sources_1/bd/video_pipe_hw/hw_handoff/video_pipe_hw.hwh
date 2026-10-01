@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Sep 28 23:35:25 2026" VIVADOVERSION="2025.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct  1 00:59:16 2026" VIVADOVERSION="2025.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:kv260_som:part0:1.4" DEVICE="xck26" NAME="video_pipe_hw" PACKAGE="sfvc784" SPEEDGRADE="-2LV"/>
 
@@ -13227,10 +13227,13 @@
         <PARAMETER NAME="EDK_SPECIAL" VALUE="MONITOR"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="15" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="9" NAME="SLOT_0_AXIS_tdest" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="31" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tdest" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tid" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="SLOT_0_AXIS_tkeep" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="SLOT_0_AXIS_tstrb" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef"/>
         <PORT CLKFREQUENCY="249997498" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
@@ -13245,25 +13248,28 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="mipi_csi2_rx_subsyst_0_video_out" NAME="SLOT_0_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axis_broadcaster_0_M00_AXIS" NAME="SLOT_0_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="CLK_DOMAIN" VALUE="video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="249997498"/>
-          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
-          <PARAMETER NAME="TDEST_WIDTH" VALUE="10"/>
-          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="SLOT_0_AXIS_tdata"/>
             <PORTMAP LOGICAL="TDEST" PHYSICAL="SLOT_0_AXIS_tdest"/>
+            <PORTMAP LOGICAL="TID" PHYSICAL="SLOT_0_AXIS_tid"/>
+            <PORTMAP LOGICAL="TKEEP" PHYSICAL="SLOT_0_AXIS_tkeep"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="SLOT_0_AXIS_tlast"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="SLOT_0_AXIS_tready"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="SLOT_0_AXIS_tstrb"/>
             <PORTMAP LOGICAL="TUSER" PHYSICAL="SLOT_0_AXIS_tuser"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_0_AXIS_tvalid"/>
           </PORTMAPS>
@@ -17252,10 +17258,13 @@
         <PARAMETER NAME="EDK_SPECIAL" VALUE="MONITOR"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="3" NAME="SLOT_0_AXIS_tkeep" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="23" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tdest" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tid" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="SLOT_0_AXIS_tkeep" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tready" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="2" NAME="SLOT_0_AXIS_tstrb" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef"/>
         <PORT CLKFREQUENCY="249997498" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="zynq_ultra_ps_e_0_pl_clk0">
@@ -17270,25 +17279,28 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="axi_vdma_0_M_AXIS_MM2S" NAME="SLOT_0_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="autowhitebalance_acc_0_m_axis_video" NAME="SLOT_0_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="CLK_DOMAIN" VALUE="video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="249997498"/>
           <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
-          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
-          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="1"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="1"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="SLOT_0_AXIS_tdata"/>
+            <PORTMAP LOGICAL="TDEST" PHYSICAL="SLOT_0_AXIS_tdest"/>
+            <PORTMAP LOGICAL="TID" PHYSICAL="SLOT_0_AXIS_tid"/>
             <PORTMAP LOGICAL="TKEEP" PHYSICAL="SLOT_0_AXIS_tkeep"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="SLOT_0_AXIS_tlast"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="SLOT_0_AXIS_tready"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="SLOT_0_AXIS_tstrb"/>
             <PORTMAP LOGICAL="TUSER" PHYSICAL="SLOT_0_AXIS_tuser"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_0_AXIS_tvalid"/>
           </PORTMAPS>

@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Mon Sep 21 10:31:38 2026
+-- Date        : Thu Oct  1 01:01:39 2026
 -- Host        : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub -rename_top video_pipe_hw_system_ila_0_1 -prefix
---               video_pipe_hw_system_ila_0_1_ video_pipe_hw_system_ila_0_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/video_pipe_hw_system_ila_0_1_stub.vhdl
 -- Design      : video_pipe_hw_system_ila_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xck26-sfvc784-2LV-c
@@ -16,13 +16,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity video_pipe_hw_system_ila_0_1 is
   Port ( 
     clk : in STD_LOGIC;
-    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    SLOT_0_AXIS_tkeep : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    SLOT_0_AXIS_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    SLOT_0_AXIS_tkeep : in STD_LOGIC_VECTOR ( 2 downto 0 );
     SLOT_0_AXIS_tlast : in STD_LOGIC;
     SLOT_0_AXIS_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     SLOT_0_AXIS_tvalid : in STD_LOGIC;
     SLOT_0_AXIS_tready : in STD_LOGIC;
-    resetn : in STD_LOGIC
+    resetn : in STD_LOGIC;
+    SLOT_0_AXIS_tdest : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SLOT_0_AXIS_tid : in STD_LOGIC_VECTOR ( 0 to 0 );
+    SLOT_0_AXIS_tstrb : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
 
   attribute CHECK_LICENSE_TYPE : string;
@@ -37,7 +40,7 @@ architecture stub of video_pipe_hw_system_ila_0_1 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "clk,SLOT_0_AXIS_tdata[31:0],SLOT_0_AXIS_tkeep[3:0],SLOT_0_AXIS_tlast,SLOT_0_AXIS_tuser[0:0],SLOT_0_AXIS_tvalid,SLOT_0_AXIS_tready,resetn";
+  attribute black_box_pad_pin of stub : architecture is "clk,SLOT_0_AXIS_tdata[23:0],SLOT_0_AXIS_tkeep[2:0],SLOT_0_AXIS_tlast,SLOT_0_AXIS_tuser[0:0],SLOT_0_AXIS_tvalid,SLOT_0_AXIS_tready,resetn,SLOT_0_AXIS_tdest[0:0],SLOT_0_AXIS_tid[0:0],SLOT_0_AXIS_tstrb[2:0]";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 CLK.clk CLK";
   attribute X_INTERFACE_MODE : string;
@@ -46,7 +49,7 @@ architecture stub of video_pipe_hw_system_ila_0_1 is
   attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.clk, FREQ_HZ 249997498, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, ASSOCIATED_BUSIF SLOT_0_AXIS, ASSOCIATED_RESET resetn, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of SLOT_0_AXIS_tdata : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA";
   attribute X_INTERFACE_MODE of SLOT_0_AXIS_tdata : signal is "monitor slave";
-  attribute X_INTERFACE_PARAMETER of SLOT_0_AXIS_tdata : signal is "XIL_INTERFACENAME SLOT_0_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of SLOT_0_AXIS_tdata : signal is "XIL_INTERFACENAME SLOT_0_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of SLOT_0_AXIS_tkeep : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TKEEP";
   attribute X_INTERFACE_INFO of SLOT_0_AXIS_tlast : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TLAST";
   attribute X_INTERFACE_INFO of SLOT_0_AXIS_tuser : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TUSER";
@@ -55,6 +58,9 @@ architecture stub of video_pipe_hw_system_ila_0_1 is
   attribute X_INTERFACE_INFO of resetn : signal is "xilinx.com:signal:reset:1.0 RST.resetn RST";
   attribute X_INTERFACE_MODE of resetn : signal is "slave";
   attribute X_INTERFACE_PARAMETER of resetn : signal is "XIL_INTERFACENAME RST.resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0";
+  attribute X_INTERFACE_INFO of SLOT_0_AXIS_tdest : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDEST";
+  attribute X_INTERFACE_INFO of SLOT_0_AXIS_tid : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TID";
+  attribute X_INTERFACE_INFO of SLOT_0_AXIS_tstrb : signal is "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TSTRB";
   attribute X_CORE_INFO : string;
   attribute X_CORE_INFO of stub : architecture is "bd_91c5,Vivado 2025.2";
 begin

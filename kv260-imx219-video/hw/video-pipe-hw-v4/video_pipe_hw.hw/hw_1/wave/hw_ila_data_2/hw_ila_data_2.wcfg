@@ -3,7 +3,7 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v3/video_pipe_hw.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+      <db_ref path="/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
@@ -11,30 +11,30 @@
    <zoom_setting>
       <ZoomStartTime time="0"></ZoomStartTime>
       <ZoomEndTime time="2,049"></ZoomEndTime>
-      <Cursor1Time time="0"></Cursor1Time>
+      <Cursor1Time time="1,880"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="367"></NameColumnWidth>
+      <NameColumnWidth column_width="363"></NameColumnWidth>
       <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="1" />
    <wave_markers>
    </wave_markers>
-   <wvobject type="group" fp_name="group17">
-      <obj_property name="label">slot_0 : axi_vdma_0_M_AXIS_MM2S : Interface</obj_property>
+   <wvobject type="group" fp_name="group28">
+      <obj_property name="label">slot_0 : autowhitebalance_acc_0_m_axis_video : Interface</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="Detail_Data">Interface_(i2:s0)_(axi_vdma_0_M_AXIS_MM2S)_tooltip</obj_property>
-      <obj_property name="Render_Data">Interface_(i2:s0)_(axi_vdma_0_M_AXIS_MM2S)</obj_property>
+      <obj_property name="Detail_Data">Interface_(i2:s0)_(autowhitebalance_acc_0_m_axis_video)_tooltip</obj_property>
+      <obj_property name="Render_Data">Interface_(i2:s0)_(autowhitebalance_acc_0_m_axis_video)</obj_property>
       <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
       <obj_property name="CustomSignalColor">OliveDrab</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject type="group" fp_name="group18">
-         <obj_property name="label">slot_0 : axi_vdma_0_M_AXIS_MM2S : T Channel</obj_property>
+      <wvobject type="group" fp_name="group29">
+         <obj_property name="label">slot_0 : autowhitebalance_acc_0_m_axis_video : T Channel</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <obj_property name="Detail_Data">T_Channel_(i2:s0)_(axi_vdma_0_M_AXIS_MM2S)_tooltip</obj_property>
-         <obj_property name="Render_Data">T_Channel_(i2:s0)_(axi_vdma_0_M_AXIS_MM2S)</obj_property>
+         <obj_property name="Detail_Data">T_Channel_(i2:s0)_(autowhitebalance_acc_0_m_axis_video)_tooltip</obj_property>
+         <obj_property name="Render_Data">T_Channel_(i2:s0)_(autowhitebalance_acc_0_m_axis_video)</obj_property>
          <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
          <obj_property name="CustomSignalColor">Purple</obj_property>
          <obj_property name="UseCustomSignalColor">true</obj_property>
@@ -64,20 +64,29 @@
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
+         <wvobject type="array" fp_name="video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tid">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tid[0:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tid[0:0]</obj_property>
+            <obj_property name="label">slot_0 : autowhitebalance_acc_0_m_axis_video : TID</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
          <wvobject type="array" fp_name="video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tdata">
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tdata[31:0]</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axis_tdata[31:0]</obj_property>
-            <obj_property name="label">slot_0 : axi_vdma_0_M_AXIS_MM2S : TDATA</obj_property>
+            <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tdata[23:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tdata[23:0]</obj_property>
+            <obj_property name="label">slot_0 : autowhitebalance_acc_0_m_axis_video : TDATA</obj_property>
             <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
          <wvobject type="array" fp_name="video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tkeep">
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tkeep[3:0]</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axis_tkeep[3:0]</obj_property>
-            <obj_property name="label">slot_0 : axi_vdma_0_M_AXIS_MM2S : TKEEP</obj_property>
+            <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tkeep[2:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tkeep[2:0]</obj_property>
+            <obj_property name="label">slot_0 : autowhitebalance_acc_0_m_axis_video : TKEEP</obj_property>
             <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
@@ -87,6 +96,24 @@
             <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tuser[0:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tuser[0:0]</obj_property>
             <obj_property name="label">slot_0 : axi_vdma_0_M_AXIS_MM2S : TUSER</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tstrb">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tstrb[2:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tstrb[2:0]</obj_property>
+            <obj_property name="label">slot_0 : autowhitebalance_acc_0_m_axis_video : TSTRB</obj_property>
+            <obj_property name="Radix">HEXRADIX</obj_property>
+            <obj_property name="LABELRADIX">true</obj_property>
+            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tdest">
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_1/inst/net_slot_0_axis_tdest[0:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axis_tdest[0:0]</obj_property>
+            <obj_property name="label">slot_0 : autowhitebalance_acc_0_m_axis_video : TDEST</obj_property>
             <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

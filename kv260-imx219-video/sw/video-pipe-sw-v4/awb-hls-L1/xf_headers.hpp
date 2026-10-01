@@ -27,6 +27,6 @@
 #include "opencv2/imgcodecs/imgcodecs.hpp"
 #include "opencv2/video/video.hpp"
 
-#include "common/xf_sw_utils.hpp"
+#include "xf_sw_utils.hpp"
 
 #endif //_XF_HEADERS_H_

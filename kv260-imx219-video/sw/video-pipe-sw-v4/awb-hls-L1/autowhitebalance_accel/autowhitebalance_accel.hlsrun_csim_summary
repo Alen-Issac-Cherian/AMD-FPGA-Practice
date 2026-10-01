@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Mon Sep 28 19:22:39 2026",
- "timestampMillis": "1790619759001",
+ "dateTimestamp": "Thu Oct  1 02:17:11 2026",
+ "timestampMillis": "1790817431109",
  "buildStep": {
-  "cmdId": "8ee34ce2-df7a-4613-964b-e46e71904e50",
+  "cmdId": "82d16eb0-1c9f-4bc4-874c-792a6efec194",
   "name": "vitis-run",
   "logFile": "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/logs/autowhitebalance_accel.steps.log",
   "commandLine": "/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Sep 28 19:22:39 2026",
- "timestampMillis": "1790619759001",
+ "dateTimestamp": "Thu Oct  1 02:17:11 2026",
+ "timestampMillis": "1790817431109",
  "status": {
-  "cmdId": "8ee34ce2-df7a-4613-964b-e46e71904e50",
+  "cmdId": "82d16eb0-1c9f-4bc4-874c-792a6efec194",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Mon Sep 28 19:22:44 2026",
- "timestampMillis": "1790619764725",
+ "dateTimestamp": "Thu Oct  1 02:17:15 2026",
+ "timestampMillis": "1790817435281",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -88,7 +88,8 @@
      "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel.cpp",
      "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel_config.h",
      "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_infra.hpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_axi_io.hpp"
+     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_axi_io.hpp",
+     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_sw_utils.hpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -104,10 +105,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Mon Sep 28 19:22:44 2026",
- "timestampMillis": "1790619764727",
+ "dateTimestamp": "Thu Oct  1 02:17:15 2026",
+ "timestampMillis": "1790817435282",
  "buildStep": {
-  "cmdId": "86154667-48de-47ef-b48c-0018e334f5d8",
+  "cmdId": "37227c72-6eb7-4533-9be2-3739f0087274",
   "name": "",
   "logFile": "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/hls.log",
   "commandLine": "",
@@ -120,10 +121,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Sep 28 19:22:44 2026",
- "timestampMillis": "1790619764728",
+ "dateTimestamp": "Thu Oct  1 02:17:15 2026",
+ "timestampMillis": "1790817435283",
  "status": {
-  "cmdId": "86154667-48de-47ef-b48c-0018e334f5d8",
+  "cmdId": "37227c72-6eb7-4533-9be2-3739f0087274",
   "state": "CS_RUNNING"
  }
 }
@@ -131,10 +132,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Sep 28 19:22:46 2026",
- "timestampMillis": "1790619766424",
+ "dateTimestamp": "Thu Oct  1 02:17:24 2026",
+ "timestampMillis": "1790817444906",
  "status": {
-  "cmdId": "86154667-48de-47ef-b48c-0018e334f5d8",
+  "cmdId": "37227c72-6eb7-4533-9be2-3739f0087274",
   "state": "CS_PASSED"
  }
 }
@@ -142,19 +143,19 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Mon Sep 28 19:22:46 2026",
- "timestampMillis": "1790619766518",
+ "dateTimestamp": "Thu Oct  1 02:17:25 2026",
+ "timestampMillis": "1790817445012",
  "status": {
-  "cmdId": "8ee34ce2-df7a-4613-964b-e46e71904e50",
-  "state": "CS_FAILED"
+  "cmdId": "82d16eb0-1c9f-4bc4-874c-792a6efec194",
+  "state": "CS_PASSED"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Sep 28 19:22:46 2026",
- "timestampMillis": "1790619766518",
+ "dateTimestamp": "Thu Oct  1 02:17:25 2026",
+ "timestampMillis": "1790817445013",
  "report": {
   "path": "",
   "name": "",
@@ -167,8 +168,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Mon Sep 28 19:22:46 2026",
- "timestampMillis": "1790619766519",
+ "dateTimestamp": "Thu Oct  1 02:17:25 2026",
+ "timestampMillis": "1790817445013",
  "report": {
   "path": "",
   "name": "",

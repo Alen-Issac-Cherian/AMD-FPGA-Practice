@@ -956,16 +956,4 @@ assign m_axis_video_TVALID = regslice_both_m_axis_video_V_data_V_U_vld_out;
 
 assign s_axis_video_TREADY = regslice_both_s_axis_video_V_data_V_U_ack_in;
 
-
-reg find_df_deadlock = 0;
-// synthesis translate_off
-`include "autowhitebalance_accel_hls_deadlock_detector.vh"
-// synthesis translate_on
-
-reg find_kernel_block = 0;
-// synthesis translate_off
-`include "autowhitebalance_accel_hls_deadlock_kernel_monitor_top.vh"
-// synthesis translate_on
-
 endmodule //autowhitebalance_accel
-

@@ -33,32 +33,32 @@
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
                 <row id="0" col0="autowhitebalance_accel" col1="xf_autowhitebalance_accel.cpp:68" col2="23137" col3="1437" col4="1573" col5="1229" col6="1032">
-                    <row id="9" col0="AWBKernel" col1="xf_autowhitebalance_accel.cpp:27" col2="23112" col2_disp="23,112 (2 calls)" col3="1416" col3_disp="1,416 (2 calls)" col4="1540" col4_disp="1,540 (2 calls)" col5="1190" col5_disp="1,190 (2 calls)" col6="976" col6_disp=" 976 (2 calls)">
-                        <row id="14" col0="Mat" col1="xf_structs.hpp:671" col2="222" col2_disp="  222 (6 calls)" col3="" col4="" col5="" col6="">
-                            <row id="4" col0="init" col1="xf_structs.hpp:606" col2="168" col2_disp="  168 (6 calls)" col3="" col4="" col5="" col6="">
-                                <row id="5" col0="alloc_data&lt;2, nullptr&gt;" col1="xf_structs.hpp:494" col2="6" col2_disp="    6 (6 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="3" col0="AWBKernel" col1="xf_autowhitebalance_accel.cpp:27" col2="23112" col2_disp="23,112 (2 calls)" col3="1416" col3_disp="1,416 (2 calls)" col4="1540" col4_disp="1,540 (2 calls)" col5="1190" col5_disp="1,190 (2 calls)" col6="976" col6_disp=" 976 (2 calls)">
+                        <row id="1" col0="Mat" col1="xf_structs.hpp:671" col2="222" col2_disp="  222 (6 calls)" col3="" col4="" col5="" col6="">
+                            <row id="14" col0="init" col1="xf_structs.hpp:606" col2="168" col2_disp="  168 (6 calls)" col3="" col4="" col5="" col6="">
+                                <row id="15" col0="alloc_data&lt;2, nullptr&gt;" col1="xf_structs.hpp:494" col2="6" col2_disp="    6 (6 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
                         </row>
-                        <row id="8" col0="AXIvideo2xfMat&lt;30, 20, 2160, 3840, 1, 2&gt;" col1="xf_infra.hpp:101" col2="2034" col2_disp="2,034 (2 calls)" col3="390" col3_disp=" 390 (2 calls)" col4="480" col4_disp=" 480 (2 calls)" col5="346" col5_disp=" 346 (2 calls)" col6="182" col6_disp=" 182 (2 calls)">
+                        <row id="19" col0="AXIvideo2xfMat&lt;30, 20, 2160, 3840, 1, 2&gt;" col1="xf_infra.hpp:101" col2="2034" col2_disp="2,034 (2 calls)" col3="390" col3_disp=" 390 (2 calls)" col4="480" col4_disp=" 480 (2 calls)" col5="346" col5_disp=" 346 (2 calls)" col6="182" col6_disp=" 182 (2 calls)">
                             <row id="6" col0="write&lt;2, nullptr&gt;" col1="xf_structs.hpp:553" col2="16" col2_disp="   16 (2 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="13" col0="AWBChannelGain&lt;20, 20, 2160, 3840, 1, 0, 2, 2&gt;" col1="xf_autowhitebalance.hpp:1503" col2="14312" col2_disp="14,312 (2 calls)" col3="628" col3_disp=" 628 (2 calls)" col4="532" col4_disp=" 532 (2 calls)" col5="480" col5_disp=" 480 (2 calls)" col6="480" col6_disp=" 480 (2 calls)">
-                            <row id="11" col0="AWBChannelGainKernel&lt;20, 20, 2160, 3840, 1, 2, 2, 3, 23, 23, 13, 13, 3840&gt;" col1="xf_autowhitebalance.hpp:127" col2="14308" col2_disp="14,308 (2 calls)" col3="624" col3_disp=" 624 (2 calls)" col4="528" col4_disp=" 528 (2 calls)" col5="476" col5_disp=" 476 (2 calls)" col6="476" col6_disp=" 476 (2 calls)">
-                                <row id="15" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:542" col2="20" col2_disp="   20 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="17" col0="AWBChannelGain&lt;20, 20, 2160, 3840, 1, 0, 2, 2&gt;" col1="xf_autowhitebalance.hpp:1503" col2="14312" col2_disp="14,312 (2 calls)" col3="628" col3_disp=" 628 (2 calls)" col4="532" col4_disp=" 532 (2 calls)" col5="480" col5_disp=" 480 (2 calls)" col6="480" col6_disp=" 480 (2 calls)">
+                            <row id="5" col0="AWBChannelGainKernel&lt;20, 20, 2160, 3840, 1, 2, 2, 3, 23, 23, 13, 13, 3840&gt;" col1="xf_autowhitebalance.hpp:127" col2="14308" col2_disp="14,308 (2 calls)" col3="624" col3_disp=" 624 (2 calls)" col4="528" col4_disp=" 528 (2 calls)" col5="476" col5_disp=" 476 (2 calls)" col6="476" col6_disp=" 476 (2 calls)">
+                                <row id="9" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:542" col2="20" col2_disp="   20 (2 calls)" col3="" col4="" col5="" col6=""/>
                                 <row id="6" col0="write&lt;2, nullptr&gt;" col1="xf_structs.hpp:553" col2="16" col2_disp="   16 (2 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
                         </row>
-                        <row id="3" col0="AWBGainUpdate&lt;20, 20, 2160, 3840, 1, 0, 2, 2&gt;" col1="xf_autowhitebalance.hpp:1486" col2="882" col2_disp="  882 (2 calls)" col3="108" col3_disp=" 108 (2 calls)" col4="104" col4_disp=" 104 (2 calls)" col5="90" col5_disp="  90 (2 calls)" col6="106" col6_disp=" 106 (2 calls)">
-                            <row id="12" col0="AWBGainUpdateKernel&lt;20, 20, 2160, 3840, 1, 2, 2, 3, 23, 23, 13, 13, 3840&gt;" col1="xf_autowhitebalance.hpp:72" col2="878" col2_disp="  878 (2 calls)" col3="" col4="" col5="" col6="">
-                                <row id="15" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:542" col2="20" col2_disp="   20 (2 calls)" col3="" col4="" col5="" col6=""/>
-                                <row id="10" col0="xf_satcast_awb&lt;ap_uint&lt;10&gt; &gt;" col1="xf_autowhitebalance.hpp:44" col2="48" col2_disp="   48 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="2" col0="AWBGainUpdate&lt;20, 20, 2160, 3840, 1, 0, 2, 2&gt;" col1="xf_autowhitebalance.hpp:1486" col2="882" col2_disp="  882 (2 calls)" col3="108" col3_disp=" 108 (2 calls)" col4="104" col4_disp=" 104 (2 calls)" col5="90" col5_disp="  90 (2 calls)" col6="106" col6_disp=" 106 (2 calls)">
+                            <row id="7" col0="AWBGainUpdateKernel&lt;20, 20, 2160, 3840, 1, 2, 2, 3, 23, 23, 13, 13, 3840&gt;" col1="xf_autowhitebalance.hpp:72" col2="878" col2_disp="  878 (2 calls)" col3="" col4="" col5="" col6="">
+                                <row id="9" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:542" col2="20" col2_disp="   20 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="18" col0="xf_satcast_awb&lt;ap_uint&lt;10&gt; &gt;" col1="xf_autowhitebalance.hpp:44" col2="48" col2_disp="   48 (2 calls)" col3="" col4="" col5="" col6=""/>
                                 <row id="6" col0="write&lt;2, nullptr&gt;" col1="xf_structs.hpp:553" col2="16" col2_disp="   16 (2 calls)" col3="" col4="" col5="" col6=""/>
                             </row>
                         </row>
-                        <row id="7" col0="xfMat2AXIvideo&lt;30, 20, 2160, 3840, 1, 2, 0&gt;" col1="xf_infra.hpp:181" col2="1340" col2_disp="1,340 (2 calls)" col3="162" col3_disp=" 162 (2 calls)" col4="302" col4_disp=" 302 (2 calls)" col5="176" col5_disp=" 176 (2 calls)" col6="94" col6_disp="  94 (2 calls)">
-                            <row id="15" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:542" col2="40" col2_disp="   40 (4 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="20" col0="xfMat2AXIvideo&lt;30, 20, 2160, 3840, 1, 2, 0&gt;" col1="xf_infra.hpp:181" col2="1340" col2_disp="1,340 (2 calls)" col3="162" col3_disp=" 162 (2 calls)" col4="302" col4_disp=" 302 (2 calls)" col5="176" col5_disp=" 176 (2 calls)" col6="94" col6_disp="  94 (2 calls)">
+                            <row id="9" col0="read&lt;2, nullptr&gt;" col1="xf_structs.hpp:542" col2="40" col2_disp="   40 (4 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
-                        <row id="2" col0="~Mat" col1="xf_structs.hpp:866" col2="6" col2_disp="    6 (6 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="4" col0="~Mat" col1="xf_structs.hpp:866" col2="6" col2_disp="    6 (6 calls)" col3="" col4="" col5="" col6=""/>
                     </row>
                 </row>
             </rows>

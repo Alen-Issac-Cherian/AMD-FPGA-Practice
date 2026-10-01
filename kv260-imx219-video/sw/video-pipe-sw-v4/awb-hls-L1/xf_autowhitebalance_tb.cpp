@@ -307,16 +307,32 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    cv::Mat in_gray, in_gray1, ocv_ref, out_gray, diff, ocv_ref_in1, ocv_ref_in2, inout_gray1, ocv_ref_gw;
+    cv::Mat in_gray, ocv_ref, out_gray, diff, ocv_ref_gw;
+
 #if T_8U
-    in_gray = cv::imread(argv[1], 1); // read image
+    in_gray = cv::imread(argv[1], 1); // 8-bit BGR
 #else
-    in_gray = cv::imread(argv[1], -1); // read image
+    {
+        // Load as-is, then rescale into the PIX_MAX range (e.g. 8-bit -> 10-bit)
+        cv::Mat raw = cv::imread(argv[1], -1);
+        if (raw.data == NULL || raw.channels() != 3) {
+            fprintf(stderr, "Cannot open 3-channel image %s\n", argv[1]);
+            return -1;
+        }
+        double src_max = (raw.depth() == CV_8U) ? 255.0 : 65535.0;
+        raw.convertTo(in_gray, CV_16UC3, (double)PIX_MAX / src_max);
+    }
 #endif
 
     if (in_gray.data == NULL) {
         fprintf(stderr, "Cannot open image %s\n", argv[1]);
         return -1;
+    }
+
+    // The DUT is built for HEIGHT x WIDTH; stream framing must match rows/cols exactly.
+    if (in_gray.rows != HEIGHT || in_gray.cols != WIDTH) {
+        printf("Resizing %dx%d input to %dx%d\n", in_gray.cols, in_gray.rows, WIDTH, HEIGHT);
+        cv::resize(in_gray, in_gray, cv::Size(WIDTH, HEIGHT), 0, 0, cv::INTER_AREA);
     }
 
     ocv_ref.create(in_gray.rows, in_gray.cols, CV_OUT_TYPE);
@@ -325,59 +341,68 @@ int main(int argc, char** argv) {
     diff.create(in_gray.rows, in_gray.cols, CV_OUT_TYPE);
 
     float thresh = 0.9;
-/// simple white balancing cref code
+
+    float inputMin = 0.0f;
+    float inputMax = (float)PIX_MAX;
+    float outputMin = 0.0f;
+    float outputMax = (float)PIX_MAX;
+
 #if T_8U
-    float inputMin = 0.0f;
-    float inputMax = 255.0f;
-    float outputMin = 0.0f;
-    float outputMax = 255.0f;
-
     std::vector<cv::Mat_<uchar> > mv;
-    split(in_gray, mv);
 #else
-    float inputMin = 0.0f;
-    float inputMax = 65535.0f;
-    float outputMin = 0.0f;
-    float outputMax = 65535.0f;
-
     std::vector<cv::Mat_<ushort> > mv;
-    split(in_gray, mv);
 #endif
+    split(in_gray, mv);
 
     int height = in_gray.rows;
     int width = in_gray.cols;
 
+    InVideoStrm_t in_strm;
+    OutVideoStrm_t out_strm;
+
+    // Two frames: the design applies the previous frame's statistics, so the
+    // second output is the one that matches the reference model.
+    int stream_errors = 0;
     for (int i = 0; i < 2; i++) {
-        // Call the top function
-        autowhitebalance_accel((ap_uint<INPUT_PTR_WIDTH>*)in_gray.data, (ap_uint<INPUT_PTR_WIDTH>*)out_gray.data,
-                               thresh, height, width, inputMin, inputMax, outputMin, outputMax);
+        mat2axis(in_gray, in_strm);
+        autowhitebalance_accel(in_strm, out_strm, thresh, height, width, inputMin, inputMax, outputMin, outputMax);
+        stream_errors += axis2mat(out_strm, out_gray);
+    }
+    if (!in_strm.empty() || !out_strm.empty()) {
+        fprintf(stderr, "ERROR: stream(s) not fully consumed\n");
+        stream_errors++;
     }
 
-    imwrite("out_hls.png", out_gray);
-
-    // simple white balancing algorithm
+    // Reference models
     balanceWhiteSimple(mv, ocv_ref, inputMin, inputMax, outputMin, outputMax, thresh);
-
-    // gray world white balancing algorithm
     balanceWhiteGW(in_gray, ocv_ref_gw);
 
-    imwrite("ocv_gw.png", ocv_ref_gw);
-
-    imwrite("ocv_simple.png", ocv_ref);
+    // Save images (scale >8-bit data to 16-bit range so it is viewable)
+    const double vis = (double)(T_8U ? 1 : 65535.0 / PIX_MAX);
+    cv::Mat v;
+    out_gray.convertTo(v, out_gray.type(), vis);
+    imwrite("out_hls.png", v);
+    ocv_ref_gw.convertTo(v, ocv_ref_gw.type(), vis);
+    imwrite("ocv_gw.png", v);
+    ocv_ref.convertTo(v, ocv_ref.type(), vis);
+    imwrite("ocv_simple.png", v);
 
     if (WB_TYPE == 0) {
-        // Compute absolute difference image
         cv::absdiff(ocv_ref_gw, out_gray, diff);
     } else {
-        // Compute absolute difference image
         cv::absdiff(ocv_ref, out_gray, diff);
     }
 
-    imwrite("error.png", diff); // Save the difference image for debugging purpose
+    diff.convertTo(v, diff.type(), vis);
+    imwrite("error.png", v);
 
     float err_per;
     xf::cv::analyzeDiff(diff, 3, err_per);
 
+    if (stream_errors > 0) {
+        fprintf(stderr, "ERROR: %d AXI4-Stream framing/consumption errors.\n", stream_errors);
+        return 1;
+    }
     if (err_per > 0.0f) {
         fprintf(stderr, "ERROR: Test Failed.\n ");
         return 1;

@@ -1860,7 +1860,9 @@
         </FIFOInst>
     </FIFOInformation>
     <UserConfigCommands>
+        <config_csim clean="1" setup="1"/>
         <config_export display_name="Auto White Balance" library="video" taxonomy="/Video_&amp;_Image_Processing" version="1.0"/>
+        <config_sim O="1"/>
     </UserConfigCommands>
     <Args>
         <Arg ArgName="s_axis_video" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_uint&lt;30&gt;, 1UL, 1UL, 1UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">

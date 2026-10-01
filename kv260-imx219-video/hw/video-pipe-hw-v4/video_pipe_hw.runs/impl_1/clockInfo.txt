@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2025.2
-| Date         : Mon Sep 28 23:43:25 2026
+| Date         : Thu Oct  1 01:06:44 2026
 | Host         : alen-HP-Pavilion-Laptop-14-ec0xxx
 | Design       : design_1
 | Device       : xck26-sfvc784-2LV-C-
@@ -35,7 +35,7 @@ Clock 2: video_pipe_hw_i/clk_wiz_1/inst/clk_out1
 	Clock source type: BUFGCE
 	Clock source region: X1Y0
 	Clock regions with locked loads: X0Y2 
-	initial rect ((0, 0), (2, 3))
+	initial rect ((0, 0), (2, 2))
 
 Clock 3: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_0c52_phy_0_rx_support_i/rxbyteclkhs
 	Clock source type: BUFGCE
@@ -52,7 +52,7 @@ Clock 4: video_pipe_hw_i/clk_wiz_0/inst/clk_out1
 Clock 5: dbg_hub/inst/BSCANID.u_xsdbm_id/itck_i
 	Clock source type: BUFGCE
 	Clock source region: X1Y0
-	initial rect ((1, 0), (2, 2))
+	initial rect ((1, 0), (1, 0))
 
 Clock 6: video_pipe_hw_i/mipi_csi2_rx_subsyst_0/inst/phy/inst/inst/bd_0c52_phy_0_rx_support_i/slave_rx.bd_0c52_phy_0_rx_hssio_i/inst/top_inst/clk_rst_top_inst/clk_scheme_inst/pll0_clkout0_out
 	Clock source type: BUFGCE

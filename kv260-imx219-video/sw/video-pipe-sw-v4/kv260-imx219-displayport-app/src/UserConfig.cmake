@@ -139,6 +139,7 @@ set(USER_LINKER_SCRIPT "${CMAKE_SOURCE_DIR}/lscript.ld")
 # Add linker options to be passed, they will be added as extra linker options
 # Example : Adding -s will pass -s to the linker.
 set(USER_LINK_OTHER_FLAGS
+"-L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core"
 )
 
 # -----------------------------------------

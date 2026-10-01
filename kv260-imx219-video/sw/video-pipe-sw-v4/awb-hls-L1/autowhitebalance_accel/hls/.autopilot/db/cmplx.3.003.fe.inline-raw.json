@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 4,
-    "calls": "7 7",
+    "calls": "4 4",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "xf_autowhitebalance_accel.cpp",
@@ -18,24 +18,6 @@
     "total_instructions": 1767
   },
   "1": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 11,
-    "file": "lib_floatconversion.cpp",
-    "fileloc": 51,
-    "instructions": 50,
-    "loads": {
-      "L": 4
-    },
-    "memory_accesses": 0,
-    "name": "__hls_fptosi_float_i32",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 50
-  },
-  "2": {
     "basicblocks": 9,
     "calls": "",
     "control_depth": 0,
@@ -53,7 +35,7 @@
     },
     "total_instructions": 74
   },
-  "3": {
+  "2": {
     "basicblocks": 17,
     "calls": "",
     "control_depth": 2,
@@ -71,25 +53,7 @@
     },
     "total_instructions": 266
   },
-  "4": {
-    "basicblocks": 9,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "xf_infra.hpp",
-    "fileloc": 181,
-    "instructions": 116,
-    "loads": {
-      "L": 9
-    },
-    "memory_accesses": 11,
-    "name": "xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>",
-    "stores": {
-      "L": 18
-    },
-    "total_instructions": 116
-  },
-  "5": {
+  "3": {
     "basicblocks": 39,
     "calls": "",
     "control_depth": 2,
@@ -107,21 +71,9 @@
     },
     "total_instructions": 325
   },
-  "6": {
+  "4": {
     "basicblocks": 1,
-    "calls": "5",
-    "control_depth": 0,
-    "def_use_depth": 0,
-    "file": "xf_autowhitebalance.hpp",
-    "fileloc": 1503,
-    "instructions": 2,
-    "memory_accesses": 0,
-    "name": "AWBChannelGain<20, 20, 2160, 3840, 1, 0, 2, 2>",
-    "total_instructions": 327
-  },
-  "7": {
-    "basicblocks": 1,
-    "calls": "1 3 6 2 4",
+    "calls": "6 2 7 1 5",
     "control_depth": 0,
     "def_use_depth": 5,
     "file": "xf_autowhitebalance_accel.cpp",
@@ -133,5 +85,53 @@
       "L": 6
     },
     "total_instructions": 873
+  },
+  "5": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "xf_infra.hpp",
+    "fileloc": 181,
+    "instructions": 116,
+    "loads": {
+      "L": 9
+    },
+    "memory_accesses": 11,
+    "name": "xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>",
+    "stores": {
+      "L": 18
+    },
+    "total_instructions": 116
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "lib_floatconversion.cpp",
+    "fileloc": 51,
+    "instructions": 50,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 0,
+    "name": "__hls_fptosi_float_i32",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 50
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "3",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "xf_autowhitebalance.hpp",
+    "fileloc": 1503,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "AWBChannelGain<20, 20, 2160, 3840, 1, 0, 2, 2>",
+    "total_instructions": 327
   }
 }

@@ -229,7 +229,10 @@ module video_pipe_hw_system_ila_0_1 (
   SLOT_0_AXIS_tuser,
   SLOT_0_AXIS_tvalid,
   SLOT_0_AXIS_tready,
-  resetn
+  resetn,
+  SLOT_0_AXIS_tdest,
+  SLOT_0_AXIS_tid,
+  SLOT_0_AXIS_tstrb
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *)
@@ -238,10 +241,10 @@ module video_pipe_hw_system_ila_0_1 (
 input wire clk;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA" *)
 (* X_INTERFACE_MODE = "monitor slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-input wire [31 : 0] SLOT_0_AXIS_tdata;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire [23 : 0] SLOT_0_AXIS_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TKEEP" *)
-input wire [3 : 0] SLOT_0_AXIS_tkeep;
+input wire [2 : 0] SLOT_0_AXIS_tkeep;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TLAST" *)
 input wire SLOT_0_AXIS_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TUSER" *)
@@ -254,6 +257,12 @@ input wire SLOT_0_AXIS_tready;
 (* X_INTERFACE_MODE = "slave" *)
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 input wire resetn;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDEST" *)
+input wire [0 : 0] SLOT_0_AXIS_tdest;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TID" *)
+input wire [0 : 0] SLOT_0_AXIS_tid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TSTRB" *)
+input wire [2 : 0] SLOT_0_AXIS_tstrb;
 
   bd_91c5 inst (
     .clk(clk),
@@ -263,6 +272,9 @@ input wire resetn;
     .SLOT_0_AXIS_tuser(SLOT_0_AXIS_tuser),
     .SLOT_0_AXIS_tvalid(SLOT_0_AXIS_tvalid),
     .SLOT_0_AXIS_tready(SLOT_0_AXIS_tready),
-    .resetn(resetn)
+    .resetn(resetn),
+    .SLOT_0_AXIS_tdest(SLOT_0_AXIS_tdest),
+    .SLOT_0_AXIS_tid(SLOT_0_AXIS_tid),
+    .SLOT_0_AXIS_tstrb(SLOT_0_AXIS_tstrb)
   );
 endmodule

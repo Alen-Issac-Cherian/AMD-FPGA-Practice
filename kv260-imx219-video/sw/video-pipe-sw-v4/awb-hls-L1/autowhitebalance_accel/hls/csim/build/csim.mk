@@ -64,7 +64,8 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E2__
-IFLAG += -g
+LFLAG += /usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core
+AP_ENABLE_OPTIMIZED := 1
 DFLAG += -D__xilinx_ip_top= -DAESL_TB
 CCFLAG += -Werror=return-type
 CCFLAG += -Wno-abi
@@ -86,12 +87,12 @@ all: $(TARGET)
 
 $(ObjDir)/xf_autowhitebalance_tb.o: ../../../../xf_autowhitebalance_tb.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../xf_autowhitebalance_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD -I/usr/include/opencv4 -std=c++14 -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
 -include $(ObjDir)/xf_autowhitebalance_tb.d
 
 $(ObjDir)/xf_autowhitebalance_accel.o: ../../../../xf_autowhitebalance_accel.cpp $(ObjDir)/.dir csim.mk
 	$(Echo) "   Compiling ../../../../xf_autowhitebalance_accel.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD  -fhls-csim -fhlstoplevel=autowhitebalance_accel $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CXX) -std=gnu++17 ${CCFLAG} -c -MMD -I/usr/include/opencv4 -std=c++14  -fhls-csim -fhlstoplevel=autowhitebalance_accel $(IFLAG) $(DFLAG) -DNDEBUG $< -o $@ ; \
 
 -include $(ObjDir)/xf_autowhitebalance_accel.d

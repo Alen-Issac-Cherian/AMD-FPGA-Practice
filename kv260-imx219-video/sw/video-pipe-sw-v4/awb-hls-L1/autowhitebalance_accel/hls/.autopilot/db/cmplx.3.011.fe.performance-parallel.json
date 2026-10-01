@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 4,
-    "calls": "6 6",
+    "calls": "3 3",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "xf_autowhitebalance_accel.cpp",
@@ -30,36 +30,6 @@
     "total_instructions": 24
   },
   "2": {
-    "basicblocks": 17,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 5,
-    "file": "xf_infra.hpp",
-    "fileloc": 101,
-    "instructions": 189,
-    "loads": {
-      "L": 7
-    },
-    "memory_accesses": 11,
-    "name": "AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>",
-    "total_instructions": 210
-  },
-  "3": {
-    "basicblocks": 9,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 5,
-    "file": "xf_infra.hpp",
-    "fileloc": 181,
-    "instructions": 101,
-    "memory_accesses": 9,
-    "name": "xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>",
-    "stores": {
-      "L": 7
-    },
-    "total_instructions": 121
-  },
-  "4": {
     "basicblocks": 9,
     "calls": "",
     "control_depth": 0,
@@ -71,7 +41,19 @@
     "name": "AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>",
     "total_instructions": 47
   },
-  "5": {
+  "3": {
+    "basicblocks": 1,
+    "calls": "1 5 6 2 7",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "xf_autowhitebalance_accel.cpp",
+    "fileloc": 27,
+    "instructions": 25,
+    "memory_accesses": 0,
+    "name": "AWBKernel",
+    "total_instructions": 669
+  },
+  "4": {
     "basicblocks": 36,
     "calls": "",
     "control_depth": 2,
@@ -86,21 +68,24 @@
     },
     "total_instructions": 240
   },
+  "5": {
+    "basicblocks": 17,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 5,
+    "file": "xf_infra.hpp",
+    "fileloc": 101,
+    "instructions": 189,
+    "loads": {
+      "L": 7
+    },
+    "memory_accesses": 11,
+    "name": "AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>",
+    "total_instructions": 210
+  },
   "6": {
     "basicblocks": 1,
-    "calls": "1 2 7 4 3",
-    "control_depth": 0,
-    "def_use_depth": 4,
-    "file": "xf_autowhitebalance_accel.cpp",
-    "fileloc": 27,
-    "instructions": 25,
-    "memory_accesses": 0,
-    "name": "AWBKernel",
-    "total_instructions": 669
-  },
-  "7": {
-    "basicblocks": 1,
-    "calls": "5",
+    "calls": "4",
     "control_depth": 0,
     "def_use_depth": 0,
     "file": "xf_autowhitebalance.hpp",
@@ -109,5 +94,20 @@
     "memory_accesses": 0,
     "name": "AWBChannelGain<20, 20, 2160, 3840, 1, 0, 2, 2>",
     "total_instructions": 242
+  },
+  "7": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 5,
+    "file": "xf_infra.hpp",
+    "fileloc": 181,
+    "instructions": 101,
+    "memory_accesses": 9,
+    "name": "xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 121
   }
 }

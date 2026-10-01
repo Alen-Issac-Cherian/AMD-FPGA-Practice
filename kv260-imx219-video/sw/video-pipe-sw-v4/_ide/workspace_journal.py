@@ -1,39 +1,67 @@
-# 2026-09-28T23:06:17.399913868
+# 2026-10-01T00:51:11.277708735
 import vitis
 
 client = vitis.create_client()
 client.set_workspace(path="video-pipe-sw-v4")
 
 comp = client.get_component(name="awb-hls-L1")
-comp.run(operation="SYNTHESIS")
+comp.run(operation="C_SIMULATION")
 
-comp.run(operation="SYNTHESIS")
+comp.run(operation="C_SIMULATION")
 
-comp.run(operation="PACKAGE")
+cfg = client.get_config_file(path="/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg")
 
-comp.run(operation="IMPLEMENTATION")
+cfg = client.get_config_file(path="/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg")
 
-platform = client.create_platform_component(name = "kv260-video",hw_design = "$COMPONENT_LOCATION/../XSA/video_pipe_hw_wrapper.xsa",os = "standalone",cpu = "psu_cortexa53_0",domain_name = "standalone_psu_cortexa53_0",architecture = "64-bit",compiler = "gcc")
+cfg.set_value(section="hls", key="tb.cflags", value="-I/usr/include/opencv4 -std=c++14  ")
 
-comp = client.create_app_component(name="kv260-imx219-displayport-app",platform = "$COMPONENT_LOCATION/../kv260-video/export/kv260-video/kv260-video.xpfm",domain = "standalone_psu_cortexa53_0",template = "hello_world")
+cfg.set_value(section="hls", key="syn.csimflags", value="")
+
+cfg.set_values(key="tb.file_cflags", values=[])
+
+cfg.set_values(key="tb.file", values=["../xf_headers.hpp", "../xf_autowhitebalance_tb.cpp", "../xf_autowhitebalance_tb_config.h", "./xf_autowhitebalance_tb.cpp", "./xf_autowhitebalance_tb_config.h"])
+
+cfg.set_value(section="hls", key="syn.cflags", value="")
+
+cfg.set_value(section="hls", key="syn.csimflags", value="-I/usr/include/opencv4 -std=c++14   ")
+
+cfg.set_values(key="syn.file_cflags", values=[])
+
+cfg.set_values(key="syn.file", values=["../xf_autowhitebalance_accel.cpp", "../xf_autowhitebalance_accel_config.h", "../xf_config_params.h", "../xf_common.hpp", "../xf_params.hpp", "../xf_structs.hpp", "../xf_types.hpp", "../xf_autowhitebalance.hpp", "../xf_duplicateimage.hpp", "../xf_utility.hpp", "../xf_video_mem.hpp", "./xf_common.hpp", "./xf_config_params.h", "./xf_duplicateimage.hpp", "./xf_headers.hpp", "./xf_params.hpp", "./xf_structs.hpp", "./xf_types.hpp", "./xf_utility.hpp", "./xf_video_mem.hpp", "./xf_autowhitebalance.hpp", "./xf_autowhitebalance_accel.cpp", "./xf_autowhitebalance_accel_config.h", "./xf_infra.hpp", "./xf_axi_io.hpp"])
+
+cfg.set_values(key="syn.file_csimflags", values=[])
+
+comp.run(operation="C_SIMULATION")
+
+cfg.set_values(key="syn.file", values=["../xf_autowhitebalance_accel.cpp", "../xf_autowhitebalance_accel_config.h", "../xf_config_params.h", "../xf_common.hpp", "../xf_params.hpp", "../xf_structs.hpp", "../xf_types.hpp", "../xf_autowhitebalance.hpp", "../xf_duplicateimage.hpp", "../xf_utility.hpp", "../xf_video_mem.hpp", "./xf_common.hpp", "./xf_config_params.h", "./xf_duplicateimage.hpp", "./xf_headers.hpp", "./xf_params.hpp", "./xf_structs.hpp", "./xf_types.hpp", "./xf_utility.hpp", "./xf_video_mem.hpp", "./xf_autowhitebalance.hpp", "./xf_autowhitebalance_accel.cpp", "./xf_autowhitebalance_accel_config.h", "./xf_infra.hpp", "./xf_axi_io.hpp", "./xf_sw_utils.hpp"])
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
+
+comp.run(operation="C_SIMULATION")
 
 comp = client.get_component(name="kv260-imx219-displayport-app")
-status = comp.import_files(from_loc="$COMPONENT_LOCATION/../../video-pipe-sw-v3/kv260-imx219-displayport-app/src", files=["demosaic.c", "demosaic.h", "displayport.c", "displayport.h"], dest_dir_in_cmp = "src", is_skip_copy_sources = False)
+comp.set_app_config(key = "USER_LINK_OTHER_FLAGS", values = ["   -L/usr/local/lib -lopencv_imgcodecs -lopencv_imgproc -lopencv_core"])
 
-status = comp.import_files(from_loc="$COMPONENT_LOCATION/../../video-pipe-sw-v3/kv260-imx219-displayport-app/src", files=["imx219.c", "imx219.h", "kv260-imx219-displayport-app.c", "mipi.c", "mipi.h"], dest_dir_in_cmp = "src", is_skip_copy_sources = False)
+comp = client.get_component(name="awb-hls-L1")
+comp.run(operation="C_SIMULATION")
 
-status = comp.import_files(from_loc="$COMPONENT_LOCATION/../../video-pipe-sw-v3/kv260-imx219-displayport-app/src", files=["parameters.h", "vdma.c", "vdma.h", "vtc.c", "vtc.h"], dest_dir_in_cmp = "src", is_skip_copy_sources = False)
+comp = client.get_component(name="kv260-imx219-displayport-app")
+comp.set_app_config(key = "USER_LINK_OTHER_FLAGS", values = ["-L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core"])
 
-platform = client.get_component(name="kv260-video")
-status = platform.build()
+comp = client.get_component(name="awb-hls-L1")
+comp.run(operation="SYNTHESIS")
 
-comp.build()
+comp.run(operation="C_SIMULATION")
 
-status = platform.build()
+comp.run(operation="C_SIMULATION")
 
-status = platform.build()
+comp.run(operation="C_SIMULATION")
 
-comp.build()
+comp.run(operation="CO_SIMULATION")
+
+comp.run(operation="CO_SIMULATION")
 
 vitis.dispose()
 

@@ -4479,7 +4479,8 @@
       "autowhitebalance_acc_0_m_axis_video": {
         "interface_ports": [
           "autowhitebalance_acc_0/m_axis_video",
-          "axi_vdma_0/S_AXIS_S2MM"
+          "axi_vdma_0/S_AXIS_S2MM",
+          "system_ila_1/SLOT_0_AXIS"
         ]
       },
       "axi_smc_1_M00_AXI": {
@@ -4527,8 +4528,7 @@
       "axi_vdma_0_M_AXIS_MM2S": {
         "interface_ports": [
           "axi_vdma_0/M_AXIS_MM2S",
-          "v_axi4s_vid_out_0/video_in",
-          "system_ila_1/SLOT_0_AXIS"
+          "v_axi4s_vid_out_0/video_in"
         ]
       },
       "axi_vdma_0_M_AXI_MM2S": {
@@ -4552,7 +4552,8 @@
       "axis_broadcaster_0_M00_AXIS": {
         "interface_ports": [
           "axis_broadcaster_0/M00_AXIS",
-          "axis_subset_converter_0/S_AXIS"
+          "axis_subset_converter_0/S_AXIS",
+          "system_ila_0/SLOT_0_AXIS"
         ]
       },
       "axis_broadcaster_0_M01_AXIS": {
@@ -4570,8 +4571,7 @@
       "mipi_csi2_rx_subsyst_0_video_out": {
         "interface_ports": [
           "mipi_csi2_rx_subsyst_0/video_out",
-          "v_demosaic_0/s_axis_video",
-          "system_ila_0/SLOT_0_AXIS"
+          "v_demosaic_0/s_axis_video"
         ]
       },
       "mipi_phy_if_0_1": {

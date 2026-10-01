@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xF0E21F30CC8F2E48",
+      "boundary_crc": "0x945AC88BA460C85",
       "design_src": "SBD",
       "device": "xck26-sfvc784-2LV-c",
       "name": "bd_5104",
@@ -31,7 +31,7 @@
             "value_src": "default"
           },
           "HAS_TKEEP": {
-            "value": "0",
+            "value": "1",
             "value_src": "default"
           },
           "HAS_TLAST": {
@@ -43,7 +43,7 @@
             "value_src": "default"
           },
           "HAS_TSTRB": {
-            "value": "0",
+            "value": "1",
             "value_src": "default"
           },
           "INSERT_VIP": {
@@ -59,15 +59,15 @@
             "value_src": "default"
           },
           "TDATA_NUM_BYTES": {
-            "value": "2",
+            "value": "4",
             "value_src": "default"
           },
           "TDEST_WIDTH": {
-            "value": "10",
+            "value": "1",
             "value_src": "default"
           },
           "TID_WIDTH": {
-            "value": "0",
+            "value": "1",
             "value_src": "default"
           },
           "TUSER_WIDTH": {
@@ -165,19 +165,19 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "6"
+            "value": "9"
           },
           "C_PROBE0_TYPE": {
             "value": "0"
           },
           "C_PROBE0_WIDTH": {
-            "value": "16"
+            "value": "32"
           },
           "C_PROBE1_TYPE": {
             "value": "0"
           },
           "C_PROBE1_WIDTH": {
-            "value": "10"
+            "value": "1"
           },
           "C_PROBE2_TYPE": {
             "value": "0"
@@ -189,18 +189,36 @@
             "value": "0"
           },
           "C_PROBE3_WIDTH": {
-            "value": "1"
+            "value": "4"
           },
           "C_PROBE4_TYPE": {
             "value": "0"
           },
           "C_PROBE4_WIDTH": {
-            "value": "1"
+            "value": "4"
           },
           "C_PROBE5_TYPE": {
             "value": "0"
           },
           "C_PROBE5_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE6_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE6_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE7_WIDTH": {
+            "value": "1"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "0"
+          },
+          "C_PROBE8_WIDTH": {
             "value": "1"
           },
           "C_TRIGIN_EN": {
@@ -232,13 +250,13 @@
             "value": "0"
           },
           "C_SLOT_0_AXIS_TDATA_WIDTH": {
-            "value": "16"
+            "value": "32"
           },
           "C_SLOT_0_AXIS_TDEST_WIDTH": {
-            "value": "10"
+            "value": "1"
           },
           "C_SLOT_0_AXIS_TID_WIDTH": {
-            "value": "0"
+            "value": "1"
           },
           "C_SLOT_0_AXIS_TUSER_WIDTH": {
             "value": "1"
@@ -247,13 +265,13 @@
             "value": "AXI4S"
           },
           "C_SLOT_0_HAS_TKEEP": {
-            "value": "0"
+            "value": "1"
           },
           "C_SLOT_0_HAS_TREADY": {
             "value": "1"
           },
           "C_SLOT_0_HAS_TSTRB": {
-            "value": "0"
+            "value": "1"
           },
           "C_SLOT_0_MON_MODE": {
             "value": "FT"
@@ -299,28 +317,46 @@
           "ila_lib/probe1"
         ]
       },
+      "net_slot_0_axis_tid": {
+        "ports": [
+          "g_inst/m_slot_0_axis_tid",
+          "ila_lib/probe2"
+        ]
+      },
+      "net_slot_0_axis_tkeep": {
+        "ports": [
+          "g_inst/m_slot_0_axis_tkeep",
+          "ila_lib/probe3"
+        ]
+      },
       "net_slot_0_axis_tlast": {
         "ports": [
           "g_inst/m_slot_0_axis_tlast",
-          "ila_lib/probe5"
+          "ila_lib/probe8"
         ]
       },
       "net_slot_0_axis_tready": {
         "ports": [
           "g_inst/m_slot_0_axis_tready",
+          "ila_lib/probe7"
+        ]
+      },
+      "net_slot_0_axis_tstrb": {
+        "ports": [
+          "g_inst/m_slot_0_axis_tstrb",
           "ila_lib/probe4"
         ]
       },
       "net_slot_0_axis_tuser": {
         "ports": [
           "g_inst/m_slot_0_axis_tuser",
-          "ila_lib/probe2"
+          "ila_lib/probe5"
         ]
       },
       "net_slot_0_axis_tvalid": {
         "ports": [
           "g_inst/m_slot_0_axis_tvalid",
-          "ila_lib/probe3"
+          "ila_lib/probe6"
         ]
       },
       "resetn_1": {
