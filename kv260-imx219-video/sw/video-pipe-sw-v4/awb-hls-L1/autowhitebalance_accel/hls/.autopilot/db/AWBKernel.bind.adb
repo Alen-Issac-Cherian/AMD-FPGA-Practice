@@ -37,7 +37,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>30</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>0</if_type>
@@ -289,7 +289,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>30</bitwidth>
+					<bitwidth>32</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>0</if_type>
@@ -1846,7 +1846,7 @@
 					<Obj>
 						<type>2</type>
 						<id>86</id>
-						<name>AXIvideo2xfMat_30_20_2160_3840_1_2_s</name>
+						<name>AXIvideo2xfMat_32_20_2160_3840_1_2_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1870,7 +1870,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:AXIvideo2xfMat&lt;30, 20, 2160, 3840, 1, 2&gt;&gt;</content>
+				<content>&lt;constant:AXIvideo2xfMat&lt;32, 20, 2160, 3840, 1, 2&gt;&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_45">
 				<Value>
@@ -1939,7 +1939,7 @@
 					<Obj>
 						<type>2</type>
 						<id>117</id>
-						<name>xfMat2AXIvideo_30_20_2160_3840_1_2_0_s</name>
+						<name>xfMat2AXIvideo_32_20_2160_3840_1_2_0_s</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1963,7 +1963,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:xfMat2AXIvideo&lt;30, 20, 2160, 3840, 1, 2, 0&gt;&gt;</content>
+				<content>&lt;constant:xfMat2AXIvideo&lt;32, 20, 2160, 3840, 1, 2, 0&gt;&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2685,7 +2685,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_137">
 						<type>0</type>
-						<name>AXIvideo2xfMat_30_20_2160_3840_1_2_U0</name>
+						<name>AXIvideo2xfMat_32_20_2160_3840_1_2_U0</name>
 						<ssdmobj_id>53</ssdmobj_id>
 						<pins>
 							<count>9</count>
@@ -2701,7 +2701,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_140">
 									<type>0</type>
-									<name>AXIvideo2xfMat_30_20_2160_3840_1_2_U0</name>
+									<name>AXIvideo2xfMat_32_20_2160_3840_1_2_U0</name>
 									<ssdmobj_id>53</ssdmobj_id>
 								</inst>
 							</item>
@@ -2942,7 +2942,7 @@
 					</item>
 					<item class_id_reference="28" object_id="_181">
 						<type>0</type>
-						<name>xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0</name>
+						<name>xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0</name>
 						<ssdmobj_id>56</ssdmobj_id>
 						<pins>
 							<count>9</count>
@@ -2958,7 +2958,7 @@
 								</port>
 								<inst class_id_reference="31" object_id="_184">
 									<type>0</type>
-									<name>xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0</name>
+									<name>xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0</name>
 									<ssdmobj_id>56</ssdmobj_id>
 								</inst>
 							</item>
@@ -4099,7 +4099,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_AXIvideo2xfMat_30_20_2160_3840_1_2_s_fu_164</first>
+			<first>grp_AXIvideo2xfMat_32_20_2160_3840_1_2_s_fu_164</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -4117,7 +4117,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s_fu_222</first>
+			<first>grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s_fu_222</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>

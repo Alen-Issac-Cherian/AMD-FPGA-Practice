@@ -2,10 +2,10 @@
 // Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-// Date        : Thu Oct  1 01:01:39 2026
+// Date        : Sun Oct  4 19:32:51 2026
 // Host        : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
-// Command     : write_verilog -force -mode synth_stub
-//               /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/video_pipe_hw_system_ila_0_1_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top video_pipe_hw_system_ila_0_1 -prefix
+//               video_pipe_hw_system_ila_0_1_ video_pipe_hw_system_ila_0_1_stub.v
 // Design      : video_pipe_hw_system_ila_0_1
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xck26-sfvc784-2LV-c
@@ -19,11 +19,11 @@
 module video_pipe_hw_system_ila_0_1(clk, SLOT_0_AXIS_tdata, SLOT_0_AXIS_tkeep, 
   SLOT_0_AXIS_tlast, SLOT_0_AXIS_tuser, SLOT_0_AXIS_tvalid, SLOT_0_AXIS_tready, resetn, 
   SLOT_0_AXIS_tdest, SLOT_0_AXIS_tid, SLOT_0_AXIS_tstrb)
-/* synthesis syn_black_box black_box_pad_pin="SLOT_0_AXIS_tdata[23:0],SLOT_0_AXIS_tkeep[2:0],SLOT_0_AXIS_tlast,SLOT_0_AXIS_tuser[0:0],SLOT_0_AXIS_tvalid,SLOT_0_AXIS_tready,resetn,SLOT_0_AXIS_tdest[0:0],SLOT_0_AXIS_tid[0:0],SLOT_0_AXIS_tstrb[2:0]" */
+/* synthesis syn_black_box black_box_pad_pin="SLOT_0_AXIS_tdata[31:0],SLOT_0_AXIS_tkeep[3:0],SLOT_0_AXIS_tlast,SLOT_0_AXIS_tuser[0:0],SLOT_0_AXIS_tvalid,SLOT_0_AXIS_tready,resetn,SLOT_0_AXIS_tdest[0:0],SLOT_0_AXIS_tid[0:0],SLOT_0_AXIS_tstrb[3:0]" */
 /* synthesis syn_force_seq_prim="clk" */;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.clk CLK" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.clk, FREQ_HZ 249997498, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, ASSOCIATED_BUSIF SLOT_0_AXIS, ASSOCIATED_RESET resetn, INSERT_VIP 0" *) input clk /* synthesis syn_isclock = 1 */;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA" *) (* X_INTERFACE_MODE = "monitor slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [23:0]SLOT_0_AXIS_tdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TKEEP" *) input [2:0]SLOT_0_AXIS_tkeep;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDATA" *) (* X_INTERFACE_MODE = "monitor slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXIS, TDATA_NUM_BYTES 4, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *) input [31:0]SLOT_0_AXIS_tdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TKEEP" *) input [3:0]SLOT_0_AXIS_tkeep;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TLAST" *) input SLOT_0_AXIS_tlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TUSER" *) input [0:0]SLOT_0_AXIS_tuser;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TVALID" *) input SLOT_0_AXIS_tvalid;
@@ -31,5 +31,5 @@ module video_pipe_hw_system_ila_0_1(clk, SLOT_0_AXIS_tdata, SLOT_0_AXIS_tkeep,
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.resetn RST" *) (* X_INTERFACE_MODE = "slave" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input resetn;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TDEST" *) input [0:0]SLOT_0_AXIS_tdest;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TID" *) input [0:0]SLOT_0_AXIS_tid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TSTRB" *) input [2:0]SLOT_0_AXIS_tstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 SLOT_0_AXIS TSTRB" *) input [3:0]SLOT_0_AXIS_tstrb;
 endmodule

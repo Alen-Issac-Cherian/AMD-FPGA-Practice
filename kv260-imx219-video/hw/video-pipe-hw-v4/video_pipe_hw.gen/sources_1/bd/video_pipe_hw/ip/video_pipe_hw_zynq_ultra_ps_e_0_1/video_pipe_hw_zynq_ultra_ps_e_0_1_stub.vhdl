@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Tue Sep 15 23:00:43 2026
+-- Date        : Sun Oct  4 19:37:38 2026
 -- Host        : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
--- Command     : write_vhdl -force -mode synth_stub -rename_top video_pipe_hw_zynq_ultra_ps_e_0_1 -prefix
---               video_pipe_hw_zynq_ultra_ps_e_0_1_ video_pipe_hw_zynq_ultra_ps_e_0_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_zynq_ultra_ps_e_0_1/video_pipe_hw_zynq_ultra_ps_e_0_1_stub.vhdl
 -- Design      : video_pipe_hw_zynq_ultra_ps_e_0_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xck26-sfvc784-2LV-c

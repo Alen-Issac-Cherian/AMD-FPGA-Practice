@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1'
 ================================================================
-* Date:           Thu Oct  1 01:57:27 2026
+* Date:           Sun Oct  4 18:41:38 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        autowhitebalance_accel
@@ -151,7 +151,7 @@ Target clock period: 10.000ns, clock uncertainty: 2.700ns.
 The critical path consists of the following:
 	'store' operation ('store_ln91', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490) of constant 0 12 bit on local variable 'j', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490 [21]  (0.427 ns)
 	'load' operation 12 bit ('j', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490) on local variable 'j', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490 [24]  (0.000 ns)
-	'add' operation 12 bit ('j', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490) [26]  (0.809 ns)
+	'icmp' operation 1 bit ('icmp_ln91', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490) [25]  (0.809 ns)
 	'store' operation ('store_ln91', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490) of variable 'j', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490 12 bit on local variable 'j', ./xf_autowhitebalance.hpp:91->./xf_autowhitebalance.hpp:1490 [56]  (0.427 ns)
 
  <State 2>: 6.575ns

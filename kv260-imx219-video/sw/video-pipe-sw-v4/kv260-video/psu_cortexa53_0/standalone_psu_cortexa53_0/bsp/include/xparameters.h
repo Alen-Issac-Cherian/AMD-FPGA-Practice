@@ -1,18 +1,6 @@
 #ifndef XPARAMETERS_H   /* prevent circular inclusions */
 #define XPARAMETERS_H   /* by using protection macros */
 
-#define XPAR_XAUTOWHITEBALANCE_ACCEL_NUM_INSTANCES 1
-
-/* Definitions for peripheral AUTOWHITEBALANCE_ACC_0 */
-#define XPAR_AUTOWHITEBALANCE_ACC_0_COMPATIBLE "xlnx,autowhitebalance-accel-1.0"
-#define XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR 0xa0020000
-#define XPAR_AUTOWHITEBALANCE_ACC_0_HIGHADDR 0xa002ffff
-
-/* Canonical definitions for peripheral AUTOWHITEBALANCE_ACC_0 */
-#define XPAR_XAUTOWHITEBALANCE_ACCEL_0_BASEADDR 0xa0020000
-#define XPAR_XAUTOWHITEBALANCE_ACCEL_0_HIGHADDR 0xa002ffff
-#define XPAR_XAUTOWHITEBALANCE_ACCEL_0_COMPATIBLE "xlnx,autowhitebalance-accel-1.0"
-
 #define XPAR_XAXIPMON_NUM_INSTANCES 4
 
 /* Definitions for peripheral PERF_MONITOR_OCM */
@@ -1722,6 +1710,14 @@
 /* Canonical definitions for peripheral LPD_XPPU */
 #define XPAR_PSU_LPD_XPPU_0_BASEADDR 0xff980000
 #define XPAR_PSU_LPD_XPPU_0_HIGHADDR 0xff980fff
+
+/* Definitions for peripheral AUTOWHITEBALANCE_ACC_0 */
+#define XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR 0xa0020000
+#define XPAR_AUTOWHITEBALANCE_ACC_0_HIGHADDR 0xa002ffff
+
+/* Canonical definitions for peripheral AUTOWHITEBALANCE_ACC_0 */
+#define XPAR_AUTOWHITEBALANCE_ACCEL_0_BASEADDR 0xa0020000
+#define XPAR_AUTOWHITEBALANCE_ACCEL_0_HIGHADDR 0xa002ffff
 
 /*  BOARD definition */
 #define XPS_BOARD_KV260_SOM

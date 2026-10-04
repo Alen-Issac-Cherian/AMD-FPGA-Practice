@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="autowhitebalance_accel_autowhitebalance_accel,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.158000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=7814,HLS_SYN_LUT=9550,HLS_VERSION=2025_2}" *)
+(* CORE_GENERATION_INFO="autowhitebalance_accel_autowhitebalance_accel,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.158000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=7822,HLS_SYN_LUT=9550,HLS_VERSION=2025_2}" *)
 
 (* DowngradeIPIdentifiedWarnings="yes" *)
 module autowhitebalance_accel (
@@ -65,7 +65,7 @@ parameter C_S_AXI_WSTRB_WIDTH = (32 / 8);
 
 input   ap_clk;
 input   ap_rst_n;
-input  [29:0] s_axis_video_TDATA;
+input  [31:0] s_axis_video_TDATA;
 input   s_axis_video_TVALID;
 output   s_axis_video_TREADY;
 input  [3:0] s_axis_video_TKEEP;
@@ -74,7 +74,7 @@ input  [0:0] s_axis_video_TUSER;
 input  [0:0] s_axis_video_TLAST;
 input  [0:0] s_axis_video_TID;
 input  [0:0] s_axis_video_TDEST;
-output  [29:0] m_axis_video_TDATA;
+output  [31:0] m_axis_video_TDATA;
 output   m_axis_video_TVALID;
 input   m_axis_video_TREADY;
 output  [3:0] m_axis_video_TKEEP;
@@ -133,7 +133,7 @@ reg   [0:0] flag_load_reg_391;
 reg   [31:0] p_ZL7igain_0_0_load_reg_404;
 reg   [31:0] p_ZL7igain_0_1_load_reg_409;
 reg   [31:0] p_ZL7igain_0_2_load_reg_414;
-wire   [29:0] grp_AWBKernel_fu_167_m_axis_video_TDATA;
+wire   [31:0] grp_AWBKernel_fu_167_m_axis_video_TDATA;
 wire   [3:0] grp_AWBKernel_fu_167_m_axis_video_TKEEP;
 wire   [3:0] grp_AWBKernel_fu_167_m_axis_video_TSTRB;
 wire   [0:0] grp_AWBKernel_fu_167_m_axis_video_TUSER;
@@ -170,7 +170,7 @@ wire    ap_sync_grp_AWBKernel_fu_167_ap_ready;
 wire    ap_CS_fsm_state5;
 wire    ap_CS_fsm_state6;
 reg    ap_block_state6_on_subcall_done;
-reg   [29:0] m_axis_video_TDATA_reg;
+reg   [31:0] m_axis_video_TDATA_reg;
 reg   [3:0] m_axis_video_TKEEP_reg;
 reg   [3:0] m_axis_video_TSTRB_reg;
 reg   [0:0] m_axis_video_TUSER_reg;
@@ -191,7 +191,7 @@ reg    ap_ST_fsm_state4_blk;
 wire    ap_ST_fsm_state5_blk;
 reg    ap_ST_fsm_state6_blk;
 wire    regslice_both_s_axis_video_V_data_V_U_apdone_blk;
-wire   [29:0] s_axis_video_TDATA_int_regslice;
+wire   [31:0] s_axis_video_TDATA_int_regslice;
 wire    s_axis_video_TVALID_int_regslice;
 reg    s_axis_video_TREADY_int_regslice;
 wire    regslice_both_s_axis_video_V_data_V_U_ack_in;
@@ -219,7 +219,7 @@ wire    regslice_both_s_axis_video_V_dest_V_U_apdone_blk;
 wire   [0:0] s_axis_video_TDEST_int_regslice;
 wire    regslice_both_s_axis_video_V_dest_V_U_vld_out;
 wire    regslice_both_s_axis_video_V_dest_V_U_ack_in;
-reg   [29:0] m_axis_video_TDATA_int_regslice;
+reg   [31:0] m_axis_video_TDATA_int_regslice;
 reg    m_axis_video_TVALID_int_regslice;
 wire    m_axis_video_TREADY_int_regslice;
 wire    regslice_both_m_axis_video_V_data_V_U_vld_out;
@@ -355,7 +355,7 @@ control_s_axi_U(
 );
 
 autowhitebalance_accel_regslice_both #(
-    .DataWidth( 30 ))
+    .DataWidth( 32 ))
 regslice_both_s_axis_video_V_data_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
@@ -453,7 +453,7 @@ regslice_both_s_axis_video_V_dest_V_U(
 );
 
 autowhitebalance_accel_regslice_both #(
-    .DataWidth( 30 ))
+    .DataWidth( 32 ))
 regslice_both_m_axis_video_V_data_V_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
@@ -956,4 +956,16 @@ assign m_axis_video_TVALID = regslice_both_m_axis_video_V_data_V_U_vld_out;
 
 assign s_axis_video_TREADY = regslice_both_s_axis_video_V_data_V_U_ack_in;
 
+
+reg find_df_deadlock = 0;
+// synthesis translate_off
+`include "autowhitebalance_accel_hls_deadlock_detector.vh"
+// synthesis translate_on
+
+reg find_kernel_block = 0;
+// synthesis translate_off
+`include "autowhitebalance_accel_hls_deadlock_kernel_monitor_top.vh"
+// synthesis translate_on
+
 endmodule //autowhitebalance_accel
+

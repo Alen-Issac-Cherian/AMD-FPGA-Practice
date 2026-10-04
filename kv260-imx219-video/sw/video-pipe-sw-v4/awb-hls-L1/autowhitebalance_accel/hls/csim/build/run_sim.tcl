@@ -13,7 +13,7 @@ set ::env(LD_LIBRARY_PATH) /home/alen/AMD-Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.
 set ::env(LD_LIBRARY_PATH) /home/alen/AMD-Xilinx/2025.2/Vitis/lib/lnx64.o/Ubuntu:$::env(LD_LIBRARY_PATH)
 set ::env(LD_LIBRARY_PATH) /usr/lib/x86_64-linux-gnu:$::env(LD_LIBRARY_PATH)
 set_param hls.enable_hidden_option_error false
-set ap_argv {}
+set ap_argv {/home/alen/git/Vitis_Libraries/vision/data/512x512.jpg}
 set ::env(LD_LIBRARY_PATH) $::env(LD_LIBRARY_PATH):/home/alen/AMD-Xilinx/2025.2/Vitis/lnx64/csim
 ### C sim ###
 if {![file exists csim.exe]} {

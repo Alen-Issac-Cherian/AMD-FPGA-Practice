@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/./sim/autowrap/testbench/xf_autowhitebalance_accel.cpp_pre.cpp.tb.cpp

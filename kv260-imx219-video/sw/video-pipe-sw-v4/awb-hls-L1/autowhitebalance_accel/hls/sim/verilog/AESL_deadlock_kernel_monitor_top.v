@@ -1,0 +1,59 @@
+`timescale 1 ns / 1 ps
+
+module AESL_deadlock_kernel_monitor_top ( 
+    input wire kernel_monitor_clock,
+    input wire kernel_monitor_reset
+);
+wire [3:0] axis_block_sigs;
+wire [13:0] inst_idle_sigs;
+wire [5:0] inst_block_sigs;
+wire kernel_block;
+
+assign axis_block_sigs[0] = ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt_fu_132.s_axis_video_TDATA_blk_n;
+assign axis_block_sigs[1] = ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.s_axis_video_TDATA_blk_n;
+assign axis_block_sigs[2] = ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt_fu_180.s_axis_video_TDATA_blk_n;
+assign axis_block_sigs[3] = ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.m_axis_video_TDATA_blk_n;
+
+assign inst_idle_sigs[0] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_idle;
+assign inst_block_sigs[0] = (AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_done & ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_continue);
+assign inst_idle_sigs[1] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.p_hls_fptosi_float_i32_2_U0.ap_idle;
+assign inst_block_sigs[1] = (AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.p_hls_fptosi_float_i32_2_U0.ap_done & ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.p_hls_fptosi_float_i32_2_U0.ap_continue);
+assign inst_idle_sigs[2] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.ap_idle;
+assign inst_block_sigs[2] = (AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.ap_done & ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.ap_continue) | ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.in_mat_data_blk_n;
+assign inst_idle_sigs[3] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_idle;
+assign inst_block_sigs[3] = (AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done & ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_continue) | ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.grp_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s_fu_79.grp_AWBChannelGainKernel_Pipeline_Col_Loop_fu_258.in_mat_data_blk_n | ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.grp_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s_fu_79.grp_AWBChannelGainKernel_Pipeline_Col_Loop_fu_258.impop_data_blk_n;
+assign inst_idle_sigs[4] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_idle;
+assign inst_block_sigs[4] = (AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_done & ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_continue) | ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84.impop_data_blk_n | ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84.out_mat_data_blk_n;
+assign inst_idle_sigs[5] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_idle;
+assign inst_block_sigs[5] = (AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_done & ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_continue) | ~AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.out_mat_data_blk_n;
+
+assign inst_idle_sigs[6] = 1'b0;
+assign inst_idle_sigs[7] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.ap_idle;
+assign inst_idle_sigs[8] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.ap_idle;
+assign inst_idle_sigs[9] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt_fu_132.ap_idle;
+assign inst_idle_sigs[10] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.ap_idle;
+assign inst_idle_sigs[11] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt_fu_180.ap_idle;
+assign inst_idle_sigs[12] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_idle;
+assign inst_idle_sigs[13] = AESL_inst_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.ap_idle;
+
+AESL_deadlock_idx0_monitor AESL_deadlock_idx0_monitor_U (
+    .clock(kernel_monitor_clock),
+    .reset(kernel_monitor_reset),
+    .axis_block_sigs(axis_block_sigs),
+    .inst_idle_sigs(inst_idle_sigs),
+    .inst_block_sigs(inst_block_sigs),
+    .block(kernel_block)
+);
+
+
+initial begin : trigger_axis_deadlock
+reg block_delay;
+    block_delay = 0;
+    while(1) begin
+        @(posedge kernel_monitor_clock);
+    if (kernel_block == 1'b1 && block_delay == 1'b0)
+        block_delay = kernel_block;
+    end
+end
+
+endmodule

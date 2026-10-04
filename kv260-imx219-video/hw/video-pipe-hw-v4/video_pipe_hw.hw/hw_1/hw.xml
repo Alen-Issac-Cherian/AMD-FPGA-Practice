@@ -244,7 +244,7 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe8[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : mipi_csi2_rx_subsyst_0_video_out : TLAST"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : axis_broadcaster_0_M01_AXIS : TLAST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
@@ -265,7 +265,7 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe7[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : mipi_csi2_rx_subsyst_0_video_out : TREADY"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : axis_broadcaster_0_M01_AXIS : TREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
@@ -310,7 +310,7 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe5[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : mipi_csi2_rx_subsyst_0_video_out : TUSER"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : axis_broadcaster_0_M01_AXIS : TUSER"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;b1"/>
@@ -331,7 +331,7 @@
         <Option Id="HW_ILA" value="hw_ila_1"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe6[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : mipi_csi2_rx_subsyst_0_video_out : TVALID"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : axis_broadcaster_0_M01_AXIS : TVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
@@ -697,7 +697,7 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe8[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : axi_vdma_0_M_AXIS_MM2S : TLAST"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : autowhitebalance_acc_0_m_axis_video : TLAST"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
@@ -718,7 +718,7 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe7[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : axi_vdma_0_M_AXIS_MM2S : TREADY"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : autowhitebalance_acc_0_m_axis_video : TREADY"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>
@@ -761,9 +761,9 @@
         <Option Id="DISPLAY_VISIBILITY" value=""/>
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
-        <Option Id="MAP" value="probe2[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : axi_vdma_0_M_AXIS_MM2S : TUSER"/>
-        <Option Id="NAME.SELECT" value="Custom"/>
+        <Option Id="MAP" value="probe5[0]"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;b1"/>
         <Option Id="WAVEFORM_STYLE" value="Digital"/>
@@ -783,7 +783,7 @@
         <Option Id="HW_ILA" value="hw_ila_2"/>
         <Option Id="LINK_TO_WAVEFORM" value="1"/>
         <Option Id="MAP" value="probe6[0]"/>
-        <Option Id="NAME.CUSTOM" value="slot_0 : axi_vdma_0_M_AXIS_MM2S : TVALID"/>
+        <Option Id="NAME.CUSTOM" value="slot_0 : autowhitebalance_acc_0_m_axis_video : TVALID"/>
         <Option Id="NAME.SELECT" value="Custom"/>
         <Option Id="SOURCE" value="netlist"/>
         <Option Id="TRIGGER_COMPARE_VALUE" value="eq1&apos;bX"/>

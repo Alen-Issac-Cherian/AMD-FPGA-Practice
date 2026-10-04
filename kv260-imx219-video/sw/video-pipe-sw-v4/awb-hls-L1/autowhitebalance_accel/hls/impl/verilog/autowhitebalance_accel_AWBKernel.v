@@ -54,14 +54,14 @@ module autowhitebalance_accel_AWBKernel (
 );
 
 
-input  [29:0] s_axis_video_TDATA;
+input  [31:0] s_axis_video_TDATA;
 input  [3:0] s_axis_video_TKEEP;
 input  [3:0] s_axis_video_TSTRB;
 input  [0:0] s_axis_video_TUSER;
 input  [0:0] s_axis_video_TLAST;
 input  [0:0] s_axis_video_TID;
 input  [0:0] s_axis_video_TDEST;
-output  [29:0] m_axis_video_TDATA;
+output  [31:0] m_axis_video_TDATA;
 output  [3:0] m_axis_video_TKEEP;
 output  [3:0] m_axis_video_TSTRB;
 output  [0:0] m_axis_video_TUSER;
@@ -112,14 +112,14 @@ wire    p_hls_fptosi_float_i32_2_U0_ap_idle;
 wire    p_hls_fptosi_float_i32_2_U0_ap_ready;
 wire   [31:0] p_hls_fptosi_float_i32_2_U0_return_r;
 wire    tmp_channel_full_n;
-wire    AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_start;
-wire    AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_done;
-wire    AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_continue;
-wire    AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_idle;
-wire    AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready;
-wire    AXIvideo2xfMat_30_20_2160_3840_1_2_U0_s_axis_video_TREADY;
-wire   [29:0] AXIvideo2xfMat_30_20_2160_3840_1_2_U0_in_mat_data_din;
-wire    AXIvideo2xfMat_30_20_2160_3840_1_2_U0_in_mat_data_write;
+wire    AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_start;
+wire    AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_done;
+wire    AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_continue;
+wire    AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_idle;
+wire    AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready;
+wire    AXIvideo2xfMat_32_20_2160_3840_1_2_U0_s_axis_video_TREADY;
+wire   [29:0] AXIvideo2xfMat_32_20_2160_3840_1_2_U0_in_mat_data_din;
+wire    AXIvideo2xfMat_32_20_2160_3840_1_2_U0_in_mat_data_write;
 wire    AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_ap_start;
 wire    AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_ap_done;
 wire    AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_ap_continue;
@@ -151,20 +151,20 @@ wire   [29:0] AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_out_mat_data_din;
 wire    AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_out_mat_data_write;
 wire   [31:0] AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_out_mat_data_num_data_valid;
 wire   [31:0] AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_out_mat_data_fifo_cap;
-wire    xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_start;
-wire    xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_done;
-wire    xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_continue;
-wire    xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_idle;
-wire    xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_ready;
-wire    xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_out_mat_data_read;
-wire   [29:0] xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TDATA;
-wire    xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TVALID;
-wire   [3:0] xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TKEEP;
-wire   [3:0] xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TSTRB;
-wire   [0:0] xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TUSER;
-wire   [0:0] xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TLAST;
-wire   [0:0] xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TID;
-wire   [0:0] xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TDEST;
+wire    xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_start;
+wire    xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_done;
+wire    xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_continue;
+wire    xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_idle;
+wire    xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_ready;
+wire    xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_out_mat_data_read;
+wire   [31:0] xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TDATA;
+wire    xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TVALID;
+wire   [3:0] xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TKEEP;
+wire   [3:0] xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TSTRB;
+wire   [0:0] xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TUSER;
+wire   [0:0] xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TLAST;
+wire   [0:0] xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TID;
+wire   [0:0] xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TDEST;
 wire   [31:0] mul_loc_channel_dout;
 wire    mul_loc_channel_empty_n;
 wire   [2:0] mul_loc_channel_num_data_valid;
@@ -192,22 +192,22 @@ reg    ap_sync_done;
 reg    ap_sync_ready;
 reg    ap_sync_reg_AWBKernel_Block_entry_proc_U0_ap_ready;
 wire    ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready;
-reg    ap_sync_reg_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready;
-wire    ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready;
+reg    ap_sync_reg_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready;
+wire    ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready;
 wire   [0:0] start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_din;
 wire    start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_full_n;
 wire   [0:0] start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_dout;
 wire    start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_empty_n;
-wire   [0:0] start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_din;
-wire    start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_full_n;
-wire   [0:0] start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_dout;
-wire    start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_empty_n;
+wire   [0:0] start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_din;
+wire    start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_full_n;
+wire   [0:0] start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_dout;
+wire    start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_empty_n;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
 #0 ap_sync_reg_AWBKernel_Block_entry_proc_U0_ap_ready = 1'b0;
-#0 ap_sync_reg_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready = 1'b0;
+#0 ap_sync_reg_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready = 1'b0;
 end
 
 autowhitebalance_accel_AWBKernel_Block_entry_proc AWBKernel_Block_entry_proc_U0(
@@ -234,17 +234,17 @@ autowhitebalance_accel_p_hls_fptosi_float_i32_2 p_hls_fptosi_float_i32_2_U0(
     .x(mul_loc_channel_dout)
 );
 
-autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s AXIvideo2xfMat_30_20_2160_3840_1_2_U0(
+autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s AXIvideo2xfMat_32_20_2160_3840_1_2_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_start),
-    .ap_done(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_done),
-    .ap_continue(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_continue),
-    .ap_idle(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_idle),
-    .ap_ready(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready),
+    .ap_start(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_start),
+    .ap_done(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_done),
+    .ap_continue(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_continue),
+    .ap_idle(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_idle),
+    .ap_ready(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready),
     .s_axis_video_TDATA(s_axis_video_TDATA),
     .s_axis_video_TVALID(s_axis_video_TVALID),
-    .s_axis_video_TREADY(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_s_axis_video_TREADY),
+    .s_axis_video_TREADY(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_s_axis_video_TREADY),
     .s_axis_video_TKEEP(s_axis_video_TKEEP),
     .s_axis_video_TSTRB(s_axis_video_TSTRB),
     .s_axis_video_TUSER(s_axis_video_TUSER),
@@ -253,9 +253,9 @@ autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s AXIvideo2xfMat_30_20
     .s_axis_video_TDEST(s_axis_video_TDEST),
     .img_rows_val(height),
     .img_cols_val(width),
-    .in_mat_data_din(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_in_mat_data_din),
+    .in_mat_data_din(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_in_mat_data_din),
     .in_mat_data_full_n(in_mat_data_full_n),
-    .in_mat_data_write(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_in_mat_data_write),
+    .in_mat_data_write(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_in_mat_data_write),
     .in_mat_data_num_data_valid(in_mat_data_num_data_valid),
     .in_mat_data_fifo_cap(in_mat_data_fifo_cap)
 );
@@ -296,7 +296,7 @@ autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s AWBGainUpdate_20_
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
     .ap_start(AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ap_start),
-    .start_full_n(start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_full_n),
+    .start_full_n(start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_full_n),
     .ap_done(AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ap_done),
     .ap_continue(AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ap_continue),
     .ap_idle(AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ap_idle),
@@ -320,30 +320,30 @@ autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s AWBGainUpdate_20_
     .i_gain_2_val(gain1_2_val3)
 );
 
-autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0(
+autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_start),
-    .ap_done(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_done),
-    .ap_continue(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_continue),
-    .ap_idle(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_idle),
-    .ap_ready(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_ready),
+    .ap_start(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_start),
+    .ap_done(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_done),
+    .ap_continue(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_continue),
+    .ap_idle(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_idle),
+    .ap_ready(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_ready),
     .img_rows_val(height),
     .img_cols_val(width),
     .out_mat_data_dout(out_mat_data_dout),
     .out_mat_data_empty_n(out_mat_data_empty_n),
-    .out_mat_data_read(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_out_mat_data_read),
+    .out_mat_data_read(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_out_mat_data_read),
     .out_mat_data_num_data_valid(out_mat_data_num_data_valid),
     .out_mat_data_fifo_cap(out_mat_data_fifo_cap),
-    .m_axis_video_TDATA(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TDATA),
-    .m_axis_video_TVALID(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TVALID),
+    .m_axis_video_TDATA(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TDATA),
+    .m_axis_video_TVALID(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TVALID),
     .m_axis_video_TREADY(m_axis_video_TREADY),
-    .m_axis_video_TKEEP(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TKEEP),
-    .m_axis_video_TSTRB(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TSTRB),
-    .m_axis_video_TUSER(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TUSER),
-    .m_axis_video_TLAST(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TLAST),
-    .m_axis_video_TID(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TID),
-    .m_axis_video_TDEST(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TDEST)
+    .m_axis_video_TKEEP(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TKEEP),
+    .m_axis_video_TSTRB(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TSTRB),
+    .m_axis_video_TUSER(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TUSER),
+    .m_axis_video_TLAST(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TLAST),
+    .m_axis_video_TID(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TID),
+    .m_axis_video_TDEST(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TDEST)
 );
 
 autowhitebalance_accel_fifo_w32_d2_S mul_loc_channel_U(
@@ -381,9 +381,9 @@ autowhitebalance_accel_fifo_w30_d2_S in_mat_data_U(
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_in_mat_data_din),
+    .if_din(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_in_mat_data_din),
     .if_full_n(in_mat_data_full_n),
-    .if_write(AXIvideo2xfMat_30_20_2160_3840_1_2_U0_in_mat_data_write),
+    .if_write(AXIvideo2xfMat_32_20_2160_3840_1_2_U0_in_mat_data_write),
     .if_dout(in_mat_data_dout),
     .if_empty_n(in_mat_data_empty_n),
     .if_read(AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_in_mat_data_read),
@@ -416,7 +416,7 @@ autowhitebalance_accel_fifo_w30_d2_S out_mat_data_U(
     .if_write(AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_out_mat_data_write),
     .if_dout(out_mat_data_dout),
     .if_empty_n(out_mat_data_empty_n),
-    .if_read(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_out_mat_data_read),
+    .if_read(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_out_mat_data_read),
     .if_num_data_valid(out_mat_data_num_data_valid),
     .if_fifo_cap(out_mat_data_fifo_cap)
 );
@@ -434,17 +434,17 @@ autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0 start_
     .if_read(AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ap_ready)
 );
 
-autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0 start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U(
+autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0 start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .if_read_ce(1'b1),
     .if_write_ce(1'b1),
-    .if_din(start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_din),
-    .if_full_n(start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_full_n),
+    .if_din(start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_din),
+    .if_full_n(start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_full_n),
     .if_write(AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_start_write),
-    .if_dout(start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_dout),
-    .if_empty_n(start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_empty_n),
-    .if_read(xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_ready)
+    .if_dout(start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_dout),
+    .if_empty_n(start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_empty_n),
+    .if_read(xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_ready)
 );
 
 always @ (posedge ap_clk) begin
@@ -461,22 +461,22 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        ap_sync_reg_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready <= 1'b0;
+        ap_sync_reg_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready <= 1'b0;
     end else begin
         if (((ap_sync_ready & ap_start) == 1'b1)) begin
-            ap_sync_reg_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready <= 1'b0;
+            ap_sync_reg_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready <= 1'b0;
         end else begin
-            ap_sync_reg_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready <= ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready;
+            ap_sync_reg_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready <= ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    ap_sync_done <= (xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_done & ~ap_sync_continue & AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_ap_done);
+    ap_sync_done <= (xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_done & ~ap_sync_continue & AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_ap_done);
 end
 
 always @ (posedge ap_clk) begin
-    ap_sync_ready <= (~ap_sync_ready & ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready & ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready & ap_start);
+    ap_sync_ready <= (~ap_sync_ready & ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready & ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready & ap_start);
 end
 
 assign AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_ap_continue = ap_sync_continue;
@@ -499,19 +499,19 @@ assign AWBKernel_Block_entry_proc_U0_ap_continue = mul_loc_channel_full_n;
 
 assign AWBKernel_Block_entry_proc_U0_ap_start = ((ap_sync_reg_AWBKernel_Block_entry_proc_U0_ap_ready ^ 1'b1) & ~ap_sync_ready & ap_start);
 
-assign AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_continue = 1'b1;
+assign AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_continue = 1'b1;
 
-assign AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_start = ((ap_sync_reg_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready ^ 1'b1) & ~ap_sync_ready & ap_start);
+assign AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_start = ((ap_sync_reg_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready ^ 1'b1) & ~ap_sync_ready & ap_start);
 
 assign ap_done = ap_sync_done;
 
-assign ap_idle = (xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_idle & p_hls_fptosi_float_i32_2_U0_ap_idle & (tmp_channel_empty_n ^ 1'b1) & (mul_loc_channel_empty_n ^ 1'b1) & AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_idle & AWBKernel_Block_entry_proc_U0_ap_idle & AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ap_idle & AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_ap_idle);
+assign ap_idle = (xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_idle & p_hls_fptosi_float_i32_2_U0_ap_idle & (tmp_channel_empty_n ^ 1'b1) & (mul_loc_channel_empty_n ^ 1'b1) & AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_idle & AWBKernel_Block_entry_proc_U0_ap_idle & AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ap_idle & AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_ap_idle);
 
 assign ap_ready = ap_sync_ready;
 
 assign ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready = (ap_sync_reg_AWBKernel_Block_entry_proc_U0_ap_ready | AWBKernel_Block_entry_proc_U0_ap_ready);
 
-assign ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready = (ap_sync_reg_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready | AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready);
+assign ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready = (ap_sync_reg_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready | AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready);
 
 assign ap_sync_continue = (ap_sync_done & ap_continue);
 
@@ -527,34 +527,34 @@ assign gain0_2 = AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_i_gain_2;
 
 assign gain0_2_ap_vld = AWBChannelGain_20_20_2160_3840_1_0_2_2_U0_i_gain_2_ap_vld;
 
-assign m_axis_video_TDATA = xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TDATA;
+assign m_axis_video_TDATA = xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TDATA;
 
-assign m_axis_video_TDEST = xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TDEST;
+assign m_axis_video_TDEST = xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TDEST;
 
-assign m_axis_video_TID = xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TID;
+assign m_axis_video_TID = xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TID;
 
-assign m_axis_video_TKEEP = xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TKEEP;
+assign m_axis_video_TKEEP = xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TKEEP;
 
-assign m_axis_video_TLAST = xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TLAST;
+assign m_axis_video_TLAST = xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TLAST;
 
-assign m_axis_video_TSTRB = xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TSTRB;
+assign m_axis_video_TSTRB = xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TSTRB;
 
-assign m_axis_video_TUSER = xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TUSER;
+assign m_axis_video_TUSER = xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TUSER;
 
-assign m_axis_video_TVALID = xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_m_axis_video_TVALID;
+assign m_axis_video_TVALID = xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_m_axis_video_TVALID;
 
 assign p_hls_fptosi_float_i32_2_U0_ap_continue = tmp_channel_full_n;
 
 assign p_hls_fptosi_float_i32_2_U0_ap_start = mul_loc_channel_empty_n;
 
-assign s_axis_video_TREADY = AXIvideo2xfMat_30_20_2160_3840_1_2_U0_s_axis_video_TREADY;
+assign s_axis_video_TREADY = AXIvideo2xfMat_32_20_2160_3840_1_2_U0_s_axis_video_TREADY;
 
 assign start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_din = 1'b1;
 
-assign start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_din = 1'b1;
+assign start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_din = 1'b1;
 
-assign xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_continue = ap_sync_continue;
+assign xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_continue = ap_sync_continue;
 
-assign xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ap_start = start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_empty_n;
+assign xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ap_start = start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_empty_n;
 
 endmodule //autowhitebalance_accel_AWBKernel

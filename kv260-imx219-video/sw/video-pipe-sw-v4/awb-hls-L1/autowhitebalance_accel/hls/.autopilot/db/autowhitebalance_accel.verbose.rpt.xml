@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'autowhitebalance_accel'" level="0">
-<item name = "Date">Thu Oct  1 01:57:29 2026
+<item name = "Date">Sun Oct  4 18:41:40 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">autowhitebalance_accel</item>
@@ -50,10 +50,10 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 4, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">0, 11, 7225, 9318, 0</column>
+<column name="Instance">0, 11, 7231, 9318, 0</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, 0, 228, -</column>
-<column name="Register">-, -, 589, -, -</column>
+<column name="Register">-, -, 591, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
 <specialColumn name="Utilization (%)">0, ~0, 3, 8, 0</specialColumn>
 </table>
@@ -62,7 +62,7 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_AWBKernel_fu_167">AWBKernel, 0, 11, 6923, 8830, 0</column>
+<column name="grp_AWBKernel_fu_167">AWBKernel, 0, 11, 6929, 8830, 0</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 302, 488, 0</column>
 </table>
 </item>
@@ -91,7 +91,7 @@
 <column name="grp_AWBKernel_fu_167_gain1_0_val1">14, 3, 32, 96</column>
 <column name="grp_AWBKernel_fu_167_gain1_1_val2">14, 3, 32, 96</column>
 <column name="grp_AWBKernel_fu_167_gain1_2_val3">14, 3, 32, 96</column>
-<column name="m_axis_video_TDATA_int_regslice">9, 2, 30, 60</column>
+<column name="m_axis_video_TDATA_int_regslice">9, 2, 32, 64</column>
 <column name="m_axis_video_TDEST_int_regslice">9, 2, 1, 2</column>
 <column name="m_axis_video_TID_int_regslice">9, 2, 1, 2</column>
 <column name="m_axis_video_TKEEP_int_regslice">9, 2, 4, 8</column>
@@ -118,7 +118,7 @@
 <column name="flag">1, 0, 1, 0</column>
 <column name="flag_load_reg_391">1, 0, 1, 0</column>
 <column name="grp_AWBKernel_fu_167_ap_start_reg">1, 0, 1, 0</column>
-<column name="m_axis_video_TDATA_reg">30, 0, 30, 0</column>
+<column name="m_axis_video_TDATA_reg">32, 0, 32, 0</column>
 <column name="m_axis_video_TDEST_reg">1, 0, 1, 0</column>
 <column name="m_axis_video_TID_reg">1, 0, 1, 0</column>
 <column name="m_axis_video_TKEEP_reg">4, 0, 4, 0</column>
@@ -170,7 +170,7 @@
 <column name="ap_clk">in, 1, ap_ctrl_hs, autowhitebalance_accel, return value</column>
 <column name="ap_rst_n">in, 1, ap_ctrl_hs, autowhitebalance_accel, return value</column>
 <column name="interrupt">out, 1, ap_ctrl_hs, autowhitebalance_accel, return value</column>
-<column name="s_axis_video_TDATA">in, 30, axis, s_axis_video_V_data_V, pointer</column>
+<column name="s_axis_video_TDATA">in, 32, axis, s_axis_video_V_data_V, pointer</column>
 <column name="s_axis_video_TVALID">in, 1, axis, s_axis_video_V_dest_V, pointer</column>
 <column name="s_axis_video_TREADY">out, 1, axis, s_axis_video_V_dest_V, pointer</column>
 <column name="s_axis_video_TDEST">in, 1, axis, s_axis_video_V_dest_V, pointer</column>
@@ -179,7 +179,7 @@
 <column name="s_axis_video_TUSER">in, 1, axis, s_axis_video_V_user_V, pointer</column>
 <column name="s_axis_video_TLAST">in, 1, axis, s_axis_video_V_last_V, pointer</column>
 <column name="s_axis_video_TID">in, 1, axis, s_axis_video_V_id_V, pointer</column>
-<column name="m_axis_video_TDATA">out, 30, axis, m_axis_video_V_data_V, pointer</column>
+<column name="m_axis_video_TDATA">out, 32, axis, m_axis_video_V_data_V, pointer</column>
 <column name="m_axis_video_TVALID">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
 <column name="m_axis_video_TREADY">in, 1, axis, m_axis_video_V_dest_V, pointer</column>
 <column name="m_axis_video_TDEST">out, 1, axis, m_axis_video_V_dest_V, pointer</column>

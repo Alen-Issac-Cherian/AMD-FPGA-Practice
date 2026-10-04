@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date         : Mon Sep 28 23:38:20 2026
+| Date         : Sun Oct  4 19:33:01 2026
 | Host         : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
 | Command      : report_utilization -file video_pipe_hw_autowhitebalance_acc_0_0_utilization_synth.rpt -pb video_pipe_hw_autowhitebalance_acc_0_0_utilization_synth.pb
 | Design       : video_pipe_hw_autowhitebalance_acc_0_0
@@ -37,8 +37,8 @@ Table of Contents
 |   LUT as Memory            |   10 |     0 |          0 |     57600 |  0.02 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |   10 |     0 |            |           |       |
-| CLB Registers              | 5161 |     0 |          0 |    234240 |  2.20 |
-|   Register as Flip Flop    | 5161 |     0 |          0 |    234240 |  2.20 |
+| CLB Registers              | 5165 |     0 |          0 |    234240 |  2.21 |
+|   Register as Flip Flop    | 5165 |     0 |          0 |    234240 |  2.21 |
 |   Register as Latch        |    0 |     0 |          0 |    234240 |  0.00 |
 | CARRY8                     |  179 |     0 |          0 |     14640 |  1.22 |
 | F7 Muxes                   |   30 |     0 |          0 |     58560 |  0.05 |
@@ -67,7 +67,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 57    |          Yes |         Set |            - |
-| 5104  |          Yes |       Reset |            - |
+| 5108  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -174,12 +174,12 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 5104 |            Register |
-| LUT3     | 1345 |                 CLB |
+| FDRE     | 5108 |            Register |
+| LUT3     | 1343 |                 CLB |
 | LUT4     | 1303 |                 CLB |
-| LUT2     | 1073 |                 CLB |
-| LUT6     |  959 |                 CLB |
-| LUT5     |  439 |                 CLB |
+| LUT2     | 1075 |                 CLB |
+| LUT6     |  957 |                 CLB |
+| LUT5     |  443 |                 CLB |
 | CARRY8   |  179 |                 CLB |
 | LUT1     |  136 |                 CLB |
 | FDSE     |   57 |            Register |

@@ -157,13 +157,13 @@
         end
     end
 
-    reg ap_done_reg_2;// for module grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0
+    reg ap_done_reg_2;// for module grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_2 <= 'b0;
         end
         else begin
-            ap_done_reg_2 <= grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_done & ~grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_continue;
+            ap_done_reg_2 <= grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_done & ~grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_continue;
         end
     end
 
@@ -239,7 +239,7 @@ end
     assign proc_0_data_PIPO_blk[0] = 1'b0;
     assign proc_0_start_FIFO_blk[0] = 1'b0;
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;
-    assign proc_0_input_sync_blk[0] = 1'b0 | (grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready & grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_idle & ~grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready);
+    assign proc_0_input_sync_blk[0] = 1'b0 | (grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready & grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_idle & ~grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready);
     assign proc_0_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_0[0] = dl_detect_out ? proc_dep_vld_vec_0_reg[0] : (proc_0_data_FIFO_blk[0] | proc_0_data_PIPO_blk[0] | proc_0_start_FIFO_blk[0] | proc_0_TLF_FIFO_blk[0] | proc_0_input_sync_blk[0] | proc_0_output_sync_blk[0]);
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -308,7 +308,7 @@ end
     assign dep_chan_data_1_0 = out_chan_dep_data_1;
     assign token_1_0 = token_out_vec_1[1];
 
-    // Process: grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0
+    // Process: grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0
     autowhitebalance_accel_hls_deadlock_detect_unit #(6, 2, 2, 2) autowhitebalance_accel_hls_deadlock_detect_unit_2 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -324,7 +324,7 @@ end
         .token_out_vec(token_out_vec_2),
         .dl_detect_out(dl_in_vec[2]));
 
-    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.in_mat_data_blk_n);
+    assign proc_2_data_FIFO_blk[0] = 1'b0 | (~grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.in_mat_data_blk_n);
     assign proc_2_data_PIPO_blk[0] = 1'b0;
     assign proc_2_start_FIFO_blk[0] = 1'b0;
     assign proc_2_TLF_FIFO_blk[0] = 1'b0;
@@ -335,7 +335,7 @@ end
     assign proc_2_data_PIPO_blk[1] = 1'b0;
     assign proc_2_start_FIFO_blk[1] = 1'b0;
     assign proc_2_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_2_input_sync_blk[1] = 1'b0 | (grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready & grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0.ap_idle & ~grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready);
+    assign proc_2_input_sync_blk[1] = 1'b0 | (grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready & grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.ap_idle & ~grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready);
     assign proc_2_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_2[1] = dl_detect_out ? proc_dep_vld_vec_2_reg[1] : (proc_2_data_FIFO_blk[1] | proc_2_data_PIPO_blk[1] | proc_2_start_FIFO_blk[1] | proc_2_TLF_FIFO_blk[1] | proc_2_input_sync_blk[1] | proc_2_output_sync_blk[1]);
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -401,7 +401,7 @@ end
     assign proc_3_start_FIFO_blk[3] = 1'b0;
     assign proc_3_TLF_FIFO_blk[3] = 1'b0;
     assign proc_3_input_sync_blk[3] = 1'b0;
-    assign proc_3_output_sync_blk[3] = 1'b0 | (ap_done_reg_1 & grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done & ~grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_done);
+    assign proc_3_output_sync_blk[3] = 1'b0 | (ap_done_reg_1 & grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done & ~grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_done);
     assign proc_dep_vld_vec_3[3] = dl_detect_out ? proc_dep_vld_vec_3_reg[3] : (proc_3_data_FIFO_blk[3] | proc_3_data_PIPO_blk[3] | proc_3_start_FIFO_blk[3] | proc_3_TLF_FIFO_blk[3] | proc_3_input_sync_blk[3] | proc_3_output_sync_blk[3]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
@@ -461,7 +461,7 @@ end
     assign proc_dep_vld_vec_4[0] = dl_detect_out ? proc_dep_vld_vec_4_reg[0] : (proc_4_data_FIFO_blk[0] | proc_4_data_PIPO_blk[0] | proc_4_start_FIFO_blk[0] | proc_4_TLF_FIFO_blk[0] | proc_4_input_sync_blk[0] | proc_4_output_sync_blk[0]);
     assign proc_4_data_FIFO_blk[1] = 1'b0 | (~grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84.out_mat_data_blk_n);
     assign proc_4_data_PIPO_blk[1] = 1'b0;
-    assign proc_4_start_FIFO_blk[1] = 1'b0 | (~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_full_n & grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_start & ~grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_read);
+    assign proc_4_start_FIFO_blk[1] = 1'b0 | (~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_full_n & grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_start & ~grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_read);
     assign proc_4_TLF_FIFO_blk[1] = 1'b0;
     assign proc_4_input_sync_blk[1] = 1'b0;
     assign proc_4_output_sync_blk[1] = 1'b0;
@@ -487,7 +487,7 @@ end
     assign dep_chan_data_4_5 = out_chan_dep_data_4;
     assign token_4_5 = token_out_vec_4[1];
 
-    // Process: grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0
+    // Process: grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0
     autowhitebalance_accel_hls_deadlock_detect_unit #(6, 5, 2, 2) autowhitebalance_accel_hls_deadlock_detect_unit_5 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -503,9 +503,9 @@ end
         .token_out_vec(token_out_vec_5),
         .dl_detect_out(dl_in_vec[5]));
 
-    assign proc_5_data_FIFO_blk[0] = 1'b0 | (~grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.out_mat_data_blk_n);
+    assign proc_5_data_FIFO_blk[0] = 1'b0 | (~grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.out_mat_data_blk_n);
     assign proc_5_data_PIPO_blk[0] = 1'b0;
-    assign proc_5_start_FIFO_blk[0] = 1'b0 | (~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_empty_n & grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_idle & ~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_write);
+    assign proc_5_start_FIFO_blk[0] = 1'b0 | (~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_empty_n & grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_idle & ~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_write);
     assign proc_5_TLF_FIFO_blk[0] = 1'b0;
     assign proc_5_input_sync_blk[0] = 1'b0;
     assign proc_5_output_sync_blk[0] = 1'b0;
@@ -515,7 +515,7 @@ end
     assign proc_5_start_FIFO_blk[1] = 1'b0;
     assign proc_5_TLF_FIFO_blk[1] = 1'b0;
     assign proc_5_input_sync_blk[1] = 1'b0;
-    assign proc_5_output_sync_blk[1] = 1'b0 | (ap_done_reg_2 & grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_done & ~grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done);
+    assign proc_5_output_sync_blk[1] = 1'b0 | (ap_done_reg_2 & grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_done & ~grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done);
     assign proc_dep_vld_vec_5[1] = dl_detect_out ? proc_dep_vld_vec_5_reg[1] : (proc_5_data_FIFO_blk[1] | proc_5_data_PIPO_blk[1] | proc_5_start_FIFO_blk[1] | proc_5_TLF_FIFO_blk[1] | proc_5_input_sync_blk[1] | proc_5_output_sync_blk[1]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin

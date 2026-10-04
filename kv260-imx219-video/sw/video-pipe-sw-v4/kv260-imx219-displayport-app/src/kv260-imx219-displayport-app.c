@@ -27,7 +27,6 @@
 #include "demosaic.h"
 #include "vdma.h"
 #include "xil_io.h"
-#include <string.h>
 
 int source_width  = 640;
 int source_height = 480;
@@ -130,16 +129,16 @@ int main()
 	Xil_Out32(XPAR_AXI_VDMA_1_BASEADDR + 0x50, sink_height);*/
 
 	xil_printf("VDMA 1 Configured!\r\n");
-
+	
 	/* Start of HLS AWB IP Configuration */
-	Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x18, source_height);
-	Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x20, source_width);
-	Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x10, f2u(0.9f));
-	Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x28, f2u(0.0f));
-	Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x30, f2u(1023.0f));
-	Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x38, f2u(0.0f));
-	Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x40, f2u(1023.0f));
-	Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x00, (1 << 7) | (1 << 0));
+    Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x18, source_height);
+    Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x20, source_width);
+    Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x10, f2u(0.9f));
+    Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x28, f2u(0.0f));
+    Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x30, f2u(1023.0f));
+    Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x38, f2u(0.0f));
+    Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x40, f2u(1023.0f));
+    Xil_Out32(XPAR_AUTOWHITEBALANCE_ACC_0_BASEADDR + 0x00, (1 << 7) | (1 << 0));
 	
 	xil_printf("HLS AWB IP Configured!\r\n");
 	

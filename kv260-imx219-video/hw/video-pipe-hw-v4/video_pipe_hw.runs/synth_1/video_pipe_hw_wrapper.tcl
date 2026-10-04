@@ -56,7 +56,10 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
 set_param bd.open.in_stealth_mode 6
+set_param xicom.use_bs_reader 1
+set_param chipscope.maxJobs 3
 set_param general.usePosixSpawnForFork 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xck26-sfvc784-2LV-c
@@ -229,23 +232,22 @@ set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPG
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_smc_2_0/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_vio_0_0/video_pipe_hw_vio_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_vio_0_0/video_pipe_hw_vio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/bd_5104_ooc.xdc]
 set_property used_in_synthesis false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/ip/ip_0/bd_5104_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/bd_0/bd_5104_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_0/video_pipe_hw_system_ila_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/bd_91c5_ooc.xdc]
 set_property used_in_synthesis false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/ip/ip_0/bd_91c5_ila_lib_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/bd_0/bd_91c5_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_system_ila_0_1/video_pipe_hw_system_ila_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axis_broadcaster_0_0/video_pipe_hw_axis_broadcaster_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_1/video_pipe_hw_axi_vdma_0_1.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_1/video_pipe_hw_axi_vdma_0_1_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_1/video_pipe_hw_axi_vdma_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axis_subset_converter_0_0/video_pipe_hw_axis_subset_converter_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_axis_subset_converter_0_1/video_pipe_hw_axis_subset_converter_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/constraints/autowhitebalance_accel_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/video_pipe_hw_ooc.xdc]

@@ -1,0 +1,548 @@
+  **** HLS Build v2025.2 6295257
+INFO: [HLS 200-2005] Using work_dir /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel 
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_common.hpp' from hls_config.cfg(25)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_common.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_config_params.h' from hls_config.cfg(26)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_config_params.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_duplicateimage.hpp' from hls_config.cfg(27)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_duplicateimage.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_headers.hpp' from hls_config.cfg(28)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_headers.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_params.hpp' from hls_config.cfg(29)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_params.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_structs.hpp' from hls_config.cfg(30)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_structs.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_types.hpp' from hls_config.cfg(31)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_types.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_utility.hpp' from hls_config.cfg(32)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_utility.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_video_mem.hpp' from hls_config.cfg(33)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_video_mem.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_autowhitebalance.hpp' from hls_config.cfg(34)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_autowhitebalance_accel.cpp' from hls_config.cfg(35)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_autowhitebalance_accel_config.h' from hls_config.cfg(36)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel_config.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_infra.hpp' from hls_config.cfg(37)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_infra.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_axi_io.hpp' from hls_config.cfg(38)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_axi_io.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.file=./xf_sw_utils.hpp' from hls_config.cfg(39)
+INFO: [HLS 200-10] Adding design file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_sw_utils.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.csimflags=-I/usr/include/opencv4 -std=c++14' from hls_config.cfg(24)
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./xf_headers.hpp' from hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_headers.hpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./xf_autowhitebalance_tb.cpp' from hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=./xf_autowhitebalance_tb_config.h' from hls_config.cfg(10)
+INFO: [HLS 200-10] Adding test bench file '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_tb_config.h' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.cflags=-I/usr/include/opencv4 -std=c++14' from hls_config.cfg(23)
+INFO: [HLS 200-1465] Applying config ini 'syn.top=autowhitebalance_accel' from hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xck26-sfvc784-2LV-c' from hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xck26-sfvc784-2LV-c'
+INFO: [HLS 200-1465] Applying config ini 'cosim.argv=/home/alen/git/Vitis_Libraries/vision/data/512x512.jpg' from hls_config.cfg(21)
+INFO: [HLS 200-1465] Applying config ini 'cosim.ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' from hls_config.cfg(22)
+INFO: [HLS 200-1907] Replacing 'config_cosim -ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' with 'config_sim -ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' in current solution file
+INFO: [HLS 200-1465] Applying config ini 'cosim.random_stall=true' from hls_config.cfg(20)
+INFO: [HLS 200-1907] Replacing 'config_cosim -ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' with 'config_sim -ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' in current solution file
+INFO: [HLS 200-1465] Applying config ini 'csim.argv=/home/alen/git/Vitis_Libraries/vision/data/512x512.jpg' from hls_config.cfg(18)
+INFO: [HLS 200-1465] Applying config ini 'csim.clean=1' from hls_config.cfg(15)
+INFO: [HLS 200-1465] Applying config ini 'csim.ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' from hls_config.cfg(19)
+INFO: [HLS 200-1907] Replacing 'config_csim -ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' with 'config_sim -ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' in current solution file
+INFO: [HLS 200-1465] Applying config ini 'csim.setup=1' from hls_config.cfg(17)
+INFO: [HLS 200-1907] Replacing 'config_csim -ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' with 'config_sim -ldflags=/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core' in current solution file
+INFO: [HLS 200-1465] Applying config ini 'package.ip.display_name=Auto White Balance' from hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.library=video' from hls_config.cfg(14)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.taxonomy=/Video_&_Image_Processing' from hls_config.cfg(13)
+INFO: [HLS 200-1465] Applying config ini 'package.ip.version=1.0' from hls_config.cfg(12)
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from hls_config.cfg(5)
+INFO: [HLS 200-1465] Applying config ini 'sim.O=1' from hls_config.cfg(16)
+INFO: [HLS 200-2176] Writing Vitis IDE component file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 3.33 seconds. CPU system time: 0.71 seconds. Elapsed time: 4.05 seconds; current allocated memory: 262.645 MB.
+INFO: [HLS 200-2191] C-Synthesis will use clang-16 as the compiler
+INFO: [HLS 200-10] Analyzing design file 'xf_autowhitebalance_accel.cpp' ... 
+WARNING: [HLS 207-7000] 'factor' in '#pragma HLS array_reshape' is ignored (./xf_video_mem.hpp:760:47)
+WARNING: [HLS 214-114] Since the only kind of statements allowed in a canonical dataflow region are variable declarations and function calls, the compiler may not be able to correctly handle the region (xf_autowhitebalance_accel.cpp:47:9)
+Resolution: For help on HLS 214-114 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-114.html
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file xf_autowhitebalance_accel.cpp
+Resolution: For help on HLS 200-471 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+WARNING: [HLS 207-6591] unused parameter 'src' (./xf_structs.hpp:518:30)
+WARNING: [HLS 207-6591] unused parameter '_data' (./xf_structs.hpp:529:30)
+WARNING: [HLS 207-6591] unused parameter 'index' (./xf_structs.hpp:542:14)
+WARNING: [HLS 207-6591] unused parameter 'index' (./xf_structs.hpp:553:20)
+WARNING: [HLS 207-6591] unused parameter 'stride' (./xf_structs.hpp:1037:41)
+WARNING: [HLS 207-6591] unused parameter 'index' (./xf_structs.hpp:1225:102)
+WARNING: [HLS 207-6591] unused parameter 'index' (./xf_structs.hpp:1531:34)
+WARNING: [HLS 207-6591] unused parameter 'in_val' (./xf_autowhitebalance.hpp:37:22)
+WARNING: [HLS 207-6591] unused parameter 'thresh' (./xf_autowhitebalance.hpp:74:30)
+WARNING: [HLS 207-6591] unused parameter 'outputMin' (./xf_autowhitebalance.hpp:289:35)
+WARNING: [HLS 207-6591] unused parameter 'outputMax' (./xf_autowhitebalance.hpp:290:35)
+WARNING: [HLS 207-6591] unused parameter 'outputMin' (./xf_autowhitebalance.hpp:441:41)
+WARNING: [HLS 207-6591] unused parameter 'outputMax' (./xf_autowhitebalance.hpp:442:41)
+WARNING: [HLS 207-6591] unused parameter 'p' (./xf_autowhitebalance.hpp:595:31)
+WARNING: [HLS 207-6591] unused parameter 'outputMin' (./xf_autowhitebalance.hpp:598:31)
+WARNING: [HLS 207-6591] unused parameter 'outputMax' (./xf_autowhitebalance.hpp:599:31)
+WARNING: [HLS 207-6591] unused parameter 'p' (./xf_autowhitebalance.hpp:802:37)
+WARNING: [HLS 207-6591] unused parameter 'outputMin' (./xf_autowhitebalance.hpp:805:37)
+WARNING: [HLS 207-6591] unused parameter 'outputMax' (./xf_autowhitebalance.hpp:806:37)
+WARNING: [HLS 207-6591] unused parameter 'p' (./xf_autowhitebalance.hpp:1009:33)
+WARNING: [HLS 207-6591] unused parameter 'outputMin' (./xf_autowhitebalance.hpp:1012:35)
+WARNING: [HLS 207-6591] unused parameter 'outputMax' (./xf_autowhitebalance.hpp:1013:35)
+WARNING: [HLS 207-6591] unused parameter 'p' (./xf_autowhitebalance.hpp:1200:41)
+WARNING: [HLS 207-6591] unused parameter 'outputMin' (./xf_autowhitebalance.hpp:1203:41)
+WARNING: [HLS 207-6591] unused parameter 'outputMax' (./xf_autowhitebalance.hpp:1204:41)
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 15.29 seconds. CPU system time: 1.34 seconds. Elapsed time: 17.21 seconds; current allocated memory: 271.977 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 23,137 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 3,529 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,843 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,767 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,437 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,339 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,277 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,277 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,277 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,573 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,493 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,377 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,229 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,229 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,145 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+INFO: [HLS 200-1995] There were 1,032 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/report/csynth_design_size.rpt:2)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<20, 2160, 3840, 1, 3840>::Mat(int, int)', INLINE (./xf_structs.hpp:673:1) of a non dataflow function into a region with DATAFLOW (xf_autowhitebalance_accel.cpp:47:1) may break the canonical form (./xf_structs.hpp:671:0)
+WARNING: [HLS 214-273] In function 'xf::cv::Mat<20, 2160, 3840, 1, 3840>::init(int, int, bool)', INLINE (./xf_structs.hpp:608:1) of a non dataflow function into a region with DATAFLOW (xf_autowhitebalance_accel.cpp:47:1) may break the canonical form (./xf_structs.hpp:606:0)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<20, 2160, 3840, 1, 3840>::init(int, int, bool)' into 'xf::cv::Mat<20, 2160, 3840, 1, 3840>::Mat(int, int)' (./xf_structs.hpp:676:5)
+INFO: [HLS 214-131] Inlining function 'xf::cv::Mat<20, 2160, 3840, 1, 3840>::Mat(int, int)' into 'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)' (xf_autowhitebalance_accel.cpp:42:55)
+INFO: [HLS 214-377] Adding 'impop' into disaggregation list because there's stream pragma applied on the struct field (./xf_structs.hpp:469:5)
+INFO: [HLS 214-377] Adding 'out_mat' into disaggregation list because there's stream pragma applied on the struct field (./xf_structs.hpp:469:5)
+INFO: [HLS 214-377] Adding 'in_mat' into disaggregation list because there's stream pragma applied on the struct field (./xf_structs.hpp:469:5)
+INFO: [HLS 214-210] Disaggregating variable 'impop' (xf_autowhitebalance_accel.cpp:44:55)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'out_mat' (xf_autowhitebalance_accel.cpp:43:55)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-210] Disaggregating variable 'in_mat' (xf_autowhitebalance_accel.cpp:42:55)
+Resolution: For help on HLS 214-210 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=214-210.html
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_98_2' is marked as complete unroll implied by the pipeline pragma (./xf_autowhitebalance.hpp:98:30)
+INFO: [HLS 214-291] Loop 'PLANES_LOOP' is marked as complete unroll implied by the pipeline pragma (./xf_autowhitebalance.hpp:193:13)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_98_2' (./xf_autowhitebalance.hpp:98:30) in function 'xf::cv::AWBGainUpdateKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>' completely with a factor of 3 (./xf_autowhitebalance.hpp:75:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_217_4' (./xf_autowhitebalance.hpp:217:27) in function 'xf::cv::AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>' completely with a factor of 1 (./xf_autowhitebalance.hpp:130:0)
+INFO: [HLS 214-186] Unrolling loop 'PLANES_LOOP' (./xf_autowhitebalance.hpp:193:13) in function 'xf::cv::AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>' completely with a factor of 1 (./xf_autowhitebalance.hpp:130:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_166_2' (./xf_autowhitebalance.hpp:166:23) in function 'xf::cv::AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>' completely with a factor of 3 (./xf_autowhitebalance.hpp:130:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_160_1' (./xf_autowhitebalance.hpp:160:23) in function 'xf::cv::AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>' completely with a factor of 3 (./xf_autowhitebalance.hpp:130:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<20, 2160, 3840, 1, 3840>::write<3840, (void*)0>(int, ap_uint<30>)' into 'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 3840>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 3840>&)' (./xf_infra.hpp:102:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<30> xf::cv::Mat<20, 2160, 3840, 1, 3840>::read<3840, (void*)0>(int)' into 'void xf::cv::AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>(xf::cv::Mat<20, 2160, 3840, 1, 3840>&, xf::cv::Mat<20, 2160, 3840, 1, 3840>&, int, int*)' (./xf_autowhitebalance.hpp:130:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<20, 2160, 3840, 1, 3840>::write<3840, (void*)0>(int, ap_uint<30>)' into 'void xf::cv::AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>(xf::cv::Mat<20, 2160, 3840, 1, 3840>&, xf::cv::Mat<20, 2160, 3840, 1, 3840>&, int, int*)' (./xf_autowhitebalance.hpp:130:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<30> xf::cv::Mat<20, 2160, 3840, 1, 3840>::read<3840, (void*)0>(int)' into 'void xf::cv::AWBGainUpdateKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>(xf::cv::Mat<20, 2160, 3840, 1, 3840>&, xf::cv::Mat<20, 2160, 3840, 1, 3840>&, int, int*)' (./xf_autowhitebalance.hpp:75:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<10> xf_satcast_awb<ap_uint<10> >(int)' into 'void xf::cv::AWBGainUpdateKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>(xf::cv::Mat<20, 2160, 3840, 1, 3840>&, xf::cv::Mat<20, 2160, 3840, 1, 3840>&, int, int*)' (./xf_autowhitebalance.hpp:75:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::Mat<20, 2160, 3840, 1, 3840>::write<3840, (void*)0>(int, ap_uint<30>)' into 'void xf::cv::AWBGainUpdateKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>(xf::cv::Mat<20, 2160, 3840, 1, 3840>&, xf::cv::Mat<20, 2160, 3840, 1, 3840>&, int, int*)' (./xf_autowhitebalance.hpp:75:0)
+INFO: [HLS 214-178] Inlining function 'void xf::cv::AWBGainUpdateKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>(xf::cv::Mat<20, 2160, 3840, 1, 3840>&, xf::cv::Mat<20, 2160, 3840, 1, 3840>&, int, int*)' into 'void xf::cv::AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 3840, 3840>(xf::cv::Mat<20, 2160, 3840, 1, 3840>&, xf::cv::Mat<20, 2160, 3840, 1, 3840>&, int, int*)' (./xf_autowhitebalance.hpp:1489:0)
+INFO: [HLS 214-178] Inlining function 'ap_uint<30> xf::cv::Mat<20, 2160, 3840, 1, 3840>::read<3840, (void*)0>(int)' into 'int xf::cv::xfMat2AXIvideo<30, 20, 2160, 3840, 1, 3840, 0>(xf::cv::Mat<20, 2160, 3840, 1, 3840>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)' (./xf_infra.hpp:182:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 's_axis_video'. (xf_autowhitebalance_accel.cpp:76:0)
+WARNING: [HLS 214-464] Skipping array undecay on variable length array 'm_axis_video'. (xf_autowhitebalance_accel.cpp:76:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL7igain_1': Complete partitioning on dimension 1. (xf_autowhitebalance_accel.cpp:25:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL7igain_0': Complete partitioning on dimension 1. (xf_autowhitebalance_accel.cpp:24:0)
+INFO: [HLS 214-248] Applying array_partition to 'tmpsum_vals': Complete partitioning on dimension 1. (./xf_autowhitebalance.hpp:152:23)
+INFO: [HLS 214-248] Applying array_partition to 'sum': Complete partitioning on dimension 1. (./xf_autowhitebalance.hpp:154:23)
+INFO: [HLS 214-376] Pipelining loop< VITIS_LOOP_216_3> at ./xf_autowhitebalance.hpp:216:23 due to pipeline_loops threshold
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 3.8 seconds. CPU system time: 0.94 seconds. Elapsed time: 8.51 seconds; current allocated memory: 274.051 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0 seconds; current allocated memory: 274.051 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 276.184 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0.06 seconds. CPU system time: 0 seconds. Elapsed time: 0.06 seconds; current allocated memory: 279.188 MB.
+INFO: [HLS 200-1947] Using 'stable' for argument 'height' of dataflow function 'AWBKernel' (xf_autowhitebalance_accel.cpp:40:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'width' of dataflow function 'AWBKernel' (xf_autowhitebalance_accel.cpp:40:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'gain1_0.val1' of dataflow function 'AWBKernel' (xf_autowhitebalance_accel.cpp:40:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'gain1_1.val2' of dataflow function 'AWBKernel' (xf_autowhitebalance_accel.cpp:40:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'gain1_2.val3' of dataflow function 'AWBKernel' (xf_autowhitebalance_accel.cpp:40:1).
+INFO: [HLS 200-1947] Using 'stable' for argument 'thresh' of dataflow function 'AWBKernel' (xf_autowhitebalance_accel.cpp:40:1).
+INFO: [XFORM 203-712] Applying dataflow to function 'AWBKernel' (xf_autowhitebalance_accel.cpp:40:1), detected/extracted 6 process function(s): 
+	 'AWBKernel_Block_entry_proc'
+	 '__hls_fptosi_float_i32.2'
+	 'xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 3840>'
+	 'xf::cv::AWBChannelGain<20, 20, 2160, 3840, 1, 0, 3840, 3840>'
+	 'xf::cv::AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 3840, 3840>'
+	 'xf::cv::xfMat2AXIvideo<30, 20, 2160, 3840, 1, 3840, 0>'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (./xf_autowhitebalance.hpp:184:1) to (./xf_autowhitebalance.hpp:181:9) in function 'xf::cv::AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>'... converting 3 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (./xf_autowhitebalance.hpp:176:5) in function 'xf::cv::AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>'... converting 7 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'AWBKernel' (xf_autowhitebalance_accel.cpp:42:1)...3 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0.2 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.22 seconds; current allocated memory: 304.008 MB.
+WARNING: [HLS 200-1450] Process AWBChannelGain<20, 20, 2160, 3840, 1, 0, 3840, 3840> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.
+Resolution: For help on HLS 200-1450 see docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&url=ug1448-hls-guidance&resourceid=200-1450.html
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0.23 seconds. CPU system time: 0.06 seconds. Elapsed time: 0.3 seconds; current allocated memory: 440.570 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'autowhitebalance_accel' ...
+WARNING: [SYN 201-103] Legalizing function name '__hls_fptosi_float_i32.2' to 'p_hls_fptosi_float_i32_2'.
+WARNING: [SYN 201-103] Legalizing function name 'AXIvideo2xfMat<30, 20, 2160, 3840, 1, 3840>_Pipeline_loop_start_hunt' to 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_start_hunt'.
+WARNING: [SYN 201-103] Legalizing function name 'AXIvideo2xfMat<30, 20, 2160, 3840, 1, 3840>_Pipeline_loop_col_zxi2mat' to 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_col_zxi2mat'.
+WARNING: [SYN 201-103] Legalizing function name 'AXIvideo2xfMat<30, 20, 2160, 3840, 1, 3840>_Pipeline_loop_last_hunt' to 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_last_hunt'.
+WARNING: [SYN 201-103] Legalizing function name 'AXIvideo2xfMat<30, 20, 2160, 3840, 1, 3840>' to 'AXIvideo2xfMat_30_20_2160_3840_1_3840_s'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBChannelGainKernel<20, 20, 2160, 3840, 1, 3840, 3840, 3, 23, 23, 13, 13, 3840>' to 'AWBChannelGainKernel_20_20_2160_3840_1_3840_3840_3_23_23_13_13_3840_s'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBChannelGain<20, 20, 2160, 3840, 1, 0, 3840, 3840>' to 'AWBChannelGain_20_20_2160_3840_1_0_3840_3840_s'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 3840, 3840>_Pipeline_ColLoop1' to 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_Pipeline_ColLoop1'.
+WARNING: [SYN 201-103] Legalizing function name 'AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 3840, 3840>' to 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_s'.
+WARNING: [SYN 201-103] Legalizing function name 'xfMat2AXIvideo<30, 20, 2160, 3840, 1, 3840, 0>_Pipeline_loop_col_mat2axi' to 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_Pipeline_loop_col_mat2axi'.
+WARNING: [SYN 201-103] Legalizing function name 'xfMat2AXIvideo<30, 20, 2160, 3840, 1, 3840, 0>' to 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_s'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBKernel_Block_entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0.04 seconds. Elapsed time: 0.09 seconds; current allocated memory: 440.570 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 440.570 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'p_hls_fptosi_float_i32_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.508 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 441.508 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_start_hunt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_start_hunt'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop_start_hunt'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 441.508 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 441.508 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_col_zxi2mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_col_zxi2mat'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'loop_col_zxi2mat'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 441.918 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 441.918 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_last_hunt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_last_hunt'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'loop_last_hunt'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 442.219 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 442.219 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 442.602 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 442.602 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBChannelGainKernel_Pipeline_Col_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Col_Loop'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'Col_Loop'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 443.246 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 443.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_216_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 2, loop 'VITIS_LOOP_216_3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 443.637 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 443.637 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBChannelGainKernel_20_20_2160_3840_1_3840_3840_3_23_23_13_13_3840_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.1 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 445.137 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 445.777 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBChannelGain_20_20_2160_3840_1_0_3840_3840_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 446.973 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 446.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_Pipeline_ColLoop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'ColLoop1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 1, Depth = 3, loop 'ColLoop1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 447.371 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 447.371 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.02 seconds; current allocated memory: 447.695 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 447.695 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_Pipeline_loop_col_mat2axi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'loop_col_mat2axi'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'loop_col_mat2axi'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.02 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 447.980 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 447.980 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.02 seconds; current allocated memory: 448.246 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.01 seconds; current allocated memory: 448.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'AWBKernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 448.590 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 448.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'autowhitebalance_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.03 seconds; current allocated memory: 449.301 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0.01 seconds. CPU system time: 0 seconds. Elapsed time: 0.01 seconds; current allocated memory: 449.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBKernel_Block_entry_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBKernel_Block_entry_proc'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 449.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'p_hls_fptosi_float_i32_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'p_hls_fptosi_float_i32_2'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 449.301 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_start_hunt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_start_hunt'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 449.828 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_col_zxi2mat' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_col_zxi2mat' pipeline 'loop_col_zxi2mat' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_col_zxi2mat'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.03 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.04 seconds; current allocated memory: 450.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_last_hunt' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2xfMat_30_20_2160_3840_1_3840_Pipeline_loop_last_hunt'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 451.793 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AXIvideo2xfMat_30_20_2160_3840_1_3840_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AXIvideo2xfMat_30_20_2160_3840_1_3840_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 452.480 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBChannelGainKernel_Pipeline_Col_Loop' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AWBChannelGainKernel_Pipeline_Col_Loop' pipeline 'Col_Loop' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32ns_10ns_42_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBChannelGainKernel_Pipeline_Col_Loop'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 453.941 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3' pipeline 'VITIS_LOOP_216_3' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_40_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.06 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.06 seconds; current allocated memory: 455.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBChannelGainKernel_20_20_2160_3840_1_3840_3840_3_23_23_13_13_3840_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fpext_32ns_64_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitofp_32ns_32_4_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_7_2_10_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sparsemux_9_3_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'udiv_102ns_56ns_56_106_seq_1': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'udiv_56ns_40ns_56_60_seq_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBChannelGainKernel_20_20_2160_3840_1_3840_3840_3_23_23_13_13_3840_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.11 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 461.109 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBChannelGain_20_20_2160_3840_1_0_3840_3840_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBChannelGain_20_20_2160_3840_1_0_3840_3840_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.12 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.13 seconds; current allocated memory: 465.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_Pipeline_ColLoop1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_Pipeline_ColLoop1' pipeline 'ColLoop1' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_10ns_42_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_Pipeline_ColLoop1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 465.707 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.05 seconds. CPU system time: 0 seconds. Elapsed time: 0.05 seconds; current allocated memory: 466.262 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_Pipeline_loop_col_mat2axi' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_Pipeline_loop_col_mat2axi' pipeline 'loop_col_mat2axi' pipeline type 'loop pipeline'
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_Pipeline_loop_col_mat2axi'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.01 seconds. Elapsed time: 0.05 seconds; current allocated memory: 467.117 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'xfMat2AXIvideo_30_20_2160_3840_1_3840_0_s'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0 seconds. Elapsed time: 0.04 seconds; current allocated memory: 467.902 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'AWBKernel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'AWBKernel'.
+INFO: [RTMG 210-285] Implementing FIFO 'mul_loc_channel_U(autowhitebalance_accel_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'tmp_channel_U(autowhitebalance_accel_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'in_mat_data_U(autowhitebalance_accel_fifo_w30_d3840_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'impop_data_U(autowhitebalance_accel_fifo_w30_d3840_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'out_mat_data_U(autowhitebalance_accel_fifo_w30_d3840_A)' using Vivado Default RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_U0_U(autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_3840_3840_U0)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_xfMat2AXIvideo_30_20_2160_3840_1_3840_0_U0_U(autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_3840_0_U0)' using Shift Registers.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.04 seconds. CPU system time: 0.02 seconds. Elapsed time: 0.06 seconds; current allocated memory: 468.879 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'autowhitebalance_accel' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/s_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/s_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/s_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/s_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/s_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/s_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/s_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/m_axis_video_V_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/m_axis_video_V_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/m_axis_video_V_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/m_axis_video_V_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/m_axis_video_V_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/m_axis_video_V_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/m_axis_video_V_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/thresh' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/rows' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/cols' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/inputMin' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/inputMax' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/outputMin' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'autowhitebalance_accel/outputMax' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'autowhitebalance_accel' to 's_axilite & ap_ctrl_hs'.
+WARNING: [RTGEN 206-101] Register 'flag' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL7igain_1_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL7igain_1_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL7igain_1_2' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL7igain_0_0' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL7igain_0_1' is power-on initialization.
+WARNING: [RTGEN 206-101] Register 'p_ZL7igain_0_2' is power-on initialization.
+INFO: [RTGEN 206-100] Bundling port 'thresh', 'rows', 'cols', 'inputMin', 'inputMax', 'outputMin', 'outputMax' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'autowhitebalance_accel'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0.07 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 470.477 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0.24 seconds. CPU system time: 0.05 seconds. Elapsed time: 0.29 seconds; current allocated memory: 474.324 MB.
+INFO: [HLS 200-2225] Wrote inferred directives to file /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/syn/inferred_directives.ini
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0.82 seconds. CPU system time: 0.1 seconds. Elapsed time: 0.93 seconds; current allocated memory: 483.844 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for autowhitebalance_accel.
+INFO: [VLOG 209-307] Generating Verilog RTL for autowhitebalance_accel.
+INFO: [HLS 200-789] **** Estimated Fmax: 139.70 MHz
+INFO: [HLS 200-112] Total CPU user time: 25.52 seconds. Total CPU system time: 3.46 seconds. Total elapsed time: 33.39 seconds; peak allocated memory: 483.844 MB.
+INFO: [v++ 60-791] Total elapsed time: 0h 0m 37s

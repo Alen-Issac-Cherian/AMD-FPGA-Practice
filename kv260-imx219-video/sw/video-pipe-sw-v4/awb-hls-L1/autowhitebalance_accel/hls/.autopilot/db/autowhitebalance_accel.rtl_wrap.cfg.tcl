@@ -15,7 +15,7 @@ set Dims [list 0]
 set Interface [list AP_STREAM 0]
 set structMem ""
 set PortName0 "data"
-set BitWidth0 "30"
+set BitWidth0 "32"
 set ArrayOpt0 ""
 set Const0 "0"
 set Volatile0 "0"
@@ -23,7 +23,7 @@ set Pointer0 "0"
 set Reference0 "0"
 set Dims0 [list 0]
 set Interface0 "wire"
-set DataType0 "[list ap_uint 30]"
+set DataType0 "[list ap_uint 32]"
 set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
 lappend structMem $Port0
 set PortName0 "keep"
@@ -117,7 +117,7 @@ set Dims [list 0]
 set Interface [list AP_STREAM 0]
 set structMem ""
 set PortName0 "data"
-set BitWidth0 "30"
+set BitWidth0 "32"
 set ArrayOpt0 ""
 set Const0 "0"
 set Volatile0 "0"
@@ -125,7 +125,7 @@ set Pointer0 "0"
 set Reference0 "0"
 set Dims0 [list 0]
 set Interface0 "wire"
-set DataType0 "[list ap_uint 30]"
+set DataType0 "[list ap_uint 32]"
 set Port0 [list $PortName0 $Interface0 $DataType0 $Pointer0 $Dims0 $Const0 $Volatile0 $ArrayOpt0]
 lappend structMem $Port0
 set PortName0 "keep"

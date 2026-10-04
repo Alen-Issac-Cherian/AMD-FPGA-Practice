@@ -37,7 +37,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>30</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>0</if_type>
@@ -289,7 +289,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>30</bitwidth>
+            <bitwidth>32</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>0</if_type>
@@ -5043,7 +5043,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>6923</second>
+              <second>6929</second>
             </item>
             <item>
               <first>LUT</first>
@@ -5357,11 +5357,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>30</second>
+              <second>32</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>60</second>
+              <second>64</second>
             </item>
             <item>
               <first>FF</first>
@@ -5914,7 +5914,7 @@
             <item_version>0</item_version>
             <item>
               <first>(Bits)</first>
-              <second>30</second>
+              <second>32</second>
             </item>
             <item>
               <first>(Consts)</first>
@@ -5922,7 +5922,7 @@
             </item>
             <item>
               <first>FF</first>
-              <second>30</second>
+              <second>32</second>
             </item>
           </second>
         </item>

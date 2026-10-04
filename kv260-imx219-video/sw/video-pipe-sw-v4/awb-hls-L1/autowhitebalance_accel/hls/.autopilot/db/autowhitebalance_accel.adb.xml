@@ -235,9 +235,9 @@ entry:11 %spectopmodule_ln68 = spectopmodule void @_ssdm_op_SpecTopModule, void 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32">
+<Node id="41" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32">
 <![CDATA[
-entry:12 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_5, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0
+entry:12 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_5, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -250,9 +250,9 @@ entry:12 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %s
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="30">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-entry:13 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i30 %s_axis_video_V_data_V
+entry:13 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %s_axis_video_V_data_V
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -355,9 +355,9 @@ entry:19 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_v
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="49" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32">
+<Node id="49" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0" op_9_bw="32" op_10_bw="32" op_11_bw="0" op_12_bw="32" op_13_bw="32" op_14_bw="0" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="0" op_22_bw="0" op_23_bw="32" op_24_bw="32" op_25_bw="32" op_26_bw="32">
 <![CDATA[
-entry:20 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_5, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0
+entry:20 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_5, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -370,9 +370,9 @@ entry:20 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %m
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="0" op_0_bw="0" op_1_bw="30">
+<Node id="50" bw="0" op_0_bw="0" op_1_bw="32">
 <![CDATA[
-entry:21 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i30 %m_axis_video_V_data_V
+entry:21 %specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %m_axis_video_V_data_V
 
 ]]></Node>
 <StgValue><ssdm name="specbitsmap_ln0"/></StgValue>
@@ -820,9 +820,9 @@ entry:50 %flag_load = load i1 %flag
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="80" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0">
+<Node id="80" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0">
 <![CDATA[
-entry:51 %specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_16
+entry:51 %specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_16
 
 ]]></Node>
 <StgValue><ssdm name="specaxissidechannel_ln95"/></StgValue>
@@ -835,9 +835,9 @@ entry:51 %specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXIS
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="81" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0">
+<Node id="81" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="0">
 <![CDATA[
-entry:52 %specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_14
+entry:52 %specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_14
 
 ]]></Node>
 <StgValue><ssdm name="specaxissidechannel_ln95"/></StgValue>
@@ -1048,9 +1048,9 @@ entry:65 %br_ln95 = br i1 %flag_load, void %if.then, void %if.else
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="96" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="30" op_9_bw="4" op_10_bw="4" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1" op_15_bw="12" op_16_bw="12" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="0" op_25_bw="0" op_26_bw="0">
+<Node id="96" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="32" op_9_bw="4" op_10_bw="4" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1" op_15_bw="12" op_16_bw="12" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="0" op_25_bw="0" op_26_bw="0">
 <![CDATA[
-if.then:0 %call_ln96 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_0_0_loc, i32 %p_ZL7igain_0_1_loc, i32 %p_ZL7igain_0_2_loc, i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_1_load, i32 %p_ZL7igain_1_2_load, i32 %thresh_read
+if.then:0 %call_ln96 = call void @AWBKernel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_0_0_loc, i32 %p_ZL7igain_0_1_loc, i32 %p_ZL7igain_0_2_loc, i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_1_load, i32 %p_ZL7igain_1_2_load, i32 %thresh_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln96"/></StgValue>
@@ -1066,9 +1066,9 @@ if.then:0 %call_ln96 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_a
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="96" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="30" op_9_bw="4" op_10_bw="4" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1" op_15_bw="12" op_16_bw="12" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="0" op_25_bw="0" op_26_bw="0">
+<Node id="96" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="32" op_9_bw="4" op_10_bw="4" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1" op_15_bw="12" op_16_bw="12" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="0" op_25_bw="0" op_26_bw="0">
 <![CDATA[
-if.then:0 %call_ln96 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_0_0_loc, i32 %p_ZL7igain_0_1_loc, i32 %p_ZL7igain_0_2_loc, i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_1_load, i32 %p_ZL7igain_1_2_load, i32 %thresh_read
+if.then:0 %call_ln96 = call void @AWBKernel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_0_0_loc, i32 %p_ZL7igain_0_1_loc, i32 %p_ZL7igain_0_2_loc, i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_1_load, i32 %p_ZL7igain_1_2_load, i32 %thresh_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln96"/></StgValue>
@@ -1356,9 +1356,9 @@ if.end:2 %ret_ln107 = ret
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="105" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="30" op_9_bw="4" op_10_bw="4" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1" op_15_bw="12" op_16_bw="12" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="0" op_25_bw="0" op_26_bw="0">
+<Node id="105" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="32" op_9_bw="4" op_10_bw="4" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1" op_15_bw="12" op_16_bw="12" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="0" op_25_bw="0" op_26_bw="0">
 <![CDATA[
-if.else:0 %call_ln102 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_1_0_loc, i32 %p_ZL7igain_1_1_loc, i32 %p_ZL7igain_1_2_loc, i32 %p_ZL7igain_0_0_load, i32 %p_ZL7igain_0_1_load, i32 %p_ZL7igain_0_2_load, i32 %thresh_read
+if.else:0 %call_ln102 = call void @AWBKernel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_1_0_loc, i32 %p_ZL7igain_1_1_loc, i32 %p_ZL7igain_1_2_loc, i32 %p_ZL7igain_0_0_load, i32 %p_ZL7igain_0_1_load, i32 %p_ZL7igain_0_2_load, i32 %thresh_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln102"/></StgValue>
@@ -1374,9 +1374,9 @@ if.else:0 %call_ln102 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="105" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="30" op_9_bw="4" op_10_bw="4" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1" op_15_bw="12" op_16_bw="12" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="0" op_25_bw="0" op_26_bw="0">
+<Node id="105" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="4" op_3_bw="4" op_4_bw="1" op_5_bw="1" op_6_bw="1" op_7_bw="1" op_8_bw="32" op_9_bw="4" op_10_bw="4" op_11_bw="1" op_12_bw="1" op_13_bw="1" op_14_bw="1" op_15_bw="12" op_16_bw="12" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32" op_21_bw="32" op_22_bw="32" op_23_bw="32" op_24_bw="0" op_25_bw="0" op_26_bw="0">
 <![CDATA[
-if.else:0 %call_ln102 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_1_0_loc, i32 %p_ZL7igain_1_1_loc, i32 %p_ZL7igain_1_2_loc, i32 %p_ZL7igain_0_0_load, i32 %p_ZL7igain_0_1_load, i32 %p_ZL7igain_0_2_load, i32 %thresh_read
+if.else:0 %call_ln102 = call void @AWBKernel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_1_0_loc, i32 %p_ZL7igain_1_1_loc, i32 %p_ZL7igain_1_2_loc, i32 %p_ZL7igain_0_0_load, i32 %p_ZL7igain_0_1_load, i32 %p_ZL7igain_0_2_load, i32 %thresh_read
 
 ]]></Node>
 <StgValue><ssdm name="call_ln102"/></StgValue>

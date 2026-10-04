@@ -1,6 +1,28 @@
-ERROR: [COSIM-41] ../../../xf_autowhitebalance_tb_config.h is not found.
-ERROR: [COSIM-41] ../../../xf_autowhitebalance_tb.cpp is not found.
-ERROR: [COSIM-41] ../../../xf_headers.hpp is not found.
-WARNING: [COSIM-42] Please make sure test bench files are set correctly in Vitis HLS project tcl.
-ERROR: [COSIM-5] *** C/RTL co-simulation file generation failed. ***
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/home/alen/AMD-Xilinx/2025.2/Vitis/lnx64/tools/clang-16/bin/clang++"
+   Compiling apatb_autowhitebalance_accel.cpp
+   Compiling apatb_autowhitebalance_accel_util.cpp
+   Compiling xf_autowhitebalance_accel.cpp_pre.cpp.tb.cpp
+   Compiling xf_autowhitebalance_tb.cpp_pre.cpp.tb.cpp
+   Compiling apatb_autowhitebalance_accel_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+Resizing 512x512 input to 3840x2160
+5302397450 5535324054 5106903291
+division values : 0.963131 0.922602 1.000000
+0 0 0
+5302397450 5535324054 5106903291
+division values : 0.963131 0.922602 1.000000
+986 944 1024
+	Minimum error in intensity = 0
+	Maximum error in intensity = 1
+	Percentage of pixels above error threshold = 0
+Test Passed 
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 8294400
 ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***

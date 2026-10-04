@@ -39,7 +39,7 @@
         <Resources>
             <BRAM_18K>0</BRAM_18K>
             <DSP>11</DSP>
-            <FF>7814</FF>
+            <FF>7822</FF>
             <LUT>9550</LUT>
             <URAM>0</URAM>
         </Resources>
@@ -280,7 +280,7 @@
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>in</Dir>
-            <Bits>30</Bits>
+            <Bits>32</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -388,7 +388,7 @@
             <IOProtocol>axis</IOProtocol>
             <IOConfig>register, both mode</IOConfig>
             <Dir>out</Dir>
-            <Bits>30</Bits>
+            <Bits>32</Bits>
             <Attribute>data</Attribute>
             <CType>int</CType>
         </RtlPorts>
@@ -507,27 +507,27 @@
                             <BindInstances>fmul_32ns_32ns_32_3_max_dsp_1_U1</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>AXIvideo2xfMat_30_20_2160_3840_1_2_U0</InstName>
-                            <ModuleName>AXIvideo2xfMat_30_20_2160_3840_1_2_s</ModuleName>
+                            <InstName>AXIvideo2xfMat_32_20_2160_3840_1_2_U0</InstName>
+                            <ModuleName>AXIvideo2xfMat_32_20_2160_3840_1_2_s</ModuleName>
                             <IsCompInst>true</IsCompInst>
                             <ID>164</ID>
                             <InstancesList>
                                 <Instance>
-                                    <InstName>grp_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt_fu_132</InstName>
-                                    <ModuleName>AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt</ModuleName>
+                                    <InstName>grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt_fu_132</InstName>
+                                    <ModuleName>AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt</ModuleName>
                                     <IsCompInst>true</IsCompInst>
                                     <ID>132</ID>
                                 </Instance>
                                 <Instance>
-                                    <InstName>grp_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152</InstName>
-                                    <ModuleName>AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat</ModuleName>
+                                    <InstName>grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152</InstName>
+                                    <ModuleName>AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat</ModuleName>
                                     <IsCompInst>true</IsCompInst>
                                     <ID>152</ID>
                                     <BindInstances>icmp_ln134_fu_203_p2 j_4_fu_209_p2 or_ln140_fu_220_p2</BindInstances>
                                 </Instance>
                                 <Instance>
-                                    <InstName>grp_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt_fu_180</InstName>
-                                    <ModuleName>AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt</ModuleName>
+                                    <InstName>grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt_fu_180</InstName>
+                                    <ModuleName>AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt</ModuleName>
                                     <IsCompInst>true</IsCompInst>
                                     <ID>180</ID>
                                 </Instance>
@@ -589,17 +589,17 @@
                             <BindInstances>icmp_ln85_fu_104_p2 i_6_fu_109_p2</BindInstances>
                         </Instance>
                         <Instance>
-                            <InstName>xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0</InstName>
-                            <ModuleName>xfMat2AXIvideo_30_20_2160_3840_1_2_0_s</ModuleName>
+                            <InstName>xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0</InstName>
+                            <ModuleName>xfMat2AXIvideo_32_20_2160_3840_1_2_0_s</ModuleName>
                             <IsCompInst>true</IsCompInst>
                             <ID>222</ID>
                             <InstancesList>
                                 <Instance>
-                                    <InstName>grp_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100</InstName>
-                                    <ModuleName>xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi</ModuleName>
+                                    <InstName>grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100</InstName>
+                                    <ModuleName>xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi</ModuleName>
                                     <IsCompInst>true</IsCompInst>
                                     <ID>100</ID>
-                                    <BindInstances>icmp_ln204_fu_156_p2 j_2_fu_162_p2 icmp_ln216_fu_168_p2</BindInstances>
+                                    <BindInstances>icmp_ln204_fu_155_p2 j_2_fu_161_p2 icmp_ln216_fu_167_p2</BindInstances>
                                 </Instance>
                             </InstancesList>
                             <BindInstances>add_ln216_fu_124_p2 icmp_ln202_fu_138_p2 i_2_fu_143_p2</BindInstances>
@@ -716,7 +716,7 @@
             </BindNodes>
         </Module>
         <Module>
-            <Name>AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt</Name>
+            <Name>AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt</Name>
             <Loops>
                 <loop_start_hunt/>
             </Loops>
@@ -792,7 +792,7 @@
             </AreaEstimates>
         </Module>
         <Module>
-            <Name>AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat</Name>
+            <Name>AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat</Name>
             <Loops>
                 <loop_col_zxi2mat/>
             </Loops>
@@ -849,7 +849,7 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>52</FF>
+                    <FF>54</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
                     <LUT>160</LUT>
@@ -873,7 +873,7 @@
             </BindNodes>
         </Module>
         <Module>
-            <Name>AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt</Name>
+            <Name>AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt</Name>
             <Loops>
                 <loop_last_hunt/>
             </Loops>
@@ -949,7 +949,7 @@
             </AreaEstimates>
         </Module>
         <Module>
-            <Name>AXIvideo2xfMat_30_20_2160_3840_1_2_s</Name>
+            <Name>AXIvideo2xfMat_32_20_2160_3840_1_2_s</Name>
             <Loops>
                 <loop_row_axi2mat/>
             </Loops>
@@ -993,8 +993,8 @@
                         <PipelineType>no</PipelineType>
                         <PerformancePragma>-</PerformancePragma>
                         <InstanceList>
-                            <Instance>grp_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152</Instance>
-                            <Instance>grp_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt_fu_180</Instance>
+                            <Instance>grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152</Instance>
+                            <Instance>grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt_fu_180</Instance>
                         </InstanceList>
                     </loop_row_axi2mat>
                 </SummaryOfLoopLatency>
@@ -1014,7 +1014,7 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>139</FF>
+                    <FF>143</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
                     <LUT>389</LUT>
@@ -1537,7 +1537,7 @@
             </BindNodes>
         </Module>
         <Module>
-            <Name>xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi</Name>
+            <Name>xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi</Name>
             <Loops>
                 <loop_col_mat2axi/>
             </Loops>
@@ -1545,7 +1545,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.329</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>2.335</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>4</Best-caseLatency>
@@ -1612,13 +1612,13 @@
                 </Resources>
             </AreaEstimates>
             <BindNodes>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="loop_col_mat2axi" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln204_fu_156_p2" SOURCE="./xf_infra.hpp:204" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln204" VISIBLE="false"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loop_col_mat2axi" OPTYPE="add" PRAGMA="" RTLNAME="j_2_fu_162_p2" SOURCE="./xf_infra.hpp:204" STORAGESUBTYPE="" URAM="0" VARIABLE="j_2" VISIBLE="true"/>
-                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="loop_col_mat2axi" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln216_fu_168_p2" SOURCE="./xf_infra.hpp:216" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln216" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="loop_col_mat2axi" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln204_fu_155_p2" SOURCE="./xf_infra.hpp:204" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln204" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="loop_col_mat2axi" OPTYPE="add" PRAGMA="" RTLNAME="j_2_fu_161_p2" SOURCE="./xf_infra.hpp:204" STORAGESUBTYPE="" URAM="0" VARIABLE="j_2" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="loop_col_mat2axi" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln216_fu_167_p2" SOURCE="./xf_infra.hpp:216" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln216" VISIBLE="false"/>
             </BindNodes>
         </Module>
         <Module>
-            <Name>xfMat2AXIvideo_30_20_2160_3840_1_2_0_s</Name>
+            <Name>xfMat2AXIvideo_32_20_2160_3840_1_2_0_s</Name>
             <Loops>
                 <loop_row_mat2axi/>
             </Loops>
@@ -1626,7 +1626,7 @@
                 <SummaryOfTimingAnalysis>
                     <TargetClockPeriod>10.00</TargetClockPeriod>
                     <ClockUncertainty>2.70</ClockUncertainty>
-                    <EstimatedClockPeriod>2.329</EstimatedClockPeriod>
+                    <EstimatedClockPeriod>2.335</EstimatedClockPeriod>
                 </SummaryOfTimingAnalysis>
                 <SummaryOfOverallLatency>
                     <Best-caseLatency>7</Best-caseLatency>
@@ -1662,7 +1662,7 @@
                         <PipelineType>no</PipelineType>
                         <PerformancePragma>-</PerformancePragma>
                         <InstanceList>
-                            <Instance>grp_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100</Instance>
+                            <Instance>grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100</Instance>
                         </InstanceList>
                     </loop_row_mat2axi>
                 </SummaryOfLoopLatency>
@@ -1682,7 +1682,7 @@
             </PerformanceEstimates>
             <AreaEstimates>
                 <Resources>
-                    <FF>115</FF>
+                    <FF>117</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>~0</UTIL_FF>
                     <LUT>294</LUT>
@@ -1741,7 +1741,7 @@
                     <DSP>11</DSP>
                     <AVAIL_DSP>1248</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>6923</FF>
+                    <FF>6929</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>2</UTIL_FF>
                     <LUT>8834</LUT>
@@ -1796,7 +1796,7 @@
                     <DSP>11</DSP>
                     <AVAIL_DSP>1248</AVAIL_DSP>
                     <UTIL_DSP>~0</UTIL_DSP>
-                    <FF>7814</FF>
+                    <FF>7822</FF>
                     <AVAIL_FF>234240</AVAIL_FF>
                     <UTIL_FF>3</UTIL_FF>
                     <LUT>9554</LUT>
@@ -1860,17 +1860,18 @@
         </FIFOInst>
     </FIFOInformation>
     <UserConfigCommands>
-        <config_csim clean="1" setup="1"/>
-        <config_export display_name="Auto White Balance" library="video" taxonomy="/Video_&amp;_Image_Processing" version="1.0"/>
-        <config_sim O="1"/>
+        <config_cosim argv="/home/alen/git/Vitis_Libraries/vision/data/512x512.jpg" random_stall="0"/>
+        <config_csim argv="/home/alen/git/Vitis_Libraries/vision/data/512x512.jpg" clean="1" setup="1"/>
+        <config_export display_name="Auto White Balance" library="video" taxonomy="/Video_&amp;_Image_Processing" version="1.2"/>
+        <config_sim O="1" ldflags="/usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core"/>
     </UserConfigCommands>
     <Args>
-        <Arg ArgName="s_axis_video" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_uint&lt;30&gt;, 1UL, 1UL, 1UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">
+        <Arg ArgName="s_axis_video" index="0" direction="in" srcType="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1UL, 1UL, 1UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">
             <hwRefs>
                 <hwRef type="interface" interface="s_axis_video" name="" usage="data" direction="in"/>
             </hwRefs>
         </Arg>
-        <Arg ArgName="m_axis_video" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_uint&lt;30&gt;, 1UL, 1UL, 1UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">
+        <Arg ArgName="m_axis_video" index="1" direction="out" srcType="stream&lt;hls::axis&lt;ap_uint&lt;32&gt;, 1UL, 1UL, 1UL, (unsigned char)'8', false&gt;, 0&gt;&amp;" srcSize="96">
             <hwRefs>
                 <hwRef type="interface" interface="m_axis_video" name="" usage="data" direction="out"/>
             </hwRefs>
@@ -2046,7 +2047,7 @@
                 <port>interrupt</port>
             </ports>
         </Interface>
-        <Interface InterfaceName="s_axis_video" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="30" portPrefix="s_axis_video_">
+        <Interface InterfaceName="s_axis_video" type="axi4stream" busTypeName="axis" mode="slave" direction="in" dataWidth="32" portPrefix="s_axis_video_">
             <ports>
                 <port>s_axis_video_TDATA</port>
                 <port>s_axis_video_TDEST</port>
@@ -2062,7 +2063,7 @@
                 <constraint constraint_type="pragma interface" mode="axis" register_option="1" register_mode="both" argName="s_axis_video"/>
             </constraints>
         </Interface>
-        <Interface InterfaceName="m_axis_video" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="30" portPrefix="m_axis_video_">
+        <Interface InterfaceName="m_axis_video" type="axi4stream" busTypeName="axis" mode="master" direction="out" dataWidth="32" portPrefix="m_axis_video_">
             <ports>
                 <port>m_axis_video_TDATA</port>
                 <port>m_axis_video_TDEST</port>
@@ -2106,8 +2107,8 @@
             <item name="AXIS">
                 <table>
                     <keys size="12">Interface, Direction, Register Mode, TDATA, TDEST, TID, TKEEP, TLAST, TREADY, TSTRB, TUSER, TVALID</keys>
-                    <column name="m_axis_video">out, both, 30, 1, 1, 4, 1, 1, 4, 1, 1</column>
-                    <column name="s_axis_video">in, both, 30, 1, 1, 4, 1, 1, 4, 1, 1</column>
+                    <column name="m_axis_video">out, both, 32, 1, 1, 4, 1, 1, 4, 1, 1</column>
+                    <column name="s_axis_video">in, both, 32, 1, 1, 4, 1, 1, 4, 1, 1</column>
                 </table>
             </item>
             <item name="TOP LEVEL CONTROL">
@@ -2126,8 +2127,8 @@
             <item name="Top Function Arguments">
                 <table>
                     <keys size="3">Argument, Direction, Datatype</keys>
-                    <column name="s_axis_video">in, stream&lt;hls::axis&lt;ap_uint&lt;30&gt; 1UL 1UL 1UL (unsigned char)'8' false&gt; 0&gt;&amp;</column>
-                    <column name="m_axis_video">out, stream&lt;hls::axis&lt;ap_uint&lt;30&gt; 1UL 1UL 1UL (unsigned char)'8' false&gt; 0&gt;&amp;</column>
+                    <column name="s_axis_video">in, stream&lt;hls::axis&lt;ap_uint&lt;32&gt; 1UL 1UL 1UL (unsigned char)'8' false&gt; 0&gt;&amp;</column>
+                    <column name="m_axis_video">out, stream&lt;hls::axis&lt;ap_uint&lt;32&gt; 1UL 1UL 1UL (unsigned char)'8' false&gt; 0&gt;&amp;</column>
                     <column name="thresh">in, float</column>
                     <column name="rows">in, int</column>
                     <column name="cols">in, int</column>

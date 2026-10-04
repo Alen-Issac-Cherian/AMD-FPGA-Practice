@@ -8,36 +8,9 @@
       "-hls-syn-headers-dir=/home/alen/AMD-Xilinx/2025.2/Vitis/common/technology/autopilot",
       "-fhlstoplevel=autowhitebalance_accel",
       "-c",
-      "../xf_autowhitebalance_accel.cpp"
-    ],
-    "file": "../xf_autowhitebalance_accel.cpp"
-  },
-  {
-    "directory": "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1",
-    "arguments": [
-      "/home/alen/AMD-Xilinx/2025.2/Vitis/lnx64/tools/vcxx/libexec/clang++",
-      "--gcc-toolchain=/home/alen/AMD-Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
-      "-fhls",
-      "-hls-syn-headers-dir=/home/alen/AMD-Xilinx/2025.2/Vitis/common/technology/autopilot",
-      "-fhlstoplevel=autowhitebalance_accel",
-      "-c",
       "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel.cpp"
     ],
     "file": "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_autowhitebalance_accel.cpp"
-  },
-  {
-    "directory": "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1",
-    "arguments": [
-      "/home/alen/AMD-Xilinx/2025.2/Vitis/lnx64/tools/vcxx/libexec/clang++",
-      "--gcc-toolchain=/home/alen/AMD-Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
-      "-fhls-tb",
-      "-hls-sim-headers-dir=/home/alen/AMD-Xilinx/2025.2/Vitis/include",
-      "-I/usr/include/opencv4",
-      "-std=c++14",
-      "-c",
-      "../xf_autowhitebalance_tb.cpp"
-    ],
-    "file": "../xf_autowhitebalance_tb.cpp"
   },
   {
     "directory": "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1",

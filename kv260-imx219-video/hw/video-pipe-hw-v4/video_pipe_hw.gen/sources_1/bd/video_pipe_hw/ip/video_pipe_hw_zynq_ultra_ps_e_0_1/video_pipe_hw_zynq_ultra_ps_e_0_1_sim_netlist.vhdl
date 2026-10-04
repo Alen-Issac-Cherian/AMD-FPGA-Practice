@@ -2,10 +2,10 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Tue Sep 15 23:00:44 2026
+-- Date        : Sun Oct  4 19:37:39 2026
 -- Host        : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
--- Command     : write_vhdl -force -mode funcsim -rename_top video_pipe_hw_zynq_ultra_ps_e_0_1 -prefix
---               video_pipe_hw_zynq_ultra_ps_e_0_1_ video_pipe_hw_zynq_ultra_ps_e_0_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_zynq_ultra_ps_e_0_1/video_pipe_hw_zynq_ultra_ps_e_0_1_sim_netlist.vhdl
 -- Design      : video_pipe_hw_zynq_ultra_ps_e_0_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -1587,6 +1587,8 @@ entity video_pipe_hw_zynq_ultra_ps_e_0_1_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e 
   attribute C_USE_DIFF_RW_CLK_GP6 of video_pipe_hw_zynq_ultra_ps_e_0_1_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e : entity is 0;
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of video_pipe_hw_zynq_ultra_ps_e_0_1_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e : entity is "video_pipe_hw_zynq_ultra_ps_e_0_1.hwdef";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of video_pipe_hw_zynq_ultra_ps_e_0_1_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e : entity is "zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e";
   attribute PSS_IO : string;
   attribute PSS_IO of video_pipe_hw_zynq_ultra_ps_e_0_1_zynq_ultra_ps_e_v3_5_8_zynq_ultra_ps_e : entity is "Signal Name, DiffPair Type, DiffPair Signal,Direction, Site Type, IO Standard, Drive (mA), Slew Rate, Pull Type, IBIS Model, ODT, OUTPUT_IMPEDANCE " & LF &
  "GPIO0_GPIO0[0], , , INOUT, PS_MIO0_500, LVCMOS18, 4, SLOW, PULLUP, PS_MIO_LVCMOS18_S_4,,  " & LF &

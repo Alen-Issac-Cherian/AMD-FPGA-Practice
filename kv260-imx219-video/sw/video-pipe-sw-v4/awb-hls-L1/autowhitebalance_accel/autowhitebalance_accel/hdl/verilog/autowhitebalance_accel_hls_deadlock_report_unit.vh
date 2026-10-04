@@ -228,7 +228,7 @@
                     proc_path = "autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.p_hls_fptosi_float_i32_2_U0";
                 end
                 2 : begin
-                    proc_path = "autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0";
+                    proc_path = "autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0";
                 end
                 3 : begin
                     proc_path = "autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0";
@@ -237,7 +237,7 @@
                     proc_path = "autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0";
                 end
                 5 : begin
-                    proc_path = "autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0";
+                    proc_path = "autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0";
                 end
                 default : begin
                     proc_path = "unknown";
@@ -301,11 +301,11 @@
             case (index1)
                 0 : begin // for proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0'
                     case(index2)
-                    2: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0'
+                    2: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0'
 // for dep channel '' info is :
-// blk sig is {{autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_idle & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready} input_sync}
-                        if ((grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready & grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_idle & ~grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready)) begin
-                            $display("//      Blocked by input sync logic with process : 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0'");
+// blk sig is {{autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_idle & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready} input_sync}
+                        if ((grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready & grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0.ap_idle & ~grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready)) begin
+                            $display("//      Blocked by input sync logic with process : 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0'");
                         end
                     end
                     endcase
@@ -346,12 +346,12 @@
                     end
                     endcase
                 end
-                2 : begin // for proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0'
+                2 : begin // for proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0'
                     case(index2)
                     3: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0'
 // for dep channel 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U' info is :
-// blk sig is {~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.in_mat_data_blk_n data_FIFO}
-                        if ((~grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.in_mat_data_blk_n)) begin
+// blk sig is {~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.in_mat_data_blk_n data_FIFO}
+                        if ((~grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.grp_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat_fu_152.in_mat_data_blk_n)) begin
                             if (~grp_AWBKernel_fu_167.in_mat_data_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U");
@@ -366,8 +366,8 @@
                     end
                     0: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0'
 // for dep channel '' info is :
-// blk sig is {{autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0.ap_idle & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready} input_sync}
-                        if ((grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_30_20_2160_3840_1_2_U0_ap_ready & grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0.ap_idle & ~grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready)) begin
+// blk sig is {{autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.ap_idle & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready} input_sync}
+                        if ((grp_AWBKernel_fu_167.ap_sync_AXIvideo2xfMat_32_20_2160_3840_1_2_U0_ap_ready & grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0.ap_idle & ~grp_AWBKernel_fu_167.ap_sync_AWBKernel_Block_entry_proc_U0_ap_ready)) begin
                             $display("//      Blocked by input sync logic with process : 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBKernel_Block_entry_proc_U0'");
                         end
                     end
@@ -375,17 +375,17 @@
                 end
                 3 : begin // for proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0'
                     case(index2)
-                    2: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0'
+                    2: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0'
 // for dep channel 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U' info is :
 // blk sig is {~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.grp_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s_fu_79.grp_AWBChannelGainKernel_Pipeline_Col_Loop_fu_258.in_mat_data_blk_n data_FIFO}
                         if ((~grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.grp_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s_fu_79.grp_AWBChannelGainKernel_Pipeline_Col_Loop_fu_258.in_mat_data_blk_n)) begin
                             if (~grp_AWBKernel_fu_167.in_mat_data_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0'");
+                                $display("//      Blocked by empty input FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
                             else if (~grp_AWBKernel_fu_167.in_mat_data_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U' read by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0'");
+                                $display("//      Blocked by full output FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U' read by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.in_mat_data_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
@@ -428,11 +428,11 @@
                             end
                         end
                     end
-                    5: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0'
+                    5: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0'
 // for dep channel '' info is :
-// blk sig is {{ap_done_reg_1 & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_done} output_sync}
-                        if ((ap_done_reg_1 & grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done & ~grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_done)) begin
-                            $display("//      Blocked by output sync logic with process : 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0'");
+// blk sig is {{ap_done_reg_1 & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_done} output_sync}
+                        if ((ap_done_reg_1 & grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done & ~grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_done)) begin
+                            $display("//      Blocked by output sync logic with process : 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0'");
                         end
                     end
                     endcase
@@ -460,35 +460,35 @@
                             $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0',");
                         end
                     end
-                    5: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0'
+                    5: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0'
 // for dep channel 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U' info is :
 // blk sig is {~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84.out_mat_data_blk_n data_FIFO}
                         if ((~grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84.out_mat_data_blk_n)) begin
                             if (~grp_AWBKernel_fu_167.out_mat_data_U.if_empty_n) begin
-                                $display("//      Blocked by empty input FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0'");
+                                $display("//      Blocked by empty input FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U");
                                 $fdisplay(fp, "Dependence_Channel_status EMPTY");
                             end
                             else if (~grp_AWBKernel_fu_167.out_mat_data_U.if_full_n) begin
-                                $display("//      Blocked by full output FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U' read by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0'");
+                                $display("//      Blocked by full output FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U' read by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U");
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U' info is :
-// blk sig is {{~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_full_n & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_start & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_read} start_FIFO}
-                        if ((~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_full_n & grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_start & ~grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_read)) begin
-                            $display("//      Blocked by full output start propagation FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U' read by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0',");
+// for dep channel 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U' info is :
+// blk sig is {{~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_full_n & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_start & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_read} start_FIFO}
+                        if ((~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_full_n & grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.ap_start & ~grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.real_start & (trans_in_cnt_1 == trans_out_cnt_1) & ~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_read)) begin
+                            $display("//      Blocked by full output start propagation FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U' read by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0',");
                         end
                     end
                     endcase
                 end
-                5 : begin // for proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0'
+                5 : begin // for proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0'
                     case(index2)
                     4: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0'
 // for dep channel 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U' info is :
-// blk sig is {~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.out_mat_data_blk_n data_FIFO}
-                        if ((~grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.out_mat_data_blk_n)) begin
+// blk sig is {~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.out_mat_data_blk_n data_FIFO}
+                        if ((~grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.grp_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi_fu_100.out_mat_data_blk_n)) begin
                             if (~grp_AWBKernel_fu_167.out_mat_data_U.if_empty_n) begin
                                 $display("//      Blocked by empty input FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0'");
                                 $fdisplay(fp, "Dependence_Channel_path autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.out_mat_data_U");
@@ -500,16 +500,16 @@
                                 $fdisplay(fp, "Dependence_Channel_status FULL");
                             end
                         end
-// for dep channel 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U' info is :
-// blk sig is {{~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_empty_n & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_idle & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_write} start_FIFO}
-                        if ((~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_empty_n & grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_idle & ~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U.if_write)) begin
-                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0',");
+// for dep channel 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U' info is :
+// blk sig is {{~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_empty_n & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_idle & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_write} start_FIFO}
+                        if ((~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_empty_n & grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_idle & ~grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U.if_write)) begin
+                            $display("//      Blocked by missing 'ap_start' from start propagation FIFO 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U' written by process 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0',");
                         end
                     end
                     3: begin //  for dep proc 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0'
 // for dep channel '' info is :
-// blk sig is {{ap_done_reg_2 & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_done & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done} output_sync}
-                        if ((ap_done_reg_2 & grp_AWBKernel_fu_167.xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.ap_done & ~grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done)) begin
+// blk sig is {{ap_done_reg_2 & autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_done & ~autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done} output_sync}
+                        if ((ap_done_reg_2 & grp_AWBKernel_fu_167.xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.ap_done & ~grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0.ap_done)) begin
                             $display("//      Blocked by output sync logic with process : 'autowhitebalance_accel_autowhitebalance_accel.grp_AWBKernel_fu_167.AWBChannelGain_20_20_2160_3840_1_0_2_2_U0'");
                         end
                     end

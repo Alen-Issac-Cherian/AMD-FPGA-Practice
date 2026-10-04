@@ -31,7 +31,7 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0 BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U}
+	::AP::rtl_comp_handler autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0 BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U}
 }
 
 
@@ -53,7 +53,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {s_axis_video} \
     metadata {  } \
     op interface \
-    ports { s_axis_video_TDATA { I 30 vector } } \
+    ports { s_axis_video_TDATA { I 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 's_axis_video_V_data_V'"
@@ -186,7 +186,7 @@ eval "::AESL_LIB_XILADAPTER::native_axis_add { \
     corename {m_axis_video} \
     metadata {  } \
     op interface \
-    ports { m_axis_video_TDATA { O 30 vector } } \
+    ports { m_axis_video_TDATA { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'm_axis_video_V_data_V'"

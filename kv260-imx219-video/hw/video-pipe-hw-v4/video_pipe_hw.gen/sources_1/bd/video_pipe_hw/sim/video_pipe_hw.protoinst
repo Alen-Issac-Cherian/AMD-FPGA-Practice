@@ -8,7 +8,7 @@
 					"ports": {
 						"ACLK": { "actual": "ap_clk"},
 						"ARESETN": { "actual": "ap_rst_n"},
-						"TDATA": { "actual": "m_axis_video_TDATA[29:0]"},
+						"TDATA": { "actual": "m_axis_video_TDATA[31:0]"},
 						"TDEST": { "actual": "m_axis_video_TDEST[0:0]"},
 						"TID": { "actual": "m_axis_video_TID[0:0]"},
 						"TKEEP": { "actual": "m_axis_video_TKEEP[3:0]"},
@@ -41,6 +41,22 @@
 						"WREADY": { "actual": "s_axi_control_WREADY"},
 						"WSTRB": { "actual": "s_axi_control_WSTRB[3:0]"},
 						"WVALID": { "actual": "s_axi_control_WVALID"}
+					}
+				},
+				"/autowhitebalance_acc_0/s_axis_video": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "ap_clk"},
+						"ARESETN": { "actual": "ap_rst_n"},
+						"TDATA": { "actual": "s_axis_video_TDATA[31:0]"},
+						"TDEST": { "actual": "s_axis_video_TDEST[0:0]"},
+						"TID": { "actual": "s_axis_video_TID[0:0]"},
+						"TKEEP": { "actual": "s_axis_video_TKEEP[3:0]"},
+						"TLAST": { "actual": "s_axis_video_TLAST[0:0]"},
+						"TREADY": { "actual": "s_axis_video_TREADY"},
+						"TSTRB": { "actual": "s_axis_video_TSTRB[3:0]"},
+						"TUSER": { "actual": "s_axis_video_TUSER[0:0]"},
+						"TVALID": { "actual": "s_axis_video_TVALID"}
 					}
 				},
 				"/axi_smc/M00_AXI": {
@@ -448,8 +464,8 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "s_axis_s2mm_aclk"},
-						"TDATA": { "actual": "s_axis_s2mm_tdata[23:0]"},
-						"TKEEP": { "actual": "s_axis_s2mm_tkeep[2:0]"},
+						"TDATA": { "actual": "s_axis_s2mm_tdata[31:0]"},
+						"TKEEP": { "actual": "s_axis_s2mm_tkeep[3:0]"},
 						"TLAST": { "actual": "s_axis_s2mm_tlast"},
 						"TREADY": { "actual": "s_axis_s2mm_tready"},
 						"TUSER": { "actual": "s_axis_s2mm_tuser[0:0]"},
@@ -581,22 +597,6 @@
 						"TREADY": { "actual": "s_axis_tready"},
 						"TSTRB": { "actual": "s_axis_tstrb[3:0]"},
 						"TUSER": { "actual": "s_axis_tuser[0:0]"},
-						"TVALID": { "actual": "s_axis_tvalid"}
-					}
-				},
-				"/axis_subset_converter_0/S_AXIS": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "aclk"},
-						"ARESETN": { "actual": "aresetn"},
-						"TDATA": { "actual": "s_axis_tdata[31:0]"},
-						"TDEST": { "actual": "s_axis_tdest[0:0]"},
-						"TID": { "actual": "s_axis_tid[0:0]"},
-						"TKEEP": { "actual": "s_axis_tkeep[3:0]"},
-						"TLAST": { "actual": "s_axis_tlast"},
-						"TREADY": { "actual": "s_axis_tready"},
-						"TSTRB": { "actual": "s_axis_tstrb[3:0]"},
-						"TUSER": { "actual": "s_axis_tuser[1:0]"},
 						"TVALID": { "actual": "s_axis_tvalid"}
 					}
 				},

@@ -6,42 +6,42 @@
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                       | Instructions | Description                                                                            |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                            | 23,137       | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                            | 23,207       | After all functions are compiled and linked into a single design                       |
 |               |                            |              |                                                                                        |
 | Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                 |  3,529       | user unroll pragmas are applied                                                        |
-|               | (2) simplification         |  1,843       | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                 |  1,767       | user inline pragmas are applied                                                        |
-|               | (4) simplification         |  1,437       | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                 |  3,531       | user unroll pragmas are applied                                                        |
+|               | (2) simplification         |  1,845       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 |  1,769       | user inline pragmas are applied                                                        |
+|               | (4) simplification         |  1,439       | simplification of applied user inline pragmas                                          |
 |               |                            |              |                                                                                        |
 | Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition        |  1,339       | user array partition pragmas are applied                                               |
-|               | (2) simplification         |  1,277       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate |  1,277       | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape          |  1,277       | apply array reshape pragmas                                                            |
-|               | (5) access patterns        |  1,573       | array access pattern optmizations                                                      |
+|               | (1) array partition        |  1,341       | user array partition pragmas are applied                                               |
+|               | (2) simplification         |  1,279       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |  1,279       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |  1,279       | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |  1,575       | array access pattern optmizations                                                      |
 |               |                            |              |                                                                                        |
 | Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification    |  1,493       | loop and instruction simplification                                                    |
-|               | (2) parallelization        |  1,377       | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition        |  1,229       | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification         |  1,229       | simplification of design after performance transformations                             |
+|               | (1) loop simplification    |  1,495       | loop and instruction simplification                                                    |
+|               | (2) parallelization        |  1,379       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |  1,231       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |  1,231       | simplification of design after performance transformations                             |
 |               |                            |              |                                                                                        |
 | HW Transforms |                            |              | After hardware transfomations                                                          |
-|               | (1) lowering               |  1,145       | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations          |  1,032       | high level synthesis optimizations                                                     |
+|               | (1) lowering               |  1,147       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |  1,034       | high level synthesis optimizations                                                     |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
 +---------------------------------------+----------------------------------+------------------+-----------------+-----------------+-----------------+----------------+
 | Function                              | Location                         | Compile/Link     | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms  |
 +---------------------------------------+----------------------------------+------------------+-----------------+-----------------+-----------------+----------------+
-| + autowhitebalance_accel              | xf_autowhitebalance_accel.cpp:68 | 23,137           | 1,437           | 1,573           | 1,229           | 1,032          |
-|  + AWBKernel                          | xf_autowhitebalance_accel.cpp:27 | 23,112 (2 calls) | 1,416 (2 calls) | 1,540 (2 calls) | 1,190 (2 calls) |  976 (2 calls) |
+| + autowhitebalance_accel              | xf_autowhitebalance_accel.cpp:68 | 23,207           | 1,439           | 1,575           | 1,231           | 1,034          |
+|  + AWBKernel                          | xf_autowhitebalance_accel.cpp:27 | 23,182 (2 calls) | 1,418 (2 calls) | 1,542 (2 calls) | 1,192 (2 calls) |  978 (2 calls) |
 |   + Mat                               | xf_structs.hpp:671               |   222 (6 calls)  |                 |                 |                 |                |
 |    + init                             | xf_structs.hpp:606               |   168 (6 calls)  |                 |                 |                 |                |
 |       alloc_data<2, nullptr>          | xf_structs.hpp:494               |     6 (6 calls)  |                 |                 |                 |                |
-|   + AXIvideo2xfMat<30, 20, 2160,...   | xf_infra.hpp:101                 | 2,034 (2 calls)  |  390 (2 calls)  |  480 (2 calls)  |  346 (2 calls)  |  182 (2 calls) |
+|   + AXIvideo2xfMat<32, 20, 2160,...   | xf_infra.hpp:101                 | 2,036 (2 calls)  |  390 (2 calls)  |  480 (2 calls)  |  346 (2 calls)  |  182 (2 calls) |
 |      write<2, nullptr>                | xf_structs.hpp:553               |    16 (2 calls)  |                 |                 |                 |                |
 |   + AWBChannelGain<20, 20, 2160,...   | xf_autowhitebalance.hpp:1503     | 14,312 (2 calls) |  628 (2 calls)  |  532 (2 calls)  |  480 (2 calls)  |  480 (2 calls) |
 |    + AWBChannelGainKernel<20, 20,...  | xf_autowhitebalance.hpp:127      | 14,308 (2 calls) |  624 (2 calls)  |  528 (2 calls)  |  476 (2 calls)  |  476 (2 calls) |
@@ -52,7 +52,7 @@
 |       read<2, nullptr>                | xf_structs.hpp:542               |    20 (2 calls)  |                 |                 |                 |                |
 |       xf_satcast_awb<ap_uint<10> >... | xf_autowhitebalance.hpp:44       |    48 (2 calls)  |                 |                 |                 |                |
 |       write<2, nullptr>               | xf_structs.hpp:553               |    16 (2 calls)  |                 |                 |                 |                |
-|   + xfMat2AXIvideo<30, 20, 2160,...   | xf_infra.hpp:181                 | 1,340 (2 calls)  |  162 (2 calls)  |  302 (2 calls)  |  176 (2 calls)  |   94 (2 calls) |
+|   + xfMat2AXIvideo<32, 20, 2160,...   | xf_infra.hpp:181                 | 1,400 (2 calls)  |  164 (2 calls)  |  304 (2 calls)  |  178 (2 calls)  |   96 (2 calls) |
 |      read<2, nullptr>                 | xf_structs.hpp:542               |    40 (4 calls)  |                 |                 |                 |                |
 |     ~Mat                              | xf_structs.hpp:866               |     6 (6 calls)  |                 |                 |                 |                |
 +---------------------------------------+----------------------------------+------------------+-----------------+-----------------+-----------------+----------------+

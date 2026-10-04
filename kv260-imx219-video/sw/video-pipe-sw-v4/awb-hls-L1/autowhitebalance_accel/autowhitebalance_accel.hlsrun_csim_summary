@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Thu Oct  1 02:17:11 2026",
- "timestampMillis": "1790817431109",
+ "dateTimestamp": "Sun Oct  4 18:40:27 2026",
+ "timestampMillis": "1791135627411",
  "buildStep": {
-  "cmdId": "82d16eb0-1c9f-4bc4-874c-792a6efec194",
+  "cmdId": "efb07cf2-83f9-476e-a736-7dec0e31c463",
   "name": "vitis-run",
   "logFile": "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/logs/autowhitebalance_accel.steps.log",
   "commandLine": "/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Oct  1 02:17:11 2026",
- "timestampMillis": "1790817431109",
+ "dateTimestamp": "Sun Oct  4 18:40:27 2026",
+ "timestampMillis": "1791135627411",
  "status": {
-  "cmdId": "82d16eb0-1c9f-4bc4-874c-792a6efec194",
+  "cmdId": "efb07cf2-83f9-476e-a736-7dec0e31c463",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Thu Oct  1 02:17:15 2026",
- "timestampMillis": "1790817435281",
+ "dateTimestamp": "Sun Oct  4 18:40:31 2026",
+ "timestampMillis": "1791135631641",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,17 +64,6 @@
      "uuid": ""
     },
     "sources": [
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_autowhitebalance_accel.cpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_autowhitebalance_accel_config.h",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_config_params.h",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_common.hpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_params.hpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_structs.hpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_types.hpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_autowhitebalance.hpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_duplicateimage.hpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_utility.hpp",
-     "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/xf_video_mem.hpp",
      "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_common.hpp",
      "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_config_params.h",
      "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/xf_duplicateimage.hpp",
@@ -105,10 +94,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Thu Oct  1 02:17:15 2026",
- "timestampMillis": "1790817435282",
+ "dateTimestamp": "Sun Oct  4 18:40:31 2026",
+ "timestampMillis": "1791135631642",
  "buildStep": {
-  "cmdId": "37227c72-6eb7-4533-9be2-3739f0087274",
+  "cmdId": "1360fbfd-ae63-4ee7-848f-fb9fa0dfdde1",
   "name": "",
   "logFile": "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/hls.log",
   "commandLine": "",
@@ -121,10 +110,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Oct  1 02:17:15 2026",
- "timestampMillis": "1790817435283",
+ "dateTimestamp": "Sun Oct  4 18:40:31 2026",
+ "timestampMillis": "1791135631643",
  "status": {
-  "cmdId": "37227c72-6eb7-4533-9be2-3739f0087274",
+  "cmdId": "1360fbfd-ae63-4ee7-848f-fb9fa0dfdde1",
   "state": "CS_RUNNING"
  }
 }
@@ -132,10 +121,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Oct  1 02:17:24 2026",
- "timestampMillis": "1790817444906",
+ "dateTimestamp": "Sun Oct  4 18:40:41 2026",
+ "timestampMillis": "1791135641572",
  "status": {
-  "cmdId": "37227c72-6eb7-4533-9be2-3739f0087274",
+  "cmdId": "1360fbfd-ae63-4ee7-848f-fb9fa0dfdde1",
   "state": "CS_PASSED"
  }
 }
@@ -143,10 +132,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Thu Oct  1 02:17:25 2026",
- "timestampMillis": "1790817445012",
+ "dateTimestamp": "Sun Oct  4 18:40:41 2026",
+ "timestampMillis": "1791135641688",
  "status": {
-  "cmdId": "82d16eb0-1c9f-4bc4-874c-792a6efec194",
+  "cmdId": "efb07cf2-83f9-476e-a736-7dec0e31c463",
   "state": "CS_PASSED"
  }
 }
@@ -154,8 +143,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Oct  1 02:17:25 2026",
- "timestampMillis": "1790817445013",
+ "dateTimestamp": "Sun Oct  4 18:40:41 2026",
+ "timestampMillis": "1791135641688",
  "report": {
   "path": "",
   "name": "",
@@ -168,8 +157,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Thu Oct  1 02:17:25 2026",
- "timestampMillis": "1790817445013",
+ "dateTimestamp": "Sun Oct  4 18:40:41 2026",
+ "timestampMillis": "1791135641689",
  "report": {
   "path": "",
   "name": "",

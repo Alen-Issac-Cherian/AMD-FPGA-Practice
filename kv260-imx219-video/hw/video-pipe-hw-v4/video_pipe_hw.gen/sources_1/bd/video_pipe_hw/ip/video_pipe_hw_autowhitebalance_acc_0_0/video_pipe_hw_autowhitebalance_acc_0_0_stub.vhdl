@@ -2,7 +2,7 @@
 -- Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
--- Date        : Mon Sep 28 23:38:20 2026
+-- Date        : Sun Oct  4 19:33:02 2026
 -- Host        : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/video_pipe_hw_autowhitebalance_acc_0_0_stub.vhdl
@@ -35,7 +35,7 @@ entity video_pipe_hw_autowhitebalance_acc_0_0 is
     ap_clk : in STD_LOGIC;
     ap_rst_n : in STD_LOGIC;
     interrupt : out STD_LOGIC;
-    s_axis_video_TDATA : in STD_LOGIC_VECTOR ( 29 downto 0 );
+    s_axis_video_TDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axis_video_TDEST : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_video_TID : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_video_TKEEP : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -44,7 +44,7 @@ entity video_pipe_hw_autowhitebalance_acc_0_0 is
     s_axis_video_TSTRB : in STD_LOGIC_VECTOR ( 3 downto 0 );
     s_axis_video_TUSER : in STD_LOGIC_VECTOR ( 0 to 0 );
     s_axis_video_TVALID : in STD_LOGIC;
-    m_axis_video_TDATA : out STD_LOGIC_VECTOR ( 29 downto 0 );
+    m_axis_video_TDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
     m_axis_video_TDEST : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_video_TID : out STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_video_TKEEP : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -58,7 +58,7 @@ entity video_pipe_hw_autowhitebalance_acc_0_0 is
   attribute CHECK_LICENSE_TYPE : string;
   attribute CHECK_LICENSE_TYPE of video_pipe_hw_autowhitebalance_acc_0_0 : entity is "video_pipe_hw_autowhitebalance_acc_0_0,autowhitebalance_accel,{}";
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of video_pipe_hw_autowhitebalance_acc_0_0 : entity is "video_pipe_hw_autowhitebalance_acc_0_0,autowhitebalance_accel,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=video,x_ipName=autowhitebalance_accel,x_ipVersion=1.0,x_ipCoreRevision=2114806333,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=7,C_S_AXI_CONTROL_DATA_WIDTH=32}";
+  attribute CORE_GENERATION_INFO of video_pipe_hw_autowhitebalance_acc_0_0 : entity is "video_pipe_hw_autowhitebalance_acc_0_0,autowhitebalance_accel,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=video,x_ipName=autowhitebalance_accel,x_ipVersion=1.3,x_ipCoreRevision=2114814746,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=7,C_S_AXI_CONTROL_DATA_WIDTH=32}";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of video_pipe_hw_autowhitebalance_acc_0_0 : entity is "yes";
   attribute IP_DEFINITION_SOURCE : string;
@@ -71,7 +71,7 @@ architecture stub of video_pipe_hw_autowhitebalance_acc_0_0 is
   attribute syn_black_box : boolean;
   attribute black_box_pad_pin : string;
   attribute syn_black_box of stub : architecture is true;
-  attribute black_box_pad_pin of stub : architecture is "s_axi_control_ARADDR[6:0],s_axi_control_ARREADY,s_axi_control_ARVALID,s_axi_control_AWADDR[6:0],s_axi_control_AWREADY,s_axi_control_AWVALID,s_axi_control_BREADY,s_axi_control_BRESP[1:0],s_axi_control_BVALID,s_axi_control_RDATA[31:0],s_axi_control_RREADY,s_axi_control_RRESP[1:0],s_axi_control_RVALID,s_axi_control_WDATA[31:0],s_axi_control_WREADY,s_axi_control_WSTRB[3:0],s_axi_control_WVALID,ap_clk,ap_rst_n,interrupt,s_axis_video_TDATA[29:0],s_axis_video_TDEST[0:0],s_axis_video_TID[0:0],s_axis_video_TKEEP[3:0],s_axis_video_TLAST[0:0],s_axis_video_TREADY,s_axis_video_TSTRB[3:0],s_axis_video_TUSER[0:0],s_axis_video_TVALID,m_axis_video_TDATA[29:0],m_axis_video_TDEST[0:0],m_axis_video_TID[0:0],m_axis_video_TKEEP[3:0],m_axis_video_TLAST[0:0],m_axis_video_TREADY,m_axis_video_TSTRB[3:0],m_axis_video_TUSER[0:0],m_axis_video_TVALID";
+  attribute black_box_pad_pin of stub : architecture is "s_axi_control_ARADDR[6:0],s_axi_control_ARREADY,s_axi_control_ARVALID,s_axi_control_AWADDR[6:0],s_axi_control_AWREADY,s_axi_control_AWVALID,s_axi_control_BREADY,s_axi_control_BRESP[1:0],s_axi_control_BVALID,s_axi_control_RDATA[31:0],s_axi_control_RREADY,s_axi_control_RRESP[1:0],s_axi_control_RVALID,s_axi_control_WDATA[31:0],s_axi_control_WREADY,s_axi_control_WSTRB[3:0],s_axi_control_WVALID,ap_clk,ap_rst_n,interrupt,s_axis_video_TDATA[31:0],s_axis_video_TDEST[0:0],s_axis_video_TID[0:0],s_axis_video_TKEEP[3:0],s_axis_video_TLAST[0:0],s_axis_video_TREADY,s_axis_video_TSTRB[3:0],s_axis_video_TUSER[0:0],s_axis_video_TVALID,m_axis_video_TDATA[31:0],m_axis_video_TDEST[0:0],m_axis_video_TID[0:0],m_axis_video_TKEEP[3:0],m_axis_video_TLAST[0:0],m_axis_video_TREADY,m_axis_video_TSTRB[3:0],m_axis_video_TUSER[0:0],m_axis_video_TVALID";
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of s_axi_control_ARADDR : signal is "xilinx.com:interface:aximm:1.0 s_axi_control ARADDR";
   attribute X_INTERFACE_MODE : string;
@@ -105,7 +105,7 @@ architecture stub of video_pipe_hw_autowhitebalance_acc_0_0 is
   attribute X_INTERFACE_PARAMETER of interrupt : signal is "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, PortWidth 1";
   attribute X_INTERFACE_INFO of s_axis_video_TDATA : signal is "xilinx.com:interface:axis:1.0 s_axis_video TDATA";
   attribute X_INTERFACE_MODE of s_axis_video_TDATA : signal is "slave";
-  attribute X_INTERFACE_PARAMETER of s_axis_video_TDATA : signal is "XIL_INTERFACENAME s_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axis_video_TDATA : signal is "XIL_INTERFACENAME s_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 4, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_video_TDEST : signal is "xilinx.com:interface:axis:1.0 s_axis_video TDEST";
   attribute X_INTERFACE_INFO of s_axis_video_TID : signal is "xilinx.com:interface:axis:1.0 s_axis_video TID";
   attribute X_INTERFACE_INFO of s_axis_video_TKEEP : signal is "xilinx.com:interface:axis:1.0 s_axis_video TKEEP";
@@ -116,7 +116,7 @@ architecture stub of video_pipe_hw_autowhitebalance_acc_0_0 is
   attribute X_INTERFACE_INFO of s_axis_video_TVALID : signal is "xilinx.com:interface:axis:1.0 s_axis_video TVALID";
   attribute X_INTERFACE_INFO of m_axis_video_TDATA : signal is "xilinx.com:interface:axis:1.0 m_axis_video TDATA";
   attribute X_INTERFACE_MODE of m_axis_video_TDATA : signal is "master";
-  attribute X_INTERFACE_PARAMETER of m_axis_video_TDATA : signal is "XIL_INTERFACENAME m_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_video_TDATA : signal is "XIL_INTERFACENAME m_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 4, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of m_axis_video_TDEST : signal is "xilinx.com:interface:axis:1.0 m_axis_video TDEST";
   attribute X_INTERFACE_INFO of m_axis_video_TID : signal is "xilinx.com:interface:axis:1.0 m_axis_video TID";
   attribute X_INTERFACE_INFO of m_axis_video_TKEEP : signal is "xilinx.com:interface:axis:1.0 m_axis_video TKEEP";

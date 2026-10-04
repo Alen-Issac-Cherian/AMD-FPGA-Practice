@@ -47,8 +47,8 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:video:autowhitebalance_accel:1.0
-// IP Revision: 2114806333
+// IP VLNV: xilinx.com:video:autowhitebalance_accel:1.3
+// IP Revision: 2114814746
 
 `timescale 1ns/1ps
 
@@ -146,8 +146,8 @@ input wire ap_rst_n;
 output wire interrupt;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDATA" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-input wire [29 : 0] s_axis_video_TDATA;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 4, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire [31 : 0] s_axis_video_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDEST" *)
 input wire [0 : 0] s_axis_video_TDEST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TID" *)
@@ -166,8 +166,8 @@ input wire [0 : 0] s_axis_video_TUSER;
 input wire s_axis_video_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDATA" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-output wire [29 : 0] m_axis_video_TDATA;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 4, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+output wire [31 : 0] m_axis_video_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDEST" *)
 output wire [0 : 0] m_axis_video_TDEST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TID" *)

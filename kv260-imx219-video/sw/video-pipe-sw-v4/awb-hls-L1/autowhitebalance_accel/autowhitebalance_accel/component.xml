@@ -3,7 +3,7 @@
   <spirit:vendor>xilinx.com</spirit:vendor>
   <spirit:library>video</spirit:library>
   <spirit:name>autowhitebalance_accel</spirit:name>
-  <spirit:version>1.0</spirit:version>
+  <spirit:version>1.3</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>s_axi_control</spirit:name>
@@ -325,7 +325,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES">3</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S_AXIS_VIDEO.TDATA_NUM_BYTES">4</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TDEST_WIDTH</spirit:name>
@@ -423,7 +423,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDATA_NUM_BYTES">3</spirit:value>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M_AXIS_VIDEO.TDATA_NUM_BYTES">4</spirit:value>
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>TDEST_WIDTH</spirit:name>
@@ -904,7 +904,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1fa42394</spirit:value>
+            <spirit:value>bfb36020</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -923,7 +923,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>13b161da</spirit:value>
+            <spirit:value>c60f5edc</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -942,7 +942,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>de8596f0</spirit:value>
+            <spirit:value>e6cd3933</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -961,7 +961,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>3e6df659</spirit:value>
+            <spirit:value>87f3711c</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -975,7 +975,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>5a406622</spirit:value>
+            <spirit:value>7b4f4bd7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1324,7 +1324,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">29</spirit:left>
+            <spirit:left spirit:format="long">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1487,7 +1487,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long">29</spirit:left>
+            <spirit:left spirit:format="long">31</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1692,19 +1692,19 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1796,7 +1796,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1808,11 +1808,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -1885,22 +1885,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2015,7 +2015,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2030,12 +2030,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s.v</spirit:name>
+        <spirit:name>hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2107,19 +2107,19 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2183,7 +2183,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2195,17 +2195,17 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/autowhitebalance_accel.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_93327efb</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_26aa65ca</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -2273,22 +2273,22 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2368,7 +2368,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2383,12 +2383,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2411,43 +2411,43 @@
     <spirit:fileSet>
       <spirit:name>xilinx_softwaredriver_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/data/autowhitebalance_accel.mdd</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/data/autowhitebalance_accel.mdd</spirit:name>
         <spirit:userFileType>driver_mdd</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/data/autowhitebalance_accel.tcl</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/data/autowhitebalance_accel.tcl</spirit:name>
         <spirit:userFileType>driver_tcl</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/data/autowhitebalance_accel.yaml</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/data/autowhitebalance_accel.yaml</spirit:name>
         <spirit:userFileType>driver_yml</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/src/CMakeLists.txt</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/src/CMakeLists.txt</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/src/Makefile</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/src/Makefile</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/src/xautowhitebalance_accel.c</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/src/xautowhitebalance_accel.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/src/xautowhitebalance_accel.h</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/src/xautowhitebalance_accel.h</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/src/xautowhitebalance_accel_hw.h</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/src/xautowhitebalance_accel_hw.h</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/src/xautowhitebalance_accel_linux.c</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/src/xautowhitebalance_accel_linux.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>drivers/autowhitebalance_accel_v1_0/src/xautowhitebalance_accel_sinit.c</spirit:name>
+        <spirit:name>drivers/autowhitebalance_accel_v1_3/src/xautowhitebalance_accel_sinit.c</spirit:name>
         <spirit:userFileType>driver_src</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -2468,7 +2468,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/autowhitebalance_accel_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/autowhitebalance_accel_v1_3.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_f0a2ae16</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -2487,7 +2487,7 @@
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>Component_Name</spirit:name>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">autowhitebalance_accel_v1_0</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">autowhitebalance_accel_v1_3</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>clk_period</spirit:name>
@@ -2520,8 +2520,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Auto White Balance</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114806333</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-09-28T22:13:32Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114814746</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-10-04T18:27:05Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -2529,12 +2529,12 @@
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2025.2</xilinx:xilinxVersion>
-      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="7b035153"/>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="2112a009"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="c973ceed"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="919cfad6"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="9c63e1c3"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="7d80cf51"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="7faa9d5e"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="d824ec03"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6c706ac2"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="6b60c851"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

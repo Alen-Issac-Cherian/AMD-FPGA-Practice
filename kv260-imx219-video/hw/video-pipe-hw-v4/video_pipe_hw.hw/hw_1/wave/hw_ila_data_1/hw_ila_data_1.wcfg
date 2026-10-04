@@ -9,12 +9,12 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="340"></ZoomStartTime>
-      <ZoomEndTime time="2,389"></ZoomEndTime>
-      <Cursor1Time time="1,960"></Cursor1Time>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="2,048"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="386"></NameColumnWidth>
+      <NameColumnWidth column_width="378"></NameColumnWidth>
       <ValueColumnWidth column_width="60"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="1" />
@@ -44,7 +44,7 @@
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_0/inst/net_slot_0_axis_tvalid</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tvalid</obj_property>
-            <obj_property name="label">slot_0 : mipi_csi2_rx_subsyst_0_video_out : TVALID</obj_property>
+            <obj_property name="label">slot_0 : axis_broadcaster_0_M01_AXIS : TVALID</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
@@ -52,7 +52,7 @@
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_0/inst/net_slot_0_axis_tready</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tready</obj_property>
-            <obj_property name="label">slot_0 : mipi_csi2_rx_subsyst_0_video_out : TREADY</obj_property>
+            <obj_property name="label">slot_0 : axis_broadcaster_0_M01_AXIS : TREADY</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
@@ -60,7 +60,7 @@
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_0/inst/net_slot_0_axis_tlast</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tlast</obj_property>
-            <obj_property name="label">slot_0 : mipi_csi2_rx_subsyst_0_video_out : TLAST</obj_property>
+            <obj_property name="label">slot_0 : axis_broadcaster_0_M01_AXIS : TLAST</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
          </wvobject>
@@ -95,7 +95,7 @@
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="ElementShortName">video_pipe_hw_i/system_ila_0/inst/net_slot_0_axis_tuser[0:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tuser[0:0]</obj_property>
-            <obj_property name="label">slot_0 : mipi_csi2_rx_subsyst_0_video_out : TUSER</obj_property>
+            <obj_property name="label">slot_0 : axis_broadcaster_0_M01_AXIS : TUSER</obj_property>
             <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

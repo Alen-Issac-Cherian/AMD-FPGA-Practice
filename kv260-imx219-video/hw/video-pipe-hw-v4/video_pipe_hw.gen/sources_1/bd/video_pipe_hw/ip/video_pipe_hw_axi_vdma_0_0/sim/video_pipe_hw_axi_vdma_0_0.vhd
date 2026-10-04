@@ -117,8 +117,8 @@ ENTITY video_pipe_hw_axi_vdma_0_0 IS
     m_axi_s2mm_bresp : IN STD_LOGIC_VECTOR(1 DOWNTO 0);
     m_axi_s2mm_bvalid : IN STD_LOGIC;
     m_axi_s2mm_bready : OUT STD_LOGIC;
-    s_axis_s2mm_tdata : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
-    s_axis_s2mm_tkeep : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+    s_axis_s2mm_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    s_axis_s2mm_tkeep : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
     s_axis_s2mm_tuser : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
     s_axis_s2mm_tvalid : IN STD_LOGIC;
     s_axis_s2mm_tready : OUT STD_LOGIC;
@@ -286,8 +286,8 @@ ARCHITECTURE video_pipe_hw_axi_vdma_0_0_arch OF video_pipe_hw_axi_vdma_0_0 IS
       m_axi_s2mm_bvalid : IN STD_LOGIC;
       m_axi_s2mm_bready : OUT STD_LOGIC;
       s2mm_prmry_reset_out_n : OUT STD_LOGIC;
-      s_axis_s2mm_tdata : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
-      s_axis_s2mm_tkeep : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+      s_axis_s2mm_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+      s_axis_s2mm_tkeep : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
       s_axis_s2mm_tuser : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
       s_axis_s2mm_tvalid : IN STD_LOGIC;
       s_axis_s2mm_tready : OUT STD_LOGIC;
@@ -392,7 +392,7 @@ ARCHITECTURE video_pipe_hw_axi_vdma_0_0_arch OF video_pipe_hw_axi_vdma_0_0 IS
   ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_s2mm_aclk: SIGNAL IS "XIL_INTERFACENAME S_AXIS_S2MM_ACLK, ASSOCIATED_BUSIF S_AXIS_S2MM, FREQ_HZ 249997498, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TDATA";
   ATTRIBUTE X_INTERFACE_MODE OF s_axis_s2mm_tdata: SIGNAL IS "slave S_AXIS_S2MM";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_s2mm_tdata: SIGNAL IS "XIL_INTERFACENAME S_AXIS_S2MM, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s_axis_s2mm_tdata: SIGNAL IS "XIL_INTERFACENAME S_AXIS_S2MM, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tkeep: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TKEEP";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TLAST";
   ATTRIBUTE X_INTERFACE_INFO OF s_axis_s2mm_tready: SIGNAL IS "xilinx.com:interface:axis:1.0 S_AXIS_S2MM TREADY";
@@ -442,7 +442,7 @@ BEGIN
       C_S2MM_MAX_BURST_LENGTH => 8,
       C_M_AXI_S2MM_ADDR_WIDTH => 32,
       C_M_AXI_S2MM_DATA_WIDTH => 64,
-      C_S_AXIS_S2MM_TDATA_WIDTH => 24,
+      C_S_AXIS_S2MM_TDATA_WIDTH => 32,
       C_S_AXIS_S2MM_TUSER_BITS => 1,
       C_ENABLE_DEBUG_ALL => 0,
       C_ENABLE_DEBUG_INFO_0 => 0,

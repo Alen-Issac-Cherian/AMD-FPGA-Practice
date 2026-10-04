@@ -66,16 +66,10 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_pipe_
 # IP: bd/video_pipe_hw/ip/video_pipe_hw_axi_vdma_0_1/video_pipe_hw_axi_vdma_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_pipe_hw_axi_vdma_0_1 || ORIG_REF_NAME==video_pipe_hw_axi_vdma_0_1} -quiet] -quiet
 
-# IP: bd/video_pipe_hw/ip/video_pipe_hw_axis_subset_converter_0_0/video_pipe_hw_axis_subset_converter_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_pipe_hw_axis_subset_converter_0_0 || ORIG_REF_NAME==video_pipe_hw_axis_subset_converter_0_0} -quiet] -quiet
-
 # IP: bd/video_pipe_hw/ip/video_pipe_hw_axis_subset_converter_0_1/video_pipe_hw_axis_subset_converter_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_pipe_hw_axis_subset_converter_0_1 || ORIG_REF_NAME==video_pipe_hw_axis_subset_converter_0_1} -quiet] -quiet
 
 # IP: bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/video_pipe_hw_autowhitebalance_acc_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_pipe_hw_autowhitebalance_acc_0_0 || ORIG_REF_NAME==video_pipe_hw_autowhitebalance_acc_0_0} -quiet] -quiet
-
-# IP: bd/video_pipe_hw/ip/video_pipe_hw_xlslice_0_0/video_pipe_hw_xlslice_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==video_pipe_hw_xlslice_0_0 || ORIG_REF_NAME==video_pipe_hw_xlslice_0_0} -quiet] -quiet
 
 # XDC: /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/video_pipe_hw_ooc.xdc

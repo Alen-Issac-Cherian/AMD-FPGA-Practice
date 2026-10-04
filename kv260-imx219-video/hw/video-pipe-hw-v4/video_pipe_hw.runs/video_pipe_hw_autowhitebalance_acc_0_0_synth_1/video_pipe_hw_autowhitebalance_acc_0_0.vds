@@ -3,8 +3,8 @@
 # SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
 # IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
 # SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
-# Start of session at: Mon Sep 28 23:35:44 2026
-# Process ID         : 72738
+# Start of session at: Sun Oct  4 19:30:49 2026
+# Process ID         : 51386
 # Current directory  : /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.runs/video_pipe_hw_autowhitebalance_acc_0_0_synth_1
 # Command line       : vivado -log video_pipe_hw_autowhitebalance_acc_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source video_pipe_hw_autowhitebalance_acc_0_0.tcl
 # Log file           : /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.runs/video_pipe_hw_autowhitebalance_acc_0_0_synth_1/video_pipe_hw_autowhitebalance_acc_0_0.vds
@@ -13,16 +13,16 @@
 # Platform           : Ubuntu
 # Operating System   : Ubuntu 24.04.5 LTS
 # Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics
-# CPU Frequency      : 2364.726 MHz
+# CPU Frequency      : 4046.026 MHz
 # CPU Physical cores : 6
 # CPU Logical cores  : 12
 # Host memory        : 32934 MB
 # Swap memory        : 8000 MB
 # Total Virtual      : 40934 MB
-# Available Virtual  : 30898 MB
+# Available Virtual  : 30648 MB
 #-----------------------------------------------------------
 source video_pipe_hw_autowhitebalance_acc_0_0.tcl -notrace
-create_project: Time (s): cpu = 00:00:56 ; elapsed = 00:00:15 . Memory (MB): peak = 1876.609 ; gain = 324.059 ; free physical = 12864 ; free virtual = 27398
+create_project: Time (s): cpu = 00:00:49 ; elapsed = 00:00:09 . Memory (MB): peak = 1876.074 ; gain = 323.059 ; free physical = 18199 ; free virtual = 27892
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alen/git/vivado-library/ip'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/IP'.
@@ -34,15 +34,15 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xck26'
 INFO: [Device 21-403] Loading part xck26-sfvc784-2LV-c
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 73050
+INFO: [Synth 8-7075] Helper process launched with PID 52966
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3609.875 ; gain = 141.688 ; free physical = 6721 ; free virtual = 21255
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 3611.340 ; gain = 143.656 ; free physical = 14140 ; free virtual = 23884
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'video_pipe_hw_autowhitebalance_acc_0_0' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/synth/video_pipe_hw_autowhitebalance_acc_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBKernel' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBKernel.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBKernel_Block_entry_proc' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBKernel_Block_entry_proc.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBKernel' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBKernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBKernel_Block_entry_proc' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBKernel_Block_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
 INFO: [Synth 8-638] synthesizing module 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:72]
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
 	Parameter C_PART bound to: xck26-sfvc784-2LV-c - type: string 
@@ -123,31 +123,31 @@ INFO: [Synth 8-638] synthesizing module 'autowhitebalance_accel_fmul_32ns_32ns_3
 	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:217]
 INFO: [Synth 8-256] done synthesizing module 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip/synth/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd:72]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBKernel_Block_entry_proc' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBKernel_Block_entry_proc.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_p_hls_fptosi_float_i32_2' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_p_hls_fptosi_float_i32_2.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_p_hls_fptosi_float_i32_2' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_p_hls_fptosi_float_i32_2.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_flow_control_loop_pipe_sequential_init' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_flow_control_loop_pipe_sequential_init' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_flow_control_loop_pipe_sequential_init.v:11]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_mul_32ns_10ns_42_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_mul_32ns_10ns_42_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_mul_32ns_10ns_42_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_mul_32ns_10ns_42_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_sparsemux_7_2_40_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_sparsemux_7_2_40_1_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_sparsemux_7_2_40_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_sparsemux_7_2_40_1_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBKernel_Block_entry_proc' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBKernel_Block_entry_proc.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_p_hls_fptosi_float_i32_2' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_p_hls_fptosi_float_i32_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_p_hls_fptosi_float_i32_2' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_p_hls_fptosi_float_i32_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_flow_control_loop_pipe_sequential_init' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_flow_control_loop_pipe_sequential_init' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_mul_32ns_10ns_42_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_mul_32ns_10ns_42_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_mul_32ns_10ns_42_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_mul_32ns_10ns_42_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_sparsemux_7_2_40_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_sparsemux_7_2_40_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_sparsemux_7_2_40_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_sparsemux_7_2_40_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1.v:9]
 INFO: [Synth 8-638] synthesizing module 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip/synth/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip.vhd:70]
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
 	Parameter C_PART bound to: xck26-sfvc784-2LV-c - type: string 
@@ -228,8 +228,8 @@ INFO: [Synth 8-638] synthesizing module 'autowhitebalance_accel_sitofp_32ns_32_4
 	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip/synth/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip.vhd:211]
 INFO: [Synth 8-256] done synthesizing module 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip/synth/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip.vhd:70]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1.v:9]
 INFO: [Synth 8-638] synthesizing module 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip/synth/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
 	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
 	Parameter C_PART bound to: xck26-sfvc784-2LV-c - type: string 
@@ -310,86 +310,86 @@ INFO: [Synth 8-638] synthesizing module 'autowhitebalance_accel_fpext_32ns_64_2_
 	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
 INFO: [Synth 8-3491] module 'floating_point_v7_1_21' declared at '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip/hdl/floating_point_v7_1_vh_rfs.vhd:93266' bound to instance 'U0' of component 'floating_point_v7_1_21' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip/synth/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip.vhd:203]
 INFO: [Synth 8-256] done synthesizing module 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/hdl/ip/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip/synth/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip.vhd:68]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_sparsemux_9_3_32_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_sparsemux_9_3_32_1_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_sparsemux_9_3_32_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_sparsemux_9_3_32_1_1.v:8]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_sparsemux_7_2_10_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_sparsemux_7_2_10_1_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_sparsemux_7_2_10_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_sparsemux_7_2_10_1_1.v:8]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:83]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1_divseq' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1_divseq' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:83]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:83]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1_divseq' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1_divseq' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:83]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_mul_32s_10ns_42_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_mul_32s_10ns_42_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_mul_32s_10ns_42_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_mul_32s_10ns_42_1_1.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fifo_w32_d2_S' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fifo_w32_d2_S.v:10]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fifo_w32_d2_S_ShiftReg' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fifo_w32_d2_S.v:128]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fifo_w32_d2_S_ShiftReg' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fifo_w32_d2_S.v:128]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fifo_w32_d2_S' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fifo_w32_d2_S.v:10]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fifo_w30_d2_S' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fifo_w30_d2_S.v:10]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fifo_w30_d2_S_ShiftReg' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fifo_w30_d2_S.v:128]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fifo_w30_d2_S_ShiftReg' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fifo_w30_d2_S.v:128]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fifo_w30_d2_S' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_fifo_w30_d2_S.v:10]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v:10]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ShiftReg' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ShiftReg' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v:10]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.v:10]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ShiftReg' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_ShiftReg' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.v:124]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBKernel' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBKernel.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_control_s_axi' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_control_s_axi.v:9]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_control_s_axi.v:246]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_control_s_axi' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_control_s_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_regslice_both' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_regslice_both' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_regslice_both__parameterized0' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_regslice_both__parameterized0' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
-INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_regslice_both__parameterized1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_regslice_both__parameterized1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
-INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_sparsemux_9_3_32_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_sparsemux_9_3_32_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_sparsemux_9_3_32_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_sparsemux_9_3_32_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_sparsemux_7_2_10_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_sparsemux_7_2_10_1_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_sparsemux_7_2_10_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_sparsemux_7_2_10_1_1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:83]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1_divseq' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1_divseq' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:83]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:83]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1_divseq' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1_divseq' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:83]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_mul_32s_10ns_42_1_1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_mul_32s_10ns_42_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_mul_32s_10ns_42_1_1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_mul_32s_10ns_42_1_1.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fifo_w32_d2_S' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fifo_w32_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fifo_w32_d2_S_ShiftReg' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fifo_w32_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fifo_w32_d2_S_ShiftReg' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fifo_w32_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fifo_w32_d2_S' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fifo_w32_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fifo_w30_d2_S' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fifo_w30_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_fifo_w30_d2_S_ShiftReg' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fifo_w30_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fifo_w30_d2_S_ShiftReg' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fifo_w30_d2_S.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_fifo_w30_d2_S' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_fifo_w30_d2_S.v:10]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ShiftReg' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ShiftReg' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.v:10]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ShiftReg' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ShiftReg' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.v:124]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_AWBKernel' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBKernel.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_control_s_axi' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_control_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_control_s_axi.v:246]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_control_s_axi' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_control_s_axi.v:9]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_regslice_both' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_regslice_both' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_regslice_both__parameterized0' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_regslice_both__parameterized0' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
+INFO: [Synth 8-6157] synthesizing module 'autowhitebalance_accel_regslice_both__parameterized1' [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel_regslice_both__parameterized1' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_regslice_both.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'autowhitebalance_accel' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'video_pipe_hw_autowhitebalance_acc_0_0' (0#1) [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/synth/video_pipe_hw_autowhitebalance_acc_0_0.v:53]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:150]
-INFO: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:150]
+INFO: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:150]
+INFO: [Synth 8-6014] Unused sequential element remd_reg was removed.  [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:150]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_control_s_axi.v:331]
+INFO: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_control_s_axi.v:331]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-7129] Port AWADDR[1] in module autowhitebalance_accel_control_s_axi is either unconnected or has no load
 INFO: [Synth 8-7129] Port AWADDR[0] in module autowhitebalance_accel_control_s_axi is either unconnected or has no load
 INFO: [Synth 8-7129] Port addr[1] in module autowhitebalance_accel_fifo_w30_d2_S_ShiftReg is either unconnected or has no load
 INFO: [Synth 8-7129] Port addr[1] in module autowhitebalance_accel_fifo_w32_d2_S_ShiftReg is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[2] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[1] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[0] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[2] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[1] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[0] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[2] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[1] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[0] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[2] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[1] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s is either unconnected or has no load
-INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[0] in module autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[2] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[1] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[0] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[2] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[1] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[0] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[2] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[1] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_num_data_valid[0] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[2] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[1] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s is either unconnected or has no load
+INFO: [Synth 8-7129] Port out_mat_data_fifo_cap[0] in module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s is either unconnected or has no load
 INFO: [Synth 8-7129] Port impop_data_num_data_valid[2] in module autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1 is either unconnected or has no load
 INFO: [Synth 8-7129] Port impop_data_num_data_valid[1] in module autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1 is either unconnected or has no load
 INFO: [Synth 8-7129] Port impop_data_num_data_valid[0] in module autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1 is either unconnected or has no load
@@ -476,18 +476,18 @@ INFO: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_11_viv__parameterized55 is
 INFO: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_11_viv__parameterized55 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3811.297 ; gain = 343.109 ; free physical = 6068 ; free virtual = 20604
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3810.793 ; gain = 343.109 ; free physical = 13786 ; free virtual = 23548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3811.297 ; gain = 343.109 ; free physical = 6060 ; free virtual = 20596
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3810.793 ; gain = 343.109 ; free physical = 13787 ; free virtual = 23548
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3811.297 ; gain = 343.109 ; free physical = 6060 ; free virtual = 20596
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 3810.793 ; gain = 343.109 ; free physical = 13787 ; free virtual = 23548
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.29 . Memory (MB): peak = 3811.297 ; gain = 0.000 ; free physical = 6002 ; free virtual = 20542
+Netlist sorting complete. Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.26 . Memory (MB): peak = 3810.793 ; gain = 0.000 ; free physical = 13723 ; free virtual = 23485
 INFO: [Netlist 29-17] Analyzing 164 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -495,21 +495,20 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/constraints/autowhitebalance_accel_ooc.xdc] for cell 'inst'
-create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3864.426 ; gain = 9.141 ; free physical = 6060 ; free virtual = 20604
 Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ip/video_pipe_hw_autowhitebalance_acc_0_0/constraints/autowhitebalance_accel_ooc.xdc] for cell 'inst'
 Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.runs/video_pipe_hw_autowhitebalance_acc_0_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.runs/video_pipe_hw_autowhitebalance_acc_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3864.426 ; gain = 0.000 ; free physical = 6060 ; free virtual = 20604
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3864.688 ; gain = 0.000 ; free physical = 13601 ; free virtual = 23378
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 3 instances were transformed.
   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.26 ; elapsed = 00:00:00.1 . Memory (MB): peak = 3864.461 ; gain = 0.000 ; free physical = 6057 ; free virtual = 20600
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.09 . Memory (MB): peak = 3864.723 ; gain = 0.000 ; free physical = 13601 ; free virtual = 23379
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3864.461 ; gain = 396.273 ; free physical = 6078 ; free virtual = 20622
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3864.723 ; gain = 397.039 ; free physical = 13517 ; free virtual = 23295
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -517,13 +516,13 @@ Start Loading Part and Timing Information
 Loading part: xck26-sfvc784-2LV-c
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3872.430 ; gain = 404.242 ; free physical = 6078 ; free virtual = 20622
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3872.691 ; gain = 405.008 ; free physical = 13516 ; free virtual = 23295
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 3872.430 ; gain = 404.242 ; free physical = 6078 ; free virtual = 20622
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 3872.691 ; gain = 405.008 ; free physical = 13516 ; free virtual = 23295
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
@@ -532,7 +531,7 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' throug
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg' and it is trimmed from '102' to '101' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:41]
+INFO: [Synth 8-3936] Found unconnected internal register 'remd_tmp_reg' and it is trimmed from '102' to '101' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v:41]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
@@ -602,7 +601,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'autowhitebalance_accel_regslice_both__parameterized1'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 3888.438 ; gain = 420.250 ; free physical = 6075 ; free virtual = 20653
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 3888.699 ; gain = 421.016 ; free physical = 13485 ; free virtual = 23268
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-223] decloning instance 'inst/grp_AWBKernel_fu_167/AWBKernel_Block_entry_proc_U0/fmul_32ns_32ns_32_3_max_dsp_1_U1/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_AWBKernel_fu_167/AWBKernel_Block_entry_proc_U0/fmul_32ns_32ns_32_3_max_dsp_1_U1/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
 INFO: [Synth 8-223] decloning instance 'inst/grp_AWBKernel_fu_167/AWBKernel_Block_entry_proc_U0/fmul_32ns_32ns_32_3_max_dsp_1_U1/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'inst/grp_AWBKernel_fu_167/AWBKernel_Block_entry_proc_U0/fmul_32ns_32ns_32_3_max_dsp_1_U1/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
@@ -636,10 +635,10 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3936] Found unconnected internal register 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1_divseq_u/remd_tmp_reg' and it is trimmed from '56' to '55' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:41]
-INFO: [Synth 8-3936] Found unconnected internal register 'grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84/sext_ln104_2_cast_reg_314_reg' and it is trimmed from '42' to '32' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:253]
-INFO: [Synth 8-3936] Found unconnected internal register 'grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84/sext_ln104_1_cast_reg_319_reg' and it is trimmed from '42' to '32' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:252]
-INFO: [Synth 8-3936] Found unconnected internal register 'grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84/sext_ln104_cast_reg_324_reg' and it is trimmed from '42' to '32' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/0ed4/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:254]
+INFO: [Synth 8-3936] Found unconnected internal register 'autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1_divseq_u/remd_tmp_reg' and it is trimmed from '56' to '55' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v:41]
+INFO: [Synth 8-3936] Found unconnected internal register 'grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84/sext_ln104_2_cast_reg_314_reg' and it is trimmed from '42' to '32' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:253]
+INFO: [Synth 8-3936] Found unconnected internal register 'grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84/sext_ln104_1_cast_reg_319_reg' and it is trimmed from '42' to '32' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:252]
+INFO: [Synth 8-3936] Found unconnected internal register 'grp_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1_fu_84/sext_ln104_cast_reg_324_reg' and it is trimmed from '42' to '32' bits. [/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.gen/sources_1/bd/video_pipe_hw/ipshared/1ed7/hdl/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v:254]
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module autowhitebalance_accel_control_s_axi.
 INFO: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module autowhitebalance_accel_control_s_axi.
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module autowhitebalance_accel_regslice_both__parameterized0__1.
@@ -651,7 +650,7 @@ INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused 
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[1]) is unused and will be removed from module autowhitebalance_accel_regslice_both__parameterized1__4.
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unused and will be removed from module autowhitebalance_accel_regslice_both__parameterized1__4.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 3920.453 ; gain = 452.266 ; free physical = 5613 ; free virtual = 20167
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 3912.715 ; gain = 445.031 ; free physical = 13457 ; free virtual = 23271
 ---------------------------------------------------------------------------------
  Sort Area is  mul_32ns_10ns_42_1_1_U49/tmp_product_0 : 0 0 : 1999 3921 : Used 1 time 0
  Sort Area is  mul_32ns_10ns_42_1_1_U49/tmp_product_0 : 0 1 : 1922 3921 : Used 1 time 0
@@ -665,19 +664,19 @@ Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elaps
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 4488.352 ; gain = 1020.164 ; free physical = 4522 ; free virtual = 19076
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:01 ; elapsed = 00:01:03 . Memory (MB): peak = 4488.613 ; gain = 1020.930 ; free physical = 12579 ; free virtual = 22421
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 4514.367 ; gain = 1046.180 ; free physical = 4450 ; free virtual = 19004
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 4514.629 ; gain = 1046.945 ; free physical = 12532 ; free virtual = 22374
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:19 . Memory (MB): peak = 4543.414 ; gain = 1075.227 ; free physical = 4285 ; free virtual = 18839
+Finished Technology Mapping : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 4542.676 ; gain = 1074.992 ; free physical = 12549 ; free virtual = 22391
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -695,37 +694,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 4698.227 ; gain = 1230.039 ; free physical = 4364 ; free virtual = 18920
+Finished IO Insertion : Time (s): cpu = 00:01:10 ; elapsed = 00:01:13 . Memory (MB): peak = 4698.488 ; gain = 1230.805 ; free physical = 12423 ; free virtual = 22265
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:21 ; elapsed = 00:01:24 . Memory (MB): peak = 4698.227 ; gain = 1230.039 ; free physical = 4360 ; free virtual = 18916
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:11 ; elapsed = 00:01:13 . Memory (MB): peak = 4698.488 ; gain = 1230.805 ; free physical = 12423 ; free virtual = 22265
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 4698.227 ; gain = 1230.039 ; free physical = 4358 ; free virtual = 18922
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 4698.488 ; gain = 1230.805 ; free physical = 12390 ; free virtual = 22232
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 4698.227 ; gain = 1230.039 ; free physical = 4356 ; free virtual = 18921
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 4698.488 ; gain = 1230.805 ; free physical = 12390 ; free virtual = 22232
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 4698.227 ; gain = 1230.039 ; free physical = 4338 ; free virtual = 18913
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 4698.488 ; gain = 1230.805 ; free physical = 12390 ; free virtual = 22232
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 4698.227 ; gain = 1230.039 ; free physical = 4330 ; free virtual = 18905
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 4698.488 ; gain = 1230.805 ; free physical = 12390 ; free virtual = 22232
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -770,49 +769,49 @@ Report Cell Usage:
 |10    |DSP_PREADD      |     8|
 |11    |DSP_PREADD_DATA |     8|
 |12    |LUT1            |   136|
-|13    |LUT2            |  1073|
-|14    |LUT3            |  1345|
+|13    |LUT2            |  1075|
+|14    |LUT3            |  1343|
 |15    |LUT4            |  1303|
-|16    |LUT5            |   439|
-|17    |LUT6            |   959|
+|16    |LUT5            |   443|
+|17    |LUT6            |   957|
 |18    |MUXCY           |    93|
 |19    |MUXF7           |    30|
 |20    |SRLC32E         |    10|
 |21    |XORCY           |    64|
-|22    |FDRE            |  5104|
+|22    |FDRE            |  5108|
 |23    |FDSE            |    57|
 +------+----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:22 ; elapsed = 00:01:25 . Memory (MB): peak = 4698.227 ; gain = 1230.039 ; free physical = 4330 ; free virtual = 18905
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 4698.488 ; gain = 1230.805 ; free physical = 12390 ; free virtual = 22232
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:12 ; elapsed = 00:01:16 . Memory (MB): peak = 4698.227 ; gain = 1176.875 ; free physical = 4339 ; free virtual = 18902
-Synthesis Optimization Complete : Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 4698.227 ; gain = 1230.039 ; free physical = 4339 ; free virtual = 18902
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 4698.488 ; gain = 1176.875 ; free physical = 12381 ; free virtual = 22233
+Synthesis Optimization Complete : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 4698.488 ; gain = 1230.805 ; free physical = 12381 ; free virtual = 22233
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.12 . Memory (MB): peak = 4698.227 ; gain = 0.000 ; free physical = 4496 ; free virtual = 19062
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.1 . Memory (MB): peak = 4698.488 ; gain = 0.000 ; free physical = 12548 ; free virtual = 22402
 INFO: [Netlist 29-17] Analyzing 363 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 4698.227 ; gain = 0.000 ; free physical = 11588 ; free virtual = 26164
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4698.488 ; gain = 0.000 ; free physical = 16053 ; free virtual = 25919
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 25 instances were transformed.
   (CARRY4) => CARRY8: 14 instances
   DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
   DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
 
-Synth Design complete | Checksum: ee8f9c3e
+Synth Design complete | Checksum: 9efd7659
 INFO: [Common 17-83] Releasing license: Synthesis
 288 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:41 ; elapsed = 00:01:41 . Memory (MB): peak = 4698.227 ; gain = 2230.469 ; free physical = 11588 ; free virtual = 26164
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3797.144; main = 3797.144; forked = 225.209
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5575.648; main = 4680.570; forked = 994.230
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4704.578 ; gain = 0.000 ; free physical = 11594 ; free virtual = 26170
+synth_design: Time (s): cpu = 00:01:28 ; elapsed = 00:01:28 . Memory (MB): peak = 4698.488 ; gain = 2230.234 ; free physical = 16053 ; free virtual = 25919
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 3987.994; main = 3987.994; forked = 274.507
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 5599.910; main = 4680.832; forked = 994.230
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4704.840 ; gain = 0.000 ; free physical = 16054 ; free virtual = 25921
 INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.runs/video_pipe_hw_autowhitebalance_acc_0_0_synth_1/video_pipe_hw_autowhitebalance_acc_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_pipe_hw_autowhitebalance_acc_0_0, cache-ID = 239d090a7be19149
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP video_pipe_hw_autowhitebalance_acc_0_0, cache-ID = 343250ab3efcb8bf
 INFO: [Coretcl 2-1174] Renamed 128 cell refs.
-Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4704.578 ; gain = 0.000 ; free physical = 11455 ; free virtual = 26168
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4704.840 ; gain = 0.000 ; free physical = 16042 ; free virtual = 25919
 INFO: [Common 17-1381] The checkpoint '/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/hw/video-pipe-hw-v4/video_pipe_hw.runs/video_pipe_hw_autowhitebalance_acc_0_0_synth_1/video_pipe_hw_autowhitebalance_acc_0_0.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file video_pipe_hw_autowhitebalance_acc_0_0_utilization_synth.rpt -pb video_pipe_hw_autowhitebalance_acc_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Sep 28 23:38:22 2026...
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 19:33:03 2026...

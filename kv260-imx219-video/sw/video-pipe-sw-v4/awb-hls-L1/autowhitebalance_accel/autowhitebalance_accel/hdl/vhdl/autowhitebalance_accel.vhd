@@ -15,7 +15,7 @@ generic (
 port (
     ap_clk : IN STD_LOGIC;
     ap_rst_n : IN STD_LOGIC;
-    s_axis_video_TDATA : IN STD_LOGIC_VECTOR (29 downto 0);
+    s_axis_video_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
     s_axis_video_TVALID : IN STD_LOGIC;
     s_axis_video_TREADY : OUT STD_LOGIC;
     s_axis_video_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
@@ -24,7 +24,7 @@ port (
     s_axis_video_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
     s_axis_video_TID : IN STD_LOGIC_VECTOR (0 downto 0);
     s_axis_video_TDEST : IN STD_LOGIC_VECTOR (0 downto 0);
-    m_axis_video_TDATA : OUT STD_LOGIC_VECTOR (29 downto 0);
+    m_axis_video_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
     m_axis_video_TVALID : OUT STD_LOGIC;
     m_axis_video_TREADY : IN STD_LOGIC;
     m_axis_video_TKEEP : OUT STD_LOGIC_VECTOR (3 downto 0);
@@ -59,7 +59,7 @@ architecture behav of autowhitebalance_accel is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "autowhitebalance_accel_autowhitebalance_accel,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.158000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=7814,HLS_SYN_LUT=9550,HLS_VERSION=2025_2}";
+    "autowhitebalance_accel_autowhitebalance_accel,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=1,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=7.158000,HLS_SYN_LAT=-1,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=7822,HLS_SYN_LUT=9550,HLS_VERSION=2025_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (5 downto 0) := "000001";
@@ -114,7 +114,7 @@ architecture behav of autowhitebalance_accel is
     signal p_ZL7igain_0_0_load_reg_404 : STD_LOGIC_VECTOR (31 downto 0);
     signal p_ZL7igain_0_1_load_reg_409 : STD_LOGIC_VECTOR (31 downto 0);
     signal p_ZL7igain_0_2_load_reg_414 : STD_LOGIC_VECTOR (31 downto 0);
-    signal grp_AWBKernel_fu_167_m_axis_video_TDATA : STD_LOGIC_VECTOR (29 downto 0);
+    signal grp_AWBKernel_fu_167_m_axis_video_TDATA : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_AWBKernel_fu_167_m_axis_video_TKEEP : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_AWBKernel_fu_167_m_axis_video_TSTRB : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_AWBKernel_fu_167_m_axis_video_TUSER : STD_LOGIC_VECTOR (0 downto 0);
@@ -156,7 +156,7 @@ architecture behav of autowhitebalance_accel is
     signal ap_CS_fsm_state6 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state6 : signal is "none";
     signal ap_block_state6_on_subcall_done : BOOLEAN;
-    signal m_axis_video_TDATA_reg : STD_LOGIC_VECTOR (29 downto 0);
+    signal m_axis_video_TDATA_reg : STD_LOGIC_VECTOR (31 downto 0);
     signal m_axis_video_TKEEP_reg : STD_LOGIC_VECTOR (3 downto 0);
     signal m_axis_video_TSTRB_reg : STD_LOGIC_VECTOR (3 downto 0);
     signal m_axis_video_TUSER_reg : STD_LOGIC_VECTOR (0 downto 0);
@@ -177,7 +177,7 @@ architecture behav of autowhitebalance_accel is
     signal ap_ST_fsm_state5_blk : STD_LOGIC;
     signal ap_ST_fsm_state6_blk : STD_LOGIC;
     signal regslice_both_s_axis_video_V_data_V_U_apdone_blk : STD_LOGIC;
-    signal s_axis_video_TDATA_int_regslice : STD_LOGIC_VECTOR (29 downto 0);
+    signal s_axis_video_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
     signal s_axis_video_TVALID_int_regslice : STD_LOGIC;
     signal s_axis_video_TREADY_int_regslice : STD_LOGIC;
     signal regslice_both_s_axis_video_V_data_V_U_ack_in : STD_LOGIC;
@@ -205,7 +205,7 @@ architecture behav of autowhitebalance_accel is
     signal s_axis_video_TDEST_int_regslice : STD_LOGIC_VECTOR (0 downto 0);
     signal regslice_both_s_axis_video_V_dest_V_U_vld_out : STD_LOGIC;
     signal regslice_both_s_axis_video_V_dest_V_U_ack_in : STD_LOGIC;
-    signal m_axis_video_TDATA_int_regslice : STD_LOGIC_VECTOR (29 downto 0);
+    signal m_axis_video_TDATA_int_regslice : STD_LOGIC_VECTOR (31 downto 0);
     signal m_axis_video_TVALID_int_regslice : STD_LOGIC;
     signal m_axis_video_TREADY_int_regslice : STD_LOGIC;
     signal regslice_both_m_axis_video_V_data_V_U_vld_out : STD_LOGIC;
@@ -237,14 +237,14 @@ architecture behav of autowhitebalance_accel is
 
     component autowhitebalance_accel_AWBKernel IS
     port (
-        s_axis_video_TDATA : IN STD_LOGIC_VECTOR (29 downto 0);
+        s_axis_video_TDATA : IN STD_LOGIC_VECTOR (31 downto 0);
         s_axis_video_TKEEP : IN STD_LOGIC_VECTOR (3 downto 0);
         s_axis_video_TSTRB : IN STD_LOGIC_VECTOR (3 downto 0);
         s_axis_video_TUSER : IN STD_LOGIC_VECTOR (0 downto 0);
         s_axis_video_TLAST : IN STD_LOGIC_VECTOR (0 downto 0);
         s_axis_video_TID : IN STD_LOGIC_VECTOR (0 downto 0);
         s_axis_video_TDEST : IN STD_LOGIC_VECTOR (0 downto 0);
-        m_axis_video_TDATA : OUT STD_LOGIC_VECTOR (29 downto 0);
+        m_axis_video_TDATA : OUT STD_LOGIC_VECTOR (31 downto 0);
         m_axis_video_TKEEP : OUT STD_LOGIC_VECTOR (3 downto 0);
         m_axis_video_TSTRB : OUT STD_LOGIC_VECTOR (3 downto 0);
         m_axis_video_TUSER : OUT STD_LOGIC_VECTOR (0 downto 0);
@@ -427,7 +427,7 @@ begin
 
     regslice_both_s_axis_video_V_data_V_U : component autowhitebalance_accel_regslice_both
     generic map (
-        DataWidth => 30)
+        DataWidth => 32)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,
@@ -525,7 +525,7 @@ begin
 
     regslice_both_m_axis_video_V_data_V_U : component autowhitebalance_accel_regslice_both
     generic map (
-        DataWidth => 30)
+        DataWidth => 32)
     port map (
         ap_clk => ap_clk,
         ap_rst => ap_rst_n_inv,

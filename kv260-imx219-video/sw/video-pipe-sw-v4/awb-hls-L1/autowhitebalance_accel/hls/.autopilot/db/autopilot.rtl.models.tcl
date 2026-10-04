@@ -5,14 +5,14 @@ set SynModuleInfo {
     }
   }
   {SRCNAME __hls_fptosi_float_i32.2 MODELNAME p_hls_fptosi_float_i32_2 RTLNAME autowhitebalance_accel_p_hls_fptosi_float_i32_2}
-  {SRCNAME {AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>_Pipeline_loop_start_hunt} MODELNAME AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt RTLNAME autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt
+  {SRCNAME {AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>_Pipeline_loop_start_hunt} MODELNAME AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt RTLNAME autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt
     SUBMODULES {
       {MODELNAME autowhitebalance_accel_flow_control_loop_pipe_sequential_init RTLNAME autowhitebalance_accel_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME autowhitebalance_accel_flow_control_loop_pipe_sequential_init_U}
     }
   }
-  {SRCNAME {AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>_Pipeline_loop_col_zxi2mat} MODELNAME AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat RTLNAME autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat}
-  {SRCNAME {AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>_Pipeline_loop_last_hunt} MODELNAME AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt RTLNAME autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt}
-  {SRCNAME {AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>} MODELNAME AXIvideo2xfMat_30_20_2160_3840_1_2_s RTLNAME autowhitebalance_accel_AXIvideo2xfMat_30_20_2160_3840_1_2_s}
+  {SRCNAME {AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>_Pipeline_loop_col_zxi2mat} MODELNAME AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat RTLNAME autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat}
+  {SRCNAME {AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>_Pipeline_loop_last_hunt} MODELNAME AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt RTLNAME autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt}
+  {SRCNAME {AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>} MODELNAME AXIvideo2xfMat_32_20_2160_3840_1_2_s RTLNAME autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s}
   {SRCNAME AWBChannelGainKernel_Pipeline_Col_Loop MODELNAME AWBChannelGainKernel_Pipeline_Col_Loop RTLNAME autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop
     SUBMODULES {
       {MODELNAME autowhitebalance_accel_mul_32ns_10ns_42_1_1 RTLNAME autowhitebalance_accel_mul_32ns_10ns_42_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
@@ -40,8 +40,8 @@ set SynModuleInfo {
     }
   }
   {SRCNAME {AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>} MODELNAME AWBGainUpdate_20_20_2160_3840_1_0_2_2_s RTLNAME autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s}
-  {SRCNAME {xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>_Pipeline_loop_col_mat2axi} MODELNAME xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi RTLNAME autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi}
-  {SRCNAME {xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>} MODELNAME xfMat2AXIvideo_30_20_2160_3840_1_2_0_s RTLNAME autowhitebalance_accel_xfMat2AXIvideo_30_20_2160_3840_1_2_0_s}
+  {SRCNAME {xfMat2AXIvideo<32, 20, 2160, 3840, 1, 2, 0>_Pipeline_loop_col_mat2axi} MODELNAME xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi RTLNAME autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi}
+  {SRCNAME {xfMat2AXIvideo<32, 20, 2160, 3840, 1, 2, 0>} MODELNAME xfMat2AXIvideo_32_20_2160_3840_1_2_0_s RTLNAME autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s}
   {SRCNAME AWBKernel MODELNAME AWBKernel RTLNAME autowhitebalance_accel_AWBKernel
     SUBMODULES {
       {MODELNAME autowhitebalance_accel_fifo_w32_d2_S RTLNAME autowhitebalance_accel_fifo_w32_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME mul_loc_channel_U}
@@ -50,7 +50,7 @@ set SynModuleInfo {
       {MODELNAME autowhitebalance_accel_fifo_w30_d2_S RTLNAME autowhitebalance_accel_fifo_w30_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME impop_data_U}
       {MODELNAME autowhitebalance_accel_fifo_w30_d2_S RTLNAME autowhitebalance_accel_fifo_w30_d2_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME out_mat_data_U}
       {MODELNAME autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0 RTLNAME autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_U}
-      {MODELNAME autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0 RTLNAME autowhitebalance_accel_start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_xfMat2AXIvideo_30_20_2160_3840_1_2_0_U0_U}
+      {MODELNAME autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0 RTLNAME autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_U}
     }
   }
   {SRCNAME autowhitebalance_accel MODELNAME autowhitebalance_accel RTLNAME autowhitebalance_accel IS_TOP 1

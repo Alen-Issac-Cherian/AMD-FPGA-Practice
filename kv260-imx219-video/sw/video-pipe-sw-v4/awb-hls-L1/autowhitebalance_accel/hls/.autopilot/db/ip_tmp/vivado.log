@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sun Oct  4 18:49:56 2026
+# Process ID         : 33425
+# Current directory  : /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/.autopilot/db/ip_tmp
+# Command line       : vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file           : /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/.autopilot/db/ip_tmp/vivado.log
+# Journal file       : /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/.autopilot/db/ip_tmp/vivado.jou
+# Running On         : alen-HP-Pavilion-Laptop-14-ec0xxx
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.5 LTS
+# Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics
+# CPU Frequency      : 4042.771 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 32934 MB
+# Swap memory        : 8000 MB
+# Total Virtual      : 40934 MB
+# Available Virtual  : 29495 MB
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace
+create_project: Time (s): cpu = 00:00:41 ; elapsed = 00:00:07 . Memory (MB): peak = 1877.578 ; gain = 391.059 ; free physical = 12384 ; free virtual = 27553
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/alen/AMD-Xilinx/2025.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip'...
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  4 18:50:07 2026...

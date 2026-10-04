@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'autowhitebalance_accel'
 ================================================================
-* Date:           Thu Oct  1 01:57:29 2026
+* Date:           Sun Oct  4 18:41:40 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        autowhitebalance_accel
@@ -56,12 +56,12 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|       4|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        0|    11|    7225|    9318|    0|
+|Instance         |        0|    11|    7231|    9318|    0|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       0|     228|    -|
-|Register         |        -|     -|     589|       -|    -|
+|Register         |        -|     -|     591|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|    11|    7814|    9550|    0|
+|Total            |        0|    11|    7822|    9550|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -73,10 +73,10 @@
     +----------------------+---------------+---------+----+------+------+-----+
     |       Instance       |     Module    | BRAM_18K| DSP|  FF  |  LUT | URAM|
     +----------------------+---------------+---------+----+------+------+-----+
-    |grp_AWBKernel_fu_167  |AWBKernel      |        0|  11|  6923|  8830|    0|
+    |grp_AWBKernel_fu_167  |AWBKernel      |        0|  11|  6929|  8830|    0|
     |control_s_axi_U       |control_s_axi  |        0|   0|   302|   488|    0|
     +----------------------+---------------+---------+----+------+------+-----+
-    |Total                 |               |        0|  11|  7225|  9318|    0|
+    |Total                 |               |        0|  11|  7231|  9318|    0|
     +----------------------+---------------+---------+----+------+------+-----+
 
     * DSP: 
@@ -107,7 +107,7 @@
     |grp_AWBKernel_fu_167_gain1_0_val1    |  14|          3|   32|         96|
     |grp_AWBKernel_fu_167_gain1_1_val2    |  14|          3|   32|         96|
     |grp_AWBKernel_fu_167_gain1_2_val3    |  14|          3|   32|         96|
-    |m_axis_video_TDATA_int_regslice      |   9|          2|   30|         60|
+    |m_axis_video_TDATA_int_regslice      |   9|          2|   32|         64|
     |m_axis_video_TDEST_int_regslice      |   9|          2|    1|          2|
     |m_axis_video_TID_int_regslice        |   9|          2|    1|          2|
     |m_axis_video_TKEEP_int_regslice      |   9|          2|    4|          8|
@@ -123,7 +123,7 @@
     |p_ZL7igain_1_2_loc_fu_126            |   9|          2|   32|         64|
     |s_axis_video_TREADY_int_regslice     |   9|          2|    1|          2|
     +-------------------------------------+----+-----------+-----+-----------+
-    |Total                                | 228|         49|  334|        770|
+    |Total                                | 228|         49|  336|        774|
     +-------------------------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -138,7 +138,7 @@
     |flag                                       |   1|   0|    1|          0|
     |flag_load_reg_391                          |   1|   0|    1|          0|
     |grp_AWBKernel_fu_167_ap_start_reg          |   1|   0|    1|          0|
-    |m_axis_video_TDATA_reg                     |  30|   0|   30|          0|
+    |m_axis_video_TDATA_reg                     |  32|   0|   32|          0|
     |m_axis_video_TDEST_reg                     |   1|   0|    1|          0|
     |m_axis_video_TID_reg                       |   1|   0|    1|          0|
     |m_axis_video_TKEEP_reg                     |   4|   0|    4|          0|
@@ -162,7 +162,7 @@
     |p_ZL7igain_1_2_loc_fu_126                  |  32|   0|   32|          0|
     |thresh_read_reg_334                        |  32|   0|   32|          0|
     +-------------------------------------------+----+----+-----+-----------+
-    |Total                                      | 589|   0|  589|          0|
+    |Total                                      | 591|   0|  591|          0|
     +-------------------------------------------+----+----+-----+-----------+
 
 
@@ -194,7 +194,7 @@
 |ap_clk                 |   in|    1|  ap_ctrl_hs|  autowhitebalance_accel|  return value|
 |ap_rst_n               |   in|    1|  ap_ctrl_hs|  autowhitebalance_accel|  return value|
 |interrupt              |  out|    1|  ap_ctrl_hs|  autowhitebalance_accel|  return value|
-|s_axis_video_TDATA     |   in|   30|        axis|   s_axis_video_V_data_V|       pointer|
+|s_axis_video_TDATA     |   in|   32|        axis|   s_axis_video_V_data_V|       pointer|
 |s_axis_video_TVALID    |   in|    1|        axis|   s_axis_video_V_dest_V|       pointer|
 |s_axis_video_TREADY    |  out|    1|        axis|   s_axis_video_V_dest_V|       pointer|
 |s_axis_video_TDEST     |   in|    1|        axis|   s_axis_video_V_dest_V|       pointer|
@@ -203,7 +203,7 @@
 |s_axis_video_TUSER     |   in|    1|        axis|   s_axis_video_V_user_V|       pointer|
 |s_axis_video_TLAST     |   in|    1|        axis|   s_axis_video_V_last_V|       pointer|
 |s_axis_video_TID       |   in|    1|        axis|     s_axis_video_V_id_V|       pointer|
-|m_axis_video_TDATA     |  out|   30|        axis|   m_axis_video_V_data_V|       pointer|
+|m_axis_video_TDATA     |  out|   32|        axis|   m_axis_video_V_data_V|       pointer|
 |m_axis_video_TVALID    |  out|    1|        axis|   m_axis_video_V_dest_V|       pointer|
 |m_axis_video_TREADY    |   in|    1|        axis|   m_axis_video_V_dest_V|       pointer|
 |m_axis_video_TDEST     |  out|    1|        axis|   m_axis_video_V_dest_V|       pointer|
@@ -267,16 +267,16 @@ ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%p_ZL7igain_1_2_loc = alloca i64 1"
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%p_ZL7igain_1_1_loc = alloca i64 1"   --->   Operation 16 'alloca' 'p_ZL7igain_1_1_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%p_ZL7igain_1_0_loc = alloca i64 1"   --->   Operation 17 'alloca' 'p_ZL7igain_1_0_loc' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%spectopmodule_ln68 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_12" [xf_autowhitebalance_accel.cpp:68]   --->   Operation 18 'spectopmodule' 'spectopmodule_ln68' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_5, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i30 %s_axis_video_V_data_V"   --->   Operation 20 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_5, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 19 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %s_axis_video_V_data_V"   --->   Operation 20 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %s_axis_video_V_keep_V"   --->   Operation 21 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %s_axis_video_V_strb_V"   --->   Operation 22 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_user_V"   --->   Operation 23 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_last_V"   --->   Operation 24 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_id_V"   --->   Operation 25 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %s_axis_video_V_dest_V"   --->   Operation 26 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_5, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i30 %m_axis_video_V_data_V"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_5, i32 1, i32 1, void @empty_15, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 27 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %m_axis_video_V_data_V"   --->   Operation 28 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %m_axis_video_V_keep_V"   --->   Operation 29 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i4 %m_axis_video_V_strb_V"   --->   Operation 30 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i1 %m_axis_video_V_user_V"   --->   Operation 31 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
@@ -306,8 +306,8 @@ ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface 
 ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %outputMax, void @empty_21, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_25, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_24, i32 0, i32 0, void @empty_25, i32 0, i32 0, void @empty_23, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0, void @empty_25, void @empty_25, i32 0, i32 0, i32 0, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 57 [1/1] (0.00ns)   --->   "%flag_load = load i1 %flag" [xf_autowhitebalance_accel.cpp:95]   --->   Operation 57 'load' 'flag_load' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_16" [xf_autowhitebalance_accel.cpp:95]   --->   Operation 58 'specaxissidechannel' 'specaxissidechannel_ln95' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_14" [xf_autowhitebalance_accel.cpp:95]   --->   Operation 59 'specaxissidechannel' 'specaxissidechannel_ln95' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 58 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_16" [xf_autowhitebalance_accel.cpp:95]   --->   Operation 58 'specaxissidechannel' 'specaxissidechannel_ln95' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 59 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln95 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_14" [xf_autowhitebalance_accel.cpp:95]   --->   Operation 59 'specaxissidechannel' 'specaxissidechannel_ln95' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 60 [1/1] (0.00ns)   --->   "%p_ZL7igain_1_0_load = load i32 %p_ZL7igain_1_0" [xf_autowhitebalance_accel.cpp:102]   --->   Operation 60 'load' 'p_ZL7igain_1_0_load' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 61 [1/1] (0.00ns)   --->   "%store_ln95 = store i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_0_loc" [xf_autowhitebalance_accel.cpp:95]   --->   Operation 61 'store' 'store_ln95' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 62 [1/1] (0.00ns)   --->   "%p_ZL7igain_1_1_load = load i32 %p_ZL7igain_1_1" [xf_autowhitebalance_accel.cpp:102]   --->   Operation 62 'load' 'p_ZL7igain_1_1_load' <Predicate = true> <Delay = 0.00>
@@ -323,10 +323,10 @@ ST_1 : Operation 71 [1/1] (0.00ns)   --->   "%store_ln95 = store i32 %p_ZL7igain
 ST_1 : Operation 72 [1/1] (0.00ns)   --->   "%br_ln95 = br i1 %flag_load, void %if.then, void %if.else" [xf_autowhitebalance_accel.cpp:95]   --->   Operation 72 'br' 'br_ln95' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 7.01>
-ST_2 : Operation 73 [2/2] (7.01ns)   --->   "%call_ln96 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_0_0_loc, i32 %p_ZL7igain_0_1_loc, i32 %p_ZL7igain_0_2_loc, i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_1_load, i32 %p_ZL7igain_1_2_load, i32 %thresh_read" [xf_autowhitebalance_accel.cpp:96]   --->   Operation 73 'call' 'call_ln96' <Predicate = true> <Delay = 7.01> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 73 [2/2] (7.01ns)   --->   "%call_ln96 = call void @AWBKernel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_0_0_loc, i32 %p_ZL7igain_0_1_loc, i32 %p_ZL7igain_0_2_loc, i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_1_load, i32 %p_ZL7igain_1_2_load, i32 %thresh_read" [xf_autowhitebalance_accel.cpp:96]   --->   Operation 73 'call' 'call_ln96' <Predicate = true> <Delay = 7.01> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 74 [1/2] (0.00ns)   --->   "%call_ln96 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_0_0_loc, i32 %p_ZL7igain_0_1_loc, i32 %p_ZL7igain_0_2_loc, i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_1_load, i32 %p_ZL7igain_1_2_load, i32 %thresh_read" [xf_autowhitebalance_accel.cpp:96]   --->   Operation 74 'call' 'call_ln96' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 74 [1/2] (0.00ns)   --->   "%call_ln96 = call void @AWBKernel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_0_0_loc, i32 %p_ZL7igain_0_1_loc, i32 %p_ZL7igain_0_2_loc, i32 %p_ZL7igain_1_0_load, i32 %p_ZL7igain_1_1_load, i32 %p_ZL7igain_1_2_load, i32 %thresh_read" [xf_autowhitebalance_accel.cpp:96]   --->   Operation 74 'call' 'call_ln96' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.42>
 ST_4 : Operation 75 [1/1] (0.00ns)   --->   "%p_ZL7igain_0_2_loc_load = load i32 %p_ZL7igain_0_2_loc" [xf_autowhitebalance_accel.cpp:96]   --->   Operation 75 'load' 'p_ZL7igain_0_2_loc_load' <Predicate = (!flag_load)> <Delay = 0.00>
@@ -348,10 +348,10 @@ ST_4 : Operation 90 [1/1] (0.00ns)   --->   "%store_ln0 = store i1 %storemerge, 
 ST_4 : Operation 91 [1/1] (0.00ns)   --->   "%ret_ln107 = ret" [xf_autowhitebalance_accel.cpp:107]   --->   Operation 91 'ret' 'ret_ln107' <Predicate = true> <Delay = 0.00>
 
 State 5 <SV = 1> <Delay = 7.01>
-ST_5 : Operation 92 [2/2] (7.01ns)   --->   "%call_ln102 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_1_0_loc, i32 %p_ZL7igain_1_1_loc, i32 %p_ZL7igain_1_2_loc, i32 %p_ZL7igain_0_0_load, i32 %p_ZL7igain_0_1_load, i32 %p_ZL7igain_0_2_load, i32 %thresh_read" [xf_autowhitebalance_accel.cpp:102]   --->   Operation 92 'call' 'call_ln102' <Predicate = true> <Delay = 7.01> <CoreType = "Generic">   --->   Generic Core
+ST_5 : Operation 92 [2/2] (7.01ns)   --->   "%call_ln102 = call void @AWBKernel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_1_0_loc, i32 %p_ZL7igain_1_1_loc, i32 %p_ZL7igain_1_2_loc, i32 %p_ZL7igain_0_0_load, i32 %p_ZL7igain_0_1_load, i32 %p_ZL7igain_0_2_load, i32 %thresh_read" [xf_autowhitebalance_accel.cpp:102]   --->   Operation 92 'call' 'call_ln102' <Predicate = true> <Delay = 7.01> <CoreType = "Generic">   --->   Generic Core
 
 State 6 <SV = 2> <Delay = 0.00>
-ST_6 : Operation 93 [1/2] (0.00ns)   --->   "%call_ln102 = call void @AWBKernel, i30 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i30 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_1_0_loc, i32 %p_ZL7igain_1_1_loc, i32 %p_ZL7igain_1_2_loc, i32 %p_ZL7igain_0_0_load, i32 %p_ZL7igain_0_1_load, i32 %p_ZL7igain_0_2_load, i32 %thresh_read" [xf_autowhitebalance_accel.cpp:102]   --->   Operation 93 'call' 'call_ln102' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 93 [1/2] (0.00ns)   --->   "%call_ln102 = call void @AWBKernel, i32 %s_axis_video_V_data_V, i4 %s_axis_video_V_keep_V, i4 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i32 %m_axis_video_V_data_V, i4 %m_axis_video_V_keep_V, i4 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i12 %empty_47, i12 %empty, i32 %p_ZL7igain_1_0_loc, i32 %p_ZL7igain_1_1_loc, i32 %p_ZL7igain_1_2_loc, i32 %p_ZL7igain_0_0_load, i32 %p_ZL7igain_0_1_load, i32 %p_ZL7igain_0_2_load, i32 %thresh_read" [xf_autowhitebalance_accel.cpp:102]   --->   Operation 93 'call' 'call_ln102' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 
 ============================================================
@@ -1131,14 +1131,14 @@ call_ln102               (call               ) [ 0000000]
 <comp id="167" class="1004" name="grp_AWBKernel_fu_167">
 <pin_list>
 <pin id="168" dir="0" index="0" bw="0" slack="0"/>
-<pin id="169" dir="0" index="1" bw="30" slack="0"/>
+<pin id="169" dir="0" index="1" bw="32" slack="0"/>
 <pin id="170" dir="0" index="2" bw="4" slack="0"/>
 <pin id="171" dir="0" index="3" bw="4" slack="0"/>
 <pin id="172" dir="0" index="4" bw="1" slack="0"/>
 <pin id="173" dir="0" index="5" bw="1" slack="0"/>
 <pin id="174" dir="0" index="6" bw="1" slack="0"/>
 <pin id="175" dir="0" index="7" bw="1" slack="0"/>
-<pin id="176" dir="0" index="8" bw="30" slack="0"/>
+<pin id="176" dir="0" index="8" bw="32" slack="0"/>
 <pin id="177" dir="0" index="9" bw="4" slack="0"/>
 <pin id="178" dir="0" index="10" bw="4" slack="0"/>
 <pin id="179" dir="0" index="11" bw="1" slack="0"/>
@@ -1877,7 +1877,7 @@ call_ln102               (call               ) [ 0000000]
 |----------|-------------------------|---------|---------|---------|---------|
 | Operation|     Functional Unit     |   DSP   |  Delay  |    FF   |   LUT   |
 |----------|-------------------------|---------|---------|---------|---------|
-|   call   |   grp_AWBKernel_fu_167  |    11   |  13.762 |   7384  |   5903  |
+|   call   |   grp_AWBKernel_fu_167  |    11   |  13.762 |   7390  |   5903  |
 |----------|-------------------------|---------|---------|---------|---------|
 |          |  cols_read_read_fu_138  |    0    |    0    |    0    |    0    |
 |   read   |  rows_read_read_fu_144  |    0    |    0    |    0    |    0    |
@@ -1886,7 +1886,7 @@ call_ln102               (call               ) [ 0000000]
 |   trunc  |       empty_fu_208      |    0    |    0    |    0    |    0    |
 |          |     empty_47_fu_212     |    0    |    0    |    0    |    0    |
 |----------|-------------------------|---------|---------|---------|---------|
-|   Total  |                         |    11   |  13.762 |   7384  |   5903  |
+|   Total  |                         |    11   |  13.762 |   7390  |   5903  |
 |----------|-------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -1931,10 +1931,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           |   DSP  |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   11   |   13   |  7384  |  5903  |
+|  Function |   11   |   13   |  7390  |  5903  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    1   |    0   |   27   |
 |  Register |    -   |    -   |   346  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   11   |   15   |  7730  |  5930  |
+|   Total   |   11   |   15   |  7736  |  5930  |
 +-----------+--------+--------+--------+--------+

@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'autowhitebalance_accel'
 ================================================================
 + General Information: 
-    * Date:           Thu Oct  1 01:57:29 2026
+    * Date:           Sun Oct  4 18:41:40 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        autowhitebalance_accel
     * Solution:       hls (Vivado IP Flow Target)
@@ -17,16 +17,16 @@
 |                                Modules                               | Issue|               | Iteration|          | Trip |          |        Latency       |      |      |          |           |           |     |
 |                                & Loops                               | Type | Violation Type|  Latency | Interval | Count| Pipelined| (cycles) |    (ns)   | Slack| BRAM |    DSP   |     FF    |    LUT    | URAM|
 +----------------------------------------------------------------------+------+---------------+----------+----------+------+----------+----------+-----------+------+------+----------+-----------+-----------+-----+
-|+ autowhitebalance_accel                                              |     -|              -|         -|  16606571|     -|        no|  16606570|  1.661e+08|  0.14|     -|  11 (~0%)|  7814 (3%)|  9554 (8%)|    -|
-| + AWBKernel*                                                         |     -|              -|         -|   8316007|     -|  dataflow|  16606567|  1.661e+08|  0.14|     -|  11 (~0%)|  6923 (2%)|  8834 (7%)|    -|
+|+ autowhitebalance_accel                                              |     -|              -|         -|  16606571|     -|        no|  16606570|  1.661e+08|  0.14|     -|  11 (~0%)|  7822 (3%)|  9554 (8%)|    -|
+| + AWBKernel*                                                         |     -|              -|         -|   8316007|     -|  dataflow|  16606567|  1.661e+08|  0.14|     -|  11 (~0%)|  6929 (2%)|  8834 (7%)|    -|
 |  + AWBKernel_Block_entry_proc                                        |     -|              -|         -|         2|     -|        no|         2|     20.000|  0.28|     -|   3 (~0%)|  132 (~0%)|  166 (~0%)|    -|
-|  + AXIvideo2xfMat_30_20_2160_3840_1_2_s                              |     -|              -|         -|   8316006|     -|        no|   8316006|  8.316e+07|  5.25|     -|         -|  139 (~0%)|  389 (~0%)|    -|
-|   + AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_start_hunt      |     -|              -|         -|         -|     -|       yes|         3|     30.000|  6.45|     -|         -|    4 (~0%)|   47 (~0%)|    -|
+|  + AXIvideo2xfMat_32_20_2160_3840_1_2_s                              |     -|              -|         -|   8316006|     -|        no|   8316006|  8.316e+07|  5.25|     -|         -|  143 (~0%)|  389 (~0%)|    -|
+|   + AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt      |     -|              -|         -|         -|     -|       yes|         3|     30.000|  6.45|     -|         -|    4 (~0%)|   47 (~0%)|    -|
 |    o loop_start_hunt                                                 |     -|              -|         1|         1|     1|       yes|         1|     10.000|  7.30|     -|         -|          -|          -|    -|
 |   o loop_row_axi2mat                                                 |     -|              -|      3850|         -|  2160|        no|   8316000|  8.316e+07|  7.30|     -|         -|          -|          -|    -|
-|    + AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat    |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  5.46|     -|         -|   52 (~0%)|  160 (~0%)|    -|
+|    + AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat    |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  5.46|     -|         -|   54 (~0%)|  160 (~0%)|    -|
 |     o loop_col_zxi2mat                                               |     -|              -|         3|         1|  3840|       yes|      3841|  3.841e+04|  7.30|     -|         -|          -|          -|    -|
-|    + AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_last_hunt      |     -|              -|         -|         -|     -|       yes|         3|     30.000|  6.45|     -|         -|    3 (~0%)|   43 (~0%)|    -|
+|    + AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt      |     -|              -|         -|         -|     -|       yes|         3|     30.000|  6.45|     -|         -|    3 (~0%)|   43 (~0%)|    -|
 |     o loop_last_hunt                                                 |     -|              -|         1|         1|     1|       yes|         1|     10.000|  7.30|     -|         -|          -|          -|    -|
 |  + p_hls_fptosi_float_i32_2                                          |     -|              -|         -|         1|     -|        no|         1|     10.000|  1.00|     -|         -|   67 (~0%)|  657 (~0%)|    -|
 |  + AWBChannelGain_20_20_2160_3840_1_0_2_2_s                          |     -|              -|         -|   8305497|     -|        no|   8305497|  8.305e+07|  0.14|     -|   2 (~0%)|  5660 (2%)|  6599 (5%)|    -|
@@ -40,9 +40,9 @@
 |   o VITIS_LOOP_85_1                                                  |     -|              -|      3845|         -|  2160|        no|   8305200|  8.305e+07|  7.30|     -|         -|          -|          -|    -|
 |    + AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1         |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  0.72|     -|   6 (~0%)|  173 (~0%)|  273 (~0%)|    -|
 |     o ColLoop1                                                       |     -|              -|         3|         1|  3840|       yes|      3841|  3.841e+04|  7.30|     -|         -|          -|          -|    -|
-|  + xfMat2AXIvideo_30_20_2160_3840_1_2_0_s                            |     -|              -|         -|   8305201|     -|        no|   8305201|  8.305e+07|  4.97|     -|         -|  115 (~0%)|  294 (~0%)|    -|
+|  + xfMat2AXIvideo_32_20_2160_3840_1_2_0_s                            |     -|              -|         -|   8305201|     -|        no|   8305201|  8.305e+07|  4.96|     -|         -|  117 (~0%)|  294 (~0%)|    -|
 |   o loop_row_mat2axi                                                 |     -|              -|      3845|         -|  2160|        no|   8305200|  8.305e+07|  7.30|     -|         -|          -|          -|    -|
-|    + xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi  |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  4.97|     -|         -|   19 (~0%)|  132 (~0%)|    -|
+|    + xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi  |     -|              -|         -|         -|     -|       yes|      3843|  3.843e+04|  4.96|     -|         -|   19 (~0%)|  132 (~0%)|    -|
 |     o loop_col_mat2axi                                               |     -|              -|         2|         1|  3840|       yes|      3841|  3.841e+04|  7.30|     -|         -|          -|          -|    -|
 +----------------------------------------------------------------------+------+---------------+----------+----------+------+----------+----------+-----------+------+------+----------+-----------+-----------+-----+
     Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
@@ -79,8 +79,8 @@
 +--------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
 | Interface    | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
 +--------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
-| m_axis_video | out       | both          | 30    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
-| s_axis_video | in        | both          | 30    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
+| m_axis_video | out       | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
+| s_axis_video | in        | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
 +--------------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
 
 * TOP LEVEL CONTROL
@@ -101,8 +101,8 @@
 +--------------+-----------+------------------------------------------------------------------------------+
 | Argument     | Direction | Datatype                                                                     |
 +--------------+-----------+------------------------------------------------------------------------------+
-| s_axis_video | in        | stream<hls::axis<ap_uint<30>, 1UL, 1UL, 1UL, (unsigned char)'8', false>, 0>& |
-| m_axis_video | out       | stream<hls::axis<ap_uint<30>, 1UL, 1UL, 1UL, (unsigned char)'8', false>, 0>& |
+| s_axis_video | in        | stream<hls::axis<ap_uint<32>, 1UL, 1UL, 1UL, (unsigned char)'8', false>, 0>& |
+| m_axis_video | out       | stream<hls::axis<ap_uint<32>, 1UL, 1UL, 1UL, (unsigned char)'8', false>, 0>& |
 | thresh       | in        | float                                                                        |
 | rows         | in        | int                                                                          |
 | cols         | in        | int                                                                          |
@@ -144,10 +144,10 @@
 |  + AWBKernel                                                         | 11  |        |                |           |                        |         |
 |   + AWBKernel_Block_entry_proc                                       | 3   |        |                |           |                        |         |
 |     fmul_32ns_32ns_32_3_max_dsp_1_U1                                 | 3   |        | mul_out        | fmul      | maxdsp                 | 2       |
-|   + AXIvideo2xfMat_30_20_2160_3840_1_2_s                             | 0   |        |                |           |                        |         |
+|   + AXIvideo2xfMat_32_20_2160_3840_1_2_s                             | 0   |        |                |           |                        |         |
 |     icmp_ln130_fu_250_p2                                             |     |        | icmp_ln130     | seteq     | auto                   | 0       |
 |     i_4_fu_255_p2                                                    |     |        | i_4            | add       | fabric                 | 0       |
-|    + AXIvideo2xfMat_30_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat    | 0   |        |                |           |                        |         |
+|    + AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat    | 0   |        |                |           |                        |         |
 |      icmp_ln134_fu_203_p2                                            |     |        | icmp_ln134     | seteq     | auto                   | 0       |
 |      j_4_fu_209_p2                                                   |     |        | j_4            | add       | fabric                 | 0       |
 |      or_ln140_fu_220_p2                                              |     |        | or_ln140       | or        | auto                   | 0       |
@@ -252,14 +252,14 @@
 |      mul_32s_10ns_42_1_1_U98                                         | 2   |        | mul_ln104_2    | mul       | auto                   | 0       |
 |      icmp_ln45_2_fu_275_p2                                           |     |        | icmp_ln45_2    | setgt     | auto                   | 0       |
 |      select_ln45_2_fu_291_p3                                         |     |        | select_ln45_2  | select    | auto_sel               | 0       |
-|   + xfMat2AXIvideo_30_20_2160_3840_1_2_0_s                           | 0   |        |                |           |                        |         |
+|   + xfMat2AXIvideo_32_20_2160_3840_1_2_0_s                           | 0   |        |                |           |                        |         |
 |     add_ln216_fu_124_p2                                              |     |        | add_ln216      | add       | fabric                 | 0       |
 |     icmp_ln202_fu_138_p2                                             |     |        | icmp_ln202     | seteq     | auto                   | 0       |
 |     i_2_fu_143_p2                                                    |     |        | i_2            | add       | fabric                 | 0       |
-|    + xfMat2AXIvideo_30_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi  | 0   |        |                |           |                        |         |
-|      icmp_ln204_fu_156_p2                                            |     |        | icmp_ln204     | seteq     | auto                   | 0       |
-|      j_2_fu_162_p2                                                   |     |        | j_2            | add       | fabric                 | 0       |
-|      icmp_ln216_fu_168_p2                                            |     |        | icmp_ln216     | seteq     | auto                   | 0       |
+|    + xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi  | 0   |        |                |           |                        |         |
+|      icmp_ln204_fu_155_p2                                            |     |        | icmp_ln204     | seteq     | auto                   | 0       |
+|      j_2_fu_161_p2                                                   |     |        | j_2            | add       | fabric                 | 0       |
+|      icmp_ln216_fu_167_p2                                            |     |        | icmp_ln216     | seteq     | auto                   | 0       |
 +----------------------------------------------------------------------+-----+--------+----------------+-----------+------------------------+---------+
 
 

@@ -152,12 +152,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: ./xf_infra.hpp, Line: 156, Column: 17 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
 Args:            
   - Callee:          'void xf::cv::Mat<20, 2160, 3840, 1, 2>::write<2, (void*)0>(int, ap_uint<30>)'
     DebugLoc:        { File: ./xf_structs.hpp, Line: 553, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
+  - Caller:          'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -256,12 +256,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: ./xf_infra.hpp, Line: 249, Column: 52 }
-Function:        _ZN2xf2cv14xfMat2AXIvideoILi30ELi20ELi2160ELi3840ELi1ELi2ELi0EEEiRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERN3hls6streamINS5_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEE
+Function:        _ZN2xf2cv14xfMat2AXIvideoILi32ELi20ELi2160ELi3840ELi1ELi2ELi0EEEiRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERN3hls6streamINS5_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEE
 Args:            
   - Callee:          'ap_uint<30> xf::cv::Mat<20, 2160, 3840, 1, 2>::read<2, (void*)0>(int)'
     DebugLoc:        { File: ./xf_structs.hpp, Line: 542, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'int xf::cv::xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Caller:          'int xf::cv::xfMat2AXIvideo<32, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 182, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -269,13 +269,13 @@ Args:
 Pass:            inline
 Name:            AlwaysInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 42, Column: 52 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Inlining function '''
   - Callee:          'xf::cv::Mat<20, 2160, 3840, 1, 2>::Mat(int, int)'
     DebugLoc:        { File: ./xf_structs.hpp, Line: 671, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ''''
 ...
@@ -283,12 +283,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 65, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
-  - Callee:          'int xf::cv::xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Callee:          'int xf::cv::xfMat2AXIvideo<32, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 182, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -296,12 +296,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 62, Column: 9 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          'void xf::cv::AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&, int, int*)'
     DebugLoc:        { File: ./xf_autowhitebalance.hpp, Line: 1489, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -309,12 +309,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 60, Column: 9 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          'void xf::cv::AWBChannelGain<20, 20, 2160, 3840, 1, 0, 2, 2>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&, int, int*)'
     DebugLoc:        { File: ./xf_autowhitebalance.hpp, Line: 1506, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -322,13 +322,13 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 49, Column: 32 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          __hls_fptosi_float_i32
     DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
                        Line: 51, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -336,12 +336,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 50, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
-  - Callee:          'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
+  - Callee:          'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -349,12 +349,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 96, Column: 9 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
-  - Callee:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Callee:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'autowhitebalance_accel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, float, int, int, float, float, float, float)'
+  - Caller:          'autowhitebalance_accel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, float, int, int, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 76, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -362,7 +362,7 @@ Args:
 Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: ./xf_structs.hpp, Line: 469, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Adding '''
   - Name:            impop
@@ -373,7 +373,7 @@ Args:
 Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: ./xf_structs.hpp, Line: 469, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Adding '''
   - Name:            out_mat
@@ -384,7 +384,7 @@ Args:
 Pass:            reflow-reg2mem-ssa
 Name:            DisaggrReason
 DebugLoc:        { File: ./xf_structs.hpp, Line: 469, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Adding '''
   - Name:            in_mat
@@ -395,7 +395,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: ./xf_structs.hpp, Line: 469, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Adding '''
   - Name:            impop
@@ -406,7 +406,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: ./xf_structs.hpp, Line: 469, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Adding '''
   - Name:            out_mat
@@ -417,7 +417,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrReason
 DebugLoc:        { File: ./xf_structs.hpp, Line: 469, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Adding '''
   - Name:            in_mat
@@ -428,7 +428,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 44, Column: 52 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            impop
@@ -438,7 +438,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 43, Column: 52 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            out_mat
@@ -448,7 +448,7 @@ Args:
 Pass:            reflow-disaggr
 Name:            DisaggrSucc
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 42, Column: 52 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - String:          'Disaggregating variable '''
   - Name:            in_mat
@@ -654,12 +654,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: ./xf_infra.hpp, Line: 156, Column: 17 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
 Args:            
   - Callee:          'void xf::cv::Mat<20, 2160, 3840, 1, 2>::write<2, (void*)0>(int, ap_uint<30>)'
     DebugLoc:        { File: ./xf_structs.hpp, Line: 553, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
+  - Caller:          'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -758,12 +758,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: ./xf_infra.hpp, Line: 249, Column: 52 }
-Function:        _ZN2xf2cv14xfMat2AXIvideoILi30ELi20ELi2160ELi3840ELi1ELi2ELi0EEEiRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERN3hls6streamINS5_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEE
+Function:        _ZN2xf2cv14xfMat2AXIvideoILi32ELi20ELi2160ELi3840ELi1ELi2ELi0EEEiRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERN3hls6streamINS5_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEE
 Args:            
   - Callee:          'ap_uint<30> xf::cv::Mat<20, 2160, 3840, 1, 2>::read<2, (void*)0>(int)'
     DebugLoc:        { File: ./xf_structs.hpp, Line: 542, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'int xf::cv::xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Caller:          'int xf::cv::xfMat2AXIvideo<32, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 182, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -771,13 +771,13 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 49, Column: 32 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          __hls_fptosi_float_i32
     DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
                        Line: 51, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -785,12 +785,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 50, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
-  - Callee:          'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
+  - Callee:          'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -798,12 +798,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 60, Column: 9 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          'void xf::cv::AWBChannelGain<20, 20, 2160, 3840, 1, 0, 2, 2>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&, int, int*)'
     DebugLoc:        { File: ./xf_autowhitebalance.hpp, Line: 1506, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -811,12 +811,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 62, Column: 9 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          'void xf::cv::AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&, int, int*)'
     DebugLoc:        { File: ./xf_autowhitebalance.hpp, Line: 1489, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -824,12 +824,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 65, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
-  - Callee:          'int xf::cv::xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Callee:          'int xf::cv::xfMat2AXIvideo<32, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 182, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -837,12 +837,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 96, Column: 9 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
-  - Callee:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Callee:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'autowhitebalance_accel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, float, int, int, float, float, float, float)'
+  - Caller:          'autowhitebalance_accel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, float, int, int, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 76, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -851,7 +851,7 @@ Pass:            inline
 Name:            NeverInline
 Function:        apatb_autowhitebalance_accel_ir
 Args:            
-  - Callee:          'autowhitebalance_accel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, float, int, int, float, float, float, float)'
+  - Callee:          'autowhitebalance_accel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, float, int, int, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 76, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_autowhitebalance_accel_ir
@@ -963,13 +963,13 @@ Args:
 Pass:            reflow-inliner
 Name:            Inline
 DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void xf::cv::Mat<20, 2160, 3840, 1, 2>::write<2, (void*)0>(int, ap_uint<30>)'
     DebugLoc:        { File: ./xf_structs.hpp, Line: 553, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
+  - Caller:          'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ''''
 ...
@@ -1061,13 +1061,13 @@ Args:
 Pass:            reflow-inliner
 Name:            Inline
 DebugLoc:        { File: ./xf_infra.hpp, Line: 182, Column: 0 }
-Function:        _ZN2xf2cv14xfMat2AXIvideoILi30ELi20ELi2160ELi3840ELi1ELi2ELi0EEEiRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERN3hls6streamINS5_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEE
+Function:        _ZN2xf2cv14xfMat2AXIvideoILi32ELi20ELi2160ELi3840ELi1ELi2ELi0EEEiRNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEERN3hls6streamINS5_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEE
 Args:            
   - String:          'Inlining function '''
   - Callee:          'ap_uint<30> xf::cv::Mat<20, 2160, 3840, 1, 2>::read<2, (void*)0>(int)'
     DebugLoc:        { File: ./xf_structs.hpp, Line: 542, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'int xf::cv::xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
+  - Caller:          'int xf::cv::xfMat2AXIvideo<32, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 182, Column: 0 }
   - String:          ''''
 ...
@@ -1075,7 +1075,7 @@ Args:
 Pass:            reflow-array-undecay
 Name:            WarnOnUnsupportedVLAUnDecay
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 76, Column: 0 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
   - String:          'Skipping array undecay on variable length array '''
   - ArrayName:       s_axis_video
@@ -1085,7 +1085,7 @@ Args:
 Pass:            reflow-array-undecay
 Name:            WarnOnUnsupportedVLAUnDecay
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 76, Column: 0 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
   - String:          'Skipping array undecay on variable length array '''
   - ArrayName:       m_axis_video
@@ -1095,7 +1095,7 @@ Args:
 Pass:            reflow-array-undecay
 Name:            WarnOnUnsupportedVLAUnDecay
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 76, Column: 0 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
   - String:          'Skipping array undecay on variable length array '''
   - ArrayName:       s_axis_video
@@ -1105,7 +1105,7 @@ Args:
 Pass:            reflow-array-undecay
 Name:            WarnOnUnsupportedVLAUnDecay
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 76, Column: 0 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
   - String:          'Skipping array undecay on variable length array '''
   - ArrayName:       m_axis_video
@@ -1115,7 +1115,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 25, Column: 0 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1133,7 +1133,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 24, Column: 0 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -1187,7 +1187,7 @@ Args:
 Pass:            reflow-burst-inference
 Name:            CouldNotAnalyzeBoundsPattern
 DebugLoc:        { File: ./xf_infra.hpp, Line: 119, Column: 5 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
 Args:            
   - String:          Could not analyze the loop bounds
   - String:          ' _XLX_SEP_ '
@@ -1195,7 +1195,7 @@ Args:
   - String:          ' '
   - LoopLoc:         './xf_infra.hpp:119:5'
   - String:          ' '
-  - Function:        'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
+  - Function:        'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' '
 ...
@@ -1203,7 +1203,7 @@ Args:
 Pass:            reflow-burst-inference
 Name:            CouldNotAnalyzeBoundsPattern
 DebugLoc:        { File: ./xf_infra.hpp, Line: 160, Column: 9 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
 Args:            
   - String:          Could not analyze the loop bounds
   - String:          ' _XLX_SEP_ '
@@ -1211,7 +1211,7 @@ Args:
   - String:          ' '
   - LoopLoc:         './xf_infra.hpp:160:9'
   - String:          ' '
-  - Function:        'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
+  - Function:        'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' '
 ...
@@ -1219,7 +1219,7 @@ Args:
 Pass:            reflow-burst-inference
 Name:            CouldNotAnalyzeBoundsPattern
 DebugLoc:        { File: ./xf_infra.hpp, Line: 119, Column: 5 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE.183
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE.183
 Args:            
   - String:          Could not analyze the loop bounds
   - String:          ' _XLX_SEP_ '
@@ -1227,7 +1227,7 @@ Args:
   - String:          ' '
   - LoopLoc:         './xf_infra.hpp:119:5'
   - String:          ' '
-  - Function:        'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&) (.183)'
+  - Function:        'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&) (.183)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' '
 ...
@@ -1235,7 +1235,7 @@ Args:
 Pass:            reflow-burst-inference
 Name:            CouldNotAnalyzeBoundsPattern
 DebugLoc:        { File: ./xf_infra.hpp, Line: 160, Column: 9 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE.183
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE.183
 Args:            
   - String:          Could not analyze the loop bounds
   - String:          ' _XLX_SEP_ '
@@ -1243,7 +1243,7 @@ Args:
   - String:          ' '
   - LoopLoc:         './xf_infra.hpp:160:9'
   - String:          ' '
-  - Function:        'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&) (.183)'
+  - Function:        'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&) (.183)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' '
 ...
@@ -1251,7 +1251,7 @@ Args:
 Pass:            reflow-occurrence-inference
 Name:            NonComputableLoopForm
 DebugLoc:        { File: ./xf_infra.hpp, Line: 160, Column: 9 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
 Args:            
   - String:          'Could not analyze occurrence information within '''
   - LoopName:        loop_last_hunt
@@ -1263,7 +1263,7 @@ Args:
 Pass:            reflow-occurrence-inference
 Name:            NonComputableLoopForm
 DebugLoc:        { File: ./xf_infra.hpp, Line: 119, Column: 5 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE
 Args:            
   - String:          'Could not analyze occurrence information within '''
   - LoopName:        loop_start_hunt
@@ -1275,7 +1275,7 @@ Args:
 Pass:            reflow-occurrence-inference
 Name:            NonComputableLoopForm
 DebugLoc:        { File: ./xf_infra.hpp, Line: 160, Column: 9 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE.183
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE.183
 Args:            
   - String:          'Could not analyze occurrence information within '''
   - LoopName:        loop_last_hunt
@@ -1287,7 +1287,7 @@ Args:
 Pass:            reflow-occurrence-inference
 Name:            NonComputableLoopForm
 DebugLoc:        { File: ./xf_infra.hpp, Line: 119, Column: 5 }
-Function:        _ZN2xf2cv14AXIvideo2xfMatILi30ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE.183
+Function:        _ZN2xf2cv14AXIvideo2xfMatILi32ELi20ELi2160ELi3840ELi1ELi2EEEiRN3hls6streamINS2_4axisI7ap_uintIXT_EELm1ELm1ELm1ELh56ELb0EEELi0EEERNS0_3MatIXT0_EXT1_EXT2_EXT3_EXT4_EEE.183
 Args:            
   - String:          'Could not analyze occurrence information within '''
   - LoopName:        loop_start_hunt
@@ -1343,12 +1343,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 49, Column: 40 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          AWBKernel_Block_entry_proc
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -1356,13 +1356,13 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 49, Column: 32 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          __hls_fptosi_float_i32.2
     DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
                        Line: 51, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -1370,12 +1370,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 50, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
-  - Callee:          'int xf::cv::AXIvideo2xfMat<30, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&) (.183)'
+  - Callee:          'int xf::cv::AXIvideo2xfMat<32, 20, 2160, 3840, 1, 2>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&) (.183)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 102, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -1383,12 +1383,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 60, Column: 9 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          'void xf::cv::AWBChannelGain<20, 20, 2160, 3840, 1, 0, 2, 2>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&, int, int*)'
     DebugLoc:        { File: ./xf_autowhitebalance.hpp, Line: 1506, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -1396,12 +1396,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 62, Column: 9 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
   - Callee:          'void xf::cv::AWBGainUpdate<20, 20, 2160, 3840, 1, 0, 2, 2>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, xf::cv::Mat<20, 2160, 3840, 1, 2>&, int, int*)'
     DebugLoc:        { File: ./xf_autowhitebalance.hpp, Line: 1489, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -1409,12 +1409,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 65, Column: 5 }
-Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
+Function:        _Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff
 Args:            
-  - Callee:          'int xf::cv::xfMat2AXIvideo<30, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&) (.167)'
+  - Callee:          'int xf::cv::xfMat2AXIvideo<32, 20, 2160, 3840, 1, 2, 0>(xf::cv::Mat<20, 2160, 3840, 1, 2>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&) (.167)'
     DebugLoc:        { File: ./xf_infra.hpp, Line: 182, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Caller:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -1422,12 +1422,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 96, Column: 9 }
-Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
+Function:        _Z22autowhitebalance_accelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_fiiffff
 Args:            
-  - Callee:          'AWBKernel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
+  - Callee:          'AWBKernel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, int, int, unsigned int (*) [1024], unsigned int (*) [1024], int*, int*, float, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 39, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'autowhitebalance_accel(hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<30>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, float, int, int, float, float, float, float)'
+  - Caller:          'autowhitebalance_accel(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul, (unsigned char)56, false>, 0>&, float, int, int, float, float, float, float)'
     DebugLoc:        { File: xf_autowhitebalance_accel.cpp, Line: 76, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...

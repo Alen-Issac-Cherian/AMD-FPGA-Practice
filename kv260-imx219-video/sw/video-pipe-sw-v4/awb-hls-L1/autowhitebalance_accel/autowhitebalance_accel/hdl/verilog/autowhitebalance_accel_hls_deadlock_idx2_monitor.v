@@ -1,6 +1,6 @@
 `timescale 1 ns / 1 ps
 
-module autowhitebalance_accel_hls_deadlock_idx2_monitor ( // for module autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AXIvideo2xfMat_30_20_2160_3840_1_2_U0
+module autowhitebalance_accel_hls_deadlock_idx2_monitor ( // for module autowhitebalance_accel_autowhitebalance_accel_inst.grp_AWBKernel_fu_167.AXIvideo2xfMat_32_20_2160_3840_1_2_U0
     input wire clock,
     input wire reset,
     input wire [3:0] axis_block_sigs,

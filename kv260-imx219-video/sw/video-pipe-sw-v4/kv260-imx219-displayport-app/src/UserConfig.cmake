@@ -35,11 +35,11 @@ set(USER_INCLUDE_DIRECTORIES
 #Example 2: Adding ../../common/helloworld.c will consider the path as relative to this component directory
 #Example 3: Adding ${MY_ENV}/data/helloworld.c are expanded using project-specific environment settings.
 set(USER_COMPILE_SOURCES
-"vdma.c"
-"vtc.c"
 "imx219.c"
 "kv260-imx219-displayport-app.c"
 "mipi.c"
+"vdma.c"
+"vtc.c"
 "demosaic.c"
 "displayport.c"
 "platform.c"
@@ -139,7 +139,6 @@ set(USER_LINKER_SCRIPT "${CMAKE_SOURCE_DIR}/lscript.ld")
 # Add linker options to be passed, they will be added as extra linker options
 # Example : Adding -s will pass -s to the linker.
 set(USER_LINK_OTHER_FLAGS
-"-L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core"
 )
 
 # -----------------------------------------

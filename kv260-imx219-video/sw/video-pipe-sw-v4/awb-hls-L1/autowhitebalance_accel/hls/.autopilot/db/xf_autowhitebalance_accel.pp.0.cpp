@@ -64044,9 +64044,9 @@ void duplicateimages(xf::cv::Mat<SRC_T, ROWS, COLS, NPC, XFCVDEPTH_IN_1>& _src,
 # 27 "./xf_config_params.h" 2
 # 1 "/home/alen/AMD-Xilinx/2025.2/Vitis/common/technology/autopilot/ap_int.h" 1
 # 28 "./xf_config_params.h" 2
-# 72 "./xf_config_params.h"
-typedef hls::stream<ap_axiu<DataType<XF_10UC3, XF_NPPC1>::pixelwidth, 1, 1, 1> > InVideoStrm_t;
-typedef hls::stream<ap_axiu<DataType<XF_10UC3, XF_NPPC1>::pixelwidth, 1, 1, 1> > OutVideoStrm_t;
+# 74 "./xf_config_params.h"
+typedef hls::stream<ap_axiu<32, 1, 1, 1> > InVideoStrm_t;
+typedef hls::stream<ap_axiu<32, 1, 1, 1> > OutVideoStrm_t;
 
 __attribute__((sdx_kernel("autowhitebalance_accel", 0))) void autowhitebalance_accel(InVideoStrm_t& s_axis_video,
                             OutVideoStrm_t& m_axis_video,
@@ -64090,10 +64090,10 @@ void AWBKernel(InVideoStrm_t& s_axis_video,
 #pragma HLS DATAFLOW
 
     uint32_t awb_config = (int)(thresh * 256);
-    xf::cv::AXIvideo2xfMat<DataType<XF_10UC3, XF_NPPC1>::pixelwidth, XF_10UC3, 2160, 3840, XF_NPPC1, 2>(s_axis_video, in_mat);
+    xf::cv::AXIvideo2xfMat<32, XF_10UC3, 2160, 3840, XF_NPPC1, 2>(s_axis_video, in_mat);
 
     if (XF_WB_GRAY == 1) {
-        xf::cv::AWBhistogram<XF_10UC3, XF_10UC3, 2160, 3840, XF_NPPC1, 1, 1, 1024, 2,
+        xf::cv::AWBhistogram<XF_10UC3, XF_10UC3, 2160, 3840, XF_NPPC1, 0, 1, 1024, 2,
                              2>(in_mat, impop, hist0, awb_config, inputMin, inputMax, outputMin,
                                                outputMax);
         xf::cv::AWBNormalization<XF_10UC3, XF_10UC3, 2160, 3840, XF_NPPC1, 1, 1024, 2,
@@ -64105,7 +64105,7 @@ void AWBKernel(InVideoStrm_t& s_axis_video,
         xf::cv::AWBGainUpdate<XF_10UC3, XF_10UC3, 2160, 3840, XF_NPPC1, 0, 2, 2>(
             impop, out_mat, awb_config, gain1);
     }
-    xf::cv::xfMat2AXIvideo<DataType<XF_10UC3, XF_NPPC1>::pixelwidth, XF_10UC3, 2160, 3840, XF_NPPC1, 2>(out_mat, m_axis_video);
+    xf::cv::xfMat2AXIvideo<32, XF_10UC3, 2160, 3840, XF_NPPC1, 2>(out_mat, m_axis_video);
 }
 
 __attribute__((sdx_kernel("autowhitebalance_accel", 0))) void autowhitebalance_accel(InVideoStrm_t& s_axis_video,

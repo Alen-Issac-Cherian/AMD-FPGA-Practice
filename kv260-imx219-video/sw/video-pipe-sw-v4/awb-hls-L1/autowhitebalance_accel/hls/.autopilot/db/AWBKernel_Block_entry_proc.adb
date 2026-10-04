@@ -60,8 +60,8 @@
               <fileName>xf_autowhitebalance_accel.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>49</lineNumber>
-              <contextFuncName>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</contextFuncName>
-              <contextNormFuncName>p_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_s</contextNormFuncName>
+              <contextFuncName>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</contextFuncName>
+              <contextNormFuncName>p_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -73,7 +73,7 @@
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
                         <first>xf_autowhitebalance_accel.cpp</first>
-                        <second>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</second>
+                        <second>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</second>
                       </first>
                       <second>49</second>
                     </item>
@@ -117,8 +117,8 @@
               <fileName>xf_autowhitebalance_accel.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>49</lineNumber>
-              <contextFuncName>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</contextFuncName>
-              <contextNormFuncName>p_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_s</contextNormFuncName>
+              <contextFuncName>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</contextFuncName>
+              <contextNormFuncName>p_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -130,7 +130,7 @@
                     <item>
                       <first>
                         <first>xf_autowhitebalance_accel.cpp</first>
-                        <second>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</second>
+                        <second>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</second>
                       </first>
                       <second>49</second>
                     </item>
@@ -174,8 +174,8 @@
               <fileName>xf_autowhitebalance_accel.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>49</lineNumber>
-              <contextFuncName>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</contextFuncName>
-              <contextNormFuncName>p_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_s</contextNormFuncName>
+              <contextFuncName>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</contextFuncName>
+              <contextNormFuncName>p_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_s</contextNormFuncName>
               <inlineStackInfo>
                 <count>1</count>
                 <item_version>0</item_version>
@@ -187,7 +187,7 @@
                     <item>
                       <first>
                         <first>xf_autowhitebalance_accel.cpp</first>
-                        <second>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi30EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</second>
+                        <second>_Z9AWBKernelRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1ELh56ELb0EEELi0EEES6_iiPA1024_jS8_PiS9_fffff_</second>
                       </first>
                       <second>49</second>
                     </item>

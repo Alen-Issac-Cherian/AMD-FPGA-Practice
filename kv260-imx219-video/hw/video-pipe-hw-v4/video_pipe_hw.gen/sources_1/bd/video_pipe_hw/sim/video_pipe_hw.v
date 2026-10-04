@@ -2,7 +2,7 @@
 //Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-//Date        : Thu Oct  1 00:59:04 2026
+//Date        : Sun Oct  4 19:35:33 2026
 //Host        : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
 //Command     : generate_target video_pipe_hw.bd
 //Design      : video_pipe_hw
@@ -10,7 +10,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "video_pipe_hw,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=video_pipe_hw,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=24,numReposBlks=24,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_zynq_ultra_ps_e_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "video_pipe_hw.hwdef" *) 
+(* CORE_GENERATION_INFO = "video_pipe_hw,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=video_pipe_hw,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=22,numReposBlks=22,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=9,da_zynq_ultra_ps_e_cnt=1,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "video_pipe_hw.hwdef" *) 
 module video_pipe_hw
    (IIC_1_0_scl_i,
     IIC_1_0_scl_o,
@@ -41,7 +41,7 @@ module video_pipe_hw
   wire IIC_1_0_sda_i;
   wire IIC_1_0_sda_o;
   wire IIC_1_0_sda_t;
-  (* CONN_BUS_INFO = "autowhitebalance_acc_0_m_axis_video xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [29:0]autowhitebalance_acc_0_m_axis_video_TDATA;
+  (* CONN_BUS_INFO = "autowhitebalance_acc_0_m_axis_video xilinx.com:interface:axis:1.0 None TDATA" *) (* DONT_TOUCH *) wire [31:0]autowhitebalance_acc_0_m_axis_video_TDATA;
   (* CONN_BUS_INFO = "autowhitebalance_acc_0_m_axis_video xilinx.com:interface:axis:1.0 None TDEST" *) (* DONT_TOUCH *) wire [0:0]autowhitebalance_acc_0_m_axis_video_TDEST;
   (* CONN_BUS_INFO = "autowhitebalance_acc_0_m_axis_video xilinx.com:interface:axis:1.0 None TID" *) (* DONT_TOUCH *) wire [0:0]autowhitebalance_acc_0_m_axis_video_TID;
   (* CONN_BUS_INFO = "autowhitebalance_acc_0_m_axis_video xilinx.com:interface:axis:1.0 None TKEEP" *) (* DONT_TOUCH *) wire [3:0]autowhitebalance_acc_0_m_axis_video_TKEEP;
@@ -50,7 +50,6 @@ module video_pipe_hw
   (* CONN_BUS_INFO = "autowhitebalance_acc_0_m_axis_video xilinx.com:interface:axis:1.0 None TSTRB" *) (* DONT_TOUCH *) wire [3:0]autowhitebalance_acc_0_m_axis_video_TSTRB;
   (* CONN_BUS_INFO = "autowhitebalance_acc_0_m_axis_video xilinx.com:interface:axis:1.0 None TUSER" *) (* DONT_TOUCH *) wire [0:0]autowhitebalance_acc_0_m_axis_video_TUSER;
   (* CONN_BUS_INFO = "autowhitebalance_acc_0_m_axis_video xilinx.com:interface:axis:1.0 None TVALID" *) (* DONT_TOUCH *) wire autowhitebalance_acc_0_m_axis_video_TVALID;
-  wire autowhitebalance_acc_0_s_axis_video_TREADY;
   wire [8:0]axi_smc_1_M00_AXI_ARADDR;
   wire axi_smc_1_M00_AXI_ARREADY;
   wire axi_smc_1_M00_AXI_ARVALID;
@@ -252,14 +251,6 @@ module video_pipe_hw
   wire [7:4]axis_broadcaster_0_M01_AXIS_TSTRB;
   wire [1:1]axis_broadcaster_0_M01_AXIS_TUSER;
   wire [1:1]axis_broadcaster_0_M01_AXIS_TVALID;
-  wire [31:0]axis_subset_converter_0_m_axis_tdata;
-  wire [0:0]axis_subset_converter_0_m_axis_tdest;
-  wire [0:0]axis_subset_converter_0_m_axis_tid;
-  wire [3:0]axis_subset_converter_0_m_axis_tkeep;
-  wire axis_subset_converter_0_m_axis_tlast;
-  wire [3:0]axis_subset_converter_0_m_axis_tstrb;
-  wire [0:0]axis_subset_converter_0_m_axis_tuser;
-  wire axis_subset_converter_0_m_axis_tvalid;
   wire [31:0]axis_subset_converter_1_M_AXIS_TDATA;
   wire [3:0]axis_subset_converter_1_M_AXIS_TKEEP;
   wire axis_subset_converter_1_M_AXIS_TLAST;
@@ -306,7 +297,6 @@ module video_pipe_hw
   wire v_tc_0_vtiming_out_VBLANK;
   wire v_tc_0_vtiming_out_VSYNC;
   wire [0:0]xlconstant_1_dout;
-  wire [29:0]xlslice_0_Dout;
   wire [39:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARADDR;
   wire [1:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARBURST;
   wire [3:0]zynq_ultra_ps_e_0_M_AXI_HPM0_FPD_ARCACHE;
@@ -417,15 +407,15 @@ module video_pipe_hw
         .s_axi_control_WREADY(axi_smc_2_M02_AXI_WREADY),
         .s_axi_control_WSTRB(axi_smc_2_M02_AXI_WSTRB),
         .s_axi_control_WVALID(axi_smc_2_M02_AXI_WVALID),
-        .s_axis_video_TDATA(xlslice_0_Dout),
-        .s_axis_video_TDEST(axis_subset_converter_0_m_axis_tdest),
-        .s_axis_video_TID(axis_subset_converter_0_m_axis_tid),
-        .s_axis_video_TKEEP(axis_subset_converter_0_m_axis_tkeep),
-        .s_axis_video_TLAST(axis_subset_converter_0_m_axis_tlast),
-        .s_axis_video_TREADY(autowhitebalance_acc_0_s_axis_video_TREADY),
-        .s_axis_video_TSTRB(axis_subset_converter_0_m_axis_tstrb),
-        .s_axis_video_TUSER(axis_subset_converter_0_m_axis_tuser),
-        .s_axis_video_TVALID(axis_subset_converter_0_m_axis_tvalid));
+        .s_axis_video_TDATA(axis_broadcaster_0_M00_AXIS_TDATA),
+        .s_axis_video_TDEST(axis_broadcaster_0_M00_AXIS_TDEST),
+        .s_axis_video_TID(axis_broadcaster_0_M00_AXIS_TID),
+        .s_axis_video_TKEEP(axis_broadcaster_0_M00_AXIS_TKEEP),
+        .s_axis_video_TLAST(axis_broadcaster_0_M00_AXIS_TLAST),
+        .s_axis_video_TREADY(axis_broadcaster_0_M00_AXIS_TREADY),
+        .s_axis_video_TSTRB(axis_broadcaster_0_M00_AXIS_TSTRB),
+        .s_axis_video_TUSER(axis_broadcaster_0_M00_AXIS_TUSER),
+        .s_axis_video_TVALID(axis_broadcaster_0_M00_AXIS_TVALID));
   video_pipe_hw_axi_smc_0 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arburst(axi_smc_M00_AXI_ARBURST),
@@ -754,8 +744,8 @@ module video_pipe_hw
         .s_axi_lite_wready(axi_smc_1_M00_AXI_WREADY),
         .s_axi_lite_wvalid(axi_smc_1_M00_AXI_WVALID),
         .s_axis_s2mm_aclk(zynq_ultra_ps_e_0_pl_clk0),
-        .s_axis_s2mm_tdata(autowhitebalance_acc_0_m_axis_video_TDATA[23:0]),
-        .s_axis_s2mm_tkeep(autowhitebalance_acc_0_m_axis_video_TKEEP[2:0]),
+        .s_axis_s2mm_tdata(autowhitebalance_acc_0_m_axis_video_TDATA),
+        .s_axis_s2mm_tkeep(autowhitebalance_acc_0_m_axis_video_TKEEP),
         .s_axis_s2mm_tlast(autowhitebalance_acc_0_m_axis_video_TLAST),
         .s_axis_s2mm_tready(autowhitebalance_acc_0_m_axis_video_TREADY),
         .s_axis_s2mm_tuser(autowhitebalance_acc_0_m_axis_video_TUSER),
@@ -825,27 +815,6 @@ module video_pipe_hw
         .s_axis_tstrb(v_demosaic_0_m_axis_video_TSTRB),
         .s_axis_tuser(v_demosaic_0_m_axis_video_TUSER),
         .s_axis_tvalid(v_demosaic_0_m_axis_video_TVALID));
-  video_pipe_hw_axis_subset_converter_0_0 axis_subset_converter_0
-       (.aclk(zynq_ultra_ps_e_0_pl_clk0),
-        .aresetn(proc_sys_reset_1_peripheral_aresetn),
-        .m_axis_tdata(axis_subset_converter_0_m_axis_tdata),
-        .m_axis_tdest(axis_subset_converter_0_m_axis_tdest),
-        .m_axis_tid(axis_subset_converter_0_m_axis_tid),
-        .m_axis_tkeep(axis_subset_converter_0_m_axis_tkeep),
-        .m_axis_tlast(axis_subset_converter_0_m_axis_tlast),
-        .m_axis_tready(autowhitebalance_acc_0_s_axis_video_TREADY),
-        .m_axis_tstrb(axis_subset_converter_0_m_axis_tstrb),
-        .m_axis_tuser(axis_subset_converter_0_m_axis_tuser),
-        .m_axis_tvalid(axis_subset_converter_0_m_axis_tvalid),
-        .s_axis_tdata(axis_broadcaster_0_M00_AXIS_TDATA),
-        .s_axis_tdest(axis_broadcaster_0_M00_AXIS_TDEST),
-        .s_axis_tid(axis_broadcaster_0_M00_AXIS_TID),
-        .s_axis_tkeep(axis_broadcaster_0_M00_AXIS_TKEEP),
-        .s_axis_tlast(axis_broadcaster_0_M00_AXIS_TLAST),
-        .s_axis_tready(axis_broadcaster_0_M00_AXIS_TREADY),
-        .s_axis_tstrb(axis_broadcaster_0_M00_AXIS_TSTRB),
-        .s_axis_tuser({1'b0,axis_broadcaster_0_M00_AXIS_TUSER}),
-        .s_axis_tvalid(axis_broadcaster_0_M00_AXIS_TVALID));
   video_pipe_hw_axis_subset_converter_0_1 axis_subset_converter_1
        (.aclk(zynq_ultra_ps_e_0_pl_clk0),
         .aresetn(proc_sys_reset_1_peripheral_aresetn),
@@ -932,13 +901,13 @@ module video_pipe_hw
         .clk(zynq_ultra_ps_e_0_pl_clk0),
         .resetn(proc_sys_reset_1_peripheral_aresetn));
   video_pipe_hw_system_ila_0_1 system_ila_1
-       (.SLOT_0_AXIS_tdata(autowhitebalance_acc_0_m_axis_video_TDATA[23:0]),
+       (.SLOT_0_AXIS_tdata(autowhitebalance_acc_0_m_axis_video_TDATA),
         .SLOT_0_AXIS_tdest(autowhitebalance_acc_0_m_axis_video_TDEST),
         .SLOT_0_AXIS_tid(autowhitebalance_acc_0_m_axis_video_TID),
-        .SLOT_0_AXIS_tkeep(autowhitebalance_acc_0_m_axis_video_TKEEP[2:0]),
+        .SLOT_0_AXIS_tkeep(autowhitebalance_acc_0_m_axis_video_TKEEP),
         .SLOT_0_AXIS_tlast(autowhitebalance_acc_0_m_axis_video_TLAST),
         .SLOT_0_AXIS_tready(autowhitebalance_acc_0_m_axis_video_TREADY),
-        .SLOT_0_AXIS_tstrb(autowhitebalance_acc_0_m_axis_video_TSTRB[2:0]),
+        .SLOT_0_AXIS_tstrb(autowhitebalance_acc_0_m_axis_video_TSTRB),
         .SLOT_0_AXIS_tuser(autowhitebalance_acc_0_m_axis_video_TUSER),
         .SLOT_0_AXIS_tvalid(autowhitebalance_acc_0_m_axis_video_TVALID),
         .clk(zynq_ultra_ps_e_0_pl_clk0),
@@ -1051,9 +1020,6 @@ module video_pipe_hw
        (.dout(rpi_enable));
   video_pipe_hw_xlconstant_1_0 xlconstant_1
        (.dout(xlconstant_1_dout));
-  video_pipe_hw_xlslice_0_0 xlslice_0
-       (.Din(axis_subset_converter_0_m_axis_tdata),
-        .Dout(xlslice_0_Dout));
   video_pipe_hw_zynq_ultra_ps_e_0_1 zynq_ultra_ps_e_0
        (.dp_external_custom_event1(1'b0),
         .dp_external_custom_event2(1'b0),

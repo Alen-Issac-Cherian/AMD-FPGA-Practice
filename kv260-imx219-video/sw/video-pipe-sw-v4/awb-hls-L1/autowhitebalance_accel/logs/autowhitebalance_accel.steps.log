@@ -9,7 +9,7 @@
 Environment variables :
 ------------------------------------------
 SHELL=/bin/bash
-SESSION_MANAGER=local/alen-HP-Pavilion-Laptop-14-ec0xxx:@/tmp/.ICE-unix/20698,unix/alen-HP-Pavilion-Laptop-14-ec0xxx:/tmp/.ICE-unix/20698
+SESSION_MANAGER=local/alen-HP-Pavilion-Laptop-14-ec0xxx:@/tmp/.ICE-unix/2535,unix/alen-HP-Pavilion-Laptop-14-ec0xxx:/tmp/.ICE-unix/2535
 QT_ACCESSIBILITY=1
 COLORTERM=truecolor
 XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
@@ -45,11 +45,10 @@ XDG_SESSION_DESKTOP=ubuntu
 THEIA_ELECTRON_VERSION=30.1.2
 XDG_SESSION_TYPE=wayland
 _RDI_DONT_SET_XILINX_AS_PATH=True
-SYSTEMD_EXEC_PID=20730
+SYSTEMD_EXEC_PID=2590
 VALIDATE_ARGS=False
-XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.3DEAW3
+XAUTHORITY=/run/user/1000/.mutter-Xwaylandauth.0VFKW3
 RDI_PREPEND_PATH=/home/alen/AMD-Xilinx/2025.2/Vitis/bin
-IM_CONFIG_CHECK_ENV=1
 XILINX_DSP=
 THEIA_PLUGINS=local-dir:/home/alen/.theia/plugins
 HOME=/home/alen
@@ -64,9 +63,9 @@ VTE_VERSION=7600
 WAYLAND_DISPLAY=wayland-0
 XILINX_HLS=/home/alen/AMD-Xilinx/2025.2/Vitis
 RDI_BUILD=yes
-GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/eca61cfe_d6d2_4304_b21f_1a8f6dd42ccd
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/f36bced0_ba95_4337_9593_bc855593bce3
 RDI_PROG=/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run
-RDI_SESSION_INFO=/home/alen:alen-HP-Pavilion-Laptop-14-ec0xxx_1790543490_23171
+RDI_SESSION_INFO=/home/alen:alen-HP-Pavilion-Laptop-14-ec0xxx_1790878508_9161
 CHROME_DESKTOP=Vitis Unified IDE.desktop
 RT_TCL_PATH=/home/alen/AMD-Xilinx/2025.2/Vitis/scripts/rt/base_tcl/tcl
 XILINX_VITIS_GDB=/home/alen/AMD-Xilinx/2025.2/Vitis/lnx64/tools/gdb/gdb-15.2
@@ -84,7 +83,7 @@ USER=alen
 LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu
 XILINX_PLANAHEAD=/home/alen/AMD-Xilinx/2025.2/Vitis
 PATCH_INFO=
-GNOME_TERMINAL_SERVICE=:1.107
+GNOME_TERMINAL_SERVICE=:1.127
 RDI_BASEROOT=/home/alen/AMD-Xilinx/2025.2
 LOPPER_DTC_FLAGS=-b 0 -@
 CLUTTER_DISABLE_MIPMAPPED_TEXT=1
@@ -92,7 +91,7 @@ RDI_TPS_ROOT=/home/alen/AMD-Xilinx/2025.2/Vivado/tps/lnx64
 RDI_JAVA_VERSION=11.0.16_1
 IDE_SKIP_SERVER_LICENSE=1
 RDI_DATADIR=:/home/alen/AMD-Xilinx/2025.2/data
-THEIA_ELECTRON_TOKEN={"value":"170f9ebc-813c-456a-998b-64aac4969f55"}
+THEIA_ELECTRON_TOKEN={"value":"ba9ce84e-b662-42df-94bf-6f282cc7cfa0"}
 DISPLAY=:0
 SHLVL=4
 GSM_SKIP_SSH_AGENT_WORKAROUND=true
@@ -125,8 +124,8 @@ XILINX_VITIS=/home/alen/AMD-Xilinx/2025.2/Vitis
 OLDPWD=/home/alen/AMD-Xilinx/2025.2/Vitis/bin
 XILINX_VCXX=/home/alen/AMD-Xilinx/2025.2/Vitis/lnx64/tools/vcxx
 _=/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run
-XILINX_CD_CONNECT_ID=42689
-XILINX_CD_SESSION=7629eabf-0613-4070-af15-4454cfbad81c
+XILINX_CD_CONNECT_ID=46207
+XILINX_CD_SESSION=cbf1191c-9860-421a-8d1a-d031aa096f0a
 
 
 VITIS-RUN command line:
@@ -136,14 +135,40 @@ VITIS-RUN command line:
 FINAL PROGRAM OPTIONS
 --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg
 --csim
+--hls.cosim.ldflags /usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core
+--hls.cosim.random_stall true
+--hls.csim.clean 1
+--hls.csim.ldflags /usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core
+--hls.csim.setup 1
 --hls.flow_target vivado
+--hls.package.ip.display_name Auto White Balance
+--hls.package.ip.library video
+--hls.package.ip.taxonomy /Video_&_Image_Processing
+--hls.package.ip.version 1.0
 --hls.package.output.format ip_catalog
 --hls.package.output.syn false
---hls.syn.file /home/alen/git/Vitis_Libraries/vision/L1/examples/autowhitebalance/xf_autowhitebalance_accel.cpp
---hls.syn.file /home/alen/git/Vitis_Libraries/vision/L1/examples/autowhitebalance/xf_autowhitebalance_accel_config.h
+--hls.sim.O 1
+--hls.syn.csimflags -I/usr/include/opencv4 -std=c++14
+--hls.syn.file ./xf_common.hpp
+--hls.syn.file ./xf_config_params.h
+--hls.syn.file ./xf_duplicateimage.hpp
+--hls.syn.file ./xf_headers.hpp
+--hls.syn.file ./xf_params.hpp
+--hls.syn.file ./xf_structs.hpp
+--hls.syn.file ./xf_types.hpp
+--hls.syn.file ./xf_utility.hpp
+--hls.syn.file ./xf_video_mem.hpp
+--hls.syn.file ./xf_autowhitebalance.hpp
+--hls.syn.file ./xf_autowhitebalance_accel.cpp
+--hls.syn.file ./xf_autowhitebalance_accel_config.h
+--hls.syn.file ./xf_infra.hpp
+--hls.syn.file ./xf_axi_io.hpp
+--hls.syn.file ./xf_sw_utils.hpp
 --hls.syn.top autowhitebalance_accel
---hls.tb.file /home/alen/git/Vitis_Libraries/vision/L1/examples/autowhitebalance/xf_autowhitebalance_tb.cpp
---hls.tb.file /home/alen/git/Vitis_Libraries/vision/L1/examples/autowhitebalance/xf_autowhitebalance_tb_config.h
+--hls.tb.cflags -I/usr/include/opencv4 -std=c++14
+--hls.tb.file ./xf_headers.hpp
+--hls.tb.file ./xf_autowhitebalance_tb.cpp
+--hls.tb.file ./xf_autowhitebalance_tb_config.h
 --mode hls
 --part xck26-sfvc784-2LV-c
 --work_dir autowhitebalance_accel
@@ -161,27 +186,41 @@ hls.flow_target vivado
 hls.package.output.format ip_catalog 
 hls.package.output.syn false 
 hls.syn.top autowhitebalance_accel 
-hls.syn.file /home/alen/git/Vitis_Libraries/vision/L1/examples/autowhitebalance/xf_autowhitebalance_accel.cpp 
-hls.syn.file /home/alen/git/Vitis_Libraries/vision/L1/examples/autowhitebalance/xf_autowhitebalance_accel_config.h 
-hls.tb.file /home/alen/git/Vitis_Libraries/vision/L1/examples/autowhitebalance/xf_autowhitebalance_tb.cpp 
-hls.tb.file /home/alen/git/Vitis_Libraries/vision/L1/examples/autowhitebalance/xf_autowhitebalance_tb_config.h 
+hls.tb.file ./xf_headers.hpp 
+hls.tb.file ./xf_autowhitebalance_tb.cpp 
+hls.tb.file ./xf_autowhitebalance_tb_config.h 
+hls.package.ip.display_name Auto White Balance 
+hls.package.ip.version 1.0 
+hls.package.ip.taxonomy /Video_&_Image_Processing 
+hls.package.ip.library video 
+hls.csim.clean 1 
+hls.sim.O 1 
+hls.csim.setup 1 
+hls.csim.ldflags /usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core 
+hls.cosim.random_stall true 
+hls.cosim.ldflags /usr/lib/x86_64-linux-gnu/libstdc++.so.6 -L/usr/lib/x86_64-linux-gnu -Wl,-rpath,/usr/lib/x86_64-linux-gnu -Wl,--error-limit=0 -lopencv_imgcodecs -lopencv_imgproc -lopencv_core 
+hls.tb.cflags -I/usr/include/opencv4 -std=c++14 
+hls.syn.csimflags -I/usr/include/opencv4 -std=c++14 
+hls.syn.file ./xf_common.hpp 
+hls.syn.file ./xf_config_params.h 
+hls.syn.file ./xf_duplicateimage.hpp 
+hls.syn.file ./xf_headers.hpp 
+hls.syn.file ./xf_params.hpp 
+hls.syn.file ./xf_structs.hpp 
+hls.syn.file ./xf_types.hpp 
+hls.syn.file ./xf_utility.hpp 
+hls.syn.file ./xf_video_mem.hpp 
+hls.syn.file ./xf_autowhitebalance.hpp 
+hls.syn.file ./xf_autowhitebalance_accel.cpp 
+hls.syn.file ./xf_autowhitebalance_accel_config.h 
+hls.syn.file ./xf_infra.hpp 
+hls.syn.file ./xf_axi_io.hpp 
+hls.syn.file ./xf_sw_utils.hpp 
 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:42:32
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:45:46
+timestamp: 01 Oct 2026 20:03:22
 
 ------------------------------------------
 V++ command line :
@@ -193,91 +232,7 @@ V++ command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:46:43
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:48:03
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:51:29
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:54:09
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:54:43
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:56:12
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:58:18
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 22:58:48
+timestamp: 01 Oct 2026 20:04:21
 
 ------------------------------------------
 VITIS-RUN command line :
@@ -289,7 +244,163 @@ VITIS-RUN command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 23:03:40
+timestamp: 01 Oct 2026 20:05:57
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 01 Oct 2026 20:33:38
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 01 Oct 2026 20:35:43
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 01 Oct 2026 20:36:14
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 01 Oct 2026 20:38:47
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 01 Oct 2026 21:50:48
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 02 Oct 2026 14:58:16
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 02 Oct 2026 16:18:09
+
+------------------------------------------
+V++ command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 02 Oct 2026 16:19:04
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 02 Oct 2026 16:20:11
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 02 Oct 2026 16:40:04
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 02 Oct 2026 17:05:46
+
+------------------------------------------
+V++ command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 02 Oct 2026 17:06:27
+
+------------------------------------------
+VITIS-RUN command line :
+------------------------------------------
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+  Options from -O    : 
+  Options from *.ini : 
+  Options from Hw Platform : 
+
+==========================================
+new:  steps log generated by v++ for new launch 
+timestamp: 02 Oct 2026 17:07:24
 
 ------------------------------------------
 VITIS-RUN command line :
@@ -301,7 +412,7 @@ VITIS-RUN command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 23:05:17
+timestamp: 02 Oct 2026 17:16:42
 
 ------------------------------------------
 VITIS-RUN command line :
@@ -313,55 +424,19 @@ VITIS-RUN command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 23:06:07
+timestamp: 02 Oct 2026 17:17:51
 
 ------------------------------------------
-V++ command line :
+VITIS-RUN command line :
 ------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
   Options from -O    : 
   Options from *.ini : 
   Options from Hw Platform : 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 27 Sep 2026 23:27:33
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 16:22:03
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 16:23:42
-
-------------------------------------------
-V++ command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 16:26:42
+timestamp: 02 Oct 2026 22:22:38
 
 ------------------------------------------
 VITIS-RUN command line :
@@ -373,19 +448,7 @@ VITIS-RUN command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 19:22:39
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 19:32:03
+timestamp: 03 Oct 2026 00:38:20
 
 ------------------------------------------
 V++ command line :
@@ -397,19 +460,19 @@ V++ command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 23:06:58
+timestamp: 03 Oct 2026 00:38:46
 
 ------------------------------------------
-V++ command line :
+VITIS-RUN command line :
 ------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++ -c --mode hls --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
   Options from -O    : 
   Options from *.ini : 
   Options from Hw Platform : 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 23:09:50
+timestamp: 03 Oct 2026 00:41:51
 
 ------------------------------------------
 VITIS-RUN command line :
@@ -421,7 +484,7 @@ VITIS-RUN command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 23:12:13
+timestamp: 03 Oct 2026 01:33:13
 
 ------------------------------------------
 VITIS-RUN command line :
@@ -433,7 +496,7 @@ VITIS-RUN command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 28 Sep 2026 23:13:15
+timestamp: 03 Oct 2026 01:34:20
 
 ------------------------------------------
 VITIS-RUN command line :
@@ -445,79 +508,7 @@ VITIS-RUN command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 00:54:40
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 01:02:07
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 01:12:42
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 01:15:16
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 01:15:57
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 01:25:30
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 01:33:14
+timestamp: 04 Oct 2026 18:40:27
 
 ------------------------------------------
 V++ command line :
@@ -529,43 +520,7 @@ V++ command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 01:56:52
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 01:57:47
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 02:10:03
-
-------------------------------------------
-VITIS-RUN command line :
-------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --csim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
-  Options from -O    : 
-  Options from *.ini : 
-  Options from Hw Platform : 
-
-==========================================
-new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 02:17:11
+timestamp: 04 Oct 2026 18:41:01
 
 ------------------------------------------
 VITIS-RUN command line :
@@ -577,16 +532,16 @@ VITIS-RUN command line :
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 02:19:32
+timestamp: 04 Oct 2026 18:42:06
 
 ------------------------------------------
 VITIS-RUN command line :
 ------------------------------------------
-/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --cosim --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
+/home/alen/AMD-Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run --mode hls --package --config /home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/hls_config.cfg --work_dir autowhitebalance_accel 
   Options from -O    : 
   Options from *.ini : 
   Options from Hw Platform : 
 
 ==========================================
 new:  steps log generated by v++ for new launch 
-timestamp: 01 Oct 2026 02:22:23
+timestamp: 04 Oct 2026 19:26:46

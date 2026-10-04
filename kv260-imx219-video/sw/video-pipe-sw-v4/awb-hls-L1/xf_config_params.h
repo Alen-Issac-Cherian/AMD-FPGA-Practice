@@ -42,7 +42,7 @@
 #define OUT_TYPE XF_10UC3
 
 #define WB_TYPE XF_WB_GRAY
-#define XF_USE_URAM 1
+#define XF_USE_URAM 0
 #define T_8U 0
 #define T_16U 0
 #define T_12U 0
@@ -65,9 +65,11 @@
 /* AXI4-Stream video ports.
  * TDATA width = bits per pixel per cycle (3 x 10 = 30 for XF_10UC3 @ NPPC1).
  * Vivado/HLS pads the physical TDATA port to a byte multiple (32 bits) with the
- * pixel in the low 30 bits. */
+ * pixel in the low 30 bits. 
 #define AXI_WIDTH_IN XF_PIXELWIDTH(IN_TYPE, NPPCX)
-#define AXI_WIDTH_OUT XF_PIXELWIDTH(OUT_TYPE, NPPCX)
+#define AXI_WIDTH_OUT XF_PIXELWIDTH(OUT_TYPE, NPPCX)*/
+#define AXI_WIDTH_IN  32
+#define AXI_WIDTH_OUT 32
 
 typedef hls::stream<ap_axiu<AXI_WIDTH_IN, 1, 1, 1> > InVideoStrm_t;
 typedef hls::stream<ap_axiu<AXI_WIDTH_OUT, 1, 1, 1> > OutVideoStrm_t;

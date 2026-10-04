@@ -1,0 +1,324 @@
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/alen/AMD-Xilinx/2025.2/Vivado/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_autowhitebalance_accel_top xil_defaultlib.glbl -Oenable_linking_all_libraries -prj autowhitebalance_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_1_21 -L floating_point_v7_0_26 --lib ieee_proposed=./ieee_proposed -L uvm -relax -i ./svr -i ./svtb -i ./file_agent -i ./autowhitebalance_accel_subsystem -s autowhitebalance_accel 
+Multi-threading is on. Using 10 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by AMD, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_sparsemux_7_2_10_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_sparsemux_7_2_10_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_p_hls_fptosi_float_i32_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_p_hls_fptosi_float_i32_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_mul_32s_10ns_42_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_mul_32s_10ns_42_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_Pipeline_ColLoop1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_last_hunt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_start_for_xfMat2AXIvideo_32_20_2160_3840_1_2_0_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/AESL_deadlock_idx1_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx1_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_start_hunt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_Pipeline_loop_col_zxi2mat
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_sparsemux_7_2_40_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_sparsemux_7_2_40_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_xfMat2AXIvideo_32_20_2160_3840_1_2_0_Pipeline_loop_col_mat2axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AWBGainUpdate_20_20_2160_3840_1_0_2_2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AWBChannelGainKernel_20_20_2160_3840_1_2_2_3_23_23_13_13_3840_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AWBKernel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AWBKernel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AXIvideo2xfMat_32_20_2160_3840_1_2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1_divseq
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_udiv_56ns_40ns_56_60_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_start_for_AWBGainUpdate_20_20_2160_3840_1_0_2_2_U0_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AWBChannelGainKernel_Pipeline_VITIS_LOOP_216_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/AESL_deadlock_idx2_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx2_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AWBChannelGainKernel_Pipeline_Col_Loop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1_divseq
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_udiv_102ns_56ns_56_106_seq_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_regslice_both
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_mul_32ns_10ns_42_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_mul_32ns_10ns_42_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AWBChannelGain_20_20_2160_3840_1_0_2_2_s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_fifo_w30_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_fifo_w30_d2_S
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_fifo_w30_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_sparsemux_9_3_32_1_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_sparsemux_9_3_32_1_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_autowhitebalance_accel_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_AWBKernel_Block_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_AWBKernel_Block_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_fifo_w32_d2_S
+INFO: [VRFC 10-311] analyzing module autowhitebalance_accel_fifo_w32_d2_S_ShiftReg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/file_agent/file_agent_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/svr/svr_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/svr/svr_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/axivip/axi_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/axivip/axi_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/autowhitebalance_accel_subsystem/autowhitebalance_accel_subsystem_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/svtb/misc_interface.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/svtb/sv_module_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sv_module_top
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/ip/xil_defaultlib/autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/ip/xil_defaultlib/autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/alen/git/AMD-FPGA-Practice/kv260-imx219-video/sw/video-pipe-sw-v4/awb-hls-L1/autowhitebalance_accel/hls/sim/verilog/ip/xil_defaultlib/autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/proj/primebuilds/9999.0_PRIME_0428_0031/installs/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 4356. Module uvm_pkg doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_viv_comp
+Compiling package xbip_utils_v3_0_15.xbip_utils_v3_0_15_pkg
+Compiling package axi_utils_v2_0_11.axi_utils_v2_0_11_pkg
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_exp_table...
+Compiling package mult_gen_v12_0_24.mult_gen_v12_0_24_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_21.floating_point_v7_1_21_pkg
+Compiling package floating_point_v7_1_21.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv_comp
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package floating_point_v7_1_21.vt2mutils
+Compiling package floating_point_v7_1_21.vt2mcomps
+Compiling package xil_defaultlib.$unit_sv_module_top_sv
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling package xil_defaultlib.svr_pkg
+Compiling package xil_defaultlib.file_agent_pkg
+Compiling package xil_defaultlib.axi_pkg
+Compiling package xil_defaultlib.autowhitebalance_accel_subsystem...
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=7,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=16,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=24,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=17,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=48,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_21.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.fix_mult [\fix_mult(c_xdevicefamily="zynqu...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=32,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_21.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_21.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_21.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_mult [\flt_mult(c_xdevicefamily="zynqu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21_viv [\floating_point_v7_1_21_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21 [\floating_point_v7_1_21(c_xdevic...]
+Compiling architecture autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip_arch of entity xil_defaultlib.autowhitebalance_accel_fmul_32ns_32ns_32_3_max_dsp_1_ip [autowhitebalance_accel_fmul_32ns...]
+Compiling module xil_defaultlib.autowhitebalance_accel_fmul_32ns...
+Compiling module xil_defaultlib.autowhitebalance_accel_AWBKernel...
+Compiling module xil_defaultlib.autowhitebalance_accel_p_hls_fpt...
+Compiling module xil_defaultlib.autowhitebalance_accel_flow_cont...
+Compiling module xil_defaultlib.autowhitebalance_accel_AXIvideo2...
+Compiling module xil_defaultlib.autowhitebalance_accel_AXIvideo2...
+Compiling module xil_defaultlib.autowhitebalance_accel_AXIvideo2...
+Compiling module xil_defaultlib.autowhitebalance_accel_AXIvideo2...
+Compiling module xil_defaultlib.autowhitebalance_accel_mul_32ns_...
+Compiling module xil_defaultlib.autowhitebalance_accel_AWBChanne...
+Compiling module xil_defaultlib.autowhitebalance_accel_sparsemux...
+Compiling module xil_defaultlib.autowhitebalance_accel_AWBChanne...
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_21.norm_zero_det [\norm_zero_det(data_width=7,norm...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=2,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [delay_default]
+Compiling architecture rtl of entity floating_point_v7_1_21.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=32)\]
+Compiling architecture rtl of entity floating_point_v7_1_21.shift_msb_first [\shift_msb_first(a_width=32,resu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=12,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=3,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_21.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_21.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_21.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_latency...]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21_viv [\floating_point_v7_1_21_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21 [\floating_point_v7_1_21(c_xdevic...]
+Compiling architecture autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip_arch of entity xil_defaultlib.autowhitebalance_accel_sitofp_32ns_32_4_no_dsp_1_ip [autowhitebalance_accel_sitofp_32...]
+Compiling module xil_defaultlib.autowhitebalance_accel_sitofp_32...
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=23,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_21.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_21.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_21.special_detect [\special_detect(a_fw=24,op_delay...]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(r_w=64,r_ew...]
+Compiling architecture synth of entity floating_point_v7_1_21.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_21.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_11.xbip_pipe_v3_0_11_viv [\xbip_pipe_v3_0_11_viv(c_has_ce=...]
+Compiling architecture rtl of entity floating_point_v7_1_21.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21_viv [\floating_point_v7_1_21_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_21.floating_point_v7_1_21 [\floating_point_v7_1_21(c_xdevic...]
+Compiling architecture autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip_arch of entity xil_defaultlib.autowhitebalance_accel_fpext_32ns_64_2_no_dsp_1_ip [autowhitebalance_accel_fpext_32n...]
+Compiling module xil_defaultlib.autowhitebalance_accel_fpext_32n...
+Compiling module xil_defaultlib.autowhitebalance_accel_sparsemux...
+Compiling module xil_defaultlib.autowhitebalance_accel_sparsemux...
+Compiling module xil_defaultlib.autowhitebalance_accel_udiv_56ns...
+Compiling module xil_defaultlib.autowhitebalance_accel_udiv_56ns...
+Compiling module xil_defaultlib.autowhitebalance_accel_udiv_102n...
+Compiling module xil_defaultlib.autowhitebalance_accel_udiv_102n...
+Compiling module xil_defaultlib.autowhitebalance_accel_AWBChanne...
+Compiling module xil_defaultlib.autowhitebalance_accel_AWBChanne...
+Compiling module xil_defaultlib.autowhitebalance_accel_mul_32s_1...
+Compiling module xil_defaultlib.autowhitebalance_accel_AWBGainUp...
+Compiling module xil_defaultlib.autowhitebalance_accel_AWBGainUp...
+Compiling module xil_defaultlib.autowhitebalance_accel_xfMat2AXI...
+Compiling module xil_defaultlib.autowhitebalance_accel_xfMat2AXI...
+Compiling module xil_defaultlib.autowhitebalance_accel_fifo_w32_...
+Compiling module xil_defaultlib.autowhitebalance_accel_fifo_w32_...
+Compiling module xil_defaultlib.autowhitebalance_accel_fifo_w30_...
+Compiling module xil_defaultlib.autowhitebalance_accel_fifo_w30_...
+Compiling module xil_defaultlib.autowhitebalance_accel_start_for...
+Compiling module xil_defaultlib.autowhitebalance_accel_start_for...
+Compiling module xil_defaultlib.autowhitebalance_accel_start_for...
+Compiling module xil_defaultlib.autowhitebalance_accel_start_for...
+Compiling module xil_defaultlib.autowhitebalance_accel_AWBKernel
+Compiling module xil_defaultlib.autowhitebalance_accel_control_s...
+Compiling module xil_defaultlib.autowhitebalance_accel_regslice_...
+Compiling module xil_defaultlib.autowhitebalance_accel_regslice_...
+Compiling module xil_defaultlib.autowhitebalance_accel_regslice_...
+Compiling module xil_defaultlib.autowhitebalance_accel
+Compiling module xil_defaultlib.misc_interface_default
+Compiling module xil_defaultlib.svr_if(DATA_WIDTH=44)
+Compiling module xil_defaultlib.axi_if(ADDR_WIDTH=7,STRB_WIDTH=4...
+Compiling module xil_defaultlib.sv_module_top
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.AESL_deadlock_idx2_monitor
+Compiling module xil_defaultlib.AESL_deadlock_idx1_monitor
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.df_fifo_intf_default
+Compiling module xil_defaultlib.df_process_intf_default
+Compiling module xil_defaultlib.nodf_module_intf_default
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=7)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=293)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=3)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_autowhitebalance_accel_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot autowhitebalance_accel

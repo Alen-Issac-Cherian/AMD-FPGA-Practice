@@ -1,0 +1,1 @@
+xsim {autowhitebalance_accel} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=autowhitebalance_accel_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {autowhitebalance_accel.tcl}

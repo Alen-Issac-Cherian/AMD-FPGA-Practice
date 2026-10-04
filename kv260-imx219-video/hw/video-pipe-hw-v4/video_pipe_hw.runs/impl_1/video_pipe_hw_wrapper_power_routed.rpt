@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2025.2 (lin64) Build 6299465 Fri Nov 14 12:34:56 MST 2025
-| Date             : Thu Oct  1 01:14:34 2026
+| Date             : Sun Oct  4 19:49:08 2026
 | Host             : alen-HP-Pavilion-Laptop-14-ec0xxx running 64-bit Ubuntu 24.04.5 LTS
 | Command          : report_power -file video_pipe_hw_wrapper_power_routed.rpt -pb video_pipe_hw_wrapper_power_summary_routed.pb -rpx video_pipe_hw_wrapper_power_routed.rpx
 | Design           : video_pipe_hw_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.391        |
+| Total On-Chip Power (W)  | 3.392        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.064        |
+| Dynamic (W)              | 3.065        |
 | Device Static (W)        | 0.327        |
 | Effective TJA (C/W)      | 2.3          |
 | Max Ambient (C)          | 77.1         |
@@ -52,17 +52,17 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.145 |       13 |       --- |             --- |
-| CLB Logic                |     0.140 |    68286 |       --- |             --- |
-|   LUT as Logic           |     0.081 |    21234 |    117120 |           18.13 |
+| Clocks                   |     0.144 |       13 |       --- |             --- |
+| CLB Logic                |     0.141 |    67987 |       --- |             --- |
+|   LUT as Logic           |     0.082 |    21132 |    117120 |           18.04 |
 |   LUT as Distributed RAM |     0.039 |      770 |     57600 |            1.34 |
-|   Register               |     0.009 |    35158 |    234240 |           15.01 |
-|   LUT as Shift Register  |     0.007 |      850 |     57600 |            1.48 |
-|   CARRY8                 |     0.004 |      609 |     14640 |            4.16 |
-|   Others                 |     0.000 |     2545 |       --- |             --- |
+|   Register               |     0.009 |    34919 |    234240 |           14.91 |
+|   LUT as Shift Register  |     0.007 |      858 |     57600 |            1.49 |
+|   CARRY8                 |     0.005 |      610 |     14640 |            4.17 |
+|   Others                 |     0.000 |     2541 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |      281 |    117120 |            0.24 |
-| Signals                  |     0.096 |    50862 |       --- |             --- |
-| Block RAM                |     0.033 |       26 |       144 |           18.06 |
+| Signals                  |     0.097 |    50625 |       --- |             --- |
+| Block RAM                |     0.033 |     26.5 |       144 |           18.40 |
 | URAM                     |     0.021 |        4 |        64 |            6.25 |
 | MMCM                     |     0.000 |        0 |       --- |             --- |
 | PLL                      |     0.117 |        2 |       --- |             --- |
@@ -72,7 +72,7 @@ Table of Contents
 | Static Power             |     0.327 |          |           |                 |
 |   PS Static              |     0.000 |          |           |                 |
 |   PL Static              |     0.327 |          |           |                 |
-| Total                    |     3.391 |          |           |                 |
+| Total                    |     3.392 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -82,7 +82,7 @@ Table of Contents
 +------------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source           | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +------------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint           |       0.720 |     0.721 |       0.628 |      0.093 |       NA    | Unspecified | NA         |
+| Vccint           |       0.720 |     0.722 |       0.629 |      0.093 |       NA    | Unspecified | NA         |
 | Vccint_io        |       0.850 |     0.044 |       0.007 |      0.037 |       NA    | Unspecified | NA         |
 | Vccbram          |       0.850 |     0.005 |       0.004 |      0.001 |       NA    | Unspecified | NA         |
 | Vccaux           |       1.800 |     0.139 |       0.064 |      0.075 |       NA    | Unspecified | NA         |
@@ -178,15 +178,15 @@ Table of Contents
 +----------------------------+-----------+
 | Name                       | Power (W) |
 +----------------------------+-----------+
-| video_pipe_hw_wrapper      |     3.064 |
+| video_pipe_hw_wrapper      |     3.065 |
 |   IIC_1_0_scl_iobuf        |     0.008 |
 |   IIC_1_0_sda_iobuf        |     0.008 |
 |   dbg_hub                  |     0.002 |
 |     inst                   |     0.002 |
 |       BSCANID.u_xsdbm_id   |     0.002 |
-|   video_pipe_hw_i          |     3.046 |
-|     autowhitebalance_acc_0 |     0.070 |
-|       inst                 |     0.070 |
+|   video_pipe_hw_i          |     3.047 |
+|     autowhitebalance_acc_0 |     0.071 |
+|       inst                 |     0.071 |
 |     axi_smc                |     0.085 |
 |       inst                 |     0.085 |
 |     axi_smc_1              |     0.013 |
@@ -199,16 +199,16 @@ Table of Contents
 |       U0                   |     0.021 |
 |     clk_wiz_0              |     0.055 |
 |       inst                 |     0.055 |
-|     mipi_csi2_rx_subsyst_0 |     0.112 |
-|       inst                 |     0.112 |
+|     mipi_csi2_rx_subsyst_0 |     0.111 |
+|       inst                 |     0.111 |
 |     system_ila_0           |     0.011 |
 |       inst                 |     0.011 |
-|     system_ila_1           |     0.010 |
-|       inst                 |     0.010 |
-|     v_axi4s_vid_out_0      |     0.006 |
-|       inst                 |     0.006 |
-|     v_demosaic_0           |     0.128 |
-|       inst                 |     0.128 |
+|     system_ila_1           |     0.011 |
+|       inst                 |     0.011 |
+|     v_axi4s_vid_out_0      |     0.005 |
+|       inst                 |     0.005 |
+|     v_demosaic_0           |     0.129 |
+|       inst                 |     0.129 |
 |     v_tc_0                 |     0.015 |
 |       U0                   |     0.015 |
 |     vio_0                  |     0.002 |

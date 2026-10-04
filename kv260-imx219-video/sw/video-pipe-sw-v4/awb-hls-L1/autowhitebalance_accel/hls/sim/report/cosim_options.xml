@@ -1,5 +1,5 @@
 <cosim_options>
-    <option name="argv" tcl="config_cosim -argv" ini="cosim.argv"></option>
+    <option name="argv" tcl="config_cosim -argv" ini="cosim.argv">/home/alen/git/Vitis_Libraries/vision/data/512x512.jpg</option>
     <option name="compiled_library_dir" tcl="config_cosim -compiled_library_dir" ini="cosim.compiled_library_dir"></option>
     <option name="coverage" tcl="config_cosim -coverage" ini="cosim.coverage"></option>
     <option name="disable_binary_tv" tcl="config_cosim -disable_binary_tv" ini="cosim.disable_binary_tv"></option>
@@ -9,7 +9,7 @@
     <option name="enable_fifo_sizing" tcl="config_cosim -enable_fifo_sizing" ini="cosim.enable_fifo_sizing"></option>
     <option name="enable_tasks_with_m_axi" tcl="config_cosim -enable_tasks_with_m_axi" ini="cosim.enable_tasks_with_m_axi"></option>
     <option name="hwemu_trace_dir" tcl="config_cosim -hwemu_trace_dir" ini="cosim.hwemu_trace_dir"></option>
-    <option name="random_stall" tcl="config_cosim -random_stall" ini="cosim.random_stall">1</option>
+    <option name="random_stall" tcl="config_cosim -random_stall" ini="cosim.random_stall">0</option>
     <option name="rtl" tcl="config_cosim -rtl" ini="cosim.rtl">verilog</option>
     <option name="setup" tcl="config_cosim -setup" ini="cosim.setup"></option>
     <option name="stable_axilite_update" tcl="config_cosim -stable_axilite_update" ini="cosim.stable_axilite_update"></option>

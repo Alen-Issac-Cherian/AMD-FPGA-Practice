@@ -47,12 +47,12 @@
 // DO NOT MODIFY THIS FILE.
 
 
-// IP VLNV: xilinx.com:video:autowhitebalance_accel:1.0
-// IP Revision: 2114806333
+// IP VLNV: xilinx.com:video:autowhitebalance_accel:1.3
+// IP Revision: 2114814746
 
 (* X_CORE_INFO = "autowhitebalance_accel,Vivado 2025.2" *)
 (* CHECK_LICENSE_TYPE = "video_pipe_hw_autowhitebalance_acc_0_0,autowhitebalance_accel,{}" *)
-(* CORE_GENERATION_INFO = "video_pipe_hw_autowhitebalance_acc_0_0,autowhitebalance_accel,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=video,x_ipName=autowhitebalance_accel,x_ipVersion=1.0,x_ipCoreRevision=2114806333,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=7,C_S_AXI_CONTROL_DATA_WIDTH=32}" *)
+(* CORE_GENERATION_INFO = "video_pipe_hw_autowhitebalance_acc_0_0,autowhitebalance_accel,{x_ipProduct=Vivado 2025.2,x_ipVendor=xilinx.com,x_ipLibrary=video,x_ipName=autowhitebalance_accel,x_ipVersion=1.3,x_ipCoreRevision=2114814746,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_S_AXI_CONTROL_ADDR_WIDTH=7,C_S_AXI_CONTROL_DATA_WIDTH=32}" *)
 (* IP_DEFINITION_SOURCE = "HLS" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module video_pipe_hw_autowhitebalance_acc_0_0 (
@@ -147,8 +147,8 @@ input wire ap_rst_n;
 output wire interrupt;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDATA" *)
 (* X_INTERFACE_MODE = "slave" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-input wire [29 : 0] s_axis_video_TDATA;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 4, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+input wire [31 : 0] s_axis_video_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDEST" *)
 input wire [0 : 0] s_axis_video_TDEST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TID" *)
@@ -167,8 +167,8 @@ input wire [0 : 0] s_axis_video_TUSER;
 input wire s_axis_video_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDATA" *)
 (* X_INTERFACE_MODE = "master" *)
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 3, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
-output wire [29 : 0] m_axis_video_TDATA;
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TUSER_WIDTH 1, TDATA_NUM_BYTES 4, TDEST_WIDTH 1, TID_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 249997498, PHASE 0.0, CLK_DOMAIN video_pipe_hw_zynq_ultra_ps_e_0_1_pl_clk0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+output wire [31 : 0] m_axis_video_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDEST" *)
 output wire [0 : 0] m_axis_video_TDEST;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TID" *)

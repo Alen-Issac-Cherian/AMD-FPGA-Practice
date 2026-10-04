@@ -42,8 +42,8 @@
 			#clock-cells = <0>;
 		};
 		autowhitebalance_acc_0: autowhitebalance_accel@a0020000 {
-			compatible = "xlnx,autowhitebalance-accel-1.0";
-			xlnx,ii = "8305225 , ~ , 16606571";
+			compatible = "xlnx,autowhitebalance-accel-1.1";
+			xlnx,ii = "309625 , ~ , 618571";
 			xlnx,machine = <64>;
 			xlnx,s-axi-control-addr-width = <7>;
 			xlnx,ip-name = "autowhitebalance_accel";
@@ -55,7 +55,7 @@
 			status = "okay";
 			clock-names = "ap_clk";
 			xlnx,combinational = <0>;
-			xlnx,latency = <8305224>;
+			xlnx,latency = <309624>;
 			xlnx,name = "autowhitebalance_acc_0";
 		};
 		axi_vdma_0: dma@b0000000 {
@@ -399,6 +399,9 @@
 				};
 				demosaic_port0v_demosaic_0: port@0 {
 					reg = <0>;
+					v_demosaic_0mipi_csi2_rx_subsyst_0: endpoint {
+						remote-endpoint = <&mipi_csirx_outmipi_csi2_rx_subsyst_0>;
+					};
 				};
 			};
 		};
